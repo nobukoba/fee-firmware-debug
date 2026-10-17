@@ -1,0 +1,11 @@
+--- a/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_rx_startup_fsm.vhd
++++ b/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_rx_startup_fsm.vhd
+@@ -159,7 +159,7 @@
+     return wait_time;
+   end function;
+   constant MMCM_LOCK_CNT_MAX    : integer := 256;
+-  constant STARTUP_DELAY        : integer := 500;--AR43482: Transceiver needs to wait for 500 ns after configuration
++  constant STARTUP_DELAY : integer := 50000;--AR43482: Transceiver needs to wait for 500 ns after configuration
+   constant WAIT_CYCLES          : integer := STARTUP_DELAY / STABLE_CLOCK_PERIOD; -- Number of Clock-Cycles to wait after configuration
+   constant WAIT_MAX             : integer := WAIT_CYCLES + 10;                    -- 500 ns plus some additional margin
+   constant WAIT_TIMEOUT_2ms     : integer := 2000000 / STABLE_CLOCK_PERIOD;--  2 ms time-out

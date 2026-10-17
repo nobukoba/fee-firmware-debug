@@ -1,0 +1,44 @@
+{
+  "created": "2026-10-18T08:22:34.181364",
+  "phase": "generated_functional_HDL_diffs_frozen",
+  "candidates": {
+    "f305": {
+      "functional_HDL_added_lines": 1,
+      "functional_HDL_deleted_lines": 1,
+      "patch": "day2-f305-functional-hdl.patch",
+      "patch_sha256": "059f61376d4abbe13a4b5b7423eaf62eecf3b6294be14280096cd2b57cf6abd9",
+      "before_path": "lrtdc-startdelay-f305\\build\\startdelay-f305\\rx-startup-before-patch.vhd",
+      "before_sha256": "3499fbb3cb184c3557af8c471398b8e1cbe02e160d195112af265d2a2662dcd0",
+      "after_path": "lrtdc-startdelay-f305\\build\\startdelay-f305\\rx-startup-after-patch.vhd",
+      "after_sha256": "fbfa3121f02a0bdb9764d00089c9834ebc5e40b55fcd09514b8f59947528fc44",
+      "manifest_sha256": "b271e162d699c9702d7ada3504bff7d5defc22a9b8432b7dc7675a435de33c95"
+    },
+    "f306": {
+      "functional_HDL_added_lines": 1,
+      "functional_HDL_deleted_lines": 1,
+      "patch": "day2-f306-functional-hdl.patch",
+      "patch_sha256": "f76a4aee67022944ac5a5a8242deed47130824db57d0f98153edfe40fff13f74",
+      "before_path": "lrtdc-startdelay-f306\\build\\startdelay-f306\\rx-startup-before-patch.vhd",
+      "before_sha256": "3499fbb3cb184c3557af8c471398b8e1cbe02e160d195112af265d2a2662dcd0",
+      "after_path": "lrtdc-startdelay-f306\\build\\startdelay-f306\\rx-startup-after-patch.vhd",
+      "after_sha256": "c8939852b1d25404121bbe2be8f67c7aec53706c24d4b89f74812acb342eb399",
+      "manifest_sha256": "aceb1198a1d101f3bfa9012ce113edeb131ae9fcccfc0295cb2a64cdb1ed7a52"
+    },
+    "f307": {
+      "functional_HDL_added_lines": 104,
+      "functional_HDL_deleted_lines": 1,
+      "patch": "day2-f307-functional-hdl.patch",
+      "patch_sha256": "e9debf7e7444ea2eaba225382de5c829cf0448eab1326772299794de8da0fe73",
+      "before_path": "lrtdc-autopma-f307\\build\\autopma-f307\\gt-init-before.vhd",
+      "before_sha256": "a84e7ba6a1604e3b907e6ae9bf6429a8dd7797de0f2ecca587f6b0968206e803",
+      "after_path": "lrtdc-autopma-f307\\build\\autopma-f307\\gt-init-after.vhd",
+      "after_sha256": "66d16914622de86d79af99f100f2b3901a3c946411fd6d172440bf99bde054bc",
+      "manifest_sha256": "e8f19bada2f6c2926091d78df16dcb71c5b1682264d84aa1758b6f8cd6f2c8b5"
+    }
+  },
+  "count_scope": "Actual generated functional HDL only. Version tags, dependency preparation, build drivers, and matched physical gate/ILA observation are excluded and are additional changes.",
+  "limits": [
+    "F307 is a diagnostic controller addition, not the2-line F304 minimum candidate",
+    "Diffs describe implementation, not hardware efficacy or universal safety"
+  ]
+}

@@ -71,7 +71,12 @@
       "path": "evidence/day2-f306-reviewed-outcome.json",
       "original_sha256": "d4d9c52be29b185f8d3da2a48315c09086b5fc3f8fc688fcb2d6dcc5d7c0a44f",
       "exported_sha256": "a46e2a9651d9dc8ea874f705cc00d45edbf34ac0f7bae0ae06e42f31df351087"
+    },
+    {
+      "path": "evidence/day2-functional-hdl-diffs.json",
+      "original_sha256": "5dd9948bae792d6a0f7937e8d22342765ab454db9a0785bbcb87e0de3c062d40",
+      "exported_sha256": "4e5ac2f67896a241b25353fd84f7faa7e99137977752889c6b178b8053f1d3dc"
     }
   ],
-  "updated": "2026-10-18T07:22:31.442941"
+  "updated": "2026-10-18T08:23:03.743298"
 }
