@@ -1,0 +1,30 @@
+{
+  "created": "2026-10-18T04:43:37.232657",
+  "passed": true,
+  "commands": [
+    {
+      "command": "C:\\Xilinx\\Vivado\\2023.2\\bin\\xvhdl.bat",
+      "actual_exit_code": 0
+    },
+    {
+      "command": "C:\\Xilinx\\Vivado\\2023.2\\bin\\xelab.bat",
+      "actual_exit_code": 0
+    },
+    {
+      "command": "C:\\Xilinx\\Vivado\\2023.2\\bin\\xsim.bat",
+      "actual_exit_code": 0
+    }
+  ],
+  "checks": [
+    "No pulse before readiness and quiet interval",
+    "Exactly16 RX-clock pulse width",
+    "Observe RXRESETDONE low then high",
+    "Exactly one pulse until SOFT_RESET",
+    "SOFT_RESET rearms once"
+  ],
+  "source_sha256": {
+    "day2_autopma.vhd": "1d70f0d779b1f2e91acd2483edc415a43b4f5b9ffad606e5086f1633c331c7a1",
+    "day2_autopma_tb.vhd": "332e83f0bcb0db94eaf50c1deeff26d81025e00768028e34ab1d9cd7b528f40c"
+  },
+  "limits": "Logical functional model only; not GTX analog simulation or actual physical pulse timing."
+}

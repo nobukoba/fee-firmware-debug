@@ -1,0 +1,31 @@
+{
+  "created": "2026-10-18T06:46:35.307119",
+  "passed": true,
+  "commands": [
+    {
+      "tool": "xvhdl.bat",
+      "actual_exit_code": 0
+    },
+    {
+      "tool": "xelab.bat",
+      "actual_exit_code": 0
+    },
+    {
+      "tool": "xsim.bat",
+      "actual_exit_code": 0
+    }
+  ],
+  "checks": [
+    "Readiness bounce restarts quiet interval",
+    "Missing RX clock gives bounded ACK timeout",
+    "No stale pulse when RX clock starts after request expired",
+    "RXRESETDONE stuck high cannot be reported as successful recovery",
+    "No unbounded retry or stuck PMA pulse after failure"
+  ],
+  "source_sha256": {
+    "day2_autopma.vhd": "1d70f0d779b1f2e91acd2483edc415a43b4f5b9ffad606e5086f1633c331c7a1",
+    "day2_autopma_fault_tb.vhd": "4c37a87cedbc22b052de7a87289c11d1e96e62cf34f23504e98ea7c030b9430f",
+    "<workspace>\\run_day2_autopma_fault_sim.py": "2c85256e0947ba66a8c03a0b8ae9c6dadcd8357d416d133ac851f01f374676d2"
+  },
+  "limits": "Scaled digital model, not GTX analog simulation, hardware efficacy, or physical cable insertion test."
+}

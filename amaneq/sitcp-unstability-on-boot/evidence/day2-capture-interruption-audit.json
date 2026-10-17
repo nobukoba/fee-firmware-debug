@@ -1,0 +1,22 @@
+{
+  "created": "2026-10-18T06:34:06.862526",
+  "phase": "closed_old_capture_audited_resumed_capture_is_separate",
+  "old_capture": "investigation24h-20261017.pcapng",
+  "bytes": 21233744,
+  "sha256": "c4031f8cbf841e07e24b908c9afa4c2b8f0b2c50c6b5af60f4a2c432b7cb3fd7",
+  "capinfos_actual_exit_code": 0,
+  "capinfos": "File name:           investigation24h-20261017.pcapng\nNumber of packets:   38 k\nFile size:           21 MB\nEarliest packet time: 2026-10-17 11:51:16.250204400\nLatest packet time:   2026-10-18 04:53:16.042114200\nNumber of interfaces in file: 1\nInterface #0 info:\n                     Name = \\Device\\NPF_{3E10A6E0-E1AD-46B3-A999-BC3055B462BC}\n                     Description = Ethernet\n                     Encapsulation = Ethernet (1 - ether)\n                     Hardware = Intel(R) Ethernet Connection (4) I219-LM\n                     Capture length = 262144\n                     Time precision = nanoseconds (9)\n                     Time ticks per second = 1000000000\n                     Time resolution = 0x09\n                     Filter string = arp or host 192.168.10.16 or host 192.168.10.17\n                     Operating system = 64-bit Windows 11 (25H2), build 26200\n                     Number of stat entries = 0\n                     Number of packets = 38846\n",
+  "capture_process_exit_code": null,
+  "capture_final_drop_statistics": null,
+  "current_capture_process_ids": [
+    6756
+  ],
+  "resumed_capture": "investigation24h-20261018-resumed.pcapng",
+  "resume_hardware_status_sha256": "d69e5bbb971cdc8c1b9329f7813fdbc24645572db9ab9b5e542dc6f5797cdb08",
+  "limits": [
+    "Old capture process handle was lost during environment interruption; final exit code/drop count unavailable.",
+    "Last packet time is not the capture process stop time.",
+    "Pre-interruption and resumed captures are separate epochs; no continuous coverage claim.",
+    "Packet validity and packet counts do not prove zero packet drops or continuous availability."
+  ]
+}

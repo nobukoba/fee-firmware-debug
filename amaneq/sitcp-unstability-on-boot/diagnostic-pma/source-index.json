@@ -1,0 +1,42 @@
+{
+  "created": "2026-10-18T06:53:37.690048",
+  "status": "Logical simulations passed; F307 hardware comparison pending",
+  "transformation": "Text line endings normalized to LF; workspace prefixes scrubbed in JSON. Original and exported hashes are separate.",
+  "files": [
+    {
+      "original_path": "day2_autopma.vhd",
+      "exported_path": "day2_autopma.vhd",
+      "original_sha256": "1d70f0d779b1f2e91acd2483edc415a43b4f5b9ffad606e5086f1633c331c7a1",
+      "exported_sha256": "1d70f0d779b1f2e91acd2483edc415a43b4f5b9ffad606e5086f1633c331c7a1",
+      "lines": 87
+    },
+    {
+      "original_path": "day2_autopma_tb.vhd",
+      "exported_path": "day2_autopma_tb.vhd",
+      "original_sha256": "332e83f0bcb0db94eaf50c1deeff26d81025e00768028e34ab1d9cd7b528f40c",
+      "exported_sha256": "332e83f0bcb0db94eaf50c1deeff26d81025e00768028e34ab1d9cd7b528f40c",
+      "lines": 49
+    },
+    {
+      "original_path": "day2_autopma_fault_tb.vhd",
+      "exported_path": "day2_autopma_fault_tb.vhd",
+      "original_sha256": "4c37a87cedbc22b052de7a87289c11d1e96e62cf34f23504e98ea7c030b9430f",
+      "exported_sha256": "4c37a87cedbc22b052de7a87289c11d1e96e62cf34f23504e98ea7c030b9430f",
+      "lines": 50
+    },
+    {
+      "original_path": "experiments/day2-autopma-sim/result.json",
+      "exported_path": "experiments--day2-autopma-sim--result.json",
+      "original_sha256": "6bce303f9dc087646deaf4e0efda44b6c1e3e21ee540464c497a30fc83288dfe",
+      "exported_sha256": "aa1d9cc5bac3f4941ff52b524b90eeef6414de698bdde7d1979171af4bb6bab1",
+      "lines": 30
+    },
+    {
+      "original_path": "experiments/day2-autopma-fault-sim/result.json",
+      "exported_path": "experiments--day2-autopma-fault-sim--result.json",
+      "original_sha256": "29abd6378e32cea05edf9af52a7864b6cd2555509a7fbb6d0e528764079dae32",
+      "exported_sha256": "14f7e4569564a4dad994ce0f613d6217046c86a7d4f64d0d8cb2518f9fbc21d7",
+      "lines": 31
+    }
+  ]
+}
