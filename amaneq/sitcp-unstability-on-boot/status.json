@@ -1,37 +1,58 @@
 {
-  "study_status": "in_progress",
+  "study_status": "followup_experiments_in_progress",
   "restoration_status": "not_yet_performed",
   "soak_snapshot": {
-    "snapshot_time": "2026-10-18T03:40:31.994730",
+    "snapshot_time": "2026-10-18T04:45:30.631948",
     "started": "2026-10-18T02:24:39.552583",
     "deadline": "2026-10-18T10:30:00",
     "stats": {
       "192.168.10.16": {
-        "RBCP_checks": 152,
-        "RBCP_pass": 152,
-        "TCP_checks": 16,
-        "TCP_pass": 16,
+        "RBCP_checks": 265,
+        "RBCP_pass": 265,
+        "TCP_checks": 27,
+        "TCP_pass": 27,
         "failures": 0,
         "first_probe": "2026-10-18T02:24:39.583965",
-        "last_probe": "2026-10-18T03:40:09.563823",
-        "actual_probe_span_seconds": 4529.969,
-        "last_probe_age_seconds": 22.431
+        "last_probe": "2026-10-18T04:36:39.563315",
+        "actual_probe_span_seconds": 7919.969,
+        "last_probe_age_seconds": 531.069
       },
       "192.168.10.17": {
-        "RBCP_checks": 152,
-        "RBCP_pass": 152,
-        "TCP_checks": 16,
-        "TCP_pass": 16,
+        "RBCP_checks": 265,
+        "RBCP_pass": 265,
+        "TCP_checks": 27,
+        "TCP_pass": 27,
         "failures": 0,
         "first_probe": "2026-10-18T02:24:40.606946",
-        "last_probe": "2026-10-18T03:40:09.566826",
-        "actual_probe_span_seconds": 4528.953,
-        "last_probe_age_seconds": 22.428
+        "last_probe": "2026-10-18T04:36:39.563315",
+        "actual_probe_span_seconds": 7918.953,
+        "last_probe_age_seconds": 531.069
       }
     },
     "first_failure": null,
-    "finish": null,
+    "finish": {
+      "event": "finish",
+      "time": "2026-10-18T04:36:59.584744",
+      "elapsed_seconds": 7940.031,
+      "reason": "requested_stop",
+      "counts": {
+        "192.168.10.16": {
+          "rbcp_checks": 265,
+          "rbcp_pass": 265,
+          "tcp_checks": 27,
+          "tcp_pass": 27,
+          "failures": 0
+        },
+        "192.168.10.17": {
+          "rbcp_checks": 265,
+          "rbcp_pass": 265,
+          "tcp_checks": 27,
+          "tcp_pass": 27,
+          "failures": 0
+        }
+      }
+    },
     "partial_tail_bytes_ignored": 0
   },
-  "note": "Snapshot only; process liveness checked separately. No claim of completed soak."
+  "reason": "Stopped at user request to compare longer STARTUP_DELAY and autonomous PMA reset; original scheduled deadline was not reached"
 }
