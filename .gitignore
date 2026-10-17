@@ -1,0 +1,11 @@
+# Measurements containing network payloads, credentials or device configuration
+*.pcap
+*.pcapng
+*.bin
+*.bit
+*.mcs
+*.dcp
+*.jou
+*.log
+.Xil/
+__pycache__/

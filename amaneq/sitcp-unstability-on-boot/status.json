@@ -1,0 +1,37 @@
+{
+  "study_status": "in_progress",
+  "restoration_status": "not_yet_performed",
+  "soak_snapshot": {
+    "snapshot_time": "2026-10-18T03:40:31.994730",
+    "started": "2026-10-18T02:24:39.552583",
+    "deadline": "2026-10-18T10:30:00",
+    "stats": {
+      "192.168.10.16": {
+        "RBCP_checks": 152,
+        "RBCP_pass": 152,
+        "TCP_checks": 16,
+        "TCP_pass": 16,
+        "failures": 0,
+        "first_probe": "2026-10-18T02:24:39.583965",
+        "last_probe": "2026-10-18T03:40:09.563823",
+        "actual_probe_span_seconds": 4529.969,
+        "last_probe_age_seconds": 22.431
+      },
+      "192.168.10.17": {
+        "RBCP_checks": 152,
+        "RBCP_pass": 152,
+        "TCP_checks": 16,
+        "TCP_pass": 16,
+        "failures": 0,
+        "first_probe": "2026-10-18T02:24:40.606946",
+        "last_probe": "2026-10-18T03:40:09.566826",
+        "actual_probe_span_seconds": 4528.953,
+        "last_probe_age_seconds": 22.428
+      }
+    },
+    "first_failure": null,
+    "finish": null,
+    "partial_tail_bytes_ignored": 0
+  },
+  "note": "Snapshot only; process liveness checked separately. No claim of completed soak."
+}

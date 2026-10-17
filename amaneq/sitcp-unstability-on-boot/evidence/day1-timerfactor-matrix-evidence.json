@@ -1,0 +1,168 @@
+{
+  "created": "2026-10-17T22:10:35.689697",
+  "cases": {
+    "bypass": {
+      "successes": 0,
+      "trials": 3,
+      "boot_error_words": [
+        62,
+        45,
+        62
+      ],
+      "steady_error_words": [
+        88,
+        69,
+        86
+      ],
+      "GT_gate_INIT": "0xaaaaaaaa",
+      "timer_gate_INIT": "0xa",
+      "full_flash_sha256": "1ba77b2dfcfda58d4759365f0637012d13a15b0b5db46d919b8d1acd93157e69",
+      "evidence": "day1-timerfactor-bypass-evidence.json"
+    },
+    "gtonly": {
+      "successes": 3,
+      "trials": 3,
+      "boot_error_words": [
+        0,
+        0,
+        0
+      ],
+      "steady_error_words": [
+        0,
+        0,
+        0
+      ],
+      "GT_gate_INIT": "0xafafafaf",
+      "timer_gate_INIT": "0xa",
+      "full_flash_sha256": "2e008699677774bb5fa47d29d4217216a0c385394000c8dee52ed39e03d6309e",
+      "evidence": "day1-timerfactor-gtonly-evidence.json"
+    },
+    "timeronly": {
+      "successes": 0,
+      "trials": 3,
+      "boot_error_words": [
+        27,
+        47,
+        34
+      ],
+      "steady_error_words": [
+        123,
+        98,
+        118
+      ],
+      "GT_gate_INIT": "0xaaaaaaaa",
+      "timer_gate_INIT": "0xb",
+      "full_flash_sha256": "eb4aab6faa64d4256523dc18f885d38d8a2049aed87db8b9317b6472950b4da4",
+      "evidence": "day1-timerfactor-timeronly-evidence.json"
+    },
+    "both": {
+      "successes": 3,
+      "trials": 3,
+      "boot_error_words": [
+        0,
+        0,
+        0
+      ],
+      "steady_error_words": [
+        0,
+        0,
+        0
+      ],
+      "GT_gate_INIT": "0xafafafaf",
+      "timer_gate_INIT": "0xb",
+      "full_flash_sha256": "10e89182bb49f585025a96cc62047e533a2024cc7292d3583262d63daae5bc73",
+      "evidence": "day1-timerfactor-both-evidence.json"
+    },
+    "softleadboth": {
+      "successes": 0,
+      "trials": 3,
+      "boot_error_words": [
+        29,
+        46,
+        27
+      ],
+      "steady_error_words": [
+        114,
+        129,
+        129
+      ],
+      "GT_gate_INIT": "0xabaaabaa",
+      "timer_gate_INIT": "0xb",
+      "full_flash_sha256": "4611fc64fdb654162e42d2f6572a6d19058c76bffd628343a294d00ca61c8236",
+      "evidence": "day1-timerfactor-softleadboth-evidence.json"
+    },
+    "delayedboth": {
+      "successes": 0,
+      "trials": 3,
+      "boot_error_words": [
+        44,
+        30,
+        39
+      ],
+      "steady_error_words": [
+        71,
+        106,
+        113
+      ],
+      "GT_gate_INIT": "0xafafaaaa",
+      "timer_gate_INIT": "0xb",
+      "full_flash_sha256": "8fca03043e09d5a1cc184e74233e8e47d9ed995047f3d013ab9f67defbf98b41",
+      "evidence": "day1-timerfactor-delayedboth-evidence.json"
+    },
+    "qualifiedboth": {
+      "successes": 0,
+      "trials": 3,
+      "boot_error_words": [
+        50,
+        65,
+        42
+      ],
+      "steady_error_words": [
+        74,
+        98,
+        97
+      ],
+      "GT_gate_INIT": "0xafaaafaa",
+      "timer_gate_INIT": "0xb",
+      "full_flash_sha256": "3b5154ac323865944371b1fc3d310d779f1fec56b5be122325b34d651807a421",
+      "evidence": "day1-timerfactor-qualifiedboth-evidence.json"
+    },
+    "reverse": {
+      "successes": 0,
+      "trials": 3,
+      "boot_error_words": [
+        43,
+        44,
+        52
+      ],
+      "steady_error_words": [
+        65,
+        86,
+        108
+      ],
+      "GT_gate_INIT": "0xaaaaaaaa",
+      "timer_gate_INIT": "0xa",
+      "full_flash_sha256": "1ba77b2dfcfda58d4759365f0637012d13a15b0b5db46d919b8d1acd93157e69",
+      "evidence": "day1-timerfactor-reverse-evidence.json"
+    }
+  },
+  "source_sha256": {
+    "day1-timerfactor-matrix.json": "9442fea90af9d5ca25be98299b63521384d285f3910782f6d2da7e14f41a5254",
+    "day1-timerfactor-bypass-evidence.json": "b3963324b326d6a342195777d2e364a4dbd534bccddc76f20910ec5692dce959",
+    "day1-timerfactor-gtonly-evidence.json": "90ce523bde5e9e9317d4091da397b023b2660539fc9a9ce883a25f75974abde4",
+    "day1-timerfactor-timeronly-evidence.json": "9be1e46bbee397e2a505a4797e3865a369f49f87c7f6a08a37674fb6bb6aedff",
+    "day1-timerfactor-both-evidence.json": "b6fe7b2ec27ef962b837154666db40d348375fdf35dca562d96e6b198a094a73",
+    "day1-timerfactor-softleadboth-evidence.json": "0ca49c8bff31ddddac4db410469f255cf8c0358deae1799932bfde9a6c049b9b",
+    "day1-timerfactor-delayedboth-evidence.json": "0aed2a40fbdfa37e9432ab06b423d001dca9e77a86b3e237154ba945073dd177",
+    "day1-timerfactor-qualifiedboth-evidence.json": "493587d3786915f2dc0c5c85cebacf5d87c2fd0566e20917bdc3926ba126bf16",
+    "day1-timerfactor-reverse-evidence.json": "5cdcc1abd554b1043dfbf364df51218597dd16e27ebe5edd148569a74397210e"
+  },
+  "exact_bypass_reversion_verified": true,
+  "limits": [
+    "Independent physicalGT reset and15CDRwaittimer synchronous reset factors; timerflag is a50us proxy, not physicalCDRlock.",
+    "Each condition3coldboots only; preserve mixed outcomes, do not pool unrelated firmware families.",
+    "Identical placed/routed variant family with LUTINIT differences; coldboots span changing time/temperature.",
+    "Qualifiedwindow timing nominal SYS5ns, not measured physicalDONE; earliesthold remains diagnostic.",
+    "No reservedCDRreset or DRP workaround applied; hardware analog component cause not established."
+  ]
+}

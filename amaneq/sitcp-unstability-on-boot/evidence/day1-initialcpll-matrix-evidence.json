@@ -1,0 +1,88 @@
+{
+  "created": "2026-10-17T23:42:17.101221",
+  "cases": {
+    "bypass": {
+      "successes": 0,
+      "trials": 3,
+      "boot_error_words": [
+        46,
+        56,
+        48
+      ],
+      "steady_error_words": [
+        107,
+        100,
+        98
+      ],
+      "CE_gate_INIT": "0xf",
+      "full_flash_sha256": "8ae3c9ff9c6b847a3c60243fb49672b9da4c39a634e446fa941bfb6c320422bc",
+      "evidence": "day1-initialcpll-bypass-evidence.json"
+    },
+    "clockready": {
+      "successes": 0,
+      "trials": 3,
+      "boot_error_words": [
+        28,
+        45,
+        49
+      ],
+      "steady_error_words": [
+        105,
+        98,
+        81
+      ],
+      "CE_gate_INIT": "0xa",
+      "full_flash_sha256": "f53185f36936009a0014ad2607ef415bfaa30ebab9269aaea941e7ab5054d963",
+      "evidence": "day1-initialcpll-clockready-evidence.json"
+    },
+    "rxhold": {
+      "successes": 0,
+      "trials": 3,
+      "boot_error_words": [
+        45,
+        57,
+        26
+      ],
+      "steady_error_words": [
+        98,
+        106,
+        123
+      ],
+      "CE_gate_INIT": "0xc",
+      "full_flash_sha256": "494c4e6acffa39c60bada31441397cf362991a100ac6ff9bffbf37fc702390fe",
+      "evidence": "day1-initialcpll-rxhold-evidence.json"
+    },
+    "reverse": {
+      "successes": 0,
+      "trials": 3,
+      "boot_error_words": [
+        38,
+        49,
+        46
+      ],
+      "steady_error_words": [
+        128,
+        76,
+        80
+      ],
+      "CE_gate_INIT": "0xf",
+      "full_flash_sha256": "8ae3c9ff9c6b847a3c60243fb49672b9da4c39a634e446fa941bfb6c320422bc",
+      "evidence": "day1-initialcpll-reverse-evidence.json"
+    }
+  },
+  "source_sha256": {
+    "day1-initialcpll-matrix.json": "658ff1313bcdab856afaf7993440d54267f42d4d52929d1f6e544d614ac6f571",
+    "day1-initialcpll-bypass-evidence.json": "8ccc76e93ba58759c98cea1480f84719599351bf93100a7169adc5ee66ac64fe",
+    "day1-initialcpll-clockready-evidence.json": "dc5fca2b32ad74bf5ff37842feecd680e4aa8e551dbac99a670dac1ae9c03401",
+    "day1-initialcpll-rxhold-evidence.json": "64795744a90e4b202f18eb1f867e2b8bc00e0b5783098e02425069ff6d930250",
+    "day1-initialcpll-reverse-evidence.json": "a772d939593dca18cb50750519a7885db9b0f6c689252be270fa1794761b2d2b"
+  },
+  "exact_bypass_reversion_verified": true,
+  "limits": [
+    "InitialCPLL7SRL+2FF CE-only selection; nativeGTinputs/RX/timer unchanged. Flag24 notphysicalCDRlock.",
+    "Each condition3coldboots only; preserve mixed outcomes, do not pool unrelated firmware families.",
+    "Identical placed/routed variant family with LUTINIT differences; coldboots span changing time/temperature.",
+    "Qualifiedwindow timing nominal SYS5ns, not measured physicalDONE; earliesthold remains diagnostic.",
+    "No reservedCDRreset or DRP workaround applied; hardware analog component cause not established."
+  ]
+}

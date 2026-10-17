@@ -1,0 +1,20 @@
+--- native_RX_startup_fsm.vhd
++++ F304_RX_startup_fsm.vhd
+@@ -200,7 +200,7 @@
+   signal mmcm_lock_int          : std_logic := '0';
+   signal mmcm_lock_i            : std_logic := '0';
+   signal mmcm_lock_reclocked    : std_logic := '0';
+-  signal gtrxreset_i    : std_logic := '0';
++  signal gtrxreset_i    : std_logic := '1';
+   signal gtrxreset_tx_i    : std_logic := '0';
+   signal gtrxreset_rx_i    : std_logic := '0';
+   signal mmcm_reset_i    : std_logic := '1';
+@@ -548,7 +548,7 @@
+       if (SOFT_RESET = '1' ) then
+         rx_state                <= INIT;
+         RXUSERRDY               <= '0';
+-        gtrxreset_i               <= '0';
++        gtrxreset_i <= '1';
+         mmcm_reset_i              <= '0';
+         rx_fsm_reset_done_int   <= '0';
+         QPLL_RESET              <= '0';

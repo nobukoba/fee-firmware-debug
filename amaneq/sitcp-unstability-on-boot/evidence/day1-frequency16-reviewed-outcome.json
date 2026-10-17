@@ -1,0 +1,488 @@
+{
+  "created": "2026-10-18T01:27:03.870039",
+  "phase": "frequency16_cohort_evidence_frozen",
+  "cohort_source": "day1-frequency16-resume-v2.json",
+  "trials": [
+    {
+      "trial": 1,
+      "cold_success": false,
+      "native_fresh_error_words": 103,
+      "frequency": {
+        "native": {
+          "nominal_ref_MHz": {
+            "mean": 156.24593885766902,
+            "min": 156.2459356285145,
+            "max": 156.2459410021762
+          },
+          "nominal_rx_MHz": {
+            "mean": 62.456047613507415,
+            "min": 62.456045079803125,
+            "max": 62.456050342986714
+          },
+          "rx_over_ref": {
+            "mean": 0.39972909420961816,
+            "min": 0.3997290738921262,
+            "max": 0.3997291124640708
+          }
+        },
+        "mode1": {
+          "nominal_ref_MHz": {
+            "mean": 156.24595569504817,
+            "min": 156.24595182471512,
+            "max": 156.24595861893238
+          },
+          "nominal_rx_MHz": {
+            "mean": 62.45605846172509,
+            "min": 62.45605654343245,
+            "max": 62.456060883411524
+          },
+          "rx_over_ref": {
+            "mean": 0.39972912056439547,
+            "min": 0.39972910697959896,
+            "max": 0.39972914255412506
+          }
+        },
+        "pma": {
+          "nominal_ref_MHz": {
+            "mean": 156.2459572021552,
+            "min": 156.24595349768376,
+            "max": 156.24596060853042
+          },
+          "nominal_rx_MHz": {
+            "mean": 62.50035501682489,
+            "min": 62.500352065403916,
+            "max": 62.50035778562072
+          },
+          "rx_over_ref": {
+            "mean": 0.4000126219967425,
+            "min": 0.4000125943863385,
+            "max": 0.400012643565181
+          }
+        },
+        "mode0": {
+          "nominal_ref_MHz": {
+            "mean": 156.24595893576182,
+            "min": 156.24595617541394,
+            "max": 156.24596138284613
+          },
+          "nominal_rx_MHz": {
+            "mean": 62.50035490379548,
+            "min": 62.50035177347953,
+            "max": 62.500358553358154
+          },
+          "rx_over_ref": {
+            "mean": 0.4000126168350478,
+            "min": 0.4000125919010949,
+            "max": 0.40001264662414837
+          }
+        }
+      },
+      "comparable_failed_state_PMA_recovery": true,
+      "fresh_errors_native_mode1_PMA_mode0": [
+        103,
+        104,
+        0,
+        0
+      ],
+      "PMA_control_observations_valid": true,
+      "PMA_marker_RXcycle_counts": [
+        0,
+        0,
+        16,
+        0
+      ],
+      "PMA_reset_done_low_samples": 76,
+      "PMA_fresh_reset_done_high_samples": 256,
+      "additional_reset_activity": {
+        "17": [
+          "N"
+        ],
+        "18": [
+          "N"
+        ],
+        "19": [
+          "N"
+        ],
+        "31": [
+          "N"
+        ]
+      },
+      "additional_reset_activity_through_network": {
+        "17": [
+          "N"
+        ],
+        "18": [
+          "N"
+        ],
+        "19": [
+          "N"
+        ],
+        "31": [
+          "N"
+        ]
+      },
+      "repeated_RBCP_TCP_after_PMA": true,
+      "rx_over_ref_before_after_PMA": [
+        0.39972912056439547,
+        0.4000126219967425
+      ],
+      "relative_frequency_change_percent": 0.07092338730456671
+    },
+    {
+      "trial": 2,
+      "cold_success": false,
+      "native_fresh_error_words": 112,
+      "frequency": {
+        "native": {
+          "nominal_ref_MHz": {
+            "mean": 156.24595782225617,
+            "min": 156.24595409049988,
+            "max": 156.2459618071456
+          },
+          "nominal_rx_MHz": {
+            "mean": 62.45603625917691,
+            "min": 62.45603313225946,
+            "max": 62.45604093265191
+          },
+          "rx_over_ref": {
+            "mean": 0.39972897302230564,
+            "min": 0.3997289504327709,
+            "max": 0.3997290024569592
+          }
+        },
+        "mode1": {
+          "nominal_ref_MHz": {
+            "mean": 156.24596050468813,
+            "min": 156.24595631573337,
+            "max": 156.2459630968997
+          },
+          "nominal_rx_MHz": {
+            "mean": 62.45603479795883,
+            "min": 62.456032323375176,
+            "max": 62.456037745074646
+          },
+          "rx_over_ref": {
+            "mean": 0.3997289568077177,
+            "min": 0.3997289385340651,
+            "max": 0.3997289734351025
+          }
+        },
+        "pma": {
+          "nominal_ref_MHz": {
+            "mean": 156.24596033663244,
+            "min": 156.24595878002054,
+            "max": 156.24596399590166
+          },
+          "nominal_rx_MHz": {
+            "mean": 62.5003541252255,
+            "min": 62.50035188541649,
+            "max": 62.50035691656647
+          },
+          "rx_over_ref": {
+            "mean": 0.40001260826563634,
+            "min": 0.4000125913788126,
+            "max": 0.40001262528744647
+          }
+        },
+        "mode0": {
+          "nominal_ref_MHz": {
+            "mean": 156.24596204184255,
+            "min": 156.2459578338434,
+            "max": 156.24596450291892
+          },
+          "nominal_rx_MHz": {
+            "mean": 62.500354011976064,
+            "min": 62.50035126836889,
+            "max": 62.50035657175003
+          },
+          "rx_over_ref": {
+            "mean": 0.40001260317523285,
+            "min": 0.4000125857839837,
+            "max": 0.40001261657777104
+          }
+        }
+      },
+      "comparable_failed_state_PMA_recovery": true,
+      "fresh_errors_native_mode1_PMA_mode0": [
+        112,
+        109,
+        0,
+        0
+      ],
+      "PMA_control_observations_valid": true,
+      "PMA_marker_RXcycle_counts": [
+        0,
+        0,
+        16,
+        0
+      ],
+      "PMA_reset_done_low_samples": 76,
+      "PMA_fresh_reset_done_high_samples": 256,
+      "additional_reset_activity": {
+        "17": [
+          "N"
+        ],
+        "18": [
+          "N"
+        ],
+        "19": [
+          "N"
+        ],
+        "31": [
+          "N"
+        ]
+      },
+      "additional_reset_activity_through_network": {
+        "17": [
+          "N"
+        ],
+        "18": [
+          "N"
+        ],
+        "19": [
+          "N"
+        ],
+        "31": [
+          "N"
+        ]
+      },
+      "repeated_RBCP_TCP_after_PMA": true,
+      "rx_over_ref_before_after_PMA": [
+        0.3997289568077177,
+        0.40001260826563634
+      ],
+      "relative_frequency_change_percent": 0.07096094818446197
+    },
+    {
+      "trial": 3,
+      "cold_success": false,
+      "native_fresh_error_words": 71,
+      "frequency": {
+        "native": {
+          "nominal_ref_MHz": {
+            "mean": 156.24595827941206,
+            "min": 156.24595574772894,
+            "max": 156.24596150745458
+          },
+          "nominal_rx_MHz": {
+            "mean": 62.456029051492195,
+            "min": 62.45602371886124,
+            "max": 62.45603316708536
+          },
+          "rx_over_ref": {
+            "mean": 0.39972892572237356,
+            "min": 0.3997288976589052,
+            "max": 0.39972895101636835
+          }
+        },
+        "mode1": {
+          "nominal_ref_MHz": {
+            "mean": 156.24595833228196,
+            "min": 156.2459553514366,
+            "max": 156.24596112094974
+          },
+          "nominal_rx_MHz": {
+            "mean": 62.45603294079286,
+            "min": 62.456028418204724,
+            "max": 62.456036533265596
+          },
+          "rx_over_ref": {
+            "mean": 0.3997289504792832,
+            "min": 0.3997289143996344,
+            "max": 0.39972897250650546
+          }
+        },
+        "pma": {
+          "nominal_ref_MHz": {
+            "mean": 156.24596097259487,
+            "min": 156.2459574649859,
+            "max": 156.24596419419493
+          },
+          "nominal_rx_MHz": {
+            "mean": 62.50036184626243,
+            "min": 62.50035973397234,
+            "max": 62.50036443383449
+          },
+          "rx_over_ref": {
+            "mean": 0.4000126560533929,
+            "min": 0.4000126379548576,
+            "max": 0.40001267014258407
+          }
+        },
+        "mode0": {
+          "nominal_ref_MHz": {
+            "mean": 156.24596077643247,
+            "min": 156.24595857125786,
+            "max": 156.245963948212
+          },
+          "nominal_rx_MHz": {
+            "mean": 62.5003609745029,
+            "min": 62.500358020065775,
+            "max": 62.500363641443826
+          },
+          "rx_over_ref": {
+            "mean": 0.40001265097619226,
+            "min": 0.4000126239470841,
+            "max": 0.4000126731824243
+          }
+        }
+      },
+      "comparable_failed_state_PMA_recovery": true,
+      "fresh_errors_native_mode1_PMA_mode0": [
+        71,
+        126,
+        0,
+        0
+      ],
+      "PMA_control_observations_valid": true,
+      "PMA_marker_RXcycle_counts": [
+        0,
+        0,
+        16,
+        0
+      ],
+      "PMA_reset_done_low_samples": 75,
+      "PMA_fresh_reset_done_high_samples": 256,
+      "additional_reset_activity": {
+        "17": [
+          "N"
+        ],
+        "18": [
+          "N"
+        ],
+        "19": [
+          "N"
+        ],
+        "31": [
+          "N"
+        ]
+      },
+      "additional_reset_activity_through_network": {
+        "17": [
+          "N"
+        ],
+        "18": [
+          "N"
+        ],
+        "19": [
+          "N"
+        ],
+        "31": [
+          "N"
+        ]
+      },
+      "repeated_RBCP_TCP_after_PMA": true,
+      "rx_over_ref_before_after_PMA": [
+        0.3997289504792832,
+        0.4000126560533929
+      ],
+      "relative_frequency_change_percent": 0.07097448752950708
+    }
+  ],
+  "comparable_failed_states": 3,
+  "source_sha256": {
+    "rootcause-f104-frequency-day1-freq16-1-nativefreq.console.frequency.json": "2a5a62c726e2f286e07f3f94579e068ac91adecb056254fd1022710eb6a453bd",
+    "flash_firmware.py": "712a49008ce6434b9407e4a0bb332b528fd4b316d9271b7e1e1b99c5f67af43c",
+    "rootcause-f104-frequency-day1-freq16r2-2-native.json": "5c37e88ae015f16278e2246fab456f1573994b28ef18678888a3926546a943ae",
+    "day1-frequency-capture-v14-review.json": "a20132a8e4708910a98083ec7ce6e168ff5ced2f8127bf09bff3959fd29add2b",
+    "rootcause-f104-frequency-day1-freq16r2-1-pmafreq.json": "83c0765a833a89b0f586a83ed24230a62161de9775fc0fcda7675b76042364cc",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode1.console.decoded.json": "7f2e141ffacce5473276327d43efefc33cbee7a475f218b8b70498639a25642a",
+    "rootcause-f104-frequency-day1-freq16r2-2-pmafreq.console.frequency.json": "db5947cb82cb577a3a3c212a53052f91cec277568375d1d00e4bb2abbe6245b0",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode1freq.json": "d5b6c90c8e07c71d71da9aac87bda2e48f10e1dcd20870d49e5ce22f2bb5feb9",
+    "rootcause-f104-frequency-day1-freq16r2-1-singlepma.json": "4e73fce0fd49f0fcd25432feb9ad172a04ffdc12d6e5f969fa2d3ac1d2cc8f76",
+    "rootcause-f104-frequency-day1-freq16r2-2-nativefreq.json": "b5e3e2732edd7b26f538c050331c5258f09e23ddbb1fff5bc73e1978ca8fa71a",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode1freq.console.frequency.json": "3ed755cf642f852c596057c771833d564d8193e9d91e2f96324a5b6d7cd1ee49",
+    "day1-frequency16-resume-v2.json": "0e06b1cebfea6daf998f8af5472325794049c36227aa8f254c6c291b26a15587",
+    "rootcause-f104-frequency-day1-freq16r2-3-nativefreq.json": "de21c20d3cebab30afaee1e6bbed2e1ca8b7879424b95db9d8171cf3bc9966d9",
+    "flash-day1-freq16-v14-20261018-005759-result.json": "3c947ed4332c46047a0414838100018c313b2bf31ae86ce7223d8aefe2b5a84e",
+    "rootcause-f104-frequency-day1-freq16-1-nativefreq.console.txt": "26d65553d17c5654bb7d7894b3dfd13b4ea93efa20b9006d4358d956b361ff13",
+    "rootcause-f104-frequency-day1-freq16-1-native.console.txt": "9343605c63f3038443a38336ea84b8ac426af283c25b52a299043c048ee99372",
+    "rootcause-f104-frequency-day1-freq16r2-3-native.json": "d03f801d466b759fb2ba102e454a4f8d035e34f249c4275fb5b42bb00976b687",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode0freq.console.frequency.json": "ff49d83218f848705f3e67d24f07806561394894198c15a5a1cc3d7dac98abfa",
+    "rootcause-f104-frequency-day1-freq16r2-2-native.console.decoded.json": "e1fb604a131025a270df1786655508014d04a520d4ae096561cf10e96857d1da",
+    "rootcause-f104-frequency-day1-freq16r2-3-singlepma.json": "fb4e7619270bb0961f64db77d21dd553e204246506be72b7739e80c914ee2195",
+    "rootcause-f104-frequency-day1-freq16r2-3-nativefreq.console.frequency.json": "e61b80660afba532a2145864b205c9382a9a57f08eea1fd35877eafc54e127aa",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode0.json": "b74838b69d41b4aa5fc0c1dae44f4cccdefbb3c21eba567659979d08075197de",
+    "<workspace>\\analyze_day1_frequency_v2.py": "4a2e706796e3a8f17f2fc921e9cb99c8271a4ad90f940887e7636137d4b1253b",
+    "day1-frequency16r2-cold3.json": "d1f17aca5999aa5ea1d369dfaf01b2567d64b4681abd3e7143e2e283c36ebdcd",
+    "rootcause-f104-frequency-day1-freq16r2-3-nativefreq.console.txt": "17b642d499ecf1bc08639a8bd9d0ded819ff19fd8c79c84f70a1e473b9648c55",
+    "rootcause-f104-frequency-day1-freq16r2-1-singlepma.console.decoded.json": "9ef8461b427b89e9d1afc4904af721c32608184dda856da5144c4ade9724a371",
+    "rootcause-f104-frequency-day1-freq16r2-2-native.console.txt": "66398dde96d294bbb3551cccca408b5f5d0bf4c38d9009d29d7d7bf410770d4d",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode1.console.decoded.json": "e6210440af7dcb534fc796c9f83c1828d9e94df1df595df13e1e7ef977198148",
+    "day1-frequency16r2-cold2.json": "dc54d2fea89574231747067d2d2a21e1a85edf5d0447262a9e0269ab2435aa92",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode1.json": "0719d1200ec72dfd6612133015cd1067f29f8bb4121cae12b503e17df724026d",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode0.json": "5791487ef3af6f75613630cd75b43ab932349f147e20bbf30a0d40f4ff8249f4",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode0.console.txt": "0ab5ba13e42724886e85b5fd502426b13d02f985340d48951f074442855d7f73",
+    "dual_board_cold.py": "db4144e5e4655c5e8d511d9a3c58e7f53ffed1ad6aa9c242e0933ac6f756572d",
+    "rootcause-f104-frequency-day1-freq16r2-2-nativefreq.console.txt": "1298f0cdfda56992e846657870d0958b38cc32ad723f0e583758c88728d70a89",
+    "rootcause-f104-frequency-day1-freq16r2-2-pmafreq.json": "3c901bfde1aac19166c811c6823f36f6ae8849f34ac3f09c5f63e0802aec6055",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode1freq.console.frequency.json": "6e177fe9e505c4c67f108a574b2d2f16e19d4cedcf4448cbfba28a3b1aefa318",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode1freq.console.txt": "e4bd782005eab3cd65b94194723a4321204f6cb230cd9f230b4dc42ee88ea362",
+    "rootcause-f104-frequency-day1-freq16r2-3-native.console.decoded.json": "a2ba5249e1ff8646a8e6da2f4063046c66f5ebab10b4194f2c54e633f2d595c2",
+    "analyze_day1_frequency.py": "386d6dbeb5783cd03fc1f528cb88d6e32a6dcb93725c881a436016fc503d7ae5",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode1.json": "298c45cdb0cb6ad053f644f641b7f6945c89a5f611f3019a15123e763e5e0489",
+    "analyze_day1_frequency_v2.py": "4a2e706796e3a8f17f2fc921e9cb99c8271a4ad90f940887e7636137d4b1253b",
+    "rootcause-f104-frequency-action.tcl": "e380c1dc5c5759e9f70f841d4583425a273a9df1fced9a80c8048ff57b7f164c",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode0freq.json": "4cd123845d190b99da958a23ece525c0fc7f9cd0cfe921d36ec6b397974014f9",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode0.console.decoded.json": "3e62669104185c84d221551d5634d12b7bc068999cd691a1673cdcd1bcf5a4f7",
+    "rootcause-f104-frequency-day1-freq16-1-native.json": "2044bdc29e585f61b3703b44095352ceddb1f4d189721bbde07d3a7690e51582",
+    "<workspace>\\run_day1_frequency16_resume_v2.py": "4b4813ec769b462c7152f0fbb589284c9c23de3f37aa56911802cc604ed552b7",
+    "decode_rootcause_f104.py": "8dc38114fb1e3760152f3a30c1d68928ff24fa7584173ffa0a29f2a9821832f5",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode1.console.txt": "0ebd6215caf8606c786e5a3fc02328cc147a49265aa44f8b332c2380bfe23fba",
+    "rootcause-f104-frequency-day1-freq16r2-1-pmafreq.console.frequency.json": "6008543f883c8583061567676202cca1cc10fc3e1b9abe170622f6eb74ee1dcf",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode0freq.console.frequency.json": "7a788dc1ac67cfab28c6fd73bfc54bfbcd0382a7373649a885496e59dd06edd6",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode0.console.decoded.json": "ea1129732fe20953c0a23624091cd6538c25d2afad44bb9f2786c8c832480e94",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode1freq.console.txt": "2e3ffec942b749d29e9e528d82b0922b2a2888e77b3de9191d2e6f1d356a9ae4",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode0.json": "f1ee7526138df1bcb459133e46b9d691c5d45d6bcea5d22e8d05447c16624210",
+    "<workspace>\\run_rootcause_f104_frequency.py": "0f85e8d4b6c08486378d5d21ec3b8809e3c29e183cd6941f5ab02e204ab3f06a",
+    "rootcause-f104-frequency-day1-freq16-1-nativefreq.json": "56e38e2092ed0e51b91ec905dccc4474edbe56496c93f5e97dceb195862ab454",
+    "rootcause-f104-frequency-day1-freq16r2-3-pmafreq.console.frequency.json": "fade2301351c4f27818edc96f0d0bd0f3dc106d9254dec6ccf34415d2a2536d0",
+    "rootcause-f104-frequency-day1-freq16r2-2-singlepma.json": "e7cd7c074c21b306bbed89474f103fc417e06be1d232ce32bcc5b96d9929fa50",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode1.console.txt": "0f30f8a2e13d154cdcbab61153218c03376ae94666e338ef348a4dddc01b9757",
+    "rootcause-f104-frequency-day1-freq16r2-3-pmafreq.json": "ffb6062950301d17d963a72dc84ac9566e73bad7497890f2313882f50e748126",
+    "rootcause-f104-frequency-day1-freq16-1-native.console.decoded.json": "6e801cc68f860a0adeaa0a04b05c1b0cf86db6be173f6bdb674e72a1cd69a811",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode0freq.json": "e351f4cdf9f70c264cd3ed91492eb79cde0e72ed38ad9387178d6e6b728cc145",
+    "rootcause-f104-frequency-day1-freq16r2-2-nativefreq.console.frequency.json": "20cfa52fdac5af1abc980fe4fc68c5390efa7a9b17fec5842a39d0b875f7d531",
+    "rootcause-f104-frequency-day1-freq16r2-3-singlepma.console.txt": "deb22fff0373408baed02d81b029b1ec384852328379c29b8aed7f62d39598f2",
+    "rootcause-f104-frequency-day1-freq16r2-1-pmafreq.console.txt": "d6173a3d6565b8a1c1bd46338db86dc6362446ceebec09e41238386c15c98b28",
+    "rootcause-f104-frequency-day1-freq16r2-3-pmafreq.console.txt": "becc30ce7389d1b3014d3ba5b19e5adb040cbc089b2fde6d7b24c655cb891d35",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode0.console.decoded.json": "3bce5ee072bc6b7e6434d47320f72402f00e2445c7895bae891cba6e84d288a6",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode0freq.console.txt": "5af1b62a645d7c2dea7d0678c46e7dd7ba98594baefd3b15e199ec42c4a4a56b",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode1freq.json": "69699a25cc2d732c30c0238281b23c0562a88de36fdcd4248b18f54a2d9ab775",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode1freq.json": "414c03941c24b66e317c6ce1ae41a4ce0ad069389dbbd51d6445292040dc3fd9",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode0freq.console.txt": "e0e4c65c9180159cb8fbf74556a8ff6b9c2d5a4a878bf545a00d1effb6e48314",
+    "day1-frequency16.json": "4f4d44e398bd490311d5a04a06eeb7d17c284af24dc6f46c791dee094e9502da",
+    "<workspace>\\review_day1_frequency16.py": "e9b6e755f8fb628ea63af3457b0efa34c0633ac8bc6ccb94073e9e0f0acc7320",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode1.console.txt": "580a3c32dd022160dd2f9ab0da5cfcf88e460e02b7ef18488278b1515c573e9b",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode1.console.decoded.json": "cbfee10704e32b3139dc5c999fec3a4d421a5d3878d4f6ee901d074ca6904373",
+    "rootcause-f104-frequency-day1-freq16r2-2-singlepma.console.txt": "8cc5fb5612c6f207b45b2c41578eb00bc4abe5d3681acddf22d18e305ba6fea9",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode1freq.console.txt": "e70cecb80e72d81220112fb7e791e6903b5d5a75037bed6fe0992b0a152817f4",
+    "attach-rootcause-f104.tcl": "cddfc0dfd8c20b02c8a28353ba29d41dec9397ffd8d1e8d60934d97b6ba92aa9",
+    "rootcause-f104-frequency-day1-freq16r2-3-singlepma.console.decoded.json": "adb70c2b88540f424370e1c8903ae7739fd60ac8b530fd26f06095447e2962e6",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode0freq.json": "08b5e0980cf555f2d3ad79467013f5cfe005096fdd6a8d8ef12c95cd0fdf6e66",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode0.console.txt": "40546810fef666aa8822c73c55a55880049c66ab68c7546e109a8244889a37d9",
+    "run_rootcause_f104_frequency.py": "0f85e8d4b6c08486378d5d21ec3b8809e3c29e183cd6941f5ab02e204ab3f06a",
+    "rootcause-f104-frequency-day1-freq16r2-1-singlepma.console.txt": "eacdedccf15df5c87973d9abc9f36323eac1bbb06a927a746cbe203a22b650b3",
+    "rootcause-f104-frequency-day1-freq16r2-2-pmafreq.console.txt": "f9744ed293b1f72ed2bf85bd4880e3a0ac0965aeefb74dea87fb370a4c110ea7",
+    "rootcause-f104-frequency-day1-freq16r2-3-native.console.txt": "3731ba0ed927ef1ef5e008a1e252df6141d522f477981fb0a7284e103e3e29e1",
+    "day1-frequency16-cold1.json": "42309524d06bf8e0a9bf6b15169d3837c016bb7305836c773c2aec71001007f1",
+    "<workspace>\\day1-frequency-capture-v14\\rootcause-f104-frequency.mcs": "0b0f01749aab9110a80826c68b775d8cdf21206db66e667ecf2d3fdede014863",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode1.json": "b5d64055e1370bac1fc59ccdf99cddf215c3d76bc3cebe64d6e872346a6f05c5",
+    "rootcause-read-sysmon.tcl": "2e96679b943e77c33ac10a2ae3419974f2e31b4863413d883ff48adba2205df3",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode0freq.console.txt": "9825db25067dd693bab2ec0734455ab5e346f7b47e779258cb60da217d67ff6c",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode0freq.console.frequency.json": "b7a99811ac99ce527d4a85959d4e154e455bfcfb54cc5ee4fdbb0b8ebb3586d2",
+    "day1-frequency-capture-v14\\manifest.json": "55641b38a9951ce6a7fdad8f7a6de2f14ed9feb95a43a12d4cfc1925205801f0",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode1freq.console.frequency.json": "00f9f89a001e2a59af70bc7d377783760e7d849c3d236bdd8b6b5130b5d99cc1",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode0.console.txt": "cc0b236e92105377aaf3f582cdc5b510a01d8cb7c9dae77832a530f683968c69",
+    "rootcause-f104-frequency-day1-freq16r2-2-singlepma.console.decoded.json": "7ca427f20fcd53c1f213bcdc86900a133b09fb5f6e28dce37460bc477f4d46b9"
+  },
+  "limits": [
+    "Only comparable failed-state/PMA-recovery rows support a before/after inference; retain all other outcomes",
+    "No failed states means observer may mask failure; do not claim root cause resolved",
+    "Clock frequency averages, not analog jitter, startup transient waveforms or TDC quality",
+    "Gray synchronization latency and nominal SYS200MHz calibration; RX/REF ratio cancels common SYS scaling",
+    "Three cold trials, one problem-board/power configuration; no population reliability claim"
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "created": "2026-10-18T02:10:46.015432",
+  "phase": "diagnostic_findings_frozen",
+  "mechanism_narrowed": "Receiver recovered-clock acquisition/initialization state in GTX RX/PMA/CDR region; initiating physical component/individual difference unresolved.",
+  "direct_observations": {
+    "same_image_frequency_comparison": {
+      "problem16_failed_mode1_RX_MHz": [
+        62.45605846172509,
+        62.45603479795883,
+        62.45603294079286
+      ],
+      "problem16_after_PMA_RX_MHz": [
+        62.50035501682489,
+        62.5003541252255,
+        62.50036184626243
+      ],
+      "healthy17_native_RX_MHz": [
+        62.50204572514196,
+        62.50205540964185,
+        62.50206048559559
+      ],
+      "problem16_failed_mode1_RX_REF_ratio": [
+        0.39972912056439547,
+        0.3997289568077177,
+        0.3997289504792832
+      ],
+      "problem16_after_PMA_RX_REF_ratio": [
+        0.4000126219967425,
+        0.40001260826563634,
+        0.4000126560533929
+      ],
+      "healthy17_native_RX_REF_ratio": [
+        0.4000136338486693,
+        0.40001366671973326,
+        0.40001368450749736
+      ]
+    },
+    "problem16_valid_failedstate_PMA_recovery_cases": 3,
+    "problem16_fresh_errors_native_mode1_PMA_mode0": [
+      [
+        103,
+        104,
+        0,
+        0
+      ],
+      [
+        112,
+        109,
+        0,
+        0
+      ],
+      [
+        71,
+        126,
+        0,
+        0
+      ]
+    ],
+    "RX_REF_relative_change_ppm": [
+      709.2338730456671,
+      709.6094818446197,
+      709.7448752950708
+    ],
+    "other_reset_activity": "GT/TX/CPLL/PCS observed quiet through PMA repair and repeated network confirmation inall3; CPLLLOCK/TXdone stable; eachPMA16RXcycles accepted withRESETDONE low then256freshhigh.",
+    "early_RX_hold_matched_family": {
+      "bypass": {
+        "successes": 0,
+        "trials": 3
+      },
+      "early3ms": {
+        "successes": 3,
+        "trials": 3
+      },
+      "continuous": {
+        "successes": 3,
+        "trials": 3
+      },
+      "reverse": {
+        "successes": 0,
+        "trials": 3
+      }
+    },
+    "GT_hold_vs_dummyCDRtimer_factor": {
+      "bypass": {
+        "successes": 0,
+        "trials": 3
+      },
+      "gtonly": {
+        "successes": 3,
+        "trials": 3
+      },
+      "timeronly": {
+        "successes": 0,
+        "trials": 3
+      },
+      "both": {
+        "successes": 3,
+        "trials": 3
+      },
+      "softleadboth": {
+        "successes": 0,
+        "trials": 3
+      },
+      "delayedboth": {
+        "successes": 0,
+        "trials": 3
+      },
+      "qualifiedboth": {
+        "successes": 0,
+        "trials": 3
+      },
+      "reverse": {
+        "successes": 0,
+        "trials": 3
+      }
+    },
+    "initial_CPLL_sequence_family": {
+      "bypass": {
+        "successes": 0,
+        "trials": 3
+      },
+      "clockready": {
+        "successes": 0,
+        "trials": 3
+      },
+      "rxhold": {
+        "successes": 0,
+        "trials": 3
+      },
+      "reverse": {
+        "successes": 0,
+        "trials": 3
+      }
+    }
+  },
+  "inference": "PMA-only reset restores a near-normal recovered-clock ratio and valid reception without a new CPLL/TX/PCS reset inthese3failedstates. InitialRXhold prevents the cold failure inmatched diagnostic families. This supports receiver clock acquisition/initialization rather than a network-stack-only persistent failure.",
+  "minimal_candidate": {
+    "functional_assignment_changes": 2,
+    "changes": [
+      "gtrxreset_i declaration INIT0->1",
+      "SOFT_RESET branch gtrxreset_i0->1"
+    ],
+    "review_patch": "candidate-f304-minimal-hdl.patch",
+    "firmware": "0x60C4F304",
+    "scope": "Native RX startup FSM initial/soft reset levels only. Runtime tag/build hook extra repository scaffolding. No diagnostic observer incandidate; candidate cold/soak validation recorded separately."
+  },
+  "limits": [
+    "No unique intrinsic FPGA/analog component fault proven; boards use different supply/cable/EEPROM paths.",
+    "Meanfrequency observation isnot analogjitter or initial reference/power waveform measurement; directreservedCDRreset inputs notused.",
+    "DummyCDRstable flag is elapsedwait, not physicalCDRlock.",
+    "Initial3ms hold3/3 means continuous~2.147s hold isnot demonstrated necessary; counter-only and delayedCPLL interventions alone didnotfixthese cases.",
+    "Physical latecable insertion not automated/tested; current switch hasno available portcontrol.",
+    "TDCprecision and wireBER notqualified by network sampling."
+  ],
+  "next_physical_discriminators": [
+    "Compatible matched power/cable/switch-port swap to determine whatthe individual difference follows.",
+    "MeasureGTreference clock andMGTrail startup waveforms together withreset timing ongood/bad starts.",
+    "If available, controllable switch port or serial-input enable timing to test incoming-data timing withoutchangingboard power."
+  ],
+  "source_sha256": {
+    "day1-frequency16-reviewed-outcome.json": "05ee8270e8e394b88f480cf7926a94b957df3bfc48e126b931215a84f703e1c7",
+    "day1-frequency17-comparison-evidence.json": "abdecee1dc4d8565e34b0182ed6e5035b200fd60febfff59d9c8721f4cd2b3a4",
+    "day1-earlypulse-matrix-evidence.json": "714d03cb74f61a7873fda7cfe75306c7875f6db77e959708a7f9f9534fa2a67c",
+    "day1-timerfactor-matrix-evidence.json": "626e39e300280a1434462f0753fcfe0a2f658637cb9f23b7a9bc9bfdf0f3ec88",
+    "day1-initialcpll-matrix-evidence.json": "f531164184f0cc4a4136b3ab70d61fe3e8a32b1d1faa98a59d812e23d52da870",
+    "day1-singlepma-summary.json": "1669837e2584dd41354b91201b59fc169663f7fe21279418d46f682d7021aaa8",
+    "day1-singlepma-packet-evidence.json": "c8cec727d3a70075e54a3779dff3a2cfbbff7a1b7c4508d707aa5839e69c396f",
+    "day1-poweron-reset-path-evidence.json": "38c607e9b063aed58a7ce5dbeb567b29e0a925ae00a3c636a31cbfa7ef3d0b62",
+    "day1-frequency-v14-physical-review.json": "74b16aee4284319b07ed1fddeecc41928c63ca91f2718164c868ce5326ed5f3f",
+    "candidate-f304-minimal-hdl-diff.json": "10dec073efbdddeff972dbf5da08f7ef35029f337b048e979d749bf9c1a4d7c9",
+    "candidate-f304-minimal-hdl.patch": "8739001a0fea20060e0bf732737d185c4e755e7e672cf00fcbf01a1554e66046",
+    "lrtdc-minimal-inithold/build/minimal-inithold-f304/manifest.json": "c3143aeb4402f9599b2095aad4a4d8d3bdc112c94bdc9eeda7163dafb0f5c48a",
+    "day1-recovered-clock-inventory.txt": "ae1be43181be7a4eb2d824a58b242978aff72ec87afa6a7be9346743511bc734",
+    "experiments/reference/ug476-7series-extracted-24h.txt": "aa83d943632949e2f6a2444c84bfd3c684eca2d6f291f715526afc88ad751788"
+  }
+}

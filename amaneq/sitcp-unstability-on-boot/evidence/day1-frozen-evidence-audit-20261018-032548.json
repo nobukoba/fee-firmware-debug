@@ -1,0 +1,267 @@
+{
+  "created": "2026-10-18T03:25:48.332746",
+  "scope": "Frozen diagnostic and cold-validation source hashes only; does not certify live soak, restoration, or physical component cause.",
+  "reports": [
+    {
+      "report": "investigation24h-diagnostic-findings.json",
+      "sha256": "c9fe945204b9365f7e21a31816431c95e5b16789b079c50f07f9ce93aac094e5",
+      "checks": [
+        {
+          "source": "day1-frequency16-reviewed-outcome.json",
+          "expected": "05ee8270e8e394b88f480cf7926a94b957df3bfc48e126b931215a84f703e1c7",
+          "actual": "05ee8270e8e394b88f480cf7926a94b957df3bfc48e126b931215a84f703e1c7",
+          "match": true
+        },
+        {
+          "source": "day1-frequency17-comparison-evidence.json",
+          "expected": "abdecee1dc4d8565e34b0182ed6e5035b200fd60febfff59d9c8721f4cd2b3a4",
+          "actual": "abdecee1dc4d8565e34b0182ed6e5035b200fd60febfff59d9c8721f4cd2b3a4",
+          "match": true
+        },
+        {
+          "source": "day1-earlypulse-matrix-evidence.json",
+          "expected": "714d03cb74f61a7873fda7cfe75306c7875f6db77e959708a7f9f9534fa2a67c",
+          "actual": "714d03cb74f61a7873fda7cfe75306c7875f6db77e959708a7f9f9534fa2a67c",
+          "match": true
+        },
+        {
+          "source": "day1-timerfactor-matrix-evidence.json",
+          "expected": "626e39e300280a1434462f0753fcfe0a2f658637cb9f23b7a9bc9bfdf0f3ec88",
+          "actual": "626e39e300280a1434462f0753fcfe0a2f658637cb9f23b7a9bc9bfdf0f3ec88",
+          "match": true
+        },
+        {
+          "source": "day1-initialcpll-matrix-evidence.json",
+          "expected": "f531164184f0cc4a4136b3ab70d61fe3e8a32b1d1faa98a59d812e23d52da870",
+          "actual": "f531164184f0cc4a4136b3ab70d61fe3e8a32b1d1faa98a59d812e23d52da870",
+          "match": true
+        },
+        {
+          "source": "day1-singlepma-summary.json",
+          "expected": "1669837e2584dd41354b91201b59fc169663f7fe21279418d46f682d7021aaa8",
+          "actual": "1669837e2584dd41354b91201b59fc169663f7fe21279418d46f682d7021aaa8",
+          "match": true
+        },
+        {
+          "source": "day1-singlepma-packet-evidence.json",
+          "expected": "c8cec727d3a70075e54a3779dff3a2cfbbff7a1b7c4508d707aa5839e69c396f",
+          "actual": "c8cec727d3a70075e54a3779dff3a2cfbbff7a1b7c4508d707aa5839e69c396f",
+          "match": true
+        },
+        {
+          "source": "day1-poweron-reset-path-evidence.json",
+          "expected": "38c607e9b063aed58a7ce5dbeb567b29e0a925ae00a3c636a31cbfa7ef3d0b62",
+          "actual": "38c607e9b063aed58a7ce5dbeb567b29e0a925ae00a3c636a31cbfa7ef3d0b62",
+          "match": true
+        },
+        {
+          "source": "day1-frequency-v14-physical-review.json",
+          "expected": "74b16aee4284319b07ed1fddeecc41928c63ca91f2718164c868ce5326ed5f3f",
+          "actual": "74b16aee4284319b07ed1fddeecc41928c63ca91f2718164c868ce5326ed5f3f",
+          "match": true
+        },
+        {
+          "source": "candidate-f304-minimal-hdl-diff.json",
+          "expected": "10dec073efbdddeff972dbf5da08f7ef35029f337b048e979d749bf9c1a4d7c9",
+          "actual": "10dec073efbdddeff972dbf5da08f7ef35029f337b048e979d749bf9c1a4d7c9",
+          "match": true
+        },
+        {
+          "source": "candidate-f304-minimal-hdl.patch",
+          "expected": "8739001a0fea20060e0bf732737d185c4e755e7e672cf00fcbf01a1554e66046",
+          "actual": "8739001a0fea20060e0bf732737d185c4e755e7e672cf00fcbf01a1554e66046",
+          "match": true
+        },
+        {
+          "source": "lrtdc-minimal-inithold/build/minimal-inithold-f304/manifest.json",
+          "expected": "c3143aeb4402f9599b2095aad4a4d8d3bdc112c94bdc9eeda7163dafb0f5c48a",
+          "actual": "c3143aeb4402f9599b2095aad4a4d8d3bdc112c94bdc9eeda7163dafb0f5c48a",
+          "match": true
+        },
+        {
+          "source": "day1-recovered-clock-inventory.txt",
+          "expected": "ae1be43181be7a4eb2d824a58b242978aff72ec87afa6a7be9346743511bc734",
+          "actual": "ae1be43181be7a4eb2d824a58b242978aff72ec87afa6a7be9346743511bc734",
+          "match": true
+        },
+        {
+          "source": "experiments/reference/ug476-7series-extracted-24h.txt",
+          "expected": "aa83d943632949e2f6a2444c84bfd3c684eca2d6f291f715526afc88ad751788",
+          "actual": "aa83d943632949e2f6a2444c84bfd3c684eca2d6f291f715526afc88ad751788",
+          "match": true
+        }
+      ],
+      "all_match": true
+    },
+    {
+      "report": "day1-f304-validation-evidence.json",
+      "sha256": "38fba5b74347aa098433aeb181d07f604d062ed46aacaf1a10c0dd996cd172ca",
+      "checks": [
+        {
+          "source": "eeprom-dual17-before.bin",
+          "expected": "0657876d036a1b9c1ba34903bbf577d490741c851af11916d91efed7f1a1521e",
+          "actual": "0657876d036a1b9c1ba34903bbf577d490741c851af11916d91efed7f1a1521e",
+          "match": true
+        },
+        {
+          "source": "eeprom-before-startup.bin",
+          "expected": "341c5c207c91e51c634ba3e3090fea4689e4e5ae07725e4996a3e568b504c887",
+          "actual": "341c5c207c91e51c634ba3e3090fea4689e4e5ae07725e4996a3e568b504c887",
+          "match": true
+        },
+        {
+          "source": "day1-f304-qual-17-off60.json",
+          "expected": "1a75021a34062123ec1b80907051ae429455d50d729f90d6036c4a0018b97096",
+          "actual": "1a75021a34062123ec1b80907051ae429455d50d729f90d6036c4a0018b97096",
+          "match": true
+        },
+        {
+          "source": "day1-f304-qual-16-extra7.json",
+          "expected": "63060ae7246c58ab4b6a7d93c61c0b3c610adade3224b14a1914dfefd042ba96",
+          "actual": "63060ae7246c58ab4b6a7d93c61c0b3c610adade3224b14a1914dfefd042ba96",
+          "match": true
+        },
+        {
+          "source": "day1-f304-reinstall17.json",
+          "expected": "80222de98b9cf3bfbc86720685d1e83105ac9cdd009d41c828e738bc33ff3116",
+          "actual": "80222de98b9cf3bfbc86720685d1e83105ac9cdd009d41c828e738bc33ff3116",
+          "match": true
+        },
+        {
+          "source": "day1-candidate-f304-16.json",
+          "expected": "0e808fbd500df67ff4714b55687da0af2cb3c7d970ec6bde523136ba5f8d6932",
+          "actual": "0e808fbd500df67ff4714b55687da0af2cb3c7d970ec6bde523136ba5f8d6932",
+          "match": true
+        },
+        {
+          "source": "day1-f304-reinstall16.json",
+          "expected": "9bf7bbf4a082098b31b48aca96f617b4035b674e4bc2c193ed19990de5bd1a98",
+          "actual": "9bf7bbf4a082098b31b48aca96f617b4035b674e4bc2c193ed19990de5bd1a98",
+          "match": true
+        },
+        {
+          "source": "day1-f304-reinstall17-cold3.json",
+          "expected": "bc98f9fe079cfd35a1ed6e5f2fa8504b6eff5a995400766575d358e494195a8d",
+          "actual": "bc98f9fe079cfd35a1ed6e5f2fa8504b6eff5a995400766575d358e494195a8d",
+          "match": true
+        },
+        {
+          "source": "dual_board_cold.py",
+          "expected": "db4144e5e4655c5e8d511d9a3c58e7f53ffed1ad6aa9c242e0933ac6f756572d",
+          "actual": "db4144e5e4655c5e8d511d9a3c58e7f53ffed1ad6aa9c242e0933ac6f756572d",
+          "match": true
+        },
+        {
+          "source": "day1-f304-qual-17-off600.json",
+          "expected": "38b9bf3cd0bbb0dc1bed526d58fe0cfa74ca79cbe2459f3ac7ffc86dff571161",
+          "actual": "38b9bf3cd0bbb0dc1bed526d58fe0cfa74ca79cbe2459f3ac7ffc86dff571161",
+          "match": true
+        },
+        {
+          "source": "day1-f304-qual-16-off60.json",
+          "expected": "bb046fe0a42a9f1586ca4d7d8d82e69cda2a2cae6889b5f2e6bf52f766ce7afa",
+          "actual": "bb046fe0a42a9f1586ca4d7d8d82e69cda2a2cae6889b5f2e6bf52f766ce7afa",
+          "match": true
+        },
+        {
+          "source": "dual_board_cold_varied.py",
+          "expected": "1b5fa011743443af907e058675a8c110981534b356b7f42c058fafcf7bf1a9d9",
+          "actual": "1b5fa011743443af907e058675a8c110981534b356b7f42c058fafcf7bf1a9d9",
+          "match": true
+        },
+        {
+          "source": "day1-candidate-f304-17-cold3.json",
+          "expected": "90a3c65cf6a58204daa12c4ae50fc0a404dbcba9e86416aff9106469e918dc1c",
+          "actual": "90a3c65cf6a58204daa12c4ae50fc0a404dbcba9e86416aff9106469e918dc1c",
+          "match": true
+        },
+        {
+          "source": "day1-candidate-f304-17.json",
+          "expected": "198f1e72801a0c4652c9fe78f078fa9260115e84fd48d16624e0767f86097c32",
+          "actual": "198f1e72801a0c4652c9fe78f078fa9260115e84fd48d16624e0767f86097c32",
+          "match": true
+        },
+        {
+          "source": "<workspace>\\summarize_day1_f304_validation.py",
+          "expected": "9df7fd64cdf30b35b689c3e429973a7ab0ea48296bffe7da0846c42ad9b6a83c",
+          "actual": "9df7fd64cdf30b35b689c3e429973a7ab0ea48296bffe7da0846c42ad9b6a83c",
+          "match": true
+        },
+        {
+          "source": "flash-day1-min-f304-16-20261017-222459-result.json",
+          "expected": "8855072bfc19880158fa156e1e3cea90e2c12ea737bd23c265356270275c37fd",
+          "actual": "8855072bfc19880158fa156e1e3cea90e2c12ea737bd23c265356270275c37fd",
+          "match": true
+        },
+        {
+          "source": "boot_test.py",
+          "expected": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+          "actual": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+          "match": true
+        },
+        {
+          "source": "day1-candidate-f304-16-cold3.json",
+          "expected": "363231644ad6a77c6c9fa289f3bb79a5a71fb71af790fedfa23777f95856bc77",
+          "actual": "363231644ad6a77c6c9fa289f3bb79a5a71fb71af790fedfa23777f95856bc77",
+          "match": true
+        },
+        {
+          "source": "<workspace>\\run_day1_f304_qualification.py",
+          "expected": "f4ec3c39b5ba0771aba018eed409e074774756f9de8df7a41c4582ddfdb67beb",
+          "actual": "f4ec3c39b5ba0771aba018eed409e074774756f9de8df7a41c4582ddfdb67beb",
+          "match": true
+        },
+        {
+          "source": "flash-day1-min-f304-17-20261017-223215-result.json",
+          "expected": "a0e3eca630180ad3a10cf76ad63c34383a9aa9121abdab05cf2637db4a83bb0b",
+          "actual": "a0e3eca630180ad3a10cf76ad63c34383a9aa9121abdab05cf2637db4a83bb0b",
+          "match": true
+        },
+        {
+          "source": "flash-day1-min-f304-re16-20261018-014744-result.json",
+          "expected": "7de0e720488f4d272d1872d9bf480880d61f9cb0e3f319a1691e959390c70489",
+          "actual": "7de0e720488f4d272d1872d9bf480880d61f9cb0e3f319a1691e959390c70489",
+          "match": true
+        },
+        {
+          "source": "day1-f304-qual-16-off600.json",
+          "expected": "2b3ca9a34af7a76ddc71bfe5f69798dd9f695ba4fb2828a464eec8c08a34fefd",
+          "actual": "2b3ca9a34af7a76ddc71bfe5f69798dd9f695ba4fb2828a464eec8c08a34fefd",
+          "match": true
+        },
+        {
+          "source": "network_boot_stress.py",
+          "expected": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+          "actual": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+          "match": true
+        },
+        {
+          "source": "day1-f304-qualification.json",
+          "expected": "c4d1406dfc43f60367e0209f0043f038292adc02eb663c0bf544a57509a86ec1",
+          "actual": "c4d1406dfc43f60367e0209f0043f038292adc02eb663c0bf544a57509a86ec1",
+          "match": true
+        },
+        {
+          "source": "day1-f304-reinstall16-cold3.json",
+          "expected": "4265ed179b054cc925f96b37f4307fd92987eb8a326d5fa6da8a8f83a3aea7a7",
+          "actual": "4265ed179b054cc925f96b37f4307fd92987eb8a326d5fa6da8a8f83a3aea7a7",
+          "match": true
+        },
+        {
+          "source": "flash-day1-min-f304-re17-20261018-014039-result.json",
+          "expected": "64010e3e15cb3643b755e520df503b4cc1f422dbc2ea696fa2c445ae278b9e97",
+          "actual": "64010e3e15cb3643b755e520df503b4cc1f422dbc2ea696fa2c445ae278b9e97",
+          "match": true
+        },
+        {
+          "source": "day1-f304-qual-17-extra7.json",
+          "expected": "047fafaf19c3539be6de9c360537dcc1638d2f7bd1372f31653bb87e9b1d0f5c",
+          "actual": "047fafaf19c3539be6de9c360537dcc1638d2f7bd1372f31653bb87e9b1d0f5c",
+          "match": true
+        }
+      ],
+      "all_match": true
+    }
+  ],
+  "all_match": true
+}

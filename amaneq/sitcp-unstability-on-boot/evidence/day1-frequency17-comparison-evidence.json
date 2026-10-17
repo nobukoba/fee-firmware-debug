@@ -1,0 +1,321 @@
+{
+  "created": "2026-10-18T01:40:18.623438",
+  "phase": "matched_frequency17_control_evidence_frozen",
+  "full_flash_sha256_both": "aa28e6460c8ea944d01e68f2cc896b57399a3ab116a09a6a6fdb80db5dc16bcb",
+  "native17_all3_healthy": true,
+  "trials": [
+    {
+      "trial": 1,
+      "cold_success": true,
+      "fresh_error_words": 0,
+      "fresh_RXRESETDONE_high_samples": 256,
+      "repeated_RBCP_TCP": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F104",
+          "expected_version": "0x60C4F104",
+          "identity_matches": true,
+          "success": true
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F104",
+          "expected_version": "0x60C4F104",
+          "identity_matches": true,
+          "success": true
+        }
+      ],
+      "frequency": {
+        "nominal_ref_MHz": {
+          "mean": 156.24978859792404,
+          "min": 156.2497863752212,
+          "max": 156.24979092737553
+        },
+        "nominal_rx_MHz": {
+          "mean": 62.50204572514196,
+          "min": 62.5020432022831,
+          "max": 62.502049132797595
+        },
+        "rx_over_ref": {
+          "mean": 0.4000136338486693,
+          "min": 0.40001361193663765,
+          "max": 0.4000136560976846
+        }
+      },
+      "healthy_native_control": true
+    },
+    {
+      "trial": 2,
+      "cold_success": true,
+      "fresh_error_words": 0,
+      "fresh_RXRESETDONE_high_samples": 256,
+      "repeated_RBCP_TCP": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F104",
+          "expected_version": "0x60C4F104",
+          "identity_matches": true,
+          "success": true
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F104",
+          "expected_version": "0x60C4F104",
+          "identity_matches": true,
+          "success": true
+        }
+      ],
+      "frequency": {
+        "nominal_ref_MHz": {
+          "mean": 156.24979996854324,
+          "min": 156.24979772681925,
+          "max": 156.24980281013427
+        },
+        "nominal_rx_MHz": {
+          "mean": 62.50205540964185,
+          "min": 62.502052268212694,
+          "max": 62.50205832429684
+        },
+        "rx_over_ref": {
+          "mean": 0.40001366671973326,
+          "min": 0.40001364105776505,
+          "max": 0.4000136840251891
+        }
+      },
+      "healthy_native_control": true
+    },
+    {
+      "trial": 3,
+      "cold_success": true,
+      "fresh_error_words": 0,
+      "fresh_RXRESETDONE_high_samples": 256,
+      "repeated_RBCP_TCP": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F104",
+          "expected_version": "0x60C4F104",
+          "identity_matches": true,
+          "success": true
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F104",
+          "expected_version": "0x60C4F104",
+          "identity_matches": true,
+          "success": true
+        }
+      ],
+      "frequency": {
+        "nominal_ref_MHz": {
+          "mean": 156.24980570989473,
+          "min": 156.2498031284455,
+          "max": 156.24980855173675
+        },
+        "nominal_rx_MHz": {
+          "mean": 62.50206048559559,
+          "min": 62.50205681203657,
+          "max": 62.50206294930579
+        },
+        "rx_over_ref": {
+          "mean": 0.40001368450749736,
+          "min": 0.4000136631813481,
+          "max": 0.40001369847758456
+        }
+      },
+      "healthy_native_control": true
+    }
+  ],
+  "comparison": {
+    "problem16_failed_mode1_RX_MHz": [
+      62.45605846172509,
+      62.45603479795883,
+      62.45603294079286
+    ],
+    "problem16_after_PMA_RX_MHz": [
+      62.50035501682489,
+      62.5003541252255,
+      62.50036184626243
+    ],
+    "healthy17_native_RX_MHz": [
+      62.50204572514196,
+      62.50205540964185,
+      62.50206048559559
+    ],
+    "problem16_failed_mode1_RX_REF_ratio": [
+      0.39972912056439547,
+      0.3997289568077177,
+      0.3997289504792832
+    ],
+    "problem16_after_PMA_RX_REF_ratio": [
+      0.4000126219967425,
+      0.40001260826563634,
+      0.4000126560533929
+    ],
+    "healthy17_native_RX_REF_ratio": [
+      0.4000136338486693,
+      0.40001366671973326,
+      0.40001368450749736
+    ]
+  },
+  "preceding_F304_control17_monitor": {
+    "counts": {
+      "RBCP_checks": 338,
+      "RBCP_pass": 338,
+      "TCP_checks": 34,
+      "TCP_pass": 34,
+      "failures": 0
+    },
+    "first_probe_time": "2026-10-17T22:41:02.091532",
+    "last_probe_time": "2026-10-18T01:29:39.170752",
+    "actual_probe_span_seconds": 10117.079,
+    "reason": "requested_stop",
+    "actual_exit_code": 0
+  },
+  "source_sha256": {
+    "rootcause-f104-frequency-day1-freq16r2-2-singlepma.json": "e7cd7c074c21b306bbed89474f103fc417e06be1d232ce32bcc5b96d9929fa50",
+    "dual_board_cold.py": "db4144e5e4655c5e8d511d9a3c58e7f53ffed1ad6aa9c242e0933ac6f756572d",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode0freq.console.txt": "5af1b62a645d7c2dea7d0678c46e7dd7ba98594baefd3b15e199ec42c4a4a56b",
+    "rootcause-f104-frequency-day1-freq16r2-3-pmafreq.json": "ffb6062950301d17d963a72dc84ac9566e73bad7497890f2313882f50e748126",
+    "rootcause-f104-frequency-day1-freq17-1-native.json": "9b26200773d08c8c0d069998f7099cb9021248ae0e62a8eba8f4c76e319ced07",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode1freq.console.txt": "e4bd782005eab3cd65b94194723a4321204f6cb230cd9f230b4dc42ee88ea362",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode0.console.txt": "40546810fef666aa8822c73c55a55880049c66ab68c7546e109a8244889a37d9",
+    "rootcause-f104-frequency-day1-freq16r2-3-native.console.txt": "3731ba0ed927ef1ef5e008a1e252df6141d522f477981fb0a7284e103e3e29e1",
+    "analyze_day1_frequency_v2.py": "4a2e706796e3a8f17f2fc921e9cb99c8271a4ad90f940887e7636137d4b1253b",
+    "analyze_day1_frequency.py": "386d6dbeb5783cd03fc1f528cb88d6e32a6dcb93725c881a436016fc503d7ae5",
+    "<workspace>\\run_day1_frequency16_resume_v2.py": "4b4813ec769b462c7152f0fbb589284c9c23de3f37aa56911802cc604ed552b7",
+    "rootcause-f104-frequency-day1-freq16r2-3-nativefreq.console.frequency.json": "e61b80660afba532a2145864b205c9382a9a57f08eea1fd35877eafc54e127aa",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode1.json": "0719d1200ec72dfd6612133015cd1067f29f8bb4121cae12b503e17df724026d",
+    "eeprom-dual17-before.bin": "0657876d036a1b9c1ba34903bbf577d490741c851af11916d91efed7f1a1521e",
+    "rootcause-f104-frequency-day1-freq16-1-nativefreq.console.txt": "26d65553d17c5654bb7d7894b3dfd13b4ea93efa20b9006d4358d956b361ff13",
+    "day1-frequency17-cold2.json": "f28203d918044a8e971f15fc1269205e0c9740bc20791f4ee3eb8404e79297f1",
+    "rootcause-f104-frequency-day1-freq17-1-nativefreq.json": "847d1df37f118e41713cd4bc71af2c1fc7c8cb27aafb800d03a32ba8a778b766",
+    "day1-control17-f304-completed.json": "0f0924e2cfd2cd4179f88718e7e3dbcdee08148df19bec16a27e674b7ba252f6",
+    "rootcause-f104-frequency-day1-freq16r2-2-singlepma.console.txt": "8cc5fb5612c6f207b45b2c41578eb00bc4abe5d3681acddf22d18e305ba6fea9",
+    "rootcause-f104-frequency-day1-freq17-2-native.json": "3a711292e8c49319f2ae23d7abb3076db38e3071cd6722d85c6caf15f86f7450",
+    "rootcause-f104-frequency-day1-freq16r2-2-nativefreq.console.frequency.json": "20cfa52fdac5af1abc980fe4fc68c5390efa7a9b17fec5842a39d0b875f7d531",
+    "rootcause-f104-frequency-day1-freq16r2-2-pmafreq.json": "3c901bfde1aac19166c811c6823f36f6ae8849f34ac3f09c5f63e0802aec6055",
+    "rootcause-f104-frequency-day1-freq16r2-1-singlepma.json": "4e73fce0fd49f0fcd25432feb9ad172a04ffdc12d6e5f969fa2d3ac1d2cc8f76",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode1freq.console.frequency.json": "00f9f89a001e2a59af70bc7d377783760e7d849c3d236bdd8b6b5130b5d99cc1",
+    "<workspace>\\review_day1_frequency17_control.py": "76e489e5acafe05f47f972122824d4761e934a9ff1749f15b3035040fdabcea3",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode0freq.console.txt": "9825db25067dd693bab2ec0734455ab5e346f7b47e779258cb60da217d67ff6c",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "<workspace>\\run_rootcause_f104_frequency.py": "0f85e8d4b6c08486378d5d21ec3b8809e3c29e183cd6941f5ab02e204ab3f06a",
+    "rootcause-f104-frequency-day1-freq16r2-3-pmafreq.console.frequency.json": "fade2301351c4f27818edc96f0d0bd0f3dc106d9254dec6ccf34415d2a2536d0",
+    "rootcause-f104-frequency-day1-freq16-1-native.console.decoded.json": "6e801cc68f860a0adeaa0a04b05c1b0cf86db6be173f6bdb674e72a1cd69a811",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode1freq.json": "414c03941c24b66e317c6ce1ae41a4ce0ad069389dbbd51d6445292040dc3fd9",
+    "day1-frequency17-control.json": "f979d2e531af3d3b0a5ce6d224bac3dd711ec2dd15c76d7b35687ee1d57a5d38",
+    "rootcause-f104-frequency-day1-freq16r2-2-nativefreq.json": "b5e3e2732edd7b26f538c050331c5258f09e23ddbb1fff5bc73e1978ca8fa71a",
+    "rootcause-f104-frequency-day1-freq17-2-nativefreq.console.frequency.json": "122d2c97c819b29dc48bc3433d30798683aee3df9a5b4d1915c56a07f98125d0",
+    "day1-frequency16r2-cold2.json": "dc54d2fea89574231747067d2d2a21e1a85edf5d0447262a9e0269ab2435aa92",
+    "rootcause-f104-frequency-day1-freq16-1-nativefreq.json": "56e38e2092ed0e51b91ec905dccc4474edbe56496c93f5e97dceb195862ab454",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode0.console.decoded.json": "3e62669104185c84d221551d5634d12b7bc068999cd691a1673cdcd1bcf5a4f7",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode0freq.json": "e351f4cdf9f70c264cd3ed91492eb79cde0e72ed38ad9387178d6e6b728cc145",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode1.console.decoded.json": "cbfee10704e32b3139dc5c999fec3a4d421a5d3878d4f6ee901d074ca6904373",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode1.json": "298c45cdb0cb6ad053f644f641b7f6945c89a5f611f3019a15123e763e5e0489",
+    "rootcause-read-sysmon.tcl": "2e96679b943e77c33ac10a2ae3419974f2e31b4863413d883ff48adba2205df3",
+    "rootcause-f104-frequency-day1-freq16r2-3-nativefreq.console.txt": "17b642d499ecf1bc08639a8bd9d0ded819ff19fd8c79c84f70a1e473b9648c55",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode1.console.decoded.json": "e6210440af7dcb534fc796c9f83c1828d9e94df1df595df13e1e7ef977198148",
+    "rootcause-f104-frequency-day1-freq17-2-native.console.txt": "aec354860f94d736ebd548185cc871bafa230d4595ddb5b83398c58fc4e14ae1",
+    "flash-day1-freq16-v14-20261018-005759-result.json": "3c947ed4332c46047a0414838100018c313b2bf31ae86ce7223d8aefe2b5a84e",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode1freq.json": "d5b6c90c8e07c71d71da9aac87bda2e48f10e1dcd20870d49e5ce22f2bb5feb9",
+    "attach-rootcause-f104.tcl": "cddfc0dfd8c20b02c8a28353ba29d41dec9397ffd8d1e8d60934d97b6ba92aa9",
+    "<workspace>\\day1-frequency-capture-v14\\rootcause-f104-frequency.mcs": "0b0f01749aab9110a80826c68b775d8cdf21206db66e667ecf2d3fdede014863",
+    "rootcause-f104-frequency-day1-freq17-1-native.console.txt": "88bdd5b2237f44db7c9013fcfcb69bcd879c5382bd25efcc935eb89902ffa78e",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode1freq.console.txt": "e70cecb80e72d81220112fb7e791e6903b5d5a75037bed6fe0992b0a152817f4",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode1.json": "b5d64055e1370bac1fc59ccdf99cddf215c3d76bc3cebe64d6e872346a6f05c5",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode0.json": "5791487ef3af6f75613630cd75b43ab932349f147e20bbf30a0d40f4ff8249f4",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode1freq.console.frequency.json": "3ed755cf642f852c596057c771833d564d8193e9d91e2f96324a5b6d7cd1ee49",
+    "day1-frequency16-reviewed-outcome.json": "05ee8270e8e394b88f480cf7926a94b957df3bfc48e126b931215a84f703e1c7",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode1freq.console.txt": "2e3ffec942b749d29e9e528d82b0922b2a2888e77b3de9191d2e6f1d356a9ae4",
+    "rootcause-f104-frequency-day1-freq16r2-3-singlepma.console.decoded.json": "adb70c2b88540f424370e1c8903ae7739fd60ac8b530fd26f06095447e2962e6",
+    "rootcause-f104-frequency-day1-freq16r2-1-pmafreq.console.frequency.json": "6008543f883c8583061567676202cca1cc10fc3e1b9abe170622f6eb74ee1dcf",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode0.json": "b74838b69d41b4aa5fc0c1dae44f4cccdefbb3c21eba567659979d08075197de",
+    "day1-control17-f304-stop-verified.json": "4c8f87233bcc227a64cc7ce8cb3df1fc08424f031adc60d8f82f38483dfe5e53",
+    "day1-frequency-capture-v14-review.json": "a20132a8e4708910a98083ec7ce6e168ff5ced2f8127bf09bff3959fd29add2b",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode1.console.txt": "0ebd6215caf8606c786e5a3fc02328cc147a49265aa44f8b332c2380bfe23fba",
+    "day1-frequency17-cold3.json": "d6abc582bbc159fde0d4dc1da93d8649853c815fe43e22a8c8bc7ad00be90fd6",
+    "day1-frequency-capture-v14\\manifest.json": "55641b38a9951ce6a7fdad8f7a6de2f14ed9feb95a43a12d4cfc1925205801f0",
+    "rootcause-f104-frequency-day1-freq17-3-native.console.txt": "3dfef0ce7dbd83332ca265bac90d2faa95a536864551f9f664969ef4b4a232bc",
+    "<workspace>\\review_day1_frequency16.py": "e9b6e755f8fb628ea63af3457b0efa34c0633ac8bc6ccb94073e9e0f0acc7320",
+    "day1-frequency16.json": "4f4d44e398bd490311d5a04a06eeb7d17c284af24dc6f46c791dee094e9502da",
+    "rootcause-f104-frequency-day1-freq17-1-nativefreq.console.txt": "da32d7bfe9ac3add127dcd5c02a79dfa99b4f88d58d46ef97fd83398d744903f",
+    "day1-control17-f304.jsonl": "bfe29f90725d4a5ee949ab1867a44d6c913559a73d2b4ead38dde2647c1d9aa7",
+    "rootcause-f104-frequency-day1-freq16r2-3-nativefreq.json": "de21c20d3cebab30afaee1e6bbed2e1ca8b7879424b95db9d8171cf3bc9966d9",
+    "rootcause-f104-frequency-day1-freq16r2-2-native.json": "5c37e88ae015f16278e2246fab456f1573994b28ef18678888a3926546a943ae",
+    "rootcause-f104-frequency-day1-freq17-2-nativefreq.json": "c258aee3e3ab880dd5d67ebe6ab11e8d1756d9e361720f148d4d380af5d2ed5a",
+    "monitor_control17_f304.py": "e3ea1f428ddc59ab7a187446872594216efcee84654a822262cad15c3edf008c",
+    "rootcause-f104-frequency-day1-freq16r2-2-nativefreq.console.txt": "1298f0cdfda56992e846657870d0958b38cc32ad723f0e583758c88728d70a89",
+    "flash_firmware.py": "712a49008ce6434b9407e4a0bb332b528fd4b316d9271b7e1e1b99c5f67af43c",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode1freq.console.frequency.json": "6e177fe9e505c4c67f108a574b2d2f16e19d4cedcf4448cbfba28a3b1aefa318",
+    "rootcause-f104-frequency-day1-freq16r2-2-native.console.txt": "66398dde96d294bbb3551cccca408b5f5d0bf4c38d9009d29d7d7bf410770d4d",
+    "rootcause-f104-frequency-day1-freq16-1-native.console.txt": "9343605c63f3038443a38336ea84b8ac426af283c25b52a299043c048ee99372",
+    "day1-frequency16-cold1.json": "42309524d06bf8e0a9bf6b15169d3837c016bb7305836c773c2aec71001007f1",
+    "rootcause-f104-frequency-day1-freq17-1-native.console.decoded.json": "368aeb15e99a136a3d9c88e2286be9b196f8f6f2f70d2db22428f7b88f8976a6",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode1.console.decoded.json": "7f2e141ffacce5473276327d43efefc33cbee7a475f218b8b70498639a25642a",
+    "rootcause-f104-frequency-day1-freq16-1-nativefreq.console.frequency.json": "2a5a62c726e2f286e07f3f94579e068ac91adecb056254fd1022710eb6a453bd",
+    "run_rootcause_f104_frequency.py": "0f85e8d4b6c08486378d5d21ec3b8809e3c29e183cd6941f5ab02e204ab3f06a",
+    "rootcause-f104-frequency-day1-freq17-2-nativefreq.console.txt": "052855eb70b119c20cc39079e75727a472371756a3bd092b68eec3cd57e18449",
+    "rootcause-f104-frequency-day1-freq16r2-1-pmafreq.json": "83c0765a833a89b0f586a83ed24230a62161de9775fc0fcda7675b76042364cc",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode1.console.txt": "580a3c32dd022160dd2f9ab0da5cfcf88e460e02b7ef18488278b1515c573e9b",
+    "rootcause-f104-frequency-day1-freq16r2-1-singlepma.console.txt": "eacdedccf15df5c87973d9abc9f36323eac1bbb06a927a746cbe203a22b650b3",
+    "rootcause-f104-frequency-day1-freq16r2-3-singlepma.console.txt": "deb22fff0373408baed02d81b029b1ec384852328379c29b8aed7f62d39598f2",
+    "rootcause-f104-frequency-day1-freq16r2-1-singlepma.console.decoded.json": "9ef8461b427b89e9d1afc4904af721c32608184dda856da5144c4ade9724a371",
+    "rootcause-f104-frequency-day1-freq16r2-2-pmafreq.console.frequency.json": "db5947cb82cb577a3a3c212a53052f91cec277568375d1d00e4bb2abbe6245b0",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode0.console.txt": "cc0b236e92105377aaf3f582cdc5b510a01d8cb7c9dae77832a530f683968c69",
+    "rootcause-f104-frequency-day1-freq17-3-nativefreq.json": "efa13bc538209b96236be24980d159b34dfc012a383e34a20a8a61f5597592a9",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode0freq.console.frequency.json": "ff49d83218f848705f3e67d24f07806561394894198c15a5a1cc3d7dac98abfa",
+    "rootcause-f104-frequency-day1-freq16r2-3-singlepma.json": "fb4e7619270bb0961f64db77d21dd553e204246506be72b7739e80c914ee2195",
+    "rootcause-f104-frequency-day1-freq16r2-2-pmafreq.console.txt": "f9744ed293b1f72ed2bf85bd4880e3a0ac0965aeefb74dea87fb370a4c110ea7",
+    "day1-frequency17-cold1.json": "2ac625e876ff1d74aac18e0fea1c362eb1d90c9e404a4d8890fca1693010d641",
+    "rootcause-f104-frequency-day1-freq17-1-nativefreq.console.frequency.json": "158c31ea6a50612350278c16acac24d79c05dc2d22bf45f7cee1628eab8c5344",
+    "rootcause-f104-frequency-day1-freq16r2-3-native.console.decoded.json": "a2ba5249e1ff8646a8e6da2f4063046c66f5ebab10b4194f2c54e633f2d595c2",
+    "rootcause-f104-frequency-day1-freq17-3-nativefreq.console.txt": "780a4e9d85bc1e9b1e359a82527256e1003b62a97f6ff1058e13c08e7af287ba",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode0freq.console.txt": "e0e4c65c9180159cb8fbf74556a8ff6b9c2d5a4a878bf545a00d1effb6e48314",
+    "rootcause-f104-frequency-day1-freq17-2-native.console.decoded.json": "eabd65b22d64c5cb14472b8b786959ff7e3dd2173c020736c83fc9ae27294538",
+    "rootcause-f104-frequency-day1-freq17-3-native.json": "afb2e18ea837be9c290c157382faaadd655adbed89b83351ae5f2b50e3250796",
+    "flash-day1-freq17-v14-20261018-013000-result.json": "c50b69964b79ab88117b314e9b6da59499c87731ee955483b3ff6c2bb205e5e8",
+    "rootcause-f104-frequency-day1-freq16-1-native.json": "2044bdc29e585f61b3703b44095352ceddb1f4d189721bbde07d3a7690e51582",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode0.console.decoded.json": "ea1129732fe20953c0a23624091cd6538c25d2afad44bb9f2786c8c832480e94",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode1.console.txt": "0f30f8a2e13d154cdcbab61153218c03376ae94666e338ef348a4dddc01b9757",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode0.console.txt": "0ab5ba13e42724886e85b5fd502426b13d02f985340d48951f074442855d7f73",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode1freq.json": "69699a25cc2d732c30c0238281b23c0562a88de36fdcd4248b18f54a2d9ab775",
+    "rootcause-f104-frequency-day1-freq16r2-2-native.console.decoded.json": "e1fb604a131025a270df1786655508014d04a520d4ae096561cf10e96857d1da",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode0freq.console.frequency.json": "7a788dc1ac67cfab28c6fd73bfc54bfbcd0382a7373649a885496e59dd06edd6",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode0.json": "f1ee7526138df1bcb459133e46b9d691c5d45d6bcea5d22e8d05447c16624210",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode0freq.json": "08b5e0980cf555f2d3ad79467013f5cfe005096fdd6a8d8ef12c95cd0fdf6e66",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode0freq.console.frequency.json": "b7a99811ac99ce527d4a85959d4e154e455bfcfb54cc5ee4fdbb0b8ebb3586d2",
+    "rootcause-f104-frequency-day1-freq16r2-3-native.json": "d03f801d466b759fb2ba102e454a4f8d035e34f249c4275fb5b42bb00976b687",
+    "rootcause-f104-frequency-day1-freq17-3-nativefreq.console.frequency.json": "5f8b873c453ecebfe0ffcfe01a8508dae4f033087fcd281be53c263607d0597f",
+    "day1-frequency16r2-cold3.json": "d1f17aca5999aa5ea1d369dfaf01b2567d64b4681abd3e7143e2e283c36ebdcd",
+    "rootcause-f104-frequency-action.tcl": "e380c1dc5c5759e9f70f841d4583425a273a9df1fced9a80c8048ff57b7f164c",
+    "rootcause-f104-frequency-day1-freq17-3-native.console.decoded.json": "4f094c8206be289fddfc429580e9753805fbb288c79124529ffd6450cb557f92",
+    "<workspace>\\run_day1_frequency17_control.py": "5c84d5ad972b7b9b5ff97a166a9f0eb113d6983c0b446c965245390ae1d12159",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode0freq.json": "4cd123845d190b99da958a23ece525c0fc7f9cd0cfe921d36ec6b397974014f9",
+    "decode_rootcause_f104.py": "8dc38114fb1e3760152f3a30c1d68928ff24fa7584173ffa0a29f2a9821832f5",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode0.console.decoded.json": "3bce5ee072bc6b7e6434d47320f72402f00e2445c7895bae891cba6e84d288a6",
+    "day1-frequency16-resume-v2.json": "0e06b1cebfea6daf998f8af5472325794049c36227aa8f254c6c291b26a15587",
+    "rootcause-f104-frequency-day1-freq16r2-1-pmafreq.console.txt": "d6173a3d6565b8a1c1bd46338db86dc6362446ceebec09e41238386c15c98b28",
+    "<workspace>\\analyze_day1_frequency_v2.py": "4a2e706796e3a8f17f2fc921e9cb99c8271a4ad90f940887e7636137d4b1253b",
+    "rootcause-f104-frequency-day1-freq16r2-2-singlepma.console.decoded.json": "7ca427f20fcd53c1f213bcdc86900a133b09fb5f6e28dce37460bc477f4d46b9",
+    "rootcause-f104-frequency-day1-freq16r2-3-pmafreq.console.txt": "becc30ce7389d1b3014d3ba5b19e5adb040cbc089b2fde6d7b24c655cb891d35"
+  },
+  "limits": [
+    "Separate chronological cohorts, not simultaneous or randomized matched physical supplies/cables",
+    "Identical full observer firmware on both boards, differing EEPROM preserved; no intrinsic chip fault attribution",
+    "NominalSYS200MHz frequency units; RX/REF ratios cancel common SYS scaling",
+    "Average recovered-clock rate only, not analog jitter or startup waveform; direct reservedCDRreset unused"
+  ]
+}

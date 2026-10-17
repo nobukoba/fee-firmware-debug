@@ -1,0 +1,61 @@
+{
+  "created": "2026-10-18T03:40:31.829085",
+  "transformation": "Workspace prefixes replaced with <workspace>; JSON reformatted. Original source hashes and exported-file hashes are separate.",
+  "files": [
+    {
+      "path": "evidence/investigation24h-diagnostic-findings.json",
+      "original_sha256": "c9fe945204b9365f7e21a31816431c95e5b16789b079c50f07f9ce93aac094e5",
+      "exported_sha256": "68046b1c206d989df42b474ac83c36b4f8e890791787703e3828d8a8987bdf3e"
+    },
+    {
+      "path": "evidence/day1-f304-validation-evidence.json",
+      "original_sha256": "38fba5b74347aa098433aeb181d07f604d062ed46aacaf1a10c0dd996cd172ca",
+      "exported_sha256": "2a24a2971b8005812047b42d3e558fb86ed29e188cc6aee130161aeb4a028691"
+    },
+    {
+      "path": "evidence/day1-frequency16-reviewed-outcome.json",
+      "original_sha256": "05ee8270e8e394b88f480cf7926a94b957df3bfc48e126b931215a84f703e1c7",
+      "exported_sha256": "2e426a619247c2cb59c4a86305108b4a28b3c6276fe959d751e78b196bac48a5"
+    },
+    {
+      "path": "evidence/day1-frequency17-comparison-evidence.json",
+      "original_sha256": "abdecee1dc4d8565e34b0182ed6e5035b200fd60febfff59d9c8721f4cd2b3a4",
+      "exported_sha256": "8209673200da1a363400e4e4aec6734e75eb122b3cb2a34c721a2383bb48b317"
+    },
+    {
+      "path": "evidence/day1-earlypulse-matrix-evidence.json",
+      "original_sha256": "714d03cb74f61a7873fda7cfe75306c7875f6db77e959708a7f9f9534fa2a67c",
+      "exported_sha256": "74d7fe2dda261b6bef79c89047c9a20e6b2222a4a23c5282fad40f01f757ed1f"
+    },
+    {
+      "path": "evidence/day1-timerfactor-matrix-evidence.json",
+      "original_sha256": "626e39e300280a1434462f0753fcfe0a2f658637cb9f23b7a9bc9bfdf0f3ec88",
+      "exported_sha256": "672530f6d960e4bafb0b31b9583a594814bdeb7ac5cdeebe2dab99a8844ad308"
+    },
+    {
+      "path": "evidence/day1-initialcpll-matrix-evidence.json",
+      "original_sha256": "f531164184f0cc4a4136b3ab70d61fe3e8a32b1d1faa98a59d812e23d52da870",
+      "exported_sha256": "b2954d29f8c7a91975a9d53195359c660b50a9ea5a2102242a79646bfae89f3d"
+    },
+    {
+      "path": "evidence/day1-singlepma-summary.json",
+      "original_sha256": "1669837e2584dd41354b91201b59fc169663f7fe21279418d46f682d7021aaa8",
+      "exported_sha256": "ae8b2734f9fb525de96dd74cecf2fdd8827abd97e90095351fe90c131eb126ff"
+    },
+    {
+      "path": "evidence/day1-singlepma-packet-evidence.json",
+      "original_sha256": "c8cec727d3a70075e54a3779dff3a2cfbbff7a1b7c4508d707aa5839e69c396f",
+      "exported_sha256": "b4c87e4dc934abb1822663da3382c7d733fc33c9ac29ef4be1d2f96629da1970"
+    },
+    {
+      "path": "evidence/day1-poweron-reset-path-evidence.json",
+      "original_sha256": "38c607e9b063aed58a7ce5dbeb567b29e0a925ae00a3c636a31cbfa7ef3d0b62",
+      "exported_sha256": "37a173d50e9bc8d6624ab37721a8f8f7c0382a74813b0c4492585ca73ca513cf"
+    },
+    {
+      "path": "evidence/day1-frozen-evidence-audit-20261018-032548.json",
+      "original_sha256": "a34fc9468631dfafd28dd203781ead8f35df495aa9e59c513a27772cc98486b0",
+      "exported_sha256": "ca4c34b5656b306bc3f02a3ea60e6c4c54673db935d2b0d8aed059d2ca359d94"
+    }
+  ]
+}

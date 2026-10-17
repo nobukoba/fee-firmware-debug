@@ -1,0 +1,79 @@
+{
+  "created": "2026-10-18T02:03:46.725760",
+  "source_context": "Common power-on-reset timer presets0x0FFFFFFF, decrements on125MHz clk_sys, then deasserts. GbEPcsPma.reset maps pwr_on_reset. Original RX FSM initializes gtrxreset_i0 and drives0 underSOFT_RESET; F304 changes both to1.",
+  "main_clk_sys_nominal_MHz": 125,
+  "observer_clk_indep_gtx_nominal_MHz": 200,
+  "poweron_reset_counter_cycles": 268435456,
+  "nominal_reset_hold_seconds": 2.147483648,
+  "native_boot_edges": [
+    {
+      "board": "16",
+      "trial": 1,
+      "soft_RX_deassert_SYS200_tick": 429499293,
+      "first_GTRX_assert_SYS200_tick": 429499406,
+      "nominal_GTRX_assert_after_SOFT_deassert_ns": 565,
+      "native_cold_success": false
+    },
+    {
+      "board": "16",
+      "trial": 2,
+      "soft_RX_deassert_SYS200_tick": 429499276,
+      "first_GTRX_assert_SYS200_tick": 429499389,
+      "nominal_GTRX_assert_after_SOFT_deassert_ns": 565,
+      "native_cold_success": false
+    },
+    {
+      "board": "16",
+      "trial": 3,
+      "soft_RX_deassert_SYS200_tick": 429499257,
+      "first_GTRX_assert_SYS200_tick": 429499370,
+      "nominal_GTRX_assert_after_SOFT_deassert_ns": 565,
+      "native_cold_success": false
+    },
+    {
+      "board": "17",
+      "trial": 1,
+      "soft_RX_deassert_SYS200_tick": 429499261,
+      "first_GTRX_assert_SYS200_tick": 429499374,
+      "nominal_GTRX_assert_after_SOFT_deassert_ns": 565,
+      "native_cold_success": true
+    },
+    {
+      "board": "17",
+      "trial": 2,
+      "soft_RX_deassert_SYS200_tick": 429499231,
+      "first_GTRX_assert_SYS200_tick": 429499344,
+      "nominal_GTRX_assert_after_SOFT_deassert_ns": 565,
+      "native_cold_success": true
+    },
+    {
+      "board": "17",
+      "trial": 3,
+      "soft_RX_deassert_SYS200_tick": 429499260,
+      "first_GTRX_assert_SYS200_tick": 429499373,
+      "nominal_GTRX_assert_after_SOFT_deassert_ns": 565,
+      "native_cold_success": true
+    }
+  ],
+  "source_sha256": {
+    "lrtdc-minimal-inithold\\hdl\\toplevel.vhd": "6a4b667f541b8f892a3f2793388801cc7ace9d39fecc7df52900f524572e88f0",
+    "lrtdc-minimal-inithold\\hdl\\common\\main\\RstDelayTimer.vhd": "2811ffd9f2d48f3ed5f05d1beea53e498aee3aa354606075d0d6b8fef155ddde",
+    "lrtdc-minimal-inithold\\ip\\clk_wiz_sys\\clk_wiz_sys.xci": "7fdbe766dbfcdce815341d5bd24f7da97945dd45646bdb6a184962dbc7edfd5b",
+    "lrtdc-minimal-inithold\\hdl\\common\\gig_ethernet_pcs_pma\\GbEPcsPma.vhd": "cca7b2c198e5225aa372958c35191e8471b9ff2af9183dba9af61289cf436cfd",
+    "lrtdc-minimal-inithold\\build\\minimal-inithold-f304\\rx-startup-before-patch.vhd": "3499fbb3cb184c3557af8c471398b8e1cbe02e160d195112af265d2a2662dcd0",
+    "lrtdc-minimal-inithold\\build\\minimal-inithold-f304\\rx-startup-after-patch.vhd": "c5e42aa1a7b6bc7935b41e6ce948ac6c873e17a713960dfb30a725078fe672e4",
+    "day1-frequency16-resume-v2.json": "0e06b1cebfea6daf998f8af5472325794049c36227aa8f254c6c291b26a15587",
+    "rootcause-f104-frequency-day1-freq16-1-native.console.decoded.json": "6e801cc68f860a0adeaa0a04b05c1b0cf86db6be173f6bdb674e72a1cd69a811",
+    "rootcause-f104-frequency-day1-freq16r2-2-native.console.decoded.json": "e1fb604a131025a270df1786655508014d04a520d4ae096561cf10e96857d1da",
+    "rootcause-f104-frequency-day1-freq16r2-3-native.console.decoded.json": "a2ba5249e1ff8646a8e6da2f4063046c66f5ebab10b4194f2c54e633f2d595c2",
+    "day1-frequency17-control.json": "f979d2e531af3d3b0a5ce6d224bac3dd711ec2dd15c76d7b35687ee1d57a5d38",
+    "rootcause-f104-frequency-day1-freq17-1-native.console.decoded.json": "368aeb15e99a136a3d9c88e2286be9b196f8f6f2f70d2db22428f7b88f8976a6",
+    "rootcause-f104-frequency-day1-freq17-2-native.console.decoded.json": "eabd65b22d64c5cb14472b8b786959ff7e3dd2173c020736c83fc9ae27294538",
+    "rootcause-f104-frequency-day1-freq17-3-native.console.decoded.json": "4f094c8206be289fddfc429580e9753805fbb288c79124529ffd6450cb557f92"
+  },
+  "limits": [
+    "This long reset is common to both boards; not byitself the physical cause of individual differences.",
+    "Measured earliest3ms hold alone was sufficient in3trials even though remaining globalreset lasts~2.147s; do not claim full2s hold required.",
+    "Early SYS timing nominal5ns, no physicalDONE/analogclock waveform. RXrecoveredclock fault/PMArecovery proved by separate controlled frequency evidence."
+  ]
+}

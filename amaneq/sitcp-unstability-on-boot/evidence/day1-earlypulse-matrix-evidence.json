@@ -1,0 +1,100 @@
+{
+  "created": "2026-10-18T00:28:50.940585",
+  "cases": {
+    "bypass": {
+      "successes": 0,
+      "trials": 3,
+      "PLLLOCK_before_earlyrelease_eachtrial": {},
+      "boot_error_words": [
+        28,
+        44,
+        46
+      ],
+      "steady_error_words": [
+        121,
+        76,
+        117
+      ],
+      "GT_gate_INIT": "0xaaaaaaaa",
+      "timer_gate_INIT": "0xa",
+      "full_flash_sha256": "1ba77b2dfcfda58d4759365f0637012d13a15b0b5db46d919b8d1acd93157e69",
+      "evidence": "day1-earlypulse-bypass-evidence.json"
+    },
+    "early3ms": {
+      "successes": 3,
+      "trials": 3,
+      "PLLLOCK_before_earlyrelease_eachtrial": {
+        "1": true,
+        "2": true,
+        "3": true
+      },
+      "boot_error_words": [
+        0,
+        0,
+        0
+      ],
+      "steady_error_words": [
+        0,
+        0,
+        0
+      ],
+      "GT_gate_INIT": "0xaaaaafaf",
+      "timer_gate_INIT": "0xa",
+      "full_flash_sha256": "c99c957a8eb87808da3633fbbda370159ffcaf051d5f6c4c96aebd88dbcc3fbb",
+      "evidence": "day1-earlypulse-early3ms-evidence.json"
+    },
+    "continuous": {
+      "successes": 3,
+      "trials": 3,
+      "PLLLOCK_before_earlyrelease_eachtrial": {},
+      "boot_error_words": [
+        0,
+        0,
+        0
+      ],
+      "steady_error_words": [
+        0,
+        0,
+        0
+      ],
+      "GT_gate_INIT": "0xafafafaf",
+      "timer_gate_INIT": "0xa",
+      "full_flash_sha256": "2e008699677774bb5fa47d29d4217216a0c385394000c8dee52ed39e03d6309e",
+      "evidence": "day1-earlypulse-continuous-evidence.json"
+    },
+    "reverse": {
+      "successes": 0,
+      "trials": 3,
+      "PLLLOCK_before_earlyrelease_eachtrial": {},
+      "boot_error_words": [
+        57,
+        32,
+        40
+      ],
+      "steady_error_words": [
+        126,
+        118,
+        128
+      ],
+      "GT_gate_INIT": "0xaaaaaaaa",
+      "timer_gate_INIT": "0xa",
+      "full_flash_sha256": "1ba77b2dfcfda58d4759365f0637012d13a15b0b5db46d919b8d1acd93157e69",
+      "evidence": "day1-earlypulse-reverse-evidence.json"
+    }
+  },
+  "source_sha256": {
+    "day1-earlypulse-matrix.json": "5eb0056eef9fd4cc29cb41bdb1a79d5575d5c1ea0ae8965da38229255d3111ff",
+    "day1-earlypulse-bypass-evidence.json": "94ea6fbe82c5b39f624ff6e08a0983ea0c132401423668e0efc5c48b8b11d366",
+    "day1-earlypulse-early3ms-evidence.json": "de0739be7a1ff0444e27c7b5330de3d5c77a5ef025311d3293ffa6d2c23fd5ee",
+    "day1-earlypulse-continuous-evidence.json": "d20e0516b21c8b73098704ed207002ada3f4501d9385d561dab8d01b8cf91639",
+    "day1-earlypulse-reverse-evidence.json": "ebdc8a5ac4803e68496a5a79b9d8edbbc7146ab8b452380035823a7efa41a78e"
+  },
+  "exact_bypass_reversion_verified": true,
+  "limits": [
+    "Early3ms vscontinuousGTreset INIT-only; nativeCDRtimer unchanged. Earlyrelease requiresPLLLOCKbeforedeassert inalltrials.",
+    "Each condition3coldboots only; preserve mixed outcomes, do not pool unrelated firmware families.",
+    "Identical placed/routed variant family with LUTINIT differences; coldboots span changing time/temperature.",
+    "Qualifiedwindow timing nominal SYS5ns, not measured physicalDONE; earliesthold remains diagnostic.",
+    "No reservedCDRreset or DRP workaround applied; hardware analog component cause not established."
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "created": "2026-10-17T20:17:05.396683",
+  "snapshot": "day1-singlepma-packet-snapshot.pcapng",
+  "snapshot_sha256": "a236849dd55b49da9e41cdcb8873f5e89ee8f10f593108ffef0bce8de1b084b6",
+  "snapshot_blocks": {
+    "live_bytes_read": 9349964,
+    "complete_block_bytes": 9349964,
+    "trailing_incomplete_bytes_excluded": 0,
+    "blocks": 18528
+  },
+  "windows": {
+    "trial1_mode_changed_still_failed_before_PMA": {
+      "start_epoch": 1792233947.306,
+      "end_epoch": 1792234026.242,
+      "duration_seconds": 78.936,
+      "host_visible_packets": 1,
+      "from_board": 0,
+      "ARP_requests_for_board": 1,
+      "ARP_replies_from_board": 0,
+      "RBCP_requests_to_board": 0,
+      "RBCP_responses_from_board": 0,
+      "TCP24_from_board": 0,
+      "first_board_frame_after_window_start_seconds": null
+    },
+    "trial1_after_PMA_before_mode0restore": {
+      "start_epoch": 1792234026.242,
+      "end_epoch": 1792234101.548,
+      "duration_seconds": 75.306,
+      "host_visible_packets": 44,
+      "from_board": 20,
+      "ARP_requests_for_board": 1,
+      "ARP_replies_from_board": 1,
+      "RBCP_requests_to_board": 15,
+      "RBCP_responses_from_board": 15,
+      "TCP24_from_board": 4,
+      "first_board_frame_after_window_start_seconds": 26.797291
+    },
+    "trial2_mode_changed_still_failed_before_PMA": {
+      "start_epoch": 1792234300.178,
+      "end_epoch": 1792234371.334,
+      "duration_seconds": 71.156,
+      "host_visible_packets": 1,
+      "from_board": 0,
+      "ARP_requests_for_board": 1,
+      "ARP_replies_from_board": 0,
+      "RBCP_requests_to_board": 0,
+      "RBCP_responses_from_board": 0,
+      "TCP24_from_board": 0,
+      "first_board_frame_after_window_start_seconds": null
+    },
+    "trial2_after_PMA_before_mode0restore": {
+      "start_epoch": 1792234371.334,
+      "end_epoch": 1792234470.001,
+      "duration_seconds": 98.667,
+      "host_visible_packets": 45,
+      "from_board": 20,
+      "ARP_requests_for_board": 2,
+      "ARP_replies_from_board": 1,
+      "RBCP_requests_to_board": 15,
+      "RBCP_responses_from_board": 15,
+      "TCP24_from_board": 4,
+      "first_board_frame_after_window_start_seconds": 61.713564
+    },
+    "trial3_mode_changed_still_failed_before_PMA": {
+      "start_epoch": 1792234675.758,
+      "end_epoch": 1792234747.1,
+      "duration_seconds": 71.342,
+      "host_visible_packets": 2,
+      "from_board": 0,
+      "ARP_requests_for_board": 2,
+      "ARP_replies_from_board": 0,
+      "RBCP_requests_to_board": 0,
+      "RBCP_responses_from_board": 0,
+      "TCP24_from_board": 0,
+      "first_board_frame_after_window_start_seconds": null
+    },
+    "trial3_after_PMA_before_mode0restore": {
+      "start_epoch": 1792234747.1,
+      "end_epoch": 1792234838.859,
+      "duration_seconds": 91.759,
+      "host_visible_packets": 44,
+      "from_board": 20,
+      "ARP_requests_for_board": 1,
+      "ARP_replies_from_board": 1,
+      "RBCP_requests_to_board": 15,
+      "RBCP_responses_from_board": 15,
+      "TCP24_from_board": 4,
+      "first_board_frame_after_window_start_seconds": 52.946997
+    }
+  },
+  "source_sha256": {
+    "<workspace>\\analyze_day1_singlepma_packets.py": "f3999cfdfbfbc653522c0aa48cdf19e0dfe4480cf28e9cc208dff98b84901cab",
+    "day1-singlepma-cohort-v2.json": "e668a71ad024f60c3cd62459b9c37d5205f2802ac35e989f62f950205a1837bb",
+    "day1-singlepma-summary.json": "1669837e2584dd41354b91201b59fc169663f7fe21279418d46f682d7021aaa8",
+    "rootcause-f104-singlepma-day1-spma-v2-1-mode1-only.console.decoded.json": "965da7a45df524ea2476891a9b48456b473f3f5bc86105cfbc690ca0f17ddea9",
+    "rootcause-f104-singlepma-day1-spma-v2-1-mode1-only.console.txt": "5027272da8102f605441b67192576153675ea25d2d2675fff6aca2f7a8813aa0",
+    "rootcause-f104-singlepma-day1-spma-v2-1-single-PMA16cycles.console.decoded.json": "e1919de8b8b1fa45c7ed7930dc1f1c4fecd55293fa5eb3fae97039a2d44adcee",
+    "rootcause-f104-singlepma-day1-spma-v2-1-single-PMA16cycles.console.txt": "b9095b9320f0eb040c4db11b7688e349333ae25d3b0d475bacc9335fa0e2fab1",
+    "rootcause-f104-singlepma-day1-spma-v2-1-mode0-restore-only.console.decoded.json": "68aed5883b5ff27a5c3f8e2777ccdfb7ea4a6936412281ec313e4249c4d01610",
+    "rootcause-f104-singlepma-day1-spma-v2-1-mode0-restore-only.console.txt": "3c0c561f6a52bea6cb0f6472e5f0f9db39bb2f801ce8570f366eb7397f95962c",
+    "rootcause-f104-singlepma-day1-spma-v2-2-mode1-only.console.decoded.json": "8d9d9cf7b409eb8683cb5cc10f68d34c05e715e1cf85493a7e9f1b717d2ab00a",
+    "rootcause-f104-singlepma-day1-spma-v2-2-mode1-only.console.txt": "9fc2164d49849ff826bbb95dcc9f9c52a5183e8ff790c480466cec05e2655830",
+    "rootcause-f104-singlepma-day1-spma-v2-2-single-PMA16cycles.console.decoded.json": "825bfd573d417d79afca81b201a8c5fba442e268822c8adcc41413c5c645e759",
+    "rootcause-f104-singlepma-day1-spma-v2-2-single-PMA16cycles.console.txt": "568dd2f9582b80e3f3a8d62c60fce5788abfa3d6232cfa38760bc881115f7665",
+    "rootcause-f104-singlepma-day1-spma-v2-2-mode0-restore-only.console.decoded.json": "8328a28a9a0473c8b21091442d06be8d520b5c664e4e6b4f14ced07ffbf440b1",
+    "rootcause-f104-singlepma-day1-spma-v2-2-mode0-restore-only.console.txt": "44f88521afe1304387a7c833c2be66ebe7ba1772cd6fb0847e19b836e4dcb4ef",
+    "rootcause-f104-singlepma-day1-spma-v2-3-mode1-only.console.decoded.json": "f551d2e9e1bf2ff8cb6a01291d37ac8e025ceb4a16d8feff398b8636e381dc25",
+    "rootcause-f104-singlepma-day1-spma-v2-3-mode1-only.console.txt": "d927038cb0114cdb6f3b720aa65999ac6022a3726e1330699b9344496f944f18",
+    "rootcause-f104-singlepma-day1-spma-v2-3-single-PMA16cycles.console.decoded.json": "38e372ace16a7dc624afe91d3d42498e7074cec95d9e66a68bcaf8f3d570a2eb",
+    "rootcause-f104-singlepma-day1-spma-v2-3-single-PMA16cycles.console.txt": "da8f60999adc002244c6e0515a88c216c3c5ebe2e0c55bf1235ae0dfeb431dc6",
+    "rootcause-f104-singlepma-day1-spma-v2-3-mode0-restore-only.console.decoded.json": "ec4979d96fb37c5c34e1b4a67bc8f7ae956a030ce43bcdd811441405427574c6",
+    "rootcause-f104-singlepma-day1-spma-v2-3-mode0-restore-only.console.txt": "a2813267a9c7d3a631350422cde55bf850cdca838364eabfe13b03c797ead32d"
+  },
+  "limits": [
+    "HostNIC observation; no switchmirror orphysicaljitter measurement; packetdropsnotyetknownuntil finalcapturestop",
+    "Softwareeventepochs fromsamehost, notpreciseGT clockedge time",
+    "ARP retrybackoff affectsfirstframe time; notPMAphysicalrecoverylatency",
+    "Packetcounts areframes, notconnectioncounts; no payloads/credentials included",
+    "GT RXrepair andabsenceofotherGT/PLL/PCSinputs are separately establishedbythreecasehardwareevidence"
+  ]
+}

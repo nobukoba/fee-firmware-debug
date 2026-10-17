@@ -1,0 +1,365 @@
+{
+  "created": "2026-10-18T02:25:37.774782",
+  "phase": "F304_cold_validation_evidence_frozen",
+  "firmware": "0x60C4F304",
+  "full_flash_sha256_both": "99e79ca5f3397e060013f73209a2b4cecfe52e6407e5f64430eb1e5e248361b2",
+  "boards": {
+    "16": {
+      "successes": 15,
+      "trials": 15,
+      "epochs": [
+        {
+          "epoch": "original",
+          "requested_off_seconds": 5,
+          "trials": [
+            {
+              "trial": 1,
+              "first_ready_seconds": 63.094,
+              "successful_confirmation_seconds": [
+                63.094,
+                68.094
+              ]
+            },
+            {
+              "trial": 2,
+              "first_ready_seconds": 9.031,
+              "successful_confirmation_seconds": [
+                9.031,
+                14.047
+              ]
+            },
+            {
+              "trial": 3,
+              "first_ready_seconds": 9.047,
+              "successful_confirmation_seconds": [
+                9.047,
+                14.047
+              ]
+            }
+          ]
+        },
+        {
+          "epoch": "reinstall",
+          "requested_off_seconds": 5,
+          "trials": [
+            {
+              "trial": 1,
+              "first_ready_seconds": 9.031,
+              "successful_confirmation_seconds": [
+                9.031,
+                14.063
+              ]
+            },
+            {
+              "trial": 2,
+              "first_ready_seconds": 9.015,
+              "successful_confirmation_seconds": [
+                9.015,
+                14.031
+              ]
+            },
+            {
+              "trial": 3,
+              "first_ready_seconds": 9.047,
+              "successful_confirmation_seconds": [
+                9.047,
+                14.063
+              ]
+            }
+          ]
+        },
+        {
+          "epoch": "qualification-extra7",
+          "requested_off_seconds": 5,
+          "trials": [
+            {
+              "trial": 1,
+              "first_ready_seconds": 9.016,
+              "successful_confirmation_seconds": [
+                9.016,
+                14.031
+              ]
+            },
+            {
+              "trial": 2,
+              "first_ready_seconds": 9.063,
+              "successful_confirmation_seconds": [
+                9.063,
+                14.063
+              ]
+            },
+            {
+              "trial": 3,
+              "first_ready_seconds": 9.047,
+              "successful_confirmation_seconds": [
+                9.047,
+                14.047
+              ]
+            },
+            {
+              "trial": 4,
+              "first_ready_seconds": 9.015,
+              "successful_confirmation_seconds": [
+                9.015,
+                14.015
+              ]
+            },
+            {
+              "trial": 5,
+              "first_ready_seconds": 9.031,
+              "successful_confirmation_seconds": [
+                9.031,
+                14.047
+              ]
+            },
+            {
+              "trial": 6,
+              "first_ready_seconds": 9.032,
+              "successful_confirmation_seconds": [
+                9.032,
+                14.047
+              ]
+            },
+            {
+              "trial": 7,
+              "first_ready_seconds": 9.016,
+              "successful_confirmation_seconds": [
+                9.016,
+                14.016
+              ]
+            }
+          ]
+        },
+        {
+          "epoch": "qualification-off60",
+          "requested_off_seconds": 60,
+          "trials": [
+            {
+              "trial": 1,
+              "first_ready_seconds": 9.031,
+              "successful_confirmation_seconds": [
+                9.031,
+                14.047
+              ]
+            }
+          ],
+          "confirmed_OFF_to_ON_ack_wall_seconds": 62.602163
+        },
+        {
+          "epoch": "qualification-off600",
+          "requested_off_seconds": 600,
+          "trials": [
+            {
+              "trial": 1,
+              "first_ready_seconds": 9.015,
+              "successful_confirmation_seconds": [
+                9.015,
+                14.031
+              ]
+            }
+          ],
+          "confirmed_OFF_to_ON_ack_wall_seconds": 602.613933
+        }
+      ],
+      "final_repeated_RBCP_TCP": true,
+      "EEPROM_matches_baseline": true,
+      "EEPROM_sha256": "341c5c207c91e51c634ba3e3090fea4689e4e5ae07725e4996a3e568b504c887"
+    },
+    "17": {
+      "successes": 15,
+      "trials": 15,
+      "epochs": [
+        {
+          "epoch": "original",
+          "requested_off_seconds": 5,
+          "trials": [
+            {
+              "trial": 1,
+              "first_ready_seconds": 63.109,
+              "successful_confirmation_seconds": [
+                63.109,
+                68.125
+              ]
+            },
+            {
+              "trial": 2,
+              "first_ready_seconds": 4.5,
+              "successful_confirmation_seconds": [
+                4.5,
+                9.516
+              ]
+            },
+            {
+              "trial": 3,
+              "first_ready_seconds": 4.516,
+              "successful_confirmation_seconds": [
+                4.516,
+                9.531
+              ]
+            }
+          ]
+        },
+        {
+          "epoch": "reinstall",
+          "requested_off_seconds": 5,
+          "trials": [
+            {
+              "trial": 1,
+              "first_ready_seconds": 4.531,
+              "successful_confirmation_seconds": [
+                4.531,
+                9.531
+              ]
+            },
+            {
+              "trial": 2,
+              "first_ready_seconds": 4.515,
+              "successful_confirmation_seconds": [
+                4.515,
+                9.515
+              ]
+            },
+            {
+              "trial": 3,
+              "first_ready_seconds": 4.5,
+              "successful_confirmation_seconds": [
+                4.5,
+                9.531
+              ]
+            }
+          ]
+        },
+        {
+          "epoch": "qualification-extra7",
+          "requested_off_seconds": 5,
+          "trials": [
+            {
+              "trial": 1,
+              "first_ready_seconds": 4.531,
+              "successful_confirmation_seconds": [
+                4.531,
+                9.531
+              ]
+            },
+            {
+              "trial": 2,
+              "first_ready_seconds": 4.515,
+              "successful_confirmation_seconds": [
+                4.515,
+                9.547
+              ]
+            },
+            {
+              "trial": 3,
+              "first_ready_seconds": 4.515,
+              "successful_confirmation_seconds": [
+                4.515,
+                9.515
+              ]
+            },
+            {
+              "trial": 4,
+              "first_ready_seconds": 4.516,
+              "successful_confirmation_seconds": [
+                4.516,
+                9.532
+              ]
+            },
+            {
+              "trial": 5,
+              "first_ready_seconds": 4.516,
+              "successful_confirmation_seconds": [
+                4.516,
+                9.532
+              ]
+            },
+            {
+              "trial": 6,
+              "first_ready_seconds": 4.531,
+              "successful_confirmation_seconds": [
+                4.531,
+                9.547
+              ]
+            },
+            {
+              "trial": 7,
+              "first_ready_seconds": 4.515,
+              "successful_confirmation_seconds": [
+                4.515,
+                9.547
+              ]
+            }
+          ]
+        },
+        {
+          "epoch": "qualification-off60",
+          "requested_off_seconds": 60,
+          "trials": [
+            {
+              "trial": 1,
+              "first_ready_seconds": 63.172,
+              "successful_confirmation_seconds": [
+                63.172,
+                68.203
+              ]
+            }
+          ],
+          "confirmed_OFF_to_ON_ack_wall_seconds": 67.755716
+        },
+        {
+          "epoch": "qualification-off600",
+          "requested_off_seconds": 600,
+          "trials": [
+            {
+              "trial": 1,
+              "first_ready_seconds": 4.531,
+              "successful_confirmation_seconds": [
+                4.531,
+                9.531
+              ]
+            }
+          ],
+          "confirmed_OFF_to_ON_ack_wall_seconds": 607.718193
+        }
+      ],
+      "final_repeated_RBCP_TCP": true,
+      "EEPROM_matches_baseline": true,
+      "EEPROM_sha256": "0657876d036a1b9c1ba34903bbf577d490741c851af11916d91efed7f1a1521e"
+    }
+  },
+  "source_sha256": {
+    "eeprom-dual17-before.bin": "0657876d036a1b9c1ba34903bbf577d490741c851af11916d91efed7f1a1521e",
+    "eeprom-before-startup.bin": "341c5c207c91e51c634ba3e3090fea4689e4e5ae07725e4996a3e568b504c887",
+    "day1-f304-qual-17-off60.json": "1a75021a34062123ec1b80907051ae429455d50d729f90d6036c4a0018b97096",
+    "day1-f304-qual-16-extra7.json": "63060ae7246c58ab4b6a7d93c61c0b3c610adade3224b14a1914dfefd042ba96",
+    "day1-f304-reinstall17.json": "80222de98b9cf3bfbc86720685d1e83105ac9cdd009d41c828e738bc33ff3116",
+    "day1-candidate-f304-16.json": "0e808fbd500df67ff4714b55687da0af2cb3c7d970ec6bde523136ba5f8d6932",
+    "day1-f304-reinstall16.json": "9bf7bbf4a082098b31b48aca96f617b4035b674e4bc2c193ed19990de5bd1a98",
+    "day1-f304-reinstall17-cold3.json": "bc98f9fe079cfd35a1ed6e5f2fa8504b6eff5a995400766575d358e494195a8d",
+    "dual_board_cold.py": "db4144e5e4655c5e8d511d9a3c58e7f53ffed1ad6aa9c242e0933ac6f756572d",
+    "day1-f304-qual-17-off600.json": "38b9bf3cd0bbb0dc1bed526d58fe0cfa74ca79cbe2459f3ac7ffc86dff571161",
+    "day1-f304-qual-16-off60.json": "bb046fe0a42a9f1586ca4d7d8d82e69cda2a2cae6889b5f2e6bf52f766ce7afa",
+    "dual_board_cold_varied.py": "1b5fa011743443af907e058675a8c110981534b356b7f42c058fafcf7bf1a9d9",
+    "day1-candidate-f304-17-cold3.json": "90a3c65cf6a58204daa12c4ae50fc0a404dbcba9e86416aff9106469e918dc1c",
+    "day1-candidate-f304-17.json": "198f1e72801a0c4652c9fe78f078fa9260115e84fd48d16624e0767f86097c32",
+    "<workspace>\\summarize_day1_f304_validation.py": "9df7fd64cdf30b35b689c3e429973a7ab0ea48296bffe7da0846c42ad9b6a83c",
+    "flash-day1-min-f304-16-20261017-222459-result.json": "8855072bfc19880158fa156e1e3cea90e2c12ea737bd23c265356270275c37fd",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "day1-candidate-f304-16-cold3.json": "363231644ad6a77c6c9fa289f3bb79a5a71fb71af790fedfa23777f95856bc77",
+    "<workspace>\\run_day1_f304_qualification.py": "f4ec3c39b5ba0771aba018eed409e074774756f9de8df7a41c4582ddfdb67beb",
+    "flash-day1-min-f304-17-20261017-223215-result.json": "a0e3eca630180ad3a10cf76ad63c34383a9aa9121abdab05cf2637db4a83bb0b",
+    "flash-day1-min-f304-re16-20261018-014744-result.json": "7de0e720488f4d272d1872d9bf480880d61f9cb0e3f319a1691e959390c70489",
+    "day1-f304-qual-16-off600.json": "2b3ca9a34af7a76ddc71bfe5f69798dd9f695ba4fb2828a464eec8c08a34fefd",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "day1-f304-qualification.json": "c4d1406dfc43f60367e0209f0043f038292adc02eb663c0bf544a57509a86ec1",
+    "day1-f304-reinstall16-cold3.json": "4265ed179b054cc925f96b37f4307fd92987eb8a326d5fa6da8a8f83a3aea7a7",
+    "flash-day1-min-f304-re17-20261018-014039-result.json": "64010e3e15cb3643b755e520df503b4cc1f422dbc2ea696fa2c445ae278b9e97",
+    "day1-f304-qual-17-extra7.json": "047fafaf19c3539be6de9c360537dcc1638d2f7bd1372f31653bb87e9b1d0f5c"
+  },
+  "limits": [
+    "Same full image across epochs; retain original/reinstall/short/long OFF conditions separately",
+    "ConfirmedOFF-to-ONack interval includes command/status latency, not an analog rail power-off waveform",
+    "Periodic network startup/EEPROM validation, not TDCprecision, wireBER or latephysicalcableinsertion",
+    "Long soak and mandatory baseline restoration are separate evidence, not asserted here"
+  ]
+}

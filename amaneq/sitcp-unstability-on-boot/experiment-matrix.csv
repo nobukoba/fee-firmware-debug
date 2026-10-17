@@ -1,0 +1,17 @@
+family,condition,successes,trials
+early_RX_hold_matched_family,bypass,0,3
+early_RX_hold_matched_family,early3ms,3,3
+early_RX_hold_matched_family,continuous,3,3
+early_RX_hold_matched_family,reverse,0,3
+GT_hold_vs_dummyCDRtimer_factor,bypass,0,3
+GT_hold_vs_dummyCDRtimer_factor,gtonly,3,3
+GT_hold_vs_dummyCDRtimer_factor,timeronly,0,3
+GT_hold_vs_dummyCDRtimer_factor,both,3,3
+GT_hold_vs_dummyCDRtimer_factor,softleadboth,0,3
+GT_hold_vs_dummyCDRtimer_factor,delayedboth,0,3
+GT_hold_vs_dummyCDRtimer_factor,qualifiedboth,0,3
+GT_hold_vs_dummyCDRtimer_factor,reverse,0,3
+initial_CPLL_sequence_family,bypass,0,3
+initial_CPLL_sequence_family,clockready,0,3
+initial_CPLL_sequence_family,rxhold,0,3
+initial_CPLL_sequence_family,reverse,0,3

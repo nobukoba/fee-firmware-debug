@@ -1,0 +1,43 @@
+{
+  "created": "2026-10-17T20:01:39.404552",
+  "cold_attempts": 3,
+  "failed_states_tested": 3,
+  "mode_change_alone_recoveries": 0,
+  "single_mode_PMA_only_recoveries": 3,
+  "samefailedstate_fresh_errors_sequences": [
+    [
+      99,
+      98,
+      0,
+      0
+    ],
+    [
+      78,
+      125,
+      0,
+      0
+    ],
+    [
+      126,
+      95,
+      0,
+      0
+    ]
+  ],
+  "inputpulse_RXcycles": 16,
+  "additional_GT_TX_CPLL_PCS_input_resets": "Noneobserved fromclearedactivitythroughRXrepair andrepeatedRBCP/TCPconfirmation",
+  "checks": "Independentthreecaseanalysispassed, mode22singlethroughpulse, pulse16 samples, RXRESETDONElowthen256high; allreturnmode0healthy",
+  "source_sha256": {
+    "day1-singlepma-v2-trial1-evidence.json": "410cbc273290529cef1a57f849d50060a05ae3309d5a62007f0d0941c539e423",
+    "day1-singlepma-v2-trial2-evidence.json": "6fafa4a9cfe3413e0085ad19d7bf3c8a7eb78560fa15b288d9c6cea10f7ef660",
+    "day1-singlepma-v2-trial3-evidence.json": "3c0da72b81cb69a224c0aedfce2f627990b5455952969e514be49249efce3cf3"
+  },
+  "inference": "ResettingPMAalone inGTRESETSEL1 is sufficientforthesethreefailedstates; directsequentialCDR/DFEresetsteps notnecessary. Narrowsusefulresetcoverage toPMAinitialization, notuniqueanalogchipfault.",
+  "limits": [
+    "PMAresetcanindirectlyaffectCDRstate; do notclaimCDRfullyexcluded",
+    "Differentmodesinternalresetduration/order differs; notidenticalinternalresetcoverageexceptdocumentedmode",
+    "Threefailedstatesoneboardpowersupplyconfiguration; no populationreliabilityguarantee",
+    "Originalworkerargumenterrorbeforemodecommand retained; continuedsamefirstfailedcold withoutreflash/powercycle",
+    "TDCquality/analogeye/MGTtransients unmeasured"
+  ]
+}
