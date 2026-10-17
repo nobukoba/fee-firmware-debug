@@ -66,7 +66,12 @@
       "path": "evidence/day2-capture-interruption-audit.json",
       "original_sha256": "c4b4a9b21db3819b60ddc417b5d59f2e971d09f4fcee650e65f1b9aae3a8dfe1",
       "exported_sha256": "974a6ac57591bd978db1e1025a8ed117c37465d82fdcbd5828c1ca10be32a05f"
+    },
+    {
+      "path": "evidence/day2-f306-reviewed-outcome.json",
+      "original_sha256": "d4d9c52be29b185f8d3da2a48315c09086b5fc3f8fc688fcb2d6dcc5d7c0a44f",
+      "exported_sha256": "a46e2a9651d9dc8ea874f705cc00d45edbf34ac0f7bae0ae06e42f31df351087"
     }
   ],
-  "updated": "2026-10-18T06:40:37.565775"
+  "updated": "2026-10-18T07:22:31.442941"
 }

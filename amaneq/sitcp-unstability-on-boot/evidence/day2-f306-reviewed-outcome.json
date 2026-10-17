@@ -1,0 +1,259 @@
+{
+  "created": "2026-10-18T07:22:30.573890",
+  "phase": "F306_50us_cold_evidence_frozen",
+  "host": "192.168.10.16",
+  "delay_constant_ns": 50000,
+  "native_INIT_and_SOFT_levels": 0,
+  "successes": 0,
+  "trials": 3,
+  "trial_results": [
+    {
+      "number": 1,
+      "success": false,
+      "RBCP_reply_samples": 0,
+      "last_sample_elapsed_seconds": 87.219
+    },
+    {
+      "number": 2,
+      "success": false,
+      "RBCP_reply_samples": 0,
+      "last_sample_elapsed_seconds": 87.188
+    },
+    {
+      "number": 3,
+      "success": false,
+      "RBCP_reply_samples": 0,
+      "last_sample_elapsed_seconds": 87.125
+    }
+  ],
+  "full_flash_sha256": "ef6bcde4455ad2b0f58d36d54a887f1c00880b2c1437d262447bec9d171e4544",
+  "configuration_status_actual_exit_code": 0,
+  "configuration_status": {
+    "REGISTER.BOOT_STATUS": "00000000000000000000000000000001",
+    "REGISTER.BOOT_STATUS.BIT00_0_STATUS_VALID": "1",
+    "REGISTER.BOOT_STATUS.BIT01_0_FALLBACK": "0",
+    "REGISTER.BOOT_STATUS.BIT02_0_INTERNAL_PROG": "0",
+    "REGISTER.BOOT_STATUS.BIT03_0_WATCHDOG_TIMEOUT_ERROR": "0",
+    "REGISTER.BOOT_STATUS.BIT04_0_ID_ERROR": "0",
+    "REGISTER.BOOT_STATUS.BIT05_0_CRC_ERROR": "0",
+    "REGISTER.BOOT_STATUS.BIT06_0_WRAP_ERROR": "0",
+    "REGISTER.BOOT_STATUS.BIT07_0_SECURITY_ERROR": "0",
+    "REGISTER.BOOT_STATUS.BIT08_1_STATUS_VALID": "0",
+    "REGISTER.BOOT_STATUS.BIT09_1_FALLBACK": "0",
+    "REGISTER.BOOT_STATUS.BIT10_1_INTERNAL_PROG": "0",
+    "REGISTER.BOOT_STATUS.BIT11_1_WATCHDOG_TIMEOUT_ERROR": "0",
+    "REGISTER.BOOT_STATUS.BIT12_1_ID_ERROR": "0",
+    "REGISTER.BOOT_STATUS.BIT13_1_CRC_ERROR": "0",
+    "REGISTER.BOOT_STATUS.BIT14_1_WRAP_ERROR": "0",
+    "REGISTER.BOOT_STATUS.BIT15_1_SECURITY_ERROR": "0",
+    "REGISTER.BOOT_STATUS.BIT16_RESERVED": "0000000000000000",
+    "REGISTER.CONFIG_STATUS": "01010000000100000111100111111100",
+    "REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR": "0",
+    "REGISTER.CONFIG_STATUS.BIT01_DECRYPTOR_ENABLE": "0",
+    "REGISTER.CONFIG_STATUS.BIT02_PLL_LOCK_STATUS": "1",
+    "REGISTER.CONFIG_STATUS.BIT03_DCI_MATCH_STATUS": "1",
+    "REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS": "1",
+    "REGISTER.CONFIG_STATUS.BIT05_GTS_CFG_B_STATUS": "1",
+    "REGISTER.CONFIG_STATUS.BIT06_GWE_STATUS": "1",
+    "REGISTER.CONFIG_STATUS.BIT07_GHIGH_STATUS": "1",
+    "REGISTER.CONFIG_STATUS.BIT08_MODE_PIN_M[0]": "1",
+    "REGISTER.CONFIG_STATUS.BIT09_MODE_PIN_M[1]": "0",
+    "REGISTER.CONFIG_STATUS.BIT10_MODE_PIN_M[2]": "0",
+    "REGISTER.CONFIG_STATUS.BIT11_INIT_B_INTERNAL_SIGNAL_STATUS": "1",
+    "REGISTER.CONFIG_STATUS.BIT12_INIT_B_PIN": "1",
+    "REGISTER.CONFIG_STATUS.BIT13_DONE_INTERNAL_SIGNAL_STATUS": "1",
+    "REGISTER.CONFIG_STATUS.BIT14_DONE_PIN": "1",
+    "REGISTER.CONFIG_STATUS.BIT15_IDCODE_ERROR": "0",
+    "REGISTER.CONFIG_STATUS.BIT16_SECURITY_ERROR": "0",
+    "REGISTER.CONFIG_STATUS.BIT17_SYSTEM_MONITOR_OVER-TEMP_ALARM_STATUS": "0",
+    "REGISTER.CONFIG_STATUS.BIT18_CFG_STARTUP_STATE_MACHINE_PHASE": "100",
+    "REGISTER.CONFIG_STATUS.BIT21_RESERVED": "0000",
+    "REGISTER.CONFIG_STATUS.BIT25_CFG_BUS_WIDTH_DETECTION": "00",
+    "REGISTER.CONFIG_STATUS.BIT27_HMAC_ERROR": "0",
+    "REGISTER.CONFIG_STATUS.BIT28_PUDC_B_PIN": "1",
+    "REGISTER.CONFIG_STATUS.BIT29_BAD_PACKET_ERROR": "0",
+    "REGISTER.CONFIG_STATUS.BIT30_CFGBVS_PIN": "1",
+    "REGISTER.CONFIG_STATUS.BIT31_RESERVED": "0"
+  },
+  "control17_in_test_window": {
+    "RBCP_probes": 10,
+    "TCP_probes": 1,
+    "failures": 0,
+    "rows": [
+      {
+        "event": "probe",
+        "time": "2026-10-18T07:16:57.880386",
+        "elapsed_seconds": 5040.0,
+        "tcp_requested": false,
+        "result": {
+          "rbcp": true,
+          "tcp24": null,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F304",
+          "expected_version": "0x60C4F304",
+          "identity_matches": true,
+          "success": true
+        }
+      },
+      {
+        "event": "probe",
+        "time": "2026-10-18T07:17:27.884996",
+        "elapsed_seconds": 5070.0,
+        "tcp_requested": false,
+        "result": {
+          "rbcp": true,
+          "tcp24": null,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F304",
+          "expected_version": "0x60C4F304",
+          "identity_matches": true,
+          "success": true
+        }
+      },
+      {
+        "event": "probe",
+        "time": "2026-10-18T07:17:57.895903",
+        "elapsed_seconds": 5100.015,
+        "tcp_requested": true,
+        "result": {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F304",
+          "expected_version": "0x60C4F304",
+          "identity_matches": true,
+          "success": true
+        }
+      },
+      {
+        "event": "probe",
+        "time": "2026-10-18T07:18:27.881867",
+        "elapsed_seconds": 5130.0,
+        "tcp_requested": false,
+        "result": {
+          "rbcp": true,
+          "tcp24": null,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F304",
+          "expected_version": "0x60C4F304",
+          "identity_matches": true,
+          "success": true
+        }
+      },
+      {
+        "event": "probe",
+        "time": "2026-10-18T07:18:57.890139",
+        "elapsed_seconds": 5160.0,
+        "tcp_requested": false,
+        "result": {
+          "rbcp": true,
+          "tcp24": null,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F304",
+          "expected_version": "0x60C4F304",
+          "identity_matches": true,
+          "success": true
+        }
+      },
+      {
+        "event": "probe",
+        "time": "2026-10-18T07:19:27.892207",
+        "elapsed_seconds": 5190.015,
+        "tcp_requested": false,
+        "result": {
+          "rbcp": true,
+          "tcp24": null,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F304",
+          "expected_version": "0x60C4F304",
+          "identity_matches": true,
+          "success": true
+        }
+      },
+      {
+        "event": "probe",
+        "time": "2026-10-18T07:19:57.883880",
+        "elapsed_seconds": 5220.0,
+        "tcp_requested": false,
+        "result": {
+          "rbcp": true,
+          "tcp24": null,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F304",
+          "expected_version": "0x60C4F304",
+          "identity_matches": true,
+          "success": true
+        }
+      },
+      {
+        "event": "probe",
+        "time": "2026-10-18T07:20:27.886485",
+        "elapsed_seconds": 5250.0,
+        "tcp_requested": false,
+        "result": {
+          "rbcp": true,
+          "tcp24": null,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F304",
+          "expected_version": "0x60C4F304",
+          "identity_matches": true,
+          "success": true
+        }
+      },
+      {
+        "event": "probe",
+        "time": "2026-10-18T07:20:57.890831",
+        "elapsed_seconds": 5280.0,
+        "tcp_requested": false,
+        "result": {
+          "rbcp": true,
+          "tcp24": null,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F304",
+          "expected_version": "0x60C4F304",
+          "identity_matches": true,
+          "success": true
+        }
+      },
+      {
+        "event": "probe",
+        "time": "2026-10-18T07:21:27.879362",
+        "elapsed_seconds": 5310.0,
+        "tcp_requested": false,
+        "result": {
+          "rbcp": true,
+          "tcp24": null,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F304",
+          "expected_version": "0x60C4F304",
+          "identity_matches": true,
+          "success": true
+        }
+      }
+    ]
+  },
+  "active_control_log_prefix": {
+    "path": "day2-control17-f304.jsonl",
+    "bytes": 51630,
+    "sha256": "0e554c74763ecbef25704ffad58f422f6722a942055ff3c0e9296e18c2eb38c8"
+  },
+  "source_sha256": {
+    "<workspace>\\freeze_day2_f306_result.py": "3a031af47ab3ebfd1256ae0f4e26e27cbfb4b6454c4cf46de9353ed65efee367",
+    "day2-f306-independent-review.json": "38f76f8025c7d94b3c492e8a0a9a23d4f0dc630c3bbb0c16cc453e5259936e4c",
+    "day2-delay-hardware-v2.json": "60354709ff2b65815cd1fd6e4a827a8136c60a70e46e19a158558acdfb147fe1",
+    "flash-day2-f306-16-20261018-071118-result.json": "d527d3351ed1893e247ae034819c13cbc661c927589029f55bbb851774656dc4",
+    "day2-f306-16-cold3.json": "9731f7c4da2653e287b37fca86e76e65fa9b50d36bcd0bda1de2eb67097f2b4d",
+    "day2-f306-config-status.log": "f5b222a510c4331c8da38159aa7fd5ccea47ddadc69357666b22921f34450294",
+    "read-day2-f306-config-status.tcl": "706271b89053f19b14280a853bf13c93aa7c12cfb8318ec085cb67494d32aa4b",
+    "run_day2_delay_hardware_v2.py": "d31aaedf34efe32d97d1693053815c914e53d4caa86ea65011734ec5bad206dc",
+    "day2-native-baseline16.json": "5084b4069d53f79677549121878920c031a8b68e8afc699674b48a484bf07bee"
+  },
+  "limits": [
+    "3 cold trials with 90s readiness deadline; not proof for all delay values",
+    "Factory baseline1/3 differs in toolchain/placement from the new build",
+    "No recovered-clock measurement in this uninstrumented50us image",
+    "The constant is50us; additional10cycles margin and native FSM transitions remain",
+    "Configuration-register snapshot is after the third trial, not a snapshot of all three trials",
+    "ConfigurationPLL_LOCK_STATUS is not GTX CPLLLOCK or CDR lock"
+  ]
+}
