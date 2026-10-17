@@ -1,0 +1,34 @@
+{
+  "started": "2026-10-18T08:32:41.750603",
+  "host": "192.168.10.16",
+  "expected_version": "0x60C4F306",
+  "operations": "Read-only RBCP version/IP reads and TCP24 connection; no power/reset/program operation",
+  "cold_log": "day2-f306-16-cold3.json",
+  "cold_log_sha256": "9731f7c4da2653e287b37fca86e76e65fa9b50d36bcd0bda1de2eb67097f2b4d",
+  "cold3_completed": "2026-10-18T07:21:31.922703",
+  "seconds_since_cold3_completed": 4269.8279,
+  "samples": [
+    {
+      "time": "2026-10-18T08:32:41.750603",
+      "result": {
+        "rbcp": false,
+        "tcp24": null,
+        "rbcp_error": "timed out",
+        "identity_matches": false,
+        "success": false
+      }
+    },
+    {
+      "time": "2026-10-18T08:32:48.265411",
+      "result": {
+        "rbcp": false,
+        "tcp24": null,
+        "rbcp_error": "timed out",
+        "identity_matches": false,
+        "success": false
+      }
+    }
+  ],
+  "finished": "2026-10-18T08:32:49.768025",
+  "source_sha256": "63212a59c806d5d69a8a5af175def3adfc56fad4026c5da8e62ffca42d6d1b8f"
+}

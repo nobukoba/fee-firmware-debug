@@ -76,7 +76,17 @@
       "path": "evidence/day2-functional-hdl-diffs.json",
       "original_sha256": "5dd9948bae792d6a0f7937e8d22342765ab454db9a0785bbcb87e0de3c062d40",
       "exported_sha256": "4e5ac2f67896a241b25353fd84f7faa7e99137977752889c6b178b8053f1d3dc"
+    },
+    {
+      "path": "evidence/day2-f306-late-readonly-status.json",
+      "original_sha256": "dad5472f7ee4541a487cc290ee1ddeb4357e60c73c0fc7305811a91b9236655a",
+      "exported_sha256": "4c8ab0c4dd4955baf5a8c1c6707fe544cf00247e96a4a47a56f32907c8bd7d9d"
+    },
+    {
+      "path": "evidence/day2-f306-late-power-status.json",
+      "original_sha256": "78584046a8804700a05b2a7f1c93df770db16ceeae75b0bbaaa0c580b3580e58",
+      "exported_sha256": "3a3d28a52e6400927b9ea659210baa74e63c51d9e83b866ab1f0f87e8e37881f"
     }
   ],
-  "updated": "2026-10-18T08:23:03.743298"
+  "updated": "2026-10-18T08:34:23.868229"
 }

@@ -204,6 +204,10 @@ F306（50 µs）もboard16で **起動成功0/3**。全フラッシュ読戻し�
 3回目の失敗後にDONE・EOS=1、構成CRC・IDエラー・フォールバック=0を確認した。
 試験中の正常側board17の通信監視に失敗はなかった。
 詳細は [F306の確定記録](evidence/day2-f306-reviewed-outcome.json)。
+さらに、3回目の試験終了から約71分後にも、リセット・電源操作を行わずに2回確認し、
+RBCP応答は得られなかった。[遅延後の通信確認](evidence/day2-f306-late-readonly-status.json)と
+[電源状態の読取り](evidence/day2-f306-late-power-status.json)を保存した。
+電源装置は出力ON・設定30 V/1 Aだったが、これは基板上のGT電源レールの波形測定ではない。
 
 | 条件 | board16起動成功 | 備考 |
 |---|---:|---|
