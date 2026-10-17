@@ -15,3 +15,4 @@ initial_CPLL_sequence_family,bypass,0,3
 initial_CPLL_sequence_family,clockready,0,3
 initial_CPLL_sequence_family,rxhold,0,3
 initial_CPLL_sequence_family,reverse,0,3
+day2_STARTUP_DELAY,5000ns_native_INIT0_SOFT0_board16,0,3

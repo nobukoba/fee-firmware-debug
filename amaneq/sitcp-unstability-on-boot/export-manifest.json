@@ -56,6 +56,12 @@
       "path": "evidence/day1-frozen-evidence-audit-20261018-032548.json",
       "original_sha256": "a34fc9468631dfafd28dd203781ead8f35df495aa9e59c513a27772cc98486b0",
       "exported_sha256": "ca4c34b5656b306bc3f02a3ea60e6c4c54673db935d2b0d8aed059d2ca359d94"
+    },
+    {
+      "path": "evidence/day2-f305-reviewed-outcome.json",
+      "original_sha256": "899c7b74d27f51181bf938898aa3f4bbd0ebc826b4c7e3db397bbd391281555b",
+      "exported_sha256": "f43ace471fdcb40c458d705b4b2bdad669b17008743ece2fe5efa102c13720b6"
     }
-  ]
+  ],
+  "updated": "2026-10-18T06:19:46.230944"
 }

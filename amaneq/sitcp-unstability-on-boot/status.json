@@ -54,5 +54,17 @@
     },
     "partial_tail_bytes_ignored": 0
   },
-  "reason": "Stopped at user request to compare longer STARTUP_DELAY and autonomous PMA reset; original scheduled deadline was not reached"
+  "reason": "Stopped at user request to compare longer STARTUP_DELAY and autonomous PMA reset; original scheduled deadline was not reached",
+  "updated": "2026-10-18T06:19:46.244216",
+  "day2_completed": {
+    "F305_5us": {
+      "successes": 0,
+      "trials": 3,
+      "evidence": "evidence/day2-f305-reviewed-outcome.json"
+    }
+  },
+  "day2_pending": [
+    "F306_50us",
+    "F307_autonomous_PMA_matched_gate"
+  ]
 }
