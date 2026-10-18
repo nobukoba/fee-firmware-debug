@@ -1,0 +1,538 @@
+{
+  "created": "2026-10-18T10:41:56.039971",
+  "phase": "local_hardware_evidence_and_cleanup_completion_verified",
+  "frozen_source_checks": [
+    {
+      "source": "day1-frequency16-reviewed-outcome.json",
+      "sha256": "05ee8270e8e394b88f480cf7926a94b957df3bfc48e126b931215a84f703e1c7"
+    },
+    {
+      "source": "day1-frequency17-comparison-evidence.json",
+      "sha256": "abdecee1dc4d8565e34b0182ed6e5035b200fd60febfff59d9c8721f4cd2b3a4"
+    },
+    {
+      "source": "day1-earlypulse-matrix-evidence.json",
+      "sha256": "714d03cb74f61a7873fda7cfe75306c7875f6db77e959708a7f9f9534fa2a67c"
+    },
+    {
+      "source": "day1-timerfactor-matrix-evidence.json",
+      "sha256": "626e39e300280a1434462f0753fcfe0a2f658637cb9f23b7a9bc9bfdf0f3ec88"
+    },
+    {
+      "source": "day1-initialcpll-matrix-evidence.json",
+      "sha256": "f531164184f0cc4a4136b3ab70d61fe3e8a32b1d1faa98a59d812e23d52da870"
+    },
+    {
+      "source": "day1-singlepma-summary.json",
+      "sha256": "1669837e2584dd41354b91201b59fc169663f7fe21279418d46f682d7021aaa8"
+    },
+    {
+      "source": "day1-singlepma-packet-evidence.json",
+      "sha256": "c8cec727d3a70075e54a3779dff3a2cfbbff7a1b7c4508d707aa5839e69c396f"
+    },
+    {
+      "source": "day1-poweron-reset-path-evidence.json",
+      "sha256": "38c607e9b063aed58a7ce5dbeb567b29e0a925ae00a3c636a31cbfa7ef3d0b62"
+    },
+    {
+      "source": "day1-frequency-v14-physical-review.json",
+      "sha256": "74b16aee4284319b07ed1fddeecc41928c63ca91f2718164c868ce5326ed5f3f"
+    },
+    {
+      "source": "candidate-f304-minimal-hdl-diff.json",
+      "sha256": "10dec073efbdddeff972dbf5da08f7ef35029f337b048e979d749bf9c1a4d7c9"
+    },
+    {
+      "source": "candidate-f304-minimal-hdl.patch",
+      "sha256": "8739001a0fea20060e0bf732737d185c4e755e7e672cf00fcbf01a1554e66046"
+    },
+    {
+      "source": "lrtdc-minimal-inithold/build/minimal-inithold-f304/manifest.json",
+      "sha256": "c3143aeb4402f9599b2095aad4a4d8d3bdc112c94bdc9eeda7163dafb0f5c48a"
+    },
+    {
+      "source": "day1-recovered-clock-inventory.txt",
+      "sha256": "ae1be43181be7a4eb2d824a58b242978aff72ec87afa6a7be9346743511bc734"
+    },
+    {
+      "source": "experiments/reference/ug476-7series-extracted-24h.txt",
+      "sha256": "aa83d943632949e2f6a2444c84bfd3c684eca2d6f291f715526afc88ad751788"
+    },
+    {
+      "source": "eeprom-dual17-before.bin",
+      "sha256": "0657876d036a1b9c1ba34903bbf577d490741c851af11916d91efed7f1a1521e"
+    },
+    {
+      "source": "eeprom-before-startup.bin",
+      "sha256": "341c5c207c91e51c634ba3e3090fea4689e4e5ae07725e4996a3e568b504c887"
+    },
+    {
+      "source": "day1-f304-qual-17-off60.json",
+      "sha256": "1a75021a34062123ec1b80907051ae429455d50d729f90d6036c4a0018b97096"
+    },
+    {
+      "source": "day1-f304-qual-16-extra7.json",
+      "sha256": "63060ae7246c58ab4b6a7d93c61c0b3c610adade3224b14a1914dfefd042ba96"
+    },
+    {
+      "source": "day1-f304-reinstall17.json",
+      "sha256": "80222de98b9cf3bfbc86720685d1e83105ac9cdd009d41c828e738bc33ff3116"
+    },
+    {
+      "source": "day1-candidate-f304-16.json",
+      "sha256": "0e808fbd500df67ff4714b55687da0af2cb3c7d970ec6bde523136ba5f8d6932"
+    },
+    {
+      "source": "day1-f304-reinstall16.json",
+      "sha256": "9bf7bbf4a082098b31b48aca96f617b4035b674e4bc2c193ed19990de5bd1a98"
+    },
+    {
+      "source": "day1-f304-reinstall17-cold3.json",
+      "sha256": "bc98f9fe079cfd35a1ed6e5f2fa8504b6eff5a995400766575d358e494195a8d"
+    },
+    {
+      "source": "dual_board_cold.py",
+      "sha256": "db4144e5e4655c5e8d511d9a3c58e7f53ffed1ad6aa9c242e0933ac6f756572d"
+    },
+    {
+      "source": "day1-f304-qual-17-off600.json",
+      "sha256": "38b9bf3cd0bbb0dc1bed526d58fe0cfa74ca79cbe2459f3ac7ffc86dff571161"
+    },
+    {
+      "source": "day1-f304-qual-16-off60.json",
+      "sha256": "bb046fe0a42a9f1586ca4d7d8d82e69cda2a2cae6889b5f2e6bf52f766ce7afa"
+    },
+    {
+      "source": "dual_board_cold_varied.py",
+      "sha256": "1b5fa011743443af907e058675a8c110981534b356b7f42c058fafcf7bf1a9d9"
+    },
+    {
+      "source": "day1-candidate-f304-17-cold3.json",
+      "sha256": "90a3c65cf6a58204daa12c4ae50fc0a404dbcba9e86416aff9106469e918dc1c"
+    },
+    {
+      "source": "day1-candidate-f304-17.json",
+      "sha256": "198f1e72801a0c4652c9fe78f078fa9260115e84fd48d16624e0767f86097c32"
+    },
+    {
+      "source": "<workspace>\\summarize_day1_f304_validation.py",
+      "sha256": "9df7fd64cdf30b35b689c3e429973a7ab0ea48296bffe7da0846c42ad9b6a83c"
+    },
+    {
+      "source": "flash-day1-min-f304-16-20261017-222459-result.json",
+      "sha256": "8855072bfc19880158fa156e1e3cea90e2c12ea737bd23c265356270275c37fd"
+    },
+    {
+      "source": "boot_test.py",
+      "sha256": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d"
+    },
+    {
+      "source": "day1-candidate-f304-16-cold3.json",
+      "sha256": "363231644ad6a77c6c9fa289f3bb79a5a71fb71af790fedfa23777f95856bc77"
+    },
+    {
+      "source": "<workspace>\\run_day1_f304_qualification.py",
+      "sha256": "f4ec3c39b5ba0771aba018eed409e074774756f9de8df7a41c4582ddfdb67beb"
+    },
+    {
+      "source": "flash-day1-min-f304-17-20261017-223215-result.json",
+      "sha256": "a0e3eca630180ad3a10cf76ad63c34383a9aa9121abdab05cf2637db4a83bb0b"
+    },
+    {
+      "source": "flash-day1-min-f304-re16-20261018-014744-result.json",
+      "sha256": "7de0e720488f4d272d1872d9bf480880d61f9cb0e3f319a1691e959390c70489"
+    },
+    {
+      "source": "day1-f304-qual-16-off600.json",
+      "sha256": "2b3ca9a34af7a76ddc71bfe5f69798dd9f695ba4fb2828a464eec8c08a34fefd"
+    },
+    {
+      "source": "network_boot_stress.py",
+      "sha256": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c"
+    },
+    {
+      "source": "day1-f304-qualification.json",
+      "sha256": "c4d1406dfc43f60367e0209f0043f038292adc02eb663c0bf544a57509a86ec1"
+    },
+    {
+      "source": "day1-f304-reinstall16-cold3.json",
+      "sha256": "4265ed179b054cc925f96b37f4307fd92987eb8a326d5fa6da8a8f83a3aea7a7"
+    },
+    {
+      "source": "flash-day1-min-f304-re17-20261018-014039-result.json",
+      "sha256": "64010e3e15cb3643b755e520df503b4cc1f422dbc2ea696fa2c445ae278b9e97"
+    },
+    {
+      "source": "day1-f304-qual-17-extra7.json",
+      "sha256": "047fafaf19c3539be6de9c360537dcc1638d2f7bd1372f31653bb87e9b1d0f5c"
+    },
+    {
+      "source": "<workspace>\\freeze_day2_f305_result.py",
+      "sha256": "5f9a4ae4f1a4cf380bc75e44eeb6730e10d5c1fae6640444da15c7f905b6fed4"
+    },
+    {
+      "source": "day2-f305-independent-review.json",
+      "sha256": "38dac2ba1ac613e42dd3e5604288792d97747a703e6b7062540256a11ec02c77"
+    },
+    {
+      "source": "flash-day2-f305-16-20261018-060008-result.json",
+      "sha256": "7749224b27f15cbbeaac214f3c8eed47ed79b4b26d29cee761fbf588797ac533"
+    },
+    {
+      "source": "day2-f305-16-cold3.json",
+      "sha256": "498202a998245b73346c92ce37c3e9ce9c5a2a0e2a47f0e891f52d11466d178e"
+    },
+    {
+      "source": "day2-f305-config-status.log",
+      "sha256": "c50e190ca6e411aff62286055edc411dfb8d92bea31ef4fd3e14112b8c60d3f8"
+    },
+    {
+      "source": "read-day2-f305-config-status.tcl",
+      "sha256": "6117734ee30e8bd65871954c76da6f4729581ac45c8edba279e236b9f04ed0ed"
+    },
+    {
+      "source": "run_day2_delay_hardware_v2.py",
+      "sha256": "d31aaedf34efe32d97d1693053815c914e53d4caa86ea65011734ec5bad206dc"
+    },
+    {
+      "source": "day2-native-baseline16.json",
+      "sha256": "5084b4069d53f79677549121878920c031a8b68e8afc699674b48a484bf07bee"
+    },
+    {
+      "source": "<workspace>\\freeze_day2_f306_result.py",
+      "sha256": "3a031af47ab3ebfd1256ae0f4e26e27cbfb4b6454c4cf46de9353ed65efee367"
+    },
+    {
+      "source": "day2-f306-independent-review.json",
+      "sha256": "38f76f8025c7d94b3c492e8a0a9a23d4f0dc630c3bbb0c16cc453e5259936e4c"
+    },
+    {
+      "source": "day2-delay-hardware-v2.json",
+      "sha256": "60354709ff2b65815cd1fd6e4a827a8136c60a70e46e19a158558acdfb147fe1"
+    },
+    {
+      "source": "flash-day2-f306-16-20261018-071118-result.json",
+      "sha256": "d527d3351ed1893e247ae034819c13cbc661c927589029f55bbb851774656dc4"
+    },
+    {
+      "source": "day2-f306-16-cold3.json",
+      "sha256": "9731f7c4da2653e287b37fca86e76e65fa9b50d36bcd0bda1de2eb67097f2b4d"
+    },
+    {
+      "source": "day2-f306-config-status.log",
+      "sha256": "f5b222a510c4331c8da38159aa7fd5ccea47ddadc69357666b22921f34450294"
+    },
+    {
+      "source": "read-day2-f306-config-status.tcl",
+      "sha256": "706271b89053f19b14280a853bf13c93aa7c12cfb8318ec085cb67494d32aa4b"
+    },
+    {
+      "source": "run_day2_delay_hardware_v2.py",
+      "sha256": "d31aaedf34efe32d97d1693053815c914e53d4caa86ea65011734ec5bad206dc"
+    },
+    {
+      "source": "day2-native-baseline16.json",
+      "sha256": "5084b4069d53f79677549121878920c031a8b68e8afc699674b48a484bf07bee"
+    },
+    {
+      "source": "day2-autopma-observed-independent-review.json",
+      "sha256": "5ce6db6f03a75bd3a8e13f43d224ae73aee58fc9b0af50fabcbe2edb264542eb"
+    },
+    {
+      "source": "day2-pma-first-trial-v2.json",
+      "sha256": "135ca69e1dc0a736364a8f1ceb922b66bff9472b3c9539e46b2706941dd10618"
+    },
+    {
+      "source": "day2-pma-bypass16-cold1.json",
+      "sha256": "f7627740a97fdfd07f21744b153866374ab480131a313750bfb0bd111ad37ae6"
+    },
+    {
+      "source": "day2-pma-first-bypass-decoded.json",
+      "sha256": "3c51c704cb9aa7fc727ac88b338e049ce08604793a385f43b806da40ba71ef0d"
+    },
+    {
+      "source": "day2-pma-cohort-d2pma-b16tail.json",
+      "sha256": "205ee9e7e8a3cb5d87e28a4d41384bff43553c6414e6d628cb5f0cb07924f189"
+    },
+    {
+      "source": "flash-day2-pma-bypass16-20261018-094325-result.json",
+      "sha256": "0cb3d4e2177ab80068c9ccc9a906c6a5494ae29def341e68ed471853ddff7b00"
+    },
+    {
+      "source": "day2-pma-cohort-d2pma-en16.json",
+      "sha256": "a51be02cd7fae458b9d12a9127171468e83fad5c5ab03b3fd7a30d3c5e2489a9"
+    },
+    {
+      "source": "flash-d2pma-en16-20261018-095648-result.json",
+      "sha256": "6916dba0fadffccabc2131330c804cb9e1bdc648a7c1e56d7b24b264c272f143"
+    },
+    {
+      "source": "day2-pma-cohort-d2pma-rev16.json",
+      "sha256": "6120dc1bae5b60fc8f0813c7cbc798eac9e1f30e12adc8fb1ea820ca4d0466f6"
+    },
+    {
+      "source": "flash-d2pma-rev16-20261018-100652-result.json",
+      "sha256": "1919bece3f47158f8becf6e65e7f5632999a41fd53a1a93381460740fd8a9f8c"
+    },
+    {
+      "source": "day2-pma-cohort-d2pma-en17.json",
+      "sha256": "d12f018ac8594bec49b907d90ca4f3b6b195df204c3c7840804aeb7799650e52"
+    },
+    {
+      "source": "flash-d2pma-en17-20261018-101829-result.json",
+      "sha256": "8d9512e26b32afce9cdac920ef434552726f53f4898c7978ffe1382d3d14a75c"
+    },
+    {
+      "source": "day2-autopma-ila-bypass16-cold1.json",
+      "sha256": "16947c686e17596b67f5b2a7750802e66f83712fb92381abe2d1451ee0c99f0d"
+    },
+    {
+      "source": "day2-autopma-ila-bypass16-cold1.csv",
+      "sha256": "ceb6f49eb47cae36c065e90b029ad2d6965783a398831a04b536c661aab097e1"
+    },
+    {
+      "source": "day2-pma-d2pma-b16tail-cold2.json",
+      "sha256": "40d0f9c4818c897ead59dc24035a5a94e4040f33b9d15997dcf1b73cd77a9fab"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-b16tail-cold2.json",
+      "sha256": "4ac3f481b42c745b7bc820fbcaf333102bab754aa2500c896ac1672ae18a0e65"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-b16tail-cold2.csv",
+      "sha256": "ceb6f49eb47cae36c065e90b029ad2d6965783a398831a04b536c661aab097e1"
+    },
+    {
+      "source": "day2-pma-d2pma-b16tail-cold2-decoded.json",
+      "sha256": "e8a93220270d4869a4a515230e82855a13c2210d014a495fdfb56fc6062be061"
+    },
+    {
+      "source": "day2-pma-d2pma-b16tail-cold3.json",
+      "sha256": "65fe791dcae8f37c1c16f7ea4216681d811c74d1efec36a9c7f20987982c18c7"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-b16tail-cold3.json",
+      "sha256": "1bb1ededa54f3ff9eb5d746ca1b6f43873861d851bd28ca62289b0f3b11350b0"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-b16tail-cold3.csv",
+      "sha256": "ceb6f49eb47cae36c065e90b029ad2d6965783a398831a04b536c661aab097e1"
+    },
+    {
+      "source": "day2-pma-d2pma-b16tail-cold3-decoded.json",
+      "sha256": "99431bfe8c91f70fbc29ca60b8019c3d3f04c69417ead114d555bd8b29ab4264"
+    },
+    {
+      "source": "day2-pma-d2pma-en16-cold1.json",
+      "sha256": "f6319c79b72e7c26531c9309153c094c7e1067d092833301b61ba716f3909c03"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-en16-cold1.json",
+      "sha256": "2c17e8eeb7ad804dfa3f4527535ed14f4f3406fd14b828f783ce26c779a5ae58"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-en16-cold1.csv",
+      "sha256": "858a50d2d67d3d43c7f898c33fec2c0c693849b6598f98b6c68373bcf383e78e"
+    },
+    {
+      "source": "day2-pma-d2pma-en16-cold1-decoded.json",
+      "sha256": "0339b223a516ab3f760fb03cfc774a572e476b6f3e6864486668d028ca68a375"
+    },
+    {
+      "source": "day2-pma-d2pma-en16-cold2.json",
+      "sha256": "25d8b3f6a3b2cca1ac75f5f0f97be9eb37ff4a2b4934e384e3613affbd8e9b74"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-en16-cold2.json",
+      "sha256": "6f34353b32662bad9a04f5a7396a0472ceb68573a4b1676be5a84d5e730b8c86"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-en16-cold2.csv",
+      "sha256": "858a50d2d67d3d43c7f898c33fec2c0c693849b6598f98b6c68373bcf383e78e"
+    },
+    {
+      "source": "day2-pma-d2pma-en16-cold2-decoded.json",
+      "sha256": "f778c5ae4eb269cff875bf18f4d7c206249230cb581b333e6e02a91082e71c62"
+    },
+    {
+      "source": "day2-pma-d2pma-en16-cold3.json",
+      "sha256": "aafe8db8bdb52ddb525986e45ec92e8279ccaa73183c73eb3e057873ef7103b6"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-en16-cold3.json",
+      "sha256": "53d93fdb8420e7d037e290d28e283a9865d73c82791175d09737208193cd50e1"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-en16-cold3.csv",
+      "sha256": "858a50d2d67d3d43c7f898c33fec2c0c693849b6598f98b6c68373bcf383e78e"
+    },
+    {
+      "source": "day2-pma-d2pma-en16-cold3-decoded.json",
+      "sha256": "5e2e58209dbb97286c5e3ca47611d10e9c3c56ef554c01e7ba53132e38f37a8d"
+    },
+    {
+      "source": "day2-pma-d2pma-rev16-cold1.json",
+      "sha256": "6a362400e2d9668d9ac5a918acc940abdb0e43f94642055d5848a55877410291"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-rev16-cold1.json",
+      "sha256": "3f98fba5dfc8a2f98413ad04c57c1cc3e596e1d2d4e5f49991a81675350966ba"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-rev16-cold1.csv",
+      "sha256": "ceb6f49eb47cae36c065e90b029ad2d6965783a398831a04b536c661aab097e1"
+    },
+    {
+      "source": "day2-pma-d2pma-rev16-cold1-decoded.json",
+      "sha256": "832010cbf1255e952341af6b87a4a529d300ecde92a38314ba60e86e30536f32"
+    },
+    {
+      "source": "day2-pma-d2pma-rev16-cold2.json",
+      "sha256": "e8d1f9862a49704bf7289f0f746efcecbbdd0bbd11058717fdb00b10119348c9"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-rev16-cold2.json",
+      "sha256": "2c74b7fa87f1b845e9db0a93bf0b1ce8e98e1fd8d89ded29adcb746d86c972f9"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-rev16-cold2.csv",
+      "sha256": "ceb6f49eb47cae36c065e90b029ad2d6965783a398831a04b536c661aab097e1"
+    },
+    {
+      "source": "day2-pma-d2pma-rev16-cold2-decoded.json",
+      "sha256": "94042986952a25c8961da6401f0bc865c21285c83515dd4cab991a894f175645"
+    },
+    {
+      "source": "day2-pma-d2pma-rev16-cold3.json",
+      "sha256": "a24a761697843f99aaa5399ed998ba72baf97fcc837cc870ebc9be80912a3f8e"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-rev16-cold3.json",
+      "sha256": "570476b44eb1e2e7d8c5291dbc63102d62ee25f9e0b2bacc475934004dec5bd4"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-rev16-cold3.csv",
+      "sha256": "ceb6f49eb47cae36c065e90b029ad2d6965783a398831a04b536c661aab097e1"
+    },
+    {
+      "source": "day2-pma-d2pma-rev16-cold3-decoded.json",
+      "sha256": "edd94efd02386cc2b1e37c6de339ee0d2dc8d09acfed4a0deb8c181863d3e872"
+    },
+    {
+      "source": "day2-pma-d2pma-en17-cold1.json",
+      "sha256": "b480a2aadca32bab2dced2425c231a0083f82cac7dc41d71706a0731ddf3f515"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-en17-cold1.json",
+      "sha256": "48a14bde260b7e2b5dd04fb8bed79bb45facf510a2cec35b2e2da01c19da34e4"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-en17-cold1.csv",
+      "sha256": "858a50d2d67d3d43c7f898c33fec2c0c693849b6598f98b6c68373bcf383e78e"
+    },
+    {
+      "source": "day2-pma-d2pma-en17-cold1-decoded.json",
+      "sha256": "a84daf4b1a5e05a4d46be880797a5ce3c3977ab8aaf36fc63cdc1d73522501a1"
+    },
+    {
+      "source": "day2-pma-d2pma-en17-cold2.json",
+      "sha256": "9ae1086cd639952c70f9bab22d7af389f061e4950cb3b1030f3131d67afcfecb"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-en17-cold2.json",
+      "sha256": "927a084e26ce82af07483dd4c55c9e8b86bb35aa51c26a94e5b6d49de0d5ab4e"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-en17-cold2.csv",
+      "sha256": "858a50d2d67d3d43c7f898c33fec2c0c693849b6598f98b6c68373bcf383e78e"
+    },
+    {
+      "source": "day2-pma-d2pma-en17-cold2-decoded.json",
+      "sha256": "0ce49f17269e5c038a07e3ceace140271271a645faeff0cfffcf2b254955b485"
+    },
+    {
+      "source": "day2-pma-d2pma-en17-cold3.json",
+      "sha256": "ccbe8f4d0a582c681624517dd0269c060a34fd63eab6d9c91f908ff36f5f80e8"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-en17-cold3.json",
+      "sha256": "40d39996d92961f774fb3f48948b7cbb61717042821664f4e50316d9cd5af394"
+    },
+    {
+      "source": "day2-autopma-ila-d2pma-en17-cold3.csv",
+      "sha256": "858a50d2d67d3d43c7f898c33fec2c0c693849b6598f98b6c68373bcf383e78e"
+    },
+    {
+      "source": "day2-pma-d2pma-en17-cold3-decoded.json",
+      "sha256": "305066e3bc10baf9602092ce0875103a9db17d561c69fc8b8fc18c7fa48ab99a"
+    },
+    {
+      "source": "day2-control17-stop-verified.json",
+      "sha256": "e3296b511c51a11e78bc97399a04f038f2e1044b89f0666f72a3c0c72e6b0060"
+    },
+    {
+      "source": "day2-control17-f304.jsonl",
+      "sha256": "26a85b6db03f055a5138d45a30ddaf4c04ed6ab757d91f5fffa10b3d8b0ad388"
+    },
+    {
+      "source": "<workspace>\\freeze_day2_pma_outcome.py",
+      "sha256": "8c38e656dcfe9ac4fdc2636944ab744c5aecb7164839cc56a47104aeb1cbc202"
+    },
+    {
+      "source": "<workspace>\\restore_investigation24h.py",
+      "sha256": "54d9e7541179172be1d17a12415a93500c4fbcb9cc7f5f7bc78ded37402fac0b"
+    },
+    {
+      "source": "flash_firmware.py",
+      "sha256": "712a49008ce6434b9407e4a0bb332b528fd4b316d9271b7e1e1b99c5f67af43c"
+    },
+    {
+      "source": "dual_board_cold.py",
+      "sha256": "db4144e5e4655c5e8d511d9a3c58e7f53ffed1ad6aa9c242e0933ac6f756572d"
+    },
+    {
+      "source": "boot_test.py",
+      "sha256": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d"
+    },
+    {
+      "source": "network_boot_stress.py",
+      "sha256": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c"
+    },
+    {
+      "source": "verify_dual_final.py",
+      "sha256": "cb4ee37cb2f7ae42e8de33a92c975dc31df56712135bd2830212580602c1dcb0"
+    },
+    {
+      "source": "eeprom-before-startup.bin",
+      "sha256": "341c5c207c91e51c634ba3e3090fea4689e4e5ae07725e4996a3e568b504c887"
+    },
+    {
+      "source": "eeprom-dual17-before.bin",
+      "sha256": "0657876d036a1b9c1ba34903bbf577d490741c851af11916d91efed7f1a1521e"
+    }
+  ],
+  "restoration_sha256": "a56c9e300d4ccca7b6b352a79aa69b491bc276c3df327b165d2644e3812df35f",
+  "final_status_sha256": "faf4675ed2c7ef59c80f311a2a57a835331d1577a7520aa527afeda7b986b286",
+  "cleanup": {
+    "created": "2026-10-18T10:41:54.863670",
+    "phase": "capture_and_temporary_sleep_inhibition_stopped",
+    "resumed_capture": "investigation24h-20261018-resumed.pcapng",
+    "resumed_capture_bytes": 9920016,
+    "resumed_capture_sha256": "7819284a6b440205827ae6bb102e0a422804ce76ae5fbf30f06071dca8615de8",
+    "resumed_capture_actual_exit_code": 1,
+    "capture_stop_method": "requested_CtrlC_after_all_restoration_checks",
+    "capture_final_drop_statistics": null,
+    "capinfos_actual_exit_code": 0,
+    "capinfos": "File name:           investigation24h-20261018-resumed.pcapng\nNumber of packets:   13210\nEarliest packet time: 2026-10-18 05:04:27.046713400\nLatest packet time:   2026-10-18 10:41:33.475976300\nNumber of interfaces in file: 1\nInterface #0 info:\n                     Name = \\Device\\NPF_{3E10A6E0-E1AD-46B3-A999-BC3055B462BC}\n                     Description = Ethernet\n                     Encapsulation = Ethernet (1 - ether)\n                     Hardware = Intel(R) Ethernet Connection (4) I219-LM\n                     Capture length = 262144\n                     Time precision = nanoseconds (9)\n                     Time ticks per second = 1000000000\n                     Time resolution = 0x09\n                     Filter string = arp or host 192.168.10.16 or host 192.168.10.17\n                     Operating system = 64-bit Windows 11 (25H2), build 26200\n                     Number of stat entries = 0\n                     Number of packets = 13210\n",
+    "awake_actual_exit_code": 0,
+    "awake_release_message": "Temporary system-sleep inhibition released",
+    "owned_capture_awake_processes_remaining": [],
+    "limits": [
+      "Dumpcap returned1 after requested Ctrl-C; not reported as a normal exit0. File validity was checked independently.",
+      "Final drop statistics were not printed; no zero-drop claim.",
+      "Earlier capture was interrupted; the two capture epochs do not establish continuous coverage."
+    ]
+  },
+  "owned_hardware_capture_monitor_awake_workers_remaining": [],
+  "completion_scope": "Local completion; publication is verified separately after final git push. Physical root cause remains unresolved."
+}

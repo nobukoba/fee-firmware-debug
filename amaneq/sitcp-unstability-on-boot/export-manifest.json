@@ -121,7 +121,37 @@
       "path": "evidence/day2-control17-stop-verified.json",
       "original_sha256": "e3296b511c51a11e78bc97399a04f038f2e1044b89f0666f72a3c0c72e6b0060",
       "exported_sha256": "6b2306c48feeb663cdc599a39dfcb9b1703dca56e77f62465df9d366e433b285"
+    },
+    {
+      "path": "evidence/day2-pma-cohort-d2pma-rev16.json",
+      "original_sha256": "6120dc1bae5b60fc8f0813c7cbc798eac9e1f30e12adc8fb1ea820ca4d0466f6",
+      "exported_sha256": "1b6e9c7faac6f0c795935dbb990c34659523d583ab925f00d13ca5aa8aea9726"
+    },
+    {
+      "path": "evidence/day2-pma-cohort-d2pma-en17.json",
+      "original_sha256": "d12f018ac8594bec49b907d90ca4f3b6b195df204c3c7840804aeb7799650e52",
+      "exported_sha256": "68f2abbc16a582c1676267403cdd619949170585cee9e87a68defeed9d105eaa"
+    },
+    {
+      "path": "evidence/day2-autopma-reviewed-outcome.json",
+      "original_sha256": "0c37c926dc781c6ad84b4db98d67c910a4fa4ad0da25f277016edc1ed5912634",
+      "exported_sha256": "2ed673b5fe24fb322687646a187ca0e34589f7ca188e78d989bbf58f0b854dc5"
+    },
+    {
+      "path": "evidence/investigation24h-restoration.json",
+      "original_sha256": "a56c9e300d4ccca7b6b352a79aa69b491bc276c3df327b165d2644e3812df35f",
+      "exported_sha256": "c2ae90a0abde755018f7d0626689fdf9ad8cf448a44522a8c6815647dd14144a"
+    },
+    {
+      "path": "evidence/investigation24h-final-status.json",
+      "original_sha256": "faf4675ed2c7ef59c80f311a2a57a835331d1577a7520aa527afeda7b986b286",
+      "exported_sha256": "da39b4621f609b687d9171a1c54e8ec39a4db11b139eec02030f7e51230c3fce"
+    },
+    {
+      "path": "evidence/investigation24h-completion-audit.json",
+      "original_sha256": "db30fb890e278a4a13ef54fdab9ab578fd8ec8ebeea2f0cd7294b71cc5d6de69",
+      "exported_sha256": "ff375458401e0d815b087559b2319246e00ca6215a130dc5a80639b347da27d0"
     }
   ],
-  "updated": "2026-10-18T10:14:30.569023"
+  "updated": "2026-10-18T10:42:01.706991"
 }

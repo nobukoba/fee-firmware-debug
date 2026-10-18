@@ -1,0 +1,271 @@
+{
+  "started": "2026-10-18T10:06:49.940958",
+  "host": "192.168.10.16",
+  "serial": "210299BBCDDA",
+  "mode": "bypass",
+  "count_requested": 3,
+  "case_start": 1,
+  "review_sha256": "5ce6db6f03a75bd3a8e13f43d224ae73aee58fc9b0af50fabcbe2edb264542eb",
+  "source_sha256": {
+    "<workspace>\\run_day2_pma_cohort.py": "76e00c0ea91620eb0717f670e095c487fb369b25b96e1c96a52d1d65751e9d2b",
+    "day2-autopma-observed-independent-review.json": "5ce6db6f03a75bd3a8e13f43d224ae73aee58fc9b0af50fabcbe2edb264542eb",
+    "day2-pma-first-bypass-decoded.json": "3c51c704cb9aa7fc727ac88b338e049ce08604793a385f43b806da40ba71ef0d",
+    "day2-autopma-observed-v5\\bypass\\day2-autopma-bypass.mcs": "a13689fb2d023b26970e6ea06ec6f6adcddb15fa9b14874ffbd3dbaaf6abf727",
+    "day2-autopma-observed-v5\\bypass\\day2-autopma-bypass.ltx": "be7707f268de422210647d6339c75180e77e86577c283f8322c2f7d0a86bb4f1",
+    "flash_firmware.py": "712a49008ce6434b9407e4a0bb332b528fd4b316d9271b7e1e1b99c5f67af43c",
+    "dual_board_cold.py": "db4144e5e4655c5e8d511d9a3c58e7f53ffed1ad6aa9c242e0933ac6f756572d",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "read_day2_autopma_ila.py": "5c9631f65238efcc4800dc70152134276471021e98db496a53fde3e69dbec655",
+    "decode_day2_autopma_ila.py": "8a1dc7885572b43964dad691f5ae9c9983e813f1bbfd75fdc8275d831dc97a2f"
+  },
+  "events": [
+    {
+      "time": "2026-10-18T10:06:50.704325",
+      "event": "programming_candidate_must_not_powercycle"
+    },
+    {
+      "time": "2026-10-18T10:11:59.465507",
+      "event": "cold_trial",
+      "number": 1
+    },
+    {
+      "time": "2026-10-18T10:13:39.593823",
+      "event": "readonly_pulse_capture",
+      "number": 1
+    },
+    {
+      "time": "2026-10-18T10:14:06.775301",
+      "event": "trial_evidence_recorded",
+      "number": 1,
+      "boot_success": false,
+      "valid_gate_test": true
+    },
+    {
+      "time": "2026-10-18T10:14:06.775301",
+      "event": "cold_trial",
+      "number": 2
+    },
+    {
+      "time": "2026-10-18T10:15:46.742469",
+      "event": "readonly_pulse_capture",
+      "number": 2
+    },
+    {
+      "time": "2026-10-18T10:16:13.857343",
+      "event": "trial_evidence_recorded",
+      "number": 2,
+      "boot_success": false,
+      "valid_gate_test": true
+    },
+    {
+      "time": "2026-10-18T10:16:13.858338",
+      "event": "cold_trial",
+      "number": 3
+    },
+    {
+      "time": "2026-10-18T10:17:53.839529",
+      "event": "readonly_pulse_capture",
+      "number": 3
+    },
+    {
+      "time": "2026-10-18T10:18:20.900376",
+      "event": "trial_evidence_recorded",
+      "number": 3,
+      "boot_success": false,
+      "valid_gate_test": true
+    },
+    {
+      "time": "2026-10-18T10:18:21.523958",
+      "event": "cohort_complete_power_on",
+      "successes": 0,
+      "trials": 3
+    }
+  ],
+  "trials": [
+    {
+      "number": 1,
+      "cold_log": "day2-pma-d2pma-rev16-cold1.json",
+      "cold_log_sha256": "6a362400e2d9668d9ac5a918acc940abdb0e43f94642055d5848a55877410291",
+      "boot_success": false,
+      "capture": "day2-autopma-ila-d2pma-rev16-cold1.json",
+      "decoded": "day2-pma-d2pma-rev16-cold1-decoded.json",
+      "decoded_sha256": "832010cbf1255e952341af6b87a4a529d300ecde92a38314ba60e86e30536f32",
+      "pulse_observation": {
+        "created": "2026-10-18T10:14:06.743435",
+        "mode": "bypass",
+        "host": "192.168.10.16",
+        "capture": "day2-autopma-ila-d2pma-rev16-cold1.json",
+        "capture_sha256": "3f98fba5dfc8a2f98413ad04c57c1cc3e596e1d2d4e5f49991a81675350966ba",
+        "mcs_sha256": "a13689fb2d023b26970e6ea06ec6f6adcddb15fa9b14874ffbd3dbaaf6abf727",
+        "csv": "day2-autopma-ila-d2pma-rev16-cold1.csv",
+        "csv_sha256": "ceb6f49eb47cae36c065e90b029ad2d6965783a398831a04b536c661aab097e1",
+        "samples": 1024,
+        "word": 18,
+        "word_hex": "0x12",
+        "physical_pma_seen": false,
+        "emitted_pulse_seen": true,
+        "rx_done_low_seen": false,
+        "reset_response_finished": false,
+        "controller_timed_out": true,
+        "valid_gate_test": true,
+        "observed_RXRESETDONE_response": "no_low_observed",
+        "network_before_capture": {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false
+        },
+        "network_after_capture": {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false
+        },
+        "source_sha256": {
+          "<workspace>\\decode_day2_autopma_ila.py": "8a1dc7885572b43964dad691f5ae9c9983e813f1bbfd75fdc8275d831dc97a2f",
+          "day2-autopma-observed-independent-review.json": "5ce6db6f03a75bd3a8e13f43d224ae73aee58fc9b0af50fabcbe2edb264542eb",
+          "day2-autopma-ila-d2pma-rev16-cold1.json": "3f98fba5dfc8a2f98413ad04c57c1cc3e596e1d2d4e5f49991a81675350966ba",
+          "day2-autopma-ila-d2pma-rev16-cold1.csv": "ceb6f49eb47cae36c065e90b029ad2d6965783a398831a04b536c661aab097e1",
+          "day2-autopma-observed-v5\\bypass\\day2-autopma-bypass.ltx": "be7707f268de422210647d6339c75180e77e86577c283f8322c2f7d0a86bb4f1"
+        },
+        "limits": [
+          "Pulse latches prove presence, not count or analog pulse duration. RTL/logical simulations specify16 user-clock cycles, once perSOFT reset.",
+          "RXRESETDONE response is not proof ofCDR lock; network checks are evaluated separately.",
+          "Bypass RXRESETDONE transitions, if present, cannot be attributed to the physically blockedPMA input.",
+          "No recovered-clock frequency or analog-rail measurement in this image."
+        ]
+      }
+    },
+    {
+      "number": 2,
+      "cold_log": "day2-pma-d2pma-rev16-cold2.json",
+      "cold_log_sha256": "e8d1f9862a49704bf7289f0f746efcecbbdd0bbd11058717fdb00b10119348c9",
+      "boot_success": false,
+      "capture": "day2-autopma-ila-d2pma-rev16-cold2.json",
+      "decoded": "day2-pma-d2pma-rev16-cold2-decoded.json",
+      "decoded_sha256": "94042986952a25c8961da6401f0bc865c21285c83515dd4cab991a894f175645",
+      "pulse_observation": {
+        "created": "2026-10-18T10:16:13.826073",
+        "mode": "bypass",
+        "host": "192.168.10.16",
+        "capture": "day2-autopma-ila-d2pma-rev16-cold2.json",
+        "capture_sha256": "2c74b7fa87f1b845e9db0a93bf0b1ce8e98e1fd8d89ded29adcb746d86c972f9",
+        "mcs_sha256": "a13689fb2d023b26970e6ea06ec6f6adcddb15fa9b14874ffbd3dbaaf6abf727",
+        "csv": "day2-autopma-ila-d2pma-rev16-cold2.csv",
+        "csv_sha256": "ceb6f49eb47cae36c065e90b029ad2d6965783a398831a04b536c661aab097e1",
+        "samples": 1024,
+        "word": 18,
+        "word_hex": "0x12",
+        "physical_pma_seen": false,
+        "emitted_pulse_seen": true,
+        "rx_done_low_seen": false,
+        "reset_response_finished": false,
+        "controller_timed_out": true,
+        "valid_gate_test": true,
+        "observed_RXRESETDONE_response": "no_low_observed",
+        "network_before_capture": {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false
+        },
+        "network_after_capture": {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false
+        },
+        "source_sha256": {
+          "<workspace>\\decode_day2_autopma_ila.py": "8a1dc7885572b43964dad691f5ae9c9983e813f1bbfd75fdc8275d831dc97a2f",
+          "day2-autopma-observed-independent-review.json": "5ce6db6f03a75bd3a8e13f43d224ae73aee58fc9b0af50fabcbe2edb264542eb",
+          "day2-autopma-ila-d2pma-rev16-cold2.json": "2c74b7fa87f1b845e9db0a93bf0b1ce8e98e1fd8d89ded29adcb746d86c972f9",
+          "day2-autopma-ila-d2pma-rev16-cold2.csv": "ceb6f49eb47cae36c065e90b029ad2d6965783a398831a04b536c661aab097e1",
+          "day2-autopma-observed-v5\\bypass\\day2-autopma-bypass.ltx": "be7707f268de422210647d6339c75180e77e86577c283f8322c2f7d0a86bb4f1"
+        },
+        "limits": [
+          "Pulse latches prove presence, not count or analog pulse duration. RTL/logical simulations specify16 user-clock cycles, once perSOFT reset.",
+          "RXRESETDONE response is not proof ofCDR lock; network checks are evaluated separately.",
+          "Bypass RXRESETDONE transitions, if present, cannot be attributed to the physically blockedPMA input.",
+          "No recovered-clock frequency or analog-rail measurement in this image."
+        ]
+      }
+    },
+    {
+      "number": 3,
+      "cold_log": "day2-pma-d2pma-rev16-cold3.json",
+      "cold_log_sha256": "a24a761697843f99aaa5399ed998ba72baf97fcc837cc870ebc9be80912a3f8e",
+      "boot_success": false,
+      "capture": "day2-autopma-ila-d2pma-rev16-cold3.json",
+      "decoded": "day2-pma-d2pma-rev16-cold3-decoded.json",
+      "decoded_sha256": "edd94efd02386cc2b1e37c6de339ee0d2dc8d09acfed4a0deb8c181863d3e872",
+      "pulse_observation": {
+        "created": "2026-10-18T10:18:20.868863",
+        "mode": "bypass",
+        "host": "192.168.10.16",
+        "capture": "day2-autopma-ila-d2pma-rev16-cold3.json",
+        "capture_sha256": "570476b44eb1e2e7d8c5291dbc63102d62ee25f9e0b2bacc475934004dec5bd4",
+        "mcs_sha256": "a13689fb2d023b26970e6ea06ec6f6adcddb15fa9b14874ffbd3dbaaf6abf727",
+        "csv": "day2-autopma-ila-d2pma-rev16-cold3.csv",
+        "csv_sha256": "ceb6f49eb47cae36c065e90b029ad2d6965783a398831a04b536c661aab097e1",
+        "samples": 1024,
+        "word": 18,
+        "word_hex": "0x12",
+        "physical_pma_seen": false,
+        "emitted_pulse_seen": true,
+        "rx_done_low_seen": false,
+        "reset_response_finished": false,
+        "controller_timed_out": true,
+        "valid_gate_test": true,
+        "observed_RXRESETDONE_response": "no_low_observed",
+        "network_before_capture": {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false
+        },
+        "network_after_capture": {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false
+        },
+        "source_sha256": {
+          "<workspace>\\decode_day2_autopma_ila.py": "8a1dc7885572b43964dad691f5ae9c9983e813f1bbfd75fdc8275d831dc97a2f",
+          "day2-autopma-observed-independent-review.json": "5ce6db6f03a75bd3a8e13f43d224ae73aee58fc9b0af50fabcbe2edb264542eb",
+          "day2-autopma-ila-d2pma-rev16-cold3.json": "570476b44eb1e2e7d8c5291dbc63102d62ee25f9e0b2bacc475934004dec5bd4",
+          "day2-autopma-ila-d2pma-rev16-cold3.csv": "ceb6f49eb47cae36c065e90b029ad2d6965783a398831a04b536c661aab097e1",
+          "day2-autopma-observed-v5\\bypass\\day2-autopma-bypass.ltx": "be7707f268de422210647d6339c75180e77e86577c283f8322c2f7d0a86bb4f1"
+        },
+        "limits": [
+          "Pulse latches prove presence, not count or analog pulse duration. RTL/logical simulations specify16 user-clock cycles, once perSOFT reset.",
+          "RXRESETDONE response is not proof ofCDR lock; network checks are evaluated separately.",
+          "Bypass RXRESETDONE transitions, if present, cannot be attributed to the physically blockedPMA input.",
+          "No recovered-clock frequency or analog-rail measurement in this image."
+        ]
+      }
+    }
+  ],
+  "phase": "cohort_complete_power_on",
+  "flash_actual_exit_code": 0,
+  "flash_report": "flash-d2pma-rev16-20261018-100652-result.json",
+  "flash_report_sha256": "1919bece3f47158f8becf6e65e7f5632999a41fd53a1a93381460740fd8a9f8c",
+  "full_flash_sha256": "d642b1a597c9587954926b68562c0b3052e64aa1977f5cc8c6047a04e16159d5",
+  "cold1_actual_exit_code": 0,
+  "ila1_actual_exit_code": 0,
+  "decode1_actual_exit_code": 0,
+  "cold2_actual_exit_code": 0,
+  "ila2_actual_exit_code": 0,
+  "decode2_actual_exit_code": 0,
+  "cold3_actual_exit_code": 0,
+  "ila3_actual_exit_code": 0,
+  "decode3_actual_exit_code": 0,
+  "successes": 0,
+  "trials_completed": 3
+}

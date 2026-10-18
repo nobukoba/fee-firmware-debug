@@ -1,0 +1,106 @@
+{
+  "started": "2026-10-18T10:26:32.457157",
+  "source_sha256": {
+    "<workspace>\\restore_investigation24h.py": "54d9e7541179172be1d17a12415a93500c4fbcb9cc7f5f7bc78ded37402fac0b",
+    "flash_firmware.py": "712a49008ce6434b9407e4a0bb332b528fd4b316d9271b7e1e1b99c5f67af43c",
+    "dual_board_cold.py": "db4144e5e4655c5e8d511d9a3c58e7f53ffed1ad6aa9c242e0933ac6f756572d",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "verify_dual_final.py": "cb4ee37cb2f7ae42e8de33a92c975dc31df56712135bd2830212580602c1dcb0",
+    "eeprom-before-startup.bin": "341c5c207c91e51c634ba3e3090fea4689e4e5ae07725e4996a3e568b504c887",
+    "eeprom-dual17-before.bin": "0657876d036a1b9c1ba34903bbf577d490741c851af11916d91efed7f1a1521e"
+  },
+  "targets": [
+    {
+      "suffix": "16",
+      "host": "192.168.10.16",
+      "serial": "210299BBCDDA",
+      "version": "0x60c4f202",
+      "mcs": "lrtdc-startup-fix/build/pcs-recovery-f202/lrtdc-pcs-recovery-f202.mcs",
+      "mcs_sha256": "1518696ba9f2261f1ec4f04c0a8498273e5cec9beec1b987eb54d2d05f7ddfd7",
+      "full_sha256": "19da89bf5365ceb0beb365ff6ec21d90fc80fc87f804a44a9cb0be572d1bff0b"
+    },
+    {
+      "suffix": "17",
+      "host": "192.168.10.17",
+      "serial": "210299BDCF8E",
+      "version": "0x60c4020a",
+      "mcs": "factory-v2a-backup/factory-v2a.mcs",
+      "mcs_sha256": "b1010ec6dc37e7223758d544ce9f30aa30549c29acfd9146675b3a7f17a6c2c0",
+      "full_sha256": "7dd784de31ff8b3b2cbae4602274faf3e2f587f1bc2185a89ad3ba5e7de48a13"
+    }
+  ],
+  "events": [
+    {
+      "time": "2026-10-18T10:26:33.161993",
+      "event": "restoration_started_all_other_workers_stopped"
+    },
+    {
+      "time": "2026-10-18T10:26:33.181827",
+      "event": "programming_restore_image_must_not_powercycle",
+      "host": "192.168.10.16",
+      "mcs": "lrtdc-startup-fix/build/pcs-recovery-f202/lrtdc-pcs-recovery-f202.mcs"
+    },
+    {
+      "time": "2026-10-18T10:31:49.221978",
+      "event": "restored_cold_trials",
+      "host": "192.168.10.16",
+      "count": 3
+    },
+    {
+      "time": "2026-10-18T10:33:52.972053",
+      "event": "board_restored_power_on",
+      "host": "192.168.10.16",
+      "cold_successes": 3
+    },
+    {
+      "time": "2026-10-18T10:33:52.988178",
+      "event": "programming_restore_image_must_not_powercycle",
+      "host": "192.168.10.17",
+      "mcs": "factory-v2a-backup/factory-v2a.mcs"
+    },
+    {
+      "time": "2026-10-18T10:39:03.474852",
+      "event": "restored_cold_trials",
+      "host": "192.168.10.17",
+      "count": 3
+    },
+    {
+      "time": "2026-10-18T10:41:28.745137",
+      "event": "board_restored_power_on",
+      "host": "192.168.10.17",
+      "cold_successes": 3
+    },
+    {
+      "time": "2026-10-18T10:41:28.745137",
+      "event": "checking_both_runtime_network_EEPROM_and_power"
+    },
+    {
+      "time": "2026-10-18T10:41:34.919538",
+      "event": "both_restored_full_readback_cold3_network_EEPROM_verified_power_on"
+    }
+  ],
+  "boards": {
+    "16": {
+      "flash_report": "flash-restore24h16-20261018-102635-result.json",
+      "independent_full_readback_sha256": "19da89bf5365ceb0beb365ff6ec21d90fc80fc87f804a44a9cb0be572d1bff0b",
+      "cold_log": "investigation24h-restored-16-cold3.json",
+      "cold_successes": 3
+    },
+    "17": {
+      "flash_report": "flash-restore24h17-20261018-103354-result.json",
+      "independent_full_readback_sha256": "7dd784de31ff8b3b2cbae4602274faf3e2f587f1bc2185a89ad3ba5e7de48a13",
+      "cold_log": "investigation24h-restored-17-cold3.json",
+      "cold_successes": 3
+    }
+  },
+  "switch_topology": "Switch alwaysON; Kikusui powers16, ezOutlet powers17. No setpoint or EEPROM writes.",
+  "phase": "both_restored_full_readback_cold3_network_EEPROM_verified_power_on",
+  "16-flash_actual_exit_code": 0,
+  "16-cold3_actual_exit_code": 0,
+  "17-flash_actual_exit_code": 0,
+  "17-cold3_actual_exit_code": 0,
+  "both-final-readonly_actual_exit_code": 0,
+  "final_status": "investigation24h-final-status.json",
+  "final_status_sha256": "faf4675ed2c7ef59c80f311a2a57a835331d1577a7520aa527afeda7b986b286"
+}

@@ -1,6 +1,6 @@
 {
-  "study_status": "followup_experiments_in_progress",
-  "restoration_status": "not_yet_performed",
+  "study_status": "completed_with_physical_cause_unresolved",
+  "restoration_status": "verified_both_boards_power_on",
   "soak_snapshot": {
     "snapshot_time": "2026-10-18T04:45:30.631948",
     "started": "2026-10-18T02:24:39.552583",
@@ -55,7 +55,7 @@
     "partial_tail_bytes_ignored": 0
   },
   "reason": "Stopped at user request to compare longer STARTUP_DELAY and autonomous PMA reset; original scheduled deadline was not reached",
-  "updated": "2026-10-18T07:22:52.651730",
+  "updated": "2026-10-18T10:42:01.540760",
   "day2_completed": {
     "F305_5us": {
       "successes": 0,
@@ -68,7 +68,27 @@
       "evidence": "evidence/day2-f306-reviewed-outcome.json"
     }
   },
-  "day2_pending": [
-    "F307_autonomous_PMA_matched_gate"
-  ]
+  "day2_pending": [],
+  "day2_PMA": {
+    "bypass16_initial": {
+      "successes": 0,
+      "trials": 3
+    },
+    "enabled16": {
+      "successes": 3,
+      "trials": 3
+    },
+    "bypass16_reverse": {
+      "successes": 0,
+      "trials": 3
+    },
+    "enabled17": {
+      "successes": 3,
+      "trials": 3
+    }
+  },
+  "final_versions": {
+    "192.168.10.16": "0x60C4F202",
+    "192.168.10.17": "0x60C4020A"
+  }
 }
