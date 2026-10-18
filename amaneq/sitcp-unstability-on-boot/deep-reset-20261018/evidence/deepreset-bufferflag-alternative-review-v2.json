@@ -1,0 +1,90 @@
+{
+  "created": "2026-10-18T19:06:45.602874",
+  "source_sha256": {
+    "rootcause-f104-frequency-deepbase-native.console.decoded.json": "8d2811505600778d1f95593f963da7c4eb7790cee019edc1a70893ef5694a6b7",
+    "WORKSPACE/analyze_deepreset_rx_flags.py": "6e5eeb0ee708e5020c8b6ec45997f6812a603f4a2457aedc72032445f266dfc9",
+    "experiments/reference/ug476-7series-extracted-24h.txt": "aa83d943632949e2f6a2444c84bfd3c684eca2d6f291f715526afc88ad751788",
+    "WORKSPACE/correct_deepreset_bufferflag_citation.py": "03347ced25a52bb34d3ff1de171eb1d557e03a08f726f3e067d0eef6d7eb9d94"
+  },
+  "rx_captures": [
+    {
+      "capture": 0,
+      "first_tick": 134182446,
+      "last_tick": 134182701,
+      "buffer_status_histogram": {
+        "0": 256
+      },
+      "summary": {
+        "samples": 256,
+        "error_words": 44,
+        "unaligned_words": 62,
+        "realign_high_words": 6,
+        "buffer_error_high_words": 0,
+        "rxbuf_reset_high_words": 0,
+        "data_histogram": {
+          "0000": 20,
+          "bc00": 83,
+          "0042": 41,
+          "00b5": 42,
+          "1c1c": 1,
+          "3c10": 8,
+          "be5c": 16,
+          "c30a": 8,
+          "41a3": 16,
+          "c3b6": 8,
+          "3c4a": 8,
+          "bc5c": 1,
+          "fcc2": 1,
+          "bc10": 1,
+          "0341": 1,
+          "bc63": 1
+        }
+      }
+    },
+    {
+      "capture": 1,
+      "first_tick": 3997938027,
+      "last_tick": 3997938282,
+      "buffer_status_histogram": {
+        "0": 254,
+        "1": 2
+      },
+      "summary": {
+        "samples": 256,
+        "error_words": 90,
+        "unaligned_words": 63,
+        "realign_high_words": 8,
+        "buffer_error_high_words": 0,
+        "rxbuf_reset_high_words": 0,
+        "data_histogram": {
+          "be44": 81,
+          "bc44": 4,
+          "bc50": 166,
+          "becd": 2,
+          "1ccd": 1,
+          "becc": 1,
+          "3ecd": 1
+        }
+      }
+    }
+  ],
+  "sampled_state_buffer_histogram": {
+    "0": 250,
+    "5": 5,
+    "1": 1
+  },
+  "proposal": "Consider gating native DATA_VALID with RXBUFSTATUS[2] instead of adding a recovery timer.",
+  "decision": "Not justified as a minimal fix by these captures: no persistent RXBUFSTATUS error is observed. Do not build or claim it solves the failure without an independent fault indication.",
+  "manufacturer_reference": "UG476 Table4-40 page258: RXBUFSTATUS error status is not sticky and returns000 when error clears.",
+  "limits": [
+    "Each RX acquisition spans only256userclockcycles, nominal4.096us.",
+    "No error in a short window does not prove absence of intermittent buffer faults.",
+    "SYS event mask excludes buffer-status bits28..30; those bits are sampled incidentally at other state changes.",
+    "A persistent negative condition would be needed to drive existing100us recovery; a sticky observer alone would be additional logic."
+  ],
+  "citation_correction": {
+    "prior_report": "deepreset-bufferflag-alternative-review.json",
+    "prior_sha256": "e9a528a9817dbc3b3e86a04aff817c1e360d20a5518003c846d56de47071563f",
+    "reason": "Correct the printed UG476 page number for Table4-40 from262 to258; observations and decision unchanged."
+  }
+}

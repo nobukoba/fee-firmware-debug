@@ -1,0 +1,46 @@
+{
+  "created": "2026-10-18T19:16:27.886309",
+  "phase": "prior_controlled_results_rechecked_no_new_hardware",
+  "cases": {
+    "pll5": {
+      "CPLL_request_nominal_ns": 5,
+      "RX_TX_CLK25_DIV": 5,
+      "successes": 0,
+      "trials": 3,
+      "steady_RX_errors_per256": 96
+    },
+    "pll10": {
+      "CPLL_request_nominal_ns": 10,
+      "RX_TX_CLK25_DIV": 5,
+      "successes": 0,
+      "trials": 3,
+      "steady_RX_errors_per256": 128
+    },
+    "pll5div7": {
+      "CPLL_request_nominal_ns": 5,
+      "RX_TX_CLK25_DIV": 7,
+      "successes": 0,
+      "trials": 3,
+      "steady_RX_errors_per256": 124
+    },
+    "pll10div7": {
+      "CPLL_request_nominal_ns": 10,
+      "RX_TX_CLK25_DIV": 7,
+      "successes": 0,
+      "trials": 3,
+      "steady_RX_errors_per256": 116
+    }
+  },
+  "interpretation": "Changing RX/TXCLK25_DIV from5 to7 was already tested with same-placement PLL5ns/10ns controls; allfourcases0/3. Divider mismatch alone is not an experimentally sufficient explanation or fix.",
+  "source_sha256": {
+    "day1-pll-matrix-evidence.json": "08b0d1a17646f22d39a332efc0acbada1c499473a78323fe007de3b9c751d155",
+    "WORKSPACE/recheck_deepreset_prior_divider.py": "1b0b0b022db4558ef1c372ea8569865bb24a4b5b0dd07571bacce0440b893a6e",
+    "export-day1-pll-clk25.tcl": "c3fcb55026c25f230dd1d324f42f65f3f3214d9273af12e3b42344a07ccc718b",
+    "inspect_day1_pll_clk25.py": "3179b2b8254107a5e1b4f5900e3253b7f362475e5fc4e01f5c1029fc8d66051e"
+  },
+  "limits": [
+    "Prior2026-10-17 experiment, not a new cohort.",
+    "Both RX and TX dividers changed together; no isolatedRX-only inference.",
+    "This does not establish baseline5 as ideal; it rejects an assertion that the divider change alone fixes the failure."
+  ]
+}

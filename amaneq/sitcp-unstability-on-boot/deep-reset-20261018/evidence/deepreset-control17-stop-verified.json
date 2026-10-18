@@ -1,0 +1,17 @@
+{
+  "created": "2026-10-18T19:55:46.752179",
+  "phase": "monitor17_actual_exit_verified_before_hardware_operations",
+  "monitor_actual_exit_code": 0,
+  "log": "deepreset-control17-factory.jsonl",
+  "log_sha256": "42e369d936dad5a3ee4534a71d704456d8491a0af43094767e3956332242ee00",
+  "counts": {
+    "RBCP_checks": 201,
+    "RBCP_pass": 201,
+    "TCP_checks": 21,
+    "TCP_pass": 21,
+    "failures": 0
+  },
+  "first_probe": "2026-10-18T18:15:43.743267",
+  "last_probe": "2026-10-18T19:55:43.721153",
+  "actual_probe_span_seconds": 5999.977886
+}

@@ -1,0 +1,62 @@
+{
+  "created": "2026-10-18T19:19:02.501876",
+  "phase": "native_failed_boot_readiness_order_reanalysis",
+  "signals": [
+    {
+      "signal": "CPLLLOCK",
+      "bit": 10,
+      "first_sampled_high_tick": 117463,
+      "nominal_ns": 587315
+    },
+    {
+      "signal": "RXRESETDONE",
+      "bit": 11,
+      "first_sampled_high_tick": 429515824,
+      "nominal_ns": 2147579120
+    },
+    {
+      "signal": "TXRESETDONE",
+      "bit": 12,
+      "first_sampled_high_tick": 429513255,
+      "nominal_ns": 2147566275
+    },
+    {
+      "signal": "RXFSM_DONE",
+      "bit": 13,
+      "first_sampled_high_tick": 429516623,
+      "nominal_ns": 2147583115
+    },
+    {
+      "signal": "TXFSM_DONE",
+      "bit": 14,
+      "first_sampled_high_tick": 429513265,
+      "nominal_ns": 2147566325
+    },
+    {
+      "signal": "RXUSERRDY",
+      "bit": 15,
+      "first_sampled_high_tick": 429515722,
+      "nominal_ns": 2147578610
+    },
+    {
+      "signal": "TXUSERRDY",
+      "bit": 16,
+      "first_sampled_high_tick": 429513194,
+      "nominal_ns": 2147565970
+    }
+  ],
+  "TXUSERRDY_precedes_RXUSERRDY_ns": 12640,
+  "proposal": "Replace nativeRXFSM TXUSERRDY constant1 with actualTXUSERRDY because RXUSRCLK is sourced from TX clock.",
+  "decision": "Not an observed explanation of this failed boot: TXUSERRDY was already high well before RXUSERRDY. Do not claim that one-line wiring change fixes the current failure without a different readiness violation.",
+  "source_sha256": {
+    "WORKSPACE/analyze_deepreset_clockready_order.py": "742eaa8ae17b401e278b3b52faf0dc42188683818d1a97f7b02834e634ea94b9",
+    "rootcause-f104-frequency-deepbase-native.console.decoded.json": "8d2811505600778d1f95593f963da7c4eb7790cee019edc1a70893ef5694a6b7",
+    "lrtdc-startdelay-f305/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_gtwizard_init.vhd": "9be7c5109252b766219d820fc7ab7c06f3c15540de594c3d36cced7be7bc311b",
+    "lrtdc-startdelay-f305/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_rx_startup_fsm.vhd": "fbfa3121f02a0bdb9764d00089c9834ebc5e40b55fcd09514b8f59947528fc44"
+  },
+  "limits": [
+    "One native diagnostic failed boot; not every boot or a separately synthesized production image.",
+    "Per-bit twoFF synchronization permits small ordering uncertainty; not an analog clock-stability measurement.",
+    "Correct initial status ordering does not validate all runtime reset combinations."
+  ]
+}

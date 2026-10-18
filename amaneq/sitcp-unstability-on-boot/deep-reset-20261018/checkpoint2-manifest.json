@@ -1,0 +1,54 @@
+{
+  "state": "IN_PROGRESS_CHECKPOINT2",
+  "files": [
+    {
+      "source": "deepreset-f30b-independent-review.json",
+      "source_sha256": "5b12b3727b8126d2380485518f4826350f542e2942d3f49e6958888ceb6bd2e3",
+      "export": "evidence/deepreset-f30b-independent-review.json",
+      "export_sha256": "f902ddacc17001b072b1ac83cb59f953d7d158ec55cc70e52ef1ffddf15fa548"
+    },
+    {
+      "source": "deepreset-cohort-deepf30b16a.json",
+      "source_sha256": "7dbffc4a69a953a7db38e5d36fa2289f0d4a14954a7dad35d8e63f6a92e97f4a",
+      "export": "evidence/deepreset-cohort-deepf30b16a.json",
+      "export_sha256": "11483b84c94901c881eef2b9ee9804ba6a74b825e80579b2cdef8485c52b6ec7"
+    },
+    {
+      "source": "deepreset-native-persistence-late-analysis.json",
+      "source_sha256": "72e56c7b1ec3b1cd00bb54c7a9b44f1fe85f34820a68d96d1659fe23a4c5c6b5",
+      "export": "evidence/deepreset-native-persistence-late-analysis.json",
+      "export_sha256": "7102c267e27aabf6588eea606bde4dbeb0e5eb13c6dfa8dbd0731cd46b4e3626"
+    },
+    {
+      "source": "deepreset-tx-meter-interpretation.json",
+      "source_sha256": "ca91b0c5964ee3e3d1ceb9877b4d1a6c7c7f58833a70212072712e72f301f485",
+      "export": "evidence/deepreset-tx-meter-interpretation.json",
+      "export_sha256": "804e6f2f1cfd121af3ca18540593e71ef97c860961bc1c913061790f80e61367"
+    },
+    {
+      "source": "deepreset-bufferflag-alternative-review-v2.json",
+      "source_sha256": "0fb0a66506e81cbd2b17ad2ab51ed2cd0a404c2fc9145ac1f1af9fad42fc8a9d",
+      "export": "evidence/deepreset-bufferflag-alternative-review-v2.json",
+      "export_sha256": "a0417a181d650738fdf5521d5d386df1b23e35b876ad2baec8a76c0161fcd051"
+    },
+    {
+      "source": "deepreset-prior-divider-recheck.json",
+      "source_sha256": "4554ca2e188f2ac48eb598aa62dd68216ab237329b94393fd1af810c81531992",
+      "export": "evidence/deepreset-prior-divider-recheck.json",
+      "export_sha256": "ee32e4c173181001dec0db61b436dff13e0d85debd67ac04143cf12ea342a636"
+    },
+    {
+      "source": "deepreset-native-clockready-order.json",
+      "source_sha256": "38d52497bae1502639705b4afb0c4327c7c7f7805523a81de5d8b79a27020440",
+      "export": "evidence/deepreset-native-clockready-order.json",
+      "export_sha256": "5020428f7a8648242a23b22e9a66b09e21050ae5b849224202c48e31c5a8c2b1"
+    },
+    {
+      "source": "deepreset-control17-stop-verified.json",
+      "source_sha256": "eca8ea851cfe78d6859b580fe3d1805cea740cf2994e8a521952a1ec8b3b835f",
+      "export": "evidence/deepreset-control17-stop-verified.json",
+      "export_sha256": "62ed7a7e6e285f4f1eb6dc4976502042b89a5d0fcb91576baddbac5a9db0a3d0",
+      "export_note": "Only counts/exit/log identity; unrelated process-command metadata omitted."
+    }
+  ]
+}

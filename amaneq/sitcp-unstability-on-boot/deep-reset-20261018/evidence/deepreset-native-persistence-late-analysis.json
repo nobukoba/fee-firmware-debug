@@ -1,0 +1,60 @@
+{
+  "created": "2026-10-18T19:10:29.462396",
+  "phase": "later_same_failed_boot_persistence_confirmed",
+  "first_frequency_to_late_frequency_seconds": 1950.225,
+  "early_summary": {
+    "nominal_ref_MHz": {
+      "mean": 156.24592371577435,
+      "min": 156.24592112173949,
+      "max": 156.24592778512513
+    },
+    "nominal_rx_MHz": {
+      "mean": 62.45602001417483,
+      "min": 62.456015410760955,
+      "max": 62.45602409198205
+    },
+    "rx_over_ref": {
+      "mean": 0.39972895630728944,
+      "min": 0.39972892901152896,
+      "max": 0.3997289828934398
+    }
+  },
+  "late_summary": {
+    "nominal_ref_MHz": {
+      "mean": 156.24593402044852,
+      "min": 156.2459308225072,
+      "max": 156.24593640048695
+    },
+    "nominal_rx_MHz": {
+      "mean": 62.4560210062332,
+      "min": 62.45601828727981,
+      "max": 62.45602365917939
+    },
+    "rx_over_ref": {
+      "mean": 0.3997289362938516,
+      "min": 0.3997289134900413,
+      "max": 0.39972895427596866
+    }
+  },
+  "network_before": false,
+  "network_after": false,
+  "system_monitor": [
+    "ROOT_SYSMON 1792318184352 localhost:3121/xilinx_tcf/Digilent/210299BBCDDA/xc7k160t_0/SYSMON TEMPERATURE 46.4 TEMPERATURE_SCALE CELSIUS VCCAUX 1.782 VCCBRAM 0.987 VCCINT 0.986"
+  ],
+  "source_sha256": {
+    "WORKSPACE/analyze_deepreset_late_observation.py": "192264cf3b2eaf1938a6b3400b661d4af67e66021a0fe0e94da0289d3771c43a",
+    "deepreset-native-persistence-analysis.json": "4eff423463450b810210758213f8ba02bfd84096247e4d866b92f1f36e52d40b",
+    "deepreset-native-late-observation.json": "b036eeec45bf66b743b4727b10d88ca06685359b6c38c4da216b974a9fbc7753",
+    "rootcause-f104-frequency-deepbase-late1.console.frequency.json": "6f2eedcc4e82671dd11fcf4d0e3eb03293abe69eb92c034b1c58ad8e82f5a816",
+    "rootcause-f104-frequency-deepbasev2-frequency0.console.frequency.json": "ab28629835510fc2dbdf12f45623af1b1d319f69a292c062fcca8934b2bcd264",
+    "rootcause-f104-frequency-deepbase-late1.json": "35de6c3fbc644eee0f143312252018aa33d8b6114008ccc321af54b78c943a62",
+    "rootcause-f104-frequency-deepbase-late1.console.txt": "9f6b6b6acd190e3c068c0b841dcb3814a07099117825975a6f3a1b893e77ddb1"
+  },
+  "conclusion": "Same failed boot still has abnormal RX/reference frequency ratio after more than30minutes; no intentional power/reset/reprogram action between baseline and later observation.",
+  "limits": [
+    "One failed cold boot, not three independent boots.",
+    "Frequency averages do not measure jitter, individual phase slips or GT analog supply waveforms.",
+    "VIO activity proves monitored reset request quiescence, not all internal analog reset states.",
+    "SYS nominal200MHz calibrates MHz; ratio cancels shared SYS calibration."
+  ]
+}

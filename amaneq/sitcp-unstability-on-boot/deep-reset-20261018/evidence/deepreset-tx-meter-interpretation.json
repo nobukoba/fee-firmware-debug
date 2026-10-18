@@ -1,0 +1,42 @@
+{
+  "created": "2026-10-18T19:52:28.509759",
+  "phase": "physical_userclock_source_verified_interpretation_limited",
+  "measurement": "Same failed boot, no reflash/power/reset for300s; TX snapshot timestamps use actual sharedTX/RXUSRCLK.",
+  "userclock_over_GTref_bounds": [
+    0.3999620141192439,
+    0.4000206734054875
+  ],
+  "RXOUTCLK_over_userclock_bounds": [
+    0.9992707302014046,
+    0.9994172853884685
+  ],
+  "RXOUTCLK_slower_than_userclock_ppm_bounds": [
+    582.7146115314763,
+    729.2697985954444
+  ],
+  "physical_counter_clock_driver": "u_GtClockDist_Inst/core_clocking_i/bufg_userclk/O",
+  "GT_clock_selectors": {
+    "TXOUTCLKSEL": 4,
+    "RXOUTCLKSEL": 2
+  },
+  "conclusion": "Reference-derived userclock is near expected0.4ratio, while recoveredRXout is about583..729ppm slower. This rejects a similarly large reference/MMCM userclock-ratio error in this observation.",
+  "critical_limit": "TXOUTCLKSEL100 selectsTXPLLREFCLK_DIV2, not CPLL-derivedTXOUTCLKPMA. Thus this measurement DOES NOT establish CPLLoutput frequency as correct. Do not label the measured counter TXPMAclock.",
+  "next_hypothesis": "With TXBUF_ENTRUE/TX_XCLK_SELTXOUT, consider a temporary read-onlyTXOUTCLKPCS clock observer to test the CPLL-derivedTXside, keeping functionalTXOUTCLKSEL100 unchanged. This is not yet implemented or tested.",
+  "manufacturer_reference": "UG476Figure3-28/Table3-26 pages150-152: TXOUTCLKSEL100 reference/2; TXOUTCLKPCS redundant PCS path.",
+  "source_sha256": {
+    "WORKSPACE/interpret_deepreset_tx_meter.py": "c052d99e32d671b8720b3066d3f00560aec6d6b90abfab6fecbf46c37190827e",
+    "deepreset-tx-meter.analysis.json": "78f0f8dfb03ed671575e115b6dfe67a7be8c567559623c3744be7bcb0ebaf053",
+    "deepreset-cdrhold-v4/existing-tx-counter-clock.tsv": "c663c905f833086a67768ef75bffac015d6a2ea86530c002e469e62087fa3666",
+    "export-deepreset-cdrhold-v4.tcl": "8fe34f2d724340f8fb517fbc3f16c9a723a4671f6e7720850ecd44cc4a822741",
+    "day1-frequency-capture-v14/manifest.json": "55641b38a9951ce6a7fdad8f7a6de2f14ed9feb95a43a12d4cfc1925205801f0",
+    "lrtdc-rootcause-f104/hdl/common/gig_ethernet_pcs_pma/gig_ethernet_pcs_pma_clocking.vhd": "e05edb80070a147c32cf02d82c5da0d69564ebfcc1c29135d3fb9f9b76339007",
+    "experiments/reference/ug476-7series-extracted-24h.txt": "aa83d943632949e2f6a2444c84bfd3c684eca2d6f291f715526afc88ad751788"
+  },
+  "limits": [
+    "Bounds derive from firstTXcapture enclosed by two deviceSYS samples; no simultaneous-JTAG-word assumption.",
+    "32bit wraps disambiguated by ten-second epochs, with host timing used only for coarse sanity.",
+    "GTref/RXout ratios are separate simultaneous atomic snapshots after longTXmeasurement; require stable failed state and physical clock-pin audit.",
+    "Endpoint bracket bound does not include unknown hardware defects in counter logic or VIO; physical source and fresh-capture checks are required.",
+    "NominalMHz usesSYS200MHz calibration; clock ratios avoid that absolute calibration."
+  ]
+}
