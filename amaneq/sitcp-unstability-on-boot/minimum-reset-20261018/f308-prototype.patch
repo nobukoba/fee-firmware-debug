@@ -1,0 +1,51 @@
+--- a/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_gtwizard_init.vhd
++++ b/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_gtwizard_init.vhd
+@@ -516,8 +516,39 @@
+     signal   gt0_gtrxreset_gt                : std_logic;
+     signal   gt0_gttxreset_gt                : std_logic;
+ 
++constant MINPMA_WAIT : positive := 62500000;
++signal minpma_s1, minpma_s2 : std_logic_vector(6 downto 0) := (others => '0');
++signal minpma_count : integer range 0 to MINPMA_WAIT + 16 := 0;
++signal minpma_pulse, minpma_combined : std_logic := '0';
++attribute ASYNC_REG : string;
++attribute ASYNC_REG of minpma_s1, minpma_s2 : signal is "TRUE";
++
+ --**************************** Main Body of Code *******************************
+ begin
++process(gt0_txusrclk_in)
++begin
++  if rising_edge(gt0_txusrclk_in) then
++    minpma_s1 <= SOFT_RESET_RX_IN & gt0_cplllock_i & gt0_txresetdone_i & gt0_rxresetdone_i &
++                 gt0_gtrxreset_gt & gt0_gttxreset_gt & gt0_cpllreset_i;
++    minpma_s2 <= minpma_s1;
++    if minpma_s2(6) = '1' then
++      minpma_count <= 0; minpma_pulse <= '0';
++    elsif minpma_count < MINPMA_WAIT + 16 then
++      if minpma_count >= MINPMA_WAIT or minpma_s2 = "0111000" then
++        minpma_count <= minpma_count + 1;
++        if minpma_count = MINPMA_WAIT - 1 then
++          minpma_pulse <= '1';
++        elsif minpma_count = MINPMA_WAIT + 15 then
++          minpma_pulse <= '0';
++        end if;
++      else
++        minpma_count <= 0;
++      end if;
++    end if;
++  end if;
++end process;
++minpma_combined <= gt0_rxpmareset_in or minpma_pulse;
++
+     --  Static signal Assigments
+     tied_to_ground_i                             <= '0';
+     tied_to_vcc_i                                <= '1';
+@@ -617,7 +648,7 @@
+         gt0_rxoutclk_out                =>      gt0_rxoutclk_i,
+         ------------- Receive Ports - RX Initialization and Reset Ports ------------
+         gt0_rxpcsreset_in               =>      gt0_rxpcsreset_in,
+-        gt0_rxpmareset_in               =>      gt0_rxpmareset_in,
++        gt0_rxpmareset_in               =>      minpma_combined,
+         ------------------ Receive Ports - RX Margin Analysis ports ----------------
+         gt0_rxlpmen_in                  =>      gt0_rxlpmen_in,
+         ----------------- Receive Ports - RX Polarity Control Ports ----------------

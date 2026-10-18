@@ -1,0 +1,113 @@
+{
+  "created": "2026-10-18T15:54:09.646481",
+  "phase": "frozen_trace_reanalysis_not_new_hardware_acquisition",
+  "trials": [
+    {
+      "trial": 1,
+      "native_source": "rootcause-f104-frequency-day1-freq16-1-native.console.decoded.json",
+      "native_event_records": 256,
+      "native_MONITOR_DONE_span_us": 131.545,
+      "native_completed_MONITOR_to_DONE_intervals": 92,
+      "max_MONITOR_to_DONE_ns": 585,
+      "median_MONITOR_to_DONE_ns": 560,
+      "native_late_state_counts": {
+        "MONITOR_DATA_VALID": 92,
+        "FSM_DONE": 131
+      },
+      "mode1_bad_source": "rootcause-f104-frequency-day1-freq16r2-1-mode1.console.decoded.json",
+      "mode1_bad_record_count": 256,
+      "mode1_bad_span_us": 144.115,
+      "mode1_bad_state_counts": {
+        "FSM_DONE": 136,
+        "MONITOR_DATA_VALID": 120
+      },
+      "post_PMA_first_block_is_repeated_stale_mode1_history": true,
+      "fresh_post_PMA_event_count": 14,
+      "fresh_post_PMA_last_event_us": 10.125,
+      "fresh_post_PMA_last_state": "FSM_DONE"
+    },
+    {
+      "trial": 2,
+      "native_source": "rootcause-f104-frequency-day1-freq16r2-2-native.console.decoded.json",
+      "native_event_records": 256,
+      "native_MONITOR_DONE_span_us": 136.335,
+      "native_completed_MONITOR_to_DONE_intervals": 91,
+      "max_MONITOR_to_DONE_ns": 595,
+      "median_MONITOR_to_DONE_ns": 560,
+      "native_late_state_counts": {
+        "MONITOR_DATA_VALID": 92,
+        "FSM_DONE": 131
+      },
+      "mode1_bad_source": "rootcause-f104-frequency-day1-freq16r2-2-mode1.console.decoded.json",
+      "mode1_bad_record_count": 256,
+      "mode1_bad_span_us": 144.335,
+      "mode1_bad_state_counts": {
+        "FSM_DONE": 135,
+        "MONITOR_DATA_VALID": 121
+      },
+      "post_PMA_first_block_is_repeated_stale_mode1_history": true,
+      "fresh_post_PMA_event_count": 11,
+      "fresh_post_PMA_last_event_us": 8.27,
+      "fresh_post_PMA_last_state": "FSM_DONE"
+    },
+    {
+      "trial": 3,
+      "native_source": "rootcause-f104-frequency-day1-freq16r2-3-native.console.decoded.json",
+      "native_event_records": 256,
+      "native_MONITOR_DONE_span_us": 132.14,
+      "native_completed_MONITOR_to_DONE_intervals": 89,
+      "max_MONITOR_to_DONE_ns": 585,
+      "median_MONITOR_to_DONE_ns": 560,
+      "native_late_state_counts": {
+        "MONITOR_DATA_VALID": 89,
+        "FSM_DONE": 134
+      },
+      "mode1_bad_source": "rootcause-f104-frequency-day1-freq16r2-3-mode1.console.decoded.json",
+      "mode1_bad_record_count": 256,
+      "mode1_bad_span_us": 140.995,
+      "mode1_bad_state_counts": {
+        "FSM_DONE": 141,
+        "MONITOR_DATA_VALID": 115
+      },
+      "post_PMA_first_block_is_repeated_stale_mode1_history": true,
+      "fresh_post_PMA_event_count": 12,
+      "fresh_post_PMA_last_event_us": 10.49,
+      "fresh_post_PMA_last_state": "FSM_DONE"
+    }
+  ],
+  "code_facts": [
+    "DATA_VALID is PCS status_vector(1), synchronized into independent SYS clock. It represents link synchronization, not completed auto-negotiation or successful IP communication.",
+    "Normal PRBS selection000 makes DONT_RESET_ON_DATA_ERROR0 through OR-of-PRBS select. Automatic retry is not simply disabled.",
+    "MONITOR_DATA_VALID retries only after100us timeout while invalid; transitions back toFSM_DONE on validity reset the timeout.",
+    "Native debug trace records every masked state change until256 events; DATA_VALID bit23 alone is excluded from trigger mask. Hence intervals here are FSM-state intervals, not an exhaustive raw-data-valid waveform."
+  ],
+  "inference": "Captured bad-state FSM repeatedly returns toDONE before the100us invalid-data retry threshold. This supports a recovery blind spot for intermittent synchronization rather than a stopped FSM. It is compatible with prior bad recovered-clock ratio/8b10b errors and PMA recovery.",
+  "not_established": [
+    "The physical trigger for entering the abnormal RX/PMA/CDR state remains unidentified.",
+    "No continuous90second DATA_VALID waveform; native event window after startup is onlyabout0.13ms.",
+    "Mode1 steady-bad event traces are separate from native sequential-mode startup traces.",
+    "Per-bit debug synchronization does not justify precise5ns ordering; nominal SYS200MHz scales intervals.",
+    "The duplicated old256-event block in post-PMA logs must not be counted as fresh post-recovery instability."
+  ],
+  "possible_next_test": "A retry policy that detects repeated short sync losses could address this blind spot, but lowering the100us threshold may alter normal error recovery. Not implemented or validated here.",
+  "primary_documentation": "https://docs.amd.com/r/en-US/pg047-gig-eth-pcs-pma/Configuration-and-Status-Vectors",
+  "source_sha256": {
+    "<workspace>\\analyze_minpma_fsm_recovery.py": "a636dab00aaa1590b9196f609159c0155d65c567b302beb3de8fee4b6b026dee",
+    "day1-frequency16-resume-v2.json": "0e06b1cebfea6daf998f8af5472325794049c36227aa8f254c6c291b26a15587",
+    "day1-frequency16-reviewed-outcome.json": "05ee8270e8e394b88f480cf7926a94b957df3bfc48e126b931215a84f703e1c7",
+    "rootcause-f104-frequency-day1-freq16-1-native.console.decoded.json": "6e801cc68f860a0adeaa0a04b05c1b0cf86db6be173f6bdb674e72a1cd69a811",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode1.console.decoded.json": "7f2e141ffacce5473276327d43efefc33cbee7a475f218b8b70498639a25642a",
+    "rootcause-f104-frequency-day1-freq16r2-1-singlepma.console.decoded.json": "9ef8461b427b89e9d1afc4904af721c32608184dda856da5144c4ade9724a371",
+    "rootcause-f104-frequency-day1-freq16r2-2-native.console.decoded.json": "e1fb604a131025a270df1786655508014d04a520d4ae096561cf10e96857d1da",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode1.console.decoded.json": "cbfee10704e32b3139dc5c999fec3a4d421a5d3878d4f6ee901d074ca6904373",
+    "rootcause-f104-frequency-day1-freq16r2-2-singlepma.console.decoded.json": "7ca427f20fcd53c1f213bcdc86900a133b09fb5f6e28dce37460bc477f4d46b9",
+    "rootcause-f104-frequency-day1-freq16r2-3-native.console.decoded.json": "a2ba5249e1ff8646a8e6da2f4063046c66f5ebab10b4194f2c54e633f2d595c2",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode1.console.decoded.json": "e6210440af7dcb534fc796c9f83c1828d9e94df1df595df13e1e7ef977198148",
+    "rootcause-f104-frequency-day1-freq16r2-3-singlepma.console.decoded.json": "adb70c2b88540f424370e1c8903ae7739fd60ac8b530fd26f06095447e2962e6",
+    "lrtdc-minpma-f308\\ip\\gig_ethernet_pcs_pma\\synth\\transceiver\\gig_ethernet_pcs_pma_rx_startup_fsm.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "lrtdc-minpma-f308\\ip\\gig_ethernet_pcs_pma\\synth\\transceiver\\gig_ethernet_pcs_pma_transceiver.vhd": "03932bb1240f6849fb8dac486ffc991463899651ef38804ce9654f25e67fe132",
+    "lrtdc-minpma-f308\\ip\\gig_ethernet_pcs_pma\\synth\\gig_ethernet_pcs_pma_block.vhd": "ad00061e2e8af6dbdedede8fd2c473f3237268f5a3b54a7ec10c65937991ea2c",
+    "lrtdc-rootcause-f104\\ip\\gig_ethernet_pcs_pma\\synth\\transceiver\\gig_ethernet_pcs_pma_gtwizard_init.vhd": "1b0943ded222ca7545f9e147cc4888512bc8f9b38e75e982b0a0361e88a26a36",
+    "decode_rootcause_f104.py": "8dc38114fb1e3760152f3a30c1d68928ff24fa7584173ffa0a29f2a9821832f5"
+  }
+}

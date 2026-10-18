@@ -1,0 +1,77 @@
+{
+  "created": "2026-10-18T15:43:38.047833",
+  "snapshot": "minpma-packets-native-baseline.pcapng",
+  "snapshot_sha256": "3a994c620e04ac00e37bfe350a7b1a62d5d1de604cbf01d92b386d192f7a4edd",
+  "live_capture": "minpma-20261018.pcapng",
+  "snapshot_blocks": {
+    "live_bytes_read": 1711380,
+    "complete_block_bytes": 1711380,
+    "trailing_incomplete_bytes_excluded": 0,
+    "blocks": 2795
+  },
+  "tshark_actual_exit_code": 0,
+  "windows": [
+    {
+      "cold_log": "minpma-native-minbase16-cold3.json",
+      "trial": 1,
+      "host": "192.168.10.16",
+      "boot_success": false,
+      "start_epoch": 1792305052.612507,
+      "end_epoch": 1792305142.742787,
+      "duration_seconds": 90.13028,
+      "host_visible_packets": 10,
+      "from_board_MAC_or_target_IP": 0,
+      "ARP_requests_for_board": 8,
+      "ARP_replies_from_board": 0,
+      "RBCP_requests_to_board": 2,
+      "RBCP_responses_from_board": 0,
+      "TCP24_from_board": 0,
+      "first_board_frame_seconds": null
+    },
+    {
+      "cold_log": "minpma-native-minbase16-cold3.json",
+      "trial": 2,
+      "host": "192.168.10.16",
+      "boot_success": false,
+      "start_epoch": 1792305151.444467,
+      "end_epoch": 1792305241.586783,
+      "duration_seconds": 90.142316,
+      "host_visible_packets": 1,
+      "from_board_MAC_or_target_IP": 0,
+      "ARP_requests_for_board": 1,
+      "ARP_replies_from_board": 0,
+      "RBCP_requests_to_board": 0,
+      "RBCP_responses_from_board": 0,
+      "TCP24_from_board": 0,
+      "first_board_frame_seconds": null
+    },
+    {
+      "cold_log": "minpma-native-minbase16-cold3.json",
+      "trial": 3,
+      "host": "192.168.10.16",
+      "boot_success": false,
+      "start_epoch": 1792305250.295898,
+      "end_epoch": 1792305340.425868,
+      "duration_seconds": 90.12997,
+      "host_visible_packets": 1,
+      "from_board_MAC_or_target_IP": 0,
+      "ARP_requests_for_board": 1,
+      "ARP_replies_from_board": 0,
+      "RBCP_requests_to_board": 0,
+      "RBCP_responses_from_board": 0,
+      "TCP24_from_board": 0,
+      "first_board_frame_seconds": null
+    }
+  ],
+  "source_sha256": {
+    "<workspace>\\analyze_minpma_packets.py": "0806426c78a6110c72a6f98168892ab17cfbb5020df1f2957cf331c18658b29f",
+    "minpma-native-minbase16-cold3.json": "f4cfb33b8adb86a4c88202cb1937304ac36b6847940e27b68654885a22205168"
+  },
+  "MAC_mapping_basis": "Previous closed resumed capture: only these MACs observed as source of each targetIP. MAC/IP settings are independently checked by EEPROM baseline hashes.",
+  "limits": [
+    "HostNIC capture; not physical line-code or analog-jitter measurement.",
+    "Snapshot excludes incomplete trailing block and does not modify live capture.",
+    "Final drop statistics unavailable until capture process ends; no zero-drop claim.",
+    "Software power/status timestamps are not precise physical reset edges; ARP backoff affects first reply latency."
+  ]
+}

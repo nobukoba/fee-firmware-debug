@@ -1,0 +1,46 @@
+{
+  "created": "2026-10-18T14:46:17.828831",
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2023.2\\bin\\xvhdl.bat",
+        "--2008",
+        "sync.vhd",
+        "baseline.vhd",
+        "candidate.vhd",
+        "tb.vhd"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2023.2\\bin\\xelab.bat",
+        "earlyhold_tb",
+        "-s",
+        "resetwidth_sim"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2023.2\\bin\\xsim.bat",
+        "resetwidth_sim",
+        "-runall"
+      ],
+      "actual_exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "<workspace>\\simulate_resetwidth_f30a.py": "6493106b14b391ff71bf921bfcfba27f1a6a0cde03e1b4961f5e69b820da4c9a",
+    "lrtdc-minimal-inithold\\build\\minimal-inithold-f304\\rx-startup-before-patch.vhd": "3499fbb3cb184c3557af8c471398b8e1cbe02e160d195112af265d2a2662dcd0",
+    "experiments\\resetwidth-f30a-sim\\baseline.vhd": "f14ab49c1014ce3bab3a7d55027153a647799b1d13070da525ea62f5123c3bb9",
+    "experiments\\resetwidth-f30a-sim\\candidate.vhd": "f88f111f62959927abaa65d8eba09f0c48eedf8aad9b4c5df156c832e5c28b92",
+    "experiments\\resetwidth-f30a-sim\\sync.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "experiments\\resetwidth-f30a-sim\\tb.vhd": "2e0fd6080fa931a6fe36c17e104bc3d82bdb1fa9ba07494c4ebbe60f936e460f"
+  },
+  "limits": [
+    "Ideal PLL/clock model only. WAIT_TIME_MAX also extends RX user-clock wait; not isolated pulse-width comparison.",
+    "No GTX analog model or hardware efficacy claim."
+  ]
+}

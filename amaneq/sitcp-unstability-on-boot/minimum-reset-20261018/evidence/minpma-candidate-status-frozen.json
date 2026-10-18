@@ -1,0 +1,40 @@
+{
+  "created": "2026-10-18T15:55:44.950283",
+  "phase": "non_hardware_candidates_frozen",
+  "f308": {
+    "build_actual_exit_code": 0,
+    "timing_qualified": false,
+    "WNS_ns": -0.044,
+    "setup_failing_endpoints": 3,
+    "WHS_ns": 0.043,
+    "hardware_test_performed": false,
+    "reason": "Final setup timing not met; do not program this image.",
+    "functional_patch": "minpma-prototype-f308.patch",
+    "functional_patch_sha256": "4e43b17077e049cd40d337deb133b7781d6aa2dfc6e7c3d7b90ae90d4132991b",
+    "added_lines": 32,
+    "deleted_lines": 1,
+    "nonblank_added_lines": 30
+  },
+  "f309": {
+    "logical_simulation_passed": true,
+    "build_started": false,
+    "hardware_test_performed": false,
+    "reason": "Queued build was cancelled before Vivado launch to prioritize smaller one-constant native-wait candidate.",
+    "functional_patch": "minpma-prototype-f309.patch",
+    "functional_patch_sha256": "a932ab22f2c82623118b3f3f9121551d01a9f38dde1bb58047183a76bc98f966",
+    "added_lines": 6,
+    "deleted_lines": 1,
+    "nonblank_added_lines": 6
+  },
+  "source_sha256": {
+    "<workspace>\\freeze_minpma_candidates.py": "d134ed9fed4139b65a69849b4bdf418af60fc2d9c8eb3005645aecdfe0b436b3",
+    "minpma-f308-build.json": "9feab8929d323cf54d186c73f5ed8e38193e5bbf85769f8a8e563e1e023e9fbf",
+    "lrtdc-minpma-f308\\build\\minpma-f308\\timing-summary.rpt": "65e18634cdedb44fa183d333a6e316d24bdb002063a9c8ac2984f34fb3d0965e",
+    "experiments\\minpma-f308-sim\\result.json": "334cb599d2b47aec96f15c94142c589d7d0d5be52433aa65fd5931ee539324e2",
+    "experiments\\minpma-f309-sim-v2\\result.json": "530212470a4294b2f0e1c79ce65435f8afeca958f50c327b21e4da6595ef5926",
+    "lrtdc-minpma-f308\\build\\minpma-f308\\gt-init-before.vhd": "a84e7ba6a1604e3b907e6ae9bf6429a8dd7797de0f2ecca587f6b0968206e803",
+    "lrtdc-minpma-f308\\build\\minpma-f308\\gt-init-after.vhd": "9737408fc494df14454967864f6c3034f59a30b551086b8495f7e524c21e4917",
+    "experiments\\minpma-f309-sim-v2\\patch-check\\gt-init-before.vhd": "a84e7ba6a1604e3b907e6ae9bf6429a8dd7797de0f2ecca587f6b0968206e803",
+    "experiments\\minpma-f309-sim-v2\\patch-check\\gt-init-after.vhd": "a38782c98f07aceb0da59d31cc247c82ee69d6703b27cf9eb015ae609da8124b"
+  }
+}

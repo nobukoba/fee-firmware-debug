@@ -1,0 +1,35 @@
+{
+  "created": "2026-10-18T14:53:55.298925",
+  "hardware_writes_in_this_followup": false,
+  "prior_evidence": "F307 same-placed gate bypass16 0/3, enabled16 3/3, reverse16 0/3, enabled17 3/3. Native delayed-start5us/50us 0/3 each. Prior recovered-clock ratio abnormal and repaired byPMA.",
+  "predictions": [
+    {
+      "candidate": "F308 one-domain1s/16usercycles",
+      "success_would_support": "F307 request/ack and post-pulse diagnostic state are dispensable for present boot recovery.",
+      "failure_with_pulse_would_suggest": "Functional ordering, clock-domain assumptions or implementation differences require review; no immediate attribution to handshake itself."
+    },
+    {
+      "candidate": "F309 existingCDRtimer last64SYS cycles",
+      "success_would_support": "A1s post-RXRESETDONE wait is unnecessary in tested conditions; reinitializingPMA late in initial acquisition can suffice.",
+      "failure_with_pulse_would_suggest": "A later timing window or RX/user-readiness state matters; PMA pulse presence alone is insufficient.",
+      "no_pulse_means": "Invalid efficacy comparison; investigate timer/rearming/suppression before moreboot trials."
+    },
+    {
+      "candidate": "F30A WAIT_TIME_MAX100->1000",
+      "success_would_support": "Changing native reset/user-clock wait may suffice without separatePMA logic.",
+      "confounds": "Both reset hold and RXUSER wait change; separately compiled placement differs.",
+      "failure_would_suggest": "Merely extending these native waits to5us is insufficient; not a disproof of all widths."
+    }
+  ],
+  "physical_cause_hypotheses": [
+    "RX/PMA/CDR initial state or calibration depends on reset/clock ordering.",
+    "Board-specific rail/reference-clock startup or marginal analog conditions may predispose initial acquisition; not measured."
+  ],
+  "non_claims": [
+    "CPLLLOCK/RXRESETDONE do not establish recovered-data/CDR correctness.",
+    "No jitter measurement or board rail waveform; no component-failure diagnosis.",
+    "PMA in sequential mode may reset downstream stages.",
+    "Latched pulse observations do not directly measure pulse count/duration.",
+    "Initialhold2-line alternative has different configuration-time qualification concern and is not counted as the minimum newPMA patch."
+  ]
+}

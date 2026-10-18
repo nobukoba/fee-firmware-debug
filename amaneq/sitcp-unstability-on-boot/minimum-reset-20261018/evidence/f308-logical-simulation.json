@@ -1,0 +1,44 @@
+{
+  "created": "2026-10-18T14:29:13.368916",
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2023.2\\bin\\xvhdl.bat",
+        "--2008",
+        "minpma_model.vhd",
+        "minpma_tb.vhd"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2023.2\\bin\\xelab.bat",
+        "minpma_tb",
+        "-s",
+        "minpma_tb_sim"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2023.2\\bin\\xsim.bat",
+        "minpma_tb_sim",
+        "-runall"
+      ],
+      "actual_exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "<workspace>\\simulate_minpma_f308.py": "0fcdbf71ec93968befcb72e240884fa6f18606171c52bdbdb45443ce8e138279",
+    "lrtdc-minpma-f308\\minpma-declarations.vhd.inc": "949f878f406ccd547c75a051498fd7dc62ddb994a5a3a049b94a80b225c683e1",
+    "lrtdc-minpma-f308\\minpma-body.vhd.inc": "e85c243c29b7807ce4e403841a87230fc9a163b80a0c127a7440cb61a3a70a9a",
+    "experiments\\minpma-f308-sim\\minpma_model.vhd": "19b88876781cdd952fd4069c31526ba10ca58636cd305000c4396313f4aef947",
+    "experiments\\minpma-f308-sim\\minpma_tb.vhd": "7c9f3e848dc40b39787daba55485a31ed7f63d37693fefb9b01344f3a37d9e22"
+  },
+  "limits": [
+    "Wait shortened62500000 to8 for logical simulation. No GTX analog model.",
+    "No claim about pulse completion if shared user clock stops during pulse.",
+    "Synchronized SOFT reset may interrupt an ongoing pulse; native startup reset sequence then applies."
+  ]
+}

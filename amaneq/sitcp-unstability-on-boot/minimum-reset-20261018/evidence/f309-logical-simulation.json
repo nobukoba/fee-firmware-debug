@@ -1,0 +1,50 @@
+{
+  "created": "2026-10-18T14:33:41.812276",
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2023.2\\bin\\xvhdl.bat",
+        "--2008",
+        "model.vhd",
+        "tb.vhd"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2023.2\\bin\\xelab.bat",
+        "minpma_timer_tb",
+        "-s",
+        "minpma_timer_tb_sim"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2023.2\\bin\\xsim.bat",
+        "minpma_timer_tb_sim",
+        "-runall"
+      ],
+      "actual_exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "<workspace>\\simulate_minpma_f309_v2.py": "4b03a8ebd335a6145b497cdf9708a56a8b0d4955346d5404078a9c748da1c40c",
+    "lrtdc-minpma-f309\\patch-minpma.py": "cdc82b59311d53441086b8845b35c8af8df3cf7e7acd7f8a01aa742eaf7c702c",
+    "experiments\\minpma-f309-sim-v2\\model.vhd": "5192462f11619512232e160a7034175e27e2e0175f08a184b5105e5da18d090c",
+    "experiments\\minpma-f309-sim-v2\\tb.vhd": "801a73f19dd5b1bd921dcabd2f9cbc265ea887cfcdb19737fe70ba57c3fb9157",
+    "experiments\\minpma-f309-sim-v2\\gig_ethernet_pcs_pma_gtwizard_init.vhd": "a38782c98f07aceb0da59d31cc247c82ee69d6703b27cf9eb015ae609da8124b"
+  },
+  "checks": [
+    "Actual native timer computes10000SYS cycles/50us.",
+    "SOFT/native reset suppression.",
+    "Registered64SYS-clock/320ns pulse.",
+    "No repeat after timer saturation; native reset rearms."
+  ],
+  "limits": [
+    "Logical simulation; no GTX analog model.",
+    "Native reset retry may cause another pulse.",
+    "Initial CDR wait counter behavior preserved including counting during SOFT reset."
+  ]
+}

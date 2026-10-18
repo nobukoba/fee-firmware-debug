@@ -1,0 +1,30 @@
+--- a/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_gtwizard_init.vhd
++++ b/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_gtwizard_init.vhd
+@@ -516,6 +516,7 @@
+     signal   gt0_gtrxreset_gt                : std_logic;
+     signal   gt0_gttxreset_gt                : std_logic;
+ 
++signal minpma_timer_pulse : std_logic := '0';
+ --**************************** Main Body of Code *******************************
+ begin
+     --  Static signal Assigments
+@@ -617,7 +618,7 @@
+         gt0_rxoutclk_out                =>      gt0_rxoutclk_i,
+         ------------- Receive Ports - RX Initialization and Reset Ports ------------
+         gt0_rxpcsreset_in               =>      gt0_rxpcsreset_in,
+-        gt0_rxpmareset_in               =>      gt0_rxpmareset_in,
++        gt0_rxpmareset_in               =>      minpma_timer_pulse,
+         ------------------ Receive Ports - RX Margin Analysis ports ----------------
+         gt0_rxlpmen_in                  =>      gt0_rxlpmen_in,
+         ----------------- Receive Ports - RX Polarity Control Ports ----------------
+@@ -786,6 +787,10 @@
+   cdrlock_timeout:process(sysclk_in)
+   begin
+     if rising_edge(sysclk_in) then
++        minpma_timer_pulse <= gt0_rxpmareset_in;
++        if SOFT_RESET_RX_IN = '0' and gt0_gtrxreset_gt = '0' and gt0_rx_cdrlock_counter >= WAIT_TIME_CDRLOCK - 64 and gt0_rx_cdrlock_counter < WAIT_TIME_CDRLOCK then
++          minpma_timer_pulse <= '1';
++        end if;
+         if(gt0_gtrxreset_gt = '1') then
+           gt0_rx_cdrlocked       <= '0';
+           gt0_rx_cdrlock_counter <=  0                        after DLY;

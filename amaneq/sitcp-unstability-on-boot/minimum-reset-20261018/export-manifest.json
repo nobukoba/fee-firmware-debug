@@ -1,0 +1,103 @@
+{
+  "created": "2026-10-18T16:23:31.803537",
+  "transformation": "Only workspace prefixes scrubbed and JSON reformatted. Patches preserve exact bytes. Original and exported SHA256 separately recorded.",
+  "files": [
+    {
+      "source": "minpma-pretest-hypotheses.json",
+      "path": "evidence/minpma-pretest-hypotheses.json",
+      "original_sha256": "7c642dcfabde6761cde1a64127a1635a78119207fd7c8e695d9962282793c0ce",
+      "exported_sha256": "336c5a9224731f1dc6ea8ffd74a3dd222056d1a08f5bb427feff2d6cd931c1d6"
+    },
+    {
+      "source": "minpma-start-status.json",
+      "path": "evidence/minpma-start-status.json",
+      "original_sha256": "88820ed788b3f1c3069425ff128b85ea3dc7c366738acbab040127324e310b99",
+      "exported_sha256": "0ed96018c8e41eacf14fb91443c0bd8bf11570c2025e95fe1e94096ba9a25e2b"
+    },
+    {
+      "source": "minpma-native-minbase16.json",
+      "path": "evidence/minpma-native-minbase16.json",
+      "original_sha256": "5d00346beecea4de8f3c910d998e94376292b5ba3ae8dd0a8204aceda4ea5192",
+      "exported_sha256": "625d7d4ef3e4bd894360db92f744820f28158db09e081bb851f86f4664d67f87"
+    },
+    {
+      "source": "minpma-native-minbase16-cold3.json",
+      "path": "evidence/minpma-native-minbase16-cold3.json",
+      "original_sha256": "f4cfb33b8adb86a4c88202cb1937304ac36b6847940e27b68654885a22205168",
+      "exported_sha256": "4a44b3ff76768ab52d4067675ae74f66427fe6a523c69bfbc2571ba56bdbfd5d"
+    },
+    {
+      "source": "minpma-native-config-status.json",
+      "path": "evidence/minpma-native-config-status.json",
+      "original_sha256": "92494fcc0f2026b5486551a6266e28ec8b6893c6fb1bce17158dad76e7d90bfa",
+      "exported_sha256": "bdc6031c1b70100a97c0183bafd53219ffb9a58f17e7d3738f62b06f13239aa9"
+    },
+    {
+      "source": "minpma-native-late-readonly.json",
+      "path": "evidence/minpma-native-late-readonly.json",
+      "original_sha256": "e3cb197b0e2efbac0e4bd89c64af2cf897ffee64f3b2782430d1da60769086c4",
+      "exported_sha256": "81f915e555e2afd03172933fea13b075fba949ce838518b3071e2af3506c38c7"
+    },
+    {
+      "source": "minpma-packets-native-baseline.json",
+      "path": "evidence/minpma-packets-native-baseline.json",
+      "original_sha256": "4c050a6f1a6e750ef7fc8194026ec759e65deaf452f70794ee02418250a779b4",
+      "exported_sha256": "f5d007358f58279068dbd6ecbbbd22a0c43dd5fe1e7694cbef91f8feb0c21ad4"
+    },
+    {
+      "source": "minpma-MAC-mapping.json",
+      "path": "evidence/minpma-MAC-mapping.json",
+      "original_sha256": "46c960f7f2c24c0aa5e28ed7f3046ee95469a3ab01a809dc4bbda70744d4630a",
+      "exported_sha256": "02c569a020121d92c489202ca97ee8894efd14c37f9f3c849143053165f1c9b4"
+    },
+    {
+      "source": "minpma-fsm-recovery-analysis.json",
+      "path": "evidence/minpma-fsm-recovery-analysis.json",
+      "original_sha256": "198bec866080c2e955608fd41c059fa06defbb52f79b749ea3ca10c7dcc65320",
+      "exported_sha256": "50ef4aa15d07bab79b6756df8c9c2e949ac4431014eb7b8d88561cfec4f16d3e"
+    },
+    {
+      "source": "minpma-native-order-analysis.json",
+      "path": "evidence/minpma-native-order-analysis.json",
+      "original_sha256": "922a6c57ebd7f6685a51331c68385a966ce25aa2fb7fa94d4810a2e55427f90d",
+      "exported_sha256": "89eee14d8fd84f9ac5e0fa5d23a1979397719a5f9e2ac6a1ad9dad68f00fee8f"
+    },
+    {
+      "source": "minpma-candidate-status-frozen.json",
+      "path": "evidence/minpma-candidate-status-frozen.json",
+      "original_sha256": "f3364bfc64688df463fe30fcc80cb2f321a7df2bf78e906f5d2b061e5793671b",
+      "exported_sha256": "ff3324e2c69e6d7f75e23f2e61435fca49717466e3e1697cd870a54c6107fd76"
+    },
+    {
+      "source": "experiments/minpma-f308-sim/result.json",
+      "path": "evidence/f308-logical-simulation.json",
+      "original_sha256": "334cb599d2b47aec96f15c94142c589d7d0d5be52433aa65fd5931ee539324e2",
+      "exported_sha256": "5d92ae725b60e3cd9395996a2be37488787f5cb83e71a4817aab746e1b37924e"
+    },
+    {
+      "source": "experiments/minpma-f309-sim-v2/result.json",
+      "path": "evidence/f309-logical-simulation.json",
+      "original_sha256": "530212470a4294b2f0e1c79ce65435f8afeca958f50c327b21e4da6595ef5926",
+      "exported_sha256": "9bd6bfb040ae086859989701c7a18fd7419dbb6dc9f522a4e224b4b009c54490"
+    },
+    {
+      "source": "experiments/resetwidth-f30a-sim/result.json",
+      "path": "evidence/f30a-logical-simulation.json",
+      "original_sha256": "cfbb4bfd1e4680a9b14ddd1e62a8d6a29aebd3b987d8d9115f79abc09e8c0d9a",
+      "exported_sha256": "a0f5a5f66c9000fbbb55e9737d4cfc95545abd042a6ad3893711ac8ee1365b05"
+    },
+    {
+      "source": "minpma-prototype-f308.patch",
+      "path": "f308-prototype.patch",
+      "original_sha256": "4e43b17077e049cd40d337deb133b7781d6aa2dfc6e7c3d7b90ae90d4132991b",
+      "exported_sha256": "4e43b17077e049cd40d337deb133b7781d6aa2dfc6e7c3d7b90ae90d4132991b"
+    },
+    {
+      "source": "minpma-prototype-f309.patch",
+      "path": "f309-prototype.patch",
+      "original_sha256": "a932ab22f2c82623118b3f3f9121551d01a9f38dde1bb58047183a76bc98f966",
+      "exported_sha256": "a932ab22f2c82623118b3f3f9121551d01a9f38dde1bb58047183a76bc98f966"
+    }
+  ],
+  "updated": "2026-10-18T16:23:31.947478"
+}

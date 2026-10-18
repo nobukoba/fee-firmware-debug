@@ -1,0 +1,24 @@
+{
+  "created": "2026-10-18T16:01:36.827516",
+  "operation": "Read-only network probes after factorycold3 failures; no power/reset/program",
+  "first": {
+    "rbcp": false,
+    "tcp24": null,
+    "rbcp_error": "timed out",
+    "identity_matches": false,
+    "success": false
+  },
+  "confirmation": {
+    "rbcp": false,
+    "tcp24": null,
+    "rbcp_error": "timed out",
+    "identity_matches": false,
+    "success": false
+  },
+  "finished": "2026-10-18T16:01:44.833428",
+  "source_sha256": {
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "minpma-native-minbase16.json": "5d00346beecea4de8f3c910d998e94376292b5ba3ae8dd0a8204aceda4ea5192"
+  }
+}

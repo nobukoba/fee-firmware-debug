@@ -1,0 +1,34 @@
+{
+  "created": "2026-10-18T16:09:34.527532",
+  "source_capture": "investigation24h-20261018-resumed.pcapng",
+  "source_capture_sha256": "7819284a6b440205827ae6bb102e0a422804ce76ae5fbf30f06071dca8615de8",
+  "tshark_actual_exit_code": 0,
+  "command": [
+    "C:\\Program Files\\Wireshark\\tshark.exe",
+    "-n",
+    "-r",
+    "investigation24h-20261018-resumed.pcapng",
+    "-Y",
+    "ip.src==192.168.10.16 || ip.src==192.168.10.17 || arp.src.proto_ipv4==192.168.10.16 || arp.src.proto_ipv4==192.168.10.17",
+    "-T",
+    "fields",
+    "-e",
+    "ip.src",
+    "-e",
+    "arp.src.proto_ipv4",
+    "-e",
+    "eth.src"
+  ],
+  "source_MAC_counts": {
+    "192.168.10.16": {
+      "02:00:c0:a8:00:10": 162
+    },
+    "192.168.10.17": {
+      "7c:f0:98:01:20:16": 9025
+    }
+  },
+  "limits": [
+    "Derived from previously successful target-IP packets; no claim that a failed board cannot ever use a different MAC.",
+    "Current packet analysis also checks targetIP source independently."
+  ]
+}

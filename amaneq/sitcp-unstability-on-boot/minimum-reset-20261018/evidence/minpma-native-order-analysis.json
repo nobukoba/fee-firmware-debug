@@ -1,0 +1,48 @@
+{
+  "created": "2026-10-18T16:18:51.483910",
+  "phase": "frozen_native_status_trace_reanalysis_only",
+  "trials": [
+    {
+      "trial": 1,
+      "source": "rootcause-f104-frequency-day1-freq16-1-native.console.decoded.json",
+      "observed_GTRXRESET_high_ns": 31395,
+      "CPLL_LOCK_at_assert": false,
+      "CPLL_LOCK_at_release": true,
+      "RXreset_release_to_CDR_wait_timer_high_ns": 50005,
+      "CDR_wait_timer_high_to_RXUSERRDY_high_ns": 520
+    },
+    {
+      "trial": 2,
+      "source": "rootcause-f104-frequency-day1-freq16r2-2-native.console.decoded.json",
+      "observed_GTRXRESET_high_ns": 31360,
+      "CPLL_LOCK_at_assert": false,
+      "CPLL_LOCK_at_release": true,
+      "RXreset_release_to_CDR_wait_timer_high_ns": 50005,
+      "CDR_wait_timer_high_to_RXUSERRDY_high_ns": 520
+    },
+    {
+      "trial": 3,
+      "source": "rootcause-f104-frequency-day1-freq16r2-3-native.console.decoded.json",
+      "observed_GTRXRESET_high_ns": 31565,
+      "CPLL_LOCK_at_assert": false,
+      "CPLL_LOCK_at_release": true,
+      "RXreset_release_to_CDR_wait_timer_high_ns": 50005,
+      "CDR_wait_timer_high_to_RXUSERRDY_high_ns": 520
+    }
+  ],
+  "inference": "In these prior native diagnostic boots PLL waiting dominated GTRXRESET high time (about31us). Raising WAIT_TIME_MAX100 to1000 (0.5us minimum to5us) need not lengthen that actual pulse. Its separate post-CDR/user-clock wait can still increase by4.5us. Therefore a positive F30A result must not be attributed solely to pulse width.",
+  "limits": [
+    "Prior diagnostic image, not a new physical waveform measurement of factory orF30A.",
+    "SYS-clock event timestamps are nominal5ns ticks; per-bit synchronization precludes precise edge ordering.",
+    "CDR wait timer bit24 is not measured physicalCDR lock.",
+    "No claim that current F30A has the same PLL waiting duration until directly instrumented."
+  ],
+  "source_sha256": {
+    "<workspace>\\analyze_minpma_native_order.py": "cd6d40c7192f1093085eda253a36ab221010c3a0e9ddb044226164ac08a5c7ed",
+    "day1-frequency16-resume-v2.json": "0e06b1cebfea6daf998f8af5472325794049c36227aa8f254c6c291b26a15587",
+    "day1-frequency16-reviewed-outcome.json": "05ee8270e8e394b88f480cf7926a94b957df3bfc48e126b931215a84f703e1c7",
+    "rootcause-f104-frequency-day1-freq16-1-native.console.decoded.json": "6e801cc68f860a0adeaa0a04b05c1b0cf86db6be173f6bdb674e72a1cd69a811",
+    "rootcause-f104-frequency-day1-freq16r2-2-native.console.decoded.json": "e1fb604a131025a270df1786655508014d04a520d4ae096561cf10e96857d1da",
+    "rootcause-f104-frequency-day1-freq16r2-3-native.console.decoded.json": "a2ba5249e1ff8646a8e6da2f4063046c66f5ebab10b4194f2c54e633f2d595c2"
+  }
+}
