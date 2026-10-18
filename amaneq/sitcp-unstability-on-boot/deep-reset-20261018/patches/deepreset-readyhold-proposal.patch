@@ -1,0 +1,27 @@
+--- a/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_gtwizard_init.vhd
++++ b/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_gtwizard_init.vhd
+@@ -488,6 +488,7 @@
+     signal   gt0_txuserrdy_i                 : std_logic;
+     signal   gt0_txuserrdy_t                 : std_logic;
+     signal   gt0_rxuserrdy_i                 : std_logic;
++    signal deepreset_cdrhold_i : std_logic;
+     signal   gt0_rxuserrdy_t                 : std_logic;
+ 
+     signal   gt0_rxdfeagchold_i              : std_logic;
+@@ -518,6 +519,7 @@
+ 
+ --**************************** Main Body of Code *******************************
+ begin
++    deepreset_cdrhold_i <= not gt0_rxuserrdy_i;
+     --  Static signal Assigments
+     tied_to_ground_i                             <= '0';
+     tied_to_vcc_i                                <= '1';
+@@ -582,7 +584,7 @@
+         gt0_eyescandataerror_out        =>      gt0_eyescandataerror_out,
+         gt0_eyescantrigger_in           =>      gt0_eyescantrigger_in,
+         ------------------------- Receive Ports - CDR Ports ------------------------
+-        gt0_rxcdrhold_in                =>      gt0_rxcdrhold_in,
++        gt0_rxcdrhold_in                =>      deepreset_cdrhold_i,
+         ------------------ Receive Ports - FPGA RX interface Ports -----------------
+         gt0_rxdata_out                  =>      gt0_rxdata_out,
+         ------------------- Receive Ports - Pattern Checker Ports ------------------

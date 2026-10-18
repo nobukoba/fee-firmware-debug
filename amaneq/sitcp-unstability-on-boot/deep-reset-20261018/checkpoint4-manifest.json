@@ -1,0 +1,97 @@
+{
+  "state": "IN_PROGRESS_CHECKPOINT4",
+  "files": [
+    {
+      "source": "deepreset-f30b-75-summary.json",
+      "source_sha256": "ed78289aa1e27c5ec2578f5f8e5a340e7ff322df25933942fd8423226d53166b",
+      "export": "evidence/deepreset-f30b-75-summary.json",
+      "export_sha256": "cc3ab438bc861a0533ec61af0745ed2b550648e1cbc4c4e82f8b1a5c90b7c617"
+    },
+    {
+      "source": "deepreset-matched-filter-summary.json",
+      "source_sha256": "1d3a7a17184308ae16b0cde35f220452db52fd6281cbb38b5b3f6eeff222964b",
+      "export": "evidence/deepreset-matched-filter-summary.json",
+      "export_sha256": "4a3ab548781b6208eff6b25041747ed5993cb5107a10f694592e046f03eee6c5"
+    },
+    {
+      "source": "deepreset-f30d-independent-review.json",
+      "source_sha256": "ce46f579be8f17760ad626dfe3f643c03c1c418845a9e0daaf2b960e9aac826b",
+      "export": "evidence/deepreset-f30d-independent-review.json",
+      "export_sha256": "f1e32ea4e05d66fdcd58c971579d9498b8d263d5440094c0124be04ed0c9b7d2"
+    },
+    {
+      "source": "deepreset-matched-cohort-deepf30d16en1.json",
+      "source_sha256": "d0528c133022e1983d67bd144cf12343d9bb7c97877506fc2959a893f6bdcde1",
+      "export": "evidence/deepreset-matched-cohort-deepf30d16en1.json",
+      "export_sha256": "51a2d814010ec7a709c34355767caa99939ee008b5edb516f9c155742eea6e76"
+    },
+    {
+      "source": "deepreset-matched-cohort-deepf30d16by1.json",
+      "source_sha256": "889d2aada98a782e65ef377c72f991941e705d4ef84e8caec80288b12b411054",
+      "export": "evidence/deepreset-matched-cohort-deepf30d16by1.json",
+      "export_sha256": "43e42a76d9608c1db26d649e1a453f336bb303a22c3e6733d7a13199feed65e4"
+    },
+    {
+      "source": "deepreset-matched-cohort-deepf30d16en2.json",
+      "source_sha256": "8abbad3e08fe4bfbafb361a97f350f86c28b3335d7bcad23e1d5287d0688cad0",
+      "export": "evidence/deepreset-matched-cohort-deepf30d16en2.json",
+      "export_sha256": "f19c6b145f1f6d3ea84ff9142591c9fbc96ae2410b1cc310b131d5df13bc8c30"
+    },
+    {
+      "source": "deepreset-matched-cohort-deepf30d17en1.json",
+      "source_sha256": "0865dc45e71c1e08ec82f135714aab12ba47f0b98ff8a62ee73c9e0a084553a7",
+      "export": "evidence/deepreset-matched-cohort-deepf30d17en1.json",
+      "export_sha256": "b7ec0a4fa52811519fcf79da4e3cf0e622f3f5f51ab51cc45c1c037a8fef79ce"
+    },
+    {
+      "source": "deepreset-gtwizard-reference-comparison.json",
+      "source_sha256": "5cb235246575c762a6eab4b4b695ff587426ad5fac9439f68db88ad62cf571d9",
+      "export": "evidence/deepreset-gtwizard-reference-comparison.json",
+      "export_sha256": "31e80beea4440c564508c47a5f7060cfe81d7eefe38dee97855e06222046fd68"
+    },
+    {
+      "source": "deepreset-filter-threshold-study.json",
+      "source_sha256": "70353476e24f599adc2b8ec888daf7187537c462c057f0ff25f80585bf592428",
+      "export": "evidence/deepreset-filter-threshold-study.json",
+      "export_sha256": "fb90270e8e4ce454ae1e49195dee567771b52b15e6ebdd479ca661c6f865ac0c"
+    },
+    {
+      "source": "deepreset-readyhold-hypothesis.json",
+      "source_sha256": "a919129617cb61cf4cf88f189d1f32b8ebc1a12b3e02ea8249ae1b104a685dd8",
+      "export": "evidence/deepreset-readyhold-hypothesis.json",
+      "export_sha256": "71d3728af469058b9cdc7d3a218d0c8cbd2ed9539585bf8df2f09b9e1839f75d"
+    },
+    {
+      "source": "experiments/deepreset-clockhold-sim-v3/result.json",
+      "source_sha256": "67da52e65456abbe6b86fd1955263562b83e95ef453bb85106c0d1065a328a71",
+      "export": "evidence/deepreset-clockhold-sim-v3-result.json",
+      "export_sha256": "36d26a7ca281b0fbcaeea015b51f87b67aa3df7e62ab841f210bd70cbf867617"
+    },
+    {
+      "source": "experiments/deepreset-filter500-rejection-sim-v2/result.json",
+      "source_sha256": "407abeeaf71209c63459c2ef90f9c24e9b4c156f146099c363085a05f4705620",
+      "export": "evidence/deepreset-filter500-rejection-sim-v2-result.json",
+      "export_sha256": "6f1f956120d273c793dbadbb8a8b7d0943e109128053568efc21965f72a117cf"
+    },
+    {
+      "source": "experiments/deepreset-filter10us-control-sim/result.json",
+      "source_sha256": "3dd89211aa1dca6bbefdaa5fdea44f270dd2b40aabb5ad322c38ed1cfcbf6c60",
+      "export": "evidence/deepreset-filter10us-control-sim-result.json",
+      "export_sha256": "0892d625ccd4d7e260d5d039351d3981a2c7d12deffaede127c5e14093651b62"
+    },
+    {
+      "source": "deepreset-insufficient-three-line-filter.patch",
+      "source_sha256": "26b22ce363ef7adc48454e0c36d361378e852ef2837c03c2875566b7dc0c981c",
+      "export": "patches/deepreset-insufficient-three-line-filter.patch",
+      "export_sha256": "26b22ce363ef7adc48454e0c36d361378e852ef2837c03c2875566b7dc0c981c",
+      "status": "REJECTED_SIMULATION_COUNTERFACTUAL"
+    },
+    {
+      "source": "deepreset-readyhold-proposal.patch",
+      "source_sha256": "89198f0a11659b6e173ebb8aec5fa6a7f9df934d2ffae968836cb437aad64b61",
+      "export": "patches/deepreset-readyhold-proposal.patch",
+      "export_sha256": "89198f0a11659b6e173ebb8aec5fa6a7f9df934d2ffae968836cb437aad64b61",
+      "status": "VHDL93_PARSE_ONLY_NOT_BUILT_OR_PROGRAMMED"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "created": "2026-10-18T22:46:57.424741",
+  "phase": "pre_hardware_hypothesis_VHDL93_parse_passed_only",
+  "compiler_actual_exit_code": 0,
+  "functional_added_lines": 3,
+  "functional_deleted_lines": 1,
+  "functional_patch": "deepreset-readyhold-proposal.patch",
+  "hypothesis": "RXCDRHOLD=not actualRXUSERRDY, RXCDROVRDEN0: lockCDR to reference through native fixed50us acquisition/userclock preparation, then release before native RXRESETDONE wait. No new timer or FF.",
+  "basis": "UG476p203 explicitly documents HOLD1/OVRDEN0 lock-to-reference. This is a proposed boot use, not a manufacturer-recommended sequence.",
+  "dependency_check": "Native RXUSERRDY set after fixedGTRX-based CDR timer and independently TX/reference-derived userMMCM qualification; before RXRESETDONE and DATA_VALID tests. Neither timer nor userclock source depends on HOLD. PhysicalactualRXUSERRDY driver matches nativeRXFSM output in F104base audit.",
+  "matched_diagnostic_plan": "OneLUT2 I0=physicalRXUSERRDY, I1=manualpulse. INIT0 bypass, INIT5 ready-held, INITC manual. Identical placement/routing with full postload physical verification.",
+  "why_three_lines": "One-line dynamic NOT expression in port actual was rejected by native VHDL93 compiler. Explicit signal declaration+assignment+port-map replacement is3added/1deleted. Do not hide language-setting changes in a one-line claim.",
+  "limits": [
+    "Parse only; no synthesis, timing, transceiver simulation, or hardware evidence yet.",
+    "HOLD is not a PMAreset operation. Manual HOLD repair and ready-held boot prevention would support CDR acquisition-state sensitivity, not a unique analogue component fault.",
+    "A separately compiled production candidate needs verification before recommendation."
+  ],
+  "source_sha256": {
+    "WORKSPACE/prepare_deepreset_readyhold.py": "0e539a5320174824bb7f434024a2b452e38e690c052e61bbdc18d1e2cbea88bb",
+    "lrtdc-startdelay-f305/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_gtwizard_init.vhd": "9be7c5109252b766219d820fc7ab7c06f3c15540de594c3d36cced7be7bc311b",
+    "experiments/deepreset-readyhold-parse-v2/candidate.vhd": "26ad6dd2b50dae82d2b34158c499923b99dff0e8be5d993c937e5bde37f08bfe",
+    "deepreset-readyhold-proposal.patch": "89198f0a11659b6e173ebb8aec5fa6a7f9df934d2ffae968836cb437aad64b61",
+    "experiments/deepreset-readyhold-parse-v2/compile.console.txt": "61286a5e34f9e9fddb5fb0b1325084deb0574eba84713b9a22b3913269ba98fe",
+    "experiments/deepreset-readyhold-parse/result.json": "bed06ef63c8b316b266797caf6bf68b6bd5de453759b26e4cf1309c0ed595be7",
+    "experiments/reference/ug476-7series.pdf": "c0d4ed3fb709ac4a96936b192dfc1aaa5d1bdde89b3261d290b335e742712478",
+    "deepreset-clockhold-base-v2/inventory.tsv": "aabe60a3529d7e97907cd5644dd647de423d6afb107ca3c080286d01cc8d5195"
+  }
+}

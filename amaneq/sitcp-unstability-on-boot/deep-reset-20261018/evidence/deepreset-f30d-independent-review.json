@@ -1,0 +1,138 @@
+{
+  "created": "2026-10-18T22:29:20.164660",
+  "phase": "independent_review_passed_ready_for_hardware",
+  "runtime": "0x60C4F30D",
+  "variants": {
+    "enabled": {
+      "mcs": "deepreset-f30d-matched-v4/enabled/lrtdc-matchedfilter-f30d.mcs",
+      "mcs_sha256": "c24fa4cec95310c585553d857a998231c6ba3405f485da8feaac9e1e0fc3ab93",
+      "expected_full_flash_sha256": "6671a4164f8d626596629e11e29c56ad8a7fd5896950f01dff229ffc95c9ebea",
+      "gate_INIT": 8,
+      "wns_ns": 0.073,
+      "whs_ns": 0.009,
+      "drc": [
+        [
+          "CHECK-3",
+          "Warning",
+          "1"
+        ],
+        [
+          "DPIP-1",
+          "Warning",
+          "384"
+        ],
+        [
+          "REQP-1839",
+          "Warning",
+          "12"
+        ],
+        [
+          "REQP-1840",
+          "Warning",
+          "20"
+        ],
+        [
+          "RTSTAT-10",
+          "Warning",
+          "1"
+        ]
+      ]
+    },
+    "bypass": {
+      "mcs": "deepreset-f30d-matched-v4/bypass/lrtdc-matchedfilter-f30d.mcs",
+      "mcs_sha256": "8ec51a856f3270dabcc6587d1faedc1061484824bc3fff1caae0b2b41f3d560d",
+      "expected_full_flash_sha256": "115e045ae538852a37be2af508d28a4040dfa453a444c754675d471b744974e4",
+      "gate_INIT": 10,
+      "wns_ns": 0.073,
+      "whs_ns": 0.009,
+      "drc": [
+        [
+          "CHECK-3",
+          "Warning",
+          "1"
+        ],
+        [
+          "DPIP-1",
+          "Warning",
+          "384"
+        ],
+        [
+          "PDCN-1569",
+          "Warning",
+          "1"
+        ],
+        [
+          "REQP-1839",
+          "Warning",
+          "12"
+        ],
+        [
+          "REQP-1840",
+          "Warning",
+          "20"
+        ],
+        [
+          "RTSTAT-10",
+          "Warning",
+          "1"
+        ]
+      ]
+    }
+  },
+  "matched_physical_archive_members": {
+    "PHYSDB_ROUTE": {
+      "member": "toplevel.rdb",
+      "sha256": "a70ea0bfdcd62cfeb4cb409d42366d31ab6da50c007a1bce8a36919ac9fdf92a"
+    },
+    "PHYSDB_DEVICE_NAME_STORE": {
+      "member": "toplevel.devns",
+      "sha256": "83430d6a7b580c61ddee66325d85686a1c527a52450e72909bea9845b0642d65"
+    },
+    "PHYSDB_NEW_NETLIST_NAME_STORE": {
+      "member": "toplevel.nnlns",
+      "sha256": "9806abda6ea1fe8a7ebcaa909920189dd7fc866447d2de50a47567438ace7311"
+    },
+    "PHYSDB_CLOCK_DATA": {
+      "member": "toplevel.clkdb",
+      "sha256": "3b1620f93ea162167b76cc97b73d67c16213762976dc5d56cdefc63ed9ff3754"
+    },
+    "SHAPE": {
+      "member": "toplevel.shape",
+      "sha256": "c4ab0c8b19b74f3f40701bdeb92e75acf5e9bafe9b21837f82619c678907f82a"
+    }
+  },
+  "core_VHDL_sha256": {
+    "gig_ethernet_pcs_pma.vhd": "c214570c4dbe72b99eb8ceaa587bb3912109bab1546e10cfb03e813e901efa1e",
+    "gig_ethernet_pcs_pma_block.vhd": "ad00061e2e8af6dbdedede8fd2c473f3237268f5a3b54a7ec10c65937991ea2c",
+    "gig_ethernet_pcs_pma_reset_sync.vhd": "64116e0755096373a875f358534f2adbffed73f420292e83d1dd7cf08c727d97",
+    "gig_ethernet_pcs_pma_sync_block.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "transceiver/gig_ethernet_pcs_pma_cpll_railing.vhd": "60f4277b01260797fff0ab0db04025dd36e3817b360c3c74c3ff591b595d009e",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard.vhd": "c6e3fe294528bd3bc370e053718f0e1c54368668212b74793c7ab1d50869fe88",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_gt.vhd": "eb56e5773b9ff9af58e31979a7f25aa15ffc34b1f7183e220cbb23c96e32198d",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_init.vhd": "9be7c5109252b766219d820fc7ab7c06f3c15540de594c3d36cced7be7bc311b",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_multi_gt.vhd": "d9094ceb95dcb439176a1308c911f6ea3fef6a6519db97a64a913cb313cd4e0d",
+    "transceiver/gig_ethernet_pcs_pma_reset_wtd_timer.vhd": "e7a40bafce9ba113785d7e1ad202c9e85d1baf156732878c049d6fe273b3abfd",
+    "transceiver/gig_ethernet_pcs_pma_rx_startup_fsm.vhd": "b9f7deba425ab799614f00832dbd028a6645c289e0356c7b1b83c6a6efb98c21",
+    "transceiver/gig_ethernet_pcs_pma_transceiver.vhd": "03932bb1240f6849fb8dac486ffc991463899651ef38804ce9654f25e67fe132",
+    "transceiver/gig_ethernet_pcs_pma_tx_startup_fsm.vhd": "b746354b507ba31ca0c2c4aa293edce21938567752a7c83bdff839ff0dc4a91a"
+  },
+  "production_functional_patch": "deepreset-functional-f30b.patch",
+  "production_functional_added_lines": 4,
+  "production_functional_deleted_lines": 3,
+  "diagnostic_patch": "deepreset-diagnostic-f30d.patch",
+  "source_sha256": {
+    "WORKSPACE/review_deepreset_f30d_v4.py": "6ea7b2b2a5cb882263168d3a41210049d9c41ac900b3ea8123664b4ff7890399",
+    "deepreset-f30d-v4-build.json": "f9c0336cf9305b97e9c4b15d25fbc8bcbdfd26d3e53cbc787cead6e7008efa3b",
+    "experiments/deepreset-f30d-sim/result.json": "a659f12e484ecb2f6beba89d174f75fbe366ad0b63925c5684d576a68962887e",
+    "deepreset-functional-f30b.patch": "65dc3bb2f5c7ffb326289f339be6c7706e285b56a8374d7a766041517bd2bf1c",
+    "deepreset-diagnostic-f30d.patch": "c285b8c05dfdc2eaf17850e5e307e2d0ab6f1bc6cb2fb4e7d19acf0796b46f8e",
+    "deepreset-f30d-matched-v4/gate-pins.tsv": "9c72319d6d32c8664c93c6739c9e393eeaf693f3a09313f6e3deb3cda6e8b5dc"
+  },
+  "limits": [
+    "Initial build failed two TDC hold paths and was never programmed. V2 applies physical hold fixing without HDL changes, then both controls are exported from that same repaired route.",
+    "Same placed/routed design; only one LUT INIT changes filter qualification. Exact XML-identified PHYSDB_ROUTE, routing name stores, clock DB and shape archive members must match byte-for-byte.",
+    "Bypass retains WAIT_TIME_MAX2000 and counter reload logic; isolates monitor qualification from simple wait extension.",
+    "No physical boot reset waveform observer in these images; compare cold network outcomes without claiming a measured internal CDR lock event.",
+    "Instrumentation lines excluded from production4added/3deleted patch."
+  ]
+}

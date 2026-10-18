@@ -1,0 +1,57 @@
+{
+  "created": "2026-10-18T22:56:04.729222",
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xvhdl.bat",
+        "--2008",
+        "sync.vhd",
+        "native.vhd",
+        "candidate.vhd",
+        "tb.vhd"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xelab.bat",
+        "validfilter_tb",
+        "-L",
+        "unisim",
+        "-s",
+        "validfilter_sim"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xsim.bat",
+        "validfilter_sim",
+        "-runall"
+      ],
+      "actual_exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "WORKSPACE/simulate_deepreset_filter500_rejection_v2.py": "873f8cda1bafcd9300606cbc42c2493bc1addd1c47fb271cd8894fd6cfbb386a",
+    "lrtdc-validfilter-f30b/patch-check/backup/rx-startup-before-patch.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "lrtdc-validfilter-f30b/patch-check/rx-startup-before-patch.vhd": "e3c1f27d596514cb8d282b8ede46d9604e4bc397a9610faaf1a5ba44465a9e3c",
+    "lrtdc-minpma-f308/ip/gig_ethernet_pcs_pma/synth/gig_ethernet_pcs_pma_sync_block.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "experiments/deepreset-filter500-rejection-sim-v2/candidate.vhd": "7d34dc284d5b9730acd6a96542ff1faf0ec39f162d42a6adbcd1c2dd99391a0b",
+    "experiments/deepreset-filter500-rejection-sim-v2/counterfactual-source.vhd": "c86e8aee07b29c62cb0ca1636d65e85a6cdbbfaf6512f5ef3f97bdbb44075944",
+    "experiments/deepreset-filter500-rejection-sim-v2/native.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "experiments/deepreset-filter500-rejection-sim-v2/sync.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "experiments/deepreset-filter500-rejection-sim-v2/tb.vhd": "723f79790a879a7328d786372f7e20d9d5d3cae66fe8ea4ebfb51791563a390b"
+  },
+  "limits": [
+    "Complete native vendor digitalFSM; idealizedPLL/RXRESETDONE and MMCM; noanalogue model.",
+    "Counterfactual keeps exact nativeWAITMAX100(500ns) source line; onlyruntime reload/qualifier3added2deleted.",
+    "Representative560ns low/575ns high nativefailure-derived waveform, notrawDATAVALID replay.",
+    "Negative-result test: persistentflaps stillclear watchdog; doesnot proveallpossible3linefixes impossible."
+  ],
+  "three_line_candidate_rejected_for_representative_waveform": true,
+  "waveform_low_ns": 560,
+  "waveform_high_ns": 575,
+  "waveform_basis": "Native failedboot shows MONITORdwell560ns and FSM_DONEdwell575ns; representative, not rawDATAVALID replay. Other real dwells range405..1780ns."
+}

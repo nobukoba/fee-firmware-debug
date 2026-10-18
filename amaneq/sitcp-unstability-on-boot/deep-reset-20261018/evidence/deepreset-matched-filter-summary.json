@@ -1,0 +1,99 @@
+{
+  "created": "2026-10-18T23:07:12.927342",
+  "phase": "matched_enabled_bypass_enabled_and_normal17_cohorts_complete",
+  "runtime": "0x60C4F30D",
+  "cases": [
+    {
+      "case": "enabled_first",
+      "host": "192.168.10.16",
+      "variant": "enabled",
+      "successes": 3,
+      "trials": 3,
+      "cohort": "deepreset-matched-cohort-deepf30d16en1.json",
+      "cohort_sha256": "d0528c133022e1983d67bd144cf12343d9bb7c97877506fc2959a893f6bdcde1",
+      "full_flash_sha256": "6671a4164f8d626596629e11e29c56ad8a7fd5896950f01dff229ffc95c9ebea"
+    },
+    {
+      "case": "bypass",
+      "host": "192.168.10.16",
+      "variant": "bypass",
+      "successes": 0,
+      "trials": 3,
+      "cohort": "deepreset-matched-cohort-deepf30d16by1.json",
+      "cohort_sha256": "889d2aada98a782e65ef377c72f991941e705d4ef84e8caec80288b12b411054",
+      "full_flash_sha256": "115e045ae538852a37be2af508d28a4040dfa453a444c754675d471b744974e4"
+    },
+    {
+      "case": "enabled_return",
+      "host": "192.168.10.16",
+      "variant": "enabled",
+      "successes": 3,
+      "trials": 3,
+      "cohort": "deepreset-matched-cohort-deepf30d16en2.json",
+      "cohort_sha256": "8abbad3e08fe4bfbafb361a97f350f86c28b3335d7bcad23e1d5287d0688cad0",
+      "full_flash_sha256": "6671a4164f8d626596629e11e29c56ad8a7fd5896950f01dff229ffc95c9ebea"
+    },
+    {
+      "case": "normal17",
+      "host": "192.168.10.17",
+      "variant": "enabled",
+      "successes": 3,
+      "trials": 3,
+      "cohort": "deepreset-matched-cohort-deepf30d17en1.json",
+      "cohort_sha256": "0865dc45e71c1e08ec82f135714aab12ba47f0b98ff8a62ee73c9e0a084553a7",
+      "full_flash_sha256": "6671a4164f8d626596629e11e29c56ad8a7fd5896950f01dff229ffc95c9ebea"
+    }
+  ],
+  "physical_match": {
+    "PHYSDB_ROUTE": {
+      "member": "toplevel.rdb",
+      "sha256": "a70ea0bfdcd62cfeb4cb409d42366d31ab6da50c007a1bce8a36919ac9fdf92a"
+    },
+    "PHYSDB_DEVICE_NAME_STORE": {
+      "member": "toplevel.devns",
+      "sha256": "83430d6a7b580c61ddee66325d85686a1c527a52450e72909bea9845b0642d65"
+    },
+    "PHYSDB_NEW_NETLIST_NAME_STORE": {
+      "member": "toplevel.nnlns",
+      "sha256": "9806abda6ea1fe8a7ebcaa909920189dd7fc866447d2de50a47567438ace7311"
+    },
+    "PHYSDB_CLOCK_DATA": {
+      "member": "toplevel.clkdb",
+      "sha256": "3b1620f93ea162167b76cc97b73d67c16213762976dc5d56cdefc63ed9ff3754"
+    },
+    "SHAPE": {
+      "member": "toplevel.shape",
+      "sha256": "c4ab0c8b19b74f3f40701bdeb92e75acf5e9bafe9b21837f82619c678907f82a"
+    }
+  },
+  "functional_patch": "deepreset-functional-f30b.patch",
+  "functional_added_lines": 4,
+  "functional_deleted_lines": 3,
+  "interpretation": [
+    "Enabled3/3 -> sameplaced/routed bypass0/3 -> enabledreturn3/3 on16; enabled3/3 onnormal17.",
+    "WAIT_TIME_MAX2000 and counterreload logic remain inbypass. The DATA_VALID qualification gate is a causal factor in recovery under these tested conditions; increasing waits alone didnot fix it.",
+    "Source and completeFSMsimulation show that briefvalid pulses cankeepclearing nativeerrorwatchdog;10usqualification prevents that for the measured-family flap waveforms."
+  ],
+  "limits": [
+    "No physical reset-waveform observer inF30D; these cohorts do not directly count startup retries or prove which internal reset/PCSsettling path mediates improvement.",
+    "A/B/A counts are finite and do not guarantee every future boot or TDCpayload quality.",
+    "Does not identify the physical trigger of abnormal receiverclock acquisition.",
+    "This is a matched diagnostic build; cleanF30B productioncandidate39/39 and36/36 is separate evidence."
+  ],
+  "source_sha256": {
+    "WORKSPACE/aggregate_deepreset_matched_filter.py": "2a2091d9af811945cc3566880c33dd65beda588ba82d8f1cf8ed22affd0e8bfe",
+    "deepreset-f30d-independent-review.json": "ce46f579be8f17760ad626dfe3f643c03c1c418845a9e0daaf2b960e9aac826b",
+    "deepreset-matched-cohort-deepf30d16en1.json": "d0528c133022e1983d67bd144cf12343d9bb7c97877506fc2959a893f6bdcde1",
+    "flash-deepf30d16en1-20261018-223147-result.json": "c6fd110bab2223701dad0fe834370018d972220b7a1338cbee471d70b31eacd4",
+    "deepreset-deepf30d16en1-cold3.json": "878a8e42b084e295dfe55d39bc9a96dc206f2e63b78afd3da86e0e86029ae87b",
+    "deepreset-matched-cohort-deepf30d16by1.json": "889d2aada98a782e65ef377c72f991941e705d4ef84e8caec80288b12b411054",
+    "flash-deepf30d16by1-20261018-223839-result.json": "acdcd3239a55af4f84d784da9ee0cf8d9094658ee511b02c924119312e725c37",
+    "deepreset-deepf30d16by1-cold3.json": "a72a1fc41ed2bf4243868c4eaffab05e0835e3388e1e509b36cb79b27e4e4772",
+    "deepreset-matched-cohort-deepf30d16en2.json": "8abbad3e08fe4bfbafb361a97f350f86c28b3335d7bcad23e1d5287d0688cad0",
+    "flash-deepf30d16en2-20261018-224940-result.json": "461a918aea8ec7e149af51f796a5fb185f75bdcefd71a27f82f1a993aaabb630",
+    "deepreset-deepf30d16en2-cold3.json": "b6180d008de49c449f0abdc54f7b6c8f33b6d832ebbae63144aff45ed3f49159",
+    "deepreset-matched-cohort-deepf30d17en1.json": "0865dc45e71c1e08ec82f135714aab12ba47f0b98ff8a62ee73c9e0a084553a7",
+    "flash-deepf30d17en1-20261018-225816-result.json": "46f7e4faf51f3a21c52497caad17625caa7cd802196d58467282d51b2ddffe59",
+    "deepreset-deepf30d17en1-cold3.json": "5bf4ef77559d50b83a17f4df311c6c34d847a2a2793da1471eeb86de5ecc5fcb"
+  }
+}

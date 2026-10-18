@@ -1,0 +1,114 @@
+{
+  "created": "2026-10-18T23:08:52.591414",
+  "phase": "F30B75cold_successes_and_short_soaks_complete",
+  "boards": {
+    "16": {
+      "initial_cohort": "deepreset-cohort-deepf30b16a.json",
+      "initial_successes": 3,
+      "additional_cohort": "deepreset-extended-deepf30b16x1.json",
+      "additional_successes": 30,
+      "total_successes": 39,
+      "total_trials": 39,
+      "runtime": "0x60C4F30B",
+      "full_flash_sha256": "5499c4b17ce9756842163746ac233ae16015e6a25315b3c0d9e1ca6307d0af5f"
+    },
+    "17": {
+      "initial_cohort": "deepreset-cohort-deepf30b17a.json",
+      "initial_successes": 3,
+      "additional_cohort": "deepreset-extended-deepf30b17x1.json",
+      "additional_successes": 30,
+      "total_successes": 36,
+      "total_trials": 36,
+      "runtime": "0x60C4F30B",
+      "full_flash_sha256": "5499c4b17ce9756842163746ac233ae16015e6a25315b3c0d9e1ca6307d0af5f"
+    }
+  },
+  "functional_added_lines": 4,
+  "functional_deleted_lines": 3,
+  "source_sha256": {
+    "WORKSPACE/aggregate_deepreset_f30b_75.py": "830123eac9c0f6deb5295bc2fd806c35dd270d8b2474f918cbc701c4c00b5156",
+    "deepreset-f30b-72-summary.json": "56c4cda404e373cc897615aac82ce6b65603d78e5a58b0ff0703a9df0cb9df1b",
+    "deepreset-extended-deepf30b17cool1.json": "ef3d67b0b074fe0d5f8f9a445b32565077c7c54276dd2260b03d5fcb07ea1056",
+    "flash-deepf30b17a-20261018-195550-result.json": "354fb4cb66b7744b27d7c98999f1048474566d09ea951a564d8326f7fdb15725"
+  },
+  "limits": [
+    "F30B16 39/39 and17 36/36 across these cohorts; not a guarantee against future failures.",
+    "Cold means powercycle, not measured thermal equilibrium; OFF hold setting5s plus controller/absence-check overhead.",
+    "Readiness timer starts after each power-control call returns; Kikusui and ezOutlet command latency differ, so between-board readiness seconds are not a clock-startup comparison.",
+    "Packet-capture timing and on-chip startup timing are separate evidence.",
+    "Production candidate differs in placement/toolchain from originalfactory; matched F30D gate controls still pending.",
+    "TDC payload quality and analogjitter/GT supply rails are not qualified by these boot/TCP checks.",
+    "Short soaks only:16 15min and17 20min. Longer study continues.",
+    "LongOFF worker terminal result/process absence verified; exact unified-tool process exit code unavailable after context handoff, explicitly recorded separately."
+  ],
+  "factory16_reversal": {
+    "report": "deepreset-native-deepfactory16r1.json",
+    "successes": 0,
+    "trials": 3
+  },
+  "F30B16_return": {
+    "report": "deepreset-cohort-deepf30b16r1.json",
+    "successes": 3,
+    "trials": 3
+  },
+  "longOFF16": {
+    "report": "deepreset-extended-deepf30b16cool1.json",
+    "completion_proof": "deepreset-longoff16-completion-proof.json",
+    "successes": 3,
+    "trials": 3,
+    "off_settings_seconds": [
+      30,
+      120,
+      600
+    ]
+  },
+  "short_soaks": {
+    "16": {
+      "report": "deepreset-soak-f30b16early.jsonl",
+      "report_sha256": "c1882e85c627c99b8fb2cf9e21f6e85561a2de5ad044b2467fc3c0e9ab2c6a44",
+      "finish": {
+        "event": "finish",
+        "time": "2026-10-18T21:37:24.447225",
+        "reason": "duration",
+        "counts": {
+          "RBCP_checks": 30,
+          "RBCP_pass": 30,
+          "TCP_checks": 3,
+          "TCP_pass": 3,
+          "failures": 0
+        },
+        "elapsed_seconds": 900.0
+      }
+    },
+    "17": {
+      "report": "deepreset-soak-f30b17early.jsonl",
+      "report_sha256": "7d067f3af57731ee0a46bd3442f7493645e185abd42064d16e0a86bde8652279",
+      "finish": {
+        "event": "finish",
+        "time": "2026-10-18T21:36:39.675872",
+        "reason": "duration",
+        "counts": {
+          "RBCP_checks": 40,
+          "RBCP_pass": 40,
+          "TCP_checks": 4,
+          "TCP_pass": 4,
+          "failures": 0
+        },
+        "elapsed_seconds": 1200.0
+      }
+    }
+  },
+  "longOFF17": {
+    "report": "deepreset-extended-deepf30b17cool1.json",
+    "report_sha256": "ef3d67b0b074fe0d5f8f9a445b32565077c7c54276dd2260b03d5fcb07ea1056",
+    "successes": 3,
+    "trials": 3,
+    "off_settings_seconds": [
+      30,
+      120,
+      600
+    ],
+    "observed_unified_session_id": 62992,
+    "observed_actual_tool_exit_code": 0
+  }
+}

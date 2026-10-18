@@ -1,0 +1,155 @@
+{
+  "started": "2026-10-18T22:58:10.606265",
+  "host": "192.168.10.17",
+  "serial": "210299BDCF8E",
+  "variant": "enabled",
+  "source_sha256": {
+    "WORKSPACE/run_deepreset_matched_cohort_v2.py": "bac2e9050cc99d05db8053d0faf8e5e6059efab513f12ee65d8d1f82d62e51d8",
+    "deepreset-f30d-independent-review.json": "ce46f579be8f17760ad626dfe3f643c03c1c418845a9e0daaf2b960e9aac826b",
+    "deepreset-f30d-matched-v4/enabled/lrtdc-matchedfilter-f30d.mcs": "c24fa4cec95310c585553d857a998231c6ba3405f485da8feaac9e1e0fc3ab93",
+    "flash_firmware.py": "712a49008ce6434b9407e4a0bb332b528fd4b316d9271b7e1e1b99c5f67af43c",
+    "dual_board_cold.py": "db4144e5e4655c5e8d511d9a3c58e7f53ffed1ad6aa9c242e0933ac6f756572d",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "deepreset-control17-stop-verified.json": "eca8ea851cfe78d6859b580fe3d1805cea740cf2994e8a521952a1ec8b3b835f",
+    "deepreset-control17-factory.jsonl": "42e369d936dad5a3ee4534a71d704456d8491a0af43094767e3956332242ee00",
+    "deepreset_hw_guard.py": "e3e22e46727401898cd3dbd24419b134b0080a1df67cd26c1c68a6d8d32c5832"
+  },
+  "events": [
+    {
+      "time": "2026-10-18T22:58:12.716234",
+      "event": "programming_candidate_must_not_powercycle"
+    },
+    {
+      "time": "2026-10-18T23:03:28.386255",
+      "event": "cold_trials",
+      "count": 3
+    },
+    {
+      "time": "2026-10-18T23:04:57.356547",
+      "event": "cohort_complete_power_on",
+      "successes": 3,
+      "trials": 3
+    }
+  ],
+  "trials": [
+    {
+      "number": 1,
+      "success": true,
+      "samples": [
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 1.515
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F30D",
+          "expected_version": "0x60C4F30D",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 4.531
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F30D",
+          "expected_version": "0x60C4F30D",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 9.546
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "success": true,
+      "samples": [
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 1.516
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F30D",
+          "expected_version": "0x60C4F30D",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 4.516
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F30D",
+          "expected_version": "0x60C4F30D",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 9.531
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "success": true,
+      "samples": [
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 1.5
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F30D",
+          "expected_version": "0x60C4F30D",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 4.516
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F30D",
+          "expected_version": "0x60C4F30D",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 9.516
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Initial build failed two TDC hold paths and was never programmed. V2 applies physical hold fixing without HDL changes, then both controls are exported from that same repaired route.",
+    "Same placed/routed design; only one LUT INIT changes filter qualification. Exact XML-identified PHYSDB_ROUTE, routing name stores, clock DB and shape archive members must match byte-for-byte.",
+    "Bypass retains WAIT_TIME_MAX2000 and counter reload logic; isolates monitor qualification from simple wait extension.",
+    "No physical boot reset waveform observer in these images; compare cold network outcomes without claiming a measured internal CDR lock event.",
+    "Instrumentation lines excluded from production4added/3deleted patch."
+  ],
+  "phase": "cohort_complete_power_on",
+  "flash_actual_exit_code": 0,
+  "flash_report": "flash-deepf30d17en1-20261018-225816-result.json",
+  "flash_report_sha256": "46f7e4faf51f3a21c52497caad17625caa7cd802196d58467282d51b2ddffe59",
+  "full_flash_sha256": "6671a4164f8d626596629e11e29c56ad8a7fd5896950f01dff229ffc95c9ebea",
+  "cold_actual_exit_code": 0,
+  "cold_log": "deepreset-deepf30d17en1-cold3.json",
+  "cold_sha256": "5bf4ef77559d50b83a17f4df311c6c34d847a2a2793da1471eeb86de5ecc5fcb",
+  "successes": 3
+}

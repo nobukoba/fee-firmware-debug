@@ -1,0 +1,200 @@
+{
+  "created": "2026-10-18T22:28:11.877401",
+  "phase": "proper_standalone_vendor_reference_pair_compared_no_hardware_change",
+  "configuration": "GTX/CPLL/1.25Gbps/TX&RX20bit/8B10B/LPM; requested line rate/reference propagated to channel0 and generatedPLL multiplier/data width/EQ_MODE checked.",
+  "pair_shared_attributes": 199,
+  "pair_differences": [
+    {
+      "attribute": "CPLL_FBDIV_45",
+      "ref125": "5",
+      "ref156": "4"
+    },
+    {
+      "attribute": "RX_CLK25_DIV",
+      "ref125": "5",
+      "ref156": "7"
+    },
+    {
+      "attribute": "TX_CLK25_DIV",
+      "ref125": "5",
+      "ref156": "7"
+    }
+  ],
+  "native_shared_attributes": 199,
+  "native_differences": [
+    {
+      "attribute": "ALIGN_COMMA_ENABLE",
+      "existing": "\"0001111111\"",
+      "ref156_standalone": "\"1111111111\""
+    },
+    {
+      "attribute": "ALIGN_COMMA_WORD",
+      "existing": "2",
+      "ref156_standalone": "1"
+    },
+    {
+      "attribute": "CLK_CORRECT_USE",
+      "existing": "\"TRUE\"",
+      "ref156_standalone": "\"FALSE\""
+    },
+    {
+      "attribute": "CLK_COR_MAX_LAT",
+      "existing": "36",
+      "ref156_standalone": "9"
+    },
+    {
+      "attribute": "CLK_COR_MIN_LAT",
+      "existing": "33",
+      "ref156_standalone": "7"
+    },
+    {
+      "attribute": "CLK_COR_SEQ_1_1",
+      "existing": "\"0110111100\"",
+      "ref156_standalone": "\"0100000000\""
+    },
+    {
+      "attribute": "CLK_COR_SEQ_1_2",
+      "existing": "\"0001010000\"",
+      "ref156_standalone": "\"0000000000\""
+    },
+    {
+      "attribute": "CLK_COR_SEQ_2_1",
+      "existing": "\"0110111100\"",
+      "ref156_standalone": "\"0100000000\""
+    },
+    {
+      "attribute": "CLK_COR_SEQ_2_2",
+      "existing": "\"0010110101\"",
+      "ref156_standalone": "\"0000000000\""
+    },
+    {
+      "attribute": "CLK_COR_SEQ_2_USE",
+      "existing": "\"TRUE\"",
+      "ref156_standalone": "\"FALSE\""
+    },
+    {
+      "attribute": "CLK_COR_SEQ_LEN",
+      "existing": "2",
+      "ref156_standalone": "1"
+    },
+    {
+      "attribute": "PD_TRANS_TIME_NONE_P2",
+      "existing": "x\"19\"",
+      "ref156_standalone": "x\"3c\""
+    },
+    {
+      "attribute": "RXBUF_ADDR_MODE",
+      "existing": "\"FULL\"",
+      "ref156_standalone": "\"FAST\""
+    },
+    {
+      "attribute": "RXBUF_THRESH_UNDFLW",
+      "existing": "8",
+      "ref156_standalone": "4"
+    },
+    {
+      "attribute": "RXSLIDE_MODE",
+      "existing": "\"OFF\"",
+      "ref156_standalone": "\"PCS\""
+    },
+    {
+      "attribute": "RX_CLK25_DIV",
+      "existing": "5",
+      "ref156_standalone": "7"
+    },
+    {
+      "attribute": "SHOW_REALIGN_COMMA",
+      "existing": "\"TRUE\"",
+      "ref156_standalone": "\"FALSE\""
+    },
+    {
+      "attribute": "SIM_CPLLREFCLK_SEL",
+      "existing": "\"001\"",
+      "ref156_standalone": "SIM_CPLLREFCLK_SEL"
+    },
+    {
+      "attribute": "TX_CLK25_DIV",
+      "existing": "5",
+      "ref156_standalone": "7"
+    }
+  ],
+  "receive_key_settings": {
+    "RXCDR_CFG": {
+      "existing": "x\"03000023ff10100020\"",
+      "vendor125": "x\"03000023ff10100020\"",
+      "vendor156": "x\"03000023ff10100020\""
+    },
+    "RX_DFE_LPM_CFG": {
+      "existing": "x\"0904\"",
+      "vendor125": "x\"0904\"",
+      "vendor156": "x\"0904\""
+    },
+    "CPLL_CFG": {
+      "existing": "x\"BC07DC\"",
+      "vendor125": "x\"BC07DC\"",
+      "vendor156": "x\"BC07DC\""
+    },
+    "CPLL_FBDIV": {
+      "existing": "4",
+      "vendor125": "4",
+      "vendor156": "4"
+    },
+    "CPLL_FBDIV_45": {
+      "existing": "4",
+      "vendor125": "5",
+      "vendor156": "4"
+    },
+    "CPLL_REFCLK_DIV": {
+      "existing": "1",
+      "vendor125": "1",
+      "vendor156": "1"
+    },
+    "RXOUT_DIV": {
+      "existing": "4",
+      "vendor125": "4",
+      "vendor156": "4"
+    },
+    "TXOUT_DIV": {
+      "existing": "4",
+      "vendor125": "4",
+      "vendor156": "4"
+    },
+    "RX_DATA_WIDTH": {
+      "existing": "20",
+      "vendor125": "20",
+      "vendor156": "20"
+    },
+    "TX_DATA_WIDTH": {
+      "existing": "20",
+      "vendor125": "20",
+      "vendor156": "20"
+    },
+    "RX_CLK25_DIV": {
+      "existing": "5",
+      "vendor125": "5",
+      "vendor156": "7"
+    },
+    "TX_CLK25_DIV": {
+      "existing": "5",
+      "vendor125": "5",
+      "vendor156": "7"
+    }
+  },
+  "conclusion": "No obvious RXCDR_CFG/LPM analogue preset mismatch from changing125MHz to156.25MHz at the same1.25Gbps20bitLPM operating mode. ExistingmanualCPLL45=4 matchesproper156.25reference. CLK25DIV should7, but prior controlled5/7hardwaretests didnot fix this fault. Other protocol-specific wrapper attributes differ and are listed; this standalone core is not a drop-in replacement.",
+  "limits": [
+    "All comparisons are generated constant settings, not measurements of silicon analogue behavior.",
+    "Generation V1/V2 failed setup; V3/V4 generated different/ignored conditions and are not this valid comparison.",
+    "No standalone reference image was built or programmed.",
+    "Does not establish faulty silicon, clock quality or power integrity as a unique root cause."
+  ],
+  "source_sha256": {
+    "WORKSPACE/compare_deepreset_gtwizard_reference.py": "e6eeb1335cd494c72ea66bb72ed3f5a9f47dd577fe57b89b1b05bb71bb6f3b68",
+    "deepreset-gtwizard-reference-v5.json": "a33cc3024e921e3d75a86babbb4bd04237e319d1fe15b2fe77d66e3dff72a330",
+    "lrtdc-startdelay-f305/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_gtwizard_gt.vhd": "eb56e5773b9ff9af58e31979a7f25aa15ffc34b1f7183e220cbb23c96e32198d",
+    "deepreset-gtwizard-reference-v5/ip/gtx_ref125/gtx_ref125_gt.vhd": "89f2e0d3a653986697a55c6285b018048e56dc89d21ca7eff8b178870f9ad992",
+    "deepreset-gtwizard-reference-v5/ip/gtx_ref156/gtx_ref156_gt.vhd": "a3839286c49f5e49f6a6ca84c9b58d370b2ccf18daeddf8aa953d575d6585384",
+    "deepreset-gtwizard-reference-v5/ip/gtx_ref125/gtx_ref125_init.vhd": "94f13c3b51057644d87dd727677a85c66a86f6602099a67c8bd755abb0e93512",
+    "deepreset-gtwizard-reference-v5/ip/gtx_ref156/gtx_ref156_init.vhd": "8ff42c2185b07ad51f6954f4827d06ca3264411c36f3ec1ddd9c3bd623ba73eb",
+    "deepreset-prior-divider-recheck.json": "4554ca2e188f2ac48eb598aa62dd68216ab237329b94393fd1af810c81531992"
+  }
+}

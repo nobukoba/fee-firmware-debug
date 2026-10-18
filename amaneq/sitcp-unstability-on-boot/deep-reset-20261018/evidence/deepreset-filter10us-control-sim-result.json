@@ -1,0 +1,54 @@
+{
+  "created": "2026-10-18T22:54:09.562783",
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xvhdl.bat",
+        "--2008",
+        "sync.vhd",
+        "native.vhd",
+        "candidate.vhd",
+        "tb.vhd"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xelab.bat",
+        "validfilter_tb",
+        "-L",
+        "unisim",
+        "-s",
+        "validfilter_sim"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xsim.bat",
+        "validfilter_sim",
+        "-runall"
+      ],
+      "actual_exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "WORKSPACE/simulate_deepreset_filter10us_control.py": "d111b2c3a3e614a0fd9c075575fd222c989a944590c11968258dcb7bf96c3d8c",
+    "lrtdc-validfilter-f30b/patch-check/backup/rx-startup-before-patch.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "lrtdc-validfilter-f30b/patch-check/rx-startup-before-patch.vhd": "e3c1f27d596514cb8d282b8ede46d9604e4bc397a9610faaf1a5ba44465a9e3c",
+    "lrtdc-minpma-f308/ip/gig_ethernet_pcs_pma/synth/gig_ethernet_pcs_pma_sync_block.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "experiments/deepreset-filter10us-control-sim/candidate.vhd": "80b837c30b316e067786a485c0b48a1585799b079a0397273a4527eda11df622",
+    "experiments/deepreset-filter10us-control-sim/native.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "experiments/deepreset-filter10us-control-sim/sync.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "experiments/deepreset-filter10us-control-sim/tb.vhd": "fc08e347738a32a10e0bb50203ee5aa3bad17e940d16fc437ab34a31314f8b87"
+  },
+  "limits": [
+    "Complete digital vendor FSM with actual six-stage synchronization primitives.",
+    "PLL and recovered-clock stability inputs idealized; hard RXRESETDONE follows inverseGTRXRESET. No analog GTX model.",
+    "Original500ns initial wait and INIT0/SOFT0 preserved; qualification constant10us also affects two native startup waits."
+  ],
+  "waveform_low_ns": 560,
+  "waveform_high_ns": 575,
+  "waveform_basis": "Same representative native badboot waveform as3line counterfactual; no analogue model."
+}
