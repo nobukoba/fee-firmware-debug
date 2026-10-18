@@ -1,0 +1,29 @@
+{
+  "started": "2026-10-19T01:24:14.933611",
+  "phase": "fresh_postload_physical_inspection_passed_ready_for_hardware",
+  "hardware_operations": false,
+  "source_sha256": {
+    "deepreset-cdrhold-postload-review.json": "321afb665caa9df8f16208c6941d116ccff0eabc2eeac0978eb18e2701eebd5a",
+    "prepare_deepreset_hold_postload_v15.py": "432d5bb4c3b60a1969ccf6a49d6599fe00529579e60cb259ef934d683206051c",
+    "WORKSPACE/run_deepreset_cdrhold_postload_v15.py": "ddbd3bb90311b89b957bb901fcfee937b5177a52ba37bf2d3207c233f85e1eba",
+    "deepreset-cdrhold-build-v14.json": "80e0088efb9234edd5b0a472715a5b111fa3aa17374f3c528cf041125072fba1",
+    "deepreset-cdrhold-independent-review.json": "64ac4af223219c5ef407b4152d1d49e5d7b6492f82daeccb3e4dd14e7fed9a32",
+    "audit-deepreset-cdrhold-postload-v15.tcl": "74731b611dd24e9b69b3e667b159a885d04ebd1aec56e9b42866bc7b4d1ae8fa",
+    "day1-frequency-capture-v14/rootcause-f104-frequency.dcp": "9dfd1207c3580183a161dfc8ebfb5fa45e30629e7026c0a208e84492df696c52",
+    "lrtdc-rootcause-f104/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_gtwizard_gt.vhd": "eb56e5773b9ff9af58e31979a7f25aa15ffc34b1f7183e220cbb23c96e32198d",
+    "verify-deepreset-flat-controller-v3.tcl": "8b355ba4c26b202e181f382e626625cb9182be1d55d5f94612188c74e2ede839",
+    "deepreset-flat-controller-model-v3.json": "57faf5dd2576b8b895aa96efd9405c19a9b862df72a381513c6fdaa69ae6bd42"
+  },
+  "actual_exit_code": 0,
+  "artifacts": {
+    "deepreset-cdrhold-postload-v15/bypass-controller.tsv": "b99a43e330195b8fee377d58c7c402d2e65bccacee1be66105fd37b3813d0693",
+    "deepreset-cdrhold-postload-v15/bypass-exceptions.rpt": "ea9f213bb7edde51b9bbbf52d001a8b71e2f334e382d704562469844bde2c1df",
+    "deepreset-cdrhold-postload-v15/manual-controller.tsv": "b99a43e330195b8fee377d58c7c402d2e65bccacee1be66105fd37b3813d0693",
+    "deepreset-cdrhold-postload-v15/manual-exceptions.rpt": "d429905de8694e99db63a358a4c7eb4912d8f3f40163ea8635ecbaba4ac2ea6f",
+    "deepreset-cdrhold-postload-v15/manual-fresh-timing.rpt": "59ac18f2262a60e14a7ba0eea18901c964d179138e4768142bbd655a648d1206",
+    "deepreset-cdrhold-postload-v15/physical-inspection.tsv": "13f6213bdfa92d6c889bab03a0e4a3dce02ac166f3f7e38c65f24022369553f1",
+    "deepreset-cdrhold-postload-v15/ready-controller.tsv": "b99a43e330195b8fee377d58c7c402d2e65bccacee1be66105fd37b3813d0693",
+    "deepreset-cdrhold-postload-v15/ready-exceptions.rpt": "2b245ddc65ebe85a4dbf5b183af99f551c3c3280c436bfcd89cca9ea3ac82a6f"
+  },
+  "finished": "2026-10-19T01:36:05.616020"
+}

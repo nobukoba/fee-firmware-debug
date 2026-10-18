@@ -1,0 +1,101 @@
+{
+  "created": "2026-10-19T02:34:48.968511",
+  "phase": "targeted_neighbor_API_wire_ARP_verified_capture_still_running",
+  "cases": [
+    {
+      "source_report": "deepreset-neighbor-healthy17.json",
+      "host": "192.168.10.17",
+      "API_return_code": 0,
+      "neighbor_state_before": 5,
+      "neighbor_state_after": 5,
+      "request_frames": 1,
+      "reply_frames": 1,
+      "packet_rows": [
+        {
+          "frame.time_epoch": "1792343463.986471600",
+          "arp.opcode": "1",
+          "arp.src.proto_ipv4": "192.168.10.70",
+          "arp.dst.proto_ipv4": "192.168.10.17",
+          "eth.src": "4c:36:4e:b0:85:a9",
+          "eth.dst": "ff:ff:ff:ff:ff:ff"
+        },
+        {
+          "frame.time_epoch": "1792343463.986560400",
+          "arp.opcode": "2",
+          "arp.src.proto_ipv4": "192.168.10.17",
+          "arp.dst.proto_ipv4": "192.168.10.70",
+          "eth.src": "7c:f0:98:01:20:16",
+          "eth.dst": "4c:36:4e:b0:85:a9"
+        }
+      ],
+      "tshark_actual_exit_code": 0
+    },
+    {
+      "source_report": "deepreset-neighbor-ready16post.json",
+      "host": "192.168.10.16",
+      "API_return_code": 0,
+      "neighbor_state_before": 5,
+      "neighbor_state_after": 5,
+      "request_frames": 1,
+      "reply_frames": 1,
+      "packet_rows": [
+        {
+          "frame.time_epoch": "1792343584.101720400",
+          "arp.opcode": "1",
+          "arp.src.proto_ipv4": "192.168.10.70",
+          "arp.dst.proto_ipv4": "192.168.10.16",
+          "eth.src": "4c:36:4e:b0:85:a9",
+          "eth.dst": "ff:ff:ff:ff:ff:ff"
+        },
+        {
+          "frame.time_epoch": "1792343584.101794100",
+          "arp.opcode": "2",
+          "arp.src.proto_ipv4": "192.168.10.16",
+          "arp.dst.proto_ipv4": "192.168.10.70",
+          "eth.src": "02:00:c0:a8:00:10",
+          "eth.dst": "4c:36:4e:b0:85:a9"
+        }
+      ],
+      "tshark_actual_exit_code": 0
+    },
+    {
+      "source_report": "deepreset-extended-neighbor17pilot.json",
+      "host": "192.168.10.17",
+      "API_return_code": 0,
+      "neighbor_state_before": 0,
+      "neighbor_state_after": 5,
+      "request_frames": 1,
+      "reply_frames": 1,
+      "packet_rows": [
+        {
+          "frame.time_epoch": "1792343810.137059800",
+          "arp.opcode": "1",
+          "arp.src.proto_ipv4": "192.168.10.70",
+          "arp.dst.proto_ipv4": "192.168.10.17",
+          "eth.src": "4c:36:4e:b0:85:a9",
+          "eth.dst": "ff:ff:ff:ff:ff:ff"
+        },
+        {
+          "frame.time_epoch": "1792343810.137184400",
+          "arp.opcode": "2",
+          "arp.src.proto_ipv4": "192.168.10.17",
+          "arp.dst.proto_ipv4": "192.168.10.70",
+          "eth.src": "7c:f0:98:01:20:16",
+          "eth.dst": "4c:36:4e:b0:85:a9"
+        }
+      ],
+      "tshark_actual_exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "deepreset-neighbor-healthy17.json": "7b2f2d789ed5dd4c2857baa22fcfa15df06265bc9bed7b483f16ac2bdb035adf",
+    "deepreset-neighbor-ready16post.json": "1f5e9e67fed7ccbe234660216db9029e2df095f4b98cd6ee673c234373c51b8e",
+    "deepreset-extended-neighbor17pilot.json": "7b48e0591caf6cc3e73bc615cddd541c7236754643a0142e3d987e9405d28d11",
+    "WORKSPACE/analyze_deepreset_neighbor_packets.py": "e70ea37c6b70f24f4999e1da85b4b5e8808956e783322953b96253e8e356a292"
+  },
+  "limits": [
+    "Metadata only from ongoingcapture; finalPCAPhash recorded after closure.",
+    "SuccessfulAPI and on-wireARP request/reply are shown together; no claim that cache refresh repaired FPGAhardware.",
+    "Pilot17 starts from unreachable neighborstate0 and confirmsreachable5 after boardpoweron."
+  ]
+}

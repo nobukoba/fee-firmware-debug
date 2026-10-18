@@ -1,0 +1,50 @@
+{
+  "created": "2026-10-19T01:08:49.243777",
+  "phase": "both_TXPCS_observer_readonly_soaks_complete",
+  "boards": [
+    {
+      "host": "192.168.10.16",
+      "started": "2026-10-19T00:44:46.248821",
+      "finished": "2026-10-19T00:54:46.237593",
+      "seconds": 600,
+      "counts": {
+        "RBCP_checks": 20,
+        "RBCP_pass": 20,
+        "TCP_checks": 2,
+        "TCP_pass": 2,
+        "failures": 0
+      },
+      "log": "deepreset-soak-tx16post.jsonl",
+      "log_sha256": "4c818a81835c8c67c4fcc6be04122ed207b0abc863d64a2dcc1774c89f0d7148",
+      "tool_session": 81947,
+      "observed_actual_exit_code": 0,
+      "context": "PMArecovered after failedtrial3"
+    },
+    {
+      "host": "192.168.10.17",
+      "started": "2026-10-19T00:44:56.418651",
+      "finished": "2026-10-19T00:54:56.416063",
+      "seconds": 600,
+      "counts": {
+        "RBCP_checks": 20,
+        "RBCP_pass": 20,
+        "TCP_checks": 2,
+        "TCP_pass": 2,
+        "failures": 0
+      },
+      "log": "deepreset-soak-tx17cal.jsonl",
+      "log_sha256": "ea14aa68e550f55b5203e2028198c65d7dd8eb8608f3f9b02647ae076f6e1d3e",
+      "tool_session": 72220,
+      "observed_actual_exit_code": 0,
+      "context": "healthy calibrationboot"
+    }
+  ],
+  "source_sha256": {
+    "WORKSPACE/summarize_deepreset_txpcs_soaks.py": "19987825b782b6a0a4a7638789bcc35f49f60e95b0b4b1ae587c71cb641b9590",
+    "deepreset-txpcs-cohort-deepTX16a.json": "de0892764d1721c9455b3e887802e37a3f49b9f556e7fdb9ffa40b683224901a",
+    "deepreset-txpcs-cohort-deepTX17b.json": "99007f2de127b7dedef4f3b7279657d46d90602869c9b396c6f4df10619caec3"
+  },
+  "limits": [
+    "Ten-minute persistence of current recovered/healthy boots; not new cold-boot trials or proof of indefinite stability."
+  ]
+}

@@ -2,6 +2,20 @@
 
 **調査中の途中記録。最終結果・採用修正ではありません。** 約10時間を目安に継続し、終了時に両基板を元の運用状態へ復元する。
 
+## 第7チェックポイント：CDR保持の陰性結果とホストARPの交絡
+
+起動直後のFSMを記録すると、正常時は一度でDONEへ進むが、失敗2回はMONITORとDONEを90回／91回往復した。DONEの滞在は400～1760 nsだった。この短い正常判定で既存100 µsエラー監視が繰り返し解除される、という論理上の抜け道がある。[波形比較](evidence/deepreset-txpcs-startup-trace-comparison.json)。記録は最初の256イベントに限られ、全起動期間のリセット回数を測ったものではない。
+
+RXCDRHOLDを、実際のRXUSERRDYが上がるまで保持する同一配置の診断版は **.16で0/3** だった。別の失敗起動で5.12 µs／40.96 µsのHOLDを与え、GT入力まで届くことと他の5種類のリセット要求が静止していることを確認したが、異常な回復RXクロックは直らなかった。単純なHOLDを追加する3行の通常ソース案は採用しない。[手動操作](evidence/deepreset-hold-cohort-deephold16m.json)、[起動時保持](evidence/deepreset-hold-cohort-deephold16r.json)、[独立検査](evidence/deepreset-cdrhold-postload-review-v15.json)。これは全てのCDR問題・全ての保持時間を否定する結果ではない。
+
+同じ起動でPMA操作後にRXクロックと新しい受信256ワードは正常化したが、直後の通信検査だけは失敗表示になった。パケットを照合すると、その時間帯にはホストからARPもUDPも送られていなかった。従って、この表示を「PMA後もMACが故障」と解釈できない。その後、同じ起動のまま通信が成功した。[PMA後の受信確認](evidence/deepreset-hold-manual-RX-summary.json)、[送信有無](evidence/deepreset-packet-hold-interim.json)、[後続通信](evidence/deepreset-neighbor-ready16post.json)。
+
+Windowsの対象IPだけにResolveIpNetEntry2を実行する確認を追加した。ただしAPIを呼んでも、実際のARP再試行は約60秒空く場合が残った。API呼び出し回数をパケット送信回数と同一視しない。新しいキャプチャー照合では、元ファームウェア .16 **0/3** とフィルター無効 **1/3** の失敗試験でも、電源ONから遅い時点に実際のARP要求が送られ、応答がなかった。一方、フィルター有効 **3/3** は約63秒後の要求へ即座に応答した。[送受信時刻の照合](evidence/deepreset-packet-fresh-neighbor.json)。12秒待ってから検査した無効版と、直後から検査した有効版には試験方法の差があるため、直後からの無効版も追加比較中。
+
+このホスト側の遅延は通信失敗・復帰時刻の解釈に影響するが、ILAで直接測った異常なRX平均クロックと正常なTXPCS平均クロックの差を説明するものではない。過去の内部PMAループバックも .16 0/3、.17 3/3だった。[過去試験の再照合](evidence/deepreset-prior-loopback-recheck.json)。XADCで読める電源・温度には失敗と対応する大きな変化を見なかったが、MGT専用電源の過渡変動やジッターを測ってはいない。[読出し値](evidence/deepreset-txpcs-sysmon-summary.json)。
+
+確認済み最短は引き続き **追加4行／削除3行、3か所**。さらに短い既存定数1行の1 ms案はビルド中で、まだ実機評価前。
+
 ## 第6チェックポイント：異常な平均周波数は受信側の回復クロックへ絞れた
 
 **調査継続中。物理的な部品故障の特定には至っていないが、受信側に絞る新しい実測を得た。**

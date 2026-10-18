@@ -1,0 +1,47 @@
+{
+  "created": "2026-10-19T02:06:52.910430",
+  "phase": "interim_packet_metadata_only_capture_still_running",
+  "window_start_epoch": 1792342073.544849,
+  "window_end_epoch": 1792342154.093254,
+  "display_filter": "frame.time_epoch >= 1792342073.544849 && frame.time_epoch <= 1792342154.093254 && (arp.src.proto_ipv4 == 192.168.10.16 || arp.dst.proto_ipv4 == 192.168.10.16 || ip.src == 192.168.10.16 || ip.dst == 192.168.10.16)",
+  "frames": 1,
+  "counts": {
+    "host_ARP_requests_for16": 1,
+    "board16_ARP_replies": 0,
+    "board16_IPv4_frames": 0,
+    "host_UDP_to16": 0,
+    "board16_UDP_frames": 0
+  },
+  "packet_rows": [
+    {
+      "frame.time_epoch": "1792342098.470824200",
+      "eth.src": "4c:36:4e:b0:85:a9",
+      "eth.dst": "ff:ff:ff:ff:ff:ff",
+      "arp.opcode": "1",
+      "arp.src.proto_ipv4": "192.168.10.70",
+      "arp.dst.proto_ipv4": "192.168.10.16",
+      "ip.src": "",
+      "ip.dst": "",
+      "udp.srcport": "",
+      "udp.dstport": "",
+      "tcp.srcport": "",
+      "tcp.dstport": "",
+      "tcp.flags": ""
+    }
+  ],
+  "tshark_actual_exit_code": 0,
+  "capture": "deepreset-20261018.pcapng",
+  "capture_size_at_read": 13004504,
+  "source_sha256": {
+    "WORKSPACE/analyze_deepreset_hold_packets_interim.py": "7f28e95e418d082c8d3f001bc363eb8da0a4b620ee98916150a7c97636ffa122",
+    "deepreset-hold-action-deephold16m-1-pma.json": "8d5cae433535e41be84f447681e6cf17d0a3a49db4a1b32e6b2a002177930472",
+    "deepreset-hold-action-deephold16m-1-afterpmafreq.json": "97fa08ff927e93c2e0a6bfa98f26a06d8999a4252bb1d6ae58f3ddc8760a46e1",
+    "deepreset-hold-manual-RX-summary.json": "1bbac8d0f0ed617829bc44338cfc87bfaf3073c5707d55e9ebe0fffdcbae6a12",
+    "deepreset-packet-hold-interim.tsv": "63c22d6170df61b7f93909f7fa4252ac33ec48b62a8ba41b33c5bd1c4e5a73a9"
+  },
+  "limits": [
+    "Capture is stillrunning: no final PCAP hash or droppedpacket claim here.",
+    "Whole PMAaction window includes time before PMApulse; use individual packet timestamps and action markers before startup-latency inference.",
+    "A host networkcheck failure alone doesnot prove Ethernetdevicefailure if no corresponding packet reached the wire."
+  ]
+}

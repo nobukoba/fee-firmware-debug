@@ -1,0 +1,277 @@
+{
+  "created": "2026-10-19T00:56:37.035393",
+  "phase": "offline_normal_failed_startup_traces_compared",
+  "trials": [
+    {
+      "host": "192.168.10.17",
+      "label": "deepTX17b-1-native",
+      "cold_success": true,
+      "decoder_actual_exit_code": 0,
+      "state_trace_records": 36,
+      "nominal_trace_span_us": 2147581.215,
+      "RX_state_transition_counts": {
+        "INIT": 1,
+        "ASSERT_ALL_RESETS": 1,
+        "WAIT_FOR_PLL_LOCK": 1,
+        "RELEASE_PLL_RESET": 1,
+        "VERIFY_RECCLK_STABLE": 1,
+        "RELEASE_MMCM_RESET": 1,
+        "WAIT_FOR_RXUSRCLK": 1,
+        "WAIT_RESET_DONE": 1,
+        "DO_PHASE_ALIGNMENT": 1,
+        "MONITOR_DATA_VALID": 1,
+        "FSM_DONE": 1
+      },
+      "GTRX_pulses_within_captured_window": [
+        {
+          "start_ns": 2147496680,
+          "end_ns": 2147528480,
+          "duration_ns": 31800,
+          "may_start_before_capture": false
+        }
+      ],
+      "last_cpll_locked": true,
+      "last_rx_reset_done": true,
+      "last_rx_state": "FSM_DONE",
+      "FSM_dwells": {
+        "FSM_DONE": {
+          "count": 0,
+          "min_ns": null,
+          "max_ns": null
+        },
+        "MONITOR_DATA_VALID": {
+          "count": 1,
+          "min_ns": 435,
+          "max_ns": 435
+        }
+      },
+      "RX_sample_summaries": [
+        {
+          "samples": 256,
+          "error_words": 0,
+          "unaligned_words": 0,
+          "realign_high_words": 0,
+          "buffer_error_high_words": 0,
+          "rxbuf_reset_high_words": 0
+        },
+        {
+          "samples": 256,
+          "error_words": 0,
+          "unaligned_words": 0,
+          "realign_high_words": 0,
+          "buffer_error_high_words": 0,
+          "rxbuf_reset_high_words": 0
+        }
+      ]
+    },
+    {
+      "host": "192.168.10.16",
+      "label": "deepTX16a-1-native",
+      "cold_success": true,
+      "decoder_actual_exit_code": 0,
+      "state_trace_records": 36,
+      "nominal_trace_span_us": 2147581.0300000003,
+      "RX_state_transition_counts": {
+        "INIT": 1,
+        "ASSERT_ALL_RESETS": 1,
+        "WAIT_FOR_PLL_LOCK": 1,
+        "RELEASE_PLL_RESET": 1,
+        "VERIFY_RECCLK_STABLE": 1,
+        "RELEASE_MMCM_RESET": 1,
+        "WAIT_FOR_RXUSRCLK": 1,
+        "WAIT_RESET_DONE": 1,
+        "DO_PHASE_ALIGNMENT": 1,
+        "MONITOR_DATA_VALID": 1,
+        "FSM_DONE": 1
+      },
+      "GTRX_pulses_within_captured_window": [
+        {
+          "start_ns": 2147496770,
+          "end_ns": 2147528315,
+          "duration_ns": 31545,
+          "may_start_before_capture": false
+        }
+      ],
+      "last_cpll_locked": true,
+      "last_rx_reset_done": true,
+      "last_rx_state": "FSM_DONE",
+      "FSM_dwells": {
+        "FSM_DONE": {
+          "count": 0,
+          "min_ns": null,
+          "max_ns": null
+        },
+        "MONITOR_DATA_VALID": {
+          "count": 1,
+          "min_ns": 435,
+          "max_ns": 435
+        }
+      },
+      "RX_sample_summaries": [
+        {
+          "samples": 256,
+          "error_words": 0,
+          "unaligned_words": 0,
+          "realign_high_words": 0,
+          "buffer_error_high_words": 0,
+          "rxbuf_reset_high_words": 0
+        },
+        {
+          "samples": 256,
+          "error_words": 0,
+          "unaligned_words": 0,
+          "realign_high_words": 0,
+          "buffer_error_high_words": 0,
+          "rxbuf_reset_high_words": 0
+        }
+      ]
+    },
+    {
+      "host": "192.168.10.16",
+      "label": "deepTX16a-2-native",
+      "cold_success": false,
+      "decoder_actual_exit_code": 0,
+      "state_trace_records": 256,
+      "nominal_trace_span_us": 2147712.68,
+      "RX_state_transition_counts": {
+        "INIT": 1,
+        "ASSERT_ALL_RESETS": 1,
+        "WAIT_FOR_PLL_LOCK": 1,
+        "RELEASE_PLL_RESET": 1,
+        "VERIFY_RECCLK_STABLE": 1,
+        "RELEASE_MMCM_RESET": 1,
+        "WAIT_FOR_RXUSRCLK": 1,
+        "WAIT_RESET_DONE": 1,
+        "DO_PHASE_ALIGNMENT": 1,
+        "MONITOR_DATA_VALID": 91,
+        "FSM_DONE": 90
+      },
+      "GTRX_pulses_within_captured_window": [
+        {
+          "start_ns": 2147497065,
+          "end_ns": 2147528465,
+          "duration_ns": 31400,
+          "may_start_before_capture": false
+        }
+      ],
+      "last_cpll_locked": true,
+      "last_rx_reset_done": true,
+      "last_rx_state": "MONITOR_DATA_VALID",
+      "FSM_dwells": {
+        "FSM_DONE": {
+          "count": 90,
+          "min_ns": 400,
+          "max_ns": 1760
+        },
+        "MONITOR_DATA_VALID": {
+          "count": 90,
+          "min_ns": 80,
+          "max_ns": 585
+        }
+      },
+      "RX_sample_summaries": [
+        {
+          "samples": 256,
+          "error_words": 28,
+          "unaligned_words": 39,
+          "realign_high_words": 8,
+          "buffer_error_high_words": 0,
+          "rxbuf_reset_high_words": 0
+        },
+        {
+          "samples": 256,
+          "error_words": 128,
+          "unaligned_words": 116,
+          "realign_high_words": 10,
+          "buffer_error_high_words": 0,
+          "rxbuf_reset_high_words": 0
+        }
+      ]
+    },
+    {
+      "host": "192.168.10.16",
+      "label": "deepTX16a-3-native",
+      "cold_success": false,
+      "decoder_actual_exit_code": 0,
+      "state_trace_records": 256,
+      "nominal_trace_span_us": 2147708.17,
+      "RX_state_transition_counts": {
+        "INIT": 1,
+        "ASSERT_ALL_RESETS": 1,
+        "WAIT_FOR_PLL_LOCK": 1,
+        "RELEASE_PLL_RESET": 1,
+        "VERIFY_RECCLK_STABLE": 1,
+        "RELEASE_MMCM_RESET": 1,
+        "WAIT_FOR_RXUSRCLK": 1,
+        "WAIT_RESET_DONE": 1,
+        "DO_PHASE_ALIGNMENT": 1,
+        "MONITOR_DATA_VALID": 92,
+        "FSM_DONE": 91
+      },
+      "GTRX_pulses_within_captured_window": [
+        {
+          "start_ns": 2147496950,
+          "end_ns": 2147528345,
+          "duration_ns": 31395,
+          "may_start_before_capture": false
+        }
+      ],
+      "last_cpll_locked": true,
+      "last_rx_reset_done": true,
+      "last_rx_state": "MONITOR_DATA_VALID",
+      "FSM_dwells": {
+        "FSM_DONE": {
+          "count": 91,
+          "min_ns": 425,
+          "max_ns": 1760
+        },
+        "MONITOR_DATA_VALID": {
+          "count": 91,
+          "min_ns": 80,
+          "max_ns": 585
+        }
+      },
+      "RX_sample_summaries": [
+        {
+          "samples": 256,
+          "error_words": 46,
+          "unaligned_words": 64,
+          "realign_high_words": 6,
+          "buffer_error_high_words": 0,
+          "rxbuf_reset_high_words": 0
+        },
+        {
+          "samples": 256,
+          "error_words": 87,
+          "unaligned_words": 63,
+          "realign_high_words": 8,
+          "buffer_error_high_words": 0,
+          "rxbuf_reset_high_words": 0
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "deepreset-txpcs-action-deepTX17b-1-native.console.txt": "d5196da13749cddae4288511dc453d73bde63c6d6e7b28a44a8775a49a636885",
+    "deepreset-txpcs-action-deepTX17b-1-native.console.decoded.json": "f6ec77329e40b5e100e52034e05a08953024defabb0ecce80bf2e262231323e1",
+    "deepreset-txpcs-action-deepTX17b-1-native.json": "e4f14bb05c245b80fdf5260f247bc4a1e5be3dc4202f78108f2d3af3d7caa94b",
+    "deepreset-txpcs-action-deepTX16a-1-native.console.txt": "9e7bc8006104022e2c427440779029630321e82c1b3bec39a4aadc450bf6737b",
+    "deepreset-txpcs-action-deepTX16a-1-native.console.decoded.json": "91d5eefb50b93dcc320ce0973f51e171daa0abbc642ac85ce7fa433a4801651b",
+    "deepreset-txpcs-action-deepTX16a-1-native.json": "bcea658b01a6495be681c7bcb587586c15ef8ec6c9bab3b08e53f31bd7789973",
+    "deepreset-txpcs-action-deepTX16a-2-native.console.txt": "c821fb46b48e56aba76b1fc347853c24f760625723249c1640424edc622c3433",
+    "deepreset-txpcs-action-deepTX16a-2-native.console.decoded.json": "cff54de066e755b0a436d887c49d827a21004733a0328b7d0638376b3db1bb67",
+    "deepreset-txpcs-action-deepTX16a-2-native.json": "cbba1cc03623e6cf0d4eb2ff878ed6a81cf6c3ba612e36e3fbdd850de9136dcf",
+    "deepreset-txpcs-action-deepTX16a-3-native.console.txt": "af0de553c314fa815bfec6d112ab64773fc8ba574539b9e3b7b901c157076bf3",
+    "deepreset-txpcs-action-deepTX16a-3-native.console.decoded.json": "28045d7f81b54912451b22132d37966301f65da20bc8c84b72910f28f4489a8e",
+    "deepreset-txpcs-action-deepTX16a-3-native.json": "8b10f31d6a7c4d8b1bb0ccc944b1a19ea73e28a50364211cbf168c1ce8ce737d",
+    "WORKSPACE/analyze_deepreset_txpcs_traces.py": "baa0c86bb0e9e1a92289c8c71735969209b0763f12a4992535bf3f3d93498c47",
+    "decode_rootcause_f104.py": "8dc38114fb1e3760152f3a30c1d68928ff24fa7584173ffa0a29f2a9821832f5",
+    "deepreset-txpcs-paired-summary.json": "7c090fd09360b93419ac41c5c69d7db570ec70293e3f5180c8d66b7ba01f2f01"
+  },
+  "limits": [
+    "One first256event state trace per boot; no claim about all events after its recording window.",
+    "Per-bit twoFF status synchronization means isolated5ns ordering is not exact physical ordering.",
+    "SYS timestamps use nominal5ns; RX sample timestamps nominal16ns are not instantaneous-jitter measurements.",
+    "Trace pulses are actualGTRX observed at2FF chain; source analog internals and all physical reset-isolation are not inferred."
+  ]
+}

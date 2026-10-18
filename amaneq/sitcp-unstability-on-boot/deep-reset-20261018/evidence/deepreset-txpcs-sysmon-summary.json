@@ -1,0 +1,110 @@
+{
+  "created": "2026-10-19T01:20:45.194211",
+  "phase": "existing_XADC_readouts_compared",
+  "observations": [
+    {
+      "host": "192.168.10.17",
+      "label": "deepTX17b-1-beforefreq",
+      "network_before": true,
+      "network_after": true,
+      "epoch_ms": 1792336962305,
+      "values": {
+        "TEMPERATURE": "47.5",
+        "TEMPERATURE_SCALE": "CELSIUS",
+        "VCCAUX": "1.788",
+        "VCCBRAM": "0.991",
+        "VCCINT": "0.990"
+      }
+    },
+    {
+      "host": "192.168.10.16",
+      "label": "deepTX16a-1-beforefreq",
+      "network_before": true,
+      "network_after": true,
+      "epoch_ms": 1792337458086,
+      "values": {
+        "TEMPERATURE": "46.1",
+        "TEMPERATURE_SCALE": "CELSIUS",
+        "VCCAUX": "1.781",
+        "VCCBRAM": "0.985",
+        "VCCINT": "0.986"
+      }
+    },
+    {
+      "host": "192.168.10.16",
+      "label": "deepTX16a-2-beforefreq",
+      "network_before": false,
+      "network_after": false,
+      "epoch_ms": 1792337654001,
+      "values": {
+        "TEMPERATURE": "46.8",
+        "TEMPERATURE_SCALE": "CELSIUS",
+        "VCCAUX": "1.782",
+        "VCCBRAM": "0.987",
+        "VCCINT": "0.986"
+      }
+    },
+    {
+      "host": "192.168.10.16",
+      "label": "deepTX16a-2-afterfreq",
+      "network_before": true,
+      "network_after": true,
+      "epoch_ms": 1792337776714,
+      "values": {
+        "TEMPERATURE": "47.0",
+        "TEMPERATURE_SCALE": "CELSIUS",
+        "VCCAUX": "1.781",
+        "VCCBRAM": "0.986",
+        "VCCINT": "0.986"
+      }
+    },
+    {
+      "host": "192.168.10.16",
+      "label": "deepTX16a-3-beforefreq",
+      "network_before": false,
+      "network_after": false,
+      "epoch_ms": 1792337974935,
+      "values": {
+        "TEMPERATURE": "47.2",
+        "TEMPERATURE_SCALE": "CELSIUS",
+        "VCCAUX": "1.781",
+        "VCCBRAM": "0.987",
+        "VCCINT": "0.986"
+      }
+    },
+    {
+      "host": "192.168.10.16",
+      "label": "deepTX16a-3-afterfreq",
+      "network_before": true,
+      "network_after": true,
+      "epoch_ms": 1792338096895,
+      "values": {
+        "TEMPERATURE": "47.4",
+        "TEMPERATURE_SCALE": "CELSIUS",
+        "VCCAUX": "1.783",
+        "VCCBRAM": "0.987",
+        "VCCINT": "0.986"
+      }
+    }
+  ],
+  "source_sha256": {
+    "deepreset-txpcs-action-deepTX17b-1-beforefreq.console.txt": "fa19ffc13b76f95921ff28bbed61d579b352c4a9b13b880f81fb1e12cf4074f3",
+    "deepreset-txpcs-action-deepTX17b-1-beforefreq.json": "01a00e16f4301e51579551b236a26bbb0600bc64c24749453e719bf9db4d1b3c",
+    "deepreset-txpcs-action-deepTX16a-1-beforefreq.console.txt": "b2b0bbf219f0b8030301c6aa0578ab92a122658c9cafe797f11cfc2055251345",
+    "deepreset-txpcs-action-deepTX16a-1-beforefreq.json": "494f56506a4ecba200a3760a64f24c580085f0353876f7a0cdb538f71b628ac7",
+    "deepreset-txpcs-action-deepTX16a-2-beforefreq.console.txt": "39871685ab5a18e665201745b86da98259e4ef0cc5b89f4e3447e0e136f897e2",
+    "deepreset-txpcs-action-deepTX16a-2-beforefreq.json": "bb942f553639f15e68b3e6996d25d80813ca7144c74f643ccb7bbe0e33246177",
+    "deepreset-txpcs-action-deepTX16a-2-afterfreq.console.txt": "68cfd34957b8bdd233aa18fab7dbb816233a7e9705bc430cacc15025f51ee93c",
+    "deepreset-txpcs-action-deepTX16a-2-afterfreq.json": "18171fb00f4e6289d15228f76be604828de1ef4f034e2fab4b82fc333059d366",
+    "deepreset-txpcs-action-deepTX16a-3-beforefreq.console.txt": "e7316e891873682e1bcf5eff3a8ad3668fa558c6933c19cd40532fba1697e32b",
+    "deepreset-txpcs-action-deepTX16a-3-beforefreq.json": "6c1a50d91539a7e6eb07fbc155b2e01e45eb67c32f5b54c7b5412d67f729851f",
+    "deepreset-txpcs-action-deepTX16a-3-afterfreq.console.txt": "856036ac6330b0578ce195980d9f05d0a7298f7207f1a9cca3d67a06170616a1",
+    "deepreset-txpcs-action-deepTX16a-3-afterfreq.json": "f4dbf4dcd94f8e0ec6d7405e634bdaa839ace7241fa70c088124519e0b4b10cc",
+    "WORKSPACE/analyze_deepreset_sysmon_v2.py": "7e570f73e4958db4e14215f5058ac4204cc75b272afc393d0a0025bc669fc796"
+  },
+  "limits": [
+    "Only on-dieXADC TEMPERATURE/VCCINT/VCCAUX/VCCBRAM readbacks. These are not dedicated MGTAVCC/MGTAVTT/MGTVCCAUX measurements.",
+    "Single readback per action, not a scope measurement of startup transients or noise.",
+    "Descriptive values only; do not infer thermal/voltage causation or exclude power-integrity/jitter from a few samples."
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "state": "IN_PROGRESS_CHECKPOINT7",
+  "files": [
+    {
+      "source": "deepreset-txpcs-startup-trace-comparison.json",
+      "source_sha256": "592430e4d15519b809c9923bcfe1406a8f64bcef2879cad4e28f078a210bca31",
+      "export": "evidence/deepreset-txpcs-startup-trace-comparison.json",
+      "export_sha256": "d297fd2a47e9a48b2b3e2393b331fd3de5065b7c77eec92ba66830063d95aab6"
+    },
+    {
+      "source": "deepreset-prior-loopback-recheck.json",
+      "source_sha256": "0de939569c3ca6b957f61e1033894ae07c16b3023db822d9717f9cf89a7cc792",
+      "export": "evidence/deepreset-prior-loopback-recheck.json",
+      "export_sha256": "bc764edeb4f06c68730619d83fc1b0bc35c6e3d1883bf491db5e69aed3968424"
+    },
+    {
+      "source": "deepreset-txpcs-sysmon-summary.json",
+      "source_sha256": "921c523f0ddbc5a54d0256f3f4ee1dc0f4035e8af9c3f9fc553d8ecb3a51e1e0",
+      "export": "evidence/deepreset-txpcs-sysmon-summary.json",
+      "export_sha256": "3021862ac6470cc3373cf14ea1f606917ee988e3b2814c74bcf6598eae86d6d4"
+    },
+    {
+      "source": "deepreset-txpcs-soak-summary.json",
+      "source_sha256": "d33924aa9fee10c0fe1cbedc2e301efc3f0e7bf36920afaba38a0f02ac181b15",
+      "export": "evidence/deepreset-txpcs-soak-summary.json",
+      "export_sha256": "d1f9059280c4c66a3d4983511dd56d28d11e73657a17370a66fc9fe66ff72e24"
+    },
+    {
+      "source": "deepreset-cdrhold-independent-review.json",
+      "source_sha256": "64ac4af223219c5ef407b4152d1d49e5d7b6492f82daeccb3e4dd14e7fed9a32",
+      "export": "evidence/deepreset-cdrhold-independent-review.json",
+      "export_sha256": "c2817f05350c1e91d2df4113858d0aa017ce1ea489f332bc327340da1152dc7d"
+    },
+    {
+      "source": "deepreset-cdrhold-postload-review-v15.json",
+      "source_sha256": "9d53f71bf8f4b98a6194d1ed466d9c8ed1780e2abefb56d37864f4eca318fb28",
+      "export": "evidence/deepreset-cdrhold-postload-review-v15.json",
+      "export_sha256": "69f73cbf8e604615393c7993b855404e93620bdc8a4d14f8a86c8737d09e4efb"
+    },
+    {
+      "source": "deepreset-hold-cohort-deephold16m.json",
+      "source_sha256": "cd670012fc7588de955ae36edd31fbb32b9db4c395e350c9f9523253cdb115cd",
+      "export": "evidence/deepreset-hold-cohort-deephold16m.json",
+      "export_sha256": "cf450fbb8a48c9cfa304a98ad1b8d49a292e3ece59a0d08d07cc8f4218229aa9"
+    },
+    {
+      "source": "deepreset-hold-cohort-deephold16r.json",
+      "source_sha256": "182b782e98441ce2b93797bd0591f93e4ec33aad0936471f81593ca2cfdf2015",
+      "export": "evidence/deepreset-hold-cohort-deephold16r.json",
+      "export_sha256": "f4439e69bb93d8cf2841bfcd3329e52259688e3ca87ce8b2f41c68b34a9b4367"
+    },
+    {
+      "source": "deepreset-hold-manual-RX-summary.json",
+      "source_sha256": "1bbac8d0f0ed617829bc44338cfc87bfaf3073c5707d55e9ebe0fffdcbae6a12",
+      "export": "evidence/deepreset-hold-manual-RX-summary.json",
+      "export_sha256": "e3872e3f9df2bfe533432cb289edf3cb7525b0b5ad5e77e2e6b04ce7e4dfca23"
+    },
+    {
+      "source": "deepreset-packet-hold-interim.json",
+      "source_sha256": "271f092016446cd590cb79ad7d065bdd525ac0204f85d2eefced00e827060b4b",
+      "export": "evidence/deepreset-packet-hold-interim.json",
+      "export_sha256": "d0aa4b0c2426ff0f364c45dbeb53e0f6c1ac34781cdec850126aeda7fb723254"
+    },
+    {
+      "source": "deepreset-neighbor-packet-proof.json",
+      "source_sha256": "123840c63558e476363ff88ab5640bac3c27585fc24471050478fbe06af7c187",
+      "export": "evidence/deepreset-neighbor-packet-proof.json",
+      "export_sha256": "539fd1fb912bcc497924837c42ff28c6da80b521ab7c6a97ea9597e9be89e024"
+    },
+    {
+      "source": "deepreset-neighbor-healthy17.json",
+      "source_sha256": "7b2f2d789ed5dd4c2857baa22fcfa15df06265bc9bed7b483f16ac2bdb035adf",
+      "export": "evidence/deepreset-neighbor-healthy17.json",
+      "export_sha256": "f674a2890fc4791676a266a8e0df6dc3919581909edd98a77e864cd8c2214665"
+    },
+    {
+      "source": "deepreset-neighbor-ready16post.json",
+      "source_sha256": "1f5e9e67fed7ccbe234660216db9029e2df095f4b98cd6ee673c234373c51b8e",
+      "export": "evidence/deepreset-neighbor-ready16post.json",
+      "export_sha256": "bf3b1e3f8c9e6e8ba0be1f3680e141da53c6ff0ba8f2ab3cb4555becad626422"
+    },
+    {
+      "source": "deepreset-extended-neighbor17pilot.json",
+      "source_sha256": "7b48e0591caf6cc3e73bc615cddd541c7236754643a0142e3d987e9405d28d11",
+      "export": "evidence/deepreset-extended-neighbor17pilot.json",
+      "export_sha256": "5cf598ffb21a027c742329b187d01fe4ae42877b65a9695bd05d5ccde61f392d"
+    },
+    {
+      "source": "deepreset-native-deepfact16arp.json",
+      "source_sha256": "b81d8467b1ab751a2c987e29c0d7b7a656ec9b5207557d09ca4ac4df1b80239e",
+      "export": "evidence/deepreset-native-deepfact16arp.json",
+      "export_sha256": "e5d1ac71af31bcd407031b31a8dd6c814b72c2b72ab9ddd30dffda50b1f75ce2"
+    },
+    {
+      "source": "deepreset-native-deepfact16arp-cold3.json",
+      "source_sha256": "46907acc13d5e32fbd4901bd5e38c71d04f1ef15bbed8a018d5f8fd1491ed6b1",
+      "export": "evidence/deepreset-native-deepfact16arp-cold3.json",
+      "export_sha256": "6d9c20ef16e04d047836470e59e9b4d3d23124856bc652b338bba999fabc09ee"
+    },
+    {
+      "source": "deepreset-matched-cohort-deepd16byarp.json",
+      "source_sha256": "dc32caca0a544a2ba17b3a5854ec4fa3d599c74720a3f663db35f25a910da312",
+      "export": "evidence/deepreset-matched-cohort-deepd16byarp.json",
+      "export_sha256": "abf5ac8a7ecb6c2592b0f243e4492fe15f266f1c6f1d2ea182b633b0a438a00b"
+    },
+    {
+      "source": "deepreset-deepd16byarp-cold3.json",
+      "source_sha256": "8bbf6c13f46957da8666169f64bb6b077e7cedbe0f1d4462ab1657e874ab3fd6",
+      "export": "evidence/deepreset-deepd16byarp-cold3.json",
+      "export_sha256": "e929b0e4b933817f20e110e03d06a5db0bc79384845b751df1ef3d10e8bee91c"
+    },
+    {
+      "source": "deepreset-matched-cohort-deepd16enarp.json",
+      "source_sha256": "c89c164928d483107d87cb8fcc50c703e01f9afe7bb0f0080ebfa02400f2f756",
+      "export": "evidence/deepreset-matched-cohort-deepd16enarp.json",
+      "export_sha256": "1a4e0ed883ad7c05ca26528931cb9244d4d245a663fdcc26fc019aa74e80443e"
+    },
+    {
+      "source": "deepreset-deepd16enarp-cold3.json",
+      "source_sha256": "0e68316a0def09d188b6baebcee8c09f658b9f5586a6f6458b7d85e471af099b",
+      "export": "evidence/deepreset-deepd16enarp-cold3.json",
+      "export_sha256": "4f6b31fe3f5b10e454d13576cac0b150271c20e84c25479fed2db6e191058d2a"
+    },
+    {
+      "source": "deepreset-packet-fresh-neighbor.json",
+      "source_sha256": "7837bc42bbf3e55b18cd3db7d68ace1a61f7bcdb42160ee9a3e7beb45d736531",
+      "export": "evidence/deepreset-packet-fresh-neighbor.json",
+      "export_sha256": "8cd5dc0ebe27dd72527298bc5c6a6f1e43f5eb78934acb32bbedc7f5c2cd8548"
+    },
+    {
+      "source": "deepreset-hold-action-deephold16m-1-hold255.physical.json",
+      "source_sha256": "b8f30426cab05f28cc4685bf6665f19b55ffbfee54e97f7460d070359dff7631",
+      "export": "evidence/deepreset-hold-action-deephold16m-1-hold255.physical.json",
+      "export_sha256": "d8d2e16adf74fb38e8fbf30104ec6c8253994fe2d4977d4486ce8f69f0f51a0c"
+    },
+    {
+      "source": "deepreset-hold-action-deephold16m-1-hold31.physical.json",
+      "source_sha256": "251a758f409583f4b239dce17ff7a2599ec80080e0137171c197a1bc6eb7dce2",
+      "export": "evidence/deepreset-hold-action-deephold16m-1-hold31.physical.json",
+      "export_sha256": "612899f2280dcb9327c70c0d6cbe66311babd5ba93b2336c5c8c63116eb24795"
+    },
+    {
+      "source": "deepreset-hold-action-deephold16m-1-native.physical.json",
+      "source_sha256": "e364c9fe33ea6b4112c3e80681919b8a759e0594634d01a1f63ec1f0ea95d65f",
+      "export": "evidence/deepreset-hold-action-deephold16m-1-native.physical.json",
+      "export_sha256": "fa710285b8f53f54b8ae7fda42ea053682b1d513b6a393d1801b3b6f31157b37"
+    },
+    {
+      "source": "deepreset-hold-action-deephold16m-1-pma.physical.json",
+      "source_sha256": "ac1c0fc2a031b66fa22b71b0d076a6b092ba88d9c3c05e5ccf5a5c25d579e471",
+      "export": "evidence/deepreset-hold-action-deephold16m-1-pma.physical.json",
+      "export_sha256": "b632b2252a1f61b7630d943ddadae77e30eda071d5ca6854f85213f3ae970c49"
+    }
+  ]
+}

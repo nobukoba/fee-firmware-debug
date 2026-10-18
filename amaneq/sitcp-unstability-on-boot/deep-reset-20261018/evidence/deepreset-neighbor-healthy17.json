@@ -1,0 +1,58 @@
+{
+  "started": "2026-10-19T02:11:03.964840",
+  "host": "192.168.10.17",
+  "phase": "targeted_neighbor_discovery_no_board_mutation",
+  "before_network": {
+    "rbcp": true,
+    "tcp24": true,
+    "runtime_ip": "192.168.10.17",
+    "version": "0x60C4F104",
+    "expected_version": "0x60C4F104",
+    "identity_matches": true,
+    "success": true
+  },
+  "discovery": {
+    "started": "2026-10-19T02:11:03.981775",
+    "host": "192.168.10.17",
+    "source": "192.168.10.70",
+    "interface_index": 9,
+    "API": "ResolveIpNetEntry2",
+    "return_code": 0,
+    "elapsed_seconds": 0.015,
+    "before": {
+      "return_code": 0,
+      "state": 5,
+      "MAC": "7c:f0:98:01:20:16",
+      "physical_length": 6
+    },
+    "after": {
+      "return_code": 0,
+      "state": 5,
+      "MAC": "7c:f0:98:01:20:16",
+      "physical_length": 6
+    },
+    "MAC": "7c:f0:98:01:20:16"
+  },
+  "after_network": {
+    "rbcp": true,
+    "tcp24": true,
+    "runtime_ip": "192.168.10.17",
+    "version": "0x60C4F104",
+    "expected_version": "0x60C4F104",
+    "identity_matches": true,
+    "success": true
+  },
+  "source_sha256": {
+    "WORKSPACE/probe_deepreset_neighbor.py": "29ab3443e42afffa6319a33a11e766a5294764f99865f42c3dc46212c74b60c1",
+    "deepreset_neighbor.py": "9e1ca90ecaf3df285678cccf12d67cca3b455bd1f0613c9d096e33ddf45685de",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c"
+  },
+  "references": [
+    "https://learn.microsoft.com/en-us/windows/win32/api/netioapi/nf-netioapi-resolveipnetentry2",
+    "https://learn.microsoft.com/en-us/windows/win32/api/netioapi/ns-netioapi-mib_ipnet_row2"
+  ],
+  "limits": [
+    "Only matching192.168.10.16/.17 neighbor entry onEthernetindex9/source192.168.10.70 is refreshed. No adapter reset, globalflush, route, IPsetting, power orFPGA changes.",
+    "Pair with capturemetadata to verify ARPactuallyappeared onwire; API success may be insufficient alone to showdevicechanged."
+  ]
+}

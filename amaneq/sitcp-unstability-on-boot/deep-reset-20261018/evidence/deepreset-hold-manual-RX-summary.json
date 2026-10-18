@@ -1,0 +1,155 @@
+{
+  "created": "2026-10-19T02:05:15.501006",
+  "phase": "manual_HOLD_and_PMA_RX_captures_compared",
+  "actions": [
+    {
+      "action": "native",
+      "network_before": false,
+      "network_after": false,
+      "captures": [
+        {
+          "epoch_ms": 1792341843121,
+          "samples": 256,
+          "decode_error_words": 58,
+          "unaligned_words": 92,
+          "buffer_error_words": 0,
+          "RXRESETDONE_high_words": 256
+        },
+        {
+          "epoch_ms": 1792341848209,
+          "samples": 256,
+          "decode_error_words": 129,
+          "unaligned_words": 116,
+          "buffer_error_words": 0,
+          "RXRESETDONE_high_words": 256
+        }
+      ],
+      "last_live_status": {
+        "hex": "0d01dd29",
+        "RX_state_index": 9,
+        "CPLLLOCK": true,
+        "RXRESETDONE": true,
+        "RXFSM_DONE": false,
+        "PCS_sync": false,
+        "byte_aligned": true,
+        "RXBUFSTATUS": 0
+      }
+    },
+    {
+      "action": "hold31",
+      "network_before": false,
+      "network_after": false,
+      "captures": [
+        {
+          "epoch_ms": 1792341927162,
+          "samples": 256,
+          "decode_error_words": 8,
+          "unaligned_words": 0,
+          "buffer_error_words": 0,
+          "RXRESETDONE_high_words": 256
+        },
+        {
+          "epoch_ms": 1792341932406,
+          "samples": 256,
+          "decode_error_words": 106,
+          "unaligned_words": 106,
+          "buffer_error_words": 0,
+          "RXRESETDONE_high_words": 256
+        }
+      ],
+      "last_live_status": {
+        "hex": "0d81dd2a",
+        "RX_state_index": 10,
+        "CPLLLOCK": true,
+        "RXRESETDONE": true,
+        "RXFSM_DONE": false,
+        "PCS_sync": true,
+        "byte_aligned": true,
+        "RXBUFSTATUS": 0
+      }
+    },
+    {
+      "action": "hold255",
+      "network_before": false,
+      "network_after": false,
+      "captures": [
+        {
+          "epoch_ms": 1792342011675,
+          "samples": 256,
+          "decode_error_words": 25,
+          "unaligned_words": 8,
+          "buffer_error_words": 0,
+          "RXRESETDONE_high_words": 256
+        },
+        {
+          "epoch_ms": 1792342016784,
+          "samples": 256,
+          "decode_error_words": 109,
+          "unaligned_words": 112,
+          "buffer_error_words": 0,
+          "RXRESETDONE_high_words": 256
+        }
+      ],
+      "last_live_status": {
+        "hex": "0981dd2a",
+        "RX_state_index": 10,
+        "CPLLLOCK": true,
+        "RXRESETDONE": true,
+        "RXFSM_DONE": false,
+        "PCS_sync": true,
+        "byte_aligned": false,
+        "RXBUFSTATUS": 0
+      }
+    },
+    {
+      "action": "pma",
+      "network_before": false,
+      "network_after": false,
+      "captures": [
+        {
+          "epoch_ms": 1792342104805,
+          "samples": 256,
+          "decode_error_words": 231,
+          "unaligned_words": 231,
+          "buffer_error_words": 0,
+          "RXRESETDONE_high_words": 25
+        },
+        {
+          "epoch_ms": 1792342109672,
+          "samples": 256,
+          "decode_error_words": 0,
+          "unaligned_words": 0,
+          "buffer_error_words": 0,
+          "RXRESETDONE_high_words": 256
+        }
+      ],
+      "last_live_status": {
+        "hex": "0d81fd2a",
+        "RX_state_index": 10,
+        "CPLLLOCK": true,
+        "RXRESETDONE": true,
+        "RXFSM_DONE": true,
+        "PCS_sync": true,
+        "byte_aligned": true,
+        "RXBUFSTATUS": 0
+      }
+    }
+  ],
+  "source_sha256": {
+    "deepreset-hold-action-deephold16m-1-native.json": "8ac45c5e5a23aa8a17765ff59a845c6d391c517c64a7924333643dd39c75653f",
+    "deepreset-hold-action-deephold16m-1-native.console.txt": "7e03baf1782521a61b11f7484e8cc09611fa4a24b8d8ef440c12167958f006b9",
+    "deepreset-hold-action-deephold16m-1-hold31.json": "0e749b2249cefe3d7d1e9c8c4726c67784debbf48ee0a27e28d9bba2d68754b6",
+    "deepreset-hold-action-deephold16m-1-hold31.console.txt": "1eb799661d71ad79371af88046d020292f6218626d884dbda55052a574e37f3f",
+    "deepreset-hold-action-deephold16m-1-hold255.json": "5712c19be6264f7edb6bb2d9071833a8c035aff965ff036a54af2d8e0104b133",
+    "deepreset-hold-action-deephold16m-1-hold255.console.txt": "d0a402e77c0685463f37a460cab7b9388df91d15a69a5338f892132e9410c87c",
+    "deepreset-hold-action-deephold16m-1-pma.json": "8d5cae433535e41be84f447681e6cf17d0a3a49db4a1b32e6b2a002177930472",
+    "deepreset-hold-action-deephold16m-1-pma.console.txt": "979e5861113b46fa0b2a025d192698695cbdd05029e06a6586454c01a2a51e21",
+    "WORKSPACE/analyze_deepreset_hold_rx.py": "fad4534e30fdb109bf999257c92fe0ae1cb88f97e9a7686c2c358ce4f75eb165"
+  },
+  "limits": [
+    "First RXcapture can contain older frozen words; lastcapture follows explicit rearm and represents fresh RX data.",
+    "RXword packing is unchanged; intentionally avoids old SYSbit20/21/22/31 labels replaced by this experiment.",
+    "Digital frequency returning to normal does not by itself guarantee bytealignment, codegroupdecode or EthernetPCSsync.",
+    "No purePMA-only network-recovery claim when network staysfalse."
+  ]
+}

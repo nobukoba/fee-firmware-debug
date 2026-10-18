@@ -1,0 +1,33 @@
+{
+  "created": "2026-10-19T01:03:13.016919",
+  "phase": "prior_internal_loopback_evidence_rechecked_not_new_hardware_tests",
+  "historical_test_date": "2026-10-16",
+  "forced_mode": "Near-end PMA LOOPBACK010 before coldstartup; VIO defaults0",
+  "full_flash_sha256_both": "010a8c6f76bd57977f4fcad71168ee2fa3408da6827c470d8d41157708edd6fb",
+  "problem16": {
+    "cold_successes": 0,
+    "cold_trials": 3
+  },
+  "healthy17": {
+    "cold_successes": 3,
+    "cold_trials": 3
+  },
+  "criterion": "InternalGT RXFSMdone +PCSsync +bytealignment +error-free frozenRX waveform; externalTCP/RBCP intentionally unavailable, not counted as boot failure.",
+  "inference": "Failure can occur in internalGT loopback without requiring external Ethernet packet stream. Combined with current sharedCPLL mean clock unchanged / recoveredRXclock abnormal, this supports board-local receiveGT initialization sensitivity.",
+  "limits": [
+    "Historical cohorts were re-read and image proofs rechecked; not new trials or a new failure-rate estimate.",
+    "Internal loopback still uses shared PLL/local TX clock and internal analog path. Does not uniquely isolate CDR, reference jitter, MGT supply, termination or silicon defect.",
+    "Does not prove that connected cable or external electrical coupling has zero analog influence."
+  ],
+  "source_sha256": {
+    "WORKSPACE/recheck_deepreset_prior_loopback.py": "5bc1a742ba00c129c89eceb16f28a64a51bce21decd6dc78c2f3da9b67e566d0",
+    "dual16-f104-loopback-cold3.json": "9619cc84430a74eab23b4cf59beb18e9dcb1cb6c3658c527a180984cff893769",
+    "dual16-f104-loopback-extra2.json": "6b36ae37abb3a321d5512d2b7e908b20e31b8d51a5e8c0bd25a3f8ef9a253101",
+    "dual17-f104-loopback-cold3.json": "cbf8325b29fe4b07f59a9ce45d38104a6683f1cbbd96851e75af3db5f389dbc3",
+    "flash-dual16-f104-loopback-20261016-213535-result.json": "d925080deea5b6fbd03bb84bbd5cf9e5cab11fc58715f5ed67d05a83ea62d122",
+    "flash-dual17-f104-loopback-20261016-214328-result.json": "8d941ec4ff76073fc15a35e5dbb334033796d842e819f6894d7a660402a88297",
+    "inspect-f104-loopback-console.json": "7a64d5d5a6d802704e9ed6821dfb05037481e27f5f81ad83717e49a80d3d0f7f",
+    "f104-loopback-payload-comparison.json": "df9b2d06202780055bddea323517a7f567446c62804c5d48ee20085122d8b536",
+    "deepreset-txpcs-interpretation.json": "76e3d104f026d6e84921fb9b4b6edff858a3c830a5c3dc5663cf38368710b296"
+  }
+}

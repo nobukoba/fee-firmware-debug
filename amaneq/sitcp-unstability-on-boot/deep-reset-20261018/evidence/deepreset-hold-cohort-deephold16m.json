@@ -1,0 +1,214 @@
+{
+  "started": "2026-10-19T01:36:40.446401",
+  "host": "192.168.10.16",
+  "serial": "210299BBCDDA",
+  "variant": "manual",
+  "source_sha256": {
+    "WORKSPACE/run_deepreset_hold_cohort_v7.py": "3f2a61dce7c018bbb18a740a266767353414b21a366c7e73500f7b8f137c1154",
+    "deepreset-cdrhold-postload-review-v15.json": "9d53f71bf8f4b98a6194d1ed466d9c8ed1780e2abefb56d37864f4eca318fb28",
+    "deepreset-cdrhold-independent-review.json": "64ac4af223219c5ef407b4152d1d49e5d7b6492f82daeccb3e4dd14e7fed9a32",
+    "deepreset-cdrhold-v14/manual/rootcause-f104-hold.mcs": "a8626a9195ce55b3893f6f2034e83dfbcac9e2329d5eedaf6d31b513b1ac89cf",
+    "deepreset-cdrhold-unified/manual-unified.ltx": "c07b558b5c46f369ed05ea6b051c6bd40002e826a56c00df76400bb8037d44d6",
+    "flash_firmware.py": "712a49008ce6434b9407e4a0bb332b528fd4b316d9271b7e1e1b99c5f67af43c",
+    "dual_board_cold.py": "db4144e5e4655c5e8d511d9a3c58e7f53ffed1ad6aa9c242e0933ac6f756572d",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "run_deepreset_hold_action_v2.py": "1e3316615248deebf2ba87b2eb672d4a13ec0a6a10a881e71b9f8cd8ead1b82f",
+    "deepreset-cdrhold-action.tcl": "fa6f0873424ee0e37ba1c2e8319a47e7842d83fa1be275388f11270c823e9788",
+    "attach-deepreset-cdrhold.tcl": "7d282073cb0fd33606628e750803387c6c4706142259182bc8e5dc470b02e5da",
+    "rootcause-read-sysmon.tcl": "2e96679b943e77c33ac10a2ae3419974f2e31b4863413d883ff48adba2205df3",
+    "analyze_deepreset_hold_action.py": "362751a5d033fccc6b31720f3e9fddb881c1aacb5a13d2e331e05827ba7b6038",
+    "analyze_day1_frequency_v2.py": "4a2e706796e3a8f17f2fc921e9cb99c8271a4ad90f940887e7636137d4b1253b",
+    "deepreset_hw_guard.py": "e3e22e46727401898cd3dbd24419b134b0080a1df67cd26c1c68a6d8d32c5832"
+  },
+  "events": [
+    {
+      "time": "2026-10-19T01:36:41.792306",
+      "event": "programming_matched_variant_must_not_powercycle"
+    },
+    {
+      "time": "2026-10-19T01:41:50.214545",
+      "event": "cold_trial",
+      "number": 1
+    },
+    {
+      "time": "2026-10-19T01:43:30.814322",
+      "event": "diagnostic_action",
+      "action": "capture",
+      "label": "deephold16m-1-native",
+      "duration_code": 31
+    },
+    {
+      "time": "2026-10-19T01:44:17.147375",
+      "event": "diagnostic_action",
+      "action": "frequency",
+      "label": "deephold16m-1-beforefreq",
+      "duration_code": 31
+    },
+    {
+      "time": "2026-10-19T01:44:53.075749",
+      "event": "diagnostic_action",
+      "action": "hold",
+      "label": "deephold16m-1-hold31",
+      "duration_code": 31
+    },
+    {
+      "time": "2026-10-19T01:45:41.561734",
+      "event": "diagnostic_action",
+      "action": "frequency",
+      "label": "deephold16m-1-freq31",
+      "duration_code": 31
+    },
+    {
+      "time": "2026-10-19T01:46:17.542574",
+      "event": "diagnostic_action",
+      "action": "hold",
+      "label": "deephold16m-1-hold255",
+      "duration_code": 255
+    },
+    {
+      "time": "2026-10-19T01:47:05.854744",
+      "event": "diagnostic_action",
+      "action": "frequency",
+      "label": "deephold16m-1-freq255",
+      "duration_code": 31
+    },
+    {
+      "time": "2026-10-19T01:47:49.658293",
+      "event": "diagnostic_action",
+      "action": "pma",
+      "label": "deephold16m-1-pma",
+      "duration_code": 31
+    },
+    {
+      "time": "2026-10-19T01:48:38.553297",
+      "event": "diagnostic_action",
+      "action": "frequency",
+      "label": "deephold16m-1-afterpmafreq",
+      "duration_code": 31
+    },
+    {
+      "time": "2026-10-19T01:49:15.468213",
+      "event": "trial_complete_power_on",
+      "number": 1,
+      "cold_success": false
+    },
+    {
+      "time": "2026-10-19T01:49:15.468213",
+      "event": "requested_stop_after_one_failed_boot_probe",
+      "completed": 1,
+      "requested": 3
+    },
+    {
+      "time": "2026-10-19T01:49:16.646129",
+      "event": "cohort_complete_power_on",
+      "cold_successes": 0,
+      "count": 1,
+      "requested_count": 3
+    }
+  ],
+  "trials": [
+    {
+      "number": 1,
+      "cold_success": false,
+      "cold_log": "deepreset-hold-deephold16m-cold1.json",
+      "cold_sha256": "a00d02e8c3ef4326e5f32b3190c923395c84c6a7a0b65907a0da42ccbbf2676e",
+      "actions": [
+        {
+          "action_report": "deepreset-hold-action-deephold16m-1-native.json",
+          "action_report_sha256": "8ac45c5e5a23aa8a17765ff59a845c6d391c517c64a7924333643dd39c75653f",
+          "analysis": "deepreset-hold-action-deephold16m-1-native.physical.json",
+          "analysis_sha256": "e364c9fe33ea6b4112c3e80681919b8a759e0594634d01a1f63ec1f0ea95d65f",
+          "before": false,
+          "after": false
+        },
+        {
+          "action_report": "deepreset-hold-action-deephold16m-1-beforefreq.json",
+          "action_report_sha256": "f7bcae1f02bc267f3f0fbdead355aa8c3efb806cdbefc2fc1fc2704d33f74b7d",
+          "analysis": "deepreset-hold-action-deephold16m-1-beforefreq.console.frequency.json",
+          "analysis_sha256": "af2a43c413fad3e0b357489e47c486b67d7e1ddebf85159548e314bb5dbfd953",
+          "before": false,
+          "after": false
+        },
+        {
+          "action_report": "deepreset-hold-action-deephold16m-1-hold31.json",
+          "action_report_sha256": "0e749b2249cefe3d7d1e9c8c4726c67784debbf48ee0a27e28d9bba2d68754b6",
+          "analysis": "deepreset-hold-action-deephold16m-1-hold31.physical.json",
+          "analysis_sha256": "251a758f409583f4b239dce17ff7a2599ec80080e0137171c197a1bc6eb7dce2",
+          "before": false,
+          "after": false
+        },
+        {
+          "action_report": "deepreset-hold-action-deephold16m-1-freq31.json",
+          "action_report_sha256": "9d651d7bd6dcd8e690fd9189ed550c7d48098e0d60cb65314e7db621847833e2",
+          "analysis": "deepreset-hold-action-deephold16m-1-freq31.console.frequency.json",
+          "analysis_sha256": "c553ecf4679e22712c76003b0a4279b78ed18984bb5a6bd72c3b8d0431e2618b",
+          "before": false,
+          "after": false
+        },
+        {
+          "action_report": "deepreset-hold-action-deephold16m-1-hold255.json",
+          "action_report_sha256": "5712c19be6264f7edb6bb2d9071833a8c035aff965ff036a54af2d8e0104b133",
+          "analysis": "deepreset-hold-action-deephold16m-1-hold255.physical.json",
+          "analysis_sha256": "b8f30426cab05f28cc4685bf6665f19b55ffbfee54e97f7460d070359dff7631",
+          "before": false,
+          "after": false
+        },
+        {
+          "action_report": "deepreset-hold-action-deephold16m-1-freq255.json",
+          "action_report_sha256": "3fc7eb2fe4125aa07fe9ad9b7745e24efabdd6b5051831e8ff817c189a914af8",
+          "analysis": "deepreset-hold-action-deephold16m-1-freq255.console.frequency.json",
+          "analysis_sha256": "48a3a29d9eb81ff43d612f34ba70d44e22c158dd54cd19ec19960adeac4ca254",
+          "before": false,
+          "after": false
+        },
+        {
+          "action_report": "deepreset-hold-action-deephold16m-1-pma.json",
+          "action_report_sha256": "8d5cae433535e41be84f447681e6cf17d0a3a49db4a1b32e6b2a002177930472",
+          "analysis": "deepreset-hold-action-deephold16m-1-pma.physical.json",
+          "analysis_sha256": "ac1c0fc2a031b66fa22b71b0d076a6b092ba88d9c3c05e5ccf5a5c25d579e471",
+          "before": false,
+          "after": false
+        },
+        {
+          "action_report": "deepreset-hold-action-deephold16m-1-afterpmafreq.json",
+          "action_report_sha256": "97fa08ff927e93c2e0a6bfa98f26a06d8999a4252bb1d6ae58f3ddc8760a46e1",
+          "analysis": "deepreset-hold-action-deephold16m-1-afterpmafreq.console.frequency.json",
+          "analysis_sha256": "8db827c9c7c500f73d19f3f87fc703aa12edeb2589b9de6bfb66278c3d3580eb",
+          "before": false,
+          "after": false
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Diagnostic circuitry is not production minimum-line solution.",
+    "HOLD-only inference requires physical reset activity17,18,19,21,22 quiet and physicalHOLD31 pulse proven.",
+    "Mean frequency and digital status do not measure analog jitter or dedicated GT supply rails.",
+    "Ready-held HOLD is a3added/1deleted VHDL93 proposal; no production image built here. ExtraECO LUT delay and instrumentation differ from production.",
+    "Cold-boot comparisons require verified fullFlash readbacks and matched bypass/ready/reverse cohorts."
+  ],
+  "phase": "cohort_complete_power_on",
+  "flash_actual_exit_code": 0,
+  "flash_report": "flash-deephold16m-20261019-013644-result.json",
+  "flash_report_sha256": "3e17947faaf41c18f39c09d91b55576e1db4138bfc9c78d40bf7dddaf318dd56",
+  "full_flash_sha256": "e60722c3062f43605d20ed4016a408cda61b4c6af1b40b90736b2edc8b4818a7",
+  "cold1_actual_exit_code": 0,
+  "1-native_actual_exit_code": 0,
+  "1-native-physical-analysis_actual_exit_code": 0,
+  "1-beforefreq_actual_exit_code": 0,
+  "1-beforefreq-frequency-analysis_actual_exit_code": 0,
+  "1-hold31_actual_exit_code": 0,
+  "1-hold31-physical-analysis_actual_exit_code": 0,
+  "1-freq31_actual_exit_code": 0,
+  "1-freq31-frequency-analysis_actual_exit_code": 0,
+  "1-hold255_actual_exit_code": 0,
+  "1-hold255-physical-analysis_actual_exit_code": 0,
+  "1-freq255_actual_exit_code": 0,
+  "1-freq255-frequency-analysis_actual_exit_code": 0,
+  "1-pma_actual_exit_code": 0,
+  "1-pma-physical-analysis_actual_exit_code": 0,
+  "1-afterpmafreq_actual_exit_code": 0,
+  "1-afterpmafreq-frequency-analysis_actual_exit_code": 0,
+  "cold_successes": 0
+}

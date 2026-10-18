@@ -1,0 +1,151 @@
+{
+  "started": "2026-10-19T02:16:15.745738",
+  "host": "192.168.10.17",
+  "expected_version": "0x60c4f104",
+  "flash_report": "flash-deepTX17b-20261019-001535-result.json",
+  "full_flash_sha256": "2421f7493910e6e057ec35106b6324948b926d03b9ac6a919eb678616fd059f6",
+  "source_sha256": {
+    "WORKSPACE/deepreset_cold_extended_v3.py": "d15c2400fae5e54ec0f89f1ed78e8b454c17350ced40fcce5137c59fd9f914a1",
+    "flash-deepTX17b-20261019-001535-result.json": "43170da3919b6313c3638213944ab67d20e1800080e5eab7778f0912e8e34f30",
+    "WORKSPACE/deepreset-txpcs/rootcause-f104-txpcs.mcs": "cbbf59d756f2dd9818d161b6eb2445cbe856143a09797f9bdbf11d18b77d8a6d",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "deepreset-control17-stop-verified.json": "eca8ea851cfe78d6859b580fe3d1805cea740cf2994e8a521952a1ec8b3b835f",
+    "deepreset-control17-factory.jsonl": "42e369d936dad5a3ee4534a71d704456d8491a0af43094767e3956332242ee00",
+    "deepreset_neighbor.py": "9e1ca90ecaf3df285678cccf12d67cca3b455bd1f0613c9d096e33ddf45685de",
+    "deepreset_fresh_wait.py": "70e87953cd8a1a15025e1cd915b8e849c4e7be3d533cd53b68708b9d6178aec5",
+    "deepreset_hw_guard.py": "e3e22e46727401898cd3dbd24419b134b0080a1df67cd26c1c68a6d8d32c5832"
+  },
+  "events": [
+    {
+      "time": "2026-10-19T02:16:17.616814",
+      "kind": "outlet_status",
+      "requested": null,
+      "status": "On"
+    },
+    {
+      "time": "2026-10-19T02:16:17.696933",
+      "kind": "power_status",
+      "requested": null,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99860E+01",
+      "current": "+1.90200E-01"
+    },
+    {
+      "time": "2026-10-19T02:16:19.219457",
+      "kind": "cold_start",
+      "number": 1,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T02:16:23.285417",
+      "kind": "outlet_command_response",
+      "requested": "OFF",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-19T02:16:25.377600",
+      "kind": "outlet_status",
+      "requested": "OFF",
+      "status": "Off"
+    },
+    {
+      "time": "2026-10-19T02:16:31.896831",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T02:16:35.973813",
+      "kind": "outlet_command_response",
+      "requested": "ON",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-19T02:16:38.133123",
+      "kind": "outlet_status",
+      "requested": "ON",
+      "status": "On"
+    },
+    {
+      "time": "2026-10-19T02:16:38.133123",
+      "kind": "power_on",
+      "number": 1,
+      "actual_off_seconds": 12.75
+    },
+    {
+      "time": "2026-10-19T02:16:55.148041",
+      "kind": "cold_result",
+      "number": 1,
+      "success": true
+    },
+    {
+      "time": "2026-10-19T02:16:55.149045",
+      "kind": "complete_power_on",
+      "successes": 1,
+      "trials": 1
+    }
+  ],
+  "trials": [
+    {
+      "number": 1,
+      "off_seconds": 5,
+      "success": true,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F104",
+          "expected_version": "0x60C4F104",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.0,
+          "neighbor_discovery": {
+            "started": "2026-10-19T02:16:50.136240",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.0,
+            "before": {
+              "return_code": 0,
+              "state": 0,
+              "MAC": "7c:f0:98:01:20:16",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "7c:f0:98:01:20:16",
+              "physical_length": 6
+            },
+            "MAC": "7c:f0:98:01:20:16"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F104",
+          "expected_version": "0x60C4F104",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.015
+        }
+      ]
+    }
+  ],
+  "topology": "Kikusui16,ezOutlet17; switch alwaysON",
+  "limits": [
+    "OFF duration is not a measured thermal or capacitor-discharge state.",
+    "No EEPROM or power setpoint writes."
+  ]
+}
