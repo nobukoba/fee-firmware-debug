@@ -1,0 +1,11 @@
+--- a/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_rx_startup_fsm.vhd
++++ b/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_rx_startup_fsm.vhd
+@@ -169,7 +169,7 @@
+   constant WAIT_TIMEOUT_1us     : integer :=  1000 / STABLE_CLOCK_PERIOD;  --1 us time-out
+   constant WAIT_TIMEOUT_100us    : integer := 100000 / STABLE_CLOCK_PERIOD; --100 us time-out
+   constant WAIT_TIME_ADAPT      : integer := (37000000 /integer(1.25))/STABLE_CLOCK_PERIOD;
+-  constant WAIT_TIME_MAX    : integer := 100 ; --10 us time-out
++  constant WAIT_TIME_MAX : integer := 1000; --5 us at 200 MHz
+ 
+   signal init_wait_count        : integer range 0 to WAIT_MAX:=0;
+   signal init_wait_done         : std_logic := '0';

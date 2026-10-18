@@ -1,0 +1,60 @@
+{
+  "created": "2026-10-18T16:31:30.365514",
+  "phase": "frequency_and_state_cadence_consistency_analysis",
+  "trials": [
+    {
+      "trial": 1,
+      "relative_bad_to_repaired_clock_error_ppm": 708.7312168597509,
+      "assumed_RXOUTCLKPMA_serial_divider": 20,
+      "UI_from_repaired_nominal_clock_ns": 0.7999954558104536,
+      "predicted_one_UI_drift_time_ns": 1128.7712983140161,
+      "observed_MONITOR_start_periods": 119,
+      "observed_median_period_ns": 1135,
+      "observed_min_period_ns": 990,
+      "observed_max_period_ns": 2270
+    },
+    {
+      "trial": 2,
+      "relative_bad_to_repaired_clock_error_ppm": 709.1062932953326,
+      "assumed_RXOUTCLKPMA_serial_divider": 20,
+      "UI_from_repaired_nominal_clock_ns": 0.7999954672227964,
+      "predicted_one_UI_drift_time_ns": 1128.1742593273104,
+      "observed_MONITOR_start_periods": 120,
+      "observed_median_period_ns": 1130.0,
+      "observed_min_period_ns": 975,
+      "observed_max_period_ns": 2305
+    },
+    {
+      "trial": 3,
+      "relative_bad_to_repaired_clock_error_ppm": 709.2414947787519,
+      "assumed_RXOUTCLKPMA_serial_divider": 20,
+      "UI_from_repaired_nominal_clock_ns": 0.7999953683946557,
+      "predicted_one_UI_drift_time_ns": 1127.9590580697968,
+      "observed_MONITOR_start_periods": 114,
+      "observed_median_period_ns": 1155.0,
+      "observed_min_period_ns": 930,
+      "observed_max_period_ns": 2225
+    }
+  ],
+  "inference": "A simple unlocked-clock phase-drift model predicts about1.13us per UI for the measured about709ppm clock mismatch. The observed bad-stateMONITOR recurrence medians1.13-1.155us are close. This is consistent with repeated sampling-phase slips and intermittent PCS synchronization, not proof of that unique physical mechanism.",
+  "assumptions": [
+    "RecoveredPMA output clock divider20 for1.25Gbps/62.5MHz.",
+    "Use repaired recovered clock as proxy for peer serial bit rate; no change of peer/source between stages.",
+    "Use mean clock mismatch as if a continuous frequency offset. Missing/irregular clock pulses could have a similar mean and are not excluded."
+  ],
+  "limits": [
+    "No direct analog phase-slip or jitter waveform measured.",
+    "PCS synchronization detector and data pattern affect event cadence; intervals have significant spread.",
+    "Mode1-only bad state and post-PMA frequency are separate acquisition stages in the same cold failed state.",
+    "Nominal SYS200MHz event timing; not independent external time calibration.",
+    "Does not identify the board-level trigger of initial RX/PMA/CDR misinitialization."
+  ],
+  "source_sha256": {
+    "<workspace>\\analyze_minpma_slip_scale.py": "14f5c1c4c1371289338ee42190324bc5ba3fd84af2856c98e7ce216b24f7f824",
+    "day1-frequency16-resume-v2.json": "0e06b1cebfea6daf998f8af5472325794049c36227aa8f254c6c291b26a15587",
+    "day1-frequency16-reviewed-outcome.json": "05ee8270e8e394b88f480cf7926a94b957df3bfc48e126b931215a84f703e1c7",
+    "rootcause-f104-frequency-day1-freq16r2-1-mode1.console.decoded.json": "7f2e141ffacce5473276327d43efefc33cbee7a475f218b8b70498639a25642a",
+    "rootcause-f104-frequency-day1-freq16r2-2-mode1.console.decoded.json": "cbfee10704e32b3139dc5c999fec3a4d421a5d3878d4f6ee901d074ca6904373",
+    "rootcause-f104-frequency-day1-freq16r2-3-mode1.console.decoded.json": "e6210440af7dcb534fc796c9f83c1828d9e94df1df595df13e1e7ef977198148"
+  }
+}

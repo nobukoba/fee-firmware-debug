@@ -1,0 +1,16 @@
+{
+  "created": "2026-10-18T16:59:20.183988",
+  "phase": "rejected_before_hardware_due_to_reset_sequence_requirement",
+  "candidate": "F309 six-added-one-deleted prototype",
+  "hardware_operations": false,
+  "finding": "Pulse is scheduled before the native CDR wait finishes, hence before the initial RXRESETDONE. This conflicts with UG476 initial configuration reset sequence requirement to keep individual reset inputs low until RXRESETDONE. Logical simulation success does not establish manufacturer-sequence compliance.",
+  "source_url": "https://docs.amd.com/v/u/en-US/ug476_7Series_Transceivers",
+  "reference": "UG476 GTX/GTH Receiver after FPGA Configuration, page78",
+  "decision": "Do not build or program as a deployable minimum. Retain prototype and simulation as rejected evidence.",
+  "source_sha256": {
+    "<workspace>\\record_minpma_f309_rejection.py": "6aed264af7e0b1ed9d96f8b6e6ec1197d3a2689f29c7312ecb80f1c1541c1c5c",
+    "experiments\\reference\\ug476-7series-extracted-24h.txt": "aa83d943632949e2f6a2444c84bfd3c684eca2d6f291f715526afc88ad751788",
+    "minpma-prototype-f309.patch": "a932ab22f2c82623118b3f3f9121551d01a9f38dde1bb58047183a76bc98f966",
+    "experiments\\minpma-f309-sim-v2\\result.json": "530212470a4294b2f0e1c79ce65435f8afeca958f50c327b21e4da6595ef5926"
+  }
+}

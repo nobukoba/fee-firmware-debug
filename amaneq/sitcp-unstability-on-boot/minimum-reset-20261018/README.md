@@ -17,23 +17,37 @@
 [構成状態](evidence/minpma-native-config-status.json)、
 [遅延後の通信確認](evidence/minpma-native-late-readonly.json)。
 
-正常側.17はfactoryのまま読取り監視を継続している。
+正常側.17のfactory監視は約2時間35分、RBCP 311/311・TCP 32/32成功で終了した。
+[監視終了と集計](evidence/minpma-control17-stop-verified.json)。
 菊水は.16、ezOutletは.17の電源。ネットワークスイッチは常時ON。EEPROM書込みなし。
 
 ## 小さくした候補
 
 | 候補 | 機能HDLの差分 | 検証状況 |
 |---|---|---|
-| F308：1クロック領域・共用カウンター | 32行追加／1行削除 | 論理検証成功。最終WNS −0.044ns・3端点違反のため実機未使用 |
-| F309：既存CDR待ちカウンターを利用 | 6行追加／1行削除 | 論理検証のみ。1行案を優先しビルド開始前に待機取消 |
-| F30A：既存WAIT_TIME_MAXを100→1000 | 1行置換の予定 | 論理検証成功、ビルド中。実機での改善は未確認 |
+| F308：1クロック領域・共用カウンター | 32行追加／1行削除 | 論理検証成功。初回WNS −0.044nsで実機未使用。配置配線だけを別成果物へ再試行中 |
+| F309：既存CDR待ちカウンターを利用 | 6行追加／1行削除 | 論理検証成功だがメーカーの初期化手順と競合するため不採用。実機未使用 |
+| F30A：既存WAIT_TIME_MAXを100→1000 | 1行置換 | WNS +0.068ns・WHS +0.015ns。全領域照合後、.16は1/3回成功・2/3回失敗 |
 
 F308の32行追加には接続の置換行と空行2行を含み、新規機能ブロックは29行。
 F309は宣言と既存process内への新規5行、および接続1行の置換。
+F308はTXユーザークロック上で、7条件の2段同期化、準備完了後1秒待ち、16クロックのPMAパルス、
+単発動作を1つのカウンターで扱う。RXRESETDONEがパルス中に下がってもパルスを完了し、
+SOFT_RESET_RXで再許可する。旧104行版のクロック間完了応答・診断状態を省いている。
+単にRXRESETDONEとANDしてPMAを出すと、PMA自身がRXRESETDONEを下げた時に
+パルスが途中で切れ得るため、パルス開始後の幅をカウンターで保証する。
 単に改行を減らすことを最小化とは扱わず、既存の状態・カウンターの再利用を比較する。
 バージョン・ビルド手順・比較用ゲート／ILAは、この機能HDL行数には含めない。
 [候補状態の確定記録](evidence/minpma-candidate-status-frozen.json)、
 [F308差分](f308-prototype.patch)、[F309差分](f309-prototype.patch)。
+
+F309は初回RXRESETDONEより前にPMAリセットを出す。UG476では初期化中の個別リセットを
+RXRESETDONEが上がるまでLowに保つため、論理検証が通っても採用しない。
+[不採用理由](evidence/minpma-f309-design-review.json)、
+[AMD UG476](https://docs.amd.com/v/u/en-US/ug476_7Series_Transceivers)。
+
+F30Aは今回1/3回成功に留まり、確実な対策としては不十分。
+[実機試験](evidence/resetwidth-cohort-width16a.json)、[1行差分](f30a-native-wait.patch)。
 
 F30Aの定数は、構成後待ちの`STARTUP_DELAY`とは別である。
 元のINIT0・SOFT0・STARTUP_DELAY 500nsを保ち、ネイティブRXリセット手順中の最短待機と、
@@ -65,6 +79,11 @@ DATA_VALIDはPCSの同期状態bit1であり、Auto-NegotiationやIP通信の成
 後段のユーザークロック待ちが延びる効果も切り分ける必要がある。
 CDR待ちタイマーは実際のCDRロック検出ではない。
 [ネイティブ起動順序の再解析](evidence/minpma-native-order-analysis.json)。
+
+不良時とPMAリセット後の平均クロック差は約709ppmだった。一定の周波数ずれと仮定すると、
+1UIずれるまで約1.128µsで、実際のMONITOR遷移の中央値1.130〜1.155µsに近い。
+繰返し位相が滑って同期を失うモデルとは整合するが、位相・ジッターの直接測定ではなく、
+欠落パルスなど別の説明も残る。[周波数と状態周期の比較](evidence/minpma-slip-scale-analysis.json)。
 
 ## 証拠の扱い
 

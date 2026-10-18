@@ -1,0 +1,30 @@
+{
+  "started": "2026-10-18T15:43:48.591617",
+  "phase": "build_complete_independent_review_required",
+  "source_sha256": {
+    "lrtdc-resetwidth-f30a\\patch-rx-resetwidth.tcl": "80e39fb0a5ba3e82bce3a918a24c80f5736edcb198f221aebbe63a115b123918",
+    "lrtdc-resetwidth-f30a\\build-resetwidth-f30a.tcl": "6502a90f91adefb102aab15889ab94439c369e410e4de65281bcad9608d85cd2",
+    "lrtdc-resetwidth-f30a\\hdl\\defBusAddressMap.vhd": "f3f94fa3c37b9e6bfba8c0deea155b2562df136d041330ab9bfda7fa55d8c42e",
+    "lrtdc-resetwidth-f30a\\build-resetwidth-f30a-incremental.tcl": "53d81e8ad3b7ba42ddf1f9265f8aa10a1d221c14546fd9238339e9efbb7b5c02",
+    "lrtdc-resetwidth-f30a\\build-resetwidth-f30a-incremental-v3.tcl": "7478266bafc6442024538134ee4c7f77b9fb5d6ddf700e6f25bde1e2bc4e0dca",
+    "lrtdc-autopma-f307\\build\\autopma-f307\\lrtdc-autopma-f307.dcp": "d39a53cd16ae99a905bc0279f1bdb3c6135cb588c0e8078a0830c92c39f9ba7e"
+  },
+  "hardware_operations": false,
+  "actual_exit_code": 0,
+  "artifacts": {
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\bus-skew.rpt": "909d1d005fd310625e567e4871e8e53649b35685ebee39f3611d72880ec16e77",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\drc.rpt": "fbf172831427e8e7206b36bbda8d6043466a8f2420da7d4f3a237004e8d874bc",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\incremental-reuse.rpt": "62ca888d011dffbddbcfc436e3bcfa430267027228f4e4fd9502616cedb54714",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\ip-prepared": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\ip-status.rpt": "b46116cfdf51f478f5c9d101b2adfe04b1812c3c5ea74eb1af089d3d2cc33d51",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\lrtdc-resetwidth-f30a.bit": "c0ba65373df17cd6a0b4490107ec65362aafaa0b88bcc52db75abf4109d72f2c",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\lrtdc-resetwidth-f30a.dcp": "cba7633ad83c476880ed2e9b0e62f9e941075f5755416bddf1f292259676dca9",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\lrtdc-resetwidth-f30a.mcs": "88de37dc66f913ed2fa90d6aa359552494f43f05c96e3f9afb0f7f5ec26cf18b",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\lrtdc-resetwidth-f30a.prm": "f2b5b010ae987589895200851742a8b65bb8a4d842a2473f0409595068bdf091",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\rx-startup-after-patch.vhd": "790573e44a04fbc38a260483d27d2dbea00619aac4ae0e7b5cfc20e78c4a8b44",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\rx-startup-before-patch.vhd": "3499fbb3cb184c3557af8c471398b8e1cbe02e160d195112af265d2a2662dcd0",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\timing-summary.rpt": "f188517e38e897d4f70a6339a593636104d68db998313d99d6e985a8db401f25",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\utilization.rpt": "24e65861ff0ab58d7b734e5191c046538acabff2ee9d7830cf8446e5e31e28ad"
+  },
+  "finished": "2026-10-18T16:53:32.709703"
+}

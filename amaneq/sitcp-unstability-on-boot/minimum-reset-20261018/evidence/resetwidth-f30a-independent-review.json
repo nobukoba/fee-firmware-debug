@@ -1,0 +1,71 @@
+{
+  "created": "2026-10-18T16:54:03.270083",
+  "phase": "independent_review_passed_ready_for_hardware",
+  "runtime": "0x60C4F30A",
+  "mcs": "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\lrtdc-resetwidth-f30a.mcs",
+  "mcs_sha256": "88de37dc66f913ed2fa90d6aa359552494f43f05c96e3f9afb0f7f5ec26cf18b",
+  "expected_full_flash_sha256": "62f245749903935811d16fd508395d1bb1917d2d0cd099a9f29ef5d97d08c1a3",
+  "functional_patch": "resetwidth-functional-f30a.patch",
+  "functional_patch_sha256": "7c4906349bcab90091edab581855eb135985ff44dd11d4e534cde815222009a7",
+  "functional_added_lines": 1,
+  "functional_deleted_lines": 1,
+  "wns_ns": 0.068,
+  "whs_ns": 0.015,
+  "drc": [
+    [
+      "CHECK-3",
+      "Warning",
+      "1"
+    ],
+    [
+      "DPIP-1",
+      "Warning",
+      "384"
+    ],
+    [
+      "REQP-1839",
+      "Warning",
+      "12"
+    ],
+    [
+      "REQP-1840",
+      "Warning",
+      "20"
+    ],
+    [
+      "RTSTAT-10",
+      "Warning",
+      "1"
+    ]
+  ],
+  "core_VHDL_sha256": {
+    "gig_ethernet_pcs_pma.vhd": "c214570c4dbe72b99eb8ceaa587bb3912109bab1546e10cfb03e813e901efa1e",
+    "gig_ethernet_pcs_pma_block.vhd": "ad00061e2e8af6dbdedede8fd2c473f3237268f5a3b54a7ec10c65937991ea2c",
+    "gig_ethernet_pcs_pma_reset_sync.vhd": "64116e0755096373a875f358534f2adbffed73f420292e83d1dd7cf08c727d97",
+    "gig_ethernet_pcs_pma_sync_block.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "transceiver\\gig_ethernet_pcs_pma_cpll_railing.vhd": "60f4277b01260797fff0ab0db04025dd36e3817b360c3c74c3ff591b595d009e",
+    "transceiver\\gig_ethernet_pcs_pma_gtwizard.vhd": "c6e3fe294528bd3bc370e053718f0e1c54368668212b74793c7ab1d50869fe88",
+    "transceiver\\gig_ethernet_pcs_pma_gtwizard_gt.vhd": "eb56e5773b9ff9af58e31979a7f25aa15ffc34b1f7183e220cbb23c96e32198d",
+    "transceiver\\gig_ethernet_pcs_pma_gtwizard_init.vhd": "9be7c5109252b766219d820fc7ab7c06f3c15540de594c3d36cced7be7bc311b",
+    "transceiver\\gig_ethernet_pcs_pma_gtwizard_multi_gt.vhd": "d9094ceb95dcb439176a1308c911f6ea3fef6a6519db97a64a913cb313cd4e0d",
+    "transceiver\\gig_ethernet_pcs_pma_reset_wtd_timer.vhd": "e7a40bafce9ba113785d7e1ad202c9e85d1baf156732878c049d6fe273b3abfd",
+    "transceiver\\gig_ethernet_pcs_pma_rx_startup_fsm.vhd": "790573e44a04fbc38a260483d27d2dbea00619aac4ae0e7b5cfc20e78c4a8b44",
+    "transceiver\\gig_ethernet_pcs_pma_transceiver.vhd": "03932bb1240f6849fb8dac486ffc991463899651ef38804ce9654f25e67fe132",
+    "transceiver\\gig_ethernet_pcs_pma_tx_startup_fsm.vhd": "b746354b507ba31ca0c2c4aa293edce21938567752a7c83bdff839ff0dc4a91a"
+  },
+  "source_sha256": {
+    "<workspace>\\review_resetwidth_f30a.py": "c2dbabfe843f19ad307edc5f5be2007b9e43768c57e576ac47e3d3ffe8506f02",
+    "resetwidth-f30a-build-v3.json": "4247153619a4f646f351b1c0c4a0575f78c522950ad0e14859c1ef7088352b95",
+    "experiments\\resetwidth-f30a-sim\\result.json": "cfbb4bfd1e4680a9b14ddd1e62a8d6a29aebd3b987d8d9115f79abc09e8c0d9a",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\rx-startup-before-patch.vhd": "3499fbb3cb184c3557af8c471398b8e1cbe02e160d195112af265d2a2662dcd0",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\rx-startup-after-patch.vhd": "790573e44a04fbc38a260483d27d2dbea00619aac4ae0e7b5cfc20e78c4a8b44",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\timing-summary.rpt": "f188517e38e897d4f70a6339a593636104d68db998313d99d6e985a8db401f25",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\bus-skew.rpt": "909d1d005fd310625e567e4871e8e53649b35685ebee39f3611d72880ec16e77",
+    "lrtdc-resetwidth-f30a\\build\\resetwidth-f30a\\drc.rpt": "fbf172831427e8e7206b36bbda8d6043466a8f2420da7d4f3a237004e8d874bc"
+  },
+  "limits": [
+    "WAIT_TIME_MAX extends both nativeRX reset hold and later user-clock wait.",
+    "Separately compiled placement is not matched to prior native image.",
+    "Logical ideal reset width515ns->5015ns is not a physical waveform measurement."
+  ]
+}

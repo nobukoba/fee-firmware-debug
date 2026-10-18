@@ -1,0 +1,39 @@
+{
+  "created": "2026-10-18T17:04:00.134293",
+  "phase": "monitor17_actual_exit_verified_before_hardware_operations",
+  "monitor_identity": {
+    "ProcessId": 10000,
+    "Name": "python.exe",
+    "CommandLine": "\"C:\\Users\\kobayash\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -E -B minpma_monitor17.py"
+  },
+  "monitor_actual_exit_code": 0,
+  "log": "minpma-control17-factory.jsonl",
+  "log_sha256": "a22b5038227d02dbfae138da4109cec29245334f1b66f19a996424bbb98cb0e1",
+  "finish": {
+    "event": "finish",
+    "time": "2026-10-18T17:04:00.081215",
+    "reason": "requested_stop",
+    "counts": {
+      "RBCP_checks": 311,
+      "RBCP_pass": 311,
+      "TCP_checks": 32,
+      "TCP_pass": 32,
+      "failures": 0
+    },
+    "elapsed_seconds": 9317.031
+  },
+  "counts": {
+    "RBCP_checks": 311,
+    "RBCP_pass": 311,
+    "TCP_checks": 32,
+    "TCP_pass": 32,
+    "failures": 0
+  },
+  "first_probe": "2026-10-18T14:28:43.092414",
+  "last_probe": "2026-10-18T17:03:43.071411",
+  "actual_probe_span_seconds": 9299.978997,
+  "source_sha256": {
+    "<workspace>\\stop_minpma_control17_verified.py": "2c7dbd3b64540cab6a7848f451c747bffe76182269a04484cee7a18fdb2bea4d",
+    "minpma_monitor17.py": "47014782573ca35b97b97e754f066213b9d0be1e5a69582b033654945cccb5f4"
+  }
+}

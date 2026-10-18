@@ -97,7 +97,73 @@
       "path": "f309-prototype.patch",
       "original_sha256": "a932ab22f2c82623118b3f3f9121551d01a9f38dde1bb58047183a76bc98f966",
       "exported_sha256": "a932ab22f2c82623118b3f3f9121551d01a9f38dde1bb58047183a76bc98f966"
+    },
+    {
+      "source": "minpma-slip-scale-analysis.json",
+      "path": "evidence/minpma-slip-scale-analysis.json",
+      "original_sha256": "25b77a4f1b0d228d34b775bc3d46f0003fb815f57cc4f85dbe46051e06899a7f",
+      "exported_sha256": "ed5e49871a4e794cabcc8312a2eb297d8f44afec29d7f6611fad47cdc5cadf3d"
+    },
+    {
+      "source": "resetwidth-f30a-preparation-v3.json",
+      "path": "evidence/resetwidth-f30a-preparation-v3.json",
+      "original_sha256": "ea5f11bd954cd381dca8c263e2b13bc9c0cc840431e26c98cf0e543508934ac3",
+      "exported_sha256": "865a5ff8d669daa43c42b688860c59552071f79ba67aaaa3d415542cf98b5da5"
+    },
+    {
+      "source": "resetwidth-f30a-build-v3.json",
+      "path": "evidence/resetwidth-f30a-build-v3.json",
+      "original_sha256": "4247153619a4f646f351b1c0c4a0575f78c522950ad0e14859c1ef7088352b95",
+      "exported_sha256": "a601928e8297fc4d3b6153275757f1840f1346df9a6fd36c5140cdc5d6069127"
+    },
+    {
+      "source": "resetwidth-f30a-independent-review.json",
+      "path": "evidence/resetwidth-f30a-independent-review.json",
+      "original_sha256": "c847d947e8fb7b6a115804a9baa94d689a524f6ed13fcbfc8ae24d18fa05ba21",
+      "exported_sha256": "849bf09660bfc6a155d9eb79bdbf2c4920745664be8a1afaefda440f9f9c4137"
+    },
+    {
+      "source": "resetwidth-functional-f30a.patch",
+      "path": "f30a-native-wait.patch",
+      "original_sha256": "7c4906349bcab90091edab581855eb135985ff44dd11d4e534cde815222009a7",
+      "exported_sha256": "7c4906349bcab90091edab581855eb135985ff44dd11d4e534cde815222009a7"
+    },
+    {
+      "source": "minpma-f309-design-review.json",
+      "path": "evidence/minpma-f309-design-review.json",
+      "original_sha256": "34c16ab5f6bce81a2ebfe526b4a3d5bb02a7531e2da63cedd34e42b7544c235f",
+      "exported_sha256": "d5616cd2fee049ab3cc81113b6498ef136c782a64b428cadf3e5945e59e66b8a"
+    },
+    {
+      "source": "resetwidth-cohort-width16a.json",
+      "path": "evidence/resetwidth-cohort-width16a.json",
+      "original_sha256": "ac744504b3183bce2350445706779861f04b4056d6494539c5831829a90b463c",
+      "exported_sha256": "f36d7beaa21ed9d7b294e414eea35e9ec97539d09e4254294aec3c0ffcfdbc3d"
+    },
+    {
+      "source": "resetwidth-width16a-cold3.json",
+      "path": "evidence/resetwidth-width16a-cold3.json",
+      "original_sha256": "59c19013278e590c538eae5d3376eddc4b709901c39ffbb53f1f6e9e404bb5f6",
+      "exported_sha256": "6c69b75e2a4bd01cea676a93bb075f6ce038694b58773f3bd40803099eec1ff2"
+    },
+    {
+      "source": "minpma-native-minrev16.json",
+      "path": "evidence/minpma-native-minrev16.json",
+      "original_sha256": "769c28b514056e33866970b4ab2e17cbb998ed0fe23656fda889530842aedf38",
+      "exported_sha256": "a49d73aee11e81342f4a3b0a81226509a7a8c570249b007660a7f10eed24ff58"
+    },
+    {
+      "source": "minpma-native-minrev16-cold3.json",
+      "path": "evidence/minpma-native-minrev16-cold3.json",
+      "original_sha256": "bd03c69b7f965336fa8cd82c644011564bfd0158ba64f9ecb52a0093cfb6a6e9",
+      "exported_sha256": "2e9cfc64ab3684bb40794341dbf6625c2819a641651660faa30b8432056f0c1f"
+    },
+    {
+      "source": "minpma-control17-stop-verified.json",
+      "path": "evidence/minpma-control17-stop-verified.json",
+      "original_sha256": "6cebd76748d9ed1e25b4a387953808bf78d57d8eeeab45ad090e4b09adebf995",
+      "exported_sha256": "eb5f3f7b1c443f6b867bee2557b2b514d8b8c409922d5cc2c4c28455f20f3b65"
     }
   ],
-  "updated": "2026-10-18T16:23:31.947478"
+  "updated": "2026-10-18T17:13:51.325885"
 }

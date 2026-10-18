@@ -1,0 +1,24 @@
+{
+  "created": "2026-10-18T15:32:28.804397",
+  "base_commit": "5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039",
+  "repo": "lrtdc-resetwidth-f30a",
+  "functional_replaced_lines": 1,
+  "WAIT_TIME_MAX": 1000,
+  "nominal_SYS_wait_ns": 5000,
+  "hypothesis": "Extending native RX reset hold and RX user-clock wait may be enough, avoiding any added PMA controller.",
+  "limits": [
+    "WAIT_TIME_MAX is shared by WAIT_FOR_PLL_LOCK and WAIT_FOR_RXUSRCLK; not a pulse-width-only isolation.",
+    "New implementation placement differs from previous images.",
+    "STARTUP_DELAY500ns and INIT0/SOFT0 unchanged."
+  ],
+  "source_sha256": {
+    "lrtdc-resetwidth-f30a\\patch-rx-resetwidth.tcl": "80e39fb0a5ba3e82bce3a918a24c80f5736edcb198f221aebbe63a115b123918",
+    "lrtdc-resetwidth-f30a\\build-resetwidth-f30a.tcl": "6502a90f91adefb102aab15889ab94439c369e410e4de65281bcad9608d85cd2",
+    "lrtdc-resetwidth-f30a\\hdl\\defBusAddressMap.vhd": "f3f94fa3c37b9e6bfba8c0deea155b2562df136d041330ab9bfda7fa55d8c42e",
+    "lrtdc-resetwidth-f30a\\build-resetwidth-f30a-incremental.tcl": "53d81e8ad3b7ba42ddf1f9265f8aa10a1d221c14546fd9238339e9efbb7b5c02",
+    "lrtdc-resetwidth-f30a\\build-resetwidth-f30a-incremental-v3.tcl": "7478266bafc6442024538134ee4c7f77b9fb5d6ddf700e6f25bde1e2bc4e0dca"
+  },
+  "previous_preparation_sha256": "32dd8fa3c272c371e9819782c041e32ca1ff495ec25f253516afdb0e45859f1f",
+  "comment_correction": "Same replaced constant line now accurately documents5us at200MHz; original10us comment inconsistent with100cycles.",
+  "implementation": "Manual incremental implementation reference known timing-qualified F307 rawrouted checkpoint (WNS0.068,WHS0.015), samepart/speedgrade/Vivado2023.2. Fresh functional synthesis; not exactmatched placement."
+}
