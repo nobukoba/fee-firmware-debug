@@ -1,0 +1,21 @@
+{
+  "created": "2026-10-18T21:31:39.830035",
+  "phase": "terminal_complete_event_and_process_absence_verified",
+  "report": "deepreset-extended-deepf30b16cool1.json",
+  "report_sha256": "67eb76c2c1cedf211acfe885b923fa89d4effa71e142fc0a69258082d09d01df",
+  "power_on_terminal_event": {
+    "time": "2026-10-18T21:21:52.738226",
+    "kind": "complete_power_on",
+    "successes": 3,
+    "trials": 3
+  },
+  "successes": 3,
+  "trials": 3,
+  "off_settings_seconds": [
+    30,
+    120,
+    600
+  ],
+  "actual_tool_exit_code": null,
+  "exit_evidence_limit": "Unified exec sessionID was unavailable after context handoff; actual exit code was not recovered. Completed terminal report and worker PID absence independently verified; do not label this an observed tool exit0."
+}

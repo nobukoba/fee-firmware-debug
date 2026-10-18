@@ -1,0 +1,28 @@
+{
+  "created": "2026-10-18T21:17:08.758485",
+  "phase": "pre_hardware_hypothesis",
+  "candidate": "In native RX FSM VERIFY_RECCLK_STABLE only, replace gtrxreset_i <= '0' with gtrxreset_i <= not mmcm_lock_reclocked;",
+  "functional_added_lines": 1,
+  "functional_deleted_lines": 1,
+  "native_observation": "GTRXRESET deasserted36.060us before shared TX/reference-derived user MMCM rawLOCK rose. Existing qualified flag waits another256SYS200 cycles after synchronized lock.",
+  "mechanism": "Retain native GTRXRESET until the already-existing qualified shared-userclock lock; then preserve full native50us recovered-clock wait. No added counter, FF, initial assertion, or PMA pulse.",
+  "necessary_conditions": [
+    "Physically prove shared MMCM input/reset independent of RX GTRXRESET; this patch is board-clock-architecture-specific.",
+    "Verify native FF next-state equivalence if testing a diagnostic two-LUT ECO.",
+    "Check exact routed observer sources, timing/skew/DRC, GT input/parameter invariance, matched INIT-only native versus qualified controls, full flash readbacks and normal17 regression.",
+    "A production full source build must be tested before recommending the one-line patch."
+  ],
+  "limits": [
+    "Observed sequence is a hypothesis, not proof of a manufacturer rule violation or the analog root cause.",
+    "One-line patch may fail if reset must assert after clocks settle, or if a separate analog/calibration condition matters.",
+    "No recommendation to apply this to RXOUTCLK-derived userclock designs: could introduce dependency.",
+    "Digital simulation passed actual vendor FSM but idealizes PLL/RXRESETDONE and cannot verify analog receiver behavior."
+  ],
+  "source_sha256": {
+    "WORKSPACE/plan_deepreset_clockhold.py": "8f7110440732f9beff74f91ca8c3f855c74f5346aa245f320f495cccd66a9db0",
+    "experiments/deepreset-clockhold-sim-v2/result.json": "9fa8383821577cb593178c9b48aeb8f9a9301e396b7610593eb3f88fb7ae0d7a",
+    "experiments/deepreset-clockhold-sim-v2/native.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "experiments/deepreset-clockhold-sim-v2/candidate.vhd": "48a87ffe7c31e8d474d3ea15109b397ec5b044d749c4e4f060fc57b2e5b418fd",
+    "rootcause-f104-frequency-deepbase-native.console.decoded.json": "8d2811505600778d1f95593f963da7c4eb7790cee019edc1a70893ef5694a6b7"
+  }
+}

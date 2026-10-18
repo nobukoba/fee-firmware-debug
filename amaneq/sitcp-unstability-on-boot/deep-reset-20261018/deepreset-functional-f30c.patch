@@ -1,0 +1,11 @@
+--- a/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_rx_startup_fsm.vhd
++++ b/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_rx_startup_fsm.vhd
+@@ -657,7 +657,7 @@
+             --Time-out counter is not released in this state as here the FSM
+             --does not wait for a certain period of time but checks on the number
+             --of retries in the RECCLK monitor 
+-            gtrxreset_i <= '0';
++            gtrxreset_i <= not mmcm_lock_reclocked;
+             if RECCLK_STABLE = '1' then
+               rx_state        <= RELEASE_MMCM_RESET;
+               reset_time_out  <= '1';

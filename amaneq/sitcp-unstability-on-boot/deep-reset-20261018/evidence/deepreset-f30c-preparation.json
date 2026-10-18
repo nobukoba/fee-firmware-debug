@@ -1,0 +1,29 @@
+{
+  "created": "2026-10-18T21:24:02.422032",
+  "phase": "source_prepared_not_built",
+  "repo": "lrtdc-clockhold-f30c",
+  "drive": "K:",
+  "base_commit": "5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039",
+  "functional_added_lines": 1,
+  "functional_deleted_lines": 1,
+  "hypothesis": "Retain native GTRX until already-existing qualified userMMCMlock, then fullnative CDR wait. Shared TX/reference-derived userclock architecture only.",
+  "limits": [
+    "Not hardware verified.",
+    "Connectivity inventory proves physical MMCM reset is a TXFSM FF, separate from RXFSM reset. Full source build still requires independent source/timing/DRC review.",
+    "No new timer or FF; original500ns,INIT0,SOFT0,WAITMAX100 remain."
+  ],
+  "source_sha256": {
+    "WORKSPACE/prepare_deepreset_f30c_v2.py": "ced69e7790c6af365bb03614dbe37c5663d12e8b185391c5455384c46b0f18df",
+    "prepare_deepreset_f30c.py": "cf1084714925f3ef1fb2eadde69a1464f9c87e878cbcd5d03ffbb96015b8d6e4",
+    "patch_rx_clockhold_f30c.py": "5adc1c232ce0388f185228c645e73ef09a0b834553dc8de28b4484289f260c1f",
+    "lrtdc-clockhold-f30c/patch_rx_clockhold_f30c.py": "5adc1c232ce0388f185228c645e73ef09a0b834553dc8de28b4484289f260c1f",
+    "lrtdc-clockhold-f30c/patch-rx-clockhold.tcl": "7400a31af2bd438c25ca23cf8b169f4cbf8fe10a40bfcd8e7e368c7fe5346662",
+    "lrtdc-clockhold-f30c/build-clockhold-f30c.tcl": "a216e3816a817f86816a34e832e81d51ba136d7d1eefc94bc321a3b131cfcb0c",
+    "lrtdc-clockhold-f30c/hdl/defBusAddressMap.vhd": "37360214d1d8a36e62d9d5e279122bbd5bbd697a50780a5981c87ab72c5adc84",
+    "deepreset-functional-f30c.patch": "b1f58693d6e0660960541d3d0dfe58333aacdcc3dab0d7e8faf5262086fa1ee4",
+    "lrtdc-clockhold-f30c/patch-check/rx-startup-before-patch.vhd": "b3a0ca53d6834513bbe73448515d1fff25a474f5c3e0cabd079526b45a173f0a",
+    "experiments/deepreset-clockhold-sim-v2/result.json": "9fa8383821577cb593178c9b48aeb8f9a9301e396b7610593eb3f88fb7ae0d7a",
+    "deepreset-clockhold-base-v2/inventory.tsv": "aabe60a3529d7e97907cd5644dd647de423d6afb107ca3c080286d01cc8d5195",
+    "deepreset-clockhold-hypothesis.json": "d95c36f2b544a239b3889c79a4a27687f0ab42e5dd0ce7738c644481ee516fde"
+  }
+}

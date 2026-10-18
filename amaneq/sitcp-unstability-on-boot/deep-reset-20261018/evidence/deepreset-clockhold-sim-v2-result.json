@@ -1,0 +1,31 @@
+{
+  "created": "2026-10-18T21:15:07.191926",
+  "passed": true,
+  "commands": [
+    {
+      "actual_exit_code": 0
+    },
+    {
+      "actual_exit_code": 0
+    },
+    {
+      "actual_exit_code": 0
+    }
+  ],
+  "functional_added": 1,
+  "functional_deleted": 1,
+  "source_sha256": {
+    "WORKSPACE/simulate_deepreset_clockhold_v2.py": "e157d86945665ce0da36461e5b71c37716217cce8f8c183da3bab7465917121f",
+    "lrtdc-validfilter-f30b/patch-check/backup/rx-startup-before-patch.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "lrtdc-minpma-f308/ip/gig_ethernet_pcs_pma/synth/gig_ethernet_pcs_pma_sync_block.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "experiments/deepreset-clockhold-sim-v2/candidate.vhd": "48a87ffe7c31e8d474d3ea15109b397ec5b044d749c4e4f060fc57b2e5b418fd",
+    "experiments/deepreset-clockhold-sim-v2/native.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "experiments/deepreset-clockhold-sim-v2/sync.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "experiments/deepreset-clockhold-sim-v2/tb.vhd": "7d45074fa5f50856f414362b0aab1685222baec8940dd5eb145044f45dafea79"
+  },
+  "limits": [
+    "Complete vendor digital FSM; idealized PLL/RXRESETDONE; no analog transceiver model.",
+    "Applicable only after proving shared user MMCM clock/reset independent of RX GTRXRESET.",
+    "Existing qualified MMCM lock is used; no new timer/register."
+  ]
+}

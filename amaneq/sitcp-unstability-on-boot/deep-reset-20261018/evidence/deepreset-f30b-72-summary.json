@@ -1,0 +1,105 @@
+{
+  "created": "2026-10-18T21:38:43.935890",
+  "phase": "F30B72cold_successes_and_short_soaks_complete",
+  "boards": {
+    "16": {
+      "initial_cohort": "deepreset-cohort-deepf30b16a.json",
+      "initial_successes": 3,
+      "additional_cohort": "deepreset-extended-deepf30b16x1.json",
+      "additional_successes": 30,
+      "total_successes": 39,
+      "total_trials": 39,
+      "runtime": "0x60C4F30B",
+      "full_flash_sha256": "5499c4b17ce9756842163746ac233ae16015e6a25315b3c0d9e1ca6307d0af5f"
+    },
+    "17": {
+      "initial_cohort": "deepreset-cohort-deepf30b17a.json",
+      "initial_successes": 3,
+      "additional_cohort": "deepreset-extended-deepf30b17x1.json",
+      "additional_successes": 30,
+      "total_successes": 33,
+      "total_trials": 33,
+      "runtime": "0x60C4F30B",
+      "full_flash_sha256": "5499c4b17ce9756842163746ac233ae16015e6a25315b3c0d9e1ca6307d0af5f"
+    }
+  },
+  "functional_added_lines": 4,
+  "functional_deleted_lines": 3,
+  "source_sha256": {
+    "deepreset-f30b-initial66-summary.json": "dc1dad92cd659864f4d9d48654646e6a09f7e33ffa3fb7f6ab4389b75040f44c",
+    "deepreset-cohort-deepf30b16r1.json": "cc219d9e8b1dfe02468f185f0d2ab9bdac6ef6312b0d55801021ef09b041cc99",
+    "deepreset-extended-deepf30b16cool1.json": "67eb76c2c1cedf211acfe885b923fa89d4effa71e142fc0a69258082d09d01df",
+    "deepreset-longoff16-completion-proof.json": "1de435d1b34572b02a2ef4fef3de39ac640ac107e48a510cfc3604c5bde83010",
+    "deepreset-native-deepfactory16r1.json": "2e0e55036810371317712328ce57d493930bd6a0eca152a5397e31934160eaea",
+    "WORKSPACE/aggregate_deepreset_f30b_72.py": "b1895468d29f2bf9ab6505bacd22d9819eabbd631daf6d49bdcdab04768261eb",
+    "deepreset-soak-f30b16early.jsonl": "c1882e85c627c99b8fb2cf9e21f6e85561a2de5ad044b2467fc3c0e9ab2c6a44",
+    "deepreset-soak-f30b17early.jsonl": "7d067f3af57731ee0a46bd3442f7493645e185abd42064d16e0a86bde8652279"
+  },
+  "limits": [
+    "F30B16 39/39 and17 33/33 across these cohorts, not a guarantee against future failures.",
+    "Cold means powercycle, not measured thermal equilibrium; OFF hold setting5s plus controller/absence-check overhead.",
+    "Readiness timer starts after each power-control call returns; Kikusui and ezOutlet command latency differ, so between-board readiness seconds are not a clock-startup comparison.",
+    "Packet-capture timing and on-chip startup timing are separate evidence.",
+    "Production candidate differs in placement/toolchain from originalfactory; matched F30D gate controls still pending.",
+    "TDC payload quality and analogjitter/GT supply rails are not qualified by these boot/TCP checks.",
+    "Short soaks only:16 15min and17 20min. Longer study continues.",
+    "LongOFF worker terminal result/process absence verified; exact unified-tool process exit code unavailable after context handoff, explicitly recorded separately."
+  ],
+  "factory16_reversal": {
+    "report": "deepreset-native-deepfactory16r1.json",
+    "successes": 0,
+    "trials": 3
+  },
+  "F30B16_return": {
+    "report": "deepreset-cohort-deepf30b16r1.json",
+    "successes": 3,
+    "trials": 3
+  },
+  "longOFF16": {
+    "report": "deepreset-extended-deepf30b16cool1.json",
+    "completion_proof": "deepreset-longoff16-completion-proof.json",
+    "successes": 3,
+    "trials": 3,
+    "off_settings_seconds": [
+      30,
+      120,
+      600
+    ]
+  },
+  "short_soaks": {
+    "16": {
+      "report": "deepreset-soak-f30b16early.jsonl",
+      "report_sha256": "c1882e85c627c99b8fb2cf9e21f6e85561a2de5ad044b2467fc3c0e9ab2c6a44",
+      "finish": {
+        "event": "finish",
+        "time": "2026-10-18T21:37:24.447225",
+        "reason": "duration",
+        "counts": {
+          "RBCP_checks": 30,
+          "RBCP_pass": 30,
+          "TCP_checks": 3,
+          "TCP_pass": 3,
+          "failures": 0
+        },
+        "elapsed_seconds": 900.0
+      }
+    },
+    "17": {
+      "report": "deepreset-soak-f30b17early.jsonl",
+      "report_sha256": "7d067f3af57731ee0a46bd3442f7493645e185abd42064d16e0a86bde8652279",
+      "finish": {
+        "event": "finish",
+        "time": "2026-10-18T21:36:39.675872",
+        "reason": "duration",
+        "counts": {
+          "RBCP_checks": 40,
+          "RBCP_pass": 40,
+          "TCP_checks": 4,
+          "TCP_pass": 4,
+          "failures": 0
+        },
+        "elapsed_seconds": 1200.0
+      }
+    }
+  }
+}

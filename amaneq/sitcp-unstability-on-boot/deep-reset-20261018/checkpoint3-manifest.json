@@ -1,0 +1,60 @@
+{
+  "state": "IN_PROGRESS_CHECKPOINT3",
+  "files": [
+    {
+      "source": "deepreset-f30b-72-summary.json",
+      "source_sha256": "56c4cda404e373cc897615aac82ce6b65603d78e5a58b0ff0703a9df0cb9df1b",
+      "export": "evidence/deepreset-f30b-72-summary.json",
+      "export_sha256": "9cdd2bc581283ee877a165cdb1e8af1939f522158150cc0484b8bc467f174411"
+    },
+    {
+      "source": "deepreset-native-deepfactory16r1.json",
+      "source_sha256": "2e0e55036810371317712328ce57d493930bd6a0eca152a5397e31934160eaea",
+      "export": "evidence/deepreset-native-deepfactory16r1.json",
+      "export_sha256": "d882f9709c510db786fd69cab6f3127b122674455df2e8fbebeaaa632d5590cd"
+    },
+    {
+      "source": "deepreset-cohort-deepf30b16r1.json",
+      "source_sha256": "cc219d9e8b1dfe02468f185f0d2ab9bdac6ef6312b0d55801021ef09b041cc99",
+      "export": "evidence/deepreset-cohort-deepf30b16r1.json",
+      "export_sha256": "d1ceb2ffa87e7f2486ca42e8178d682649ea4f71a86ff2e16af29d72170877cc"
+    },
+    {
+      "source": "deepreset-longoff16-completion-proof.json",
+      "source_sha256": "1de435d1b34572b02a2ef4fef3de39ac640ac107e48a510cfc3604c5bde83010",
+      "export": "evidence/deepreset-longoff16-completion-proof.json",
+      "export_sha256": "d178e41032a448344ce94d53ea061fc3c9c44d91ee550497b5e316d15a249d01"
+    },
+    {
+      "source": "deepreset-packet-interim.json",
+      "source_sha256": "c6f526475e3dc555f79e468651f9063bd41ac752554e0ad2fec118231e01bae8",
+      "export": "evidence/deepreset-packet-interim.json",
+      "export_sha256": "b9fc2aa12697705230f6d6e631fb72a1e6a604cf581c297dabe3b4fd7a8eea36"
+    },
+    {
+      "source": "deepreset-clockhold-hypothesis.json",
+      "source_sha256": "d95c36f2b544a239b3889c79a4a27687f0ab42e5dd0ce7738c644481ee516fde",
+      "export": "evidence/deepreset-clockhold-hypothesis.json",
+      "export_sha256": "396a5dad1ff75333b10d026fc0751d723fa404d72fd066b3e24138567b6bdd2e"
+    },
+    {
+      "source": "experiments/deepreset-clockhold-sim-v2/result.json",
+      "source_sha256": "9fa8383821577cb593178c9b48aeb8f9a9301e396b7610593eb3f88fb7ae0d7a",
+      "export": "evidence/deepreset-clockhold-sim-v2-result.json",
+      "export_sha256": "4f4f916aff724c147103c22112d78a68adec8adff0b192f0b0535d4eca33f241"
+    },
+    {
+      "source": "deepreset-f30c-preparation.json",
+      "source_sha256": "f3d959371199d7e57f890a98882d3033777e0617fdc3f86c8464a9942c1c245a",
+      "export": "evidence/deepreset-f30c-preparation.json",
+      "export_sha256": "4c92be241a9a2cebce0562f690711c2046b5c2b59048293336dcf6142fb8225c"
+    },
+    {
+      "source": "deepreset-functional-f30c.patch",
+      "source_sha256": "b1f58693d6e0660960541d3d0dfe58333aacdcc3dab0d7e8faf5262086fa1ee4",
+      "export": "deepreset-functional-f30c.patch",
+      "export_sha256": "b1f58693d6e0660960541d3d0dfe58333aacdcc3dab0d7e8faf5262086fa1ee4",
+      "status": "SIMULATION_ONLY_NOT_BUILT_OR_PROGRAMMED"
+    }
+  ]
+}
