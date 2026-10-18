@@ -1,0 +1,49 @@
+{
+  "started": "2026-10-19T00:22:07.355957",
+  "host": "192.168.10.17",
+  "serial": "210299BDCF8E",
+  "action": "frequency",
+  "flash_report": "flash-deepTX17b-20261019-001535-result.json",
+  "source_sha256": {
+    "WORKSPACE/deepreset_txpcs_action_v2.py": "fe9b5c53ed2896e5330a97243436ed1d12cc1d886b615bbc4a10650428e02a9c",
+    "deepreset-txpcs-unified-review.json": "fcc187c3cf4fb14784d72b60936ec0c901e5bc5b65c37854874f309e2d15b606",
+    "flash-deepTX17b-20261019-001535-result.json": "43170da3919b6313c3638213944ab67d20e1800080e5eab7778f0912e8e34f30",
+    "deepreset-txpcs-action.tcl": "b8c8b6eb0c87e12b28c350c9eb13415ff2c244e6f1bd72131750045c6df91b59",
+    "attach-deepreset-txpcs.tcl": "316084357f60e2fca1bd7bfb6d9d70c5ef6e88d0ceba2c750fd59b6f94712a00",
+    "rootcause-read-sysmon.tcl": "2e96679b943e77c33ac10a2ae3419974f2e31b4863413d883ff48adba2205df3",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c"
+  },
+  "before": {
+    "rbcp": true,
+    "tcp24": true,
+    "runtime_ip": "192.168.10.17",
+    "version": "0x60C4F104",
+    "expected_version": "0x60C4F104",
+    "identity_matches": true,
+    "success": true
+  },
+  "lane_mapping": {
+    "SYS": "SYS200",
+    "legacy_ref": "CPLL-derived TXOUTCLKPCS",
+    "RX": "RXOUTCLK"
+  },
+  "limits": [
+    "Observer-only. All functional GT inputs, >100 GT attributes, and every original primitive location/BEL preserved.",
+    "Former ref lane now measures CPLL-derived TXOUTCLKPCS, nominal62.5MHz. SYS200 and RXOUTCLK observer lanes remain.",
+    "Calibrate healthy17, reproduce bad16, then same-boot PMA repair before causal interpretation.",
+    "Average frequency only; not a measurement of analog jitter, supplies, or configuration transient."
+  ],
+  "actual_exit_code": 0,
+  "after": {
+    "rbcp": true,
+    "tcp24": true,
+    "runtime_ip": "192.168.10.17",
+    "version": "0x60C4F104",
+    "expected_version": "0x60C4F104",
+    "identity_matches": true,
+    "success": true
+  },
+  "phase": "action_complete",
+  "finished": "2026-10-19T00:22:48.603326"
+}

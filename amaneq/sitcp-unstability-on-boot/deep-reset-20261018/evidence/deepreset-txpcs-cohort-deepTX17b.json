@@ -1,0 +1,98 @@
+{
+  "started": "2026-10-19T00:15:32.533215",
+  "host": "192.168.10.17",
+  "serial": "210299BDCF8E",
+  "source_sha256": {
+    "WORKSPACE/run_deepreset_tx_meter_v3.py": "400853181e597bf2df1fc71f79b818b18a18bbaf6fe2da75ae63d9e0d856a4d0",
+    "deepreset-txpcs-unified-review.json": "fcc187c3cf4fb14784d72b60936ec0c901e5bc5b65c37854874f309e2d15b606",
+    "deepreset-txpcs/rootcause-f104-txpcs.mcs": "cbbf59d756f2dd9818d161b6eb2445cbe856143a09797f9bdbf11d18b77d8a6d",
+    "deepreset-txpcs-unified/rootcause-f104-txpcs-unified.ltx": "c07b558b5c46f369ed05ea6b051c6bd40002e826a56c00df76400bb8037d44d6",
+    "deepreset_hw_guard.py": "e3e22e46727401898cd3dbd24419b134b0080a1df67cd26c1c68a6d8d32c5832",
+    "flash_firmware.py": "712a49008ce6434b9407e4a0bb332b528fd4b316d9271b7e1e1b99c5f67af43c",
+    "dual_board_cold.py": "db4144e5e4655c5e8d511d9a3c58e7f53ffed1ad6aa9c242e0933ac6f756572d",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "deepreset_txpcs_action_v2.py": "fe9b5c53ed2896e5330a97243436ed1d12cc1d886b615bbc4a10650428e02a9c",
+    "deepreset-txpcs-action.tcl": "b8c8b6eb0c87e12b28c350c9eb13415ff2c244e6f1bd72131750045c6df91b59",
+    "attach-deepreset-txpcs.tcl": "316084357f60e2fca1bd7bfb6d9d70c5ef6e88d0ceba2c750fd59b6f94712a00",
+    "rootcause-read-sysmon.tcl": "2e96679b943e77c33ac10a2ae3419974f2e31b4863413d883ff48adba2205df3",
+    "analyze_deepreset_txpcs_frequency_v2.py": "3a7d29b4d2c345372e7879a34b1265b4c4c5672c4a3717f2ff78c2a24f3a0e1c",
+    "deepreset-control17-stop-verified.json": "eca8ea851cfe78d6859b580fe3d1805cea740cf2994e8a521952a1ec8b3b835f",
+    "deepreset-control17-factory.jsonl": "42e369d936dad5a3ee4534a71d704456d8491a0af43094767e3956332242ee00"
+  },
+  "trials": [
+    {
+      "number": 1,
+      "cold_success": true,
+      "cold_log": "deepreset-txpcs-deepTX17b-cold1.json",
+      "cold_sha256": "5c246dbaba409e73588077d9a685174ee36ba8b38d0f849bf83ed941611b3250",
+      "actions": [
+        {
+          "report": "deepreset-txpcs-action-deepTX17b-1-native.json",
+          "report_sha256": "e4f14bb05c245b80fdf5260f247bc4a1e5be3dc4202f78108f2d3af3d7caa94b",
+          "before": true,
+          "after": true
+        },
+        {
+          "report": "deepreset-txpcs-action-deepTX17b-1-beforefreq.json",
+          "report_sha256": "01a00e16f4301e51579551b236a26bbb0600bc64c24749453e719bf9db4d1b3c",
+          "before": true,
+          "after": true,
+          "analysis": "deepreset-txpcs-action-deepTX17b-1-beforefreq.txpcs-frequency.json",
+          "analysis_sha256": "fcda323e59ea5ad13ec5bad5796cabd2216689a0722de0cd4aa08eb0f5163b4e"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "time": "2026-10-19T00:15:33.417890",
+      "event": "programming_observer_must_not_powercycle"
+    },
+    {
+      "time": "2026-10-19T00:20:49.489388",
+      "event": "cold_trial",
+      "number": 1
+    },
+    {
+      "time": "2026-10-19T00:21:19.440017",
+      "event": "diagnostic_action",
+      "action": "capture",
+      "label": "deepTX17b-1-native"
+    },
+    {
+      "time": "2026-10-19T00:22:05.595201",
+      "event": "diagnostic_action",
+      "action": "frequency",
+      "label": "deepTX17b-1-beforefreq"
+    },
+    {
+      "time": "2026-10-19T00:22:51.066637",
+      "event": "trial_complete_power_on",
+      "number": 1,
+      "cold_success": true
+    },
+    {
+      "time": "2026-10-19T00:22:51.919130",
+      "event": "cohort_complete_power_on",
+      "cold_successes": 1,
+      "count": 1
+    }
+  ],
+  "limits": [
+    "Observer-only. All functional GT inputs, >100 GT attributes, and every original primitive location/BEL preserved.",
+    "Former ref lane now measures CPLL-derived TXOUTCLKPCS, nominal62.5MHz. SYS200 and RXOUTCLK observer lanes remain.",
+    "Calibrate healthy17, reproduce bad16, then same-boot PMA repair before causal interpretation.",
+    "Average frequency only; not a measurement of analog jitter, supplies, or configuration transient."
+  ],
+  "phase": "cohort_complete_power_on",
+  "flash_actual_exit_code": 0,
+  "flash_report": "flash-deepTX17b-20261019-001535-result.json",
+  "flash_report_sha256": "43170da3919b6313c3638213944ab67d20e1800080e5eab7778f0912e8e34f30",
+  "full_flash_sha256": "2421f7493910e6e057ec35106b6324948b926d03b9ac6a919eb678616fd059f6",
+  "cold1_actual_exit_code": 0,
+  "1-native_actual_exit_code": 0,
+  "1-beforefreq_actual_exit_code": 0,
+  "1-beforefreq-analysis_actual_exit_code": 0,
+  "cold_successes": 1
+}

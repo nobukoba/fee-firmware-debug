@@ -1,0 +1,348 @@
+{
+  "created": "2026-10-19T00:31:05.969399",
+  "source": "deepreset-txpcs-action-deepTX16a-1-beforefreq.console.txt",
+  "source_sha256": "b2b0bbf219f0b8030301c6aa0578ab92a122658c9cafe797f11cfc2055251345",
+  "analysis_source_sha256": "3a7d29b4d2c345372e7879a34b1265b4c4c5672c4a3717f2ff78c2a24f3a0e1c",
+  "analysis_source": "WORKSPACE/analyze_deepreset_txpcs_frequency_v2.py",
+  "clock_sanity": {
+    "total_host_seconds": 3.587,
+    "total_nominal_SYS_seconds": 3.579976725,
+    "host_cumulative_residual_seconds": [
+      0.0,
+      0.004291214999999987,
+      0.004896599999999973,
+      0.004685570000000028,
+      0.006506440000000002,
+      0.003182135000000086,
+      0.007474730000000207,
+      0.00697153500000014,
+      0.007593160000000321,
+      0.006240815000000399,
+      0.007768275000000102,
+      0.007066195000000608,
+      0.006900815000000726,
+      0.00484341000000077,
+      0.005243115000000742,
+      0.007023275000001217
+    ],
+    "per_interval_host_latency_outliers": [],
+    "interpretation": "Atomic device count deltas determine frequency. Host timestamps only validate whole-window time scale; variable post-latch JTAG read delay retained."
+  },
+  "samples": [
+    {
+      "index": 0,
+      "host_ms": 1792337459633,
+      "sys": 2623522959,
+      "TXPCS": 148531089,
+      "rx": 148808444
+    },
+    {
+      "index": 1,
+      "host_ms": 1792337459871,
+      "sys": 2670264716,
+      "TXPCS": 163137507,
+      "rx": 163415327
+    },
+    {
+      "index": 2,
+      "host_ms": 1792337460109,
+      "sys": 2717743639,
+      "TXPCS": 177974285,
+      "rx": 178252575
+    },
+    {
+      "index": 3,
+      "host_ms": 1792337460348,
+      "sys": 2765585845,
+      "TXPCS": 192924585,
+      "rx": 193203350
+    },
+    {
+      "index": 4,
+      "host_ms": 1792337460586,
+      "sys": 2812821671,
+      "TXPCS": 207685396,
+      "rx": 207964630
+    },
+    {
+      "index": 5,
+      "host_ms": 1792337460825,
+      "sys": 2861286532,
+      "TXPCS": 222830271,
+      "rx": 223109986
+    },
+    {
+      "index": 6,
+      "host_ms": 1792337461062,
+      "sys": 2907828013,
+      "TXPCS": 237374105,
+      "rx": 237654281
+    },
+    {
+      "index": 7,
+      "host_ms": 1792337461301,
+      "sys": 2955728652,
+      "TXPCS": 252342666,
+      "rx": 252623317
+    },
+    {
+      "index": 8,
+      "host_ms": 1792337461540,
+      "sys": 3003404327,
+      "TXPCS": 267240926,
+      "rx": 267522050
+    },
+    {
+      "index": 9,
+      "host_ms": 1792337461778,
+      "sys": 3051274796,
+      "TXPCS": 282200058,
+      "rx": 282481657
+    },
+    {
+      "index": 10,
+      "host_ms": 1792337462030,
+      "sys": 3101369304,
+      "TXPCS": 297854185,
+      "rx": 298136281
+    },
+    {
+      "index": 11,
+      "host_ms": 1792337462269,
+      "sys": 3149309720,
+      "TXPCS": 312835175,
+      "rx": 313117746
+    },
+    {
+      "index": 12,
+      "host_ms": 1792337462507,
+      "sys": 3196942796,
+      "TXPCS": 327720124,
+      "rx": 328003168
+    },
+    {
+      "index": 13,
+      "host_ms": 1792337462745,
+      "sys": 3244954277,
+      "TXPCS": 342723321,
+      "rx": 343006841
+    },
+    {
+      "index": 14,
+      "host_ms": 1792337462981,
+      "sys": 3292074336,
+      "TXPCS": 357447957,
+      "rx": 357731944
+    },
+    {
+      "index": 15,
+      "host_ms": 1792337463220,
+      "sys": 3339518304,
+      "TXPCS": 372273811,
+      "rx": 372558269
+    }
+  ],
+  "intervals": [
+    {
+      "sys_delta": 46741757,
+      "TXPCS_delta": 14606418,
+      "rx_delta": 14606883,
+      "nominal_seconds": 0.233708785,
+      "host_seconds": 0.238,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.49836949860486,
+      "nominal_rx_MHz": 62.500359154235476,
+      "RX_over_TXPCS": 1.0000318353206104
+    },
+    {
+      "sys_delta": 47478923,
+      "TXPCS_delta": 14836778,
+      "rx_delta": 14837248,
+      "nominal_seconds": 0.237394615,
+      "host_seconds": 0.238,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.49837638482238,
+      "nominal_rx_MHz": 62.500356210691635,
+      "RX_over_TXPCS": 1.0000316780368352
+    },
+    {
+      "sys_delta": 47842206,
+      "TXPCS_delta": 14950300,
+      "rx_delta": 14950775,
+      "nominal_seconds": 0.23921103,
+      "host_seconds": 0.239,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.498372253152375,
+      "nominal_rx_MHz": 62.50035794754113,
+      "RX_over_TXPCS": 1.0000317719376868
+    },
+    {
+      "sys_delta": 47235826,
+      "TXPCS_delta": 14760811,
+      "rx_delta": 14761280,
+      "nominal_seconds": 0.23617913,
+      "host_seconds": 0.238,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.498371469147166,
+      "nominal_rx_MHz": 62.50035725002459,
+      "RX_over_TXPCS": 1.0000317733219402
+    },
+    {
+      "sys_delta": 48464861,
+      "TXPCS_delta": 15144875,
+      "rx_delta": 15145356,
+      "nominal_seconds": 0.242324305,
+      "host_seconds": 0.239,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.498373821808755,
+      "nominal_rx_MHz": 62.500358765085494,
+      "RX_over_TXPCS": 1.0000317599187845
+    },
+    {
+      "sys_delta": 46541481,
+      "TXPCS_delta": 14543834,
+      "rx_delta": 14544295,
+      "nominal_seconds": 0.232707405,
+      "host_seconds": 0.237,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.498372151070996,
+      "nominal_rx_MHz": 62.5003531795647,
+      "RX_over_TXPCS": 1.0000316972814733
+    },
+    {
+      "sys_delta": 47900639,
+      "TXPCS_delta": 14968561,
+      "rx_delta": 14969036,
+      "nominal_seconds": 0.239503195,
+      "host_seconds": 0.239,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.49837710933251,
+      "nominal_rx_MHz": 62.5003603814137,
+      "RX_over_TXPCS": 1.0000317331772908
+    },
+    {
+      "sys_delta": 47675675,
+      "TXPCS_delta": 14898260,
+      "rx_delta": 14898733,
+      "nominal_seconds": 0.238378375,
+      "host_seconds": 0.239,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.49837050026035,
+      "nominal_rx_MHz": 62.50035474065129,
+      "RX_over_TXPCS": 1.0000317486740062
+    },
+    {
+      "sys_delta": 47870469,
+      "TXPCS_delta": 14959132,
+      "rx_delta": 14959607,
+      "nominal_seconds": 0.239352345,
+      "host_seconds": 0.238,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.49837243081951,
+      "nominal_rx_MHz": 62.50035695284289,
+      "RX_over_TXPCS": 1.000031753179262
+    },
+    {
+      "sys_delta": 50094508,
+      "TXPCS_delta": 15654127,
+      "rx_delta": 15654624,
+      "nominal_seconds": 0.25047254,
+      "host_seconds": 0.252,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.498376069488494,
+      "nominal_rx_MHz": 62.500360318939556,
+      "RX_over_TXPCS": 1.0000317488161428
+    },
+    {
+      "sys_delta": 47940416,
+      "TXPCS_delta": 14980990,
+      "rx_delta": 14981465,
+      "nominal_seconds": 0.23970208,
+      "host_seconds": 0.239,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.498372980326245,
+      "nominal_rx_MHz": 62.50035460685197,
+      "RX_over_TXPCS": 1.0000317068498144
+    },
+    {
+      "sys_delta": 47633076,
+      "TXPCS_delta": 14884949,
+      "rx_delta": 14885422,
+      "nominal_seconds": 0.23816538,
+      "host_seconds": 0.238,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.49837402900455,
+      "nominal_rx_MHz": 62.500360043932496,
+      "RX_over_TXPCS": 1.0000317770655445
+    },
+    {
+      "sys_delta": 48011481,
+      "TXPCS_delta": 15003197,
+      "rx_delta": 15003673,
+      "nominal_seconds": 0.240057405,
+      "host_seconds": 0.238,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.49837200397963,
+      "nominal_rx_MHz": 62.50035486303786,
+      "RX_over_TXPCS": 1.0000317265713434
+    },
+    {
+      "sys_delta": 47120059,
+      "TXPCS_delta": 14724636,
+      "rx_delta": 14725103,
+      "nominal_seconds": 0.235600295,
+      "host_seconds": 0.236,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.4983767528814,
+      "nominal_rx_MHz": 62.50035892357435,
+      "RX_over_TXPCS": 1.0000317155548022
+    },
+    {
+      "sys_delta": 47443968,
+      "TXPCS_delta": 14825854,
+      "rx_delta": 14826325,
+      "nominal_seconds": 0.23721984,
+      "host_seconds": 0.239,
+      "host_latency_outlier": false,
+      "nominal_TXPCS_MHz": 62.498372817383235,
+      "nominal_rx_MHz": 62.50035831741561,
+      "RX_over_TXPCS": 1.000031768827617
+    }
+  ],
+  "summary": {
+    "nominal_TXPCS_MHz": {
+      "mean": 62.49837335147216,
+      "min": 62.49836949860486,
+      "max": 62.49837710933251
+    },
+    "nominal_rx_MHz": {
+      "mean": 62.50035744372018,
+      "min": 62.5003531795647,
+      "max": 62.5003603814137
+    },
+    "RX_over_TXPCS": {
+      "mean": 1.0000317463022101,
+      "min": 1.0000316780368352,
+      "max": 1.0000318353206104
+    }
+  },
+  "limits": [
+    "Each triple latched on sameSYSedge; GrayCDC adds boundedsourcecycle latency",
+    "Nominal200MHz SYS calibration only; not analog jitter or startup transient waveform",
+    "Quiet resetinputs verified by VIOactivity; mode preserved",
+    "Host timestamps follow serialized JTAG reads; interval delays are flagged, whole-window clock check used",
+    "Legacy ref lane name replaced by physically verified TXPCS clock. NominalTXPCS62.5MHz, expected healthy RX/TXPCS near1; not0.4.",
+    "Healthy17 calibration plus bad16 and same-boot recovery comparison required before narrowing source."
+  ],
+  "phase": "atomic_TXPCS_RX_frequency_decoded",
+  "host": "192.168.10.16",
+  "physical_lane_source": "GTX TXOUTCLKPCS through one added BUFG, same64 existing binary/Gray observer FFs; functional TXOUTCLKSEL100 unchanged",
+  "action_report": "deepreset-txpcs-action-deepTX16a-1-beforefreq.json",
+  "action_report_sha256": "494f56506a4ecba200a3760a64f24c580085f0353876f7a0cdb538f71b628ac7",
+  "independent_review_sha256": "fcc187c3cf4fb14784d72b60936ec0c901e5bc5b65c37854874f309e2d15b606",
+  "legacy_decoder": "analyze_day1_frequency_v2.py",
+  "legacy_decoder_sha256": "4a2e706796e3a8f17f2fc921e9cb99c8271a4ad90f940887e7636137d4b1253b",
+  "legacy_analysis": "deepreset-txpcs-action-deepTX16a-1-beforefreq.console.frequency.json",
+  "legacy_analysis_sha256": "6f512694ff7062f4af9560b7c308b6d46db05a2983ea882a3847cee65d838f8e",
+  "decoder_actual_exit_code": 0
+}

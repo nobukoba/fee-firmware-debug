@@ -1,0 +1,47 @@
+{
+  "created": "2026-10-19T00:43:18.511395",
+  "phase": "RX_specific_recovered_clock_anomaly_reproduced_twice",
+  "result": "In two failed cold boots, CPLL-derived TXPCS mean clock remained at the same frequency as normal operation, while recoveredRXclock was~678ppm lower. After PMArecovery, RXclock returned to normal and RBCP/TCP worked; TXPCS stayed unchanged.",
+  "physical_selector_proof": {
+    "TXSYSCLKSEL": 0,
+    "RXSYSCLKSEL": 0,
+    "RXOUTCLKSEL": 2,
+    "TXOUTCLKSEL": 4
+  },
+  "reference": {
+    "source": "AMD/XilinxUG476v1.12.1",
+    "TXPCS": "Figure3-28,p150: TXOUTCLKPCS derives from PMA/CPLL parallelclock with bothSYSCLKSEL00.",
+    "RX": "p212 RXOUTCLKSEL010 selects recoveredRXOUTCLKPMA, not a reference-clock or PCS/fabric timer.",
+    "URL": "https://docs.amd.com/v/u/en-US/ug476_7Series_Transceivers"
+  },
+  "failed_trials": [
+    {
+      "number": 2,
+      "TXPCS_before_after_ppm": 0.04562534661189943,
+      "RX_relative_before_ppm": -677.5922084437669,
+      "RX_relative_after_ppm": 31.496564717903297
+    },
+    {
+      "number": 3,
+      "TXPCS_before_after_ppm": 0.025308194429030095,
+      "RX_relative_before_ppm": -677.7255549921257,
+      "RX_relative_after_ppm": 31.460755837153798
+    }
+  ],
+  "inference": "Mean-frequency anomaly lies in receive-specific recovered-clock/PMA/CDR path after sharedCPLL. This narrows the fault but does not uniquely identify the physical component or why that boot enters this state.",
+  "next_test": "Isolated CDRreferenceHOLD recovery with physical reset observers, then matched ready-held/bypass startup comparison; not yet tested.",
+  "source_sha256": {
+    "WORKSPACE/interpret_deepreset_txpcs.py": "fa69dfa669a5e118d8da1495005f48ec0599cab81bec198e4d2ed81bb0c2b9da",
+    "deepreset-txpcs-paired-summary.json": "7c090fd09360b93419ac41c5c69d7db570ec70293e3f5180c8d66b7ba01f2f01",
+    "deepreset-txpcs/gt-before.tsv": "981a0230cd452239028041576baa6cfd8710ef0edda932b031071edbd40da844",
+    "deepreset-txpcs-unified-review.json": "fcc187c3cf4fb14784d72b60936ec0c901e5bc5b65c37854874f309e2d15b606",
+    "experiments/reference/ug476-7series.pdf": "c0d4ed3fb709ac4a96936b192dfc1aaa5d1bdde89b3261d290b335e742712478",
+    "experiments/reference/ug476-7series-extracted-24h.txt": "aa83d943632949e2f6a2444c84bfd3c684eca2d6f291f715526afc88ad751788"
+  },
+  "limits": [
+    "SharedCPLL average-frequency fault is disfavoured; phase noise/jitter or common supply disturbances are not excluded.",
+    "Frequency counters cannot distinguish instantaneous frequency error from missing clock edges.",
+    "This image had one normal and two failed boots; instrumentation can change timing and loading, so do not infer a general failure rate.",
+    "No Ethernet cable-late automation, analog-eye/supply measurement, or purePMA-only reset-isolation claim."
+  ]
+}

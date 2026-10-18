@@ -1,0 +1,254 @@
+{
+  "started": "2026-10-19T00:23:08.769755",
+  "host": "192.168.10.16",
+  "serial": "210299BBCDDA",
+  "source_sha256": {
+    "WORKSPACE/run_deepreset_tx_meter_v3.py": "400853181e597bf2df1fc71f79b818b18a18bbaf6fe2da75ae63d9e0d856a4d0",
+    "deepreset-txpcs-unified-review.json": "fcc187c3cf4fb14784d72b60936ec0c901e5bc5b65c37854874f309e2d15b606",
+    "deepreset-txpcs/rootcause-f104-txpcs.mcs": "cbbf59d756f2dd9818d161b6eb2445cbe856143a09797f9bdbf11d18b77d8a6d",
+    "deepreset-txpcs-unified/rootcause-f104-txpcs-unified.ltx": "c07b558b5c46f369ed05ea6b051c6bd40002e826a56c00df76400bb8037d44d6",
+    "deepreset_hw_guard.py": "e3e22e46727401898cd3dbd24419b134b0080a1df67cd26c1c68a6d8d32c5832",
+    "flash_firmware.py": "712a49008ce6434b9407e4a0bb332b528fd4b316d9271b7e1e1b99c5f67af43c",
+    "dual_board_cold.py": "db4144e5e4655c5e8d511d9a3c58e7f53ffed1ad6aa9c242e0933ac6f756572d",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "deepreset_txpcs_action_v2.py": "fe9b5c53ed2896e5330a97243436ed1d12cc1d886b615bbc4a10650428e02a9c",
+    "deepreset-txpcs-action.tcl": "b8c8b6eb0c87e12b28c350c9eb13415ff2c244e6f1bd72131750045c6df91b59",
+    "attach-deepreset-txpcs.tcl": "316084357f60e2fca1bd7bfb6d9d70c5ef6e88d0ceba2c750fd59b6f94712a00",
+    "rootcause-read-sysmon.tcl": "2e96679b943e77c33ac10a2ae3419974f2e31b4863413d883ff48adba2205df3",
+    "analyze_deepreset_txpcs_frequency_v2.py": "3a7d29b4d2c345372e7879a34b1265b4c4c5672c4a3717f2ff78c2a24f3a0e1c",
+    "deepreset-txpcs-cohort-deepTX17b.json": "99007f2de127b7dedef4f3b7279657d46d90602869c9b396c6f4df10619caec3",
+    "deepreset-txpcs-action-deepTX17b-1-beforefreq.txpcs-frequency.json": "fcda323e59ea5ad13ec5bad5796cabd2216689a0722de0cd4aa08eb0f5163b4e"
+  },
+  "trials": [
+    {
+      "number": 1,
+      "cold_success": true,
+      "cold_log": "deepreset-txpcs-deepTX16a-cold1.json",
+      "cold_sha256": "6758798f2b04b75d9ba180a6359d61ce3c8ec6602a72696933b22bc774751b97",
+      "actions": [
+        {
+          "report": "deepreset-txpcs-action-deepTX16a-1-native.json",
+          "report_sha256": "bcea658b01a6495be681c7bcb587586c15ef8ec6c9bab3b08e53f31bd7789973",
+          "before": true,
+          "after": true
+        },
+        {
+          "report": "deepreset-txpcs-action-deepTX16a-1-beforefreq.json",
+          "report_sha256": "494f56506a4ecba200a3760a64f24c580085f0353876f7a0cdb538f71b628ac7",
+          "before": true,
+          "after": true,
+          "analysis": "deepreset-txpcs-action-deepTX16a-1-beforefreq.txpcs-frequency.json",
+          "analysis_sha256": "e2889048205ff65f824820f1e2cd8ef644b6f6c4108e83ea65b865aa95b55745"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "cold_success": false,
+      "cold_log": "deepreset-txpcs-deepTX16a-cold2.json",
+      "cold_sha256": "3b21bf04e42a3ce5f64dfb43cf8c3485d72e7bdbee81d2480c6a05bdb06856b9",
+      "actions": [
+        {
+          "report": "deepreset-txpcs-action-deepTX16a-2-native.json",
+          "report_sha256": "cbba1cc03623e6cf0d4eb2ff878ed6a81cf6c3ba612e36e3fbdd850de9136dcf",
+          "before": false,
+          "after": false
+        },
+        {
+          "report": "deepreset-txpcs-action-deepTX16a-2-beforefreq.json",
+          "report_sha256": "bb942f553639f15e68b3e6996d25d80813ca7144c74f643ccb7bbe0e33246177",
+          "before": false,
+          "after": false,
+          "analysis": "deepreset-txpcs-action-deepTX16a-2-beforefreq.txpcs-frequency.json",
+          "analysis_sha256": "377a1f7ffb88505f880ed5687e791a01c346eeefd0b95d291bed5190e05c4df1"
+        },
+        {
+          "report": "deepreset-txpcs-action-deepTX16a-2-pma.json",
+          "report_sha256": "482a959cfa538231a6e3d659b11564d01a9ccaad7fb8139ad11f3a68184927ec",
+          "before": false,
+          "after": false
+        },
+        {
+          "report": "deepreset-txpcs-action-deepTX16a-2-afterfreq.json",
+          "report_sha256": "18171fb00f4e6289d15228f76be604828de1ef4f034e2fab4b82fc333059d366",
+          "before": true,
+          "after": true,
+          "analysis": "deepreset-txpcs-action-deepTX16a-2-afterfreq.txpcs-frequency.json",
+          "analysis_sha256": "1ae3aab94788ddbf29c4c333ec1c40bc5167404adf1b0d858b4e16aae53c431d"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "cold_success": false,
+      "cold_log": "deepreset-txpcs-deepTX16a-cold3.json",
+      "cold_sha256": "63ab4645500ee4370bc48d84a0d685c14d1a8425f6815d5a05a5e88830ef0fd7",
+      "actions": [
+        {
+          "report": "deepreset-txpcs-action-deepTX16a-3-native.json",
+          "report_sha256": "8b10f31d6a7c4d8b1bb0ccc944b1a19ea73e28a50364211cbf168c1ce8ce737d",
+          "before": false,
+          "after": false
+        },
+        {
+          "report": "deepreset-txpcs-action-deepTX16a-3-beforefreq.json",
+          "report_sha256": "6c1a50d91539a7e6eb07fbc155b2e01e45eb67c32f5b54c7b5412d67f729851f",
+          "before": false,
+          "after": false,
+          "analysis": "deepreset-txpcs-action-deepTX16a-3-beforefreq.txpcs-frequency.json",
+          "analysis_sha256": "54a238e788c0ed981f8c0a0c181742c5a3977bce67798c6831fe2ae64a76e3a5"
+        },
+        {
+          "report": "deepreset-txpcs-action-deepTX16a-3-pma.json",
+          "report_sha256": "3467753b7544025454fc495fc5d09d0106d09e47c070eb688826090a9c5829ae",
+          "before": false,
+          "after": false
+        },
+        {
+          "report": "deepreset-txpcs-action-deepTX16a-3-afterfreq.json",
+          "report_sha256": "f4dbf4dcd94f8e0ec6d7405e634bdaa839ace7241fa70c088124519e0b4b10cc",
+          "before": true,
+          "after": true,
+          "analysis": "deepreset-txpcs-action-deepTX16a-3-afterfreq.txpcs-frequency.json",
+          "analysis_sha256": "430b4498638e8d419e3c5e803820e3e7e22335e7db8a72bd032a1d3b7d006b3e"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "time": "2026-10-19T00:23:09.691883",
+      "event": "programming_observer_must_not_powercycle"
+    },
+    {
+      "time": "2026-10-19T00:28:24.072061",
+      "event": "cold_trial",
+      "number": 1
+    },
+    {
+      "time": "2026-10-19T00:29:42.336722",
+      "event": "diagnostic_action",
+      "action": "capture",
+      "label": "deepTX16a-1-native"
+    },
+    {
+      "time": "2026-10-19T00:30:27.286543",
+      "event": "diagnostic_action",
+      "action": "frequency",
+      "label": "deepTX16a-1-beforefreq"
+    },
+    {
+      "time": "2026-10-19T00:31:06.001345",
+      "event": "trial_complete_power_on",
+      "number": 1,
+      "cold_success": true
+    },
+    {
+      "time": "2026-10-19T00:31:06.002345",
+      "event": "cold_trial",
+      "number": 2
+    },
+    {
+      "time": "2026-10-19T00:32:46.216450",
+      "event": "diagnostic_action",
+      "action": "capture",
+      "label": "deepTX16a-2-native"
+    },
+    {
+      "time": "2026-10-19T00:33:37.367597",
+      "event": "diagnostic_action",
+      "action": "frequency",
+      "label": "deepTX16a-2-beforefreq"
+    },
+    {
+      "time": "2026-10-19T00:34:23.774935",
+      "event": "diagnostic_action",
+      "action": "pma",
+      "label": "deepTX16a-2-pma"
+    },
+    {
+      "time": "2026-10-19T00:35:38.860596",
+      "event": "diagnostic_action",
+      "action": "frequency",
+      "label": "deepTX16a-2-afterfreq"
+    },
+    {
+      "time": "2026-10-19T00:36:24.636787",
+      "event": "trial_complete_power_on",
+      "number": 2,
+      "cold_success": false
+    },
+    {
+      "time": "2026-10-19T00:36:24.636787",
+      "event": "cold_trial",
+      "number": 3
+    },
+    {
+      "time": "2026-10-19T00:38:04.924991",
+      "event": "diagnostic_action",
+      "action": "capture",
+      "label": "deepTX16a-3-native"
+    },
+    {
+      "time": "2026-10-19T00:39:03.220327",
+      "event": "diagnostic_action",
+      "action": "frequency",
+      "label": "deepTX16a-3-beforefreq"
+    },
+    {
+      "time": "2026-10-19T00:39:44.617955",
+      "event": "diagnostic_action",
+      "action": "pma",
+      "label": "deepTX16a-3-pma"
+    },
+    {
+      "time": "2026-10-19T00:41:02.755506",
+      "event": "diagnostic_action",
+      "action": "frequency",
+      "label": "deepTX16a-3-afterfreq"
+    },
+    {
+      "time": "2026-10-19T00:41:45.178109",
+      "event": "trial_complete_power_on",
+      "number": 3,
+      "cold_success": false
+    },
+    {
+      "time": "2026-10-19T00:41:46.033498",
+      "event": "cohort_complete_power_on",
+      "cold_successes": 1,
+      "count": 3
+    }
+  ],
+  "limits": [
+    "Observer-only. All functional GT inputs, >100 GT attributes, and every original primitive location/BEL preserved.",
+    "Former ref lane now measures CPLL-derived TXOUTCLKPCS, nominal62.5MHz. SYS200 and RXOUTCLK observer lanes remain.",
+    "Calibrate healthy17, reproduce bad16, then same-boot PMA repair before causal interpretation.",
+    "Average frequency only; not a measurement of analog jitter, supplies, or configuration transient."
+  ],
+  "phase": "cohort_complete_power_on",
+  "flash_actual_exit_code": 0,
+  "flash_report": "flash-deepTX16a-20261019-002312-result.json",
+  "flash_report_sha256": "0b7a9c9e29d8d830e71ea87a3923a6a112353fb3e8eb271e18a202afa93259ce",
+  "full_flash_sha256": "2421f7493910e6e057ec35106b6324948b926d03b9ac6a919eb678616fd059f6",
+  "cold1_actual_exit_code": 0,
+  "1-native_actual_exit_code": 0,
+  "1-beforefreq_actual_exit_code": 0,
+  "1-beforefreq-analysis_actual_exit_code": 0,
+  "cold2_actual_exit_code": 0,
+  "2-native_actual_exit_code": 0,
+  "2-beforefreq_actual_exit_code": 0,
+  "2-beforefreq-analysis_actual_exit_code": 0,
+  "2-pma_actual_exit_code": 0,
+  "2-afterfreq_actual_exit_code": 0,
+  "2-afterfreq-analysis_actual_exit_code": 0,
+  "cold3_actual_exit_code": 0,
+  "3-native_actual_exit_code": 0,
+  "3-beforefreq_actual_exit_code": 0,
+  "3-beforefreq-analysis_actual_exit_code": 0,
+  "3-pma_actual_exit_code": 0,
+  "3-afterfreq_actual_exit_code": 0,
+  "3-afterfreq-analysis_actual_exit_code": 0,
+  "cold_successes": 1
+}

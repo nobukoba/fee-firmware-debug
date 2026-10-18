@@ -1,0 +1,218 @@
+{
+  "created": "2026-10-19T00:42:08.289203",
+  "phase": "paired_TXPCS_RX_study_complete",
+  "healthy_calibration": [
+    {
+      "number": 1,
+      "cold_success": true,
+      "frequencies": [
+        {
+          "network_before": true,
+          "network_after": true,
+          "summary": {
+            "nominal_TXPCS_MHz": {
+              "mean": 62.49992125465781,
+              "min": 62.49991886685522,
+              "max": 62.499923847348725
+            },
+            "nominal_rx_MHz": {
+              "mean": 62.50206101651397,
+              "min": 62.502058632701555,
+              "max": 62.502063488637496
+            },
+            "RX_over_TXPCS": {
+              "mean": 1.000034236232834,
+              "min": 1.000034187347751,
+              "max": 1.000034273900033
+            }
+          },
+          "RX_minus_TXPCS_ppm": 34.23623283405064,
+          "report": "deepreset-txpcs-action-deepTX17b-1-beforefreq.json",
+          "analysis": "deepreset-txpcs-action-deepTX17b-1-beforefreq.txpcs-frequency.json"
+        }
+      ]
+    }
+  ],
+  "problem_trials": [
+    {
+      "number": 1,
+      "cold_success": true,
+      "frequencies": [
+        {
+          "network_before": true,
+          "network_after": true,
+          "summary": {
+            "nominal_TXPCS_MHz": {
+              "mean": 62.49837335147216,
+              "min": 62.49836949860486,
+              "max": 62.49837710933251
+            },
+            "nominal_rx_MHz": {
+              "mean": 62.50035744372018,
+              "min": 62.5003531795647,
+              "max": 62.5003603814137
+            },
+            "RX_over_TXPCS": {
+              "mean": 1.0000317463022101,
+              "min": 1.0000316780368352,
+              "max": 1.0000318353206104
+            }
+          },
+          "RX_minus_TXPCS_ppm": 31.74630221014496,
+          "report": "deepreset-txpcs-action-deepTX16a-1-beforefreq.json",
+          "analysis": "deepreset-txpcs-action-deepTX16a-1-beforefreq.txpcs-frequency.json"
+        }
+      ],
+      "paired_failure_recovery_observed": false
+    },
+    {
+      "number": 2,
+      "cold_success": false,
+      "frequencies": [
+        {
+          "network_before": false,
+          "network_after": false,
+          "summary": {
+            "nominal_TXPCS_MHz": {
+              "mean": 62.49837895609508,
+              "min": 62.49837603099059,
+              "max": 62.498381619511235
+            },
+            "nominal_rx_MHz": {
+              "mean": 62.45603054147401,
+              "min": 62.45602556201748,
+              "max": 62.45603519642313
+            },
+            "RX_over_TXPCS": {
+              "mean": 0.9993224077915562,
+              "min": 0.9993223064447274,
+              "max": 0.9993225123980736
+            }
+          },
+          "RX_minus_TXPCS_ppm": -677.5922084437669,
+          "report": "deepreset-txpcs-action-deepTX16a-2-beforefreq.json",
+          "analysis": "deepreset-txpcs-action-deepTX16a-2-beforefreq.txpcs-frequency.json"
+        },
+        {
+          "network_before": true,
+          "network_after": true,
+          "summary": {
+            "nominal_TXPCS_MHz": {
+              "mean": 62.49838180760528,
+              "min": 62.49837877164375,
+              "max": 62.498384816515156
+            },
+            "nominal_rx_MHz": {
+              "mean": 62.5003502919326,
+              "min": 62.50034805225053,
+              "max": 62.5003525009464
+            },
+            "RX_over_TXPCS": {
+              "mean": 1.000031496564718,
+              "min": 1.0000314562177317,
+              "max": 1.0000315453124302
+            }
+          },
+          "RX_minus_TXPCS_ppm": 31.496564717903297,
+          "report": "deepreset-txpcs-action-deepTX16a-2-afterfreq.json",
+          "analysis": "deepreset-txpcs-action-deepTX16a-2-afterfreq.txpcs-frequency.json"
+        }
+      ],
+      "paired_failure_recovery_observed": true,
+      "TXPCS_before_to_after_ppm": 0.04562534661189943,
+      "RX_relative_change_ppm": 709.0887731616702,
+      "RX_specific_mean_frequency_recovery_evidence": true
+    },
+    {
+      "number": 3,
+      "cold_success": false,
+      "frequencies": [
+        {
+          "network_before": false,
+          "network_after": false,
+          "summary": {
+            "nominal_TXPCS_MHz": {
+              "mean": 62.49838259113796,
+              "min": 62.49837949355556,
+              "max": 62.498384362146176
+            },
+            "nominal_rx_MHz": {
+              "mean": 62.45602584011025,
+              "min": 62.456022971202366,
+              "max": 62.45603193047046
+            },
+            "RX_over_TXPCS": {
+              "mean": 0.9993222744450079,
+              "min": 0.9993222002236354,
+              "max": 0.9993223509019761
+            }
+          },
+          "RX_minus_TXPCS_ppm": -677.7255549921257,
+          "report": "deepreset-txpcs-action-deepTX16a-3-beforefreq.json",
+          "analysis": "deepreset-txpcs-action-deepTX16a-3-beforefreq.txpcs-frequency.json"
+        },
+        {
+          "network_before": true,
+          "network_after": true,
+          "summary": {
+            "nominal_TXPCS_MHz": {
+              "mean": 62.498384172859176,
+              "min": 62.49838157457127,
+              "max": 62.49838577735579
+            },
+            "nominal_rx_MHz": {
+              "mean": 62.500350419263825,
+              "min": 62.50034733557072,
+              "max": 62.50035365153745
+            },
+            "RX_over_TXPCS": {
+              "mean": 1.0000314607558372,
+              "min": 1.0000314069873126,
+              "max": 1.00003152332326
+            }
+          },
+          "RX_minus_TXPCS_ppm": 31.460755837153798,
+          "report": "deepreset-txpcs-action-deepTX16a-3-afterfreq.json",
+          "analysis": "deepreset-txpcs-action-deepTX16a-3-afterfreq.txpcs-frequency.json"
+        }
+      ],
+      "paired_failure_recovery_observed": true,
+      "TXPCS_before_to_after_ppm": 0.025308194429030095,
+      "RX_relative_change_ppm": 709.1863108292795,
+      "RX_specific_mean_frequency_recovery_evidence": true
+    }
+  ],
+  "paired_failure_recoveries": 2,
+  "RX_specific_mean_frequency_recovery_cases": 2,
+  "source_sha256": {
+    "WORKSPACE/summarize_deepreset_txpcs.py": "7b57c6e2bcc3575199c763ac2b1104b95b94e23995319d5773e6a07cb2aba5a8",
+    "deepreset-txpcs-cohort-deepTX17b.json": "99007f2de127b7dedef4f3b7279657d46d90602869c9b396c6f4df10619caec3",
+    "deepreset-txpcs-cohort-deepTX16a.json": "de0892764d1721c9455b3e887802e37a3f49b9f556e7fdb9ffa40b683224901a",
+    "deepreset-txpcs-unified-review.json": "fcc187c3cf4fb14784d72b60936ec0c901e5bc5b65c37854874f309e2d15b606",
+    "deepreset-txpcs-action-deepTX17b-1-native.json": "e4f14bb05c245b80fdf5260f247bc4a1e5be3dc4202f78108f2d3af3d7caa94b",
+    "deepreset-txpcs-action-deepTX17b-1-beforefreq.json": "01a00e16f4301e51579551b236a26bbb0600bc64c24749453e719bf9db4d1b3c",
+    "deepreset-txpcs-action-deepTX17b-1-beforefreq.txpcs-frequency.json": "fcda323e59ea5ad13ec5bad5796cabd2216689a0722de0cd4aa08eb0f5163b4e",
+    "deepreset-txpcs-action-deepTX16a-1-native.json": "bcea658b01a6495be681c7bcb587586c15ef8ec6c9bab3b08e53f31bd7789973",
+    "deepreset-txpcs-action-deepTX16a-1-beforefreq.json": "494f56506a4ecba200a3760a64f24c580085f0353876f7a0cdb538f71b628ac7",
+    "deepreset-txpcs-action-deepTX16a-1-beforefreq.txpcs-frequency.json": "e2889048205ff65f824820f1e2cd8ef644b6f6c4108e83ea65b865aa95b55745",
+    "deepreset-txpcs-action-deepTX16a-2-native.json": "cbba1cc03623e6cf0d4eb2ff878ed6a81cf6c3ba612e36e3fbdd850de9136dcf",
+    "deepreset-txpcs-action-deepTX16a-2-beforefreq.json": "bb942f553639f15e68b3e6996d25d80813ca7144c74f643ccb7bbe0e33246177",
+    "deepreset-txpcs-action-deepTX16a-2-beforefreq.txpcs-frequency.json": "377a1f7ffb88505f880ed5687e791a01c346eeefd0b95d291bed5190e05c4df1",
+    "deepreset-txpcs-action-deepTX16a-2-pma.json": "482a959cfa538231a6e3d659b11564d01a9ccaad7fb8139ad11f3a68184927ec",
+    "deepreset-txpcs-action-deepTX16a-2-afterfreq.json": "18171fb00f4e6289d15228f76be604828de1ef4f034e2fab4b82fc333059d366",
+    "deepreset-txpcs-action-deepTX16a-2-afterfreq.txpcs-frequency.json": "1ae3aab94788ddbf29c4c333ec1c40bc5167404adf1b0d858b4e16aae53c431d",
+    "deepreset-txpcs-action-deepTX16a-3-native.json": "8b10f31d6a7c4d8b1bb0ccc944b1a19ea73e28a50364211cbf168c1ce8ce737d",
+    "deepreset-txpcs-action-deepTX16a-3-beforefreq.json": "6c1a50d91539a7e6eb07fbc155b2e01e45eb67c32f5b54c7b5412d67f729851f",
+    "deepreset-txpcs-action-deepTX16a-3-beforefreq.txpcs-frequency.json": "54a238e788c0ed981f8c0a0c181742c5a3977bce67798c6831fe2ae64a76e3a5",
+    "deepreset-txpcs-action-deepTX16a-3-pma.json": "3467753b7544025454fc495fc5d09d0106d09e47c070eb688826090a9c5829ae",
+    "deepreset-txpcs-action-deepTX16a-3-afterfreq.json": "f4dbf4dcd94f8e0ec6d7405e634bdaa839ace7241fa70c088124519e0b4b10cc",
+    "deepreset-txpcs-action-deepTX16a-3-afterfreq.txpcs-frequency.json": "430b4498638e8d419e3c5e803820e3e7e22335e7db8a72bd032a1d3b7d006b3e"
+  },
+  "limits": [
+    "Three frequency samples within one trial are not independent cold boots. Trial number is the independent boot unit.",
+    "TXOUTCLKPCS measured after sharedCPLL; normal mean frequency narrows the mean-frequency anomaly to RX-specific path, but does not exclude CPLL phase noise, power integrity, or analog coupling.",
+    "PMA operation is a recovery intervention; this cohort does not independently decode all physical reset activity and does not establish purePMA-only isolation.",
+    "Averaged digital clock counters do not measure instantaneous jitter, eye quality, analog rail transients, or unique failing component.",
+    "Normal RX/TXPCS includes Ethernet link-partner clock offset; exact ratio1 is not required."
+  ]
+}

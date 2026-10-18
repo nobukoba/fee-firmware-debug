@@ -1,0 +1,260 @@
+{
+  "created": "2026-10-19T00:15:22.916614",
+  "phase": "independent_review_passed_ready_for_hardware",
+  "runtime": "0x60C4F104",
+  "mcs": "deepreset-txpcs/rootcause-f104-txpcs.mcs",
+  "mcs_sha256": "cbbf59d756f2dd9818d161b6eb2445cbe856143a09797f9bdbf11d18b77d8a6d",
+  "expected_full_flash_sha256": "2421f7493910e6e057ec35106b6324948b926d03b9ac6a919eb678616fd059f6",
+  "ltx": "deepreset-txpcs-unified/rootcause-f104-txpcs-unified.ltx",
+  "postload_actual_exit_code": 0,
+  "timing": {
+    "deepreset-txpcs": {
+      "wns_ns": 0.175,
+      "whs_ns": 0.016,
+      "drc": [
+        [
+          "CHECK-3",
+          "Warning",
+          "1"
+        ],
+        [
+          "DPIP-1",
+          "Warning",
+          "384"
+        ],
+        [
+          "PDCN-1569",
+          "Warning",
+          "3"
+        ],
+        [
+          "PDRC-62",
+          "Warning",
+          "1"
+        ],
+        [
+          "REQP-1839",
+          "Warning",
+          "12"
+        ],
+        [
+          "REQP-1840",
+          "Warning",
+          "20"
+        ],
+        [
+          "RTSTAT-10",
+          "Warning",
+          "1"
+        ]
+      ]
+    },
+    "deepreset-txpcs-postload": {
+      "wns_ns": 0.175,
+      "whs_ns": 0.016,
+      "drc": [
+        [
+          "CHECK-3",
+          "Warning",
+          "1"
+        ],
+        [
+          "DPIP-1",
+          "Warning",
+          "384"
+        ],
+        [
+          "PDCN-1569",
+          "Warning",
+          "3"
+        ],
+        [
+          "PDRC-62",
+          "Warning",
+          "1"
+        ],
+        [
+          "REQP-1839",
+          "Warning",
+          "12"
+        ],
+        [
+          "REQP-1840",
+          "Warning",
+          "20"
+        ],
+        [
+          "RTSTAT-10",
+          "Warning",
+          "1"
+        ]
+      ]
+    }
+  },
+  "source_sha256": {
+    "WORKSPACE/review_deepreset_txpcs_v2.py": "57474f59884d6ef8350e9fe2e2d276dec7f56778bf781eb477dd290366963fc8",
+    "deepreset-txpcs-build.json": "3c1b9089c23b82ef776f1630078920391f121e81b243ea0123d61633155945d7",
+    "audit-deepreset-txpcs-postload.tcl": "6fb8ef502878bd6bdeea2d87b94fd23a201f95af57f22b702ca1aae7dec6e312",
+    "lrtdc-rootcause-f104/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_gtwizard_gt.vhd": "eb56e5773b9ff9af58e31979a7f25aa15ffc34b1f7183e220cbb23c96e32198d",
+    "deepreset-txpcs-fresh-review-failure.json": "f979d442297950bb49c4343f6c78c9648fb01fa1170ed12670dcd2b5af1c1b2b",
+    "WORKSPACE/prepare_deepreset_txpcs_unified.py": "cd6eeda5c728d891a0fb4225b4c9f4d0cc327a4741681262454963a85cf032f0",
+    "deepreset_unify_probes.py": "9e92e8426a0b191412e380dde2576935aa47cef44526bf42c1d913d87c0277c1",
+    "normalize_rootcause_f104_probes.py": "a17e536e9d5eca73bc61ea429f105c74de4ef307ed5f6af9f5a889b38ed83eed",
+    "deepreset-txpcs-independent-review.json": "6bbb5fa982175c0f5a32615dbb0a91ce1a23476f8f8969f8924a2ce937040e3b",
+    "deepreset-txpcs-unified/normalization.json": "ac8c3ef04307ea318fb522354d707dc62a60960d15789e9130899e0fb29c2f6f"
+  },
+  "artifacts": {
+    "deepreset-txpcs/after-BEL.txt": "94b89950f055b12cd6fcdaaf3c8ff8527f05c6b846f57dc74e6642ada79bd3e5",
+    "deepreset-txpcs/after-LOC.txt": "f75d1323500e859daa77b9db937c6ccacbdae1057aaf03f037d7149fc5a1a596",
+    "deepreset-txpcs/after-NAME.txt": "e33a7515abd0ea66edd2a603f08c2987a273e0d9ac3ef122c59097a52644f0c8",
+    "deepreset-txpcs/after-REF_NAME.txt": "45f9183649443210d085ba685501194a4b6b9e428ee0edd4f86cf4187e5b6b18",
+    "deepreset-txpcs/bus-skew.rpt": "d15faad01f631146cb19be882bf791b8db910718c1eff31d416cd405aaec05db",
+    "deepreset-txpcs/clock-observer.tsv": "ce3f7a772ae045e9418eea3668ecdbd995798e1cf533ff4f5811601bf27c0a71",
+    "deepreset-txpcs/drc.rpt": "eeaf9e02596744da11d10b4135609ab431e90844ba3112dfb834c5f4a4b09c94",
+    "deepreset-txpcs/gt-before.tsv": "981a0230cd452239028041576baa6cfd8710ef0edda932b031071edbd40da844",
+    "deepreset-txpcs/original-BEL.txt": "94b89950f055b12cd6fcdaaf3c8ff8527f05c6b846f57dc74e6642ada79bd3e5",
+    "deepreset-txpcs/original-LOC.txt": "f75d1323500e859daa77b9db937c6ccacbdae1057aaf03f037d7149fc5a1a596",
+    "deepreset-txpcs/original-NAME.txt": "e33a7515abd0ea66edd2a603f08c2987a273e0d9ac3ef122c59097a52644f0c8",
+    "deepreset-txpcs/original-REF_NAME.txt": "45f9183649443210d085ba685501194a4b6b9e428ee0edd4f86cf4187e5b6b18",
+    "deepreset-txpcs/ref-gray-cdc-timing.rpt": "8d59a487359b414b18286c769e0286471e7c4272865f4fa0dc66e6036bae34bb",
+    "deepreset-txpcs/rootcause-f104-txpcs.bit": "841f304c6927d087fd8eb924c7f36187edc2e9e0748db3b3ef17e7d3328d47ff",
+    "deepreset-txpcs/rootcause-f104-txpcs.dcp": "59c8857745c42e82662b2f6365e3cb80329a25e323c0d60ae44e4bb32e959646",
+    "deepreset-txpcs/rootcause-f104-txpcs.ltx": "50c8a71916f3a5c82ae96251d5433018b6e600196333dbee9dcda42557cab218",
+    "deepreset-txpcs/rootcause-f104-txpcs.mcs": "cbbf59d756f2dd9818d161b6eb2445cbe856143a09797f9bdbf11d18b77d8a6d",
+    "deepreset-txpcs/rootcause-f104-txpcs.prm": "cfffb144e270a409fadc34f397590a3d3541f2384c75203c36ec3b41f542ac33",
+    "deepreset-txpcs/rx-gray-cdc-timing.rpt": "1ec7eaf4d86f230a0226110510a5eadb24f361e3e02a4a3e11724dc4e450acfd",
+    "deepreset-txpcs/timing-summary.rpt": "d671619170c0e6be7b1bc4999d10a0f6096c06f2cc942cba2ab912c832533f4e",
+    "deepreset-txpcs-postload/base-BEL.txt": "94b89950f055b12cd6fcdaaf3c8ff8527f05c6b846f57dc74e6642ada79bd3e5",
+    "deepreset-txpcs-postload/base-LOC.txt": "f75d1323500e859daa77b9db937c6ccacbdae1057aaf03f037d7149fc5a1a596",
+    "deepreset-txpcs-postload/base-NAME.txt": "e33a7515abd0ea66edd2a603f08c2987a273e0d9ac3ef122c59097a52644f0c8",
+    "deepreset-txpcs-postload/base-REF_NAME.txt": "45f9183649443210d085ba685501194a4b6b9e428ee0edd4f86cf4187e5b6b18",
+    "deepreset-txpcs-postload/final-BEL.txt": "94b89950f055b12cd6fcdaaf3c8ff8527f05c6b846f57dc74e6642ada79bd3e5",
+    "deepreset-txpcs-postload/final-LOC.txt": "f75d1323500e859daa77b9db937c6ccacbdae1057aaf03f037d7149fc5a1a596",
+    "deepreset-txpcs-postload/final-NAME.txt": "e33a7515abd0ea66edd2a603f08c2987a273e0d9ac3ef122c59097a52644f0c8",
+    "deepreset-txpcs-postload/final-REF_NAME.txt": "45f9183649443210d085ba685501194a4b6b9e428ee0edd4f86cf4187e5b6b18",
+    "deepreset-txpcs-postload/fresh-bus-skew.rpt": "197179833a752f3def886933cd0726e6ffa40b3b3da42f1ab050c7a2a7c634db",
+    "deepreset-txpcs-postload/fresh-drc.rpt": "b269376a1325d846859e0e6ba5e70ac3282ce04abc2e00ae7f3aa6326454a199",
+    "deepreset-txpcs-postload/fresh-timing-summary.rpt": "6ea53d0bfa759ff747e4b5f89967deafe58501a7e9938e731cd2e2068014d1b9",
+    "deepreset-txpcs-postload/physical-inspection.tsv": "fa1d097e00a42d76957c8f6b9a7b7706ce5220f9624deeb514d6900ff0dbf2cc",
+    "deepreset-txpcs-unified/rootcause-f104-txpcs-unified.ltx": "c07b558b5c46f369ed05ea6b051c6bd40002e826a56c00df76400bb8037d44d6"
+  },
+  "limits": [
+    "Observer-only. All functional GT inputs, >100 GT attributes, and every original primitive location/BEL preserved.",
+    "Former ref lane now measures CPLL-derived TXOUTCLKPCS, nominal62.5MHz. SYS200 and RXOUTCLK observer lanes remain.",
+    "Calibrate healthy17, reproduce bad16, then same-boot PMA repair before causal interpretation.",
+    "Average frequency only; not a measurement of analog jitter, supplies, or configuration transient."
+  ],
+  "normalization": {
+    "source": "deepreset-txpcs/rootcause-f104-txpcs.ltx",
+    "source_sha256": "50c8a71916f3a5c82ae96251d5433018b6e600196333dbee9dcda42557cab218",
+    "output": "deepreset-txpcs-unified/rootcause-f104-txpcs-unified.ltx",
+    "output_sha256": "c07b558b5c46f369ed05ea6b051c6bd40002e826a56c00df76400bb8037d44d6",
+    "ports": [
+      {
+        "core": "top",
+        "UUID": "C318501FEFAD59458629E37DC1E2F326",
+        "direction": "IN",
+        "port": 0,
+        "width": 16,
+        "source_segments": 1
+      },
+      {
+        "core": "top",
+        "UUID": "C318501FEFAD59458629E37DC1E2F326",
+        "direction": "IN",
+        "port": 1,
+        "width": 16,
+        "source_segments": 1
+      },
+      {
+        "core": "top",
+        "UUID": "C318501FEFAD59458629E37DC1E2F326",
+        "direction": "IN",
+        "port": 2,
+        "width": 32,
+        "source_segments": 1
+      },
+      {
+        "core": "top",
+        "UUID": "C318501FEFAD59458629E37DC1E2F326",
+        "direction": "IN",
+        "port": 3,
+        "width": 32,
+        "source_segments": 1
+      },
+      {
+        "core": "top",
+        "UUID": "C318501FEFAD59458629E37DC1E2F326",
+        "direction": "IN",
+        "port": 4,
+        "width": 32,
+        "source_segments": 1
+      },
+      {
+        "core": "top",
+        "UUID": "C318501FEFAD59458629E37DC1E2F326",
+        "direction": "OUT",
+        "port": 0,
+        "width": 6,
+        "source_segments": 1
+      },
+      {
+        "core": "gt",
+        "UUID": "CBC437490DBB5CCCA58ECCB2278E8E96",
+        "direction": "IN",
+        "port": 0,
+        "width": 32,
+        "source_segments": 1
+      },
+      {
+        "core": "gt",
+        "UUID": "CBC437490DBB5CCCA58ECCB2278E8E96",
+        "direction": "IN",
+        "port": 1,
+        "width": 32,
+        "source_segments": 7
+      },
+      {
+        "core": "gt",
+        "UUID": "CBC437490DBB5CCCA58ECCB2278E8E96",
+        "direction": "IN",
+        "port": 2,
+        "width": 32,
+        "source_segments": 32
+      },
+      {
+        "core": "gt",
+        "UUID": "CBC437490DBB5CCCA58ECCB2278E8E96",
+        "direction": "IN",
+        "port": 3,
+        "width": 32,
+        "source_segments": 32
+      },
+      {
+        "core": "gt",
+        "UUID": "CBC437490DBB5CCCA58ECCB2278E8E96",
+        "direction": "IN",
+        "port": 4,
+        "width": 32,
+        "source_segments": 32
+      },
+      {
+        "core": "gt",
+        "UUID": "CBC437490DBB5CCCA58ECCB2278E8E96",
+        "direction": "IN",
+        "port": 5,
+        "width": 32,
+        "source_segments": 24
+      },
+      {
+        "core": "gt",
+        "UUID": "CBC437490DBB5CCCA58ECCB2278E8E96",
+        "direction": "OUT",
+        "port": 0,
+        "width": 16,
+        "source_segments": 9
+      }
+    ]
+  },
+  "review_note": "Original fullphysical/timing review preserved; display probes normalized with exact13physicalport bit coverage and unchangedVIOUUID. No bitstream/firmware change."
+}

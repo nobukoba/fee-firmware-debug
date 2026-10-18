@@ -1,0 +1,20 @@
+{
+  "created": "2026-10-19T00:06:52.048545",
+  "phase": "original_review_rejected_incorrect_DRC_limits",
+  "original_reviewer": "review_deepreset_txpcs.py",
+  "original_reviewer_actual_exit_code": 1,
+  "fresh_vivado_actual_exit_code": 0,
+  "proof": "Original reviewer reached line22 after c.returncode==0 assertion and physical marker/64FF checks passed.",
+  "reason": "Production limit418 was copied but nativeF104observer already has422 warnings. AdditionalPDCN1569=3/PDRC62=1 warning detail blocks are exactly unchanged after whitespace normalization. RTSTAT lists onlyfirst15of313 loads, ordering differs; its count is unchanged.",
+  "preparation_failure": "V2 stopped before writing any review because full-report equality also included header and truncated RTSTAT list ordering. V3 compares all four additional warning blocks explicitly; all row limits match native.",
+  "source_sha256": {
+    "WORKSPACE/prepare_deepreset_txpcs_review_v3.py": "260d37154e5f71a56c1d5276779ff17493cf77f097793cb3c87ff8830703e831",
+    "prepare_deepreset_txpcs_review_v2.py": "c1d9a00b6842fa27f33dbc6b6626720fafef1392163648d5798097fa89fa8f30",
+    "review_deepreset_txpcs.py": "fd81d0b4ded89ef567754f419a3e3fb5e905343d39262643429b6dc7feba9324",
+    "day1-frequency-capture-v14/drc.rpt": "6a4ae63840a556fef017d6e96e70f9b5ef4d2bb7dd262f789ad27a9606eed815",
+    "deepreset-txpcs/drc.rpt": "eeaf9e02596744da11d10b4135609ab431e90844ba3112dfb834c5f4a4b09c94",
+    "deepreset-txpcs-postload/fresh-drc.rpt": "b269376a1325d846859e0e6ba5e70ac3282ce04abc2e00ae7f3aa6326454a199",
+    "deepreset-txpcs-postload.console.txt": "5d8b01fc102de6ad25f54c7dbd4fd3ac7fcfddaddb1226b300d476e152eaab98",
+    "audit-deepreset-txpcs-postload.tcl": "6fb8ef502878bd6bdeea2d87b94fd23a201f95af57f22b702ca1aae7dec6e312"
+  }
+}

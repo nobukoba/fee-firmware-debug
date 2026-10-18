@@ -1,0 +1,113 @@
+{
+  "state": "IN_PROGRESS_CHECKPOINT6",
+  "files": [
+    {
+      "source": "deepreset-txpcs-paired-summary.json",
+      "source_sha256": "7c090fd09360b93419ac41c5c69d7db570ec70293e3f5180c8d66b7ba01f2f01",
+      "export": "evidence/deepreset-txpcs-paired-summary.json",
+      "export_sha256": "f04d0e67f92513871423f2b05d957bb9122a4f6506673b26b93eeaecf6ce5c93"
+    },
+    {
+      "source": "deepreset-txpcs-interpretation.json",
+      "source_sha256": "76e3d104f026d6e84921fb9b4b6edff858a3c830a5c3dc5663cf38368710b296",
+      "export": "evidence/deepreset-txpcs-interpretation.json",
+      "export_sha256": "e50a4fd34f6a37781fa82fc3909f6ecefe8e18a9178870964aab710398a00465"
+    },
+    {
+      "source": "deepreset-txpcs-cohort-deepTX17b.json",
+      "source_sha256": "99007f2de127b7dedef4f3b7279657d46d90602869c9b396c6f4df10619caec3",
+      "export": "evidence/deepreset-txpcs-cohort-deepTX17b.json",
+      "export_sha256": "0874fc1782d1c1725d44fcddda5e3cd177ff637c46b08b042404771c34b07211"
+    },
+    {
+      "source": "deepreset-txpcs-cohort-deepTX16a.json",
+      "source_sha256": "de0892764d1721c9455b3e887802e37a3f49b9f556e7fdb9ffa40b683224901a",
+      "export": "evidence/deepreset-txpcs-cohort-deepTX16a.json",
+      "export_sha256": "0da7a9df3587364acd786261f7d4a4ecc33892a1a727522a2bd02061c0bd3873"
+    },
+    {
+      "source": "deepreset-txpcs-unified-review.json",
+      "source_sha256": "fcc187c3cf4fb14784d72b60936ec0c901e5bc5b65c37854874f309e2d15b606",
+      "export": "evidence/deepreset-txpcs-unified-review.json",
+      "export_sha256": "37ca735342333e47d23aeec295352d1bc84cbe9291a1ef20c4599d12fcde683e"
+    },
+    {
+      "source": "deepreset-txpcs-fresh-review-failure.json",
+      "source_sha256": "f979d442297950bb49c4343f6c78c9648fb01fa1170ed12670dcd2b5af1c1b2b",
+      "export": "evidence/deepreset-txpcs-fresh-review-failure.json",
+      "export_sha256": "f6de727b4eb3bb06fdbb6a83feb53d4905029e4abb2c7acdd8d353474062c893"
+    },
+    {
+      "source": "deepreset-txpcs-action-deepTX17b-1-beforefreq.json",
+      "source_sha256": "01a00e16f4301e51579551b236a26bbb0600bc64c24749453e719bf9db4d1b3c",
+      "export": "evidence/deepreset-txpcs-action-deepTX17b-1-beforefreq.json",
+      "export_sha256": "b92f5fa1e7d865db1d34f61cc1837282b6f3a9b488befda3dfbc8bd6f8b1290f"
+    },
+    {
+      "source": "deepreset-txpcs-action-deepTX17b-1-beforefreq.txpcs-frequency.json",
+      "source_sha256": "fcda323e59ea5ad13ec5bad5796cabd2216689a0722de0cd4aa08eb0f5163b4e",
+      "export": "evidence/deepreset-txpcs-action-deepTX17b-1-beforefreq.txpcs-frequency.json",
+      "export_sha256": "4bc3aee33c00e928e4c5050c0fa04b95adf643538563ef5749f74905b549af30"
+    },
+    {
+      "source": "deepreset-txpcs-action-deepTX16a-1-beforefreq.json",
+      "source_sha256": "494f56506a4ecba200a3760a64f24c580085f0353876f7a0cdb538f71b628ac7",
+      "export": "evidence/deepreset-txpcs-action-deepTX16a-1-beforefreq.json",
+      "export_sha256": "cbb68ca2a0c6a4e88496ce77ecbb2399a283cc5c631d15b02994c330a86273b6"
+    },
+    {
+      "source": "deepreset-txpcs-action-deepTX16a-1-beforefreq.txpcs-frequency.json",
+      "source_sha256": "e2889048205ff65f824820f1e2cd8ef644b6f6c4108e83ea65b865aa95b55745",
+      "export": "evidence/deepreset-txpcs-action-deepTX16a-1-beforefreq.txpcs-frequency.json",
+      "export_sha256": "a4c029a4d3bd0054e5bb6849eda9d2606d158e2c4218b8939f1d7f2017495d6e"
+    },
+    {
+      "source": "deepreset-txpcs-action-deepTX16a-2-beforefreq.json",
+      "source_sha256": "bb942f553639f15e68b3e6996d25d80813ca7144c74f643ccb7bbe0e33246177",
+      "export": "evidence/deepreset-txpcs-action-deepTX16a-2-beforefreq.json",
+      "export_sha256": "7ba8e30963c92a16b098d04a93027ee31fd6725e9e43f43135752067c51075a9"
+    },
+    {
+      "source": "deepreset-txpcs-action-deepTX16a-2-beforefreq.txpcs-frequency.json",
+      "source_sha256": "377a1f7ffb88505f880ed5687e791a01c346eeefd0b95d291bed5190e05c4df1",
+      "export": "evidence/deepreset-txpcs-action-deepTX16a-2-beforefreq.txpcs-frequency.json",
+      "export_sha256": "25d082cb179d887e5f718a8daa27cae8ae95202e729e7317e201929f4b5263e6"
+    },
+    {
+      "source": "deepreset-txpcs-action-deepTX16a-2-afterfreq.json",
+      "source_sha256": "18171fb00f4e6289d15228f76be604828de1ef4f034e2fab4b82fc333059d366",
+      "export": "evidence/deepreset-txpcs-action-deepTX16a-2-afterfreq.json",
+      "export_sha256": "1c0acaf95496069442e83ee86145f5e987a11967c0d813464640ea8b6293329a"
+    },
+    {
+      "source": "deepreset-txpcs-action-deepTX16a-2-afterfreq.txpcs-frequency.json",
+      "source_sha256": "1ae3aab94788ddbf29c4c333ec1c40bc5167404adf1b0d858b4e16aae53c431d",
+      "export": "evidence/deepreset-txpcs-action-deepTX16a-2-afterfreq.txpcs-frequency.json",
+      "export_sha256": "0333f09a9fa9670703feecb9d02d583bd9597fed81b952bd6d65e128f4f98b16"
+    },
+    {
+      "source": "deepreset-txpcs-action-deepTX16a-3-beforefreq.json",
+      "source_sha256": "6c1a50d91539a7e6eb07fbc155b2e01e45eb67c32f5b54c7b5412d67f729851f",
+      "export": "evidence/deepreset-txpcs-action-deepTX16a-3-beforefreq.json",
+      "export_sha256": "8f4cbb6476f887d7e6aeafc2b63eb2a5792b8c26b139b5e44b7190fb0aed954e"
+    },
+    {
+      "source": "deepreset-txpcs-action-deepTX16a-3-beforefreq.txpcs-frequency.json",
+      "source_sha256": "54a238e788c0ed981f8c0a0c181742c5a3977bce67798c6831fe2ae64a76e3a5",
+      "export": "evidence/deepreset-txpcs-action-deepTX16a-3-beforefreq.txpcs-frequency.json",
+      "export_sha256": "67d2cb48d1dcf955253e55ff3cea72d27cad39acdbc79b79f1ceab678f62df17"
+    },
+    {
+      "source": "deepreset-txpcs-action-deepTX16a-3-afterfreq.json",
+      "source_sha256": "f4dbf4dcd94f8e0ec6d7405e634bdaa839ace7241fa70c088124519e0b4b10cc",
+      "export": "evidence/deepreset-txpcs-action-deepTX16a-3-afterfreq.json",
+      "export_sha256": "2f4d4bd516791cd4df6af674ea1dcdf42af0ae778d5f3a23503735292b7b14e6"
+    },
+    {
+      "source": "deepreset-txpcs-action-deepTX16a-3-afterfreq.txpcs-frequency.json",
+      "source_sha256": "430b4498638e8d419e3c5e803820e3e7e22335e7db8a72bd032a1d3b7d006b3e",
+      "export": "evidence/deepreset-txpcs-action-deepTX16a-3-afterfreq.txpcs-frequency.json",
+      "export_sha256": "366cae89d50d5bf52971e1179ce744016e1e098a7a888c9040332fbe5981ee99"
+    }
+  ]
+}
