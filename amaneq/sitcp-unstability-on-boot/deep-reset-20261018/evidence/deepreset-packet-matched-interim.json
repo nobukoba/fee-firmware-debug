@@ -1,0 +1,215 @@
+{
+  "created": "2026-10-18T23:12:19.037395",
+  "phase": "interim_closed_trial_packet_metadata_only_live_capture_continues",
+  "tshark_actual_exit_code": 0,
+  "capture": "deepreset-20261018.pcapng",
+  "capture_size_when_analyzed": 10784884,
+  "extracted_fields": [
+    "frame.time_epoch",
+    "eth.src",
+    "eth.dst",
+    "arp.opcode",
+    "arp.src.proto_ipv4",
+    "arp.dst.proto_ipv4",
+    "ip.src",
+    "ip.dst",
+    "udp.srcport",
+    "udp.dstport",
+    "tcp.srcport",
+    "tcp.dstport",
+    "tcp.flags"
+  ],
+  "table_sha256": "4458f2d4fe01f6174a4a52c9cef3cd7e080cfb0f282a0efa6e1503ea49a711c5",
+  "source_sha256": {
+    "WORKSPACE/analyze_deepreset_pcap_matched_interim.py": "07c6ed409fc94d08b4bfe435d7d0722e1e2991ff172cd7b5ed5032a34a6eb34e"
+  },
+  "cohorts": {
+    "deepreset-deepf30d16en1-cold3.json": {
+      "host": "192.168.10.16",
+      "expected_version": "0x60c4f30d",
+      "source_sha256": "878a8e42b084e295dfe55d39bc9a96dc206f2e63b78afd3da86e0e86029ae87b",
+      "trials": [
+        {
+          "number": 1,
+          "network_success": true,
+          "window_power_control_ack_to_result_seconds": 14.05,
+          "arp_requests_to_target": 4,
+          "arp_replies_from_target": 1,
+          "target_ipv4_frames": 13,
+          "target_RBCP_frames": 10,
+          "target_TCP24_frames": 3,
+          "target_source_MACs": [
+            "02:00:c0:a8:00:10"
+          ],
+          "ARP_source_MACs": [
+            "02:00:c0:a8:00:10"
+          ],
+          "last_host_ARP_request_to_first_reply_ms": 0.077,
+          "first_host_ARP_request_after_power_ack_seconds": 2.387,
+          "first_ARP_reply_after_power_ack_seconds": 9.021,
+          "first_RBCP_reply_after_power_ack_seconds": 9.022
+        },
+        {
+          "number": 2,
+          "network_success": true,
+          "window_power_control_ack_to_result_seconds": 14.04,
+          "arp_requests_to_target": 0,
+          "arp_replies_from_target": 0,
+          "target_ipv4_frames": 13,
+          "target_RBCP_frames": 10,
+          "target_TCP24_frames": 3,
+          "target_source_MACs": [
+            "02:00:c0:a8:00:10"
+          ],
+          "ARP_source_MACs": [],
+          "last_host_ARP_request_to_first_reply_ms": null,
+          "first_host_ARP_request_after_power_ack_seconds": null,
+          "first_ARP_reply_after_power_ack_seconds": null,
+          "first_RBCP_reply_after_power_ack_seconds": 9.013
+        },
+        {
+          "number": 3,
+          "network_success": true,
+          "window_power_control_ack_to_result_seconds": 14.04,
+          "arp_requests_to_target": 0,
+          "arp_replies_from_target": 0,
+          "target_ipv4_frames": 13,
+          "target_RBCP_frames": 10,
+          "target_TCP24_frames": 3,
+          "target_source_MACs": [
+            "02:00:c0:a8:00:10"
+          ],
+          "ARP_source_MACs": [],
+          "last_host_ARP_request_to_first_reply_ms": null,
+          "first_host_ARP_request_after_power_ack_seconds": null,
+          "first_ARP_reply_after_power_ack_seconds": null,
+          "first_RBCP_reply_after_power_ack_seconds": 9.021
+        }
+      ]
+    },
+    "deepreset-deepf30d16by1-cold3.json": {
+      "host": "192.168.10.16",
+      "expected_version": "0x60c4f30d",
+      "source_sha256": "a72a1fc41ed2bf4243868c4eaffab05e0835e3388e1e509b36cb79b27e4e4772",
+      "trials": [
+        {
+          "number": 1,
+          "network_success": false,
+          "window_power_control_ack_to_result_seconds": 90.129,
+          "arp_requests_to_target": 7,
+          "arp_replies_from_target": 0,
+          "target_ipv4_frames": 0,
+          "target_RBCP_frames": 0,
+          "target_TCP24_frames": 0,
+          "target_source_MACs": [],
+          "ARP_source_MACs": [],
+          "last_host_ARP_request_to_first_reply_ms": null,
+          "first_host_ARP_request_after_power_ack_seconds": 2.359,
+          "first_ARP_reply_after_power_ack_seconds": null,
+          "first_RBCP_reply_after_power_ack_seconds": null
+        },
+        {
+          "number": 2,
+          "network_success": false,
+          "window_power_control_ack_to_result_seconds": 90.117,
+          "arp_requests_to_target": 1,
+          "arp_replies_from_target": 0,
+          "target_ipv4_frames": 0,
+          "target_RBCP_frames": 0,
+          "target_TCP24_frames": 0,
+          "target_source_MACs": [],
+          "ARP_source_MACs": [],
+          "last_host_ARP_request_to_first_reply_ms": null,
+          "first_host_ARP_request_after_power_ack_seconds": 33.999,
+          "first_ARP_reply_after_power_ack_seconds": null,
+          "first_RBCP_reply_after_power_ack_seconds": null
+        },
+        {
+          "number": 3,
+          "network_success": false,
+          "window_power_control_ack_to_result_seconds": 90.118,
+          "arp_requests_to_target": 1,
+          "arp_replies_from_target": 0,
+          "target_ipv4_frames": 0,
+          "target_RBCP_frames": 0,
+          "target_TCP24_frames": 0,
+          "target_source_MACs": [],
+          "ARP_source_MACs": [],
+          "last_host_ARP_request_to_first_reply_ms": null,
+          "first_host_ARP_request_after_power_ack_seconds": 57.214,
+          "first_ARP_reply_after_power_ack_seconds": null,
+          "first_RBCP_reply_after_power_ack_seconds": null
+        }
+      ]
+    },
+    "deepreset-deepf30d16en2-cold3.json": {
+      "host": "192.168.10.16",
+      "expected_version": "0x60c4f30d",
+      "source_sha256": "b6180d008de49c449f0abdc54f7b6c8f33b6d832ebbae63144aff45ed3f49159",
+      "trials": [
+        {
+          "number": 1,
+          "network_success": true,
+          "window_power_control_ack_to_result_seconds": 68.109,
+          "arp_requests_to_target": 1,
+          "arp_replies_from_target": 1,
+          "target_ipv4_frames": 13,
+          "target_RBCP_frames": 10,
+          "target_TCP24_frames": 3,
+          "target_source_MACs": [
+            "02:00:c0:a8:00:10"
+          ],
+          "ARP_source_MACs": [
+            "02:00:c0:a8:00:10"
+          ],
+          "last_host_ARP_request_to_first_reply_ms": 0.131,
+          "first_host_ARP_request_after_power_ack_seconds": 58.745,
+          "first_ARP_reply_after_power_ack_seconds": 58.745,
+          "first_RBCP_reply_after_power_ack_seconds": 63.078
+        },
+        {
+          "number": 2,
+          "network_success": true,
+          "window_power_control_ack_to_result_seconds": 14.048,
+          "arp_requests_to_target": 0,
+          "arp_replies_from_target": 0,
+          "target_ipv4_frames": 13,
+          "target_RBCP_frames": 10,
+          "target_TCP24_frames": 3,
+          "target_source_MACs": [
+            "02:00:c0:a8:00:10"
+          ],
+          "ARP_source_MACs": [],
+          "last_host_ARP_request_to_first_reply_ms": null,
+          "first_host_ARP_request_after_power_ack_seconds": null,
+          "first_ARP_reply_after_power_ack_seconds": null,
+          "first_RBCP_reply_after_power_ack_seconds": 9.021
+        },
+        {
+          "number": 3,
+          "network_success": true,
+          "window_power_control_ack_to_result_seconds": 14.049,
+          "arp_requests_to_target": 0,
+          "arp_replies_from_target": 0,
+          "target_ipv4_frames": 13,
+          "target_RBCP_frames": 10,
+          "target_TCP24_frames": 3,
+          "target_source_MACs": [
+            "02:00:c0:a8:00:10"
+          ],
+          "ARP_source_MACs": [],
+          "last_host_ARP_request_to_first_reply_ms": null,
+          "first_host_ARP_request_after_power_ack_seconds": null,
+          "first_ARP_reply_after_power_ack_seconds": null,
+          "first_RBCP_reply_after_power_ack_seconds": 9.022
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Capture still running; no final capture SHA asserted. Only completed trial windows analyzed.",
+    "Host-side trace does not observe switch-to-board PHY waveform, analog rails, PLL/CDR internals, or dropped packets.",
+    "Power-control acknowledgement is not a measured physical power edge. Host ARP negative caching can delay the first request/reply.",
+    "Reply absence is consistent with link/receive failure but does not alone locate the defective component."
+  ]
+}

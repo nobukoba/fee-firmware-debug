@@ -1,0 +1,72 @@
+{
+  "created": "2026-10-18T23:42:58.583122",
+  "phase": "independent_review_passed_ready_for_hardware",
+  "runtime": "0x60C4F30C",
+  "mcs": "lrtdc-clockhold-f30c/build/clockhold-f30c/lrtdc-clockhold-f30c.mcs",
+  "mcs_sha256": "a1e063a41f2611aaa21df0ecd4ef0800dbc266e829ab20a5540e44dc3bba251d",
+  "expected_full_flash_sha256": "52ef15ca412c66e36c9cdb9c9b67a33689bcca7968f987d2df89df46a8be6c4d",
+  "functional_patch": "deepreset-functional-f30c.patch",
+  "functional_patch_sha256": "b1f58693d6e0660960541d3d0dfe58333aacdcc3dab0d7e8faf5262086fa1ee4",
+  "functional_added_lines": 1,
+  "functional_deleted_lines": 1,
+  "wns_ns": 0.068,
+  "whs_ns": 0.015,
+  "drc": [
+    [
+      "CHECK-3",
+      "Warning",
+      "1"
+    ],
+    [
+      "DPIP-1",
+      "Warning",
+      "384"
+    ],
+    [
+      "REQP-1839",
+      "Warning",
+      "12"
+    ],
+    [
+      "REQP-1840",
+      "Warning",
+      "20"
+    ],
+    [
+      "RTSTAT-10",
+      "Warning",
+      "1"
+    ]
+  ],
+  "core_VHDL_sha256": {
+    "gig_ethernet_pcs_pma.vhd": "c214570c4dbe72b99eb8ceaa587bb3912109bab1546e10cfb03e813e901efa1e",
+    "gig_ethernet_pcs_pma_block.vhd": "ad00061e2e8af6dbdedede8fd2c473f3237268f5a3b54a7ec10c65937991ea2c",
+    "gig_ethernet_pcs_pma_reset_sync.vhd": "64116e0755096373a875f358534f2adbffed73f420292e83d1dd7cf08c727d97",
+    "gig_ethernet_pcs_pma_sync_block.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "transceiver/gig_ethernet_pcs_pma_cpll_railing.vhd": "60f4277b01260797fff0ab0db04025dd36e3817b360c3c74c3ff591b595d009e",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard.vhd": "c6e3fe294528bd3bc370e053718f0e1c54368668212b74793c7ab1d50869fe88",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_gt.vhd": "eb56e5773b9ff9af58e31979a7f25aa15ffc34b1f7183e220cbb23c96e32198d",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_init.vhd": "9be7c5109252b766219d820fc7ab7c06f3c15540de594c3d36cced7be7bc311b",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_multi_gt.vhd": "d9094ceb95dcb439176a1308c911f6ea3fef6a6519db97a64a913cb313cd4e0d",
+    "transceiver/gig_ethernet_pcs_pma_reset_wtd_timer.vhd": "e7a40bafce9ba113785d7e1ad202c9e85d1baf156732878c049d6fe273b3abfd",
+    "transceiver/gig_ethernet_pcs_pma_rx_startup_fsm.vhd": "b3a0ca53d6834513bbe73448515d1fff25a474f5c3e0cabd079526b45a173f0a",
+    "transceiver/gig_ethernet_pcs_pma_transceiver.vhd": "03932bb1240f6849fb8dac486ffc991463899651ef38804ce9654f25e67fe132",
+    "transceiver/gig_ethernet_pcs_pma_tx_startup_fsm.vhd": "b746354b507ba31ca0c2c4aa293edce21938567752a7c83bdff839ff0dc4a91a"
+  },
+  "source_sha256": {
+    "WORKSPACE/review_deepreset_f30c.py": "f3763e52c52c9eefe5abe89bd5def6f32b5969637485dfa615aad0ce25eb67c1",
+    "deepreset-f30c-build.json": "6b11b5736efb0a1fe38c938183a0257fc3397703638f9c8a4183fa392ce8626a",
+    "experiments/deepreset-clockhold-sim-v2/result.json": "9fa8383821577cb593178c9b48aeb8f9a9301e396b7610593eb3f88fb7ae0d7a",
+    "lrtdc-clockhold-f30c/build/clockhold-f30c/rx-startup-before-patch.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "lrtdc-clockhold-f30c/build/clockhold-f30c/rx-startup-after-patch.vhd": "dca457fcae35e25d7bee0e3c4631ba2242aa7e4bceb7bf5a5375e484a6d242c1",
+    "lrtdc-clockhold-f30c/build/clockhold-f30c/timing-summary.rpt": "da34ecdb67c674b6935c6b6c91c847c89a2adb1780c0a84b91f957f8bea5ec3d",
+    "lrtdc-clockhold-f30c/build/clockhold-f30c/bus-skew.rpt": "1969c0448214d17bfd9a4003aabd5864500d6c916a619f74de70b601fdb0ac03",
+    "lrtdc-clockhold-f30c/build/clockhold-f30c/drc.rpt": "b15ffe29667672bec1d5f7f758c4fb30f86422659e8288b77f5b044aeade42da"
+  },
+  "limits": [
+    "One native assignment holds GTRX until existing qualified sharedMMCMlock;500ns/INIT0/SOFT0/WAITMAX100 unchanged.",
+    "Specific to verified AMANEQ TX/reference-derived shareduserclock architecture.",
+    "Separately compiled placement is not matched to native; coldcohorts and normal17 regression required.",
+    "Digital simulation does not model analog CDR acquisition."
+  ]
+}

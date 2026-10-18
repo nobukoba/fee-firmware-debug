@@ -1,0 +1,52 @@
+{
+  "created": "2026-10-18T23:49:04.912181",
+  "phase": "both_readonly_soaks_complete",
+  "image": "F30D enabled matched qualifier",
+  "boards": [
+    {
+      "host": "192.168.10.16",
+      "runtime": "0x60c4f30d",
+      "log": "deepreset-soak-f30d16mid.jsonl",
+      "log_sha256": "fcfbeeb0da96bc24037801a9baf7128ef6b7aea77e9040f47cd04edaeafee583",
+      "started": "2026-10-18T23:05:48.776814",
+      "finished": "2026-10-18T23:35:48.776391",
+      "duration_seconds": 1800,
+      "counts": {
+        "RBCP_checks": 60,
+        "RBCP_pass": 60,
+        "TCP_checks": 6,
+        "TCP_pass": 6,
+        "failures": 0
+      },
+      "tool_session": 46309,
+      "tool_completed": true,
+      "observed_actual_exit_code": null,
+      "exit_status_note": "wait_stdin completion returned terminal finish output but did not include an exit_code field; process absence independently checked."
+    },
+    {
+      "host": "192.168.10.17",
+      "runtime": "0x60c4f30d",
+      "log": "deepreset-soak-f30d17mid.jsonl",
+      "log_sha256": "575ed72fef0d8bd13c783671eae623bd7d14b1e9dfc73a63bde71970672f4d8d",
+      "started": "2026-10-18T23:05:48.808554",
+      "finished": "2026-10-18T23:35:48.804826",
+      "duration_seconds": 1800,
+      "counts": {
+        "RBCP_checks": 60,
+        "RBCP_pass": 60,
+        "TCP_checks": 6,
+        "TCP_pass": 6,
+        "failures": 0
+      },
+      "tool_session": 59893,
+      "tool_completed": true,
+      "observed_actual_exit_code": null,
+      "exit_status_note": "wait_stdin completion returned terminal finish output but did not include an exit_code field; process absence independently checked."
+    }
+  ],
+  "supersedes": "deepreset-f30d-soak-summary.json",
+  "correction": "Previous summary inferred exit_code0 from normal terminal completion. Explicit exit_code was absent; use null while preserving finish events and process absence.",
+  "limits": [
+    "Thirty-minute read-only monitoring; not indefinite stability or physical root cause."
+  ]
+}

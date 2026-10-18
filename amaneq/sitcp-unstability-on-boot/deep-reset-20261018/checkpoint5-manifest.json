@@ -1,0 +1,42 @@
+{
+  "state": "IN_PROGRESS_CHECKPOINT5",
+  "files": [
+    {
+      "source": "deepreset-f30d-soak-summary-v2.json",
+      "source_sha256": "f5b53af8e0064522a350d421e10ab2b253d1783ac0b7f512062c9bcc80a8e46d",
+      "export": "evidence/deepreset-f30d-soak-summary-v2.json",
+      "export_sha256": "feb1ebbc53aff22f91795063f9bcf29b8df96783d50f320df78ce902b7284d05"
+    },
+    {
+      "source": "deepreset-packet-matched-interim.json",
+      "source_sha256": "4f9d2253342bae78ac1ed0a33260f932e2f13182721a3c775686e45cd8a7de52",
+      "export": "evidence/deepreset-packet-matched-interim.json",
+      "export_sha256": "a8205ce43c196654bf3a27d34715b3c1698bbc33b9820ad3c230847deca52b41"
+    },
+    {
+      "source": "deepreset-f30c-independent-review.json",
+      "source_sha256": "892af1ae5231e7c47f4512ad79d899f71d9e8971ed9361b40c4b575fbb02b8cb",
+      "export": "evidence/deepreset-f30c-independent-review.json",
+      "export_sha256": "86e6e6a62f5cd772c1cb13ad120b6318371d4922abf4499299984358f9330a4a"
+    },
+    {
+      "source": "deepreset-cohort-deepf30c16a.json",
+      "source_sha256": "61502e05898c4a5cffe4a3a11ac3c5c5d3a6cf15142ea3f39f73ab2408a0d8df",
+      "export": "evidence/deepreset-cohort-deepf30c16a.json",
+      "export_sha256": "5a7b37ddd0894f2cf65500379b892b9ec31637cbd849adffa5fffdc0bc93ea26"
+    },
+    {
+      "source": "deepreset-cohort-deepf30c17a.json",
+      "source_sha256": "7a269eb21e7d672a2274e8f18e5f1dca228e28f505afdd82e0345230a51d4207",
+      "export": "evidence/deepreset-cohort-deepf30c17a.json",
+      "export_sha256": "60979912d3c2398a83d16d51ba84bebb0258130d50238e5475e05139ff46c4e2"
+    },
+    {
+      "source": "deepreset-functional-f30c.patch",
+      "source_sha256": "b1f58693d6e0660960541d3d0dfe58333aacdcc3dab0d7e8faf5262086fa1ee4",
+      "export": "patches/deepreset-functional-f30c.patch",
+      "export_sha256": "b1f58693d6e0660960541d3d0dfe58333aacdcc3dab0d7e8faf5262086fa1ee4",
+      "status": "BUILT_TIMING_PASSED_BUT_PROBLEM16_FAILED_ALL3"
+    }
+  ]
+}
