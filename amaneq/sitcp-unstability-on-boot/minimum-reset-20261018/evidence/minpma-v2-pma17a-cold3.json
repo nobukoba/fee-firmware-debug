@@ -1,0 +1,269 @@
+{
+  "started": "2026-10-18T17:54:19.494502",
+  "host": "192.168.10.17",
+  "expected_version": "0x60c4f308",
+  "topology": "Kikusui .16 / ezOutlet .17 / switch always ON",
+  "events": [
+    {
+      "time": "2026-10-18T17:54:19.656212",
+      "kind": "outlet_status",
+      "requested": null,
+      "status": "On"
+    },
+    {
+      "time": "2026-10-18T17:54:19.735558",
+      "kind": "power_status",
+      "requested": null,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99860E+01",
+      "current": "+1.89600E-01"
+    },
+    {
+      "time": "2026-10-18T17:54:19.735558",
+      "kind": "cold_start",
+      "number": 1
+    },
+    {
+      "time": "2026-10-18T17:54:23.830630",
+      "kind": "outlet_command_response",
+      "requested": "OFF",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-18T17:54:25.987452",
+      "kind": "outlet_status",
+      "requested": "OFF",
+      "status": "Off"
+    },
+    {
+      "time": "2026-10-18T17:54:32.492488",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-18T17:54:36.572129",
+      "kind": "outlet_command_response",
+      "requested": "ON",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-18T17:54:38.668133",
+      "kind": "outlet_status",
+      "requested": "ON",
+      "status": "On"
+    },
+    {
+      "time": "2026-10-18T17:54:48.214687",
+      "kind": "cold_result",
+      "number": 1,
+      "success": true,
+      "first_ready_seconds": 4.531
+    },
+    {
+      "time": "2026-10-18T17:54:48.214687",
+      "kind": "cold_start",
+      "number": 2
+    },
+    {
+      "time": "2026-10-18T17:54:52.287582",
+      "kind": "outlet_command_response",
+      "requested": "OFF",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-18T17:54:54.749056",
+      "kind": "outlet_status",
+      "requested": "OFF",
+      "status": "Off"
+    },
+    {
+      "time": "2026-10-18T17:55:01.254382",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-18T17:55:05.347297",
+      "kind": "outlet_command_response",
+      "requested": "ON",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-18T17:55:07.459309",
+      "kind": "outlet_status",
+      "requested": "ON",
+      "status": "On"
+    },
+    {
+      "time": "2026-10-18T17:55:16.991257",
+      "kind": "cold_result",
+      "number": 2,
+      "success": true,
+      "first_ready_seconds": 4.516
+    },
+    {
+      "time": "2026-10-18T17:55:16.991615",
+      "kind": "cold_start",
+      "number": 3
+    },
+    {
+      "time": "2026-10-18T17:55:21.064050",
+      "kind": "outlet_command_response",
+      "requested": "OFF",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-18T17:55:23.169450",
+      "kind": "outlet_status",
+      "requested": "OFF",
+      "status": "Off"
+    },
+    {
+      "time": "2026-10-18T17:55:29.686598",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-18T17:55:33.762381",
+      "kind": "outlet_command_response",
+      "requested": "ON",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-18T17:55:35.861580",
+      "kind": "outlet_status",
+      "requested": "ON",
+      "status": "On"
+    },
+    {
+      "time": "2026-10-18T17:55:45.366579",
+      "kind": "cold_result",
+      "number": 3,
+      "success": true,
+      "first_ready_seconds": 4.5
+    },
+    {
+      "time": "2026-10-18T17:55:45.366579",
+      "kind": "complete"
+    }
+  ],
+  "trials": [
+    {
+      "number": 1,
+      "success": true,
+      "samples": [
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 1.5
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F308",
+          "expected_version": "0x60C4F308",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 4.531
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F308",
+          "expected_version": "0x60C4F308",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 9.547
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "success": true,
+      "samples": [
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 1.5
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F308",
+          "expected_version": "0x60C4F308",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 4.516
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F308",
+          "expected_version": "0x60C4F308",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 9.531
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "success": true,
+      "samples": [
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 1.5
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F308",
+          "expected_version": "0x60C4F308",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 4.5
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F308",
+          "expected_version": "0x60C4F308",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 9.5
+        }
+      ]
+    }
+  ],
+  "outcome": "all passed"
+}

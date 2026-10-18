@@ -1,0 +1,73 @@
+{
+  "started": "2026-10-18T18:09:52.438778",
+  "events": [
+    {
+      "time": "2026-10-18T18:09:52.535104",
+      "kind": "power_status",
+      "requested": null,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99860E+01",
+      "current": "+1.89100E-01"
+    },
+    {
+      "time": "2026-10-18T18:09:52.675451",
+      "kind": "outlet_status",
+      "requested": null,
+      "status": "On"
+    },
+    {
+      "time": "2026-10-18T18:09:57.719574",
+      "kind": "complete_both_boards_healthy_and_original_settings_preserved"
+    }
+  ],
+  "trials": [],
+  "boards": {
+    "192.168.10.16": {
+      "first": {
+        "rbcp": true,
+        "tcp24": true,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F202",
+        "expected_version": "0x60C4F202",
+        "identity_matches": true,
+        "success": true
+      },
+      "confirmation": {
+        "rbcp": true,
+        "tcp24": true,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F202",
+        "expected_version": "0x60C4F202",
+        "identity_matches": true,
+        "success": true
+      },
+      "eeprom_matches_baseline": true,
+      "eeprom_sha256": "341c5c207c91e51c634ba3e3090fea4689e4e5ae07725e4996a3e568b504c887"
+    },
+    "192.168.10.17": {
+      "first": {
+        "rbcp": true,
+        "tcp24": true,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4020A",
+        "expected_version": "0x60C4020A",
+        "identity_matches": true,
+        "success": true
+      },
+      "confirmation": {
+        "rbcp": true,
+        "tcp24": true,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4020A",
+        "expected_version": "0x60C4020A",
+        "identity_matches": true,
+        "success": true
+      },
+      "eeprom_matches_baseline": true,
+      "eeprom_sha256": "0657876d036a1b9c1ba34903bbf577d490741c851af11916d91efed7f1a1521e"
+    }
+  }
+}

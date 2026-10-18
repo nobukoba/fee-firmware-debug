@@ -1,0 +1,74 @@
+{
+  "created": "2026-10-18T18:10:54.803580",
+  "phase": "followup_experiments_and_restoration_reviewed",
+  "cohorts": {
+    "factory16_before": {
+      "report": "minpma-native-minbase16.json",
+      "successes": 0,
+      "trials": 3,
+      "cold_sha256": "f4cfb33b8adb86a4c88202cb1937304ac36b6847940e27b68654885a22205168",
+      "full_flash_sha256": "7dd784de31ff8b3b2cbae4602274faf3e2f587f1bc2185a89ad3ba5e7de48a13"
+    },
+    "F30A16": {
+      "report": "resetwidth-cohort-width16a.json",
+      "successes": 1,
+      "trials": 3,
+      "cold_sha256": "59c19013278e590c538eae5d3376eddc4b709901c39ffbb53f1f6e9e404bb5f6",
+      "full_flash_sha256": "62f245749903935811d16fd508395d1bb1917d2d0cd099a9f29ef5d97d08c1a3"
+    },
+    "factory16_after": {
+      "report": "minpma-native-minrev16.json",
+      "successes": 0,
+      "trials": 3,
+      "cold_sha256": "bd03c69b7f965336fa8cd82c644011564bfd0158ba64f9ecb52a0093cfb6a6e9",
+      "full_flash_sha256": "7dd784de31ff8b3b2cbae4602274faf3e2f587f1bc2185a89ad3ba5e7de48a13"
+    },
+    "F308_pma16a": {
+      "report": "minpma-v2-cohort-pma16a.json",
+      "successes": 3,
+      "trials": 3,
+      "cold_sha256": "759a7301e3fe294d374620683c86d596ff602a90f30be821bf782039894b4cc1",
+      "full_flash_sha256": "40c5d23d57c664333fdf547219c8908602003e6ae1f11ba131345d9c55291064"
+    },
+    "F308_pma17a": {
+      "report": "minpma-v2-cohort-pma17a.json",
+      "successes": 3,
+      "trials": 3,
+      "cold_sha256": "6cac84ac86da4a8825301034a33feb33bd410589dba7cbaba1a99662a4ed4221",
+      "full_flash_sha256": "40c5d23d57c664333fdf547219c8908602003e6ae1f11ba131345d9c55291064"
+    }
+  },
+  "smallest_successful_new_manufacturer_sequence_preserving_candidate": {
+    "candidate": "F308",
+    "functional_added_lines": 32,
+    "functional_deleted_lines": 1,
+    "new_nonblank_functional_block_lines": 29,
+    "scope": "Smallest successful candidate among those actually qualified and tested here, not a proof of globally minimum possible implementation."
+  },
+  "rejected_candidate": "F309 adds5 functional lines plus1 replacement but pulses before initial RXRESETDONE; manufacturer sequence conflict. No hardware use.",
+  "F30A_interpretation": "One-line WAIT_TIME_MAX change insufficient for reliable boot. Also changes RXUSERRDY wait; does not isolate reset width.",
+  "recovery_finding": "Short recurring PCS synchronization loss may repeatedly clear the native100us continuous-invalid timer, leaving a recovery blind spot. Monitoring itself continues.",
+  "physical_hypothesis": "Bad recovered-clock mean frequency and about1.13us FSM recurrence are consistent with sampling-phase slips. No direct analog lock, phase, jitter or rail waveform; board-level initiating cause remains unresolved.",
+  "causal_limit": "F308 cold sufficiency is a new placement, not a same-placement physical-PMA gate comparison. Prior F307 matched-gate experiment remains the separate causal evidence.",
+  "final_state": "16F202 and17factory full16MiB readback verified, cold3 each, repeated network and EEPROM unchanged, powerON.",
+  "source_sha256": {
+    "<workspace>\\summarize_minpma_followup.py": "b27b434fa8e0f0394996545dc334b04b248cc13630a8dfaec204eaa7880bea03",
+    "minpma-start-status.json": "88820ed788b3f1c3069425ff128b85ea3dc7c366738acbab040127324e310b99",
+    "minpma-native-minbase16.json": "5d00346beecea4de8f3c910d998e94376292b5ba3ae8dd0a8204aceda4ea5192",
+    "minpma-native-minrev16.json": "769c28b514056e33866970b4ab2e17cbb998ed0fe23656fda889530842aedf38",
+    "resetwidth-cohort-width16a.json": "ac744504b3183bce2350445706779861f04b4056d6494539c5831829a90b463c",
+    "resetwidth-f30a-independent-review.json": "c847d947e8fb7b6a115804a9baa94d689a524f6ed13fcbfc8ae24d18fa05ba21",
+    "minpma-f309-design-review.json": "34c16ab5f6bce81a2ebfe526b4a3d5bb02a7531e2da63cedd34e42b7544c235f",
+    "minpma-control17-stop-verified.json": "6cebd76748d9ed1e25b4a387953808bf78d57d8eeeab45ad090e4b09adebf995",
+    "minpma-fsm-recovery-analysis.json": "198bec866080c2e955608fd41c059fa06defbb52f79b749ea3ca10c7dcc65320",
+    "minpma-native-order-analysis.json": "922a6c57ebd7f6685a51331c68385a966ce25aa2fb7fa94d4810a2e55427f90d",
+    "minpma-slip-scale-analysis.json": "25b77a4f1b0d228d34b775bc3d46f0003fb815f57cc4f85dbe46051e06899a7f",
+    "minpma-packets-comparison.json": "2b4fd0bd1caa064d5ee73ec4d80fa28b89f96a3e1f37fe4dbac6d50be45fd2d9",
+    "minpma-restoration.json": "5229383b2c12a127315c59344f457c4bee1899c0e49f1cfa1f3b0f059945b9a8",
+    "minpma-final-status.json": "87d9e5702d2822ed939970b7a138abed4bc9f321a24637d3364b8d21c3f63796",
+    "minpma-v2-cohort-pma16a.json": "97e3db284d4ef8d80c79a9b0c974769c58b6f185151d2c2a262510f1f887efa0",
+    "minpma-v2-cohort-pma17a.json": "1e040c36015de5c886080460c1d2c54074f3337fa78b40f5e77599d471a2519c",
+    "minpma-f308-build-v2.json": "5326e13dafa496ee061cc6e112ea7e1570492d4426dcfea88728f1cc371594aa",
+    "minpma-f308-v2-independent-review.json": "b2dad386f4aed16bcf0ae757807b31b6b7758e13b6ebaf157df2d05a967884a1"
+  }
+}

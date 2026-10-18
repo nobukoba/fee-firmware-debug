@@ -1,0 +1,19 @@
+{
+  "created": "2026-10-18T17:27:01.898282",
+  "phase": "capture_epoch_switched_between_completed_cohorts_no_hardware_operations",
+  "original_capture": "minpma-20261018.pcapng",
+  "original_capture_sha256": "aeae14f38dc392fa392ccaf4721576feb3641c99e10c41b1b20c860fddef6343",
+  "original_capture_actual_exit_code": 1,
+  "original_stop_method": "requested_CtrlC_at_idle_between_cohorts",
+  "capinfos_actual_exit_code": 0,
+  "capinfos": "File name:           minpma-20261018.pcapng\nFile type:           Wireshark/... - pcapng\nFile encapsulation:  Ethernet\nFile timestamp precision:  nanoseconds (9)\nPacket size limit:   file hdr: (not set)\nNumber of packets:   5883\nFile size:           3591 kB\nData size:           3394 kB\nCapture duration:    9999.933507800 seconds\nEarliest packet time: 2026-10-18 14:29:13.050365800\nLatest packet time:   2026-10-18 17:15:52.983873600\nData byte rate:      339 bytes/s\nData bit rate:       2715 bits/s\nAverage packet size: 576.97 bytes\nAverage packet rate: 0 packets/s\nSHA256:              aeae14f38dc392fa392ccaf4721576feb3641c99e10c41b1b20c860fddef6343\nSHA1:                f12b8ecb3795df630e17dedd29cb1fdfa2c3b9a4\nStrict time order:   True\nCapture hardware:    Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz (with SSE4.2)\nCapture oper-sys:    64-bit Windows 11 (25H2), build 26200\nCapture application: Dumpcap (Wireshark) 4.6.9 (v4.6.9-0-g2d548b197c75)\nNumber of interfaces in file: 1\nInterface #0 info:\n                     Name = \\Device\\NPF_{3E10A6E0-E1AD-46B3-A999-BC3055B462BC}\n                     Description = Ethernet\n                     Encapsulation = Ethernet (1 - ether)\n                     Hardware = Intel(R) Ethernet Connection (4) I219-LM\n                     Capture length = 262144\n                     Time precision = nanoseconds (9)\n                     Time ticks per second = 1000000000\n                     Time resolution = 0x09\n                     Filter string = arp or host 192.168.10.16 or host 192.168.10.17\n                     Operating system = 64-bit Windows 11 (25H2), build 26200\n                     Number of stat entries = 0\n                     Number of packets = 5883\n",
+  "continuation_capture": "minpma-20261018-continuation.pcapng",
+  "continuation_command_time": "2026-10-18T17:25:38.4826906+09:00",
+  "continuation_confirmed_capturing_by": "2026-10-18T17:25:49+09:00",
+  "previous_hardware_trial_completed": "2026-10-18T17:13:35.221660+09:00",
+  "original_awake_actual_exit_code": 0,
+  "limits": "Exact process-off capture gap not measured. Conservative gap bounded during final packet analysis using last original packet and continuation-ready upper bound. No cold trial may intersect that bound. No zero-drop assertion.",
+  "source_sha256": {
+    "<workspace>\\record_minpma_capture_handoff.py": "ed397798dbf604d200e9cdca990b00cb584a7240974107e001c473e5ddf128d7"
+  }
+}

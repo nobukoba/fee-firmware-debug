@@ -1,0 +1,287 @@
+{
+  "started": "2026-10-18T18:01:07.341109",
+  "host": "192.168.10.16",
+  "expected_version": "0x60c4f202",
+  "topology": "Kikusui .16 / ezOutlet .17 / switch always ON",
+  "events": [
+    {
+      "time": "2026-10-18T18:01:07.488558",
+      "kind": "outlet_status",
+      "requested": null,
+      "status": "On"
+    },
+    {
+      "time": "2026-10-18T18:01:07.585507",
+      "kind": "power_status",
+      "requested": null,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99870E+01",
+      "current": "+1.27700E-01"
+    },
+    {
+      "time": "2026-10-18T18:01:07.585507",
+      "kind": "cold_start",
+      "number": 1
+    },
+    {
+      "time": "2026-10-18T18:01:08.676822",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+1.85000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-18T18:01:15.187274",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-18T18:01:16.273694",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99530E+01",
+      "current": "+1.11200E-01"
+    },
+    {
+      "time": "2026-10-18T18:01:30.319093",
+      "kind": "cold_result",
+      "number": 1,
+      "success": true,
+      "first_ready_seconds": 9.032
+    },
+    {
+      "time": "2026-10-18T18:01:30.321104",
+      "kind": "cold_start",
+      "number": 2
+    },
+    {
+      "time": "2026-10-18T18:01:31.417500",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+1.83000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-18T18:01:37.935893",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-18T18:01:39.038213",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99540E+01",
+      "current": "+1.11400E-01"
+    },
+    {
+      "time": "2026-10-18T18:01:53.059877",
+      "kind": "cold_result",
+      "number": 2,
+      "success": true,
+      "first_ready_seconds": 9.016
+    },
+    {
+      "time": "2026-10-18T18:01:53.061889",
+      "kind": "cold_start",
+      "number": 3
+    },
+    {
+      "time": "2026-10-18T18:01:54.149058",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+1.88000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-18T18:02:00.656036",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-18T18:02:01.733836",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99540E+01",
+      "current": "+1.11300E-01"
+    },
+    {
+      "time": "2026-10-18T18:02:15.760580",
+      "kind": "cold_result",
+      "number": 3,
+      "success": true,
+      "first_ready_seconds": 9.031
+    },
+    {
+      "time": "2026-10-18T18:02:15.760580",
+      "kind": "complete"
+    }
+  ],
+  "trials": [
+    {
+      "number": 1,
+      "success": true,
+      "samples": [
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 1.516
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 6.016
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F202",
+          "expected_version": "0x60C4F202",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 9.032
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F202",
+          "expected_version": "0x60C4F202",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 14.047
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "success": true,
+      "samples": [
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 1.5
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 6.0
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F202",
+          "expected_version": "0x60C4F202",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 9.016
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F202",
+          "expected_version": "0x60C4F202",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 14.016
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "success": true,
+      "samples": [
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 1.515
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 6.015
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F202",
+          "expected_version": "0x60C4F202",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 9.031
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F202",
+          "expected_version": "0x60C4F202",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 14.031
+        }
+      ]
+    }
+  ],
+  "outcome": "all passed"
+}

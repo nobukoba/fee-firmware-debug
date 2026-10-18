@@ -1,0 +1,45 @@
+{
+  "created": "2026-10-18T17:41:42.516935",
+  "phase": "independent_review_passed_ready_for_hardware",
+  "runtime": "0x60C4F308",
+  "mcs": "lrtdc-minpma-f308\\build\\minpma-f308-v2\\lrtdc-minpma-f308.mcs",
+  "mcs_sha256": "78fc2c415070f65c7e09a0224d041c73e09656957ba5f23681eb746dc7866469",
+  "expected_full_flash_sha256": "40c5d23d57c664333fdf547219c8908602003e6ae1f11ba131345d9c55291064",
+  "functional_added_lines": 32,
+  "functional_deleted_lines": 1,
+  "wns_ns": 0.068,
+  "whs_ns": 0.015,
+  "core_VHDL_sha256": {
+    "gig_ethernet_pcs_pma.vhd": "c214570c4dbe72b99eb8ceaa587bb3912109bab1546e10cfb03e813e901efa1e",
+    "gig_ethernet_pcs_pma_block.vhd": "ad00061e2e8af6dbdedede8fd2c473f3237268f5a3b54a7ec10c65937991ea2c",
+    "gig_ethernet_pcs_pma_reset_sync.vhd": "64116e0755096373a875f358534f2adbffed73f420292e83d1dd7cf08c727d97",
+    "gig_ethernet_pcs_pma_sync_block.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "transceiver\\gig_ethernet_pcs_pma_cpll_railing.vhd": "60f4277b01260797fff0ab0db04025dd36e3817b360c3c74c3ff591b595d009e",
+    "transceiver\\gig_ethernet_pcs_pma_gtwizard.vhd": "c6e3fe294528bd3bc370e053718f0e1c54368668212b74793c7ab1d50869fe88",
+    "transceiver\\gig_ethernet_pcs_pma_gtwizard_gt.vhd": "eb56e5773b9ff9af58e31979a7f25aa15ffc34b1f7183e220cbb23c96e32198d",
+    "transceiver\\gig_ethernet_pcs_pma_gtwizard_init.vhd": "9737408fc494df14454967864f6c3034f59a30b551086b8495f7e524c21e4917",
+    "transceiver\\gig_ethernet_pcs_pma_gtwizard_multi_gt.vhd": "d9094ceb95dcb439176a1308c911f6ea3fef6a6519db97a64a913cb313cd4e0d",
+    "transceiver\\gig_ethernet_pcs_pma_reset_wtd_timer.vhd": "e7a40bafce9ba113785d7e1ad202c9e85d1baf156732878c049d6fe273b3abfd",
+    "transceiver\\gig_ethernet_pcs_pma_rx_startup_fsm.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "transceiver\\gig_ethernet_pcs_pma_transceiver.vhd": "03932bb1240f6849fb8dac486ffc991463899651ef38804ce9654f25e67fe132",
+    "transceiver\\gig_ethernet_pcs_pma_tx_startup_fsm.vhd": "b746354b507ba31ca0c2c4aa293edce21938567752a7c83bdff839ff0dc4a91a"
+  },
+  "source_sha256": {
+    "<workspace>\\review_minpma_f308_v2.py": "16781849f1cd04d8b06e6cd12765aedd1a1773f0b3a2af0676c8341cbaa06d12",
+    "minpma-f308-build-v2.json": "5326e13dafa496ee061cc6e112ea7e1570492d4426dcfea88728f1cc371594aa",
+    "experiments\\minpma-f308-sim\\result.json": "334cb599d2b47aec96f15c94142c589d7d0d5be52433aa65fd5931ee539324e2",
+    "minpma-prototype-f308.patch": "4e43b17077e049cd40d337deb133b7781d6aa2dfc6e7c3d7b90ae90d4132991b",
+    "lrtdc-minpma-f308\\build\\minpma-f308\\rx-startup-before-patch.vhd": "3499fbb3cb184c3557af8c471398b8e1cbe02e160d195112af265d2a2662dcd0",
+    "lrtdc-minpma-f308\\build\\minpma-f308\\rx-startup-after-patch.vhd": "3499fbb3cb184c3557af8c471398b8e1cbe02e160d195112af265d2a2662dcd0",
+    "lrtdc-minpma-f308\\build\\minpma-f308\\gt-init-before.vhd": "a84e7ba6a1604e3b907e6ae9bf6429a8dd7797de0f2ecca587f6b0968206e803",
+    "lrtdc-minpma-f308\\build\\minpma-f308\\gt-init-after.vhd": "9737408fc494df14454967864f6c3034f59a30b551086b8495f7e524c21e4917",
+    "lrtdc-minpma-f308\\build\\minpma-f308-v2\\timing-summary.rpt": "16e169cf8d09ec88820f174c97c53e369345b30dcf304f24533ef7da3d899a56",
+    "lrtdc-minpma-f308\\build\\minpma-f308-v2\\bus-skew.rpt": "39506b4ae5281f4a445dddf3478144b493433c148706751c3deea1931bad1860",
+    "lrtdc-minpma-f308\\build\\minpma-f308-v2\\drc.rpt": "d69bcfb70901585554723d58ea8c70b36033ab2a79cbfaca18dc0d09a3b1a345"
+  },
+  "limits": [
+    "Cold-boot sufficiency test, no physical PMA pulse probe in this image.",
+    "Implementation placement differs from original factory; prior F307 physical-gate intervention is separate evidence.",
+    "Manufacturer 500ns native initialization unchanged; one-shot PMA request only after synchronized native RXRESETDONE and other ready conditions."
+  ]
+}

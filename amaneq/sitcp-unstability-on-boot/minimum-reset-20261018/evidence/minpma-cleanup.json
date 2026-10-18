@@ -1,0 +1,43 @@
+{
+  "created": "2026-10-18T18:10:54.675951",
+  "phase": "all_owned_jobs_stopped_closed_capture_validated",
+  "capture": "minpma-20261018-combined.pcapng",
+  "capture_sha256": "5e98fa5c5860d760fce6c8a751888614d5dfb87090754785e51fb2ded4d5ca6a",
+  "capture_bytes": 4934472,
+  "capture_actual_exit_code": 1,
+  "capture_stop_method": "requested_CtrlC_after_all_restoration_checks",
+  "actual_exit_code_evidence": "Actual unified-exec completion statuses observed by parent; supplied explicitly here.",
+  "awake_actual_exit_code": 0,
+  "capinfos_actual_exit_code": 0,
+  "capinfos": "File name:           minpma-20261018-combined.pcapng\nFile type:           Wireshark/... - pcapng\nFile encapsulation:  Ethernet\nFile timestamp precision:  nanoseconds (9)\nPacket size limit:   file hdr: (not set)\nNumber of packets:   7266\nFile size:           4934 kB\nData size:           4690 kB\nCapture duration:    13244.675239100 seconds\nEarliest packet time: 2026-10-18 14:29:13.050365800\nLatest packet time:   2026-10-18 18:09:57.725604900\nData byte rate:      354 bytes/s\nData bit rate:       2833 bits/s\nAverage packet size: 645.57 bytes\nAverage packet rate: 0 packets/s\nSHA256:              5e98fa5c5860d760fce6c8a751888614d5dfb87090754785e51fb2ded4d5ca6a\nSHA1:                dd393cfd229f425893d0fdce0bc7ff95b9b8bc28\nStrict time order:   True\nCapture oper-sys:    64-bit Windows 11 (25H2), build 26200\nCapture application: Mergecap (Wireshark) 4.6.9 (v4.6.9-0-g2d548b197c75)\nCapture comment:     File created by merging:  File1: minpma-20261018.pcapng  File2: minpma-20261018-continuation.pcapng  \nNumber of interfaces in file: 1\nInterface #0 info:\n                     Name = \\Device\\NPF_{3E10A6E0-E1AD-46B3-A999-BC3055B462BC}\n                     Description = Ethernet\n                     Encapsulation = Ethernet (1 - ether)\n                     Hardware = Intel(R) Ethernet Connection (4) I219-LM\n                     Capture length = 262144\n                     Time precision = nanoseconds (9)\n                     Time ticks per second = 1000000000\n                     Time resolution = 0x09\n                     Filter string = arp or host 192.168.10.16 or host 192.168.10.17\n                     Operating system = 64-bit Windows 11 (25H2), build 26200\n                     Number of stat entries = 0\n                     Number of packets = 7266\n",
+  "capture_drop_count": null,
+  "limits": "No zero-drop assertion. CtrlC dumpcap may return1 while leaving a valid closed PCAPNG.",
+  "owned_workers_remaining": [],
+  "source_sha256": {
+    "<workspace>\\record_minpma_cleanup.py": "ee8d518606dc431b07d522b23590d66ace2854c6c39e725da5fdd508975f72e9"
+  },
+  "capture_epochs": [
+    {
+      "path": "minpma-20261018.pcapng",
+      "sha256": "aeae14f38dc392fa392ccaf4721576feb3641c99e10c41b1b20c860fddef6343",
+      "packets": 5883,
+      "first_packet_epoch": 1792301353.0503657,
+      "last_packet_epoch": 1792311352.9838736,
+      "tshark_actual_exit_code": 0
+    },
+    {
+      "path": "minpma-20261018-continuation.pcapng",
+      "sha256": "0eb77cbb9d600be5cd8de0d138fa6a5288763db1146398d0776c533b4d94bf4b",
+      "packets": 1383,
+      "first_packet_epoch": 1792312497.4723628,
+      "last_packet_epoch": 1792314597.725605,
+      "tshark_actual_exit_code": 0
+    }
+  ],
+  "awake_actual_exit_codes": {
+    "original": 0,
+    "continuation": 0
+  },
+  "original_capture_actual_exit_code": 1,
+  "capture_exit_code_applies_to": "Continuation dumpcap process; capture path is the subsequently merged artifact."
+}

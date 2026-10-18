@@ -1,0 +1,34 @@
+{
+  "created": "2026-10-18T18:10:12.603461",
+  "phase": "two_closed_nonoverlapping_capture_epochs_merged",
+  "epochs": [
+    {
+      "path": "minpma-20261018.pcapng",
+      "sha256": "aeae14f38dc392fa392ccaf4721576feb3641c99e10c41b1b20c860fddef6343",
+      "packets": 5883,
+      "first_packet_epoch": 1792301353.0503657,
+      "last_packet_epoch": 1792311352.9838736,
+      "tshark_actual_exit_code": 0
+    },
+    {
+      "path": "minpma-20261018-continuation.pcapng",
+      "sha256": "0eb77cbb9d600be5cd8de0d138fa6a5288763db1146398d0776c533b4d94bf4b",
+      "packets": 1383,
+      "first_packet_epoch": 1792312497.4723628,
+      "last_packet_epoch": 1792314597.725605,
+      "tshark_actual_exit_code": 0
+    }
+  ],
+  "combined": "minpma-20261018-combined.pcapng",
+  "combined_sha256": "5e98fa5c5860d760fce6c8a751888614d5dfb87090754785e51fb2ded4d5ca6a",
+  "mergecap_actual_exit_code": 0,
+  "conservative_gap_epoch": [
+    1792311352.9838736,
+    1792311949.0
+  ],
+  "limits": "Gap bounds include idle time after last original frame. No exact process gap or zero-drop assertion. Final packet analysis rejects any cold trial overlapping this conservative gap.",
+  "source_sha256": {
+    "<workspace>\\merge_minpma_capture_epochs.py": "bc7667f4da959c9cd6211377d652e0b255f78e3d7caa2ecd46d169987e326041",
+    "minpma-capture-handoff.json": "d97857d575520f5a29187cb90cd51d110dfa13b4ebcaff3259e144ed5cf47341"
+  }
+}

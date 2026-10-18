@@ -163,7 +163,103 @@
       "path": "evidence/minpma-control17-stop-verified.json",
       "original_sha256": "6cebd76748d9ed1e25b4a387953808bf78d57d8eeeab45ad090e4b09adebf995",
       "exported_sha256": "eb5f3f7b1c443f6b867bee2557b2b514d8b8c409922d5cc2c4c28455f20f3b65"
+    },
+    {
+      "source": "minpma-f308-build-v2.json",
+      "path": "evidence/minpma-f308-build-v2.json",
+      "original_sha256": "5326e13dafa496ee061cc6e112ea7e1570492d4426dcfea88728f1cc371594aa",
+      "exported_sha256": "5bc804ae5ae4b28b7556d60c5c316b27cbf34763f68e59f793ad73ac122be142"
+    },
+    {
+      "source": "minpma-f308-v2-independent-review.json",
+      "path": "evidence/minpma-f308-v2-independent-review.json",
+      "original_sha256": "b2dad386f4aed16bcf0ae757807b31b6b7758e13b6ebaf157df2d05a967884a1",
+      "exported_sha256": "dd2863d21996d03a9c123a75290b9773ae21c4f8d42819460b8c1673f380ed6f"
+    },
+    {
+      "source": "minpma-capture-handoff.json",
+      "path": "evidence/minpma-capture-handoff.json",
+      "original_sha256": "d97857d575520f5a29187cb90cd51d110dfa13b4ebcaff3259e144ed5cf47341",
+      "exported_sha256": "9987e95f5b9a15fb4f50dc1a298366f57cfdbc7f30061e0ce650ec27cb4f31db"
+    },
+    {
+      "source": "minpma-v2-cohort-pma16a.json",
+      "path": "evidence/minpma-v2-cohort-pma16a.json",
+      "original_sha256": "97e3db284d4ef8d80c79a9b0c974769c58b6f185151d2c2a262510f1f887efa0",
+      "exported_sha256": "b229e7fec83dbdde77b66067245873ee9307c9e5e783449746e3d766a1fb042e"
+    },
+    {
+      "source": "minpma-v2-pma16a-cold3.json",
+      "path": "evidence/minpma-v2-pma16a-cold3.json",
+      "original_sha256": "759a7301e3fe294d374620683c86d596ff602a90f30be821bf782039894b4cc1",
+      "exported_sha256": "fcd3f08d7d7fb39f9ad87c655611f50a4c3a0c65dab84b875f2904582bb4fe87"
+    },
+    {
+      "source": "minpma-v2-cohort-pma17a.json",
+      "path": "evidence/minpma-v2-cohort-pma17a.json",
+      "original_sha256": "1e040c36015de5c886080460c1d2c54074f3337fa78b40f5e77599d471a2519c",
+      "exported_sha256": "3311df3a3008dd5b2861b8170fcf41937c4f0bc23c4db05fc858225fd531660c"
+    },
+    {
+      "source": "minpma-v2-pma17a-cold3.json",
+      "path": "evidence/minpma-v2-pma17a-cold3.json",
+      "original_sha256": "6cac84ac86da4a8825301034a33feb33bd410589dba7cbaba1a99662a4ed4221",
+      "exported_sha256": "a1a98e1421eae20dc6ce0be2c2923163f1409a96b4f3f50d519be8c3d570a0aa"
+    },
+    {
+      "source": "minpma-restoration.json",
+      "path": "evidence/minpma-restoration.json",
+      "original_sha256": "5229383b2c12a127315c59344f457c4bee1899c0e49f1cfa1f3b0f059945b9a8",
+      "exported_sha256": "28c6680874aa50762f73865720695cf4956d2e51556cf220aaff2fa5765e39ce"
+    },
+    {
+      "source": "minpma-final-status.json",
+      "path": "evidence/minpma-final-status.json",
+      "original_sha256": "87d9e5702d2822ed939970b7a138abed4bc9f321a24637d3364b8d21c3f63796",
+      "exported_sha256": "08b018ae826cf8308ffd3c06175f7829bddf13fdbc3b00596555412f6aef8d1d"
+    },
+    {
+      "source": "minpma-restored-16-cold3.json",
+      "path": "evidence/minpma-restored-16-cold3.json",
+      "original_sha256": "8f8216d803baee098e5d0b9791b9325936fbb3e37b1b5b22f25caa923e6d5aff",
+      "exported_sha256": "ca07c51aed0ae640527733df65d74233efa29217397292c90b618a6534f3412b"
+    },
+    {
+      "source": "minpma-restored-17-cold3.json",
+      "path": "evidence/minpma-restored-17-cold3.json",
+      "original_sha256": "e988585912d6a190c13d4ff83062f7773efabf477bd95974c167c9c396d60668",
+      "exported_sha256": "f344e2f6088e6edcf057011aa8e9bf05f39b4ac8e1cce56ee323a78c0abc4780"
+    },
+    {
+      "source": "minpma-cleanup.json",
+      "path": "evidence/minpma-cleanup.json",
+      "original_sha256": "f90594d5f3500fb20ae8b3a6d41f014b3d6e960b4812bc997cbf15c374dbac2d",
+      "exported_sha256": "d2988007ced422179dc3b2f65fd16ebb1627135a05123f27625fa22eac8d05bb"
+    },
+    {
+      "source": "minpma-completion-audit.json",
+      "path": "evidence/minpma-completion-audit.json",
+      "original_sha256": "bed451afe6e6c25e5141c481cc9e13246f58da57ef758f0cd639ef9d939a5f14",
+      "exported_sha256": "17bf97164233b5483d1ca7034ca8808c3b820f4ae7cd438e0c3c79cc4fdcb6ce"
+    },
+    {
+      "source": "minpma-reviewed-outcome.json",
+      "path": "evidence/minpma-reviewed-outcome.json",
+      "original_sha256": "81adc97e4915966cc1784ce5fca9b6e28bd7285cc8488ff41b10d884ff425d5f",
+      "exported_sha256": "cf0314a71ab4b11d2de0a35851faa63d5d9cd7d231229c446a4d7f1bcf432b4c"
+    },
+    {
+      "source": "minpma-packets-comparison.json",
+      "path": "evidence/minpma-packets-comparison.json",
+      "original_sha256": "2b4fd0bd1caa064d5ee73ec4d80fa28b89f96a3e1f37fe4dbac6d50be45fd2d9",
+      "exported_sha256": "ddd5ed2dbeb7ccb2329df51f930feec877fd25d7e607b4fc6052238e985f0491"
+    },
+    {
+      "source": "minpma-capture-merge.json",
+      "path": "evidence/minpma-capture-merge.json",
+      "original_sha256": "82d4b94a29c603592b1b4b10a789989d5d6743615ffd802107794908de7bf887",
+      "exported_sha256": "35ab51a545fbfeb7de95cfea3489a03ccc5731feb66553e3e0486c120fc014f5"
     }
   ],
-  "updated": "2026-10-18T17:13:51.325885"
+  "updated": "2026-10-18T18:11:26.778793"
 }
