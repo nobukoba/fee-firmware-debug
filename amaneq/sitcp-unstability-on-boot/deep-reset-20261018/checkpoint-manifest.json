@@ -1,0 +1,41 @@
+{
+  "state": "IN_PROGRESS_CHECKPOINT",
+  "files": [
+    {
+      "source": "deepreset-native-persistence-analysis.json",
+      "source_sha256": "4eff423463450b810210758213f8ba02bfd84096247e4d866b92f1f36e52d40b",
+      "export": "evidence/deepreset-native-persistence-analysis.json",
+      "export_sha256": "c794ae68ed260de7aaa4c67bd00e47cd197e4d84886ddb083dc14314f06af8af"
+    },
+    {
+      "source": "deepreset-f30b-preparation.json",
+      "source_sha256": "6a69c44e17293e56c9a33870c74dff85330c50ffa1944a8f6fc400184ceee74c",
+      "export": "evidence/deepreset-f30b-preparation.json",
+      "export_sha256": "98cbe48ce44fd63261dd155f13e5ec0cdbd712ba7e54ad9f29fccdc71e0fb001"
+    },
+    {
+      "source": "deepreset-cdrhold-hypothesis.json",
+      "source_sha256": "a82dc419f0163bfd39e19dfbc5b7fc827d443f28443ead47e3d8c47ca717bbdc",
+      "export": "evidence/deepreset-cdrhold-hypothesis.json",
+      "export_sha256": "6beb89198c379bcc5090329186920d2c5b2f123dd4ec248c08527019fc01f9f3"
+    },
+    {
+      "source": "experiments/deepreset-f30b-sim/result.json",
+      "source_sha256": "07254dc17a877500cb1b35ac1e94c1415e90e0e5749074c80b2f4dc7370d649c",
+      "export": "evidence/f30b-simulation.json",
+      "export_sha256": "f454c9a2f0485300b1a50cdace9fe790b431bf2533d97c5254d9218c6bf61700"
+    },
+    {
+      "source": "experiments/deepreset-cdrhold-sim/result.json",
+      "source_sha256": "9b0121e5ece30e34587e10ff073518b1ae1562a0cf81421ec22af9e75fcbd689",
+      "export": "evidence/cdrhold-simulation.json",
+      "export_sha256": "ef996c3f9ed1b15e1e73053f7acc43588e944bd7aab614a6531b1eed6731645f"
+    },
+    {
+      "source": "deepreset-functional-f30b.patch",
+      "source_sha256": "65dc3bb2f5c7ffb326289f339be6c7706e285b56a8374d7a766041517bd2bf1c",
+      "export": "patches/deepreset-functional-f30b.patch",
+      "export_sha256": "65dc3bb2f5c7ffb326289f339be6c7706e285b56a8374d7a766041517bd2bf1c"
+    }
+  ]
+}

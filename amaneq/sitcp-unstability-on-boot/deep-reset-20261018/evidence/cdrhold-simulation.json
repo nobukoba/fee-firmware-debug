@@ -1,0 +1,43 @@
+{
+  "created": "2026-10-18T18:35:44.982747",
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xvhdl.bat",
+        "--2008",
+        "deepreset_CdrHoldPulse.vhd",
+        "tb.vhd"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xelab.bat",
+        "hold_tb",
+        "-s",
+        "hold_sim"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xsim.bat",
+        "hold_sim",
+        "-runall"
+      ],
+      "actual_exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "WORKSPACE/simulate_deepreset_cdrhold.py": "ca667f15f3d2627a8905cd1b94b5d232e952ea4c57db0d2ead86bce99b3ba4e5",
+    "deepreset_CdrHoldPulse.vhd": "a03aa494f02ef88091f6143b5b68568837278743aca2b6b325b3b7c2426b0634",
+    "experiments/deepreset-cdrhold-sim/deepreset_CdrHoldPulse.vhd": "a03aa494f02ef88091f6143b5b68568837278743aca2b6b325b3b7c2426b0634",
+    "experiments/deepreset-cdrhold-sim/tb.vhd": "7c35dea43ce2017ad85e2871ecab8002bf586d54614dd25e24d4e512b070a273"
+  },
+  "limits": [
+    "Digital controller only; no analog CDR model.",
+    "SYS200MHz and VIO outputs must be verified in same clock domain after insertion.",
+    "HOLD pulse160ns through40.96us; native automatic reset could still confound analog observations and must be monitored."
+  ]
+}

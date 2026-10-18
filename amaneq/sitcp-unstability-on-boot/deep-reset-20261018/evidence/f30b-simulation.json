@@ -1,0 +1,51 @@
+{
+  "created": "2026-10-18T18:21:49.408596",
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xvhdl.bat",
+        "--2008",
+        "sync.vhd",
+        "native.vhd",
+        "candidate.vhd",
+        "tb.vhd"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xelab.bat",
+        "validfilter_tb",
+        "-L",
+        "unisim",
+        "-s",
+        "validfilter_sim"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xsim.bat",
+        "validfilter_sim",
+        "-runall"
+      ],
+      "actual_exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "WORKSPACE/simulate_deepreset_f30b.py": "891a582c6a9f877e19632ba4f001867da8d25bde5e76acd8a1e00a595dde3f85",
+    "lrtdc-validfilter-f30b/patch-check/backup/rx-startup-before-patch.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "lrtdc-validfilter-f30b/patch-check/rx-startup-before-patch.vhd": "e3c1f27d596514cb8d282b8ede46d9604e4bc397a9610faaf1a5ba44465a9e3c",
+    "lrtdc-minpma-f308/ip/gig_ethernet_pcs_pma/synth/gig_ethernet_pcs_pma_sync_block.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "experiments/deepreset-f30b-sim/candidate.vhd": "80b837c30b316e067786a485c0b48a1585799b079a0397273a4527eda11df622",
+    "experiments/deepreset-f30b-sim/native.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "experiments/deepreset-f30b-sim/sync.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "experiments/deepreset-f30b-sim/tb.vhd": "996ac89fcaff519d47a0b6603e710313411c04aa3840615c96f6219111c53ba5"
+  },
+  "limits": [
+    "Complete digital vendor FSM with actual six-stage synchronization primitives.",
+    "PLL and recovered-clock stability inputs idealized; hard RXRESETDONE follows inverseGTRXRESET. No analog GTX model.",
+    "Original500ns initial wait and INIT0/SOFT0 preserved; qualification constant10us also affects two native startup waits."
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "created": "2026-10-18T18:48:51.773293",
+  "phase": "same_failed_boot_readonly_ten_minute_observation_complete",
+  "source_sha256": {
+    "deepreset-f104-baseline-resume-v2.json": "f6f29142941eb4d669b6d81cde137c1563f14cc84e078f783da5503d87897da6",
+    "WORKSPACE/analyze_deepreset_baseline.py": "6c1110ee0ca636ee4a7fd0daab6d958d7c70ddbe1cc1785d6a3cddbb5325e917",
+    "rootcause-f104-frequency-deepbasev2-frequency0.console.frequency.json": "ab28629835510fc2dbdf12f45623af1b1d319f69a292c062fcca8934b2bcd264",
+    "rootcause-f104-frequency-deepbasev2-frequency0.json": "0d7f15a17d0875a73b2b667c89acd46cfaafd35b3bdcf6664950c033b2277e9d",
+    "rootcause-f104-frequency-deepbasev2-frequency0.console.txt": "52d1f1819094e7d33710fae83469f568d6ee71a932052d54b4a9f1eeb3a16236",
+    "rootcause-f104-frequency-deepbasev2-frequency1.console.frequency.json": "d5e5dbd0756cc6a6c34962eae47fc2d2597b3f960654854dc2e3ffe1f5f2a071",
+    "rootcause-f104-frequency-deepbasev2-frequency1.json": "05f4615e8dfc28eb8f1bab17fbff808bf1eee6d7bbe352121c3c85da3ffd8491",
+    "rootcause-f104-frequency-deepbasev2-frequency1.console.txt": "176033a3b764cfd591a5527af3b51e41ed15c91e3f4e20cf9754e90933a6996d",
+    "rootcause-f104-frequency-deepbasev2-frequency2.console.frequency.json": "cd79410f52d7709952c10b0bc121d4f9b28ee7d0a6974fed244f6da1c49951f5",
+    "rootcause-f104-frequency-deepbasev2-frequency2.json": "a527a295188c3d3ecdea5c400d099c848b5f0b025e1817fb335c07d79f762468",
+    "rootcause-f104-frequency-deepbasev2-frequency2.console.txt": "acfa2ec4e68614fa65acbcb15aff8de693184f3d67606ac941fe01052080e437"
+  },
+  "observations": [
+    {
+      "index": 0,
+      "observation_end_elapsed_s": 45.5,
+      "summary": {
+        "nominal_ref_MHz": {
+          "mean": 156.24592371577435,
+          "min": 156.24592112173949,
+          "max": 156.24592778512513
+        },
+        "nominal_rx_MHz": {
+          "mean": 62.45602001417483,
+          "min": 62.456015410760955,
+          "max": 62.45602409198205
+        },
+        "rx_over_ref": {
+          "mean": 0.39972895630728944,
+          "min": 0.39972892901152896,
+          "max": 0.3997289828934398
+        }
+      },
+      "system_monitor": [
+        "ROOT_SYSMON 1792316234175 localhost:3121/xilinx_tcf/Digilent/210299BBCDDA/xc7k160t_0/SYSMON TEMPERATURE 45.9 TEMPERATURE_SCALE CELSIUS VCCAUX 1.781 VCCBRAM 0.987 VCCINT 0.986"
+      ],
+      "native_reset_inputs_quiet_during_frequency": true,
+      "network_before": false,
+      "network_after": false
+    },
+    {
+      "index": 1,
+      "observation_end_elapsed_s": 349.828,
+      "summary": {
+        "nominal_ref_MHz": {
+          "mean": 156.2459298550927,
+          "min": 156.24592602506962,
+          "max": 156.24593321545416
+        },
+        "nominal_rx_MHz": {
+          "mean": 62.45602035328464,
+          "min": 62.45601638567013,
+          "max": 62.456024822297834
+        },
+        "rx_over_ref": {
+          "mean": 0.3997289427712345,
+          "min": 0.39972891629007706,
+          "max": 0.3997289763908244
+        }
+      },
+      "system_monitor": [
+        "ROOT_SYSMON 1792316538185 localhost:3121/xilinx_tcf/Digilent/210299BBCDDA/xc7k160t_0/SYSMON TEMPERATURE 46.0 TEMPERATURE_SCALE CELSIUS VCCAUX 1.782 VCCBRAM 0.986 VCCINT 0.985"
+      ],
+      "native_reset_inputs_quiet_during_frequency": true,
+      "network_before": false,
+      "network_after": false
+    },
+    {
+      "index": 2,
+      "observation_end_elapsed_s": 649.547,
+      "summary": {
+        "nominal_ref_MHz": {
+          "mean": 156.24593985371988,
+          "min": 156.2459367353164,
+          "max": 156.24594338798795
+        },
+        "nominal_rx_MHz": {
+          "mean": 62.4560246568198,
+          "min": 62.45602106243642,
+          "max": 62.45602938422093
+        },
+        "rx_over_ref": {
+          "mean": 0.3997289447347701,
+          "min": 0.39972891821699263,
+          "max": 0.3997289698505721
+        }
+      },
+      "system_monitor": [
+        "ROOT_SYSMON 1792316837719 localhost:3121/xilinx_tcf/Digilent/210299BBCDDA/xc7k160t_0/SYSMON TEMPERATURE 46.5 TEMPERATURE_SCALE CELSIUS VCCAUX 1.781 VCCBRAM 0.986 VCCINT 0.985"
+      ],
+      "native_reset_inputs_quiet_during_frequency": true,
+      "network_before": false,
+      "network_after": false
+    }
+  ],
+  "rx_mean_span_Hz": 4.642644967134402,
+  "ratio_mean_span_ppm": 0.03384013735896474,
+  "conclusion": "No spontaneous network recovery across these three read-only observations; the abnormal mean recovered-clock ratio persisted for at least600s without intentional GTX resets.",
+  "limits": [
+    "One failed cold boot, not three independent boots.",
+    "Frequency averages do not measure jitter, individual phase slips or GT analog supply waveforms.",
+    "VIO activity proves monitored reset request quiescence, not all internal analog reset states.",
+    "SYS nominal200MHz calibrates MHz; ratio cancels shared SYS calibration."
+  ]
+}

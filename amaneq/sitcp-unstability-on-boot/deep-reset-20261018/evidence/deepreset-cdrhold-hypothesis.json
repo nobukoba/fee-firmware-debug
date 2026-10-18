@@ -1,0 +1,18 @@
+{
+  "created": "2026-10-18 18:29:15.048254",
+  "phase": "pre_hardware_design_hypothesis",
+  "source_url": "https://docs.amd.com/v/u/en-US/ug476_7Series_Transceivers",
+  "reference": "UG476 pages200-203; RXCDRHOLD1 and RXCDROVRDEN0 lock-to-reference use. RXCDRLOCK reserved; RXCDRRESET/RXCDRFREQRESET reserved tiedlow.",
+  "test": "Use only documented RXCDRHOLD; short fixed-duration on-chip pulses below100us with all other GTX pins preserved and LOOPBACK0. Observe physical HOLD and nativeReset activity. Compare same-placement masked HOLD control. PMA remains separately available as positive control.",
+  "predictions": [
+    "Frequency/state repairs after HOLD release withoutPMA/native reset support a receiver CDR acquisition/state issue independent of full PMA reset.",
+    "No effect for short HOLD does not exclude CDR because duration/phase may be insufficient.",
+    "Any automatic native reset makes a HOLD-only causal inference invalid; record and exclude, do not hide."
+  ],
+  "requirements": [
+    "Review post-route actual destination and output register INIT0, pulse width digital simulation, STA/skew/DRC.",
+    "All original reserved reset ports grounded, no unsupported DRP changes.",
+    "Read-only SYSmon is not GT analog rail observation."
+  ],
+  "local_reference_sha256": "aa83d943632949e2f6a2444c84bfd3c684eca2d6f291f715526afc88ad751788"
+}

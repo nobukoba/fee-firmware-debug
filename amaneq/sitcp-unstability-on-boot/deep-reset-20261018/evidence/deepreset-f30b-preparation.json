@@ -1,0 +1,24 @@
+{
+  "created": "2026-10-18T18:20:29.284796",
+  "phase": "source_prepared_not_built",
+  "repo": "lrtdc-validfilter-f30b",
+  "drive": "L:",
+  "base_commit": "5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039",
+  "functional_added_lines": 4,
+  "functional_deleted_lines": 3,
+  "hypothesis": "Existing short wait counter qualifies DATA_VALID recovery for10us after a loss, preventing brief synchronization pulses from resetting existing100us error watchdog. No added PMA pulse/timer.",
+  "confounds": [
+    "WAIT_TIME_MAX also increases native minimum reset hold and RXUSRCLK wait; a matched bypass or delay-only control is required.",
+    "Shared counter qualification may alter runtime error handling, requiring transient/long-error/DONT_RESET tests and normal17 regression."
+  ],
+  "source_sha256": {
+    "WORKSPACE/prepare_deepreset_f30b.py": "0700073d49552916f821a1f69c1f1316d6b0de8cb59bcc2169f4ef77ed86c422",
+    "patch_rx_validfilter_f30b.py": "e89e880007b85223ad73e2c2abf291439786e925789d779f0af18cfbfef108ca",
+    "lrtdc-validfilter-f30b/patch_rx_validfilter_f30b.py": "e89e880007b85223ad73e2c2abf291439786e925789d779f0af18cfbfef108ca",
+    "lrtdc-validfilter-f30b/patch-rx-validfilter.tcl": "1de4be6f9e3863a4537cbff32b1d423d1912077eb98c12542d671727566636f3",
+    "lrtdc-validfilter-f30b/build-validfilter-f30b.tcl": "de1d3637b30712e1cc9e23858bb466485aee9ec0819c82bf8c6dac3e8725db97",
+    "lrtdc-validfilter-f30b/hdl/defBusAddressMap.vhd": "b8e538f81e62e052a2fc22f910919cadd8e4e584ac571497ef499bad79c3792e",
+    "deepreset-functional-f30b.patch": "65dc3bb2f5c7ffb326289f339be6c7706e285b56a8374d7a766041517bd2bf1c",
+    "lrtdc-validfilter-f30b/patch-check/rx-startup-before-patch.vhd": "e3c1f27d596514cb8d282b8ede46d9604e4bc397a9610faaf1a5ba44465a9e3c"
+  }
+}
