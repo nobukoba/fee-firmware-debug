@@ -1,0 +1,19 @@
+{
+  "created": "2026-10-19T04:09:30.415208",
+  "phase": "local_completion_checks_passed",
+  "restored_both_cold3_full_flash_EEPROM_runtime_network": true,
+  "capture_valid_closed_and_sleep_inhibition_released": true,
+  "existing_published_source_export_pairs_checked": 87,
+  "source_sha256": {
+    "WORKSPACE/audit_deepreset_completion.py": "c98f43f9f603379423e06cd570264460684f316da3de408d23728d8515575e2e",
+    "deepreset-restoration.json": "d2cc2540e2f8a6bd8b89fdcf9fd0d69561c145f0d879e98dfd6c3dbe86bbc0fa",
+    "deepreset-resource-cleanup.json": "07f895d7355e7d1362dc5a9e47baac43da91ff0253258d9edfefb0c331bdb791",
+    "deepreset-final-status.json": "eed96b4def96decf9ecdd9ba55eeeb14aea2b56e71d846b50f78466622b85788",
+    "deepreset-final-soak-summary.json": "d4edf3214fdb572b5a676c2b57261aa8632f66148a9333618dcdea15c5b6fcb1"
+  },
+  "limits": [
+    "Network startup and sustained control/TCP checks; not a full external-stimulus TDC timing/calibration validation.",
+    "Separate final publication verification must run after final commit and push."
+  ],
+  "final_restored_soak_checked": true
+}

@@ -1,0 +1,72 @@
+{
+  "created": "2026-10-19T03:15:01.952132",
+  "phase": "independent_review_passed_ready_for_hardware",
+  "runtime": "0x60C4F310",
+  "mcs": "lrtdc-longhold-f310/build/longhold-f310/lrtdc-longhold-f310.mcs",
+  "mcs_sha256": "0b76f5a186040ada25c179cf6354e2990c2ac06d2ee469889fb57325393a1cde",
+  "expected_full_flash_sha256": "a5eea9fb772e28aa620cc445d9b785fd209d5d38d2a11c9cbf8c6f8e72864c9b",
+  "functional_patch": "deepreset-functional-f310.patch",
+  "functional_patch_sha256": "92b1e2b25904387eeabe9d4537fffac8a8750155fd52362bff30252d0a5a6e33",
+  "functional_added_lines": 1,
+  "functional_deleted_lines": 1,
+  "wns_ns": 0.068,
+  "whs_ns": 0.015,
+  "drc": [
+    [
+      "CHECK-3",
+      "Warning",
+      "1"
+    ],
+    [
+      "DPIP-1",
+      "Warning",
+      "384"
+    ],
+    [
+      "REQP-1839",
+      "Warning",
+      "12"
+    ],
+    [
+      "REQP-1840",
+      "Warning",
+      "20"
+    ],
+    [
+      "RTSTAT-10",
+      "Warning",
+      "1"
+    ]
+  ],
+  "core_VHDL_sha256": {
+    "gig_ethernet_pcs_pma.vhd": "c214570c4dbe72b99eb8ceaa587bb3912109bab1546e10cfb03e813e901efa1e",
+    "gig_ethernet_pcs_pma_block.vhd": "ad00061e2e8af6dbdedede8fd2c473f3237268f5a3b54a7ec10c65937991ea2c",
+    "gig_ethernet_pcs_pma_reset_sync.vhd": "64116e0755096373a875f358534f2adbffed73f420292e83d1dd7cf08c727d97",
+    "gig_ethernet_pcs_pma_sync_block.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "transceiver/gig_ethernet_pcs_pma_cpll_railing.vhd": "60f4277b01260797fff0ab0db04025dd36e3817b360c3c74c3ff591b595d009e",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard.vhd": "c6e3fe294528bd3bc370e053718f0e1c54368668212b74793c7ab1d50869fe88",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_gt.vhd": "eb56e5773b9ff9af58e31979a7f25aa15ffc34b1f7183e220cbb23c96e32198d",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_init.vhd": "9be7c5109252b766219d820fc7ab7c06f3c15540de594c3d36cced7be7bc311b",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_multi_gt.vhd": "d9094ceb95dcb439176a1308c911f6ea3fef6a6519db97a64a913cb313cd4e0d",
+    "transceiver/gig_ethernet_pcs_pma_reset_wtd_timer.vhd": "e7a40bafce9ba113785d7e1ad202c9e85d1baf156732878c049d6fe273b3abfd",
+    "transceiver/gig_ethernet_pcs_pma_rx_startup_fsm.vhd": "bcfcb8ae6ddd5733af145379adf00772849ecdd83c9455bbd8e92eeb264bdbaa",
+    "transceiver/gig_ethernet_pcs_pma_transceiver.vhd": "03932bb1240f6849fb8dac486ffc991463899651ef38804ce9654f25e67fe132",
+    "transceiver/gig_ethernet_pcs_pma_tx_startup_fsm.vhd": "b746354b507ba31ca0c2c4aa293edce21938567752a7c83bdff839ff0dc4a91a"
+  },
+  "source_sha256": {
+    "WORKSPACE/review_deepreset_f310_v2.py": "b53fc6273f9156401410e18e7c9f9b128563bcee3e844a0bcc7c8d952b059aad",
+    "deepreset-f310-build.json": "6eb3badc56f6177263edc7555275e35c99fdd445b0a182334e3ef4aa3fb7d549",
+    "experiments/deepreset-longhold-f310-sim/result.json": "a7b305ccd8b769ade7382dc13d1987876eb2f82c9c9169b300b01f49e14f4ee0",
+    "lrtdc-longhold-f310/build/longhold-f310/rx-startup-before-patch.vhd": "3499fbb3cb184c3557af8c471398b8e1cbe02e160d195112af265d2a2662dcd0",
+    "lrtdc-longhold-f310/build/longhold-f310/rx-startup-after-patch.vhd": "bcfcb8ae6ddd5733af145379adf00772849ecdd83c9455bbd8e92eeb264bdbaa",
+    "lrtdc-longhold-f310/build/longhold-f310/timing-summary.rpt": "09da3f15a21de211c6728e15df261735e162d0d79a9d46ed3d67d80cda575e58",
+    "lrtdc-longhold-f310/build/longhold-f310/bus-skew.rpt": "43faf3d52f0d0302eb282e06cf2504839c233126811ab96ae09ff6f1172165de",
+    "lrtdc-longhold-f310/build/longhold-f310/drc.rpt": "e71a4b2f2152240d9ace3295de4aba13186684b1a79f12677560d47208f65dbc"
+  },
+  "limits": [
+    "One native WAIT_TIME_MAX constant100->200000:1ms atSYS200;500nsSTARTUP_DELAY/INIT0/SOFT0/CDR50us unchanged.",
+    "RX CPLLreset outputopen/sharedMMCM TXowned: longerreceiverreset doesnot hold sharedPLL orMMCM inreset. Sharedcounter alsoextendsuserclockwait.",
+    "Separately compiled placement is not matched to native; coldcohorts and normal17 regression required.",
+    "Digital simulation does not model analog CDR acquisition."
+  ]
+}

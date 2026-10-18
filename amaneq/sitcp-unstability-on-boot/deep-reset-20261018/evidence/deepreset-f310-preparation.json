@@ -1,0 +1,31 @@
+{
+  "created": "2026-10-19T01:55:19.853858",
+  "phase": "source_prepared_not_built",
+  "runtime": "0x60C4F310",
+  "base_commit": "5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039",
+  "repo": "lrtdc-longhold-f310",
+  "drive": "I:",
+  "functional_added_lines": 1,
+  "functional_deleted_lines": 1,
+  "hypothesis": "Existing WAIT_TIME_MAX100->200000 (1ms SYS200), extends receiver GTRXreset hold and RXuserclockwait. RX CPLL_RESET isopen; sharedMMCM RST isTXFSM, notRXFSM, by physicalinventory. Thus TXPLL/MMCM can settle while receiverreset stayshigh.",
+  "preparation_correction": "V1 stopped after source creation because RXMMCMreset output is not literallyopen; it does not drive the shared actualMMCM. V2 verifies actualMMCMreset source instead. No build or hardware was run.",
+  "limits": [
+    "Not built or hardwareverified.",
+    "500nsSTARTUP_DELAY,INIT0,SOFT0,CDR50us unchanged.",
+    "Shared counter changes both waits, not isolatedmechanismproof.",
+    "5us/10us remain below native~31us PLLlimitedreset;1ms materially extends beyondPLLock.",
+    "Require digitalFSMsim then fullsource qualifiedbuild beforeHW."
+  ],
+  "source_sha256": {
+    "WORKSPACE/prepare_deepreset_f310_v2.py": "b86ea9f080e688322840cc7408db6c6d6b9f13aad51801945485526dc126b269",
+    "prepare_deepreset_f310.py": "bc748fbf6c24e8c0ef8625fea9559608c307a61d9b98565abd2eb416430f8cc5",
+    "lrtdc-longhold-f310/patch-rx-longhold.tcl": "7e8139b9f4d0171d9209d0bb80dc611658f909bc461ea87e15e16cdc9e0a31f1",
+    "lrtdc-longhold-f310/build-longhold-f310.tcl": "3f2fd743248bba322bff91bfb6b3b57e728253d688d57a22a2e6992afb44275f",
+    "lrtdc-longhold-f310/hdl/defBusAddressMap.vhd": "3e014a7c5020a9d611c43a53e0a5ee307052e193a0299357bada09077a53e38a",
+    "deepreset-functional-f310.patch": "92b1e2b25904387eeabe9d4537fffac8a8750155fd52362bff30252d0a5a6e33",
+    "lrtdc-longhold-f310/patch-check/rx-startup-after-patch.vhd": "bcfcb8ae6ddd5733af145379adf00772849ecdd83c9455bbd8e92eeb264bdbaa",
+    "lrtdc-longhold-f310/patch-check/rx-startup-before-patch.vhd": "3499fbb3cb184c3557af8c471398b8e1cbe02e160d195112af265d2a2662dcd0",
+    "lrtdc-startdelay-f305/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_gtwizard_init.vhd": "9be7c5109252b766219d820fc7ab7c06f3c15540de594c3d36cced7be7bc311b",
+    "deepreset-clockhold-base-v2/inventory.tsv": "aabe60a3529d7e97907cd5644dd647de423d6afb107ca3c080286d01cc8d5195"
+  }
+}

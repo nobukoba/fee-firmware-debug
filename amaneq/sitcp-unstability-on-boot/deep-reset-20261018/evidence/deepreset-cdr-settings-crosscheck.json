@@ -1,0 +1,31 @@
+{
+  "created": "2026-10-19T03:10:05.027971",
+  "phase": "static_CDR_configuration_crosscheck_complete_no_hardware_changes",
+  "GTX_source_attributes": {
+    "RXCDR_CFG": "x\"03000023ff10100020\"",
+    "CPLL_FBDIV": "4",
+    "CPLL_FBDIV_45": "4",
+    "CPLL_REFCLK_DIV": "1",
+    "RXOUT_DIV": "4",
+    "TXOUT_DIV": "4",
+    "RX_DATA_WIDTH": "20"
+  },
+  "reference": "AMD UG476 v1.12.1 Table4-19 pp205-206,8B/10B/noSSC,RXOUT_DIV4,0.8-3.125Gbps,200ppm",
+  "reference_url": "https://docs.amd.com/v/u/en-US/ug476_7Series_Transceivers",
+  "matches_recommended_CDR_CFG": true,
+  "nominal_PLL_math": {
+    "reference_MHz": 156.25,
+    "CPLL_VCO_MHz": 2500.0,
+    "line_Mbps": 1250.0,
+    "RX20bit_output_MHz": 62.5
+  },
+  "source_sha256": {
+    "lrtdc-longhold-f310/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_gtwizard_gt.vhd": "eb56e5773b9ff9af58e31979a7f25aa15ffc34b1f7183e220cbb23c96e32198d",
+    "experiments/reference/ug476-7series-extracted-24h.txt": "aa83d943632949e2f6a2444c84bfd3c684eca2d6f291f715526afc88ad751788"
+  },
+  "limits": [
+    "Static source/configuration crosscheck; actual physical diagnostic image attributes were separately reviewed.",
+    "No evidence that simply widening200ppm tolerance is correct: the failed recovered RX clock offset is not an independent measurement of the incoming serial line frequency.",
+    "XCI nominal125MHz metadata is retained by existing board-generation workflow; common board fixes use CPLL_FBDIV_45=4 and156.25MHz timing constraints. This audit alone doesnot establish a root cause or exclude analog/startup behavior."
+  ]
+}

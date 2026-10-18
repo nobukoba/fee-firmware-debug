@@ -1,0 +1,20 @@
+{
+  "started": "2026-10-19T03:25:27.914153",
+  "mcs": "WORKSPACE/lrtdc-longhold-f310/build/longhold-f310/lrtdc-longhold-f310.mcs",
+  "mcs_sha256": "0b76f5a186040ada25c179cf6354e2990c2ac06d2ee469889fb57325393a1cde",
+  "payload_sha256": "19f0d9ff63f0bfb44e0f768e6897ed0a4ab6d64a1da3205ce8013d81d148dd43",
+  "payload_bytes": 6692572,
+  "backup": "WORKSPACE/flash-deepf31017a-20261019-032527-before.bin",
+  "readback": "WORKSPACE/flash-deepf31017a-20261019-032527-after.bin",
+  "label": "deepf31017a",
+  "target_serial": "210299BDCF8E",
+  "success": true,
+  "vivado_exit_code": 0,
+  "backup_bytes": 16777216,
+  "backup_sha256": "2421f7493910e6e057ec35106b6324948b926d03b9ac6a919eb678616fd059f6",
+  "readback_bytes": 16777216,
+  "readback_sha256": "a5eea9fb772e28aa620cc445d9b785fd209d5d38d2a11c9cbf8c6f8e72864c9b",
+  "readback_image_sha256": "19f0d9ff63f0bfb44e0f768e6897ed0a4ab6d64a1da3205ce8013d81d148dd43",
+  "image_matches": true,
+  "finished": "2026-10-19T03:30:38.063990"
+}

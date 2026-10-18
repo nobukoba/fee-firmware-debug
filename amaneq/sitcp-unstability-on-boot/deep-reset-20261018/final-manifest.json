@@ -1,0 +1,167 @@
+{
+  "state": "COMPLETED_RESTORED",
+  "files": [
+    {
+      "source": "deepreset-restoration.json",
+      "source_sha256": "d2cc2540e2f8a6bd8b89fdcf9fd0d69561c145f0d879e98dfd6c3dbe86bbc0fa",
+      "export": "evidence/deepreset-restoration.json",
+      "export_sha256": "30dc880d3f0099ab113d29b59c53204c76b93f40e3151dcb599cef19cfa61e7b"
+    },
+    {
+      "source": "deepreset-final-status.json",
+      "source_sha256": "eed96b4def96decf9ecdd9ba55eeeb14aea2b56e71d846b50f78466622b85788",
+      "export": "evidence/deepreset-final-status.json",
+      "export_sha256": "193bdebf94def8a942ec620fb756502555e68c10a5bc45141c1a3dc05c8ee711"
+    },
+    {
+      "source": "deepreset-resource-cleanup.json",
+      "source_sha256": "07f895d7355e7d1362dc5a9e47baac43da91ff0253258d9edfefb0c331bdb791",
+      "export": "evidence/deepreset-resource-cleanup.json",
+      "export_sha256": "a5d45f1d57ac10d2fef41ac73453b2ec69971511fb7278ff8f7789db354693ac"
+    },
+    {
+      "source": "deepreset-local-completion-audit.json",
+      "source_sha256": "1e8f0a22e8fce941fc29f6d8e0fbea36dc2fe117e4d11578b48d1ab932e503e2",
+      "export": "evidence/deepreset-local-completion-audit.json",
+      "export_sha256": "dbdd30d3a658b41d9b7ea124209e7fdd7e5a0e427861674ed8e40a60ab0c1839"
+    },
+    {
+      "source": "deepreset-checkpoint7-verification.json",
+      "source_sha256": "0a191e5ef1f658d147812210b659d11262bdd06fa6787c1d2063a045cb359e3f",
+      "export": "evidence/deepreset-checkpoint7-verification.json",
+      "export_sha256": "c562fcfbd6218b5235c219475258776503e494e0e8ff6cc6c33603be528b7782"
+    },
+    {
+      "source": "flash-restoredeep16-20261019-033510-result.json",
+      "source_sha256": "fb471b73f94b7b73045f1979f8de5c25be6d45000eb941e2706073bf89990869",
+      "export": "evidence/flash-restoredeep16-20261019-033510-result.json",
+      "export_sha256": "38ce4a290da846c56fb7c477bede68e1fdf302db0e11049fe9f40b03b6d9b3d8"
+    },
+    {
+      "source": "deepreset-restored-16-cold3.json",
+      "source_sha256": "4f5cd6f23e36d0c3391e698450556d3694d7dcee433ee8d753507834c3449c7a",
+      "export": "evidence/deepreset-restored-16-cold3.json",
+      "export_sha256": "19003bd0f40ea19dc2fa438e46bafe8465d613e7ab32f735e3d5d2fcc0c2a566"
+    },
+    {
+      "source": "flash-restoredeep17-20261019-034408-result.json",
+      "source_sha256": "041320e055215432c97de5bd567eee10b1ef309c901a1b5c14545471c1b3edad",
+      "export": "evidence/flash-restoredeep17-20261019-034408-result.json",
+      "export_sha256": "966fceb8d595d01bbd0dff123df8d87e64a85a5a33b98b4198ac4ac58a1040b3"
+    },
+    {
+      "source": "deepreset-restored-17-cold3.json",
+      "source_sha256": "3edc0c1a8d83c6b37f966963aa17744ad3722fe1e4fe04e36f03301b7cf05e42",
+      "export": "evidence/deepreset-restored-17-cold3.json",
+      "export_sha256": "b94c7e14705b645303f088e82f31ab416dfda9b44eeec5b3a57a0546b024140b"
+    },
+    {
+      "source": "deepreset-f310-preparation.json",
+      "source_sha256": "9ffb290f539c3e136bbbf6dd2f39876f8054dbd1814f4f3ea8db1d5a6e0cd062",
+      "export": "evidence/deepreset-f310-preparation.json",
+      "export_sha256": "ffcf17aa204a7ee650c2402043387bfa4cc38c8014384cf744822950927bedc7"
+    },
+    {
+      "source": "deepreset-f310-build.json",
+      "source_sha256": "6eb3badc56f6177263edc7555275e35c99fdd445b0a182334e3ef4aa3fb7d549",
+      "export": "evidence/deepreset-f310-build.json",
+      "export_sha256": "eb9934e25faae2f663be3cb1ad74a41f890ca2ce7bca167b0ab5e5e40b8ff999"
+    },
+    {
+      "source": "deepreset-f310-independent-review.json",
+      "source_sha256": "afe21d1fd5c44ddd24b403e9ad00ada304e0203aecb9554dd9a9ba6854f70aab",
+      "export": "evidence/deepreset-f310-independent-review.json",
+      "export_sha256": "e36349769f52d251519432ecae836d158b292f45f541a3884239c984bffd8012"
+    },
+    {
+      "source": "experiments/deepreset-longhold-f310-sim/result.json",
+      "source_sha256": "a7b305ccd8b769ade7382dc13d1987876eb2f82c9c9169b300b01f49e14f4ee0",
+      "export": "evidence/deepreset-f310-digital-simulation.json",
+      "export_sha256": "f4446268e72f7853b074b629307228d8118aa327a1680f1ea616589dc2076176"
+    },
+    {
+      "source": "deepreset-matched-cohort-deepd16byarp2.json",
+      "source_sha256": "e1ff68e0684d71f327c665eb6b41757b12b8643c0d406811804853ff9f5d7c9f",
+      "export": "evidence/deepreset-matched-cohort-deepd16byarp2.json",
+      "export_sha256": "1f670b8dcca83e26dd44424e9e1bd4e4173c5a0fc3af006c7fb2961ae2b1a44a"
+    },
+    {
+      "source": "deepreset-deepd16byarp2-cold3.json",
+      "source_sha256": "e1adad81f9a2bf1334e332d228449691746ce1fc1c12746916a8af8baba47765",
+      "export": "evidence/deepreset-deepd16byarp2-cold3.json",
+      "export_sha256": "2e19f580b4807a966a76aaae7ef76f62a510ae67778bdc3cffd1029c3f47ca8c"
+    },
+    {
+      "source": "deepreset-packet-fresh-reversal.json",
+      "source_sha256": "22f429d415ba6d8dee67bc367c2f3dbdc2c68265cd7527de170cafc72182a46c",
+      "export": "evidence/deepreset-packet-fresh-reversal.json",
+      "export_sha256": "f9977a52cc84f7a0e94eebd24d997844c8ce8c07361e9939cd56ed58008263d1"
+    },
+    {
+      "source": "deepreset-cohort-deepf31016a.json",
+      "source_sha256": "fbb86d4e20302ad83f6e107410e59844410a0ffe088ba06b075d46c69397f8a6",
+      "export": "evidence/deepreset-cohort-deepf31016a.json",
+      "export_sha256": "6b04a7f191f2a2a0698f8c08a1cd8a616b351797ff067e4bc6d3b6957209153e"
+    },
+    {
+      "source": "deepreset-cohort-deepf31017a.json",
+      "source_sha256": "677cc61718d1ff44aaa1dd2e2e849f471b97cfa73b3a9271622ce12c9cd54b2f",
+      "export": "evidence/deepreset-cohort-deepf31017a.json",
+      "export_sha256": "7e64e228cfb72822e0fa488e073db18dfebd68653cb0fb3152fabbd6665e1688"
+    },
+    {
+      "source": "deepreset-deepf31016a-cold3.json",
+      "source_sha256": "48e8c9aae22c9dbee6d75358d7ee2c7b0ab58ef2dcf1420d4f667a72d54d3c1f",
+      "export": "evidence/deepreset-deepf31016a-cold3.json",
+      "export_sha256": "61f84462b12852c4b2fa929eb94f1ddc8bb65d21e2acea67b3c25e4e334ad756"
+    },
+    {
+      "source": "deepreset-deepf31017a-cold3.json",
+      "source_sha256": "e03289e5ab0c683ff2d9ede8c178221c6a715e85d25809443054d5d082e8a0e3",
+      "export": "evidence/deepreset-deepf31017a-cold3.json",
+      "export_sha256": "bb99158352839dfc2579693b8180cd59180b60966c182eeba7343a98dc1c0a4e"
+    },
+    {
+      "source": "deepreset-final-soak-summary.json",
+      "source_sha256": "d4edf3214fdb572b5a676c2b57261aa8632f66148a9333618dcdea15c5b6fcb1",
+      "export": "evidence/deepreset-final-soak-summary.json",
+      "export_sha256": "c687b9ffaeb8ef37b88940c878774b18c8ded3a1ee1b3f60b3f880c507fb34c7"
+    },
+    {
+      "source": "deepreset-cdr-settings-crosscheck.json",
+      "source_sha256": "099de0b603002054641952806dc15d443dfbd4ad1417b610cdb8a274cfd2a9f0",
+      "export": "evidence/deepreset-cdr-settings-crosscheck.json",
+      "export_sha256": "e8348b626e12efda8d62fdd113a811421f00b52bef14fc95ab405940ea832281"
+    },
+    {
+      "source": "deepreset-f310-counter-audit.json",
+      "source_sha256": "5bcb2526a0039b968020fce4e61fa3d7d46fc72291b1be2d3c7911b241542be8",
+      "export": "evidence/deepreset-f310-counter-audit.json",
+      "export_sha256": "51f06801add7ce23cfebc25276b2fc6b0bdc18a32b703d7de5daaec20c5563d4"
+    },
+    {
+      "source": "deepreset-packet-final-cohorts.json",
+      "source_sha256": "fa2bf303b1d213ef969e4f20de43c62239305fd25d1aab9bd17e95c271764b5d",
+      "export": "evidence/deepreset-packet-final-cohorts.json",
+      "export_sha256": "428b21ce2e3f0e9f928ac9330e662c85e935b704ad91a270ed9fe0dacdea6c5a"
+    },
+    {
+      "source": "flash-deepf31016a-20261019-031513-result.json",
+      "source_sha256": "bba456af75b05bafe234d78c8ce561ee8e21e0231652e8990270348f734656e0",
+      "export": "evidence/flash-deepf31016a-20261019-031513-result.json",
+      "export_sha256": "26ab32fac668054b97a1878ba53383b7fec3dd8983e48c2fae8f59bf8cc79bc9"
+    },
+    {
+      "source": "flash-deepf31017a-20261019-032527-result.json",
+      "source_sha256": "fc450548debd027b78783416f0f4c3b9d512ce72d6c598e2be43db24b594a91b",
+      "export": "evidence/flash-deepf31017a-20261019-032527-result.json",
+      "export_sha256": "e0f9aba3ffa50040d3413460d2463b3dfbae907b8c9138c6d2c20a68dd06bef4"
+    },
+    {
+      "source": "deepreset-functional-f310.patch",
+      "source_sha256": "92b1e2b25904387eeabe9d4537fffac8a8750155fd52362bff30252d0a5a6e33",
+      "export": "patches/deepreset-functional-f310.patch",
+      "export_sha256": "92b1e2b25904387eeabe9d4537fffac8a8750155fd52362bff30252d0a5a6e33"
+    }
+  ]
+}

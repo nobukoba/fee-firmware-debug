@@ -1,0 +1,46 @@
+{
+  "created": "2026-10-19T01:55:20.626958",
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xvhdl.bat",
+        "--2008",
+        "sync.vhd",
+        "baseline.vhd",
+        "candidate.vhd",
+        "tb.vhd"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xelab.bat",
+        "earlyhold_tb",
+        "-s",
+        "resetwidth_sim"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xsim.bat",
+        "resetwidth_sim",
+        "-runall"
+      ],
+      "actual_exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "WORKSPACE/simulate_deepreset_f310.py": "9803dc5dc4a7687e55ec22de84cc1ae262c24baf1f70805919d8e6deebb4b882",
+    "lrtdc-minimal-inithold/build/minimal-inithold-f304/rx-startup-before-patch.vhd": "3499fbb3cb184c3557af8c471398b8e1cbe02e160d195112af265d2a2662dcd0",
+    "experiments/deepreset-longhold-f310-sim/baseline.vhd": "f14ab49c1014ce3bab3a7d55027153a647799b1d13070da525ea62f5123c3bb9",
+    "experiments/deepreset-longhold-f310-sim/candidate.vhd": "cc6e5a75e0d6a5e3ebebe83ef3aa228705ff27922e414b20ae5ed7f08d453c11",
+    "experiments/deepreset-longhold-f310-sim/sync.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "experiments/deepreset-longhold-f310-sim/tb.vhd": "b375dfaad8237e42c0f7e3d0350e16ac7f4c320089ae1c30d6544d273cd6cabe"
+  },
+  "limits": [
+    "Ideal PLL/clock model only. WAIT_TIME_MAX also extends RX user-clock wait; not isolated pulse-width comparison.",
+    "No GTX analog model or hardware efficacy claim."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "started": "2026-10-19T03:35:10.088126",
+  "mcs": "WORKSPACE/lrtdc-startup-fix/build/pcs-recovery-f202/lrtdc-pcs-recovery-f202.mcs",
+  "mcs_sha256": "1518696ba9f2261f1ec4f04c0a8498273e5cec9beec1b987eb54d2d05f7ddfd7",
+  "payload_sha256": "cc4fec9dd040f7692d0db692049acceb02f8cb761153f887b33afdb89be4e27f",
+  "payload_bytes": 6692572,
+  "backup": "WORKSPACE/flash-restoredeep16-20261019-033510-before.bin",
+  "readback": "WORKSPACE/flash-restoredeep16-20261019-033510-after.bin",
+  "label": "restoredeep16",
+  "target_serial": "210299BBCDDA",
+  "success": true,
+  "vivado_exit_code": 0,
+  "backup_bytes": 16777216,
+  "backup_sha256": "a5eea9fb772e28aa620cc445d9b785fd209d5d38d2a11c9cbf8c6f8e72864c9b",
+  "readback_bytes": 16777216,
+  "readback_sha256": "19da89bf5365ceb0beb365ff6ec21d90fc80fc87f804a44a9cb0be572d1bff0b",
+  "readback_image_sha256": "cc4fec9dd040f7692d0db692049acceb02f8cb761153f887b33afdb89be4e27f",
+  "image_matches": true,
+  "finished": "2026-10-19T03:40:15.797216"
+}

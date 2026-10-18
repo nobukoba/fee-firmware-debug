@@ -1,0 +1,24 @@
+{
+  "created": "2026-10-19T04:09:26.230311",
+  "phase": "capture_closed_sleep_inhibition_released_no_workers",
+  "capture": "deepreset-20261018.pcapng",
+  "capture_sha256": "58c49dba21bbbec299e1d45e1f7a8bba8dcc6e81a75c68006b7595346b7c3dad",
+  "capture_bytes": 14723400,
+  "capture_observed_actual_exit_code": 1,
+  "keepawake_observed_actual_exit_code": 0,
+  "capinfos_actual_exit_code": 0,
+  "metadata": "deepreset-final-capinfos.txt",
+  "metadata_sha256": "29ee0dbb19c2828425418d5080ab6e402361427611b16f1abaefae081fd4b8e1",
+  "restoration_sha256": "d2cc2540e2f8a6bd8b89fdcf9fd0d69561c145f0d879e98dfd6c3dbe86bbc0fa",
+  "script_sha256": "1f24a84ea22b53989f5c4031399849bc1545ae766e01b6467ef361a0054be637",
+  "limits": [
+    "Capture exit code 1 can follow an explicit interrupt; valid capture was independently parsed by capinfos.",
+    "No dropped-packet claim unless capture termination output explicitly reports it."
+  ],
+  "owned_temporary_drive_mappings_removed": {
+    "I:": "/??/WORKSPACE/lrtdc-longhold-f310",
+    "K:": "/??/WORKSPACE/lrtdc-clockhold-f30c",
+    "L:": "/??/WORKSPACE/lrtdc-validfilter-f30b",
+    "O:": "/??/WORKSPACE/lrtdc-matchedfilter-f30d"
+  }
+}

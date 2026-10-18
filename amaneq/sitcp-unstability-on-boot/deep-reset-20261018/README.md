@@ -1,6 +1,38 @@
 # AMANEQ SiTCP 起動不良：追加切り分け（2026-10-18開始）
 
-**調査中の途中記録。最終結果・採用修正ではありません。** 約10時間を目安に継続し、終了時に両基板を元の運用状態へ復元する。
+**約10時間の追加調査を終了。** 下のチェックポイントは実施時点の途中記録として保持する。最終結果は本節と[result-summary.json](result-summary.json)を参照。
+
+## 最終結果
+
+今回試して反復確認できた候補の中で最短なのは、次の4行案。 あらゆる修正の数学的な最小行数を証明したものではない。
+
+十分な反復確認がある短い変更は **追加4行／削除3行、3か所**。問題基板 .16 は39/39、正常基板 .17 は36/36で起動し、30／120／600秒OFFや連続通信も確認した。[実際の差分](patches/deepreset-functional-f30b.patch)、[75回の集計](evidence/deepreset-f30b-75-summary.json)。
+
+この変更は、既存カウンターを10 µsへ延ばし、DATA_VALIDが落ちたら数え直し、10 µs続けて正常になるまでDONEへ移らないようにする。短い正常判定のたびに既存100 µsの異常監視が解除されるのを防ぎ、既存のリセット経路を働かせる。独立したPMAリセット発生器は追加しない。500 nsの初期待ちやINIT/SOFT状態のリセット値は変更しない。
+
+| 追加比較 | 起動結果 |
+|---|---|
+| 元のファームウェア .16、ARP実送信を照合 | 0/3 |
+| 同一配置フィルター有効 .16、直後から検査 | 3/3 |
+| 同一配置フィルター無効 .16、直後から検査し直した逆転比較 | 0/3 |
+| 1行のクロック安定待ち変更 F30C | .16:0/3、.17:3/3 |
+| RXUSERRDYまでCDR保持する診断版 | .16:0/3 |
+| [既存WAIT_TIME_MAXだけ1 msへ変更する1行案 F310](patches/deepreset-functional-f310.patch) | .16: 1/3、.17: 3/3 |
+
+F310は[正式なタイミング・イメージ検査](evidence/deepreset-f310-independent-review.json)を通過し、[生成後の回路を読み直した18 bitカウンター確認](evidence/deepreset-f310-counter-audit.json)も実施した。[最後の両基板比較のパケット照合](evidence/deepreset-packet-final-cohorts.json)では、問題基板の失敗2回にも電源ONから遅い時点のARP要求が存在し、応答がなかった。1 msの待ちを追加するだけで安定化できたとはいえない。
+
+**原因は受信PMA/CDR側の起動状態へ絞れたが、引き金となる物理要因は未確定。** 失敗した2起動では共通CPLL由来TXPCSの平均値が正常なまま、回復RXクロックだけが約−678 ppmずれ、同じ起動でPMA操作後に約+31 ppmへ戻った。正常な起動も約+32 ppmだった。平均周波数だけでは欠落エッジ、ジッター、MGT電源変動などを区別できない。CPLLLOCK／RXRESETDONEだけで受信データの正しさを保証できないことと、製造元の手順自体がこの基板で必ず誤っているという主張は別である。
+
+基板ごとの違いと内部ループバックの結果は基板内の受信経路・初期化への依存を支持するが、部品故障の確定ではない。これ以上の部品単位の確定には、同じ失敗起動でMGT専用電源・基準クロックのジッター／波形を測るか、部品・経路を交換して異常が追従するかを確認する必要がある。
+
+ホスト側のARP再試行が約60秒空く場合も確認した。Windowsの負キャッシュ／再送制御と整合するが、カーネル内部状態までは計測していない。後半はキャプチャーの実送信／応答時刻を照合し、通信タイムアウトだけで受信故障の継続を断定しない。この交絡はILAで直接得たRXクロック異常を説明するものではない。
+
+RXCDR_CFG=03000023FF10100020はUG476 Table4-19の8b/10b・RXOUT_DIV=4・±200 ppmの推奨値と一致した。名目1.25 Gbit/s、20 bit出力62.5 MHzの分周関係にも矛盾は見つからない。失敗時の回復RXクロックのずれをそのまま送信元の周波数ずれとみなし、CDR許容範囲を広げる根拠にはしない。[設定値の照合](evidence/deepreset-cdr-settings-crosscheck.json)。
+
+終了時は **.16をF202、.17を元のfactoryへ復元**。全16 MiB読戻し、各3回の電源再投入、RBCP／TCP、EEPROM不変、両電源ONを確認した。[復元記録](evidence/deepreset-restoration.json)、[最終確認](evidence/deepreset-final-status.json)、[キャプチャー終了と一時スリープ抑止解除](evidence/deepreset-resource-cleanup.json)。ネットワークスイッチは全試験を通じてON。通常運用へ新候補を自動採用してはいない。
+
+参考：[AMD UG476](https://docs.amd.com/v/u/en-US/ug476_7Series_Transceivers)、[AMD AR66699（CDRロックの判断）](https://adaptivesupport.amd.com/s/article/66699?language=en_US)、[Windows ResolveIpNetEntry2](https://learn.microsoft.com/en-us/windows/win32/api/netioapi/nf-netioapi-resolveipnetentry2)。
+
 
 ## 第7チェックポイント：CDR保持の陰性結果とホストARPの交絡
 

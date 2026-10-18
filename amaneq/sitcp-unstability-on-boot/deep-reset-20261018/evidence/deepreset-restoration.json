@@ -1,0 +1,110 @@
+{
+  "started": "2026-10-19T03:35:07.659400",
+  "source_sha256": {
+    "deepreset_neighbor.py": "9e1ca90ecaf3df285678cccf12d67cca3b455bd1f0613c9d096e33ddf45685de",
+    "deepreset_fresh_wait_v2.py": "9d9bcb199db87ff3e0b2a4019c0aa0e634239f780a7444f8b9e5c9969a124908",
+    "WORKSPACE/restore_deepreset_study_v3.py": "e8fcd3da380bec2d81e7daa4822c2ffaa5741b663728623b495e133ced173d4c",
+    "flash_firmware.py": "712a49008ce6434b9407e4a0bb332b528fd4b316d9271b7e1e1b99c5f67af43c",
+    "deepreset_dual_cold_neighbor_v2.py": "19b70b3967676b0db491678b30367baa6fdb5d455057434cf9ce4fe04d707afc",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "verify_dual_final.py": "cb4ee37cb2f7ae42e8de33a92c975dc31df56712135bd2830212580602c1dcb0",
+    "eeprom-before-startup.bin": "341c5c207c91e51c634ba3e3090fea4689e4e5ae07725e4996a3e568b504c887",
+    "eeprom-dual17-before.bin": "0657876d036a1b9c1ba34903bbf577d490741c851af11916d91efed7f1a1521e",
+    "deepreset-control17-stop-verified.json": "eca8ea851cfe78d6859b580fe3d1805cea740cf2994e8a521952a1ec8b3b835f",
+    "deepreset-control17-factory.jsonl": "42e369d936dad5a3ee4534a71d704456d8491a0af43094767e3956332242ee00"
+  },
+  "targets": [
+    {
+      "suffix": "16",
+      "host": "192.168.10.16",
+      "serial": "210299BBCDDA",
+      "version": "0x60c4f202",
+      "mcs": "lrtdc-startup-fix/build/pcs-recovery-f202/lrtdc-pcs-recovery-f202.mcs",
+      "mcs_sha256": "1518696ba9f2261f1ec4f04c0a8498273e5cec9beec1b987eb54d2d05f7ddfd7",
+      "full_sha256": "19da89bf5365ceb0beb365ff6ec21d90fc80fc87f804a44a9cb0be572d1bff0b"
+    },
+    {
+      "suffix": "17",
+      "host": "192.168.10.17",
+      "serial": "210299BDCF8E",
+      "version": "0x60c4020a",
+      "mcs": "factory-v2a-backup/factory-v2a.mcs",
+      "mcs_sha256": "b1010ec6dc37e7223758d544ce9f30aa30549c29acfd9146675b3a7f17a6c2c0",
+      "full_sha256": "7dd784de31ff8b3b2cbae4602274faf3e2f587f1bc2185a89ad3ba5e7de48a13"
+    }
+  ],
+  "events": [
+    {
+      "time": "2026-10-19T03:35:08.262915",
+      "event": "restoration_started_all_other_workers_stopped"
+    },
+    {
+      "time": "2026-10-19T03:35:08.278563",
+      "event": "programming_restore_image_must_not_powercycle",
+      "host": "192.168.10.16",
+      "mcs": "lrtdc-startup-fix/build/pcs-recovery-f202/lrtdc-pcs-recovery-f202.mcs"
+    },
+    {
+      "time": "2026-10-19T03:40:15.845182",
+      "event": "restored_cold_trials",
+      "host": "192.168.10.16",
+      "count": 3
+    },
+    {
+      "time": "2026-10-19T03:44:07.082174",
+      "event": "board_restored_power_on",
+      "host": "192.168.10.16",
+      "cold_successes": 3
+    },
+    {
+      "time": "2026-10-19T03:44:07.096761",
+      "event": "programming_restore_image_must_not_powercycle",
+      "host": "192.168.10.17",
+      "mcs": "factory-v2a-backup/factory-v2a.mcs"
+    },
+    {
+      "time": "2026-10-19T03:49:17.771127",
+      "event": "restored_cold_trials",
+      "host": "192.168.10.17",
+      "count": 3
+    },
+    {
+      "time": "2026-10-19T03:53:39.632786",
+      "event": "board_restored_power_on",
+      "host": "192.168.10.17",
+      "cold_successes": 3
+    },
+    {
+      "time": "2026-10-19T03:53:39.632786",
+      "event": "checking_both_runtime_network_EEPROM_and_power"
+    },
+    {
+      "time": "2026-10-19T03:53:45.865164",
+      "event": "both_restored_full_readback_cold3_network_EEPROM_verified_power_on"
+    }
+  ],
+  "boards": {
+    "16": {
+      "flash_report": "flash-restoredeep16-20261019-033510-result.json",
+      "independent_full_readback_sha256": "19da89bf5365ceb0beb365ff6ec21d90fc80fc87f804a44a9cb0be572d1bff0b",
+      "cold_log": "deepreset-restored-16-cold3.json",
+      "cold_successes": 3
+    },
+    "17": {
+      "flash_report": "flash-restoredeep17-20261019-034408-result.json",
+      "independent_full_readback_sha256": "7dd784de31ff8b3b2cbae4602274faf3e2f587f1bc2185a89ad3ba5e7de48a13",
+      "cold_log": "deepreset-restored-17-cold3.json",
+      "cold_successes": 3
+    }
+  },
+  "switch_topology": "Switch alwaysON; Kikusui powers16, ezOutlet powers17. No setpoint or EEPROM writes.",
+  "phase": "both_restored_full_readback_cold3_network_EEPROM_verified_power_on",
+  "16-flash_actual_exit_code": 0,
+  "16-cold3_actual_exit_code": 0,
+  "17-flash_actual_exit_code": 0,
+  "17-cold3_actual_exit_code": 0,
+  "both-final-readonly_actual_exit_code": 0,
+  "final_status": "deepreset-final-status.json",
+  "final_status_sha256": "eed96b4def96decf9ecdd9ba55eeeb14aea2b56e71d846b50f78466622b85788"
+}

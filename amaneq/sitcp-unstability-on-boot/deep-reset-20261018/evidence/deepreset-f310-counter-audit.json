@@ -1,0 +1,41 @@
+{
+  "created": "2026-10-19T03:18:36.699622",
+  "phase": "fresh_loaded_routed_counter_width_confirmed",
+  "actual_exit_code": 0,
+  "RX_native_wait_counter_bits": 18,
+  "source_sha256": {
+    "WORKSPACE/audit_deepreset_f310_counter.py": "42ff5d347395f7d304eeb2eb36a3c1034a6e5be9795fd7ae46c178423b7e4b3c",
+    "deepreset-f310-independent-review.json": "afe21d1fd5c44ddd24b403e9ad00ada304e0203aecb9554dd9a9ba6854f70aab",
+    "lrtdc-longhold-f310/build/longhold-f310/lrtdc-longhold-f310.dcp": "11117d9b9e57181f3c193e3dadab77a0d8630c46c512d5ba9e52e99006a9729b",
+    "audit-deepreset-f310-counter.tcl": "b939c7b1904a690469def2651413e1f64d0fc73fc82c84abf53fa05768a1e710"
+  },
+  "artifacts": {
+    "deepreset-f310-counter-audit/counter.tsv": "6db27ebb7bfd490f80d175027e8b24d1b574912460760db15ad82a09a8d3abc4",
+    "deepreset-f310-counter-audit/GT-attributes.tsv": "32808b29182c21c7028efa280418762bbc10d3bc62dcf6853141008e47957242"
+  },
+  "counter_rows": [
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[0]\tFDRE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[10]\tFDSE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[11]\tFDSE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[12]\tFDRE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[13]\tFDRE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[14]\tFDRE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[15]\tFDRE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[16]\tFDSE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[17]\tFDSE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[1]\tFDRE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[2]\tFDRE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[3]\tFDRE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[4]\tFDRE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[5]\tFDRE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[6]\tFDSE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[7]\tFDRE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[8]\tFDSE\t1'b0",
+    "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/wait_time_cnt_reg[9]\tFDRE\t1'b0"
+  ],
+  "GT_attributes": "RXCDR_CFG\t72'h03000023FF10100020\nRXCDR_LOCK_CFG\t6'b010101\nCPLL_FBDIV\t4\nCPLL_FBDIV_45\t4\nCPLL_REFCLK_DIV\t1\nRXOUT_DIV\t4\nTXOUT_DIV\t4\nRX_DATA_WIDTH\t20\n",
+  "limits": [
+    "Counter-width crosscheck proves synthesis realized the wider counter; not a direct hardware measurement of every reset pulse.",
+    "Full source diff and whole-FSM digital simulation separately verify the intended constant."
+  ]
+}
