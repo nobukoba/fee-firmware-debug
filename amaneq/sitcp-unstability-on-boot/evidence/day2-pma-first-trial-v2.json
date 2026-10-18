@@ -1,0 +1,43 @@
+{
+  "started": "2026-10-18T09:43:20.244394",
+  "host": "192.168.10.16",
+  "source_sha256": {
+    "<workspace>\\run_day2_pma_first_trial_v2.py": "066cd0700cf3955bdc05b0a02f73afb0994481f854339fb30af87ab1b1c5409b",
+    "review_day2_pma_observer_v4.py": "dd51c0f0bc322cc37ec3910f262d387dad972127695001b275e2dbdde19dcd64",
+    "read_day2_autopma_ila.py": "5c9631f65238efcc4800dc70152134276471021e98db496a53fde3e69dbec655",
+    "day2-autopma-observed-queue-v5.json": "fbc18eaee03d69750a49ab976c844cf43548dc41b26cadd32277bd35b6c0e1cd"
+  },
+  "events": [
+    {
+      "time": "2026-10-18T09:43:20.244394",
+      "event": "independent_observer_review"
+    },
+    {
+      "time": "2026-10-18T09:43:23.885148",
+      "event": "programming_matched_bypass_must_not_powercycle"
+    },
+    {
+      "time": "2026-10-18T09:48:31.593198",
+      "event": "first_bypass_cold_trial"
+    },
+    {
+      "time": "2026-10-18T09:50:11.184755",
+      "event": "readonly_ILA_capture_of_first_bypass_trial"
+    },
+    {
+      "time": "2026-10-18T09:50:37.148332",
+      "event": "first_bypass_trial_complete_power_on_CSV_decode_required_before_more_trials"
+    }
+  ],
+  "previous_attempt": "Original first-trial worker stopped before hardware because offline export failed",
+  "phase": "first_bypass_trial_complete_power_on_CSV_decode_required_before_more_trials",
+  "review_actual_exit_code": 0,
+  "review_sha256": "5ce6db6f03a75bd3a8e13f43d224ae73aee58fc9b0af50fabcbe2edb264542eb",
+  "flash_actual_exit_code": 0,
+  "flash_report": "flash-day2-pma-bypass16-20261018-094325-result.json",
+  "full_flash_sha256": "d642b1a597c9587954926b68562c0b3052e64aa1977f5cc8c6047a04e16159d5",
+  "cold1_actual_exit_code": 0,
+  "cold_log": "day2-pma-bypass16-cold1.json",
+  "success": false,
+  "ila1_actual_exit_code": 0
+}

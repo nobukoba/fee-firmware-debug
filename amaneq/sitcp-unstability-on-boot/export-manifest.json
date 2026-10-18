@@ -86,7 +86,42 @@
       "path": "evidence/day2-f306-late-power-status.json",
       "original_sha256": "78584046a8804700a05b2a7f1c93df770db16ceeae75b0bbaaa0c580b3580e58",
       "exported_sha256": "3a3d28a52e6400927b9ea659210baa74e63c51d9e83b866ab1f0f87e8e37881f"
+    },
+    {
+      "path": "evidence/day2-autopma-observed-independent-review.json",
+      "original_sha256": "5ce6db6f03a75bd3a8e13f43d224ae73aee58fc9b0af50fabcbe2edb264542eb",
+      "exported_sha256": "4c816f8dd5a89dcaef723c5049d44bf432b9f0b6676854fa02a1a529f463a22b"
+    },
+    {
+      "path": "evidence/day2-pma-first-trial-v2.json",
+      "original_sha256": "135ca69e1dc0a736364a8f1ceb922b66bff9472b3c9539e46b2706941dd10618",
+      "exported_sha256": "70b87e3b7ccacf3768050868f464fe871f345f67d37e4b06dfacc89b279d27da"
+    },
+    {
+      "path": "evidence/day2-pma-first-bypass-decoded.json",
+      "original_sha256": "3c51c704cb9aa7fc727ac88b338e049ce08604793a385f43b806da40ba71ef0d",
+      "exported_sha256": "3e6b9be80ee6a0a5eb111b3b825d5b5f7ee6ff35b2eaef947e9d5a42532c59bb"
+    },
+    {
+      "path": "evidence/day2-pma-bypass16-cold1.json",
+      "original_sha256": "f7627740a97fdfd07f21744b153866374ab480131a313750bfb0bd111ad37ae6",
+      "exported_sha256": "57ee9d77598987d33255887b6210c76d4e4fb8341b31813731367f726b2dedb2"
+    },
+    {
+      "path": "evidence/day2-pma-cohort-d2pma-b16tail.json",
+      "original_sha256": "205ee9e7e8a3cb5d87e28a4d41384bff43553c6414e6d628cb5f0cb07924f189",
+      "exported_sha256": "2786c797487f847b62d3397d577919ea0bcc7638b4544e0c012d1862c89f807d"
+    },
+    {
+      "path": "evidence/day2-pma-cohort-d2pma-en16.json",
+      "original_sha256": "a51be02cd7fae458b9d12a9127171468e83fad5c5ab03b3fd7a30d3c5e2489a9",
+      "exported_sha256": "9e57438198dc5540b607b3a6df546d1dd82e2dc8cf2b473705216b2644f38376"
+    },
+    {
+      "path": "evidence/day2-control17-stop-verified.json",
+      "original_sha256": "e3296b511c51a11e78bc97399a04f038f2e1044b89f0666f72a3c0c72e6b0060",
+      "exported_sha256": "6b2306c48feeb663cdc599a39dfcb9b1703dca56e77f62465df9d366e433b285"
     }
   ],
-  "updated": "2026-10-18T08:34:23.868229"
+  "updated": "2026-10-18T10:14:30.569023"
 }

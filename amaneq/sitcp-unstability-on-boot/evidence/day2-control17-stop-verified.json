@@ -1,0 +1,39 @@
+{
+  "created": "2026-10-18T10:14:16.919161",
+  "phase": "monitor17_actual_exit_verified_before_hardware_operations",
+  "monitor_identity": {
+    "ProcessId": 17116,
+    "Name": "python.exe",
+    "CommandLine": "\"C:\\Users\\kobayash\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -E -B monitor_day2_control17.py"
+  },
+  "monitor_actual_exit_code": 0,
+  "log": "day2-control17-f304.jsonl",
+  "log_sha256": "26a85b6db03f055a5138d45a30ddaf4c04ed6ab757d91f5fffa10b3d8b0ad388",
+  "finish": {
+    "event": "finish",
+    "time": "2026-10-18T10:14:16.894828",
+    "reason": "requested_stop",
+    "counts": {
+      "RBCP_checks": 523,
+      "RBCP_pass": 523,
+      "TCP_checks": 53,
+      "TCP_pass": 53,
+      "failures": 0
+    },
+    "elapsed_seconds": 15679.015
+  },
+  "counts": {
+    "RBCP_checks": 523,
+    "RBCP_pass": 523,
+    "TCP_checks": 53,
+    "TCP_pass": 53,
+    "failures": 0
+  },
+  "first_probe": "2026-10-18T05:52:57.924104",
+  "last_probe": "2026-10-18T10:13:57.877870",
+  "actual_probe_span_seconds": 15659.953766,
+  "source_sha256": {
+    "<workspace>\\stop_day2_control17_verified.py": "883644ab7049106549d94124e16d4c5a32f4added19387f742b10f0b16ccabba",
+    "monitor_day2_control17.py": "1dc0fa0b10f2f9b936479794776df5e5856f282a6712ebcaa819390f1caa4773"
+  }
+}

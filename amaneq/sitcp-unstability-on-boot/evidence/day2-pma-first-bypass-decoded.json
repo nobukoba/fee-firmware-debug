@@ -1,0 +1,47 @@
+{
+  "created": "2026-10-18T09:51:59.212804",
+  "mode": "bypass",
+  "host": "192.168.10.16",
+  "capture": "day2-autopma-ila-bypass16-cold1.json",
+  "capture_sha256": "16947c686e17596b67f5b2a7750802e66f83712fb92381abe2d1451ee0c99f0d",
+  "mcs_sha256": "a13689fb2d023b26970e6ea06ec6f6adcddb15fa9b14874ffbd3dbaaf6abf727",
+  "csv": "day2-autopma-ila-bypass16-cold1.csv",
+  "csv_sha256": "ceb6f49eb47cae36c065e90b029ad2d6965783a398831a04b536c661aab097e1",
+  "samples": 1024,
+  "word": 18,
+  "word_hex": "0x12",
+  "physical_pma_seen": false,
+  "emitted_pulse_seen": true,
+  "rx_done_low_seen": false,
+  "reset_response_finished": false,
+  "controller_timed_out": true,
+  "valid_gate_test": true,
+  "observed_RXRESETDONE_response": "no_low_observed",
+  "network_before_capture": {
+    "rbcp": false,
+    "tcp24": null,
+    "rbcp_error": "timed out",
+    "identity_matches": false,
+    "success": false
+  },
+  "network_after_capture": {
+    "rbcp": false,
+    "tcp24": null,
+    "rbcp_error": "timed out",
+    "identity_matches": false,
+    "success": false
+  },
+  "source_sha256": {
+    "<workspace>\\decode_day2_autopma_ila.py": "8a1dc7885572b43964dad691f5ae9c9983e813f1bbfd75fdc8275d831dc97a2f",
+    "day2-autopma-observed-independent-review.json": "5ce6db6f03a75bd3a8e13f43d224ae73aee58fc9b0af50fabcbe2edb264542eb",
+    "day2-autopma-ila-bypass16-cold1.json": "16947c686e17596b67f5b2a7750802e66f83712fb92381abe2d1451ee0c99f0d",
+    "day2-autopma-ila-bypass16-cold1.csv": "ceb6f49eb47cae36c065e90b029ad2d6965783a398831a04b536c661aab097e1",
+    "day2-autopma-observed-v5\\bypass\\day2-autopma-bypass.ltx": "be7707f268de422210647d6339c75180e77e86577c283f8322c2f7d0a86bb4f1"
+  },
+  "limits": [
+    "Pulse latches prove presence, not count or analog pulse duration. RTL/logical simulations specify16 user-clock cycles, once perSOFT reset.",
+    "RXRESETDONE response is not proof ofCDR lock; network checks are evaluated separately.",
+    "Bypass RXRESETDONE transitions, if present, cannot be attributed to the physically blockedPMA input.",
+    "No recovered-clock frequency or analog-rail measurement in this image."
+  ]
+}

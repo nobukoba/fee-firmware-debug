@@ -1,0 +1,177 @@
+{
+  "created": "2026-10-18T09:43:23.853431",
+  "phase": "independent_review_passed_ready_for_hardware",
+  "runtime": "0x60C4F307",
+  "variants": {
+    "enabled": {
+      "probe_map": [
+        {
+          "bit": 0,
+          "net": "day2_pma_observer_3_q",
+          "physical_source": "day2_pma_observer_3/Q",
+          "ILA_pin": "day2_pma_ila/probe0[0]",
+          "LTX_name": "day2_pma_observer_3_q"
+        },
+        {
+          "bit": 1,
+          "net": "day2_pma_request_observer_3_q",
+          "physical_source": "day2_pma_request_observer_3/Q",
+          "ILA_pin": "day2_pma_ila/probe0[1]",
+          "LTX_name": "day2_pma_request_observer_3_q"
+        },
+        {
+          "bit": 2,
+          "net": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/saw_rx_low",
+          "physical_source": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/saw_rx_low_reg/Q",
+          "ILA_pin": "day2_pma_ila/probe0[2]",
+          "LTX_name": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/saw_rx_low"
+        },
+        {
+          "bit": 3,
+          "net": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/finished",
+          "physical_source": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/finished_reg/Q",
+          "ILA_pin": "day2_pma_ila/probe0[3]",
+          "LTX_name": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/finished"
+        },
+        {
+          "bit": 4,
+          "net": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/timed_out",
+          "physical_source": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/timed_out_reg/Q",
+          "ILA_pin": "day2_pma_ila/probe0[4]",
+          "LTX_name": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/timed_out"
+        }
+      ],
+      "mcs": "day2-autopma-observed-v5\\enabled\\day2-autopma-enabled.mcs",
+      "mcs_sha256": "8c579d4489fcefa60e64fb5028b0a280954cc98d8db545c4ffdc363acb41b545",
+      "ltx": "day2-autopma-observed-v5\\enabled\\day2-autopma-enabled.ltx",
+      "ltx_sha256": "be7707f268de422210647d6339c75180e77e86577c283f8322c2f7d0a86bb4f1",
+      "expected_full_flash_sha256": "12bcd8623355e9e0bb5f29782438bb84f7187fcb98bc830e0a9426ee81e6b7cd",
+      "WNS_ns": 0.068,
+      "WHS_ns": 0.015,
+      "DRC": [
+        [
+          "CHECK-3",
+          "Warning",
+          "1"
+        ],
+        [
+          "DPIP-1",
+          "Warning",
+          "384"
+        ],
+        [
+          "PDCN-1569",
+          "Warning",
+          "3"
+        ],
+        [
+          "REQP-1839",
+          "Warning",
+          "12"
+        ],
+        [
+          "REQP-1840",
+          "Warning",
+          "20"
+        ],
+        [
+          "RTSTAT-10",
+          "Warning",
+          "1"
+        ]
+      ]
+    },
+    "bypass": {
+      "probe_map": [
+        {
+          "bit": 0,
+          "net": "day2_pma_observer_3_q",
+          "physical_source": "day2_pma_observer_3/Q",
+          "ILA_pin": "day2_pma_ila/probe0[0]",
+          "LTX_name": "day2_pma_observer_3_q"
+        },
+        {
+          "bit": 1,
+          "net": "day2_pma_request_observer_3_q",
+          "physical_source": "day2_pma_request_observer_3/Q",
+          "ILA_pin": "day2_pma_ila/probe0[1]",
+          "LTX_name": "day2_pma_request_observer_3_q"
+        },
+        {
+          "bit": 2,
+          "net": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/saw_rx_low",
+          "physical_source": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/saw_rx_low_reg/Q",
+          "ILA_pin": "day2_pma_ila/probe0[2]",
+          "LTX_name": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/saw_rx_low"
+        },
+        {
+          "bit": 3,
+          "net": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/finished",
+          "physical_source": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/finished_reg/Q",
+          "ILA_pin": "day2_pma_ila/probe0[3]",
+          "LTX_name": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/finished"
+        },
+        {
+          "bit": 4,
+          "net": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/timed_out",
+          "physical_source": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/timed_out_reg/Q",
+          "ILA_pin": "day2_pma_ila/probe0[4]",
+          "LTX_name": "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/day2_auto_i/timed_out"
+        }
+      ],
+      "mcs": "day2-autopma-observed-v5\\bypass\\day2-autopma-bypass.mcs",
+      "mcs_sha256": "a13689fb2d023b26970e6ea06ec6f6adcddb15fa9b14874ffbd3dbaaf6abf727",
+      "ltx": "day2-autopma-observed-v5\\bypass\\day2-autopma-bypass.ltx",
+      "ltx_sha256": "be7707f268de422210647d6339c75180e77e86577c283f8322c2f7d0a86bb4f1",
+      "expected_full_flash_sha256": "d642b1a597c9587954926b68562c0b3052e64aa1977f5cc8c6047a04e16159d5",
+      "WNS_ns": 0.068,
+      "WHS_ns": 0.015,
+      "DRC": [
+        [
+          "CHECK-3",
+          "Warning",
+          "1"
+        ],
+        [
+          "DPIP-1",
+          "Warning",
+          "384"
+        ],
+        [
+          "PDCN-1569",
+          "Warning",
+          "4"
+        ],
+        [
+          "REQP-1839",
+          "Warning",
+          "12"
+        ],
+        [
+          "REQP-1840",
+          "Warning",
+          "20"
+        ],
+        [
+          "RTSTAT-10",
+          "Warning",
+          "1"
+        ]
+      ]
+    }
+  },
+  "checks": [
+    "Original placed primitive NAME/REF/LOC/BEL unchanged",
+    "Same observer wiring and probe map; only physical PMA gate INIT2/0 differs",
+    "Physical and emitted pre-gate PMA both sampled with2FF plus sticky latch; each ILA bit has an audited actual driver",
+    "Native RX500ns/INIT0/SOFT0 unchanged",
+    "No reserved CDR reset input changes in exporter",
+    "Timing covered andmet inbothvariants"
+  ],
+  "queue_source_sha256": "fbc18eaee03d69750a49ab976c844cf43548dc41b26cadd32277bd35b6c0e1cd",
+  "limits": [
+    "No hardware efficacy claim yet",
+    "ILA reads latched startup evidence after boot; not a direct analog pulse waveform",
+    "Sequential PMA reset may propagate into subsequent internal stages"
+  ]
+}
