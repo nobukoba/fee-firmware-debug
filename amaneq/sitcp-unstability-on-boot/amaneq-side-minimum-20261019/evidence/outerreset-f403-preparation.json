@@ -1,0 +1,24 @@
+{
+  "created": "2026-10-19T08:25:19.467063",
+  "phase": "source_prepared_not_built_or_hardware_tested",
+  "base_commit": "5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039",
+  "repo": "lrtdc-outerreset-f403",
+  "runtime": "0x60C4F403",
+  "functional_added_lines": 1,
+  "functional_deleted_lines": 1,
+  "new_HDL_modules": 0,
+  "existing_timer_instances_added": 0,
+  "hypothesis": "PCS reset follows raw SYS lock rather than delayed global POR; permits native Ethernet startup during SiTCP POR. No additional reset pulse or watchdog.",
+  "limits": [
+    "Diagnostic F402 early passed3/3 but retained unused timer; this independent source build must be separately qualified.",
+    "Fresh top synthesis/implementation, unchanged qualified IP OOC products reused through Vivado save_project_as."
+  ],
+  "source_sha256": {
+    "WORKSPACE/prepare_outerreset_f403.py": "797e69b1e9ddc87d9ef933cd63ac7b5d2105b083631f2c21ce907323b622913d",
+    "lrtdc-outerreset-f403/hdl/toplevel.vhd": "0171806295aa80fac4bbb1a0fde43e09621cde24700be46efa170a9f6fd09a9a",
+    "lrtdc-outerreset-f403/hdl/defBusAddressMap.vhd": "6da4cfed596b2e64e94d4f17c647f1db25b07efed5da954ea2de336eaa8dc477",
+    "outerreset-functional-f403.patch": "54812c54e04bdcfd7c3ea9c38dd960ca4d2a2fe7fcce140a6f73a7a421dcaa0b",
+    "lrtdc-outerreset-f403/patch-check/toplevel-before.vhd": "6a4b667f541b8f892a3f2793388801cc7ace9d39fecc7df52900f524572e88f0",
+    "lrtdc-outerreset-f403/patch-check/toplevel-after.vhd": "0171806295aa80fac4bbb1a0fde43e09621cde24700be46efa170a9f6fd09a9a"
+  }
+}

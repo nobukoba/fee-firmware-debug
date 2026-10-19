@@ -1,0 +1,11 @@
+{
+  "created": "2026-10-19T09:32:53.210477",
+  "phase": "fresh_physical_reset_clock_and_counter_export_complete",
+  "actual_exit_code": 0,
+  "source_sha256": {
+    "WORKSPACE/run_outerreset_inspection_f403.py": "8bcb45e49e8d1697557ba8084e5142585609419c3878ead8d1c69a899deaabd1",
+    "outerreset-f403-build.json": "df6c61cd23bc68e0a8103e1d2ee7407418173ada587d8b138fe6c7cde5b3c6d4",
+    "inspect-outerreset-f403.tcl": "cf63ddc8696fae6e101d74f09d74c719e8712d2de605a7429d526bffac080e74",
+    "lrtdc-outerreset-f403/build/outerreset-f403/lrtdc-outerreset-f403.dcp": "b3d6255979472e192f68cf8d6aad06f0477968575e6af0045feeb66f74ee0548"
+  }
+}

@@ -1,0 +1,648 @@
+{
+  "created": "2026-10-19T10:25:47.040357",
+  "phase": "all_completed_outerreset_cohorts_checked",
+  "cases": [
+    {
+      "report": "outerreset-cohort-outerf40116a.json",
+      "host": "192.168.10.16",
+      "candidate": "f401",
+      "variant": "enabled",
+      "runtime": "0x60C4F401",
+      "full_flash_sha256": "cac20b9aafe03702f793f39e43fdafbe4f453ba315650dbd8503705344c1ad57",
+      "successes": 3,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        12.016,
+        12.032,
+        12.015
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": false
+    },
+    {
+      "report": "outerreset-cohort-outerf40116back.json",
+      "host": "192.168.10.16",
+      "candidate": "f401",
+      "variant": "enabled",
+      "runtime": "0x60C4F401",
+      "full_flash_sha256": "cac20b9aafe03702f793f39e43fdafbe4f453ba315650dbd8503705344c1ad57",
+      "successes": 3,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        12.016,
+        12.031,
+        12.031
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": false
+    },
+    {
+      "report": "outerreset-cohort-outerf40116by.json",
+      "host": "192.168.10.16",
+      "candidate": "f401",
+      "variant": "bypass",
+      "runtime": "0x60C4F401",
+      "full_flash_sha256": "8e845f28908323569d01a8ec102fd24bf3a57e7b4364f3ddd6ffb10514ae77ba",
+      "successes": 0,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        null,
+        null,
+        null
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": false
+    },
+    {
+      "report": "outerreset-cohort-outerf40116hold.json",
+      "host": "192.168.10.16",
+      "candidate": "f401",
+      "variant": "hold",
+      "runtime": "0x60C4F401",
+      "full_flash_sha256": "2c3b30d09e6167e413c879ce9b4ceed8b0dea1145ab3a948f18062a32987dafd",
+      "successes": 0,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        null,
+        null,
+        null
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": false
+    },
+    {
+      "report": "outerreset-cohort-outerf40116long.json",
+      "host": "192.168.10.16",
+      "candidate": "f401",
+      "variant": "enabled",
+      "runtime": "0x60C4F401",
+      "full_flash_sha256": "cac20b9aafe03702f793f39e43fdafbe4f453ba315650dbd8503705344c1ad57",
+      "successes": 3,
+      "trials": 3,
+      "off_seconds": [
+        30,
+        120,
+        600
+      ],
+      "first_ready_seconds": [
+        12.047,
+        12.031,
+        12.032
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": true
+    },
+    {
+      "report": "outerreset-cohort-outerf40116more.json",
+      "host": "192.168.10.16",
+      "candidate": "f401",
+      "variant": "enabled",
+      "runtime": "0x60C4F401",
+      "full_flash_sha256": "cac20b9aafe03702f793f39e43fdafbe4f453ba315650dbd8503705344c1ad57",
+      "successes": 18,
+      "trials": 18,
+      "off_seconds": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        12.032,
+        12.016,
+        12.015,
+        12.016,
+        12.016,
+        12.016,
+        12.032,
+        12.016,
+        12.032,
+        12.032,
+        12.015,
+        12.016,
+        12.016,
+        12.032,
+        12.016,
+        12.015,
+        12.015,
+        12.031
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": true
+    },
+    {
+      "report": "outerreset-cohort-outerf40117a.json",
+      "host": "192.168.10.17",
+      "candidate": "f401",
+      "variant": "enabled",
+      "runtime": "0x60C4F401",
+      "full_flash_sha256": "cac20b9aafe03702f793f39e43fdafbe4f453ba315650dbd8503705344c1ad57",
+      "successes": 3,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        12.015,
+        12.032,
+        12.016
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": false
+    },
+    {
+      "report": "outerreset-cohort-outerf40117more.json",
+      "host": "192.168.10.17",
+      "candidate": "f401",
+      "variant": "enabled",
+      "runtime": "0x60C4F401",
+      "full_flash_sha256": "cac20b9aafe03702f793f39e43fdafbe4f453ba315650dbd8503705344c1ad57",
+      "successes": 9,
+      "trials": 9,
+      "off_seconds": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        12.032,
+        12.031,
+        12.031,
+        12.016,
+        12.031,
+        12.031,
+        12.016,
+        12.016,
+        12.031
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": true
+    },
+    {
+      "report": "outerreset-cohort-outerf40216a.json",
+      "host": "192.168.10.16",
+      "candidate": "f402",
+      "variant": "enabled",
+      "runtime": "0x60C4F402",
+      "full_flash_sha256": "9fdbf99d92cbc037fd6f5b0eec09b1012cb713835b28d87962f78e5797326fe5",
+      "successes": 3,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        12.016,
+        12.031,
+        12.015
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": false
+    },
+    {
+      "report": "outerreset-cohort-outerf40216backlong.json",
+      "host": "192.168.10.16",
+      "candidate": "f402",
+      "variant": "enabled",
+      "runtime": "0x60C4F402",
+      "full_flash_sha256": "9fdbf99d92cbc037fd6f5b0eec09b1012cb713835b28d87962f78e5797326fe5",
+      "successes": 4,
+      "trials": 4,
+      "off_seconds": [
+        5,
+        30,
+        120,
+        600
+      ],
+      "first_ready_seconds": [
+        12.047,
+        12.046,
+        12.0,
+        12.031
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": false
+    },
+    {
+      "report": "outerreset-cohort-outerf40216by.json",
+      "host": "192.168.10.16",
+      "candidate": "f402",
+      "variant": "bypass",
+      "runtime": "0x60C4F402",
+      "full_flash_sha256": "26cbf0921c488de7a711885085d9bccff85dbfa10d06f988047b4dea7d5b2237",
+      "successes": 0,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        null,
+        null,
+        null
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": false
+    },
+    {
+      "report": "outerreset-cohort-outerf40216raw.json",
+      "host": "192.168.10.16",
+      "candidate": "f402",
+      "variant": "early",
+      "runtime": "0x60C4F402",
+      "full_flash_sha256": "59e5e04b48d1abc2765dcfbdd928ba2d0efacc9a177ea267f0a3036eec94eda8",
+      "successes": 3,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        12.032,
+        12.015,
+        12.031
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": false
+    },
+    {
+      "report": "outerreset-cohort-outerf40217a.json",
+      "host": "192.168.10.17",
+      "candidate": "f402",
+      "variant": "enabled",
+      "runtime": "0x60C4F402",
+      "full_flash_sha256": "9fdbf99d92cbc037fd6f5b0eec09b1012cb713835b28d87962f78e5797326fe5",
+      "successes": 3,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        12.047,
+        12.031,
+        12.0
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": false
+    },
+    {
+      "report": "outerreset-cohort-outerf40217back.json",
+      "host": "192.168.10.17",
+      "candidate": "f402",
+      "variant": "enabled",
+      "runtime": "0x60C4F402",
+      "full_flash_sha256": "9fdbf99d92cbc037fd6f5b0eec09b1012cb713835b28d87962f78e5797326fe5",
+      "successes": 3,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        120
+      ],
+      "first_ready_seconds": [
+        12.031,
+        12.031,
+        12.031
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": false
+    },
+    {
+      "report": "outerreset-cohort-outerf40217raw.json",
+      "host": "192.168.10.17",
+      "candidate": "f402",
+      "variant": "early",
+      "runtime": "0x60C4F402",
+      "full_flash_sha256": "59e5e04b48d1abc2765dcfbdd928ba2d0efacc9a177ea267f0a3036eec94eda8",
+      "successes": 1,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        null,
+        29.406,
+        null
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": false
+    },
+    {
+      "report": "outerreset-cohort-outerf40316a.json",
+      "host": "192.168.10.16",
+      "candidate": "f403",
+      "variant": "enabled",
+      "runtime": "0x60C4F403",
+      "full_flash_sha256": "4a5c0fc2440860fcbfb49aaabaaf5e324a68c639fd72e72d65ca09f519cbe5b7",
+      "successes": 3,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        12.047,
+        12.015,
+        12.047
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": false
+    },
+    {
+      "report": "outerreset-cohort-outerf40317a.json",
+      "host": "192.168.10.17",
+      "candidate": "f403",
+      "variant": "enabled",
+      "runtime": "0x60C4F403",
+      "full_flash_sha256": "4a5c0fc2440860fcbfb49aaabaaf5e324a68c639fd72e72d65ca09f519cbe5b7",
+      "successes": 1,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        120
+      ],
+      "first_ready_seconds": [
+        null,
+        null,
+        12.016
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": false
+    },
+    {
+      "report": "outerreset-cohort-outerfact16long.json",
+      "host": "192.168.10.16",
+      "candidate": "factory",
+      "variant": "enabled",
+      "runtime": "0x60C4020A",
+      "full_flash_sha256": "7dd784de31ff8b3b2cbae4602274faf3e2f587f1bc2185a89ad3ba5e7de48a13",
+      "successes": 0,
+      "trials": 3,
+      "off_seconds": [
+        30,
+        120,
+        600
+      ],
+      "first_ready_seconds": [
+        null,
+        null,
+        null
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": true
+    },
+    {
+      "report": "outerreset-cohort-outerfact16q.json",
+      "host": "192.168.10.16",
+      "candidate": "factory",
+      "variant": "enabled",
+      "runtime": "0x60C4020A",
+      "full_flash_sha256": "7dd784de31ff8b3b2cbae4602274faf3e2f587f1bc2185a89ad3ba5e7de48a13",
+      "successes": 0,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        null,
+        null,
+        null
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": true
+    },
+    {
+      "report": "outerreset-cohort-outerfact17long.json",
+      "host": "192.168.10.17",
+      "candidate": "factory",
+      "variant": "enabled",
+      "runtime": "0x60C4020A",
+      "full_flash_sha256": "7dd784de31ff8b3b2cbae4602274faf3e2f587f1bc2185a89ad3ba5e7de48a13",
+      "successes": 3,
+      "trials": 3,
+      "off_seconds": [
+        30,
+        120,
+        600
+      ],
+      "first_ready_seconds": [
+        12.031,
+        12.016,
+        12.0
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": true
+    },
+    {
+      "report": "outerreset-cohort-outerfact17q.json",
+      "host": "192.168.10.17",
+      "candidate": "factory",
+      "variant": "enabled",
+      "runtime": "0x60C4020A",
+      "full_flash_sha256": "7dd784de31ff8b3b2cbae4602274faf3e2f587f1bc2185a89ad3ba5e7de48a13",
+      "successes": 3,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "first_ready_seconds": [
+        12.031,
+        12.031,
+        12.016
+      ],
+      "neighbor_protocol": "12s quiet then targeted resolution",
+      "flash_reused": true
+    }
+  ],
+  "totals": {
+    "f401/enabled/192.168.10.16": {
+      "successes": 27,
+      "trials": 27,
+      "reports": [
+        "outerreset-cohort-outerf40116a.json",
+        "outerreset-cohort-outerf40116back.json",
+        "outerreset-cohort-outerf40116long.json",
+        "outerreset-cohort-outerf40116more.json"
+      ]
+    },
+    "f401/bypass/192.168.10.16": {
+      "successes": 0,
+      "trials": 3,
+      "reports": [
+        "outerreset-cohort-outerf40116by.json"
+      ]
+    },
+    "f401/hold/192.168.10.16": {
+      "successes": 0,
+      "trials": 3,
+      "reports": [
+        "outerreset-cohort-outerf40116hold.json"
+      ]
+    },
+    "f401/enabled/192.168.10.17": {
+      "successes": 12,
+      "trials": 12,
+      "reports": [
+        "outerreset-cohort-outerf40117a.json",
+        "outerreset-cohort-outerf40117more.json"
+      ]
+    },
+    "f402/enabled/192.168.10.16": {
+      "successes": 7,
+      "trials": 7,
+      "reports": [
+        "outerreset-cohort-outerf40216a.json",
+        "outerreset-cohort-outerf40216backlong.json"
+      ]
+    },
+    "f402/bypass/192.168.10.16": {
+      "successes": 0,
+      "trials": 3,
+      "reports": [
+        "outerreset-cohort-outerf40216by.json"
+      ]
+    },
+    "f402/early/192.168.10.16": {
+      "successes": 3,
+      "trials": 3,
+      "reports": [
+        "outerreset-cohort-outerf40216raw.json"
+      ]
+    },
+    "f402/enabled/192.168.10.17": {
+      "successes": 6,
+      "trials": 6,
+      "reports": [
+        "outerreset-cohort-outerf40217a.json",
+        "outerreset-cohort-outerf40217back.json"
+      ]
+    },
+    "f402/early/192.168.10.17": {
+      "successes": 1,
+      "trials": 3,
+      "reports": [
+        "outerreset-cohort-outerf40217raw.json"
+      ]
+    },
+    "f403/enabled/192.168.10.16": {
+      "successes": 3,
+      "trials": 3,
+      "reports": [
+        "outerreset-cohort-outerf40316a.json"
+      ]
+    },
+    "f403/enabled/192.168.10.17": {
+      "successes": 1,
+      "trials": 3,
+      "reports": [
+        "outerreset-cohort-outerf40317a.json"
+      ]
+    },
+    "factory/enabled/192.168.10.16": {
+      "successes": 0,
+      "trials": 6,
+      "reports": [
+        "outerreset-cohort-outerfact16long.json",
+        "outerreset-cohort-outerfact16q.json"
+      ]
+    },
+    "factory/enabled/192.168.10.17": {
+      "successes": 6,
+      "trials": 6,
+      "reports": [
+        "outerreset-cohort-outerfact17long.json",
+        "outerreset-cohort-outerfact17q.json"
+      ]
+    }
+  },
+  "excluded_aggregate_checkpoints": [
+    "outerreset-cohort-summary-pre-f403.json"
+  ],
+  "source_sha256": {
+    "WORKSPACE/summarize_outerreset_cohorts_v2.py": "d3366063392e1747dc6047e504578fb201479887ffbee892f5bb594e60a29c08",
+    "outerreset-cohort-outerf40116a.json": "2af756e6adb014686e59d4e994ee55d1c7edc53739fb9257b5ba045a403f03e6",
+    "outerreset-cohort-outerf40116back.json": "776a83b7d603a4fd1f130f95ba231851c6a2f9adbaa1d9eb12e3a8d01b8d1674",
+    "outerreset-cohort-outerf40116by.json": "5018ae931879cf9364d8f063f5a9f16a8b464dc8676d4fb9f612c9b5ab644209",
+    "outerreset-cohort-outerf40116hold.json": "842e90b86b6132448dc188d2f0b186fbb91402b721c75537f904493e216df90b",
+    "outerreset-cohort-outerf40116long.json": "365605eddf0188f44e191c0db3d8104312a6d1c897a0ebded2e12d0513bcdd19",
+    "outerreset-cohort-outerf40116more.json": "b96ce251de991d33b84d8ed6c2fa91367b51df55fc2f09ec3dc0a38929cec328",
+    "outerreset-cohort-outerf40117a.json": "7cfc8076f010d7f93b6052ac91631dfa54a5338569624f041d73a04bf2c26a49",
+    "outerreset-cohort-outerf40117more.json": "c3952a0f6fabc40fb6b9757f71168a41ce53760b6a0f1a560ea9e3e0fd6f5afc",
+    "outerreset-cohort-outerf40216a.json": "dc26c395d2432a9196a6d110b6ad0abf576ee7cb2be60d4c8bc9c32a0e7b781e",
+    "outerreset-cohort-outerf40216backlong.json": "a424562b9fc82d8fb69204e563abe024156bc4e3d425ff4f6f20e48fe30227b2",
+    "outerreset-cohort-outerf40216by.json": "b3293929b2925963bd34ed7e8dde7a317eb1ff6184dd5859079040ed1ed5d872",
+    "outerreset-cohort-outerf40216raw.json": "024234a028b0429f833d1b8cf0b0fd56db4c8c9f3cc7992fb47eb93a30abf9dc",
+    "outerreset-cohort-outerf40217a.json": "acf3460b853c0ca39319121ce6d5b06d350ea11cd9419e4e638447c245de8749",
+    "outerreset-cohort-outerf40217back.json": "c7f4272103388db4535eafd27def0a278f4ae2d18653ea5308a4d554dc7127a6",
+    "outerreset-cohort-outerf40217raw.json": "7fd02422387cfe10d0f4af2c247c551bab4979d41b29dea374535cb4ba0344d7",
+    "outerreset-cohort-outerf40316a.json": "2ff24b49550e14ffdd68fa0a466182e5fe5e29c248e1f72c7e387154f09e5a7c",
+    "outerreset-cohort-outerf40317a.json": "8d8ecc9fc335e0c6dd5f26ccc232420bf1cc3d8ee241dd30d4a400f4597724c8",
+    "outerreset-cohort-outerfact16long.json": "7d97de1c28d88cbf84ee85679f3f1a1320e9d15ba017c73e440e5dd89d2c4da6",
+    "outerreset-cohort-outerfact16q.json": "b401c1c7821e32a1caf214042f32ec1234ce5fdeba3b8916d8d5dd9e5e910211",
+    "outerreset-cohort-outerfact17long.json": "e3e63b2749775860629278ec55004b3d8e9777e9c6898ad1fd8f8ba69f0c8517",
+    "outerreset-cohort-outerfact17q.json": "91d5863d19954a1d08292405687c325529bb18feea8502bb80efd97772a3551a",
+    "outerreset-cohort-summary-pre-f403.json": "7282ef5e7b8a333ab9e32a5638fab2e5afd0ec90ed18e8cc493fa1fd8995dd40"
+  },
+  "limits": [
+    "Only aggregate-namespaced files with their verified summary schema are excluded from cohort classification. Failed/incomplete real cohorts still fail this audit.",
+    "Original early native16 baseline and final restored cold3 are separate from standardized candidate cohort parents.",
+    "Observed boots, not a universal failure-rate bound.",
+    "Runtime alone does not distinguish matched controls; full-flash readback SHA does.",
+    "12s delayed active probing does not imply wire silence."
+  ]
+}

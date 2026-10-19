@@ -1,0 +1,36 @@
+{
+  "created": "2026-10-19T06:18:34.544949",
+  "phase": "both_functional_patches_apply_cleanly_to_pinned_upstream_base",
+  "hardware_operations": false,
+  "cases": [
+    {
+      "candidate": "f401",
+      "base_commit": "5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039",
+      "patch": "outerreset-functional-f401.patch",
+      "patch_sha256": "b7e1176e7d369e4ff80a908728ed3f029200a9a8c25638114033aaca551cba64",
+      "temporary_index_read_tree_actual_exit_code": 0,
+      "cached_patch_check_actual_exit_code": 0,
+      "whitespace_check_actual_exit_code": 0,
+      "git_added_lines": 9,
+      "git_deleted_lines": 1,
+      "top_sha256": "81f4a3401a3ad792862d67d77a6e03b3750524d742b3ed3eb33c25cb96247e97"
+    },
+    {
+      "candidate": "f402",
+      "base_commit": "5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039",
+      "patch": "outerreset-functional-f402.patch",
+      "patch_sha256": "f7fa9cabcfd20a60f23482028e77b90412855ef2de94fdcc31a9c61a2c999f06",
+      "temporary_index_read_tree_actual_exit_code": 0,
+      "cached_patch_check_actual_exit_code": 0,
+      "whitespace_check_actual_exit_code": 0,
+      "git_added_lines": 6,
+      "git_deleted_lines": 1,
+      "top_sha256": "ffc0a42f8cc9ed5d180edf832a05ef00048204d2662bb933fa11e134d2cc646d"
+    }
+  ],
+  "script_sha256": "b7db98bcb9eb6de87859687ace1de8a1b779201189e0f19cca230f72344eca78",
+  "limits": [
+    "Temporary Git index only. No candidate working-tree source or real repository index was changed.",
+    "Clean patch application does not imply hardware success; qualification and boot cohorts are separate."
+  ]
+}

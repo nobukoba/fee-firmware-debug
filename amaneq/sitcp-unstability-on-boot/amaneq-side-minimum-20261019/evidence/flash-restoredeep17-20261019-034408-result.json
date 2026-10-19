@@ -1,0 +1,20 @@
+{
+  "started": "2026-10-19T03:44:08.537762",
+  "mcs": "WORKSPACE/factory-v2a-backup/factory-v2a.mcs",
+  "mcs_sha256": "b1010ec6dc37e7223758d544ce9f30aa30549c29acfd9146675b3a7f17a6c2c0",
+  "payload_sha256": "50ab197cd1ecf4bec66aa90b2539e1556b341d7add0ce1a8b6df05af5d4d72ba",
+  "payload_bytes": 6692576,
+  "backup": "WORKSPACE/flash-restoredeep17-20261019-034408-before.bin",
+  "readback": "WORKSPACE/flash-restoredeep17-20261019-034408-after.bin",
+  "label": "restoredeep17",
+  "target_serial": "210299BDCF8E",
+  "success": true,
+  "vivado_exit_code": 0,
+  "backup_bytes": 16777216,
+  "backup_sha256": "a5eea9fb772e28aa620cc445d9b785fd209d5d38d2a11c9cbf8c6f8e72864c9b",
+  "readback_bytes": 16777216,
+  "readback_sha256": "7dd784de31ff8b3b2cbae4602274faf3e2f587f1bc2185a89ad3ba5e7de48a13",
+  "readback_image_sha256": "50ab197cd1ecf4bec66aa90b2539e1556b341d7add0ce1a8b6df05af5d4d72ba",
+  "image_matches": true,
+  "finished": "2026-10-19T03:49:17.705494"
+}

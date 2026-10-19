@@ -1,0 +1,29 @@
+TIMER_CLOCK u_KeepPwrOnRst/reg_reset_reg/C clk_sys PERIOD 8.000
+TIMER_CLOCK_DRIVER u_KeepPwrOnRst/reg_reset_reg/C u_ClkMan_Inst/inst/clkout1_buf/O
+TIMER_CLOCK u_PcsWait/reg_reset_reg/C clk_sys PERIOD 8.000
+TIMER_CLOCK_DRIVER u_PcsWait/reg_reset_reg/C u_ClkMan_Inst/inst/clkout1_buf/O
+TIMER_CLOCK u_PcsWaitEnd/reg_reset_reg/C clk_sys PERIOD 8.000
+TIMER_CLOCK_DRIVER u_PcsWaitEnd/reg_reset_reg/C u_ClkMan_Inst/inst/clkout1_buf/O
+GATE_PIN O DRIVERS u_KeepPwrOnRst/reset_sync1_i_1/O
+RESET_SINKS gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[0]/PRE gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[1]/PRE gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[2]/PRE gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[3]/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync1/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync2/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync3/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync4/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync5/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync1/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync2/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync3/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync4/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync5/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync1/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync2/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync3/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync4/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync5/PRE
+GATE_PIN I0 DRIVERS u_KeepPwrOnRst/reg_reset_reg/Q
+GATE_PIN I1 DRIVERS u_PcsWait/reg_reset_reg/Q
+GATE_PIN I2 DRIVERS u_PcsWaitEnd/reg_reset_reg/Q
+GT gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/gtxe2_i
+CPLL_FBDIV 4
+CPLL_FBDIV_45 4
+CPLL_REFCLK_DIV 1
+RXOUT_DIV 4
+TXOUT_DIV 4
+RX_DATA_WIDTH 20
+RX_INT_DATAWIDTH 0
+RXCDR_CFG 72'h03000023FF10100020
+GT_PIN RXSYSCLKSEL[0] NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/<const0>
+GT_PIN RXSYSCLKSEL[1] NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/<const0>
+GT_PIN TXSYSCLKSEL[0] NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/<const0>
+GT_PIN TXSYSCLKSEL[1] NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/<const0>
+GT_PIN RXCDRHOLD NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/<const0>
+GT_PIN GTRXRESET NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/SR[0] gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_gtrxreset_in1_out gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/SR[0] gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/SR[0]
+GT_PIN RXPMARESET NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/<const0>
+GT_PIN RXUSERRDY NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxresetfsm_i/gt0_rxuserrdy_t gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gt0_rxuserrdy_t gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_rxuserrdy_t gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/gt0_rxuserrdy_t
+GT_PIN CPLLRESET NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/cpll_railing0_i/cpllreset_in gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/cpllreset_in gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/cpllreset_in

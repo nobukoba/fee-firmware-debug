@@ -1,0 +1,52 @@
+PATTERN *pcs_reset_once*
+NET pcs_reset_once
+DRIVERS u_KeepPwrOnRst/reset_sync1_i_1/O
+SINKS gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[0]/PRE gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[1]/PRE gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[2]/PRE gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[3]/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync1/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync2/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync3/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync4/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync5/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync1/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync2/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync3/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync4/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync5/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync1/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync2/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync3/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync4/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync5/PRE
+PATTERN *pcs_wait*
+NET pcs_wait
+DRIVERS u_PcsWait/reg_reset_reg/Q
+SINKS u_KeepPwrOnRst/reset_sync1_i_1/I1
+NET pcs_wait_end
+DRIVERS u_PcsWaitEnd/reg_reset_reg/Q
+SINKS u_KeepPwrOnRst/reset_sync1_i_1/I2
+PATTERN *raw_pwr_on_reset*
+NET u_KeepPwrOnRst/raw_pwr_on_reset
+DRIVERS u_KeepPwrOnRst/reg_counter[31]_i_3__0/O
+SINKS u_KeepPwrOnRst/reg_counter_reg[28]/CLR u_KeepPwrOnRst/reg_counter_reg[29]/CLR u_KeepPwrOnRst/reg_counter_reg[30]/CLR u_KeepPwrOnRst/reg_counter_reg[31]/CLR u_KeepPwrOnRst/reg_counter_reg[0]/PRE u_KeepPwrOnRst/reg_counter_reg[10]/PRE u_KeepPwrOnRst/reg_counter_reg[11]/PRE u_KeepPwrOnRst/reg_counter_reg[12]/PRE u_KeepPwrOnRst/reg_counter_reg[13]/PRE u_KeepPwrOnRst/reg_counter_reg[14]/PRE u_KeepPwrOnRst/reg_counter_reg[15]/PRE u_KeepPwrOnRst/reg_counter_reg[16]/PRE u_KeepPwrOnRst/reg_counter_reg[17]/PRE u_KeepPwrOnRst/reg_counter_reg[18]/PRE u_KeepPwrOnRst/reg_counter_reg[19]/PRE u_KeepPwrOnRst/reg_counter_reg[1]/PRE u_KeepPwrOnRst/reg_counter_reg[20]/PRE u_KeepPwrOnRst/reg_counter_reg[21]/PRE u_KeepPwrOnRst/reg_counter_reg[22]/PRE u_KeepPwrOnRst/reg_counter_reg[23]/PRE u_KeepPwrOnRst/reg_counter_reg[24]/PRE u_KeepPwrOnRst/reg_counter_reg[25]/PRE u_KeepPwrOnRst/reg_counter_reg[26]/PRE u_KeepPwrOnRst/reg_counter_reg[27]/PRE u_KeepPwrOnRst/reg_counter_reg[2]/PRE u_KeepPwrOnRst/reg_counter_reg[3]/PRE u_KeepPwrOnRst/reg_counter_reg[4]/PRE u_KeepPwrOnRst/reg_counter_reg[5]/PRE u_KeepPwrOnRst/reg_counter_reg[6]/PRE u_KeepPwrOnRst/reg_counter_reg[7]/PRE u_KeepPwrOnRst/reg_counter_reg[8]/PRE u_KeepPwrOnRst/reg_counter_reg[9]/PRE u_KeepPwrOnRst/reg_reset_reg/PRE
+PATTERN *pwr_on_reset*
+NET pwr_on_reset
+DRIVERS u_KeepPwrOnRst/reg_reset_reg/Q
+SINKS gen_SiTCP[0].u_RbcpCdc/u_LinkToSys/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE gen_SiTCP[0].u_RbcpCdc/u_LinkToSys/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE gen_SiTCP[0].u_RbcpCdc/u_LinkToSys/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE gen_SiTCP[0].u_RbcpCdc/u_LinkToSys/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE gen_mikumari[0].u_Miku_Inst/u_CbtLane/sync_rst_reg[2]_srl3/D gen_mikumari[0].u_Miku_Inst/u_CbtLane/u_cbtrx/u_cdcm_rx/gen_idelayctrl.IDELAYCTRL_inst/RST gen_tsd[0].u_TSD_Inst/u_reset_gen_sys/reg_reset_reg[3]_srl4/D u_GtClockDist_Inst/core_resets_i/pma_reset_pipe_reg[0]/PRE u_GtClockDist_Inst/core_resets_i/pma_reset_pipe_reg[1]/PRE u_GtClockDist_Inst/core_resets_i/pma_reset_pipe_reg[2]/PRE u_GtClockDist_Inst/core_resets_i/pma_reset_pipe_reg[3]/PRE u_PcsWait/reg_counter_reg[0]/CLR u_PcsWait/reg_counter_reg[10]/CLR u_PcsWait/reg_counter_reg[13]/CLR u_PcsWait/reg_counter_reg[15]/CLR u_PcsWait/reg_counter_reg[18]/CLR u_PcsWait/reg_counter_reg[19]/CLR u_PcsWait/reg_counter_reg[1]/CLR u_PcsWait/reg_counter_reg[23]/CLR u_PcsWait/reg_counter_reg[27]/CLR u_PcsWait/reg_counter_reg[28]/CLR u_PcsWait/reg_counter_reg[29]/CLR u_PcsWait/reg_counter_reg[2]/CLR u_PcsWait/reg_counter_reg[30]/CLR u_PcsWait/reg_counter_reg[31]/CLR u_PcsWait/reg_counter_reg[3]/CLR u_PcsWait/reg_counter_reg[4]/CLR u_PcsWait/reg_counter_reg[5]/CLR u_PcsWait/reg_counter_reg[7]/CLR u_PcsWait/reg_counter_reg[9]/CLR u_PcsWait/reg_counter_reg[11]/PRE u_PcsWait/reg_counter_reg[12]/PRE u_PcsWait/reg_counter_reg[14]/PRE u_PcsWait/reg_counter_reg[16]/PRE u_PcsWait/reg_counter_reg[17]/PRE u_PcsWait/reg_counter_reg[20]/PRE u_PcsWait/reg_counter_reg[21]/PRE u_PcsWait/reg_counter_reg[22]/PRE u_PcsWait/reg_counter_reg[24]/PRE u_PcsWait/reg_counter_reg[25]/PRE u_PcsWait/reg_counter_reg[26]/PRE u_PcsWait/reg_counter_reg[6]/PRE u_PcsWait/reg_counter_reg[8]/PRE u_PcsWait/reg_reset_reg/PRE u_PcsWaitEnd/reg_counter_reg[0]/CLR u_PcsWaitEnd/reg_counter_reg[11]/CLR u_PcsWaitEnd/reg_counter_reg[13]/CLR u_PcsWaitEnd/reg_counter_reg[14]/CLR u_PcsWaitEnd/reg_counter_reg[15]/CLR u_PcsWaitEnd/reg_counter_reg[16]/CLR u_PcsWaitEnd/reg_counter_reg[18]/CLR u_PcsWaitEnd/reg_counter_reg[19]/CLR u_PcsWaitEnd/reg_counter_reg[1]/CLR u_PcsWaitEnd/reg_counter_reg[22]/CLR u_PcsWaitEnd/reg_counter_reg[23]/CLR u_PcsWaitEnd/reg_counter_reg[24]/CLR u_PcsWaitEnd/reg_counter_reg[25]/CLR u_PcsWaitEnd/reg_counter_reg[26]/CLR u_PcsWaitEnd/reg_counter_reg[28]/CLR u_PcsWaitEnd/reg_counter_reg[29]/CLR u_PcsWaitEnd/reg_counter_reg[2]/CLR u_PcsWaitEnd/reg_counter_reg[30]/CLR u_PcsWaitEnd/reg_counter_reg[31]/CLR u_PcsWaitEnd/reg_counter_reg[3]/CLR u_PcsWaitEnd/reg_counter_reg[4]/CLR u_PcsWaitEnd/reg_counter_reg[7]/CLR u_PcsWaitEnd/reg_counter_reg[9]/CLR u_PcsWaitEnd/reg_counter_reg[10]/PRE u_PcsWaitEnd/reg_counter_reg[12]/PRE u_PcsWaitEnd/reg_counter_reg[17]/PRE u_PcsWaitEnd/reg_counter_reg[20]/PRE u_PcsWaitEnd/reg_counter_reg[21]/PRE u_PcsWaitEnd/reg_counter_reg[27]/PRE u_PcsWaitEnd/reg_counter_reg[5]/PRE u_PcsWaitEnd/reg_counter_reg[6]/PRE u_PcsWaitEnd/reg_counter_reg[8]/PRE u_PcsWaitEnd/reg_reset_reg/PRE u_KeepPwrOnRst/reg_reset_reg[3]_srl4_i_1__0/I0 u_KeepPwrOnRst/reset_sync1_i_1/I0 u_KeepPwrOnRst/LED_OBUF[4]_inst_i_1/I1
+NET u_KeepPwrOnRst/raw_pwr_on_reset
+DRIVERS u_KeepPwrOnRst/reg_counter[31]_i_3__0/O
+SINKS u_KeepPwrOnRst/reg_counter_reg[28]/CLR u_KeepPwrOnRst/reg_counter_reg[29]/CLR u_KeepPwrOnRst/reg_counter_reg[30]/CLR u_KeepPwrOnRst/reg_counter_reg[31]/CLR u_KeepPwrOnRst/reg_counter_reg[0]/PRE u_KeepPwrOnRst/reg_counter_reg[10]/PRE u_KeepPwrOnRst/reg_counter_reg[11]/PRE u_KeepPwrOnRst/reg_counter_reg[12]/PRE u_KeepPwrOnRst/reg_counter_reg[13]/PRE u_KeepPwrOnRst/reg_counter_reg[14]/PRE u_KeepPwrOnRst/reg_counter_reg[15]/PRE u_KeepPwrOnRst/reg_counter_reg[16]/PRE u_KeepPwrOnRst/reg_counter_reg[17]/PRE u_KeepPwrOnRst/reg_counter_reg[18]/PRE u_KeepPwrOnRst/reg_counter_reg[19]/PRE u_KeepPwrOnRst/reg_counter_reg[1]/PRE u_KeepPwrOnRst/reg_counter_reg[20]/PRE u_KeepPwrOnRst/reg_counter_reg[21]/PRE u_KeepPwrOnRst/reg_counter_reg[22]/PRE u_KeepPwrOnRst/reg_counter_reg[23]/PRE u_KeepPwrOnRst/reg_counter_reg[24]/PRE u_KeepPwrOnRst/reg_counter_reg[25]/PRE u_KeepPwrOnRst/reg_counter_reg[26]/PRE u_KeepPwrOnRst/reg_counter_reg[27]/PRE u_KeepPwrOnRst/reg_counter_reg[2]/PRE u_KeepPwrOnRst/reg_counter_reg[3]/PRE u_KeepPwrOnRst/reg_counter_reg[4]/PRE u_KeepPwrOnRst/reg_counter_reg[5]/PRE u_KeepPwrOnRst/reg_counter_reg[6]/PRE u_KeepPwrOnRst/reg_counter_reg[7]/PRE u_KeepPwrOnRst/reg_counter_reg[8]/PRE u_KeepPwrOnRst/reg_counter_reg[9]/PRE u_KeepPwrOnRst/reg_reset_reg/PRE
+CELL u_KeepPwrOnRst/reg_reset_reg REF FDPE
+INIT 1'b1
+PIN Q DRIVERS u_KeepPwrOnRst/reg_reset_reg/Q
+PIN C DRIVERS u_ClkMan_Inst/inst/clkout1_buf/O
+CLOCKS clk_sys
+PIN CE DRIVERS u_KeepPwrOnRst/VCC/P
+PIN D DRIVERS u_KeepPwrOnRst/reg_counter[31]_i_1/O
+PIN PRE DRIVERS u_KeepPwrOnRst/reg_counter[31]_i_3__0/O
+CELL u_KeepPwrOnRst/reset_sync1_i_1 REF LUT3
+INIT 8'hBA
+PIN O DRIVERS u_KeepPwrOnRst/reset_sync1_i_1/O
+PIN I0 DRIVERS u_KeepPwrOnRst/reg_reset_reg/Q
+PIN I1 DRIVERS u_PcsWait/reg_reset_reg/Q
+PIN I2 DRIVERS u_PcsWaitEnd/reg_reset_reg/Q
+CELL u_PcsWait/reg_reset_reg REF FDPE
+INIT 1'b1
+PIN Q DRIVERS u_PcsWait/reg_reset_reg/Q
+PIN C DRIVERS u_ClkMan_Inst/inst/clkout1_buf/O
+CLOCKS clk_sys
+PIN CE DRIVERS u_PcsWait/VCC/P
+PIN D DRIVERS u_PcsWait/reg_counter[31]_i_1__1/O
+PIN PRE DRIVERS u_KeepPwrOnRst/reg_reset_reg/Q
+CELL u_PcsWaitEnd/reg_reset_reg REF FDPE
+INIT 1'b1
+PIN Q DRIVERS u_PcsWaitEnd/reg_reset_reg/Q
+PIN C DRIVERS u_ClkMan_Inst/inst/clkout1_buf/O
+CLOCKS clk_sys
+PIN CE DRIVERS u_PcsWaitEnd/VCC/P
+PIN D DRIVERS u_PcsWaitEnd/reg_counter[31]_i_1__2/O
+PIN PRE DRIVERS u_KeepPwrOnRst/reg_reset_reg/Q

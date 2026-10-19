@@ -1,0 +1,348 @@
+{
+  "started": "2026-10-19T05:29:10.127845",
+  "host": "192.168.10.17",
+  "expected_version": "0x60c4020a",
+  "source_sha256": {
+    "WORKSPACE/outerreset_cold.py": "909cd5ddda9f3512979db7b361d58983d59756c9bd76f15d30decbab826cba6a",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "deepreset_neighbor.py": "9e1ca90ecaf3df285678cccf12d67cca3b455bd1f0613c9d096e33ddf45685de",
+    "deepreset_fresh_wait.py": "70e87953cd8a1a15025e1cd915b8e849c4e7be3d533cd53b68708b9d6178aec5",
+    "deepreset_fresh_wait_v2.py": "9d9bcb199db87ff3e0b2a4019c0aa0e634239f780a7444f8b9e5c9969a124908"
+  },
+  "neighbor_protocol": "12s quiet then targeted resolution",
+  "topology": "Kikusui16;ezOutlet17;switchalwaysON;noEEPROM/setpointwrites",
+  "events": [
+    {
+      "time": "2026-10-19T05:29:10.302501",
+      "kind": "outlet_status",
+      "requested": null,
+      "status": "On"
+    },
+    {
+      "time": "2026-10-19T05:29:10.381881",
+      "kind": "power_status",
+      "requested": null,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99850E+01",
+      "current": "+1.87900E-01"
+    },
+    {
+      "time": "2026-10-19T05:29:10.381881",
+      "kind": "cold_start",
+      "number": 1,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T05:29:14.465038",
+      "kind": "outlet_command_response",
+      "requested": "OFF",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-19T05:29:16.637863",
+      "kind": "outlet_status",
+      "requested": "OFF",
+      "status": "Off"
+    },
+    {
+      "time": "2026-10-19T05:29:23.136333",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T05:29:27.230468",
+      "kind": "outlet_command_response",
+      "requested": "ON",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-19T05:29:29.387745",
+      "kind": "outlet_status",
+      "requested": "ON",
+      "status": "On"
+    },
+    {
+      "time": "2026-10-19T05:29:29.387745",
+      "kind": "power_on",
+      "number": 1,
+      "actual_off_seconds": 12.75
+    },
+    {
+      "time": "2026-10-19T05:29:46.417921",
+      "kind": "cold_result",
+      "number": 1,
+      "success": true,
+      "first_ready_seconds": 12.031
+    },
+    {
+      "time": "2026-10-19T05:29:46.421957",
+      "kind": "cold_start",
+      "number": 2,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T05:29:50.488789",
+      "kind": "outlet_command_response",
+      "requested": "OFF",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-19T05:29:52.632784",
+      "kind": "outlet_status",
+      "requested": "OFF",
+      "status": "Off"
+    },
+    {
+      "time": "2026-10-19T05:29:59.150458",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T05:30:03.228048",
+      "kind": "outlet_command_response",
+      "requested": "ON",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-19T05:30:05.378334",
+      "kind": "outlet_status",
+      "requested": "ON",
+      "status": "On"
+    },
+    {
+      "time": "2026-10-19T05:30:05.379337",
+      "kind": "power_on",
+      "number": 2,
+      "actual_off_seconds": 12.75
+    },
+    {
+      "time": "2026-10-19T05:30:22.413636",
+      "kind": "cold_result",
+      "number": 2,
+      "success": true,
+      "first_ready_seconds": 12.031
+    },
+    {
+      "time": "2026-10-19T05:30:22.413636",
+      "kind": "cold_start",
+      "number": 3,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T05:30:26.500610",
+      "kind": "outlet_command_response",
+      "requested": "OFF",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-19T05:30:28.606619",
+      "kind": "outlet_status",
+      "requested": "OFF",
+      "status": "Off"
+    },
+    {
+      "time": "2026-10-19T05:30:35.102312",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T05:30:39.196024",
+      "kind": "outlet_command_response",
+      "requested": "ON",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-19T05:30:41.369504",
+      "kind": "outlet_status",
+      "requested": "ON",
+      "status": "On"
+    },
+    {
+      "time": "2026-10-19T05:30:41.369504",
+      "kind": "power_on",
+      "number": 3,
+      "actual_off_seconds": 12.765
+    },
+    {
+      "time": "2026-10-19T05:30:58.407473",
+      "kind": "cold_result",
+      "number": 3,
+      "success": true,
+      "first_ready_seconds": 12.016
+    },
+    {
+      "time": "2026-10-19T05:30:58.408925",
+      "kind": "complete_power_on",
+      "successes": 3,
+      "trials": 3
+    }
+  ],
+  "trials": [
+    {
+      "number": 1,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.031,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4020A",
+          "expected_version": "0x60C4020A",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.031,
+          "neighbor_discovery": {
+            "started": "2026-10-19T05:29:41.392005",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.0,
+            "before": {
+              "return_code": 0,
+              "state": 0,
+              "MAC": "7c:f0:98:01:20:16",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "7c:f0:98:01:20:16",
+              "physical_length": 6
+            },
+            "MAC": "7c:f0:98:01:20:16"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4020A",
+          "expected_version": "0x60C4020A",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.031
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.031,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4020A",
+          "expected_version": "0x60C4020A",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.031,
+          "neighbor_discovery": {
+            "started": "2026-10-19T05:30:17.381591",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.015,
+            "before": {
+              "return_code": 0,
+              "state": 4,
+              "MAC": "7c:f0:98:01:20:16",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "7c:f0:98:01:20:16",
+              "physical_length": 6
+            },
+            "MAC": "7c:f0:98:01:20:16"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4020A",
+          "expected_version": "0x60C4020A",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.031
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.016,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4020A",
+          "expected_version": "0x60C4020A",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.016,
+          "neighbor_discovery": {
+            "started": "2026-10-19T05:30:53.374198",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.016,
+            "before": {
+              "return_code": 0,
+              "state": 4,
+              "MAC": "7c:f0:98:01:20:16",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "7c:f0:98:01:20:16",
+              "physical_length": 6
+            },
+            "MAC": "7c:f0:98:01:20:16"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4020A",
+          "expected_version": "0x60C4020A",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.047
+        }
+      ]
+    }
+  ]
+}

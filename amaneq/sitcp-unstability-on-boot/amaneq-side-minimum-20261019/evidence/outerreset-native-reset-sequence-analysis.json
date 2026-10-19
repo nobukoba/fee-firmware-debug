@@ -1,0 +1,24 @@
+{
+  "created": "2026-10-19T08:45:18.197356",
+  "phase": "native_reset_source_facts_crosschecked_before_F403_hardware",
+  "facts": [
+    "Public PCS reset is synchronized into pmareset, which drives both TX and RX startup FSM SOFT_RESET.",
+    "While SOFT_RESET is 1, RX FSM stays INIT with GTRXRESET=0; TX stays INIT with GTTXRESET=0. Public reset held does not imply GT reset pins held high.",
+    "After SOFT_RESET releases, native approximately500ns startup wait runs, then ASSERT_ALL_RESETS drives GTRXRESET/GTTXRESET high. Native500ns logic is unchanged.",
+    "Original PCS public reset follows global268435455-cycle SYS POR, nominal2.14748364seconds at125MHz.",
+    "F403 public PCS reset follows not SYS_LOCKED. Existing synchronization and native startup wait remain; global SiTCP POR is unchanged."
+  ],
+  "hypothesis": "Shorten the interval before the first actual GT reset sequence instead of adding another reset later. This may prevent an unfavorable RX/PMA-CDR startup state formed while the native FSM is held in INIT with GTRXRESET low.",
+  "limits": [
+    "Source-derived ordering, not a measured power-on GT waveform.",
+    "Does not identify the rail, reference-clock behavior, analog component, or board variation initiating failure.",
+    "A successful independent F403 source trial is required; F402 early diagnostic alone retains unused timer."
+  ],
+  "source_sha256": {
+    "WORKSPACE/analyze_outerreset_native_sequence.py": "49229689be8d1253f713f03374dbc36d7e560784e6167cd640ae1b326259acca",
+    "lrtdc-outerreset-f402/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_rx_startup_fsm.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "lrtdc-outerreset-f402/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_tx_startup_fsm.vhd": "b746354b507ba31ca0c2c4aa293edce21938567752a7c83bdff839ff0dc4a91a",
+    "lrtdc-outerreset-f402/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_transceiver.vhd": "03932bb1240f6849fb8dac486ffc991463899651ef38804ce9654f25e67fe132",
+    "lrtdc-outerreset-f403/hdl/toplevel.vhd": "0171806295aa80fac4bbb1a0fde43e09621cde24700be46efa170a9f6fd09a9a"
+  }
+}

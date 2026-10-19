@@ -1,0 +1,40 @@
+{
+  "created": "2026-10-19T05:30:54.640119",
+  "phase": "static_clock_reset_dependencies_checked_fresh_physical_audit_still_required",
+  "cases": [
+    {
+      "candidate": "f401",
+      "SYS_timer_clock": "Independent board BASE_CLK -> clk_wiz_sys -> clk_sys125MHz",
+      "GT_independent_clock": "Same SYS clock wizard -> clk_gbe200MHz",
+      "feedback_from_RX_recovered_clock": false,
+      "public_reset_CDC": "Existing four-stage ASYNC_REG PMA reset pipeline, async assert and independent-clock synchronous release",
+      "initial_POR_dependency": "SYS clock wizard lock, not Ethernet link/MMCM lock",
+      "late_recovery": false
+    },
+    {
+      "candidate": "f402",
+      "SYS_timer_clock": "Independent board BASE_CLK -> clk_wiz_sys -> clk_sys125MHz",
+      "GT_independent_clock": "Same SYS clock wizard -> clk_gbe200MHz",
+      "feedback_from_RX_recovered_clock": false,
+      "public_reset_CDC": "Existing four-stage ASYNC_REG PMA reset pipeline, async assert and independent-clock synchronous release",
+      "initial_POR_dependency": "SYS clock wizard lock, not Ethernet link/MMCM lock",
+      "late_recovery": false
+    }
+  ],
+  "source_sha256": {
+    "lrtdc-outerreset-f401/hdl/toplevel.vhd": "81f4a3401a3ad792862d67d77a6e03b3750524d742b3ed3eb33c25cb96247e97",
+    "lrtdc-outerreset-f401/hdl/common/gig_ethernet_pcs_pma/GbEPcsPma.vhd": "cca7b2c198e5225aa372958c35191e8471b9ff2af9183dba9af61289cf436cfd",
+    "lrtdc-outerreset-f401/hdl/common/gig_ethernet_pcs_pma/gig_ethernet_pcs_pma_resets.vhd": "752c4d3c9cbe58a6d95db55970365d728aacdee88f5fb941ceaad3deb5060adc",
+    "lrtdc-outerreset-f401/hdl/common/main/RstDelayTimer.vhd": "2811ffd9f2d48f3ed5f05d1beea53e498aee3aa354606075d0d6b8fef155ddde",
+    "lrtdc-outerreset-f402/hdl/toplevel.vhd": "ffc0a42f8cc9ed5d180edf832a05ef00048204d2662bb933fa11e134d2cc646d",
+    "lrtdc-outerreset-f402/hdl/common/gig_ethernet_pcs_pma/GbEPcsPma.vhd": "cca7b2c198e5225aa372958c35191e8471b9ff2af9183dba9af61289cf436cfd",
+    "lrtdc-outerreset-f402/hdl/common/gig_ethernet_pcs_pma/gig_ethernet_pcs_pma_resets.vhd": "752c4d3c9cbe58a6d95db55970365d728aacdee88f5fb941ceaad3deb5060adc",
+    "lrtdc-outerreset-f402/hdl/common/main/RstDelayTimer.vhd": "2811ffd9f2d48f3ed5f05d1beea53e498aee3aa354606075d0d6b8fef155ddde",
+    "WORKSPACE/audit_outerreset_source_clocks.py": "7269ab26cadee458d1c214cf59ed9d27cc0646d977b98168448b4927df84ac9f"
+  },
+  "limits": [
+    "Source path audit only; physical clock nets must be checked after implementation.",
+    "No new crossing outside the pre-existing public core asynchronous reset interface. Existing vendor reset crossings/constraints remain.",
+    "No claim to validate analog PLL/CDR behavior or external TDC performance."
+  ]
+}

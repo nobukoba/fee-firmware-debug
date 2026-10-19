@@ -1,0 +1,1320 @@
+{
+  "state": "COMPLETED_RESTORED",
+  "created": "2026-10-19T10:36:48.641695",
+  "files": [
+    {
+      "source": "outerreset-board17-regression-reversal.json",
+      "source_sha256": "378ae4f43ff156661822aafc879fdca27a550a4de60667ac5f0b256623d670c7",
+      "export": "evidence/outerreset-board17-regression-reversal.json",
+      "export_sha256": "976ca27610c3419844934f0bf89a343341dc88ba7546e647df7b79b0dd708f72"
+    },
+    {
+      "source": "outerreset-causal-hypotheses-before-hold-raw.json",
+      "source_sha256": "d5191cb4506b95148426d005c1afc44f88124b7660985ca75d3ce85f93fdd8a8",
+      "export": "evidence/outerreset-causal-hypotheses-before-hold-raw.json",
+      "export_sha256": "1348c2d9521624af636b99770f2145d8efab2950489f38ba2027e3782fbd29a8"
+    },
+    {
+      "source": "outerreset-cohort-outerf40116a.json",
+      "source_sha256": "2af756e6adb014686e59d4e994ee55d1c7edc53739fb9257b5ba045a403f03e6",
+      "export": "evidence/outerreset-cohort-outerf40116a.json",
+      "export_sha256": "0ef8ee11e1b2b4c7ce857d3dc2a359e8828c204a6439105e92ab8cc6b22a503e"
+    },
+    {
+      "source": "outerreset-cohort-outerf40116back.json",
+      "source_sha256": "776a83b7d603a4fd1f130f95ba231851c6a2f9adbaa1d9eb12e3a8d01b8d1674",
+      "export": "evidence/outerreset-cohort-outerf40116back.json",
+      "export_sha256": "0b4802096237b9afd5d08d104e1c2651d2e21ad58e4eb9590ef866684af2e082"
+    },
+    {
+      "source": "outerreset-cohort-outerf40116by.json",
+      "source_sha256": "5018ae931879cf9364d8f063f5a9f16a8b464dc8676d4fb9f612c9b5ab644209",
+      "export": "evidence/outerreset-cohort-outerf40116by.json",
+      "export_sha256": "4c8993b55b7c0228da9fe958214699eb0adc0d1004494e40511a08549eea083e"
+    },
+    {
+      "source": "outerreset-cohort-outerf40116hold.json",
+      "source_sha256": "842e90b86b6132448dc188d2f0b186fbb91402b721c75537f904493e216df90b",
+      "export": "evidence/outerreset-cohort-outerf40116hold.json",
+      "export_sha256": "5088c1691c1a7c912a4405b097c92f8a8bddc871a0dfff5b284ba10e90b7dfc5"
+    },
+    {
+      "source": "outerreset-cohort-outerf40116long.json",
+      "source_sha256": "365605eddf0188f44e191c0db3d8104312a6d1c897a0ebded2e12d0513bcdd19",
+      "export": "evidence/outerreset-cohort-outerf40116long.json",
+      "export_sha256": "b09ae88e00b416df1a3648fc306d3eafbd081736fc31802409d532584c8d572e"
+    },
+    {
+      "source": "outerreset-cohort-outerf40116more.json",
+      "source_sha256": "b96ce251de991d33b84d8ed6c2fa91367b51df55fc2f09ec3dc0a38929cec328",
+      "export": "evidence/outerreset-cohort-outerf40116more.json",
+      "export_sha256": "ee82d694d30ea2b314ef056e814cc0d4a71b0693ff8155fc33dc89f4dd73375c"
+    },
+    {
+      "source": "outerreset-cohort-outerf40117a.json",
+      "source_sha256": "7cfc8076f010d7f93b6052ac91631dfa54a5338569624f041d73a04bf2c26a49",
+      "export": "evidence/outerreset-cohort-outerf40117a.json",
+      "export_sha256": "f4e9b70354162db7e79feaa03bb3f5e2f65ff9451e80579ea499db441317be78"
+    },
+    {
+      "source": "outerreset-cohort-outerf40117more.json",
+      "source_sha256": "c3952a0f6fabc40fb6b9757f71168a41ce53760b6a0f1a560ea9e3e0fd6f5afc",
+      "export": "evidence/outerreset-cohort-outerf40117more.json",
+      "export_sha256": "eed25c1f13953ae6b567be129477282e78e3fb728d169159e8c5687c00d349ab"
+    },
+    {
+      "source": "outerreset-cohort-outerf40216a.json",
+      "source_sha256": "dc26c395d2432a9196a6d110b6ad0abf576ee7cb2be60d4c8bc9c32a0e7b781e",
+      "export": "evidence/outerreset-cohort-outerf40216a.json",
+      "export_sha256": "54d88cd37eb4c1f7ad78411eb01b90deb930154d35385705fba40a8ea37c2204"
+    },
+    {
+      "source": "outerreset-cohort-outerf40216backlong.json",
+      "source_sha256": "a424562b9fc82d8fb69204e563abe024156bc4e3d425ff4f6f20e48fe30227b2",
+      "export": "evidence/outerreset-cohort-outerf40216backlong.json",
+      "export_sha256": "90589950b5c4a7f9d35a52effe5a635b95bc38379b33ec20b105f811765dc9f5"
+    },
+    {
+      "source": "outerreset-cohort-outerf40216by.json",
+      "source_sha256": "b3293929b2925963bd34ed7e8dde7a317eb1ff6184dd5859079040ed1ed5d872",
+      "export": "evidence/outerreset-cohort-outerf40216by.json",
+      "export_sha256": "a401a954f3dab918412ab4f85cb63a0ff0327cb6aa32195b912ccdbc563d8db1"
+    },
+    {
+      "source": "outerreset-cohort-outerf40216raw.json",
+      "source_sha256": "024234a028b0429f833d1b8cf0b0fd56db4c8c9f3cc7992fb47eb93a30abf9dc",
+      "export": "evidence/outerreset-cohort-outerf40216raw.json",
+      "export_sha256": "49fabf668181f31a4c9a0a928c1a49ddebac035435322e75386047081fb673fa"
+    },
+    {
+      "source": "outerreset-cohort-outerf40217a.json",
+      "source_sha256": "acf3460b853c0ca39319121ce6d5b06d350ea11cd9419e4e638447c245de8749",
+      "export": "evidence/outerreset-cohort-outerf40217a.json",
+      "export_sha256": "1f832667ae2ec8748b53cc9606806c62be637eea1db508543f2243b203a01c5a"
+    },
+    {
+      "source": "outerreset-cohort-outerf40217back.json",
+      "source_sha256": "c7f4272103388db4535eafd27def0a278f4ae2d18653ea5308a4d554dc7127a6",
+      "export": "evidence/outerreset-cohort-outerf40217back.json",
+      "export_sha256": "e52e6d2547ae0f2f511ffa43ada2b6b13ec52e551dd4bbf816ad25c2e4aea13e"
+    },
+    {
+      "source": "outerreset-cohort-outerf40217raw.json",
+      "source_sha256": "7fd02422387cfe10d0f4af2c247c551bab4979d41b29dea374535cb4ba0344d7",
+      "export": "evidence/outerreset-cohort-outerf40217raw.json",
+      "export_sha256": "8fdd48dc1e6ed62d43ae2cfc681a71e0a9b1d9b8b8f0f3aef52ceffa57c695dc"
+    },
+    {
+      "source": "outerreset-cohort-outerf40316a.json",
+      "source_sha256": "2ff24b49550e14ffdd68fa0a466182e5fe5e29c248e1f72c7e387154f09e5a7c",
+      "export": "evidence/outerreset-cohort-outerf40316a.json",
+      "export_sha256": "df6fa4b7821fc1f23623d294ced430f7d23c6b1608600c7eeb7234408e358920"
+    },
+    {
+      "source": "outerreset-cohort-outerf40317a.json",
+      "source_sha256": "8d8ecc9fc335e0c6dd5f26ccc232420bf1cc3d8ee241dd30d4a400f4597724c8",
+      "export": "evidence/outerreset-cohort-outerf40317a.json",
+      "export_sha256": "453f96d5a567ea800baea3753f6a22a54faaac9cb84b3ac173665e40d71cdb05"
+    },
+    {
+      "source": "outerreset-cohort-outerfact16long.json",
+      "source_sha256": "7d97de1c28d88cbf84ee85679f3f1a1320e9d15ba017c73e440e5dd89d2c4da6",
+      "export": "evidence/outerreset-cohort-outerfact16long.json",
+      "export_sha256": "2a3a492ffe4624918ca91468c4412847a4dfeac9b867a2305873764f731afbc8"
+    },
+    {
+      "source": "outerreset-cohort-outerfact16q.json",
+      "source_sha256": "b401c1c7821e32a1caf214042f32ec1234ce5fdeba3b8916d8d5dd9e5e910211",
+      "export": "evidence/outerreset-cohort-outerfact16q.json",
+      "export_sha256": "69b9839ff57ddd47646aa89716e7af8d9cee79824cbc7bf1b752681dd3f14039"
+    },
+    {
+      "source": "outerreset-cohort-outerfact17long.json",
+      "source_sha256": "e3e63b2749775860629278ec55004b3d8e9777e9c6898ad1fd8f8ba69f0c8517",
+      "export": "evidence/outerreset-cohort-outerfact17long.json",
+      "export_sha256": "6f5f96dc7ee2310809dadd2a48aac844156a9f4a46ba5c4d1916bd69beaf2176"
+    },
+    {
+      "source": "outerreset-cohort-outerfact17q.json",
+      "source_sha256": "91d5863d19954a1d08292405687c325529bb18feea8502bb80efd97772a3551a",
+      "export": "evidence/outerreset-cohort-outerfact17q.json",
+      "export_sha256": "38186b29c2573234a6a26b11d0ed3f1830abccf2682006d0e39bb7031187f1f4"
+    },
+    {
+      "source": "outerreset-cohort-summary-final.json",
+      "source_sha256": "c7f2a3f77afc344ab3f8ed80f66f8ecf0164b55951ef10cc1171e3b591c5ff04",
+      "export": "evidence/outerreset-cohort-summary-final.json",
+      "export_sha256": "fe584788848adce8fef1b1862aed804d263bd631114bd616be8e2033c0d2d1f6"
+    },
+    {
+      "source": "outerreset-cohort-summary-pre-f403.json",
+      "source_sha256": "7282ef5e7b8a333ab9e32a5638fab2e5afd0ec90ed18e8cc493fa1fd8995dd40",
+      "export": "evidence/outerreset-cohort-summary-pre-f403.json",
+      "export_sha256": "c95b1334ef7adab91406e01e034557fa16e4323ebf7aeb1668bdebba64f5cdfb"
+    },
+    {
+      "source": "outerreset-existing-timer-output-analysis.json",
+      "source_sha256": "a629c0c023293dc3f28b71640174f91264be4b4c211a255f3a8e290a873d133c",
+      "export": "evidence/outerreset-existing-timer-output-analysis.json",
+      "export_sha256": "71423f064bb9bfa33d43db9c06a250b0c8fdbc49523b21d6f669ab545794ed63"
+    },
+    {
+      "source": "outerreset-f401-base-review.json",
+      "source_sha256": "d361f4da712d38f6653579b732549f2a7421e277527f26194990e709375b3a02",
+      "export": "evidence/outerreset-f401-base-review.json",
+      "export_sha256": "a0e659361058e9bf48afa45d2614306fd82334eed8a8e7ad58bc90d9bf0c515c"
+    },
+    {
+      "source": "outerreset-f401-board-clock-audit.json",
+      "source_sha256": "1a4c8938e5a52eab89f86f64e00e959c6d0824b33d535b0ebf5c5832ec3766d1",
+      "export": "evidence/outerreset-f401-board-clock-audit.json",
+      "export_sha256": "55d96fdc04b42afccc7a75c7ad2b76a75d4cf8fa76ee63b6b27d86154f164742"
+    },
+    {
+      "source": "outerreset-f401-build.json",
+      "source_sha256": "e2d1c67de59bae73dafcfd5b6d78949935cde553ea494ce37321a719f01f3bd0",
+      "export": "evidence/outerreset-f401-build.json",
+      "export_sha256": "d7043965cc4a7353dba2b7b83a030bae2b670368e1295b82848fafb362a9932a"
+    },
+    {
+      "source": "outerreset-f401-causal-reversal.json",
+      "source_sha256": "a1d046b1f81c6e353bacfe40de1a3f4321bae806ed5249b3d958711bebcc27b8",
+      "export": "evidence/outerreset-f401-causal-reversal.json",
+      "export_sha256": "9316b7dbe52278c518730b77db8d0ea5d02dccee528559c18871331e004faf5b"
+    },
+    {
+      "source": "outerreset-f401-export.json",
+      "source_sha256": "19918ed556afe84f0cdf53a68d41db3c611115c0e9870715b156520a5201da17",
+      "export": "evidence/outerreset-f401-export.json",
+      "export_sha256": "4e35e855eda0bd8d146cdb63dc14e9b528f18b5f68807fe9268161fdcca7be21"
+    },
+    {
+      "source": "outerreset-f401-independent-review.json",
+      "source_sha256": "d67b59c38820d2624256294528b74ba8715732479e34c98b89e04a9389e5237b",
+      "export": "evidence/outerreset-f401-independent-review.json",
+      "export_sha256": "2372662cc60e087e1037446ce030a16e7a7a76c7f1d6c42cfa88b68f16bb99d4"
+    },
+    {
+      "source": "outerreset-f401-inspection.json",
+      "source_sha256": "e34741d6bfdfa4c9130db07021e5b8da639a20876bb32eca491bf3d4f8a43cdb",
+      "export": "evidence/outerreset-f401-inspection.json",
+      "export_sha256": "fdbf7a0cac831a894e3453d2e53343866e9b095b0507373e27acbd6340c9a57c"
+    },
+    {
+      "source": "outerreset-f401-netlist-config.json",
+      "source_sha256": "15fc86613c1fadfc52502e7ae4e785d2c051bc387be005f811d3496a077975ba",
+      "export": "evidence/outerreset-f401-netlist-config.json",
+      "export_sha256": "0850f82232c6c37cc7406c1e5d361c77c0f64b51c157c53d10e24e48a9c30ee6"
+    },
+    {
+      "source": "outerreset-f401-preparation.json",
+      "source_sha256": "bcd28c4777e1640a01e2c6a2aef4319f471c90ab6515a193608fef7d126e16a7",
+      "export": "evidence/outerreset-f401-preparation.json",
+      "export_sha256": "8f7165306ec373283ea032864052e1de357ba45d00fd51952d69c4706d54c967"
+    },
+    {
+      "source": "outerreset-f401-review-v1-rejection.json",
+      "source_sha256": "ef2f0a949ccf033f790cc323c2aeeebdff78562f2e94e2aa164dab2cc9ff0415",
+      "export": "evidence/outerreset-f401-review-v1-rejection.json",
+      "export_sha256": "98c145b0cfcaae173555462bf04b3b32d826895913e7c248d7d945c34eba3c14"
+    },
+    {
+      "source": "outerreset-f401-timer-init-audit.json",
+      "source_sha256": "193b9787de9dcd03b69a91ae9e2c94d1083ae90f059538a497294e96c3f67286",
+      "export": "evidence/outerreset-f401-timer-init-audit.json",
+      "export_sha256": "0ab805e589562ad713c416b66bd7919a07894329a96bf34603977ae943ced74f"
+    },
+    {
+      "source": "outerreset-f402-base-review.json",
+      "source_sha256": "faaf8b21761d2a3b38c6fa63eea1a3a69dddf9571b28d97fc1d2489e6c9095ed",
+      "export": "evidence/outerreset-f402-base-review.json",
+      "export_sha256": "65286aaba4e59f4264c598c0f3b6d6e5fc62b1c5b6dac5baeccfeae0c0f62663"
+    },
+    {
+      "source": "outerreset-f402-board-clock-audit.json",
+      "source_sha256": "917e7dba949721a19e0139492439d8142a6294bb3cb793819c7aba4b8ba82476",
+      "export": "evidence/outerreset-f402-board-clock-audit.json",
+      "export_sha256": "522c77cd0de514e8953b058071b304e89c383c1df935945f89e5f611e0e9970d"
+    },
+    {
+      "source": "outerreset-f402-build.json",
+      "source_sha256": "c25b05e4134a66b211cad59e5617339e5ba9e48d89a18fee8201ecc62e826195",
+      "export": "evidence/outerreset-f402-build.json",
+      "export_sha256": "da7173664da9e4d6feb7ccd80ed49c580f677e093334151b95360d44e5fdc6b4"
+    },
+    {
+      "source": "outerreset-f402-causal-contrast.json",
+      "source_sha256": "6d2816ba5e6cd5e5fade7c648b0ca5822853725e629e96f3a5cf05e52c789979",
+      "export": "evidence/outerreset-f402-causal-contrast.json",
+      "export_sha256": "2b1d8470a26b20f56911a8688766489867ee1fcb698160990c6560fc1a56e736"
+    },
+    {
+      "source": "outerreset-f402-export.json",
+      "source_sha256": "781311ad0139bee39c8f570a33bb217e35515c04c56927199c55d7ab4b296db9",
+      "export": "evidence/outerreset-f402-export.json",
+      "export_sha256": "dcbec0b1df91356d59b61d7def9a809159c952e8c817d0361d042576a2395f89"
+    },
+    {
+      "source": "outerreset-f402-independent-review.json",
+      "source_sha256": "3d69eac3584a13afd09d20d41ad4911b87693b522233a82481a79b2e9427afb3",
+      "export": "evidence/outerreset-f402-independent-review.json",
+      "export_sha256": "88b5bc49eac0193e96aa0494f2ae48d1d0429244e3ac3274060d1b5eb9b3e903"
+    },
+    {
+      "source": "outerreset-f402-inspection.json",
+      "source_sha256": "ed77e71335d2a1a0e9b59e7749cf97da71ffac98b5ad94a77b666389ba781a6f",
+      "export": "evidence/outerreset-f402-inspection.json",
+      "export_sha256": "958524bfd83883d66c5f03fa669f661b20402f444fe7cca3d9a48cf50b8f7384"
+    },
+    {
+      "source": "outerreset-f402-netlist-config.json",
+      "source_sha256": "703af74e19c50978de0831e69a739f613c3980c191ac453a070c830da4e90782",
+      "export": "evidence/outerreset-f402-netlist-config.json",
+      "export_sha256": "f5c955643fc87f507a5efcd0adcbf11796d1c106c98d7775de7f23488767383d"
+    },
+    {
+      "source": "outerreset-f402-preparation.json",
+      "source_sha256": "69498637abfff5d801159d73bd8d80fb644e8caf3f2d757d8c47b7af93f8d08b",
+      "export": "evidence/outerreset-f402-preparation.json",
+      "export_sha256": "f587a0d1cb133f6f6bbd5d300ae43f14c796cb3bb562a9b37b31ff410a5c8cff"
+    },
+    {
+      "source": "outerreset-f402-timer-init-audit.json",
+      "source_sha256": "80de83bdb6865b9df09cf9541b769c86734b86718e276437d8f2d2148c3fa125",
+      "export": "evidence/outerreset-f402-timer-init-audit.json",
+      "export_sha256": "930fb23de9bf75b60ba02c76424902310523323f180acffe059f8c6f99a8adf3"
+    },
+    {
+      "source": "outerreset-f403-board-clock-audit.json",
+      "source_sha256": "fe54b012381d5cb9cdf452b4a99f079e9e5364bce137efe0b3ab62037b1232ee",
+      "export": "evidence/outerreset-f403-board-clock-audit.json",
+      "export_sha256": "bcc431b4c164e96583365d14b094048920a31fe9a93c52e0ae3f2593afd43456"
+    },
+    {
+      "source": "outerreset-f403-build.json",
+      "source_sha256": "df6c61cd23bc68e0a8103e1d2ee7407418173ada587d8b138fe6c7cde5b3c6d4",
+      "export": "evidence/outerreset-f403-build.json",
+      "export_sha256": "747a8e96bd03420a2aab17fb964fcac3b4835ee332ae2861a533d8492b4bac09"
+    },
+    {
+      "source": "outerreset-f403-hypothesis-before-source-hardware.json",
+      "source_sha256": "7b6440365faa48c477ed7fbe892aa23dac4e99049f5e1fcebb9cdf6cf082b054",
+      "export": "evidence/outerreset-f403-hypothesis-before-source-hardware.json",
+      "export_sha256": "23a67a9627a3443cf35ea0d0e936c860f4c664d42e81d4bb6a79b81c415199de"
+    },
+    {
+      "source": "outerreset-f403-independent-review.json",
+      "source_sha256": "74990fa5d9f3189e09affd7f6df5b49f75de9898b8e83d724f0624f1d0bc0032",
+      "export": "evidence/outerreset-f403-independent-review.json",
+      "export_sha256": "913525b0029a3a422098a828995e86cf40f9a1326634cf562c5c344a24d0ca27"
+    },
+    {
+      "source": "outerreset-f403-inspection.json",
+      "source_sha256": "8c5634e502971b7cef401affa1c7bba7559aacb3ff0b6aa42a8455fa430e199f",
+      "export": "evidence/outerreset-f403-inspection.json",
+      "export_sha256": "b57bbe304f48739e5d6dd10af27a9d6196aa3d7da46558e9277cb2b1da826013"
+    },
+    {
+      "source": "outerreset-f403-patch-application-check.json",
+      "source_sha256": "141bda4476d2522ae2e4cb1f993bafd8fd3c5d903f2719d3b72623b2ffa75584",
+      "export": "evidence/outerreset-f403-patch-application-check.json",
+      "export_sha256": "68e93e6a9f3af4abc413907b0492c4da605e9516314511eca0fbbb45d2a6fe3e"
+    },
+    {
+      "source": "outerreset-f403-preparation.json",
+      "source_sha256": "2e4bd601599a576adff945e3a53d4124ff241385dbc9c7f9a6b57977d75f9287",
+      "export": "evidence/outerreset-f403-preparation.json",
+      "export_sha256": "f21400cbe3550006e1c0ca1da87cf27ccdb8b7fce17541453a39efb0ac54bdce"
+    },
+    {
+      "source": "outerreset-f403-timer-init-audit.json",
+      "source_sha256": "304697596fb17d51c54930364c406f983a8a6e320ff1ed04d4134f3bfe65bb82",
+      "export": "evidence/outerreset-f403-timer-init-audit.json",
+      "export_sha256": "274ee45ccbacb22f1d97adb7ae88a26b0f26153666eaad2bf897fc3611ab31a3"
+    },
+    {
+      "source": "outerreset-final-soak-summary.json",
+      "source_sha256": "63334e03859f587d6472aaaee962ee71eb773bbd552a020f899e863d6130df34",
+      "export": "evidence/outerreset-final-soak-summary.json",
+      "export_sha256": "3a37f21d71d0914fbd3db54957467e9d597fc4f93f688bee8d94caae96c15b7b"
+    },
+    {
+      "source": "outerreset-final-source-commit.json",
+      "source_sha256": "3f1785af6a2b774d1778b5f698639d84f33a19838f4d3d2d1da3d2af18361281",
+      "export": "evidence/outerreset-final-source-commit.json",
+      "export_sha256": "79fa66caed091dbe112b3ad3a9fc813550809e7d7a4c3c1faf55311f22b63507"
+    },
+    {
+      "source": "outerreset-final-status.json",
+      "source_sha256": "2f75a6152b51bf78716205488b27049f5dd0c3d8b268744537e1bba721c9094d",
+      "export": "evidence/outerreset-final-status.json",
+      "export_sha256": "7bd7762813970db7f07a83bbb5995001ff221c33735778835f1788c63d1259fc"
+    },
+    {
+      "source": "outerreset-initial-status.json",
+      "source_sha256": "0f7f2caa0e9147cd3d787ecde17046acf57cbc1f30dad2558fa19ed96d683487",
+      "export": "evidence/outerreset-initial-status.json",
+      "export_sha256": "b92f70dd799b3848d42fa41b472ec66c60abfc4700eae6a8dbd1b4d5f6c8e110"
+    },
+    {
+      "source": "outerreset-local-completion-audit-v2.json",
+      "source_sha256": "56317edcfaa3ea6caa671078f171c247c31044f642def0e94b60eed3dca225ef",
+      "export": "evidence/outerreset-local-completion-audit-v2.json",
+      "export_sha256": "f4289edaa5ba158388b32b63db70c652c12e7b8e14f49fa68e64a59b6b59c825"
+    },
+    {
+      "source": "outerreset-local-completion-audit.json",
+      "source_sha256": "47eb807cfa8f6e79de9c01e46f2ddb0f898cee34edab82d8b0f9a2b81eb4af6d",
+      "export": "evidence/outerreset-local-completion-audit.json",
+      "export_sha256": "3623b1e3d4945b9e62193cfa666fb3f32c2e3d95bfab52cac91f1b5afa8abed3"
+    },
+    {
+      "source": "outerreset-manufacturer-reset-crosscheck.json",
+      "source_sha256": "a589505fcdf28718c75adad45f3c350454ace32e52f918fc27625b40394cbfda",
+      "export": "evidence/outerreset-manufacturer-reset-crosscheck.json",
+      "export_sha256": "91c578d1410e8f53ca6f16f1c17f9ccb2c9b69af5f822719c72aa1531d86b0a3"
+    },
+    {
+      "source": "outerreset-minimization-rationale.json",
+      "source_sha256": "c71f1dbf45716f61c4191282144179dc7e81f43fce1419d902fea6665d25c62a",
+      "export": "evidence/outerreset-minimization-rationale.json",
+      "export_sha256": "a2a29c152c73ef8ba5fa99d3a3c35f119ee02189dfd749d3ee10ed986c8ee9c9"
+    },
+    {
+      "source": "outerreset-native-reset-sequence-analysis.json",
+      "source_sha256": "8609888464aa44981dc30234938575f0ecbf52db38f6915c013bd92028fed63e",
+      "export": "evidence/outerreset-native-reset-sequence-analysis.json",
+      "export_sha256": "051538cb2a5aec10d06fdac794214db26791482a2f81f125521fb7ccef6e7542"
+    },
+    {
+      "source": "outerreset-outerf40116a-cold.json",
+      "source_sha256": "ac1769a4320596e87440accaeb2d1acf45c2d0514741f09f3239c16f1372eef7",
+      "export": "evidence/outerreset-outerf40116a-cold.json",
+      "export_sha256": "090d89985831043ebe9db24f130de03dbc0aee1c0845dba25852f7cb5cbc3ee0"
+    },
+    {
+      "source": "outerreset-outerf40116back-cold.json",
+      "source_sha256": "0701bd5ea5e39db021219d46062ae86eaad35767ce39ec3c8769041c00b62f77",
+      "export": "evidence/outerreset-outerf40116back-cold.json",
+      "export_sha256": "f4b39e6342119451b73c8c6c839dd2a258ac9439d9bb431d5aa4ecc2a4261c8d"
+    },
+    {
+      "source": "outerreset-outerf40116by-cold.json",
+      "source_sha256": "9ddffe820f02e404b40d0637e9130625fc0e6e82deb0dc5dd5f4dd76d673c2e5",
+      "export": "evidence/outerreset-outerf40116by-cold.json",
+      "export_sha256": "118690d743cbd631f5f06d21e3d9d02aeff0faaa32905ade7c2554aa0ddd521d"
+    },
+    {
+      "source": "outerreset-outerf40116hold-cold.json",
+      "source_sha256": "0262544f8d49668913aea368d730c335d32daea74ee17e1bf2f65ea161c44b5c",
+      "export": "evidence/outerreset-outerf40116hold-cold.json",
+      "export_sha256": "d377f14aa172808febb8d0ac18df2ec5bcdd0816cd4678aa6593461beccbb5ba"
+    },
+    {
+      "source": "outerreset-outerf40116long-cold.json",
+      "source_sha256": "b336a49badc032f45f14f945b35541268b62160c5391ecdac7e163ae2a54570d",
+      "export": "evidence/outerreset-outerf40116long-cold.json",
+      "export_sha256": "b722f8ec6ad0850b36de51f973f6a75c35dfbfde41e220d9f24b533654d6e158"
+    },
+    {
+      "source": "outerreset-outerf40116more-cold.json",
+      "source_sha256": "1efa29948af3e30207ee3e0cf8b1e0ae301c39cfd068ff6f2e3ca0ffe0d1b580",
+      "export": "evidence/outerreset-outerf40116more-cold.json",
+      "export_sha256": "d3d9ba6639d07e4bb5d9c53c4e2fb7b3e49cabe8a04cd92b93df72ef72264e77"
+    },
+    {
+      "source": "outerreset-outerf40117a-cold.json",
+      "source_sha256": "85a213fd0f1c7f9b2ed7cddc374680e18909c737600c3b60b8ff01fb9d7470ce",
+      "export": "evidence/outerreset-outerf40117a-cold.json",
+      "export_sha256": "8b4e0d82576d7f21291932d7bb0358ed1650da9f931b5d61d59498945d5c064c"
+    },
+    {
+      "source": "outerreset-outerf40117more-cold.json",
+      "source_sha256": "ad2c1a0772f4756d5460c4b271e2262f7c3daed8fc80134d3fabd099d94d94d3",
+      "export": "evidence/outerreset-outerf40117more-cold.json",
+      "export_sha256": "2815509ca44205858c32f0b143b15ac4df081c9c652cb4b91b13471d90608b81"
+    },
+    {
+      "source": "outerreset-outerf40216a-cold.json",
+      "source_sha256": "e680bbb106cb87e86b4372858f430871a40bbec7dd9888ba0e5f863ad7118dba",
+      "export": "evidence/outerreset-outerf40216a-cold.json",
+      "export_sha256": "67eae28694ac01f630d9120a7f40604aa72f6892f37cebd235612de5bbd90bb2"
+    },
+    {
+      "source": "outerreset-outerf40216backlong-cold.json",
+      "source_sha256": "205f973206f0c906902387f646277c89db179650b8ca82773c6f3ef974fda15c",
+      "export": "evidence/outerreset-outerf40216backlong-cold.json",
+      "export_sha256": "4ec470f5316d146f291ff9436d3f53cd4c74b392219f797f983be405cad57b6f"
+    },
+    {
+      "source": "outerreset-outerf40216by-cold.json",
+      "source_sha256": "fd3e087dd7d14aa42f876be2924e4b566f37edd8b69bcbf07cafaad8662827d5",
+      "export": "evidence/outerreset-outerf40216by-cold.json",
+      "export_sha256": "32dcb48e68fd42cd0167ef50f219f32aa6863b1fdd2e55a1c10c7dd37fd125af"
+    },
+    {
+      "source": "outerreset-outerf40216raw-cold.json",
+      "source_sha256": "6d2055d56275c36b1f48be22a29a0a4032bc1f4bdb3f49c03a7d4ee3d73ac0c1",
+      "export": "evidence/outerreset-outerf40216raw-cold.json",
+      "export_sha256": "116d17823450daa2c53d00eb0bc1b98b84026faebf1102c794c4fda81994fbd2"
+    },
+    {
+      "source": "outerreset-outerf40217a-cold.json",
+      "source_sha256": "e0eaa054abbdafa4f2af90b87919b279a04110d676756ee8ce835aacdaea56e5",
+      "export": "evidence/outerreset-outerf40217a-cold.json",
+      "export_sha256": "801de2e9c2940561c9104aa20f3d5cd3b963a586fee84e62618dbd63a89ec09d"
+    },
+    {
+      "source": "outerreset-outerf40217back-cold.json",
+      "source_sha256": "1b6507fea4f9dedfacebac39edcc31f4a7430853e521b0ee7d292750719bc4a4",
+      "export": "evidence/outerreset-outerf40217back-cold.json",
+      "export_sha256": "dbfb5cf235e5e3c002bebfa01da5224613a1404be71efd2b4bba264e28aadba6"
+    },
+    {
+      "source": "outerreset-outerf40217raw-cold.json",
+      "source_sha256": "ee57954c71d780c108617e21480aa8cdb4b00dfb62e959119c536636b05cb723",
+      "export": "evidence/outerreset-outerf40217raw-cold.json",
+      "export_sha256": "be6c9b2d126487090560a589c5adca55d94b85fda88468d999b2d2988382cd58"
+    },
+    {
+      "source": "outerreset-outerf40316a-cold.json",
+      "source_sha256": "ba1e06f49f447712dde69d0c609e24ed58eb81ef29eda1c251f6869d9771f2a1",
+      "export": "evidence/outerreset-outerf40316a-cold.json",
+      "export_sha256": "b924b960e8a18d0759762bfe3de4380301fc8b3d7d4782f67fe99e14100aa339"
+    },
+    {
+      "source": "outerreset-outerf40317a-cold.json",
+      "source_sha256": "f2a6186c64681aa4dffde2294e1352f9be239624bd2a873ddca8ba3c8518a018",
+      "export": "evidence/outerreset-outerf40317a-cold.json",
+      "export_sha256": "0677d6a3479c9f282c1d63e95996785ec0bdfbf99bf73caeeea90098373b3db4"
+    },
+    {
+      "source": "outerreset-outerfact16long-cold.json",
+      "source_sha256": "057bb639f2ed5e3978521e232ea5880cdd7b1dc5625a5304b2845a60d3bd85de",
+      "export": "evidence/outerreset-outerfact16long-cold.json",
+      "export_sha256": "399389c31d67bd917023adb7d6503c745453931c8546fa49d896dad1f07aab2e"
+    },
+    {
+      "source": "outerreset-outerfact16q-cold.json",
+      "source_sha256": "e48bd15899af81268aadf447181245226450355a252d51eb32c5055cda6db45e",
+      "export": "evidence/outerreset-outerfact16q-cold.json",
+      "export_sha256": "9566a2f0acac8379f83ae29904a7b26db79b9ca605a67e4f34af96a5b46eb95b"
+    },
+    {
+      "source": "outerreset-outerfact17long-cold.json",
+      "source_sha256": "052756403b1d3ba00b650af84e468706b0c20b70c2fa47b9abd948ec01c68d5c",
+      "export": "evidence/outerreset-outerfact17long-cold.json",
+      "export_sha256": "21e9e116793b894193b34ccbf24c6fa761c7902c96e636a81e62454ac1fe446b"
+    },
+    {
+      "source": "outerreset-outerfact17q-cold.json",
+      "source_sha256": "9d1ce1d2ba56da6ae015f27ddcf3bc499d2fea0be2c9dae9094329154813600d",
+      "export": "evidence/outerreset-outerfact17q-cold.json",
+      "export_sha256": "68db0f43d91d1592309af8b495290a241054f5c2bd37183eab34a1eb1c597299"
+    },
+    {
+      "source": "outerreset-packets-all-factory-interim.json",
+      "source_sha256": "9f962f12f08e7089bf60726ab7e12dcd466d2a1cd15d7698db25e3593cf52a61",
+      "export": "evidence/outerreset-packets-all-factory-interim.json",
+      "export_sha256": "41ca90a9bf4368683854384a89652e41058f1289f3338b033fcc39b5b93559b9"
+    },
+    {
+      "source": "outerreset-packets-f401-bypass-interim.json",
+      "source_sha256": "f2fd85cbbe962e0545f9ec2b06824a542f0263ec5c01873a1446b80f0bd2417b",
+      "export": "evidence/outerreset-packets-f401-bypass-interim.json",
+      "export_sha256": "72bf89917d0453dfbdae64db0a541975ce3cdbc37b29cc8c8616ef6f877cd205"
+    },
+    {
+      "source": "outerreset-packets-f401-first16-interim.json",
+      "source_sha256": "894bdda69a400145a7928e1ca1bfcb084573a14365706cec403f3ebc2fc93230",
+      "export": "evidence/outerreset-packets-f401-first16-interim.json",
+      "export_sha256": "b1e03260f900f50d6114b3273c10a6a14b7f139bcf45d81b2252463445e7268f"
+    },
+    {
+      "source": "outerreset-packets-f401-hold-interim.json",
+      "source_sha256": "8a78d3fa134722797c9970b80d682752641f4d45ffc0004502114baeeb5d8682",
+      "export": "evidence/outerreset-packets-f401-hold-interim.json",
+      "export_sha256": "0edff98aa415516882e4e22b657d43f1ec45780c8cb68c9a1c042caf83be2d63"
+    },
+    {
+      "source": "outerreset-packets-f401-reversal-interim.json",
+      "source_sha256": "a1e80125f5781ff3f12edd05a087e63582ce3403443fab78978b1c3b56503311",
+      "export": "evidence/outerreset-packets-f401-reversal-interim.json",
+      "export_sha256": "03550c5633c4fc87a27e6dd6fb0e70dc69a50b5c9918a52bb7e864605b1f37fe"
+    },
+    {
+      "source": "outerreset-packets-f40217-reversal-interim.json",
+      "source_sha256": "3499b591a7b1350e2d24b69b1b39049b8ef2aff3d7fd0dfa10c663e5489b0023",
+      "export": "evidence/outerreset-packets-f40217-reversal-interim.json",
+      "export_sha256": "1b2db2cfc687bbc5595f75f14641ebf5072b9b4ee1bfce5e762e443806a90bf7"
+    },
+    {
+      "source": "outerreset-packets-f40217early-interim.json",
+      "source_sha256": "cd58e803ffd0bda844bb61f38ab33bce7628879481844fe63ca6b5d91db2de90",
+      "export": "evidence/outerreset-packets-f40217early-interim.json",
+      "export_sha256": "b33dffbe5ce822ba5e949c068fbd5a43bcfde24836f7da80b5b4a657e119e5b2"
+    },
+    {
+      "source": "outerreset-packets-f402bypass-interim.json",
+      "source_sha256": "88266569d114e07e4399119bbad020c55129201e7b5af352c651a88322b98e6b",
+      "export": "evidence/outerreset-packets-f402bypass-interim.json",
+      "export_sha256": "4010de46c6f6f4c9979f7c3e86914ca9b740cc0f134b7bff9d44f5ee9f60c257"
+    },
+    {
+      "source": "outerreset-packets-f402early-interim.json",
+      "source_sha256": "48e6e1762b98dff7ef3b6b356f0edbfcd7710c81bd8c0ae15bb36d0495274111",
+      "export": "evidence/outerreset-packets-f402early-interim.json",
+      "export_sha256": "9cbf5dc73bf00347bc4c09683126da6ed47979c0f842baa8eac96be29cf8966a"
+    },
+    {
+      "source": "outerreset-packets-f403-first-interim.json",
+      "source_sha256": "e91a23625190a585852070b7fd38d0bfb731e9725877c9e97d2a285e89bf663e",
+      "export": "evidence/outerreset-packets-f403-first-interim.json",
+      "export_sha256": "75c0373ea5a45c5e9968cdc5974a1deb9bd2282e034af5c52b10a122ff17bda7"
+    },
+    {
+      "source": "outerreset-packets-factory-interim.json",
+      "source_sha256": "1be2676b31666fd54733b8be30fa34dfaa1a8766cabd9c21717b6a8d866f2c12",
+      "export": "evidence/outerreset-packets-factory-interim.json",
+      "export_sha256": "1226489f0963b9401786721744c65c7238aa7b5240100ec9e83ced35cbc0143e"
+    },
+    {
+      "source": "outerreset-packets-factory-long-interim.json",
+      "source_sha256": "64e50daac27d48d1873367b3b874387bebbd75ef7d25b567c9ceb2e7cfb21325",
+      "export": "evidence/outerreset-packets-factory-long-interim.json",
+      "export_sha256": "32bd4620eeb85e6afbc74bd4b1350b4764eac444b4de09e2fd41a5b2d75a5d80"
+    },
+    {
+      "source": "outerreset-packets-final.json",
+      "source_sha256": "bd7bd0bb1600ab6270e0d1ffa60897c6d8776e584f591f1eb24b285d4ce5f924",
+      "export": "evidence/outerreset-packets-final.json",
+      "export_sha256": "2dceb93884a92bda46218d9d098675551c953a5e3b10b844d2e9021685d9d66f"
+    },
+    {
+      "source": "outerreset-patch-application-check.json",
+      "source_sha256": "675c3dfe0c0c06d309227ac693b228368d34398d946e193a5b78166b32614c87",
+      "export": "evidence/outerreset-patch-application-check.json",
+      "export_sha256": "82bd3831cd26abe6b681317b5ef87be541cea95fd4cecf803896f7df567b758a"
+    },
+    {
+      "source": "outerreset-project-portability-help-v2.json",
+      "source_sha256": "b1fdf8f133817a87991fea1ae8514d5d3e258703c19fbc0ff1032001fc0cb0ff",
+      "export": "evidence/outerreset-project-portability-help-v2.json",
+      "export_sha256": "28519287b47bf3a09dad6e01526adad1aecca95e210ca01c7789704e29d4e5fe"
+    },
+    {
+      "source": "outerreset-project-portability-help.json",
+      "source_sha256": "698227df9f104c4d91be244360c02cf9912474deb8fb926a880c9a64e0fc2dcb",
+      "export": "evidence/outerreset-project-portability-help.json",
+      "export_sha256": "da51b2f92e07dd76b99b69248351a332ef3a862df659164864cd264f5fc36c15"
+    },
+    {
+      "source": "outerreset-resource-cleanup.json",
+      "source_sha256": "cd4767023f60e4fb6e5dab1ca545769f1656d84fde8575d313a3edfa23475283",
+      "export": "evidence/outerreset-resource-cleanup.json",
+      "export_sha256": "675024da8e93f10d669f86e2c7c2bf862e88752278fd1ec1e71c478e7bdb3c5b"
+    },
+    {
+      "source": "outerreset-restoration.json",
+      "source_sha256": "022001850be046768fef59d9f998cc80d41e6cc5e0e644778bf8f3344a5debad",
+      "export": "evidence/outerreset-restoration.json",
+      "export_sha256": "0f1f30bf42c9a98b3ff236f9e097f08db8a1e058c0157dfbedd052f668dabee8"
+    },
+    {
+      "source": "outerreset-restored-16-cold3.json",
+      "source_sha256": "c4f3975ea451895e999dd61b0dd457bbd52521bd7315677a2b11e18bba6fb89f",
+      "export": "evidence/outerreset-restored-16-cold3.json",
+      "export_sha256": "ffd0390b7eb6d70530c505e7216fc94a6a0091963756e2e03889126cabf5341f"
+    },
+    {
+      "source": "outerreset-restored-17-cold3.json",
+      "source_sha256": "8e4e082f7b7b9308bf60b9e0d8c6e066180e7f4d1173565c57e20cd9fea9d8a7",
+      "export": "evidence/outerreset-restored-17-cold3.json",
+      "export_sha256": "958ae003c0e01ea6dd04e43c8361d2fa8bf608ce61404727457f665fc9e52f4b"
+    },
+    {
+      "source": "outerreset-result-selection.json",
+      "source_sha256": "16527536ad6a084408ab742ad6ec8eacc0404b8971856359e1003a3e0326a668",
+      "export": "evidence/outerreset-result-selection.json",
+      "export_sha256": "443d657ec75e67ffaf8e95593004001109243672adf8756e3732188fa472648f"
+    },
+    {
+      "source": "outerreset-soak-f401both.json",
+      "source_sha256": "fb0c4ae8ba5507baa5bb90c1835956f7cb8886fb835ece19a15539d57d6687a3",
+      "export": "evidence/outerreset-soak-f401both.json",
+      "export_sha256": "2d516fce8c039c0eccf1f44764911d62d1366dd2f97359595982d93e8aca3837"
+    },
+    {
+      "source": "outerreset-soak-f402both.json",
+      "source_sha256": "b051b328b4a642369a5ba82f6eac64d8b1ccb61f0763e83d98f2e800adc545ac",
+      "export": "evidence/outerreset-soak-f402both.json",
+      "export_sha256": "5c29ba8e42047c0a2d6d706aec87c8f79d1bf322658a658ad4d5999294fcbed4"
+    },
+    {
+      "source": "outerreset-source-clock-audit-v2.json",
+      "source_sha256": "d7111bfb3e5fc86bfd08b267eedeae071411186ef8e5e8eea294af3e3ecdfb46",
+      "export": "evidence/outerreset-source-clock-audit-v2.json",
+      "export_sha256": "06df153d99577f293212d5f392affc0ab34dc661f8919d2c97580d3351f00c87"
+    },
+    {
+      "source": "outerreset-source-clock-audit.json",
+      "source_sha256": "a58a25a7b3cb1b647cf420098efb66be5fc22a371b3a609c75e7a04b96429b1d",
+      "export": "evidence/outerreset-source-clock-audit.json",
+      "export_sha256": "d845d6ed72845b14ab4d2d2ffdf40e8d2fe1b3b2ba054f51af60c5cb047b5328"
+    },
+    {
+      "source": "outerreset-source-input-audit.json",
+      "source_sha256": "90a2f5ffca2731cc4b3f36ce2fa6cd2b07e0e4f8710ede5b946ee8b14940f3f5",
+      "export": "evidence/outerreset-source-input-audit.json",
+      "export_sha256": "58f9be40ca21eb88423df5818a5b21db680d3b9d601a416655f60e6112a0c29f"
+    },
+    {
+      "source": "deepreset-native-outerfact16a.json",
+      "source_sha256": "adf46a238b0b843972fed65f4c1edfcbe19f6a612f46cfed88461089825da354",
+      "export": "evidence/deepreset-native-outerfact16a.json",
+      "export_sha256": "bfd3a0cdf6ca933139fb411dbac8c089e5487d489eb4fbcace69fb26ddc521bd"
+    },
+    {
+      "source": "deepreset-native-outerfact16a-cold3.json",
+      "source_sha256": "484f3729501dc08cf246af143ad79b8493096dfd66d5e2a98b9b7498dd2f199c",
+      "export": "evidence/deepreset-native-outerfact16a-cold3.json",
+      "export_sha256": "8739d61d576f551e71e9cbc58fbb88365fdb3f0fdcc83543bfd351ce4ee4b5ff"
+    },
+    {
+      "source": "flash-outerf40116a-20261019-064156-result.json",
+      "source_sha256": "78ec3baf5f7a45083b9e64ecd1bcef2c1744677195fff160ea75041a30710058",
+      "export": "evidence/flash-outerf40116a-20261019-064156-result.json",
+      "export_sha256": "ff5fe7c21733787c16a1d4cacd3d1d3f47578c3f8e2d51a3a88cc17fbf4da614"
+    },
+    {
+      "source": "flash-outerf40116back-20261019-072000-result.json",
+      "source_sha256": "a629d379481ee6acc7c6e33b4fc2471a0e6cc9bee072f1dea770ae0672924c75",
+      "export": "evidence/flash-outerf40116back-20261019-072000-result.json",
+      "export_sha256": "71fd299acd651d37fd37f507c13f61b366afb518be9d57a66bbae5199992a969"
+    },
+    {
+      "source": "flash-outerf40116by-20261019-065744-result.json",
+      "source_sha256": "140291fffdd2063fa259d747476fefdd1f357dbb37505856d06726010425362e",
+      "export": "evidence/flash-outerf40116by-20261019-065744-result.json",
+      "export_sha256": "fa27191792fcd96ae105d1dac869e2e5dd7387ebfa421705aa2f44b2e76fb038"
+    },
+    {
+      "source": "flash-outerf40116hold-20261019-070840-result.json",
+      "source_sha256": "bdcf882bb408129333285643542d88f4d4ca2fd42d4353db40ea5dff36ee54ad",
+      "export": "evidence/flash-outerf40116hold-20261019-070840-result.json",
+      "export_sha256": "6c672066b660d2e3a3a21c5b796f4ea5f033f382fafcfe657616962b67b4b947"
+    },
+    {
+      "source": "flash-outerf40117a-20261019-064902-result.json",
+      "source_sha256": "a4461ab73bc9c8a32431342efeb5196a52345f70011c5134b321535145d8d1bf",
+      "export": "evidence/flash-outerf40117a-20261019-064902-result.json",
+      "export_sha256": "a67487a62dd266c79b6f7fac42574e55c8c408afc845a817a1316f3514a130e9"
+    },
+    {
+      "source": "flash-outerf40216a-20261019-082551-result.json",
+      "source_sha256": "daaa127e4f3d5c2867a1bd6955d13f60b56945cc086f55359cd91a670c610814",
+      "export": "evidence/flash-outerf40216a-20261019-082551-result.json",
+      "export_sha256": "6d589719efba9d94187fe11047eb563b2ce2321fbd609ecfcac29a061f112c47"
+    },
+    {
+      "source": "flash-outerf40216backlong-20261019-085136-result.json",
+      "source_sha256": "0b535b45db1094913164c8e71532d8961dcc550666f9ff795bc208426fda6143",
+      "export": "evidence/flash-outerf40216backlong-20261019-085136-result.json",
+      "export_sha256": "606b6c7ceb77645f2d2d283e04b11b32a189f81ecc7df8ce51765d7f4b3ac906"
+    },
+    {
+      "source": "flash-outerf40216by-20261019-084018-result.json",
+      "source_sha256": "38e3238d154f7817714c8225ef69c0d9d9504e631d0ac89b6f57a1888b0dcfc8",
+      "export": "evidence/flash-outerf40216by-20261019-084018-result.json",
+      "export_sha256": "3b858b354e9b78ad6d07dda39df0346b4f6503ef9ecfb1c4be5855e5715a8ad7"
+    },
+    {
+      "source": "flash-outerf40216raw-20261019-081726-result.json",
+      "source_sha256": "33b9315698d4f02d30d2501014705bdd1e63e0b1224282df89f04b162e761d82",
+      "export": "evidence/flash-outerf40216raw-20261019-081726-result.json",
+      "export_sha256": "1aa88607212df451da154de4a07f289e83668b1fbfa6a48c665e8ec56f28dfd9"
+    },
+    {
+      "source": "flash-outerf40217a-20261019-083300-result.json",
+      "source_sha256": "d34e8c87b3d1b2da8ea444cda43186f81d987b5449fa14ecb4e729b416bfd0ab",
+      "export": "evidence/flash-outerf40217a-20261019-083300-result.json",
+      "export_sha256": "3417373644f8ef4f4f587501a0610fef19392aebc179989a1fdc3c5b4e345ea4"
+    },
+    {
+      "source": "flash-outerf40217back-20261019-100341-result.json",
+      "source_sha256": "ba7c1d1dbfa8a64de9426235fd1cb45350575ecb742cc6427dfdc4b2d7f888e5",
+      "export": "evidence/flash-outerf40217back-20261019-100341-result.json",
+      "export_sha256": "e4f8eee6314c43372f43aed92054948b47cb9d85265ade971d297dca30900613"
+    },
+    {
+      "source": "flash-outerf40217raw-20261019-095327-result.json",
+      "source_sha256": "04c99d84e95627a8e59f48fd207e3fb42c00d9f6b896ccbb642c3954b6407e81",
+      "export": "evidence/flash-outerf40217raw-20261019-095327-result.json",
+      "export_sha256": "a84c84910c55a5703f420025fcd1056e9321eebfac23e2d5db49de3e319e7697"
+    },
+    {
+      "source": "flash-outerf40316a-20261019-093318-result.json",
+      "source_sha256": "8946017c1daa5d1c87c26239730f07b8a6f0a5087d872826dfc417a6e0ab1616",
+      "export": "evidence/flash-outerf40316a-20261019-093318-result.json",
+      "export_sha256": "2902c324d2ae50e41fdbee8082fdefa66a255cd7bcb99eefe20bbf8c13573ec6"
+    },
+    {
+      "source": "flash-outerf40317a-20261019-094043-result.json",
+      "source_sha256": "808573f797f4872c414aae9729b558e9668a2779d8ecdd1253142003a5c970f1",
+      "export": "evidence/flash-outerf40317a-20261019-094043-result.json",
+      "export_sha256": "a24035d657af57815fdc4359c23fabf7e5e15b142ac318d76614df7611922274"
+    },
+    {
+      "source": "flash-outerfact16a-20261019-051257-result.json",
+      "source_sha256": "6c68a6879c599dbc223974f52cee661bf80d505505d9ce0277ff2751c1b74ae6",
+      "export": "evidence/flash-outerfact16a-20261019-051257-result.json",
+      "export_sha256": "faf7bd8592e9f88b62ad51c07cff594548718b2839ff4c83ec7ddc7c27f9c765"
+    },
+    {
+      "source": "flash-restoredeep17-20261019-034408-result.json",
+      "source_sha256": "041320e055215432c97de5bd567eee10b1ef309c901a1b5c14545471c1b3edad",
+      "export": "evidence/flash-restoredeep17-20261019-034408-result.json",
+      "export_sha256": "966fceb8d595d01bbd0dff123df8d87e64a85a5a33b98b4198ac4ac58a1040b3"
+    },
+    {
+      "source": "flash-restoreouter16-20261019-101322-result.json",
+      "source_sha256": "72e88283114abe076374e5246927d00de1063f2b436859bce0a12c07726f9a98",
+      "export": "evidence/flash-restoreouter16-20261019-101322-result.json",
+      "export_sha256": "7f5778ab56cd90c0c74defdbd226581bfec38fb5de39c20684e6a24d7703672f"
+    },
+    {
+      "source": "flash-restoreouter17-20261019-101949-result.json",
+      "source_sha256": "c219fd038834b6125ae7121f2f7f2df440f1f87e5a31935eac252bbebd2e0c29",
+      "export": "evidence/flash-restoreouter17-20261019-101949-result.json",
+      "export_sha256": "9365fb46998ccd2d737be4a72161b0e019759373524ee1788f4fcd7e308bd9cb"
+    },
+    {
+      "source": "analyze_outerreset_board17_reversal.py",
+      "source_sha256": "70708e535650ba3919e318b93ea17fce462a06c23d49d39fd0db5bde283202dc",
+      "export": "scripts/analyze_outerreset_board17_reversal.py",
+      "export_sha256": "70708e535650ba3919e318b93ea17fce462a06c23d49d39fd0db5bde283202dc"
+    },
+    {
+      "source": "analyze_outerreset_f402_contrast.py",
+      "source_sha256": "7c87bf9569c124cc8449fe7c943b9b050dc7bb8551d0de770760b9a8aff89d79",
+      "export": "scripts/analyze_outerreset_f402_contrast.py",
+      "export_sha256": "7c87bf9569c124cc8449fe7c943b9b050dc7bb8551d0de770760b9a8aff89d79"
+    },
+    {
+      "source": "analyze_outerreset_native_sequence.py",
+      "source_sha256": "49229689be8d1253f713f03374dbc36d7e560784e6167cd640ae1b326259acca",
+      "export": "scripts/analyze_outerreset_native_sequence.py",
+      "export_sha256": "49229689be8d1253f713f03374dbc36d7e560784e6167cd640ae1b326259acca"
+    },
+    {
+      "source": "analyze_outerreset_packets.py",
+      "source_sha256": "271ad02c00fb9c5031830afe18b1ce0347fb18c611ab6430c7d1ac22221be815",
+      "export": "scripts/analyze_outerreset_packets.py",
+      "export_sha256": "271ad02c00fb9c5031830afe18b1ce0347fb18c611ab6430c7d1ac22221be815"
+    },
+    {
+      "source": "analyze_outerreset_timer_outputs.py",
+      "source_sha256": "87f1bfddba740b006e47178cf564eb699f6f874450f9bf6d0ccbef839a7f2f24",
+      "export": "scripts/analyze_outerreset_timer_outputs.py",
+      "export_sha256": "87f1bfddba740b006e47178cf564eb699f6f874450f9bf6d0ccbef839a7f2f24"
+    },
+    {
+      "source": "audit_outerreset_completion.py",
+      "source_sha256": "f3a6b0861b62bc36a72ec04bd635a165e80bd7844415e2819743b81681e54fad",
+      "export": "scripts/audit_outerreset_completion.py",
+      "export_sha256": "f3a6b0861b62bc36a72ec04bd635a165e80bd7844415e2819743b81681e54fad"
+    },
+    {
+      "source": "audit_outerreset_completion_v2.py",
+      "source_sha256": "e4da08164f058be1d3362dfd933f343334e39138d2b0a8536bbc7472c87af8b7",
+      "export": "scripts/audit_outerreset_completion_v2.py",
+      "export_sha256": "e4da08164f058be1d3362dfd933f343334e39138d2b0a8536bbc7472c87af8b7"
+    },
+    {
+      "source": "audit_outerreset_generated_clocks.py",
+      "source_sha256": "0d97febe4826906a5cf6eba83b7062aef5b85f028550dee6594b4567003cee18",
+      "export": "scripts/audit_outerreset_generated_clocks.py",
+      "export_sha256": "0d97febe4826906a5cf6eba83b7062aef5b85f028550dee6594b4567003cee18"
+    },
+    {
+      "source": "audit_outerreset_patch_application.py",
+      "source_sha256": "b7db98bcb9eb6de87859687ace1de8a1b779201189e0f19cca230f72344eca78",
+      "export": "scripts/audit_outerreset_patch_application.py",
+      "export_sha256": "b7db98bcb9eb6de87859687ace1de8a1b779201189e0f19cca230f72344eca78"
+    },
+    {
+      "source": "audit_outerreset_resources.py",
+      "source_sha256": "5ecf991788a215846cd6ef8f14ca3f2387455f2fa5f86e69f9fb6b30f5046269",
+      "export": "scripts/audit_outerreset_resources.py",
+      "export_sha256": "a5ecafc2703ba284869004d0b0ac6240e12a0a2988e57029ac2353ab5a2db281"
+    },
+    {
+      "source": "audit_outerreset_source_clocks.py",
+      "source_sha256": "7269ab26cadee458d1c214cf59ed9d27cc0646d977b98168448b4927df84ac9f",
+      "export": "scripts/audit_outerreset_source_clocks.py",
+      "export_sha256": "7269ab26cadee458d1c214cf59ed9d27cc0646d977b98168448b4927df84ac9f"
+    },
+    {
+      "source": "audit_outerreset_source_clocks_v2.py",
+      "source_sha256": "9d56cc44836204059bbcb5163b3e5acea92784ccc56de7e950c6a8557aa41dc5",
+      "export": "scripts/audit_outerreset_source_clocks_v2.py",
+      "export_sha256": "a59d8c833c8e4736272949f8159a199039380f5b1029098c0cad12c24f6dc0b5"
+    },
+    {
+      "source": "audit_outerreset_source_inputs.py",
+      "source_sha256": "d63167a4e9e18476655ae6de5e57c05663b2749a70c42b931795230a33ddbbc4",
+      "export": "scripts/audit_outerreset_source_inputs.py",
+      "export_sha256": "d63167a4e9e18476655ae6de5e57c05663b2749a70c42b931795230a33ddbbc4"
+    },
+    {
+      "source": "audit_outerreset_timer_init.py",
+      "source_sha256": "64582896493bf1f39491499fafa63935e8d1041312224b00cff5b8683eab4101",
+      "export": "scripts/audit_outerreset_timer_init.py",
+      "export_sha256": "64582896493bf1f39491499fafa63935e8d1041312224b00cff5b8683eab4101"
+    },
+    {
+      "source": "audit_outerreset_timer_init_v3.py",
+      "source_sha256": "b6bf684ace8868e75bec21e108bbc6660e049d1c30493b441d54b32c44de9293",
+      "export": "scripts/audit_outerreset_timer_init_v3.py",
+      "export_sha256": "5b63529b371d1fcc69ff7361fb003d5b17dddba2f99bbf4d7434030c6845b10b"
+    },
+    {
+      "source": "build-outerreset-f403.tcl",
+      "source_sha256": "6bfaf5f4ddaceff1e138e0c668312b248d3eaa6ee1f9f395484be9392e745ba3",
+      "export": "scripts/build-outerreset-f403.tcl",
+      "export_sha256": "6bfaf5f4ddaceff1e138e0c668312b248d3eaa6ee1f9f395484be9392e745ba3"
+    },
+    {
+      "source": "C:\\Users\\kobayash\\Documents\\Codex\\2026-10-16\\192-168-10-16-ip-amaneq\\publish_outerreset_final.py",
+      "source_sha256": "0ff3e0e9f52c216d83c5010208e9d112aab4f8056503066506fe14797b1121e8",
+      "export": "scripts/publish_outerreset_final.py",
+      "export_sha256": "5cf8e152395532018f11128a4646b550126418098b5d7a0c7292cc9a6b8612ba"
+    },
+    {
+      "source": "configure_outerreset_f401.py",
+      "source_sha256": "96373401c7b375f7b4a44c44963e97dd72baab71d268a9df6d6f5099ba7617f5",
+      "export": "scripts/configure_outerreset_f401.py",
+      "export_sha256": "96373401c7b375f7b4a44c44963e97dd72baab71d268a9df6d6f5099ba7617f5"
+    },
+    {
+      "source": "configure_outerreset_f402.py",
+      "source_sha256": "15b2466c80d02bb65c6c549bbbb9ad54b55d526d1c2b9106937eab275bbb92ed",
+      "export": "scripts/configure_outerreset_f402.py",
+      "export_sha256": "15b2466c80d02bb65c6c549bbbb9ad54b55d526d1c2b9106937eab275bbb92ed"
+    },
+    {
+      "source": "export-outerreset-matched.tcl",
+      "source_sha256": "fbe41e98d9170cfe1ab37c8e602b69867ef1e9efb731b88e1d4557225052274e",
+      "export": "scripts/export-outerreset-matched.tcl",
+      "export_sha256": "fbe41e98d9170cfe1ab37c8e602b69867ef1e9efb731b88e1d4557225052274e"
+    },
+    {
+      "source": "finalize_outerreset_source.py",
+      "source_sha256": "cba20863c5e6f10c4ad19b54f545577f308b8ba13ad713146d9d369f17570b16",
+      "export": "scripts/finalize_outerreset_source.py",
+      "export_sha256": "cba20863c5e6f10c4ad19b54f545577f308b8ba13ad713146d9d369f17570b16"
+    },
+    {
+      "source": "finalize_outerreset_source_v2.py",
+      "source_sha256": "cfb9ddc3980e10e0f286a9b0ac8b52dc1454b73a34039ffa8c2107efbe868582",
+      "export": "scripts/finalize_outerreset_source_v2.py",
+      "export_sha256": "cfb9ddc3980e10e0f286a9b0ac8b52dc1454b73a34039ffa8c2107efbe868582"
+    },
+    {
+      "source": "inspect-outerreset-f401.tcl",
+      "source_sha256": "bb19e6a02675dee62fd3b8cf938506c9888a0f263a2dcd9ae8c6e308d575b561",
+      "export": "scripts/inspect-outerreset-f401.tcl",
+      "export_sha256": "965c3f3cee6c48f62d0c50594636d1df6de13efccb076383b4237abc2249cdc2"
+    },
+    {
+      "source": "inspect-outerreset-f402.tcl",
+      "source_sha256": "dc9e3faf86a4321dc9e6988d18314a7a2bc5c3f4602be4c6284bf207cd5e8b7d",
+      "export": "scripts/inspect-outerreset-f402.tcl",
+      "export_sha256": "a74453486566fde3dd2b1ea3edb0ff7634c919aefe663847c5224fc8049f606d"
+    },
+    {
+      "source": "inspect-outerreset-f403.tcl",
+      "source_sha256": "cf63ddc8696fae6e101d74f09d74c719e8712d2de605a7429d526bffac080e74",
+      "export": "scripts/inspect-outerreset-f403.tcl",
+      "export_sha256": "cf63ddc8696fae6e101d74f09d74c719e8712d2de605a7429d526bffac080e74"
+    },
+    {
+      "source": "outerreset-f401-netlist-config.tcl",
+      "source_sha256": "71c2f4cc6b7703bf61200d861e8e0c7122919faacac2193543e06038cfe0762f",
+      "export": "scripts/outerreset-f401-netlist-config.tcl",
+      "export_sha256": "40620b0fe8a64a3f48cc877d981694df7b304152d404973eee3fbc891bcb8e7f"
+    },
+    {
+      "source": "outerreset-f402-netlist-config.tcl",
+      "source_sha256": "c569946d643a10b2a61ea8f83079f34be9d94e9cb83d1d4aedc494f17b92437d",
+      "export": "scripts/outerreset-f402-netlist-config.tcl",
+      "export_sha256": "44cc8d8c658e700a0103325925bbada018127b486c05554fdd7a5922aa1599bf"
+    },
+    {
+      "source": "outerreset_cold.py",
+      "source_sha256": "909cd5ddda9f3512979db7b361d58983d59756c9bd76f15d30decbab826cba6a",
+      "export": "scripts/outerreset_cold.py",
+      "export_sha256": "909cd5ddda9f3512979db7b361d58983d59756c9bd76f15d30decbab826cba6a"
+    },
+    {
+      "source": "outerreset_cold_v2.py",
+      "source_sha256": "7adef51332ebe82e56a6d31eff0f757020ea0978b1106fdf6f0986793b2ca1fc",
+      "export": "scripts/outerreset_cold_v2.py",
+      "export_sha256": "c3b01d886cc3e73e9d60004c917db4657c35a99eeaa8f7bc1c930bd27ac7fcc7"
+    },
+    {
+      "source": "outerreset_final_soak.py",
+      "source_sha256": "8e317b994c640157a503abdd1a2f95408479c3fe578fef73ebb963379b90907b",
+      "export": "scripts/outerreset_final_soak.py",
+      "export_sha256": "a6a0273b9c88a3840455011c524b76c20a93d84f726fc7f9c41f1963feda9f8b"
+    },
+    {
+      "source": "outerreset_hw_guard.py",
+      "source_sha256": "17008043d2177d737bdb948b104f14d1cfafd5584ea0ee7e98f6c396b8de423a",
+      "export": "scripts/outerreset_hw_guard.py",
+      "export_sha256": "17008043d2177d737bdb948b104f14d1cfafd5584ea0ee7e98f6c396b8de423a"
+    },
+    {
+      "source": "outerreset_hw_guard_v2.py",
+      "source_sha256": "476025d79ef4679e2b553af19721afb6c2562784731a854668e4b2680e510a9a",
+      "export": "scripts/outerreset_hw_guard_v2.py",
+      "export_sha256": "80356dc8e3e9908618bdb5378076a8604ffbb0463443fb4f6054d0d073e41a4a"
+    },
+    {
+      "source": "outerreset_keepawake.py",
+      "source_sha256": "a96951e9c07afa1a802a98d1df3ae761bd53c4e1a8336385813302dce29b7e9d",
+      "export": "scripts/outerreset_keepawake.py",
+      "export_sha256": "a3a1170b62c5ecab5687e1c404b87265746e6e9813734067c5c829a771920bae"
+    },
+    {
+      "source": "outerreset_private_repo.py",
+      "source_sha256": "2465b23fbcddc12da965ead4018c5753d2071e636261220e31ceaca859b97b91",
+      "export": "scripts/outerreset_private_repo.py",
+      "export_sha256": "2465b23fbcddc12da965ead4018c5753d2071e636261220e31ceaca859b97b91"
+    },
+    {
+      "source": "prepare_outerreset_f401.py",
+      "source_sha256": "6748bffe69f39793d4fbe3e200080b2ff13dfcd5f33122a5736b50bf0f219098",
+      "export": "scripts/prepare_outerreset_f401.py",
+      "export_sha256": "6748bffe69f39793d4fbe3e200080b2ff13dfcd5f33122a5736b50bf0f219098"
+    },
+    {
+      "source": "prepare_outerreset_f402.py",
+      "source_sha256": "d5fc19a24bd04ae9a213ab0aa4045a287d7197629d24d96d933ff78eb76b0559",
+      "export": "scripts/prepare_outerreset_f402.py",
+      "export_sha256": "d5fc19a24bd04ae9a213ab0aa4045a287d7197629d24d96d933ff78eb76b0559"
+    },
+    {
+      "source": "prepare_outerreset_f403.py",
+      "source_sha256": "797e69b1e9ddc87d9ef933cd63ac7b5d2105b083631f2c21ce907323b622913d",
+      "export": "scripts/prepare_outerreset_f403.py",
+      "export_sha256": "797e69b1e9ddc87d9ef933cd63ac7b5d2105b083631f2c21ce907323b622913d"
+    },
+    {
+      "source": "prepare_outerreset_tools_v3.py",
+      "source_sha256": "a65f436d175f3e63e4c4edf7f675644cc0f87875f2453aea87b48d136dab32d6",
+      "export": "scripts/prepare_outerreset_tools_v3.py",
+      "export_sha256": "a65f436d175f3e63e4c4edf7f675644cc0f87875f2453aea87b48d136dab32d6"
+    },
+    {
+      "source": "review_outerreset_f401_base.py",
+      "source_sha256": "9e0d4b4dfe10c9fac9382aa2f50dc56a465e0c23bee95e3e37a87372c0e7b61d",
+      "export": "scripts/review_outerreset_f401_base.py",
+      "export_sha256": "9e0d4b4dfe10c9fac9382aa2f50dc56a465e0c23bee95e3e37a87372c0e7b61d"
+    },
+    {
+      "source": "review_outerreset_f402_base.py",
+      "source_sha256": "b9dc0c361e88a435b501eb4fec7b140ae18104a6c441fcb0d7c1e12236e67a7a",
+      "export": "scripts/review_outerreset_f402_base.py",
+      "export_sha256": "41953dadce26ef91317ca1647d0ceefae00436f7613760bf19bd38436d6d32d6"
+    },
+    {
+      "source": "review_outerreset_f403.py",
+      "source_sha256": "475020f92e46688c29b22202f1078842f6ff31d5b02700e5a3f2b3779fdd4d02",
+      "export": "scripts/review_outerreset_f403.py",
+      "export_sha256": "475020f92e46688c29b22202f1078842f6ff31d5b02700e5a3f2b3779fdd4d02"
+    },
+    {
+      "source": "review_outerreset_matched.py",
+      "source_sha256": "a8b067952fc4f81896c95623dd41c719dd46981441b38d801a7c54dc05f717c8",
+      "export": "scripts/review_outerreset_matched.py",
+      "export_sha256": "2620078b918904ab4b1c2658c806b93f0ec7947b502b8ba9ea08e49423033d82"
+    },
+    {
+      "source": "review_outerreset_matched_v2.py",
+      "source_sha256": "f1d69d85ed670444c8a56bef964a336a045fe6a1e5bab84a62cb2f9d965b9ae8",
+      "export": "scripts/review_outerreset_matched_v2.py",
+      "export_sha256": "012687661c495f422c48fe20c7effa8debbf9d446669d5775ed0ab0cd6d8bf04"
+    },
+    {
+      "source": "run_outerreset_action.py",
+      "source_sha256": "5d7494b9ad3d75536c6bfb9fcd6193da4bf147e89b10d304f5235a661a4ea99f",
+      "export": "scripts/run_outerreset_action.py",
+      "export_sha256": "1ff140f2bff1a5599323f93cf79e7d799dd8663a731f3d316e407669e37261d9"
+    },
+    {
+      "source": "run_outerreset_build_f401.py",
+      "source_sha256": "e60570695f0986835b8886b2792a8186129b09e15e68ddb4f9cfd0242745b49f",
+      "export": "scripts/run_outerreset_build_f401.py",
+      "export_sha256": "e60570695f0986835b8886b2792a8186129b09e15e68ddb4f9cfd0242745b49f"
+    },
+    {
+      "source": "run_outerreset_build_f402.py",
+      "source_sha256": "16295bd9c995c1eb7516e87d15738d4f159217965c3c920c0719982ac26d8ba8",
+      "export": "scripts/run_outerreset_build_f402.py",
+      "export_sha256": "4a42c4d7579fcde6acfb0e15d46b3d632998a4086dec0e1fe329396ca75c280d"
+    },
+    {
+      "source": "run_outerreset_build_f403.py",
+      "source_sha256": "6daf3cdedd53c8d7a143e6d4acd38af68b51d512eb53580ad533cdcb93f7a3fe",
+      "export": "scripts/run_outerreset_build_f403.py",
+      "export_sha256": "6daf3cdedd53c8d7a143e6d4acd38af68b51d512eb53580ad533cdcb93f7a3fe"
+    },
+    {
+      "source": "run_outerreset_cohort.py",
+      "source_sha256": "a7db6e25da6321cf3f4f8c276230d6d9df6af2449d2aaaa6a5cc6fddc432bc6f",
+      "export": "scripts/run_outerreset_cohort.py",
+      "export_sha256": "a7db6e25da6321cf3f4f8c276230d6d9df6af2449d2aaaa6a5cc6fddc432bc6f"
+    },
+    {
+      "source": "run_outerreset_cohort_v2.py",
+      "source_sha256": "1b7ab8b96b2383c76dd7667cddd9f23abcfe1ac48d8ff4fb7bf1513baec921d3",
+      "export": "scripts/run_outerreset_cohort_v2.py",
+      "export_sha256": "36d83c8fb8f83718b4fcf89372999cca4696672c6a42c4e66b32216bfdc68cc9"
+    },
+    {
+      "source": "run_outerreset_cohort_v3.py",
+      "source_sha256": "6177da34dceb9457f44b98d9aafed5edf7fa18911ef2435321f7ef3227fc0e24",
+      "export": "scripts/run_outerreset_cohort_v3.py",
+      "export_sha256": "a12ef7e0dced6a76bb8d4206091008249b41165052f0ec720fa304d73d5ad116"
+    },
+    {
+      "source": "run_outerreset_export.py",
+      "source_sha256": "16583249fe23e40684f3af868adb3ed59a868715c6ed6dfa7079360da666b1e0",
+      "export": "scripts/run_outerreset_export.py",
+      "export_sha256": "16583249fe23e40684f3af868adb3ed59a868715c6ed6dfa7079360da666b1e0"
+    },
+    {
+      "source": "run_outerreset_inspection.py",
+      "source_sha256": "f6791b7daf5905873044d329a35e1973df87fed23979349dd72dbf1bbfb1eaa3",
+      "export": "scripts/run_outerreset_inspection.py",
+      "export_sha256": "f6791b7daf5905873044d329a35e1973df87fed23979349dd72dbf1bbfb1eaa3"
+    },
+    {
+      "source": "run_outerreset_inspection_f403.py",
+      "source_sha256": "8bcb45e49e8d1697557ba8084e5142585609419c3878ead8d1c69a899deaabd1",
+      "export": "scripts/run_outerreset_inspection_f403.py",
+      "export_sha256": "8bcb45e49e8d1697557ba8084e5142585609419c3878ead8d1c69a899deaabd1"
+    },
+    {
+      "source": "run_outerreset_restore.py",
+      "source_sha256": "a5ed6a81fcc4c93e847063618059de4a9bacc6c16b6089dadfe2b6565d0030bb",
+      "export": "scripts/run_outerreset_restore.py",
+      "export_sha256": "e318ed9e97b0ee178aa5665dc88585f5ceb9a281cf2b9e7a45dbdbf36d9960f8"
+    },
+    {
+      "source": "simulate_outerreset_f401.py",
+      "source_sha256": "674beb35ffb0f4185866d368a6e4d094b07a906ed0b831f999bc8902cadedefe",
+      "export": "scripts/simulate_outerreset_f401.py",
+      "export_sha256": "674beb35ffb0f4185866d368a6e4d094b07a906ed0b831f999bc8902cadedefe"
+    },
+    {
+      "source": "simulate_outerreset_f402.py",
+      "source_sha256": "002e12e81f4b0c22c0a60fe0f6c27bc2a76defa5233f3f179e59dd7200292c21",
+      "export": "scripts/simulate_outerreset_f402.py",
+      "export_sha256": "002e12e81f4b0c22c0a60fe0f6c27bc2a76defa5233f3f179e59dd7200292c21"
+    },
+    {
+      "source": "summarize_outerreset_cohorts.py",
+      "source_sha256": "b1afae44961d4218f6a379d005106470b37cc6464148384b1eaed85e1e5d35c3",
+      "export": "scripts/summarize_outerreset_cohorts.py",
+      "export_sha256": "b1afae44961d4218f6a379d005106470b37cc6464148384b1eaed85e1e5d35c3"
+    },
+    {
+      "source": "summarize_outerreset_cohorts_v2.py",
+      "source_sha256": "d3366063392e1747dc6047e504578fb201479887ffbee892f5bb594e60a29c08",
+      "export": "scripts/summarize_outerreset_cohorts_v2.py",
+      "export_sha256": "d3366063392e1747dc6047e504578fb201479887ffbee892f5bb594e60a29c08"
+    },
+    {
+      "source": "verify_outerreset_publication.py",
+      "source_sha256": "66250013fd8af3abdf2909a6b2b081ddc2aa439f3b303489436ad923b3e88b24",
+      "export": "scripts/verify_outerreset_publication.py",
+      "export_sha256": "f6b094ccd8d617ee5623f1994a61d07b4b8400ec23b4248b8e00a59d0f755b60"
+    },
+    {
+      "source": "write_outerreset_final_report.py",
+      "source_sha256": "73f211adef8c2b9a92e2f94b38874f6a50894d264fed54caac565e9a8933ea6d",
+      "export": "scripts/write_outerreset_final_report.py",
+      "export_sha256": "974c5d5087fe29ddfd21adc3cec84c8eca32c71b46ede6597c2f558d8ffc89e5"
+    },
+    {
+      "source": "outerreset-functional-f401.patch",
+      "source_sha256": "b7e1176e7d369e4ff80a908728ed3f029200a9a8c25638114033aaca551cba64",
+      "export": "patches/outerreset-functional-f401.patch",
+      "export_sha256": "b7e1176e7d369e4ff80a908728ed3f029200a9a8c25638114033aaca551cba64"
+    },
+    {
+      "source": "lrtdc-outerreset-f401\\hdl\\toplevel.vhd",
+      "source_sha256": "81f4a3401a3ad792862d67d77a6e03b3750524d742b3ed3eb33c25cb96247e97",
+      "export": "source/f401/toplevel.vhd",
+      "export_sha256": "cf1a7cc0db814623a829575e5d75ce0ac9e9acd63beae511acd24666ab4dd49d"
+    },
+    {
+      "source": "lrtdc-outerreset-f401\\hdl\\defBusAddressMap.vhd",
+      "source_sha256": "be2e2c39e0b8cf0fafdb16afa8f8e5ae8f6f4307086fe5858297aa47cba54612",
+      "export": "source/f401/defBusAddressMap.vhd",
+      "export_sha256": "931bdf40f410c02c4db89604dc635605b973e45e4a3c5fab974722d46f9433eb"
+    },
+    {
+      "source": "lrtdc-outerreset-f401\\build-outerreset-f401.tcl",
+      "source_sha256": "3f91dd7d03d68107a20510ab1f1c7fee72e9af5a39df2d0a94437549154ef4c4",
+      "export": "source/f401/build.tcl",
+      "export_sha256": "afb67dd4b38bc410f67e3f5584eeb869c2c50f7431f8a9f9b99b44b555ba7c0c"
+    },
+    {
+      "source": "experiments\\outerreset-f401-sim\\result.json",
+      "source_sha256": "198c6ea555bc2ec12483121df80d802de59b6c04940831cda6568ac48cb1af93",
+      "export": "simulation/f401/result.json",
+      "export_sha256": "4d16d8a229e2fbff9c0d4d68af13714226f41c5e15261177811315c704f915c7"
+    },
+    {
+      "source": "experiments\\outerreset-f401-sim\\timer.vhd",
+      "source_sha256": "2811ffd9f2d48f3ed5f05d1beea53e498aee3aa354606075d0d6b8fef155ddde",
+      "export": "simulation/f401/timer.vhd",
+      "export_sha256": "b4243aba381638511d7ccda7e16abd68c394366d9d71dd4ce6c1c33d05ebb768"
+    },
+    {
+      "source": "experiments\\outerreset-f401-sim\\tb.vhd",
+      "source_sha256": "f70c00eece0a83cc09c7822287820dc47cb1f2750e0f702e5a623e2d581c4f0b",
+      "export": "simulation/f401/tb.vhd",
+      "export_sha256": "b98cc3cac44988c0488994bb498927de050615aec1c08a3540c95ca1ced3835e"
+    },
+    {
+      "source": "outerreset-f401-netlist-inspection.txt",
+      "source_sha256": "f7bfb5ec28b6a534fe77e9a3be738d2e77bfe7b02d9613ec4cde9835f9dae44a",
+      "export": "evidence/f401-outerreset-f401-netlist-inspection.txt",
+      "export_sha256": "104192cdc142a3284f384c9d8fa2e68b9863573f561a67c948a3ce784e0146dc"
+    },
+    {
+      "source": "outerreset-f401-matched\\fresh-clock-reset-audit.txt",
+      "source_sha256": "2a02220166bcb76863649763d1806d477249b0cbed0a4989a76cea48543c7352",
+      "export": "evidence/f401-fresh-clock-reset-audit.txt",
+      "export_sha256": "5b0a21a8b131bc34e6c71c858d887df01cebe14bcdb6f630a6fc19fc2f60868a"
+    },
+    {
+      "source": "outerreset-functional-f402.patch",
+      "source_sha256": "f7fa9cabcfd20a60f23482028e77b90412855ef2de94fdcc31a9c61a2c999f06",
+      "export": "patches/outerreset-functional-f402.patch",
+      "export_sha256": "f7fa9cabcfd20a60f23482028e77b90412855ef2de94fdcc31a9c61a2c999f06"
+    },
+    {
+      "source": "lrtdc-outerreset-f402\\hdl\\toplevel.vhd",
+      "source_sha256": "ffc0a42f8cc9ed5d180edf832a05ef00048204d2662bb933fa11e134d2cc646d",
+      "export": "source/f402/toplevel.vhd",
+      "export_sha256": "bb6cbaaaa8f034e759276447380316c1703b71eb4b2b1b6c638949cab91c7227"
+    },
+    {
+      "source": "lrtdc-outerreset-f402\\hdl\\defBusAddressMap.vhd",
+      "source_sha256": "2104a37b957cf8dcad9cae8072dd6f0bad4775a9c8272b3c8ff53f30f0999463",
+      "export": "source/f402/defBusAddressMap.vhd",
+      "export_sha256": "c631517322671f30c1927aa9b328db003a9b9335f89c56f2e02cfc90969b9416"
+    },
+    {
+      "source": "lrtdc-outerreset-f402\\build-outerreset-f402.tcl",
+      "source_sha256": "24440102fd4ad27e082bdd8ef54a21a408a0de96dd681aa62a0f82f05a3f1b03",
+      "export": "source/f402/build.tcl",
+      "export_sha256": "481fe791be2906e6886938e9bded87818d2aea0a38c6533d60b03d14826a7cc9"
+    },
+    {
+      "source": "experiments\\outerreset-f402-sim\\result.json",
+      "source_sha256": "14c7b3b18bebe19c8e3701de2599e40a0197395eece12a0141e9dee3815860e5",
+      "export": "simulation/f402/result.json",
+      "export_sha256": "30660e9435c1cfa9d3a469ac81eb376338dff5139d3be2ae07e08ccb7aeb9d28"
+    },
+    {
+      "source": "experiments\\outerreset-f402-sim\\timer.vhd",
+      "source_sha256": "2811ffd9f2d48f3ed5f05d1beea53e498aee3aa354606075d0d6b8fef155ddde",
+      "export": "simulation/f402/timer.vhd",
+      "export_sha256": "b4243aba381638511d7ccda7e16abd68c394366d9d71dd4ce6c1c33d05ebb768"
+    },
+    {
+      "source": "experiments\\outerreset-f402-sim\\tb.vhd",
+      "source_sha256": "af13a1eeaebc47a1741a1db992d8015b36ed37484e532870d7c6fa02adf5094d",
+      "export": "simulation/f402/tb.vhd",
+      "export_sha256": "81a7a12e4f2305522c7cd8f144689c8b6580b6dafa7e748f31bc23173c792ad6"
+    },
+    {
+      "source": "outerreset-f402-netlist-inspection.txt",
+      "source_sha256": "05a171f1bc1743ea12f4213caae6de0b75333c4db52582da6dec63fef13244b3",
+      "export": "evidence/f402-outerreset-f402-netlist-inspection.txt",
+      "export_sha256": "a96fb1ea41a2232e51daa0650b0b31ff86a0894de841da20262a94a92efb79db"
+    },
+    {
+      "source": "outerreset-f402-matched\\fresh-clock-reset-audit.txt",
+      "source_sha256": "29441af1601c95974695a7b0711a545b981179f2791cc1d46275791b950ad024",
+      "export": "evidence/f402-fresh-clock-reset-audit.txt",
+      "export_sha256": "5fd3b4ac4fae38a7f3a0e067c3e340b3af8bf6bd80ad156befd58dc8d2234dbf"
+    },
+    {
+      "source": "outerreset-functional-f403.patch",
+      "source_sha256": "54812c54e04bdcfd7c3ea9c38dd960ca4d2a2fe7fcce140a6f73a7a421dcaa0b",
+      "export": "patches/outerreset-functional-f403.patch",
+      "export_sha256": "54812c54e04bdcfd7c3ea9c38dd960ca4d2a2fe7fcce140a6f73a7a421dcaa0b"
+    },
+    {
+      "source": "lrtdc-outerreset-f403\\hdl\\toplevel.vhd",
+      "source_sha256": "0171806295aa80fac4bbb1a0fde43e09621cde24700be46efa170a9f6fd09a9a",
+      "export": "source/f403/toplevel.vhd",
+      "export_sha256": "6f6955ab5df21b003b8bbdc1f8e78113edbed6287a1ace85e311a4775103ce72"
+    },
+    {
+      "source": "lrtdc-outerreset-f403\\hdl\\defBusAddressMap.vhd",
+      "source_sha256": "6da4cfed596b2e64e94d4f17c647f1db25b07efed5da954ea2de336eaa8dc477",
+      "export": "source/f403/defBusAddressMap.vhd",
+      "export_sha256": "f5d2d17aaa6e485e4eddba0518756fe2394b80a9c232d6e1c4416297ad8a4292"
+    },
+    {
+      "source": "lrtdc-outerreset-f403\\build-outerreset-f403.tcl",
+      "source_sha256": "6bfaf5f4ddaceff1e138e0c668312b248d3eaa6ee1f9f395484be9392e745ba3",
+      "export": "source/f403/build.tcl",
+      "export_sha256": "6bfaf5f4ddaceff1e138e0c668312b248d3eaa6ee1f9f395484be9392e745ba3"
+    },
+    {
+      "source": "lrtdc-outerreset-f403\\build\\outerreset-f403\\fresh-clock-reset-audit.txt",
+      "source_sha256": "da8e435476582b8751f3ac1db855ad311b132cfb2692308e5f967531c3e45ecd",
+      "export": "evidence/f403-fresh-clock-reset-audit.txt",
+      "export_sha256": "8c7430ff8bc79d75950277266ba57f01065aeedca570c71864dc943497baccc6"
+    },
+    {
+      "source": "lrtdc-outerreset-f403\\build\\outerreset-f403\\fresh-clock-reset-extra.txt",
+      "source_sha256": "3ecfc55fcaa44b984ebd5136dba822b5d11efb841bb2c9e87f3c396986436761",
+      "export": "evidence/f403-fresh-clock-reset-extra.txt",
+      "export_sha256": "d86c92ce218319239de184af05290214d1a50be945b0ddc5030b8ae64dfc3ac5"
+    },
+    {
+      "source": "lrtdc-outerreset-f403\\build\\outerreset-f403\\compiled-files.txt",
+      "source_sha256": "a3f1ceb0ddecf81a522f4b4937b9f944dc5973d56b6060e70e7b6c9850bde532",
+      "export": "evidence/f403-compiled-files.txt",
+      "export_sha256": "03b70e78c65163e65c22f2a3a97b9a1e93a8f6fafad5c92cf5e91c05e80cb288"
+    },
+    {
+      "source": "lrtdc-outerreset-f403\\build\\outerreset-f403\\reused-ip-runs.txt",
+      "source_sha256": "3914f2ec07d2551f84799246dfce25736871740eff2b72e97dc360c5e6916f5c",
+      "export": "evidence/f403-reused-ip-runs.txt",
+      "export_sha256": "ab5b5c36b9c2e2aca48ad1ee4673482c73e18496dd2892ac70f5f0e9a8aa846b"
+    },
+    {
+      "source": "outerreset-study-final.md",
+      "source_sha256": "ea9891756ef59639123dc63ffc1d6504bdcd1ba474fc09ba2f657046df49cb84",
+      "export": "README.md",
+      "export_sha256": "cc71c85a4d38d3bc9d0f7506cfcd7f92063ee45ff9cee336561bcd4b102674ae"
+    },
+    {
+      "source": "outerreset-result-selection.json",
+      "source_sha256": "16527536ad6a084408ab742ad6ec8eacc0404b8971856359e1003a3e0326a668",
+      "export": "result-summary.json",
+      "export_sha256": "443d657ec75e67ffaf8e95593004001109243672adf8756e3732188fa472648f"
+    }
+  ]
+}

@@ -309,3 +309,6 @@ IP・バージョン、EEPROMの開始時ハッシュ一致、両電源ONを確�
 - [AMD UG476: 7 Series FPGAs GTX/GTH Transceivers](https://docs.amd.com/v/u/en-US/ug476_7Series_Transceivers)
 - [AMANEQ hardware overview](https://spadi-alliance.rcnp.osaka-u.ac.jp/ug-amaneq/hardware/overview/overview/)
 - [StrLrTdc upstream](https://github.com/AMANEQ-official/StrLrTdc)
+
+
+最新の追加記録：[AMANEQ側だけの最小修正と実機比較（2026-10-19）](amaneq-side-minimum-20261019/)。差分・全起動結果・比較対照・最終復元は同記録を参照。

@@ -1,0 +1,20 @@
+{
+  "started": "2026-10-19T10:13:22.379456",
+  "mcs": "WORKSPACE/lrtdc-startup-fix/build/pcs-recovery-f202/lrtdc-pcs-recovery-f202.mcs",
+  "mcs_sha256": "1518696ba9f2261f1ec4f04c0a8498273e5cec9beec1b987eb54d2d05f7ddfd7",
+  "payload_sha256": "cc4fec9dd040f7692d0db692049acceb02f8cb761153f887b33afdb89be4e27f",
+  "payload_bytes": 6692572,
+  "backup": "WORKSPACE/flash-restoreouter16-20261019-101322-before.bin",
+  "readback": "WORKSPACE/flash-restoreouter16-20261019-101322-after.bin",
+  "label": "restoreouter16",
+  "target_serial": "210299BBCDDA",
+  "success": true,
+  "vivado_exit_code": 0,
+  "backup_bytes": 16777216,
+  "backup_sha256": "4a5c0fc2440860fcbfb49aaabaaf5e324a68c639fd72e72d65ca09f519cbe5b7",
+  "readback_bytes": 16777216,
+  "readback_sha256": "19da89bf5365ceb0beb365ff6ec21d90fc80fc87f804a44a9cb0be572d1bff0b",
+  "readback_image_sha256": "cc4fec9dd040f7692d0db692049acceb02f8cb761153f887b33afdb89be4e27f",
+  "image_matches": true,
+  "finished": "2026-10-19T10:18:28.781995"
+}

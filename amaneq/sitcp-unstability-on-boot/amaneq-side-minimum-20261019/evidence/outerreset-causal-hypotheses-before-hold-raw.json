@@ -1,0 +1,49 @@
+{
+  "created": "2026-10-19T07:06:18.162831",
+  "phase": "hypotheses_before_hold_and_raw_only_tests",
+  "known_so_far": {
+    "F401_enabled16": "3/3",
+    "F401_enabled17": "3/3",
+    "F401_bypass16": "first trial failed, cohort still active"
+  },
+  "predictions": [
+    {
+      "id": "H1",
+      "hypothesis": "A second native Ethernet initialization after initial startup is useful, beyond simply waiting for the same final release edge.",
+      "test": "F401 enabled vs hold have the same final digital release edge; only enabled has a reset-free gap and a second pulse.",
+      "prediction": "Enabled reliable, hold and bypass unreliable."
+    },
+    {
+      "id": "H2",
+      "hypothesis": "A longer initial public reset or a later final release is sufficient.",
+      "test": "F401 hold without any second attempt.",
+      "prediction": "Hold improves similarly to enabled; does not establish a unique physical settling mechanism."
+    },
+    {
+      "id": "H3",
+      "hypothesis": "Starting native GT sequencing at SYS lock instead of after the original2.147s global POR avoids the problematic startup history.",
+      "test": "F402 same-route early control forwards raw SYS-lock reset only. If promising, separately compile and test a one-line source candidate.",
+      "prediction": "Raw-only can work with no new production timer. Diagnostic control alone is not proof of a one-line source build."
+    },
+    {
+      "id": "H4",
+      "hypothesis": "One extra unconditional reset is insufficient under some initial states.",
+      "test": "Expand enabled cold trials, long OFF and read-only traffic soak on both boards.",
+      "prediction": "Any enabled failure weakens the minimum one-shot proposal and must be retained; do not adopt based only on initial3/3."
+    }
+  ],
+  "clock_dependency_fact": "Source and freshDCP show independentSYS timer clock125MHz, GTindependentclock200MHz, CPLL selected00, common POR reachesunusedQPLLreset. Publicreset restarts native PCS/TX/RX sequencing; RXPMARESET pin itself remains0.",
+  "limits": [
+    "No dedicated MGT rail, reference jitter or physical SFP input-start waveform measurement in this minimum image.",
+    "Input-stream/refclock startup ordering is a hypothesis, not an observed initiating cause.",
+    "Equal release means equal RTL/SYS-cycle edge and common gate route within the matched design; analog phases across different power cycles are not controlled.",
+    "Prior RX recovered-clock anomaly is separate measured evidence; a new network success does not itself measure CDR lock or frequency."
+  ],
+  "source_sha256": {
+    "outerreset-functional-f401.patch": "b7e1176e7d369e4ff80a908728ed3f029200a9a8c25638114033aaca551cba64",
+    "outerreset-functional-f402.patch": "f7fa9cabcfd20a60f23482028e77b90412855ef2de94fdcc31a9c61a2c999f06",
+    "outerreset-f401-independent-review.json": "d67b59c38820d2624256294528b74ba8715732479e34c98b89e04a9389e5237b",
+    "outerreset-cohort-outerf40116a.json": "2af756e6adb014686e59d4e994ee55d1c7edc53739fb9257b5ba045a403f03e6",
+    "outerreset-cohort-outerf40117a.json": "7cfc8076f010d7f93b6052ac91631dfa54a5338569624f041d73a04bf2c26a49"
+  }
+}

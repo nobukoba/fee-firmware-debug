@@ -1,0 +1,29 @@
+RESET_SYNC_STAGE gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[0] ASYNC_REG 1
+RESET_SYNC_CLOCK gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[0]/C clk_indep 5.000
+RESET_SYNC_CLOCK_DRIVER u_ClkMan_Inst/inst/clkout2_buf/O
+RESET_SYNC_STAGE gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[1] ASYNC_REG 1
+RESET_SYNC_CLOCK gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[1]/C clk_indep 5.000
+RESET_SYNC_CLOCK_DRIVER u_ClkMan_Inst/inst/clkout2_buf/O
+RESET_SYNC_STAGE gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[2] ASYNC_REG 1
+RESET_SYNC_CLOCK gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[2]/C clk_indep 5.000
+RESET_SYNC_CLOCK_DRIVER u_ClkMan_Inst/inst/clkout2_buf/O
+RESET_SYNC_STAGE gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[3] ASYNC_REG 1
+RESET_SYNC_CLOCK gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[3]/C clk_indep 5.000
+RESET_SYNC_CLOCK_DRIVER u_ClkMan_Inst/inst/clkout2_buf/O
+PCS_GT gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/gtxe2_i
+PCS_GT_PROPERTY CPLL_FBDIV 4
+PCS_GT_PROPERTY CPLL_FBDIV_45 4
+PCS_GT_PROPERTY CPLL_REFCLK_DIV 1
+PCS_GT_PROPERTY RXOUT_DIV 4
+PCS_GT_PROPERTY TXOUT_DIV 4
+PCS_GT_PIN RXPMARESET NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/<const0>
+PCS_GT_PIN RXCDRHOLD NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/<const0>
+PCS_GT_PIN RXSYSCLKSEL[0] NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/<const0>
+PCS_GT_PIN RXSYSCLKSEL[1] NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/<const0>
+PCS_GT_PIN TXSYSCLKSEL[0] NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/<const0>
+PCS_GT_PIN TXSYSCLKSEL[1] NET gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/transceiver_inst/gtwizard_inst/U0/gtwizard_i/gt0_GTWIZARD_i/<const0>
+GLOBAL_TIMER_CLOCK u_KeepPwrOnRst/reg_reset_reg/C clk_sys 8.000
+GLOBAL_TIMER_CLOCK_DRIVER u_ClkMan_Inst/inst/clkout1_buf/O
+RAW_RESET_NET raw_pwr_on_reset
+RAW_RESET_DRIVERS u_KeepPwrOnRst/reg_counter[31]_i_3__1_incr/O
+RAW_RESET_SINKS gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[0]/PRE gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[1]/PRE gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[2]/PRE gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[3]/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync1/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync2/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync3/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync4/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/reset_sync5/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync1/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync2/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync3/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync4/PRE gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/reset_sync5/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync1/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync2/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync3/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync4/PRE gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync5/PRE u_KeepPwrOnRst/reg_counter_reg[28]/CLR u_KeepPwrOnRst/reg_counter_reg[29]/CLR u_KeepPwrOnRst/reg_counter_reg[30]/CLR u_KeepPwrOnRst/reg_counter_reg[31]/CLR u_KeepPwrOnRst/reg_counter_reg[0]/PRE u_KeepPwrOnRst/reg_counter_reg[10]/PRE u_KeepPwrOnRst/reg_counter_reg[11]/PRE u_KeepPwrOnRst/reg_counter_reg[12]/PRE u_KeepPwrOnRst/reg_counter_reg[13]/PRE u_KeepPwrOnRst/reg_counter_reg[14]/PRE u_KeepPwrOnRst/reg_counter_reg[15]/PRE u_KeepPwrOnRst/reg_counter_reg[16]/PRE u_KeepPwrOnRst/reg_counter_reg[17]/PRE u_KeepPwrOnRst/reg_counter_reg[18]/PRE u_KeepPwrOnRst/reg_counter_reg[19]/PRE u_KeepPwrOnRst/reg_counter_reg[1]/PRE u_KeepPwrOnRst/reg_counter_reg[20]/PRE u_KeepPwrOnRst/reg_counter_reg[21]/PRE u_KeepPwrOnRst/reg_counter_reg[22]/PRE u_KeepPwrOnRst/reg_counter_reg[23]/PRE u_KeepPwrOnRst/reg_counter_reg[24]/PRE u_KeepPwrOnRst/reg_counter_reg[25]/PRE u_KeepPwrOnRst/reg_counter_reg[26]/PRE u_KeepPwrOnRst/reg_counter_reg[27]/PRE u_KeepPwrOnRst/reg_counter_reg[2]/PRE u_KeepPwrOnRst/reg_counter_reg[3]/PRE u_KeepPwrOnRst/reg_counter_reg[4]/PRE u_KeepPwrOnRst/reg_counter_reg[5]/PRE u_KeepPwrOnRst/reg_counter_reg[6]/PRE u_KeepPwrOnRst/reg_counter_reg[7]/PRE u_KeepPwrOnRst/reg_counter_reg[8]/PRE u_KeepPwrOnRst/reg_counter_reg[9]/PRE u_KeepPwrOnRst/reg_reset_reg/PRE

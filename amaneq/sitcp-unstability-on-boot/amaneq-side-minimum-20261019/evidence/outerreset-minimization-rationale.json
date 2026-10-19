@@ -1,0 +1,58 @@
+{
+  "created": "2026-10-19T05:40:17.185069",
+  "phase": "static_minimization_rationale_not_hardware_results",
+  "candidates": [
+    {
+      "name": "F401",
+      "added_deleted": [
+        9,
+        1
+      ],
+      "new_existing_timer_instances": 2,
+      "state": "full source build active"
+    },
+    {
+      "name": "F402",
+      "added_deleted": [
+        6,
+        1
+      ],
+      "new_existing_timer_instances": 1,
+      "state": "scaled simulation passed; full source build not started",
+      "reason": "Reuse original global POR endpoint, eliminate second timer and reset assignment signal"
+    },
+    {
+      "name": "raw SYS lock reset only",
+      "added_deleted": [
+        1,
+        1
+      ],
+      "state": "diagnostic matched-control planned; untested",
+      "reason": "Safe dependency direction, but efficacy unknown and early-release timing may be the only change"
+    },
+    {
+      "name": "OR existing mii_reset into PCS reset",
+      "state": "rejected by static feedback analysis; not tested",
+      "reason": "MiiRstTimer depends on SiTCP emergency reset; SiTCP reset includes not PCS link. Holding PCS reset until link is established can prevent link establishment."
+    },
+    {
+      "name": "Reuse an unrelated unused signal to save declaration",
+      "state": "not adopted",
+      "reason": "Repurposes existing semantics and obscures review; reducing counter/control logic is meaningful, hiding one declaration is not."
+    },
+    {
+      "name": "Use existing Mikumari power_on_init endpoint",
+      "state": "not adopted",
+      "reason": "Timer runs on clk_slow derived from another link/clock path, not independent board SYS clock."
+    }
+  ],
+  "limits": [
+    "Fewest among explored sound candidate structures, not a mathematical proof that no shorter circuit exists.",
+    "Line count includes comment, blank line and changed reset line; version, common board settings and build/test automation excluded."
+  ],
+  "source_sha256": {
+    "lrtdc-outerreset-f402/hdl/toplevel.vhd": "ffc0a42f8cc9ed5d180edf832a05ef00048204d2662bb933fa11e134d2cc646d",
+    "lrtdc-outerreset-f402/hdl/common/sitcp/MiiRstTimer.vhd": "f2f8dd7f97c4eeab39b160314bc4a50cdadfbf36c294bfaa6a3546bef1759892",
+    "lrtdc-outerreset-f402/hdl/common/sitcp/defMiiRstTimer.vhd": "329c263621c8e30866b8b82144e24b312174425f58ce327ff4ce065f7639fb0d"
+  }
+}

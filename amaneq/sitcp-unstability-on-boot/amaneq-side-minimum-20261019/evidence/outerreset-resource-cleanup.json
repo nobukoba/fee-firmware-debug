@@ -1,0 +1,23 @@
+{
+  "created": "2026-10-19T10:33:30.214354",
+  "phase": "capture_closed_sleep_inhibition_released_no_workers",
+  "capture": "outerreset-20261019.pcapng",
+  "capture_sha256": "b826ed3623aa40465265746cbfe35d5bee7266a8ee5c11ccd653bfb463dabab0",
+  "capture_bytes": 6825688,
+  "capture_observed_actual_exit_code": 1,
+  "keepawake_observed_actual_exit_code": 0,
+  "capinfos_actual_exit_code": 0,
+  "metadata": "outerreset-final-capinfos.txt",
+  "metadata_sha256": "a88dd01130ed96c427ab6503c5e6a5939211b89eb3f55e4e673b247da2be79d6",
+  "restoration_sha256": "022001850be046768fef59d9f998cc80d41e6cc5e0e644778bf8f3344a5debad",
+  "script_sha256": "5ecf991788a215846cd6ef8f14ca3f2387455f2fa5f86e69f9fb6b30f5046269",
+  "limits": [
+    "Capture exit code 1 can follow an explicit interrupt; valid capture was independently parsed by capinfos.",
+    "No dropped-packet claim unless capture termination output explicitly reports it."
+  ],
+  "owned_temporary_drive_mappings_removed": {
+    "I:": "/??/WORKSPACE/lrtdc-outerreset-f401",
+    "J:": "/??/WORKSPACE/lrtdc-outerreset-f402",
+    "K:": "/??/WORKSPACE/lrtdc-outerreset-f403"
+  }
+}

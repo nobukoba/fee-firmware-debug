@@ -1,0 +1,38 @@
+{
+  "created": "2026-10-19T05:08:32.128625",
+  "phase": "source_prepared_not_built",
+  "base_commit": "5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039",
+  "repo": "lrtdc-outerreset-f401",
+  "runtime": "0x60C4F401",
+  "functional_patch": "outerreset-functional-f401.patch",
+  "functional_added_lines": 9,
+  "functional_deleted_lines": 1,
+  "functional_files": [
+    "hdl/toplevel.vhd"
+  ],
+  "new_HDL_modules": 0,
+  "existing_timer_instances_added": 2,
+  "SYS_clock_MHz": 125,
+  "delay_cycles": 125000000,
+  "pulse_cycles": 12500000,
+  "first_timer_preset": 125000000,
+  "second_timer_preset": 137500000,
+  "baseline": "Native factory RX FSM; no generated IP functional edits. ExistingAMANEQ156.25MHz CPLL andXDC corrections retained.",
+  "hypothesis": "After initial pwr_on_reset release, allow1s ofEthernet startup then usepublicreset for100ms once. ReuseexistingRstDelayTimer. No conditionalretry,linkqualification ornewFSM.",
+  "limits": [
+    "No hardwareverificationyet. Publicreset reinitializesPCS/PMA andisnot identicaltoGTXPMA-onlypulse.",
+    "Timer output falls afterN+1 SYSedges; pulsewidth exactlydifferenceofpresets (12,500,000cycles).",
+    "pwr_on_reset reassertion re-armsboth timers. No recovery forlatefailures afterone-shot.",
+    "Linecount includesreadablecomment/blankline; versionID/buildautomation excluded."
+  ],
+  "source_sha256": {
+    "WORKSPACE/prepare_outerreset_f401.py": "6748bffe69f39793d4fbe3e200080b2ff13dfcd5f33122a5736b50bf0f219098",
+    "lrtdc-outerreset-f401/hdl/defBusAddressMap.vhd": "be2e2c39e0b8cf0fafdb16afa8f8e5ae8f6f4307086fe5858297aa47cba54612",
+    "outerreset-functional-f401.patch": "b7e1176e7d369e4ff80a908728ed3f029200a9a8c25638114033aaca551cba64",
+    "lrtdc-outerreset-f401/patch-check/toplevel-before.vhd": "6a4b667f541b8f892a3f2793388801cc7ace9d39fecc7df52900f524572e88f0",
+    "lrtdc-outerreset-f401/patch-check/toplevel-after.vhd": "81f4a3401a3ad792862d67d77a6e03b3750524d742b3ed3eb33c25cb96247e97",
+    "lrtdc-outerreset-f401/build-outerreset-f401.tcl": "3f91dd7d03d68107a20510ab1f1c7fee72e9af5a39df2d0a94437549154ef4c4",
+    "lrtdc-outerreset-f401/hdl/common/main/RstDelayTimer.vhd": "2811ffd9f2d48f3ed5f05d1beea53e498aee3aa354606075d0d6b8fef155ddde",
+    "outerreset-initial-status.json": "0f7f2caa0e9147cd3d787ecde17046acf57cbc1f30dad2558fa19ed96d683487"
+  }
+}

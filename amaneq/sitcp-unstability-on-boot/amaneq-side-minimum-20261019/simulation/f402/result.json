@@ -1,0 +1,49 @@
+{
+  "created": "2026-10-19T05:26:53.130823",
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xvhdl.bat",
+        "--2008",
+        "timer.vhd",
+        "tb.vhd"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xelab.bat",
+        "outerreset_tb",
+        "-s",
+        "outerreset_sim"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xsim.bat",
+        "outerreset_sim",
+        "-runall"
+      ],
+      "actual_exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "WORKSPACE/simulate_outerreset_f402.py": "002e12e81f4b0c22c0a60fe0f6c27bc2a76defa5233f3f179e59dd7200292c21",
+    "lrtdc-outerreset-f402/hdl/common/main/RstDelayTimer.vhd": "2811ffd9f2d48f3ed5f05d1beea53e498aee3aa354606075d0d6b8fef155ddde",
+    "experiments/outerreset-f402-sim/timer.vhd": "2811ffd9f2d48f3ed5f05d1beea53e498aee3aa354606075d0d6b8fef155ddde",
+    "experiments/outerreset-f402-sim/tb.vhd": "af13a1eeaebc47a1741a1db992d8015b36ed37484e532870d7c6fa02adf5094d"
+  },
+  "real_design_math": {
+    "clock_MHz": 125,
+    "new_timer_preset": 125000000,
+    "global_timer_preset": 268435455,
+    "second_reset_SYS_cycles": 143435455,
+    "second_reset_seconds": 1.14748364
+  },
+  "limits": [
+    "Scaled count simulation checks reset-free gap, retained global POR, one-shot width, parent reset rearming and no repeat.",
+    "Native analog GT acquisition not modeled."
+  ]
+}

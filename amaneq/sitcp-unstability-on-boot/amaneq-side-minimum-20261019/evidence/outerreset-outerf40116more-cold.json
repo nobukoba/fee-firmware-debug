@@ -1,0 +1,1842 @@
+{
+  "started": "2026-10-19T07:41:52.085585",
+  "host": "192.168.10.16",
+  "expected_version": "0x60c4f401",
+  "source_sha256": {
+    "WORKSPACE/outerreset_cold_v2.py": "7adef51332ebe82e56a6d31eff0f757020ea0978b1106fdf6f0986793b2ca1fc",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "deepreset_neighbor.py": "9e1ca90ecaf3df285678cccf12d67cca3b455bd1f0613c9d096e33ddf45685de",
+    "deepreset_fresh_wait.py": "70e87953cd8a1a15025e1cd915b8e849c4e7be3d533cd53b68708b9d6178aec5",
+    "deepreset_fresh_wait_v2.py": "9d9bcb199db87ff3e0b2a4019c0aa0e634239f780a7444f8b9e5c9969a124908"
+  },
+  "neighbor_protocol": "12s quiet then targeted resolution",
+  "topology": "Kikusui16;ezOutlet17;switchalwaysON;noEEPROM/setpointwrites",
+  "events": [
+    {
+      "time": "2026-10-19T07:41:52.252356",
+      "kind": "outlet_status",
+      "requested": null,
+      "status": "On"
+    },
+    {
+      "time": "2026-10-19T07:41:52.341275",
+      "kind": "power_status",
+      "requested": null,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99840E+01",
+      "current": "+1.88200E-01"
+    },
+    {
+      "time": "2026-10-19T07:41:52.344232",
+      "kind": "cold_start",
+      "number": 1,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:41:53.430972",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+1.68000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:41:59.927930",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:42:01.022706",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99550E+01",
+      "current": "+1.11000E-01"
+    },
+    {
+      "time": "2026-10-19T07:42:01.022706",
+      "kind": "power_on",
+      "number": 1,
+      "actual_off_seconds": 7.593
+    },
+    {
+      "time": "2026-10-19T07:42:18.074007",
+      "kind": "cold_result",
+      "number": 1,
+      "success": true,
+      "first_ready_seconds": 12.032
+    },
+    {
+      "time": "2026-10-19T07:42:18.074007",
+      "kind": "cold_start",
+      "number": 2,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:42:19.157038",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+1.78000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:42:25.680166",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:42:26.758649",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99550E+01",
+      "current": "+1.10900E-01"
+    },
+    {
+      "time": "2026-10-19T07:42:26.770005",
+      "kind": "power_on",
+      "number": 2,
+      "actual_off_seconds": 7.609
+    },
+    {
+      "time": "2026-10-19T07:42:43.813704",
+      "kind": "cold_result",
+      "number": 2,
+      "success": true,
+      "first_ready_seconds": 12.016
+    },
+    {
+      "time": "2026-10-19T07:42:43.813704",
+      "kind": "cold_start",
+      "number": 3,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:42:44.896696",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+1.99000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:42:51.409002",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:42:52.503193",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99470E+01",
+      "current": "+1.11200E-01"
+    },
+    {
+      "time": "2026-10-19T07:42:52.503193",
+      "kind": "power_on",
+      "number": 3,
+      "actual_off_seconds": 7.61
+    },
+    {
+      "time": "2026-10-19T07:43:09.532703",
+      "kind": "cold_result",
+      "number": 3,
+      "success": true,
+      "first_ready_seconds": 12.015
+    },
+    {
+      "time": "2026-10-19T07:43:09.532703",
+      "kind": "cold_start",
+      "number": 4,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:43:10.619783",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.15000E-01",
+      "current": "-1.50000E-03"
+    },
+    {
+      "time": "2026-10-19T07:43:17.130926",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:43:18.235506",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99320E+01",
+      "current": "+1.11200E-01"
+    },
+    {
+      "time": "2026-10-19T07:43:18.235506",
+      "kind": "power_on",
+      "number": 4,
+      "actual_off_seconds": 7.625
+    },
+    {
+      "time": "2026-10-19T07:43:35.265716",
+      "kind": "cold_result",
+      "number": 4,
+      "success": true,
+      "first_ready_seconds": 12.016
+    },
+    {
+      "time": "2026-10-19T07:43:35.269746",
+      "kind": "cold_start",
+      "number": 5,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:43:36.357584",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.30000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:43:42.862533",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:43:43.944004",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99200E+01",
+      "current": "+1.11200E-01"
+    },
+    {
+      "time": "2026-10-19T07:43:43.953760",
+      "kind": "power_on",
+      "number": 5,
+      "actual_off_seconds": 7.593
+    },
+    {
+      "time": "2026-10-19T07:44:01.011941",
+      "kind": "cold_result",
+      "number": 5,
+      "success": true,
+      "first_ready_seconds": 12.016
+    },
+    {
+      "time": "2026-10-19T07:44:01.011941",
+      "kind": "cold_start",
+      "number": 6,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:44:02.092888",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.72000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:44:08.610078",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:44:09.705211",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.98730E+01",
+      "current": "+1.11300E-01"
+    },
+    {
+      "time": "2026-10-19T07:44:09.708830",
+      "kind": "power_on",
+      "number": 6,
+      "actual_off_seconds": 7.625
+    },
+    {
+      "time": "2026-10-19T07:44:26.743204",
+      "kind": "cold_result",
+      "number": 6,
+      "success": true,
+      "first_ready_seconds": 12.016
+    },
+    {
+      "time": "2026-10-19T07:44:26.743204",
+      "kind": "cold_start",
+      "number": 7,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:44:27.836000",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.98000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:44:34.345190",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:44:35.435737",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99610E+01",
+      "current": "+1.11400E-01"
+    },
+    {
+      "time": "2026-10-19T07:44:35.441784",
+      "kind": "power_on",
+      "number": 7,
+      "actual_off_seconds": 7.609
+    },
+    {
+      "time": "2026-10-19T07:44:52.489182",
+      "kind": "cold_result",
+      "number": 7,
+      "success": true,
+      "first_ready_seconds": 12.032
+    },
+    {
+      "time": "2026-10-19T07:44:52.491949",
+      "kind": "cold_start",
+      "number": 8,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:44:53.588510",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+3.65000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:45:00.095787",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:45:01.184871",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99620E+01",
+      "current": "+1.11600E-01"
+    },
+    {
+      "time": "2026-10-19T07:45:01.187838",
+      "kind": "power_on",
+      "number": 8,
+      "actual_off_seconds": 7.594
+    },
+    {
+      "time": "2026-10-19T07:45:18.218732",
+      "kind": "cold_result",
+      "number": 8,
+      "success": true,
+      "first_ready_seconds": 12.016
+    },
+    {
+      "time": "2026-10-19T07:45:18.222752",
+      "kind": "cold_start",
+      "number": 9,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:45:19.309666",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+3.96000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:45:25.810625",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:45:26.905669",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99610E+01",
+      "current": "+1.11600E-01"
+    },
+    {
+      "time": "2026-10-19T07:45:26.905669",
+      "kind": "power_on",
+      "number": 9,
+      "actual_off_seconds": 7.593
+    },
+    {
+      "time": "2026-10-19T07:45:43.958763",
+      "kind": "cold_result",
+      "number": 9,
+      "success": true,
+      "first_ready_seconds": 12.032
+    },
+    {
+      "time": "2026-10-19T07:45:43.958763",
+      "kind": "cold_start",
+      "number": 10,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:45:45.051587",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+1.37000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:45:51.563253",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:45:52.637548",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99590E+01",
+      "current": "+1.10800E-01"
+    },
+    {
+      "time": "2026-10-19T07:45:52.653386",
+      "kind": "power_on",
+      "number": 10,
+      "actual_off_seconds": 7.593
+    },
+    {
+      "time": "2026-10-19T07:46:09.712060",
+      "kind": "cold_result",
+      "number": 10,
+      "success": true,
+      "first_ready_seconds": 12.032
+    },
+    {
+      "time": "2026-10-19T07:46:09.712060",
+      "kind": "cold_start",
+      "number": 11,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:46:10.792362",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+1.63000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:46:17.321283",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:46:18.416995",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99450E+01",
+      "current": "+1.11300E-01"
+    },
+    {
+      "time": "2026-10-19T07:46:18.425520",
+      "kind": "power_on",
+      "number": 11,
+      "actual_off_seconds": 7.625
+    },
+    {
+      "time": "2026-10-19T07:46:35.462394",
+      "kind": "cold_result",
+      "number": 11,
+      "success": true,
+      "first_ready_seconds": 12.015
+    },
+    {
+      "time": "2026-10-19T07:46:35.464406",
+      "kind": "cold_start",
+      "number": 12,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:46:36.556656",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+1.88000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:46:43.060467",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:46:44.139516",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99490E+01",
+      "current": "+1.11200E-01"
+    },
+    {
+      "time": "2026-10-19T07:46:44.151893",
+      "kind": "power_on",
+      "number": 12,
+      "actual_off_seconds": 7.593
+    },
+    {
+      "time": "2026-10-19T07:47:01.192217",
+      "kind": "cold_result",
+      "number": 12,
+      "success": true,
+      "first_ready_seconds": 12.016
+    },
+    {
+      "time": "2026-10-19T07:47:01.192217",
+      "kind": "cold_start",
+      "number": 13,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:47:02.286149",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.10000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:47:08.797486",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:47:09.889649",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99450E+01",
+      "current": "+1.11300E-01"
+    },
+    {
+      "time": "2026-10-19T07:47:09.899278",
+      "kind": "power_on",
+      "number": 13,
+      "actual_off_seconds": 7.609
+    },
+    {
+      "time": "2026-10-19T07:47:26.942803",
+      "kind": "cold_result",
+      "number": 13,
+      "success": true,
+      "first_ready_seconds": 12.016
+    },
+    {
+      "time": "2026-10-19T07:47:26.942803",
+      "kind": "cold_start",
+      "number": 14,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:47:28.037727",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.41000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:47:34.554269",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:47:35.649898",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99280E+01",
+      "current": "+1.11500E-01"
+    },
+    {
+      "time": "2026-10-19T07:47:35.649898",
+      "kind": "power_on",
+      "number": 14,
+      "actual_off_seconds": 7.609
+    },
+    {
+      "time": "2026-10-19T07:47:52.687745",
+      "kind": "cold_result",
+      "number": 14,
+      "success": true,
+      "first_ready_seconds": 12.032
+    },
+    {
+      "time": "2026-10-19T07:47:52.699342",
+      "kind": "cold_start",
+      "number": 15,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:47:53.785107",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.97000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:48:00.306427",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:48:01.388556",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99660E+01",
+      "current": "+1.11700E-01"
+    },
+    {
+      "time": "2026-10-19T07:48:01.388556",
+      "kind": "power_on",
+      "number": 15,
+      "actual_off_seconds": 7.578
+    },
+    {
+      "time": "2026-10-19T07:48:18.439443",
+      "kind": "cold_result",
+      "number": 15,
+      "success": true,
+      "first_ready_seconds": 12.016
+    },
+    {
+      "time": "2026-10-19T07:48:18.439443",
+      "kind": "cold_start",
+      "number": 16,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:48:19.549192",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+3.72000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:48:26.074067",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:48:27.156240",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99570E+01",
+      "current": "+1.11600E-01"
+    },
+    {
+      "time": "2026-10-19T07:48:27.172188",
+      "kind": "power_on",
+      "number": 16,
+      "actual_off_seconds": 7.609
+    },
+    {
+      "time": "2026-10-19T07:48:44.194628",
+      "kind": "cold_result",
+      "number": 16,
+      "success": true,
+      "first_ready_seconds": 12.015
+    },
+    {
+      "time": "2026-10-19T07:48:44.207179",
+      "kind": "cold_start",
+      "number": 17,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:48:45.301415",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+1.38000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:48:51.819230",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:48:52.903046",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+3.00000E+00",
+      "current": "+1.75000E-02"
+    },
+    {
+      "time": "2026-10-19T07:48:52.914738",
+      "kind": "power_on",
+      "number": 17,
+      "actual_off_seconds": 7.609
+    },
+    {
+      "time": "2026-10-19T07:49:09.968068",
+      "kind": "cold_result",
+      "number": 17,
+      "success": true,
+      "first_ready_seconds": 12.015
+    },
+    {
+      "time": "2026-10-19T07:49:09.974148",
+      "kind": "cold_start",
+      "number": 18,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T07:49:11.062661",
+      "kind": "power_status",
+      "requested": 0,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "0",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+1.65000E-01",
+      "current": "+0.00000E+00"
+    },
+    {
+      "time": "2026-10-19T07:49:17.565060",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T07:49:18.643671",
+      "kind": "power_status",
+      "requested": 1,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99500E+01",
+      "current": "+1.11300E-01"
+    },
+    {
+      "time": "2026-10-19T07:49:18.659359",
+      "kind": "power_on",
+      "number": 18,
+      "actual_off_seconds": 7.609
+    },
+    {
+      "time": "2026-10-19T07:49:35.690495",
+      "kind": "cold_result",
+      "number": 18,
+      "success": true,
+      "first_ready_seconds": 12.031
+    },
+    {
+      "time": "2026-10-19T07:49:35.697804",
+      "kind": "complete_power_on",
+      "successes": 18,
+      "trials": 18
+    }
+  ],
+  "trials": [
+    {
+      "number": 1,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.032,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.032,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:42:13.031112",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.016,
+            "before": {
+              "return_code": 0,
+              "state": 0,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.047
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.016,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.016,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:42:38.772138",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.016,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.047
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.015,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.015,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:43:04.513059",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.015,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.031
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.016,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.016,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:43:30.242148",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.0,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.016
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.016,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.016,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:43:55.957531",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.016,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.047
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.016,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.016,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:44:21.711529",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.016,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.031
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.032,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.032,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:44:47.448482",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.016,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.047
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.016,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.016,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:45:13.190365",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.0,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.016
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.032,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.032,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:45:38.916182",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.016,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.063
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.032,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.032,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:46:04.660301",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.0,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.063
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.015,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.015,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:46:30.432055",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.0,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.031
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.016,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.016,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:46:56.159071",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.0,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.031
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.016,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.016,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:47:21.905611",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.016,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.047
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.032,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.032,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:47:47.662395",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.0,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.032
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.016,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.016,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:48:13.406001",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.016,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.047
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.015,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.015,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:48:39.179510",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.015,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.015
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.015,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.015,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:49:04.927614",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.015,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.031
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.031,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.031,
+          "neighbor_discovery": {
+            "started": "2026-10-19T07:49:30.665753",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.016,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F401",
+          "expected_version": "0x60C4F401",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.031
+        }
+      ]
+    }
+  ]
+}

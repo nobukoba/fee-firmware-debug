@@ -1,0 +1,105 @@
+{
+  "created": "2026-10-19T10:14:18.806660",
+  "phase": "healthy_board_early_only_regression_and_enabled_return_completed",
+  "cases": [
+    {
+      "candidate": "f402",
+      "variant": "enabled",
+      "successes": 3,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "trial_successes": [
+        true,
+        true,
+        true
+      ],
+      "report": "outerreset-cohort-outerf40217a.json"
+    },
+    {
+      "candidate": "f403",
+      "variant": "enabled",
+      "successes": 1,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        120
+      ],
+      "trial_successes": [
+        false,
+        false,
+        true
+      ],
+      "report": "outerreset-cohort-outerf40317a.json"
+    },
+    {
+      "candidate": "f402",
+      "variant": "early",
+      "successes": 1,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        5
+      ],
+      "trial_successes": [
+        false,
+        true,
+        false
+      ],
+      "report": "outerreset-cohort-outerf40217raw.json"
+    },
+    {
+      "candidate": "f402",
+      "variant": "enabled",
+      "successes": 3,
+      "trials": 3,
+      "off_seconds": [
+        5,
+        5,
+        120
+      ],
+      "trial_successes": [
+        true,
+        true,
+        true
+      ],
+      "report": "outerreset-cohort-outerf40217back.json"
+    }
+  ],
+  "negative17_actual_ARP_request_no_reply_windows": 4,
+  "interpretation": [
+    "F403 one-line source passes problem-board3/3 but is not reliable on healthy comparison board1/3; rejected.",
+    "F402 early-only diagnostic also passes only1/3 on board17. It shares placement/routing with F402 enabled except the reviewed reset LUT INIT.",
+    "F402 enabled board17 passed3/3 before and3/3 after early-only/one-line experiments, including120sOFF on return.",
+    "A raw-early-only policy cannot be adopted on these two boards merely because it worked on board16. One extra timed reinitialization is retained in the selected F402 source."
+  ],
+  "limits": [
+    "Ordered small-sample comparison, not randomized or a universal failure-rate bound.",
+    "Two power-control paths differ between boards; physical rails and FPGA DONE at failed boot were not measured. No unique analog/CDR or power-component fault proved.",
+    "Different standalone F403 source is not claimed to have identical physical placement to F402.",
+    "Only startup/network endpoints and EEPROM preservation, not external-input TDC performance."
+  ],
+  "source_sha256": {
+    "WORKSPACE/analyze_outerreset_board17_reversal.py": "70708e535650ba3919e318b93ea17fce462a06c23d49d39fd0db5bde283202dc",
+    "outerreset-f402-independent-review.json": "3d69eac3584a13afd09d20d41ad4911b87693b522233a82481a79b2e9427afb3",
+    "outerreset-f403-independent-review.json": "74990fa5d9f3189e09affd7f6df5b49f75de9898b8e83d724f0624f1d0bc0032",
+    "outerreset-packets-f40217-reversal-interim.json": "3499b591a7b1350e2d24b69b1b39049b8ef2aff3d7fd0dfa10c663e5489b0023",
+    "outerreset-cohort-outerf40217a.json": "acf3460b853c0ca39319121ce6d5b06d350ea11cd9419e4e638447c245de8749",
+    "outerreset-outerf40217a-cold.json": "e0eaa054abbdafa4f2af90b87919b279a04110d676756ee8ce835aacdaea56e5",
+    "flash-outerf40217a-20261019-083300-result.json": "d34e8c87b3d1b2da8ea444cda43186f81d987b5449fa14ecb4e729b416bfd0ab",
+    "outerreset-cohort-outerf40317a.json": "8d8ecc9fc335e0c6dd5f26ccc232420bf1cc3d8ee241dd30d4a400f4597724c8",
+    "outerreset-outerf40317a-cold.json": "f2a6186c64681aa4dffde2294e1352f9be239624bd2a873ddca8ba3c8518a018",
+    "flash-outerf40317a-20261019-094043-result.json": "808573f797f4872c414aae9729b558e9668a2779d8ecdd1253142003a5c970f1",
+    "outerreset-cohort-outerf40217raw.json": "7fd02422387cfe10d0f4af2c247c551bab4979d41b29dea374535cb4ba0344d7",
+    "outerreset-outerf40217raw-cold.json": "ee57954c71d780c108617e21480aa8cdb4b00dfb62e959119c536636b05cb723",
+    "flash-outerf40217raw-20261019-095327-result.json": "04c99d84e95627a8e59f48fd207e3fb42c00d9f6b896ccbb642c3954b6407e81",
+    "outerreset-cohort-outerf40217back.json": "c7f4272103388db4535eafd27def0a278f4ae2d18653ea5308a4d554dc7127a6",
+    "outerreset-outerf40217back-cold.json": "1b6507fea4f9dedfacebac39edcc31f4a7430853e521b0ee7d292750719bc4a4",
+    "flash-outerf40217back-20261019-100341-result.json": "ba7c1d1dbfa8a64de9426235fd1cb45350575ecb742cc6427dfdc4b2d7f888e5"
+  }
+}

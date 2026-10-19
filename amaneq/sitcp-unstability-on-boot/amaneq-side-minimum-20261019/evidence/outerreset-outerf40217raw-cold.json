@@ -1,0 +1,924 @@
+{
+  "started": "2026-10-19T09:58:38.354942",
+  "host": "192.168.10.17",
+  "expected_version": "0x60c4f402",
+  "source_sha256": {
+    "WORKSPACE/outerreset_cold_v2.py": "7adef51332ebe82e56a6d31eff0f757020ea0978b1106fdf6f0986793b2ca1fc",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "deepreset_neighbor.py": "9e1ca90ecaf3df285678cccf12d67cca3b455bd1f0613c9d096e33ddf45685de",
+    "deepreset_fresh_wait.py": "70e87953cd8a1a15025e1cd915b8e849c4e7be3d533cd53b68708b9d6178aec5",
+    "deepreset_fresh_wait_v2.py": "9d9bcb199db87ff3e0b2a4019c0aa0e634239f780a7444f8b9e5c9969a124908"
+  },
+  "neighbor_protocol": "12s quiet then targeted resolution",
+  "topology": "Kikusui16;ezOutlet17;switchalwaysON;noEEPROM/setpointwrites",
+  "events": [
+    {
+      "time": "2026-10-19T09:58:38.520090",
+      "kind": "outlet_status",
+      "requested": null,
+      "status": "On"
+    },
+    {
+      "time": "2026-10-19T09:58:38.603802",
+      "kind": "power_status",
+      "requested": null,
+      "identity": "KIKUSUI,PMX35-3A,GP000399,IFC01.56.0015 IOC01.10.0070",
+      "output": "1",
+      "voltage_set": "+3.00000E+01",
+      "current_set": "+1.00000E+00",
+      "voltage": "+2.99850E+01",
+      "current": "+1.90100E-01"
+    },
+    {
+      "time": "2026-10-19T09:58:38.603802",
+      "kind": "cold_start",
+      "number": 1,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T09:58:42.695557",
+      "kind": "outlet_command_response",
+      "requested": "OFF",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-19T09:58:44.807053",
+      "kind": "outlet_status",
+      "requested": "OFF",
+      "status": "Off"
+    },
+    {
+      "time": "2026-10-19T09:58:51.305518",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T09:58:55.382519",
+      "kind": "outlet_command_response",
+      "requested": "ON",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-19T09:58:57.524555",
+      "kind": "outlet_status",
+      "requested": "ON",
+      "status": "On"
+    },
+    {
+      "time": "2026-10-19T09:58:57.524555",
+      "kind": "power_on",
+      "number": 1,
+      "actual_off_seconds": 12.718
+    },
+    {
+      "time": "2026-10-19T10:00:34.406110",
+      "kind": "cold_result",
+      "number": 1,
+      "success": false,
+      "first_ready_seconds": null
+    },
+    {
+      "time": "2026-10-19T10:00:34.407874",
+      "kind": "cold_start",
+      "number": 2,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T10:00:38.478221",
+      "kind": "outlet_command_response",
+      "requested": "OFF",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-19T10:00:40.624077",
+      "kind": "outlet_status",
+      "requested": "OFF",
+      "status": "Off"
+    },
+    {
+      "time": "2026-10-19T10:00:47.122440",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T10:00:51.216595",
+      "kind": "outlet_command_response",
+      "requested": "ON",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-19T10:00:53.311716",
+      "kind": "outlet_status",
+      "requested": "ON",
+      "status": "On"
+    },
+    {
+      "time": "2026-10-19T10:00:53.311716",
+      "kind": "power_on",
+      "number": 2,
+      "actual_off_seconds": 12.688
+    },
+    {
+      "time": "2026-10-19T10:01:27.713383",
+      "kind": "cold_result",
+      "number": 2,
+      "success": true,
+      "first_ready_seconds": 29.406
+    },
+    {
+      "time": "2026-10-19T10:01:27.713383",
+      "kind": "cold_start",
+      "number": 3,
+      "off_seconds": 5
+    },
+    {
+      "time": "2026-10-19T10:01:31.802525",
+      "kind": "outlet_command_response",
+      "requested": "OFF",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-19T10:01:33.960583",
+      "kind": "outlet_status",
+      "requested": "OFF",
+      "status": "Off"
+    },
+    {
+      "time": "2026-10-19T10:01:40.471017",
+      "kind": "off_absence",
+      "rbcp": false,
+      "tcp24": null,
+      "rbcp_error": "timed out",
+      "identity_matches": false,
+      "success": false
+    },
+    {
+      "time": "2026-10-19T10:01:44.536749",
+      "kind": "outlet_command_response",
+      "requested": "ON",
+      "detail": "timed out"
+    },
+    {
+      "time": "2026-10-19T10:01:46.621727",
+      "kind": "outlet_status",
+      "requested": "ON",
+      "status": "On"
+    },
+    {
+      "time": "2026-10-19T10:01:46.621727",
+      "kind": "power_on",
+      "number": 3,
+      "actual_off_seconds": 12.656
+    },
+    {
+      "time": "2026-10-19T10:03:23.529602",
+      "kind": "cold_result",
+      "number": 3,
+      "success": false,
+      "first_ready_seconds": null
+    },
+    {
+      "time": "2026-10-19T10:03:23.531610",
+      "kind": "complete_power_on",
+      "successes": 1,
+      "trials": 3
+    }
+  ],
+  "trials": [
+    {
+      "number": 1,
+      "off_seconds": 5,
+      "success": false,
+      "first_ready_seconds": null,
+      "samples": [
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 16.688,
+          "neighbor_discovery": {
+            "started": "2026-10-19T09:59:09.530709",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 3.172,
+            "before": {
+              "return_code": 0,
+              "state": 0,
+              "MAC": "7c:f0:98:01:20:16",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 0,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 25.375,
+          "neighbor_discovery": {
+            "started": "2026-10-19T09:59:17.205708",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.187,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 34.047,
+          "neighbor_discovery": {
+            "started": "2026-10-19T09:59:25.895762",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.157,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 42.735,
+          "neighbor_discovery": {
+            "started": "2026-10-19T09:59:34.564508",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.172,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 51.407,
+          "neighbor_discovery": {
+            "started": "2026-10-19T09:59:43.253325",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.156,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 60.079,
+          "neighbor_discovery": {
+            "started": "2026-10-19T09:59:51.923743",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.172,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 68.782,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:00:00.608326",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.187,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 77.5,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:00:09.311940",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.218,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 85.188,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:00:18.031063",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 3.172,
+            "before": {
+              "return_code": 0,
+              "state": 0,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 0,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 93.875,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:00:25.706469",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.187,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 29.406,
+      "samples": [
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 17.718,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:01:05.324655",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.188,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 26.39,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:01:14.020893",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.172,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F402",
+          "expected_version": "0x60C4F402",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 29.406,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:01:22.696898",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.016,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "7c:f0:98:01:20:16",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "7c:f0:98:01:20:16",
+              "physical_length": 6
+            },
+            "MAC": "7c:f0:98:01:20:16"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.17",
+          "version": "0x60C4F402",
+          "expected_version": "0x60C4F402",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 34.406
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "off_seconds": 5,
+      "success": false,
+      "first_ready_seconds": null,
+      "samples": [
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 16.672,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:01:58.634330",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 3.156,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "7c:f0:98:01:20:16",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 0,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 25.36,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:02:06.294472",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.188,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 34.047,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:02:14.982021",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.171,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 42.735,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:02:23.669515",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.172,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 51.438,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:02:32.355077",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.203,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 60.125,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:02:41.054330",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.187,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 68.844,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:02:49.744641",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.203,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 77.531,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:02:58.460920",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.172,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 85.219,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:03:07.150690",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 3.188,
+            "before": {
+              "return_code": 0,
+              "state": 0,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 0,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        },
+        {
+          "rbcp": false,
+          "tcp24": null,
+          "rbcp_error": "timed out",
+          "identity_matches": false,
+          "success": false,
+          "elapsed_seconds": 93.906,
+          "neighbor_discovery": {
+            "started": "2026-10-19T10:03:14.842671",
+            "host": "192.168.10.17",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 67,
+            "elapsed_seconds": 4.187,
+            "before": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 1,
+              "MAC": "00:00:00:00:00:00",
+              "physical_length": 6
+            },
+            "MAC": null
+          }
+        }
+      ]
+    }
+  ]
+}

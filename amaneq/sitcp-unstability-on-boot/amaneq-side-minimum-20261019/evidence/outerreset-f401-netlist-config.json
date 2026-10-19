@@ -1,0 +1,53 @@
+{
+  "created": "2026-10-19T06:26:19.377488",
+  "phase": "fresh_netlist_configuration_reviewed",
+  "candidate": "f401",
+  "dcp": "lrtdc-outerreset-f401/build/outerreset-f401/lrtdc-outerreset-f401.dcp",
+  "root": "outerreset-f401-matched",
+  "gate": "u_KeepPwrOnRst/reset_sync1_i_1",
+  "reference": "LUT3",
+  "enabled_init": "8'hBA",
+  "input_roles": {
+    "I0": "por",
+    "I1": "wait",
+    "I2": "end"
+  },
+  "input_inversions": {
+    "I0": false,
+    "I1": false,
+    "I2": false
+  },
+  "variant_inits_decimal": {
+    "enabled": 186,
+    "bypass": 170,
+    "hold": 240
+  },
+  "timer_clocks": {
+    "u_KeepPwrOnRst/reg_reset_reg/C": {
+      "period_ns": 8.0,
+      "clock": "clk_sys",
+      "driver": "u_ClkMan_Inst/inst/clkout1_buf/O"
+    },
+    "u_PcsWait/reg_reset_reg/C": {
+      "period_ns": 8.0,
+      "clock": "clk_sys",
+      "driver": "u_ClkMan_Inst/inst/clkout1_buf/O"
+    },
+    "u_PcsWaitEnd/reg_reset_reg/C": {
+      "period_ns": 8.0,
+      "clock": "clk_sys",
+      "driver": "u_ClkMan_Inst/inst/clkout1_buf/O"
+    }
+  },
+  "source_sha256": {
+    "WORKSPACE/configure_outerreset_f401.py": "96373401c7b375f7b4a44c44963e97dd72baab71d268a9df6d6f5099ba7617f5",
+    "outerreset-f401-inspection.json": "e34741d6bfdfa4c9130db07021e5b8da639a20876bb32eca491bf3d4f8a43cdb",
+    "outerreset-f401-netlist-inspection.txt": "f7bfb5ec28b6a534fe77e9a3be738d2e77bfe7b02d9613ec4cde9835f9dae44a",
+    "outerreset-f401-netlist-config.tcl": "71c2f4cc6b7703bf61200d861e8e0c7122919faacac2193543e06038cfe0762f"
+  },
+  "limits": [
+    "Fresh gate is physically named under u_KeepPwrOnRst by synthesis, but its output drives only the public PCS reset sinks listed in inspection.",
+    "All three INIT truth tables are recomputed independently by the review before hardware. Hold extends initial public reset continuously; enabled creates a reset-free gap and a second pulse.",
+    "Only enabled is the F401 production source patch. Other gate configurations are diagnostic controls."
+  ]
+}

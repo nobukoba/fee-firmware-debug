@@ -1,0 +1,20 @@
+{
+  "started": "2026-10-19T08:17:26.442464",
+  "mcs": "WORKSPACE/outerreset-f402-matched/early/lrtdc-f402.mcs",
+  "mcs_sha256": "58960df6d757cbd02de979cde2b9ecec392c7297c91347d32b74b3e64786aa50",
+  "payload_sha256": "c8c69a31d4ce5c0cc1dab9cfbe2642b6f12935aa59cc30f16f6ca9dec5343e07",
+  "payload_bytes": 6692572,
+  "backup": "WORKSPACE/flash-outerf40216raw-20261019-081726-before.bin",
+  "readback": "WORKSPACE/flash-outerf40216raw-20261019-081726-after.bin",
+  "label": "outerf40216raw",
+  "target_serial": "210299BBCDDA",
+  "success": true,
+  "vivado_exit_code": 0,
+  "backup_bytes": 16777216,
+  "backup_sha256": "cac20b9aafe03702f793f39e43fdafbe4f453ba315650dbd8503705344c1ad57",
+  "readback_bytes": 16777216,
+  "readback_sha256": "59e5e04b48d1abc2765dcfbdd928ba2d0efacc9a177ea267f0a3036eec94eda8",
+  "readback_image_sha256": "c8c69a31d4ce5c0cc1dab9cfbe2642b6f12935aa59cc30f16f6ca9dec5343e07",
+  "image_matches": true,
+  "finished": "2026-10-19T08:22:33.005534"
+}

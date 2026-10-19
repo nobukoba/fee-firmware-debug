@@ -1,0 +1,37 @@
+{
+  "started": "2026-10-19T06:41:33.157645",
+  "phase": "build_complete_independent_review_required",
+  "hardware_operations": false,
+  "source_sha256": {
+    "WORKSPACE/prepare_outerreset_f402.py": "d5fc19a24bd04ae9a213ab0aa4045a287d7197629d24d96d933ff78eb76b0559",
+    "lrtdc-outerreset-f402/hdl/toplevel.vhd": "ffc0a42f8cc9ed5d180edf832a05ef00048204d2662bb933fa11e134d2cc646d",
+    "lrtdc-outerreset-f402/hdl/defBusAddressMap.vhd": "2104a37b957cf8dcad9cae8072dd6f0bad4775a9c8272b3c8ff53f30f0999463",
+    "outerreset-functional-f402.patch": "f7fa9cabcfd20a60f23482028e77b90412855ef2de94fdcc31a9c61a2c999f06",
+    "lrtdc-outerreset-f402/patch-check/toplevel-before.vhd": "6a4b667f541b8f892a3f2793388801cc7ace9d39fecc7df52900f524572e88f0",
+    "lrtdc-outerreset-f402/patch-check/toplevel-after.vhd": "ffc0a42f8cc9ed5d180edf832a05ef00048204d2662bb933fa11e134d2cc646d",
+    "lrtdc-outerreset-f402/build-outerreset-f402.tcl": "24440102fd4ad27e082bdd8ef54a21a408a0de96dd681aa62a0f82f05a3f1b03",
+    "lrtdc-outerreset-f402/hdl/common/main/RstDelayTimer.vhd": "2811ffd9f2d48f3ed5f05d1beea53e498aee3aa354606075d0d6b8fef155ddde",
+    "WORKSPACE/simulate_outerreset_f402.py": "002e12e81f4b0c22c0a60fe0f6c27bc2a76defa5233f3f179e59dd7200292c21",
+    "experiments/outerreset-f402-sim/timer.vhd": "2811ffd9f2d48f3ed5f05d1beea53e498aee3aa354606075d0d6b8fef155ddde",
+    "experiments/outerreset-f402-sim/tb.vhd": "af13a1eeaebc47a1741a1db992d8015b36ed37484e532870d7c6fa02adf5094d",
+    "WORKSPACE/run_outerreset_build_f402.py": "16295bd9c995c1eb7516e87d15738d4f159217965c3c920c0719982ac26d8ba8",
+    "outerreset-f402-preparation.json": "69498637abfff5d801159d73bd8d80fb644e8caf3f2d757d8c47b7af93f8d08b",
+    "experiments/outerreset-f402-sim/result.json": "14c7b3b18bebe19c8e3701de2599e40a0197395eece12a0141e9dee3815860e5",
+    "lrtdc-outerreset-f401/build/outerreset-f401/lrtdc-outerreset-f401.dcp": "cf3968c277a7837a7f397d198996440bf5ac7caa0688aeff26f2ac05d56115ab"
+  },
+  "actual_exit_code": 0,
+  "artifacts": {
+    "lrtdc-outerreset-f402/build/outerreset-f402/bus-skew.rpt": "219137ce21691a917cd1081feddd5618c79e4c4f06cca7f6335467c5410d8926",
+    "lrtdc-outerreset-f402/build/outerreset-f402/drc.rpt": "41f67ed6f39075141b331542130e1d10b8593be87649f57bc28f5f92970e441f",
+    "lrtdc-outerreset-f402/build/outerreset-f402/incremental-reuse.rpt": "e76af5a35970b91c58bf8e49c71e1e94649ab707692a9ef16d07459e6bbdcc69",
+    "lrtdc-outerreset-f402/build/outerreset-f402/ip-prepared": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lrtdc-outerreset-f402/build/outerreset-f402/ip-status.rpt": "5960d4e5d4038093c99ff6de298bf10f5f69d5b9d24ea74dc9e92f1be2374bcc",
+    "lrtdc-outerreset-f402/build/outerreset-f402/lrtdc-outerreset-f402.bit": "448ee4f3a7cefc1e86251b6538298d3308cbb2820213bbdad9d3d50797e1ef80",
+    "lrtdc-outerreset-f402/build/outerreset-f402/lrtdc-outerreset-f402.dcp": "8531add1080417921b8254edb676420aa5b9280f30fd048b8fda2094ee2c1124",
+    "lrtdc-outerreset-f402/build/outerreset-f402/lrtdc-outerreset-f402.mcs": "baa16954f594b444949d0288c09696001f0018cedd39cc2e920cc761043a7cf2",
+    "lrtdc-outerreset-f402/build/outerreset-f402/lrtdc-outerreset-f402.prm": "06b1f020f6a449b696c77de853a34a4993f0d05e0bfa74bce4324d6bf08ec7db",
+    "lrtdc-outerreset-f402/build/outerreset-f402/timing-summary.rpt": "04d882a070060bde8a74106d07cda65f1835d290bd7fce3789b0ab8a23e214a7",
+    "lrtdc-outerreset-f402/build/outerreset-f402/utilization.rpt": "9b2f3f7cc51fbfcca6b79fc8dbd72b37659ac66a9d611831fc8d9be6c3e3d2aa"
+  },
+  "finished": "2026-10-19T07:55:49.359454"
+}

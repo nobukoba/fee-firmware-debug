@@ -1,0 +1,67 @@
+{
+  "created": "2026-10-19T07:56:58.828731",
+  "phase": "base_review_passed_fresh_routed_netlist_review_required",
+  "runtime": "0x60C4F402",
+  "functional_added_lines": 6,
+  "functional_deleted_lines": 1,
+  "wns_ns": 0.068,
+  "whs_ns": 0.015,
+  "drc": [
+    [
+      "CHECK-3",
+      "Warning",
+      "1"
+    ],
+    [
+      "DPIP-1",
+      "Warning",
+      "384"
+    ],
+    [
+      "REQP-1839",
+      "Warning",
+      "12"
+    ],
+    [
+      "REQP-1840",
+      "Warning",
+      "20"
+    ],
+    [
+      "RTSTAT-10",
+      "Warning",
+      "1"
+    ]
+  ],
+  "core_VHDL_sha256": {
+    "gig_ethernet_pcs_pma.vhd": "c214570c4dbe72b99eb8ceaa587bb3912109bab1546e10cfb03e813e901efa1e",
+    "gig_ethernet_pcs_pma_block.vhd": "ad00061e2e8af6dbdedede8fd2c473f3237268f5a3b54a7ec10c65937991ea2c",
+    "gig_ethernet_pcs_pma_reset_sync.vhd": "64116e0755096373a875f358534f2adbffed73f420292e83d1dd7cf08c727d97",
+    "gig_ethernet_pcs_pma_sync_block.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "transceiver/gig_ethernet_pcs_pma_cpll_railing.vhd": "60f4277b01260797fff0ab0db04025dd36e3817b360c3c74c3ff591b595d009e",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard.vhd": "c6e3fe294528bd3bc370e053718f0e1c54368668212b74793c7ab1d50869fe88",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_gt.vhd": "eb56e5773b9ff9af58e31979a7f25aa15ffc34b1f7183e220cbb23c96e32198d",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_init.vhd": "9be7c5109252b766219d820fc7ab7c06f3c15540de594c3d36cced7be7bc311b",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_multi_gt.vhd": "d9094ceb95dcb439176a1308c911f6ea3fef6a6519db97a64a913cb313cd4e0d",
+    "transceiver/gig_ethernet_pcs_pma_reset_wtd_timer.vhd": "e7a40bafce9ba113785d7e1ad202c9e85d1baf156732878c049d6fe273b3abfd",
+    "transceiver/gig_ethernet_pcs_pma_rx_startup_fsm.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "transceiver/gig_ethernet_pcs_pma_transceiver.vhd": "03932bb1240f6849fb8dac486ffc991463899651ef38804ce9654f25e67fe132",
+    "transceiver/gig_ethernet_pcs_pma_tx_startup_fsm.vhd": "b746354b507ba31ca0c2c4aa293edce21938567752a7c83bdff839ff0dc4a91a"
+  },
+  "mcs_sha256": "baa16954f594b444949d0288c09696001f0018cedd39cc2e920cc761043a7cf2",
+  "expected_full_flash_sha256": "9fdbf99d92cbc037fd6f5b0eec09b1012cb713835b28d87962f78e5797326fe5",
+  "source_sha256": {
+    "WORKSPACE/review_outerreset_f402_base.py": "b9dc0c361e88a435b501eb4fec7b140ae18104a6c441fcb0d7c1e12236e67a7a",
+    "outerreset-f402-build.json": "c25b05e4134a66b211cad59e5617339e5ba9e48d89a18fee8201ecc62e826195",
+    "experiments/outerreset-f402-sim/result.json": "14c7b3b18bebe19c8e3701de2599e40a0197395eece12a0141e9dee3815860e5",
+    "outerreset-functional-f402.patch": "f7fa9cabcfd20a60f23482028e77b90412855ef2de94fdcc31a9c61a2c999f06",
+    "lrtdc-outerreset-f402/build/outerreset-f402/timing-summary.rpt": "04d882a070060bde8a74106d07cda65f1835d290bd7fce3789b0ab8a23e214a7",
+    "lrtdc-outerreset-f402/build/outerreset-f402/bus-skew.rpt": "219137ce21691a917cd1081feddd5618c79e4c4f06cca7f6335467c5410d8926",
+    "lrtdc-outerreset-f402/build/outerreset-f402/drc.rpt": "41f67ed6f39075141b331542130e1d10b8593be87649f57bc28f5f92970e441f"
+  },
+  "limits": [
+    "Full-source build with native RX FSM; common board156.25MHz CPLL/XDC settings retained.",
+    "Timer simulation uses scaled counts, does not model analog CDR.",
+    "Fresh physical netlist and matched enabled/bypass qualification still required before hardware."
+  ]
+}

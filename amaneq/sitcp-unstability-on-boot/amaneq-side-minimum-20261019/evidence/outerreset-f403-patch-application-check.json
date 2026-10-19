@@ -1,0 +1,11 @@
+{
+  "phase": "patch_applies_to_clean_base_and_git_whitespace_passed",
+  "base": "5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039",
+  "git_added_lines": 1,
+  "git_deleted_lines": 1,
+  "source_sha256": {
+    "WORKSPACE/review_outerreset_f403.py": "475020f92e46688c29b22202f1078842f6ff31d5b02700e5a3f2b3779fdd4d02",
+    "outerreset-functional-f403.patch": "54812c54e04bdcfd7c3ea9c38dd960ca4d2a2fe7fcce140a6f73a7a421dcaa0b",
+    "lrtdc-outerreset-f403/hdl/toplevel.vhd": "0171806295aa80fac4bbb1a0fde43e09621cde24700be46efa170a9f6fd09a9a"
+  }
+}

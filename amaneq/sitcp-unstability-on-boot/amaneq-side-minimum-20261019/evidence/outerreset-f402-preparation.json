@@ -1,0 +1,32 @@
+{
+  "created": "2026-10-19T05:26:27.103274",
+  "phase": "source_prepared_not_built_or_hardware_tested",
+  "base_commit": "5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039",
+  "repo": "lrtdc-outerreset-f402",
+  "runtime": "0x60C4F402",
+  "functional_added_lines": 6,
+  "functional_deleted_lines": 1,
+  "new_HDL_modules": 0,
+  "existing_timer_instances_added": 1,
+  "SYS_clock_MHz": 125,
+  "new_preset": 125000000,
+  "existing_global_POR_preset": 268435455,
+  "nominal_second_reset_seconds": 1.14748364,
+  "hypothesis": "Early PCS release followed by one delayed reset while global SiTCP POR still asserted. Reuse existing global POR endpoint, remove second timer and reset-assignment signal.",
+  "limits": [
+    "Not yet simulated/built/tested. Does not establish efficacy.",
+    "Initial public PCS reset releases before original global POR, so native GT startup may begin earlier; matched comparison must preserve raw/global POR drivers explicitly.",
+    "No recovery for late failure. Additional reset ends at original global POR end.",
+    "Added lines include a comment and blank line; independent version/build files excluded."
+  ],
+  "source_sha256": {
+    "WORKSPACE/prepare_outerreset_f402.py": "d5fc19a24bd04ae9a213ab0aa4045a287d7197629d24d96d933ff78eb76b0559",
+    "lrtdc-outerreset-f402/hdl/toplevel.vhd": "ffc0a42f8cc9ed5d180edf832a05ef00048204d2662bb933fa11e134d2cc646d",
+    "lrtdc-outerreset-f402/hdl/defBusAddressMap.vhd": "2104a37b957cf8dcad9cae8072dd6f0bad4775a9c8272b3c8ff53f30f0999463",
+    "outerreset-functional-f402.patch": "f7fa9cabcfd20a60f23482028e77b90412855ef2de94fdcc31a9c61a2c999f06",
+    "lrtdc-outerreset-f402/patch-check/toplevel-before.vhd": "6a4b667f541b8f892a3f2793388801cc7ace9d39fecc7df52900f524572e88f0",
+    "lrtdc-outerreset-f402/patch-check/toplevel-after.vhd": "ffc0a42f8cc9ed5d180edf832a05ef00048204d2662bb933fa11e134d2cc646d",
+    "lrtdc-outerreset-f402/build-outerreset-f402.tcl": "24440102fd4ad27e082bdd8ef54a21a408a0de96dd681aa62a0f82f05a3f1b03",
+    "lrtdc-outerreset-f402/hdl/common/main/RstDelayTimer.vhd": "2811ffd9f2d48f3ed5f05d1beea53e498aee3aa354606075d0d6b8fef155ddde"
+  }
+}

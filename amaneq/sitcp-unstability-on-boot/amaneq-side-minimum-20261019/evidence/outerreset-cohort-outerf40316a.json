@@ -1,0 +1,205 @@
+{
+  "started": "2026-10-19T09:33:15.652110",
+  "host": "192.168.10.16",
+  "serial": "210299BBCDDA",
+  "candidate": "f403",
+  "variant": "enabled",
+  "runtime": "0x60C4F403",
+  "review_report": "outerreset-f403-independent-review.json",
+  "source_sha256": {
+    "WORKSPACE/run_outerreset_cohort_v3.py": "6177da34dceb9457f44b98d9aafed5edf7fa18911ef2435321f7ef3227fc0e24",
+    "outerreset-f403-independent-review.json": "74990fa5d9f3189e09affd7f6df5b49f75de9898b8e83d724f0624f1d0bc0032",
+    "outerreset_hw_guard_v2.py": "476025d79ef4679e2b553af19721afb6c2562784731a854668e4b2680e510a9a",
+    "outerreset_cold_v2.py": "7adef51332ebe82e56a6d31eff0f757020ea0978b1106fdf6f0986793b2ca1fc",
+    "flash_firmware.py": "712a49008ce6434b9407e4a0bb332b528fd4b316d9271b7e1e1b99c5f67af43c",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "deepreset_neighbor.py": "9e1ca90ecaf3df285678cccf12d67cca3b455bd1f0613c9d096e33ddf45685de",
+    "deepreset_fresh_wait.py": "70e87953cd8a1a15025e1cd915b8e849c4e7be3d533cd53b68708b9d6178aec5",
+    "deepreset_fresh_wait_v2.py": "9d9bcb199db87ff3e0b2a4019c0aa0e634239f780a7444f8b9e5c9969a124908",
+    "lrtdc-outerreset-f403/build/outerreset-f403/lrtdc-outerreset-f403.mcs": "310335901a9f770e635ee2e446b65660d186888cc0fa74124bd2b112664e001d"
+  },
+  "events": [
+    {
+      "time": "2026-10-19T09:33:16.746085",
+      "event": "programming_candidate_must_not_powercycle"
+    },
+    {
+      "time": "2026-10-19T09:38:54.938911",
+      "event": "cold_trials"
+    },
+    {
+      "time": "2026-10-19T09:40:14.007217",
+      "event": "cohort_complete_power_on",
+      "successes": 3,
+      "trials": 3
+    }
+  ],
+  "trials": [
+    {
+      "number": 1,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.047,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F403",
+          "expected_version": "0x60C4F403",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.047,
+          "neighbor_discovery": {
+            "started": "2026-10-19T09:39:16.821537",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.016,
+            "before": {
+              "return_code": 0,
+              "state": 0,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F403",
+          "expected_version": "0x60C4F403",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.062
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.015,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F403",
+          "expected_version": "0x60C4F403",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.015,
+          "neighbor_discovery": {
+            "started": "2026-10-19T09:39:42.560347",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.015,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F403",
+          "expected_version": "0x60C4F403",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.015
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "off_seconds": 5,
+      "success": true,
+      "first_ready_seconds": 12.047,
+      "samples": [
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F403",
+          "expected_version": "0x60C4F403",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 12.047,
+          "neighbor_discovery": {
+            "started": "2026-10-19T09:40:08.303284",
+            "host": "192.168.10.16",
+            "source": "192.168.10.70",
+            "interface_index": 9,
+            "API": "ResolveIpNetEntry2",
+            "return_code": 0,
+            "elapsed_seconds": 0.0,
+            "before": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "after": {
+              "return_code": 0,
+              "state": 5,
+              "MAC": "02:00:c0:a8:00:10",
+              "physical_length": 6
+            },
+            "MAC": "02:00:c0:a8:00:10"
+          }
+        },
+        {
+          "rbcp": true,
+          "tcp24": true,
+          "runtime_ip": "192.168.10.16",
+          "version": "0x60C4F403",
+          "expected_version": "0x60C4F403",
+          "identity_matches": true,
+          "success": true,
+          "elapsed_seconds": 17.047
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Enabled is the source-built candidate; f403 is raw-reset routing without a one-shot. hold/early are diagnostic controls. No late-fault watchdog.",
+    "TargetedneighborAPI maystillbackoff; actualARPpacketswillbecompared fornegativeoutcomes.",
+    "Powercontrolack notmeasuredphysicalpoweredge."
+  ],
+  "phase": "cohort_complete_power_on",
+  "flash_actual_exit_code": 0,
+  "flash_report": "flash-outerf40316a-20261019-093318-result.json",
+  "flash_report_sha256": "8946017c1daa5d1c87c26239730f07b8a6f0a5087d872826dfc417a6e0ab1616",
+  "full_flash_sha256": "4a5c0fc2440860fcbfb49aaabaaf5e324a68c639fd72e72d65ca09f519cbe5b7",
+  "flash_reused": false,
+  "cold_actual_exit_code": 0,
+  "cold_log": "outerreset-outerf40316a-cold.json",
+  "cold_sha256": "ba1e06f49f447712dde69d0c609e24ed58eb81ef29eda1c251f6869d9771f2a1",
+  "successes": 3
+}

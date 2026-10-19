@@ -1,0 +1,18 @@
+PUBLIC_RESET_SINK gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[0]/PRE DRIVERS u_KeepPwrOnRst/reg_counter[31]_i_3__1_incr/O
+DRIVER_CELL u_KeepPwrOnRst/reg_counter[31]_i_3__1_incr REF LUT1 INIT 2'h1
+DRIVER_INPUT u_KeepPwrOnRst/reg_counter[31]_i_3__1_incr/I0 DRIVERS u_ClkMan_Inst/inst/mmcm_adv_inst/LOCKED
+PUBLIC_RESET_SINK gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[1]/PRE DRIVERS u_KeepPwrOnRst/reg_counter[31]_i_3__1_incr/O
+DRIVER_CELL u_KeepPwrOnRst/reg_counter[31]_i_3__1_incr REF LUT1 INIT 2'h1
+DRIVER_INPUT u_KeepPwrOnRst/reg_counter[31]_i_3__1_incr/I0 DRIVERS u_ClkMan_Inst/inst/mmcm_adv_inst/LOCKED
+PUBLIC_RESET_SINK gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[2]/PRE DRIVERS u_KeepPwrOnRst/reg_counter[31]_i_3__1_incr/O
+DRIVER_CELL u_KeepPwrOnRst/reg_counter[31]_i_3__1_incr REF LUT1 INIT 2'h1
+DRIVER_INPUT u_KeepPwrOnRst/reg_counter[31]_i_3__1_incr/I0 DRIVERS u_ClkMan_Inst/inst/mmcm_adv_inst/LOCKED
+PUBLIC_RESET_SINK gen_pcspma[0].u_pcspma_Inst/core_resets_i/pma_reset_pipe_reg[3]/PRE DRIVERS u_KeepPwrOnRst/reg_counter[31]_i_3__1_incr/O
+DRIVER_CELL u_KeepPwrOnRst/reg_counter[31]_i_3__1_incr REF LUT1 INIT 2'h1
+DRIVER_INPUT u_KeepPwrOnRst/reg_counter[31]_i_3__1_incr/I0 DRIVERS u_ClkMan_Inst/inst/mmcm_adv_inst/LOCKED
+GT CPLL_FBDIV 4
+GT CPLL_FBDIV_45 4
+GT CPLL_REFCLK_DIV 1
+GT RXOUT_DIV 4
+GT TXOUT_DIV 4
+SYS_LOCK u_ClkMan_Inst/inst/mmcm_adv_inst/LOCKED

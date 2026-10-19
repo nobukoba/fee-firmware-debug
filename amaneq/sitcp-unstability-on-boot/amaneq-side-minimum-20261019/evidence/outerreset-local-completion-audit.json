@@ -1,0 +1,33 @@
+{
+  "created": "2026-10-19T10:34:18.094971",
+  "phase": "local_completion_checks_passed",
+  "restored_both_cold3_full_flash_EEPROM_runtime_network": true,
+  "capture_valid_closed_and_sleep_inhibition_released": true,
+  "cohort_reports_checked": 21,
+  "packet_boot_windows_checked": 94,
+  "negative_boots_without_actual_ARP": 0,
+  "soaks_checked": 3,
+  "negative_candidate_soaks_preserved": [],
+  "source_sha256": {
+    "WORKSPACE/audit_outerreset_completion.py": "f3a6b0861b62bc36a72ec04bd635a165e80bd7844415e2819743b81681e54fad",
+    "outerreset-restoration.json": "022001850be046768fef59d9f998cc80d41e6cc5e0e644778bf8f3344a5debad",
+    "outerreset-resource-cleanup.json": "cd4767023f60e4fb6e5dab1ca545769f1656d84fde8575d313a3edfa23475283",
+    "outerreset-final-status.json": "2f75a6152b51bf78716205488b27049f5dd0c3d8b268744537e1bba721c9094d",
+    "outerreset-cohort-summary-final.json": "c7f2a3f77afc344ab3f8ed80f66f8ecf0164b55951ef10cc1171e3b591c5ff04",
+    "outerreset-packets-final.json": "bd7bd0bb1600ab6270e0d1ffa60897c6d8776e584f591f1eb24b285d4ce5f924",
+    "outerreset-soak-f401both.json": "fb0c4ae8ba5507baa5bb90c1835956f7cb8886fb835ece19a15539d57d6687a3",
+    "outerreset-soak-f402both.json": "b051b328b4a642369a5ba82f6eac64d8b1ccb61f0763e83d98f2e800adc545ac",
+    "outerreset-final-soak-summary.json": "63334e03859f587d6472aaaee962ee71eb773bbd552a020f899e863d6130df34",
+    "outerreset-result-selection.json": "16527536ad6a084408ab742ad6ec8eacc0404b8971856359e1003a3e0326a668",
+    "outerreset-f402-timer-init-audit.json": "80de83bdb6865b9df09cf9541b769c86734b86718e276437d8f2d2148c3fa125",
+    "outerreset-native-reset-sequence-analysis.json": "8609888464aa44981dc30234938575f0ecbf52db38f6915c013bd92028fed63e",
+    "outerreset-f402-causal-contrast.json": "6d2816ba5e6cd5e5fade7c648b0ca5822853725e629e96f3a5cf05e52c789979",
+    "outerreset-existing-timer-output-analysis.json": "a629c0c023293dc3f28b71640174f91264be4b4c211a255f3a8e290a873d133c",
+    "outerreset-board17-regression-reversal.json": "378ae4f43ff156661822aafc879fdca27a550a4de60667ac5f0b256623d670c7"
+  },
+  "limits": [
+    "Negative endpoint outcomes remain recorded, including any without a transmitted ARP request. They are not silently reclassified as analog receiver failures.",
+    "Not external-input TDC calibration/performance validation.",
+    "Separate remote publication verification required after commit and push."
+  ]
+}

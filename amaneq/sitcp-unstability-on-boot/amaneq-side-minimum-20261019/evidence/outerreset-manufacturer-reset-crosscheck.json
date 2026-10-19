@@ -1,0 +1,23 @@
+{
+  "created": "2026-10-19T07:33:13.671816",
+  "phase": "manufacturer_public_reset_clock_domain_crosscheck",
+  "installed_IP_component": "xilinx.com:ip:gig_ethernet_pcs_pma:16.2",
+  "document": {
+    "title": "AMD PG047 v16.2 Resets",
+    "release_date": "2023-11-01",
+    "url": "https://docs.amd.com/r/16.2-English/pg047-gig-eth-pcs-pma/Resets?contentId=L6jmqD4heKc3zefmU9oeGA"
+  },
+  "paraphrased_document_findings": [
+    "The core contains multiple clock domains and separate reset regions.",
+    "The board/example reset is synchronized to the relevant core clock domain. In GT configuration the guide identifies independent_clock_bufg for this synchronization."
+  ],
+  "local_implementation_check": "Existing GbEPcsPma reset helper asynchronously asserts a four-stage pipeline and releases it on independent_clock200MHz. New top-level control feeds this existing public interface. Native TX/RX startup FSM functional HDL unchanged.",
+  "source_sha256": {
+    "lrtdc-outerreset-f402/ip/gig_ethernet_pcs_pma/gig_ethernet_pcs_pma.xci": "d099449c24f05b61d90821c17b091a5a00d84e7265375fbf993e12be825446d3"
+  },
+  "limits": [
+    "Document crosscheck does not determine the initiating physical fault or prove vendor startup instructions universally wrong.",
+    "No additional minimum-width specification is inferred from this reset-domain page. No short-pulse variant was built or programmed in this crosscheck.",
+    "Claims about the actual built image still require source, DCP, timing, full readback and boot tests recorded separately."
+  ]
+}

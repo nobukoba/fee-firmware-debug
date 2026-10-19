@@ -1,0 +1,27 @@
+{
+  "created": "2026-10-19T10:35:37.319021",
+  "phase": "validated_functional_source_committed_locally",
+  "candidate": "f402",
+  "repository": "lrtdc-outerreset-f402",
+  "branch": "codex/amaneq-sitcp-minimal-reset",
+  "commit": "a08ec181d08112c91001ff8fd1829d820d0c82d0",
+  "parent": "5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039",
+  "committed_files": [
+    "hdl/toplevel.vhd"
+  ],
+  "git_added_lines": 6,
+  "git_deleted_lines": 1,
+  "compiled_top_sha256_unchanged": "ffc0a42f8cc9ed5d180edf832a05ef00048204d2662bb933fa11e134d2cc646d",
+  "compiled_top_build_proof": "outerreset-f402-build.json",
+  "compiled_top_build_proof_sha256": "c25b05e4134a66b211cad59e5617339e5ba9e48d89a18fee8201ecc62e826195",
+  "script_sha256": "cfb9ddc3980e10e0f286a9b0ac8b52dc1454b73a34039ffa8c2107efbe868582",
+  "test_version_and_build_scripts_kept_separate": true,
+  "upstream_public_push_performed": false,
+  "resumed_failed_commit_exit_code": 128,
+  "resumed_helper_sha256": "cba20863c5e6f10c4ad19b54f545577f308b8ba13ad713146d9d369f17570b16",
+  "identity_setup": "Repository-local user.name/email inherited from existing private study repository. No global configuration changed.",
+  "limits": [
+    "Only the tested functional top is committed; build-generated IP/XCI and test version remain separate.",
+    "Private study publication and remote verification remain separate steps."
+  ]
+}

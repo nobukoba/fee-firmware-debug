@@ -1,0 +1,15 @@
+"""Completed healthy-board regression/reversal, preserving the shorter failed source."""
+import datetime,hashlib,json
+from pathlib import Path
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def load(p):return json.loads(Path(p).read_text())
+sources=[Path(__file__),Path('outerreset-f402-independent-review.json'),Path('outerreset-f403-independent-review.json'),Path('outerreset-packets-f40217-reversal-interim.json')];cases=[]
+for label,candidate,variant,expected in [('outerf40217a','f402','enabled',3),('outerf40317a','f403','enabled',1),('outerf40217raw','f402','early',1),('outerf40217back','f402','enabled',3)]:
+ p=Path('outerreset-cohort-'+label+'.json');r=load(p);assert r['phase']=='cohort_complete_power_on' and r['cold_actual_exit_code']==0 and r['host']=='192.168.10.17' and r['candidate']==candidate and r['variant']==variant and r['successes']==expected and len(r['trials'])==3
+ assert sha(r['cold_log'])==r['cold_sha256'] and sha(r['flash_report'])==r['flash_report_sha256']
+ review=load('outerreset-'+candidate+'-independent-review.json');assert r['full_flash_sha256']==review['variants'][variant]['expected_full_flash_sha256']
+ sources.extend([p,Path(r['cold_log']),Path(r['flash_report'])]);cases.append({'candidate':candidate,'variant':variant,'successes':expected,'trials':3,'off_seconds':[t['off_seconds'] for t in r['trials']],'trial_successes':[t['success'] for t in r['trials']],'report':str(p)})
+packets=load('outerreset-packets-f40217-reversal-interim.json');negative17=[c for c in packets['cases'] if c['host']=='192.168.10.17' and not c['success']];assert len(negative17)==4 and all(c['request_frames']>0 and c['reply_frames']==0 for c in negative17)
+out=Path('outerreset-board17-regression-reversal.json');assert not out.exists()
+r={'created':datetime.datetime.now().isoformat(),'phase':'healthy_board_early_only_regression_and_enabled_return_completed','cases':cases,'negative17_actual_ARP_request_no_reply_windows':len(negative17),'interpretation':['F403 one-line source passes problem-board3/3 but is not reliable on healthy comparison board1/3; rejected.','F402 early-only diagnostic also passes only1/3 on board17. It shares placement/routing with F402 enabled except the reviewed reset LUT INIT.','F402 enabled board17 passed3/3 before and3/3 after early-only/one-line experiments, including120sOFF on return.','A raw-early-only policy cannot be adopted on these two boards merely because it worked on board16. One extra timed reinitialization is retained in the selected F402 source.'],'limits':['Ordered small-sample comparison, not randomized or a universal failure-rate bound.','Two power-control paths differ between boards; physical rails and FPGA DONE at failed boot were not measured. No unique analog/CDR or power-component fault proved.','Different standalone F403 source is not claimed to have identical physical placement to F402.','Only startup/network endpoints and EEPROM preservation, not external-input TDC performance.'],'source_sha256':{str(p):sha(p) for p in sources}}
+out.write_text(json.dumps(r,indent=2));print(r['phase'])

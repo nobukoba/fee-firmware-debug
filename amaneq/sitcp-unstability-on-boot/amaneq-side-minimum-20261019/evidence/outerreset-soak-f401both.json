@@ -1,0 +1,956 @@
+{
+  "started": "2026-10-19T07:56:46.904701",
+  "phase": "read_only_candidate_soak_completed_both_healthy",
+  "requested_seconds": 900,
+  "proofs": {
+    "192.168.10.16": "outerreset-cohort-outerf40116more.json",
+    "192.168.10.17": "outerreset-cohort-outerf40117more.json"
+  },
+  "versions": {
+    "192.168.10.16": "0x60c4f401",
+    "192.168.10.17": "0x60c4f401"
+  },
+  "source_sha256": {
+    "WORKSPACE/run_outerreset_action.py": "5d7494b9ad3d75536c6bfb9fcd6193da4bf147e89b10d304f5235a661a4ea99f",
+    "outerreset-cohort-outerf40116more.json": "b96ce251de991d33b84d8ed6c2fa91367b51df55fc2f09ec3dc0a38929cec328",
+    "outerreset-cohort-outerf40117more.json": "c3952a0f6fabc40fb6b9757f71168a41ce53760b6a0f1a560ea9e3e0fd6f5afc",
+    "outerreset_hw_guard_v2.py": "476025d79ef4679e2b553af19721afb6c2562784731a854668e4b2680e510a9a",
+    "network_boot_stress.py": "f04ec35f682c0cdcdc5723a9cd1fe577052ee4e5d134c277f426f9c49317668c",
+    "boot_test.py": "04eb58e5943e3e876f4bdbc1fd320cf84354eba68ce4931d1785f26b550de45d",
+    "eeprom-before-startup.bin": "341c5c207c91e51c634ba3e3090fea4689e4e5ae07725e4996a3e568b504c887",
+    "eeprom-dual17-before.bin": "0657876d036a1b9c1ba34903bbf577d490741c851af11916d91efed7f1a1521e"
+  },
+  "samples": [
+    {
+      "time": "2026-10-19T07:56:48.126539",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 1.235,
+      "tcp_requested": true,
+      "result": {
+        "rbcp": true,
+        "tcp24": true,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T07:56:48.142489",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 1.25,
+      "tcp_requested": true,
+      "result": {
+        "rbcp": true,
+        "tcp24": true,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T07:57:17.556554",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 30.657,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T07:57:17.574285",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 30.672,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T07:57:47.564207",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 60.672,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T07:57:47.578809",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 60.688,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T07:58:17.534847",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 90.641,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T07:58:17.538872",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 90.641,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T07:58:47.564936",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 120.672,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T07:58:47.564936",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 120.672,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T07:59:17.465507",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 150.563,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T07:59:17.465507",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 150.563,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T07:59:47.456800",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 180.563,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T07:59:47.456800",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 180.563,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:00:17.452108",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 210.547,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:00:17.467831",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 210.563,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:00:47.427587",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 240.532,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:00:47.443405",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 240.547,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:01:17.455007",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 270.563,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:01:17.455007",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 270.563,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:01:47.629848",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 300.735,
+      "tcp_requested": true,
+      "result": {
+        "rbcp": true,
+        "tcp24": true,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:01:47.645626",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 300.75,
+      "tcp_requested": true,
+      "result": {
+        "rbcp": true,
+        "tcp24": true,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:02:17.550129",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 330.657,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:02:17.565925",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 330.672,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:02:47.569643",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 360.672,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:02:47.569643",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 360.672,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:03:17.592198",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 390.688,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:03:17.592198",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 390.688,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:03:47.572816",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 420.672,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:03:47.577294",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 420.688,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:04:17.641787",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 450.75,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:04:17.648735",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 450.75,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:04:47.616446",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 480.719,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:04:47.620478",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 480.719,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:05:17.624173",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 510.719,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:05:17.631175",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 510.735,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:05:47.626885",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 540.735,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:05:47.632921",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 540.735,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:06:17.594213",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 570.688,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:06:17.594213",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 570.688,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:06:47.673361",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 600.782,
+      "tcp_requested": true,
+      "result": {
+        "rbcp": true,
+        "tcp24": true,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:06:47.689396",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 600.797,
+      "tcp_requested": true,
+      "result": {
+        "rbcp": true,
+        "tcp24": true,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:07:17.627633",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 630.735,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:07:17.635685",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 630.735,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:07:47.632611",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 660.735,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:07:47.641455",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 660.75,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:08:17.551890",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 690.657,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:08:17.567633",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 690.672,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:08:47.622154",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 720.719,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:08:47.633249",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 720.735,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:09:17.690019",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 750.797,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:09:17.695852",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 750.797,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:09:47.576853",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 780.672,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:09:47.576853",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 780.672,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:10:17.792183",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 810.891,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:10:17.795803",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 810.891,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:10:47.676348",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 840.782,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:10:47.676348",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 840.782,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:11:17.605893",
+      "host": "192.168.10.16",
+      "elapsed_seconds": 870.704,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.16",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    },
+    {
+      "time": "2026-10-19T08:11:17.621747",
+      "host": "192.168.10.17",
+      "elapsed_seconds": 870.719,
+      "tcp_requested": false,
+      "result": {
+        "rbcp": true,
+        "tcp24": null,
+        "runtime_ip": "192.168.10.17",
+        "version": "0x60C4F401",
+        "expected_version": "0x60C4F401",
+        "identity_matches": true,
+        "success": true
+      }
+    }
+  ],
+  "counts": {
+    "192.168.10.16": {
+      "RBCP_checks": 30,
+      "RBCP_pass": 30,
+      "TCP_checks": 3,
+      "TCP_pass": 3,
+      "failures": 0
+    },
+    "192.168.10.17": {
+      "RBCP_checks": 30,
+      "RBCP_pass": 30,
+      "TCP_checks": 3,
+      "TCP_pass": 3,
+      "failures": 0
+    }
+  },
+  "limits": [
+    "No power/reset/program/setpoint/EEPROM writes and no automatic recovery.",
+    "Endpoint/EEPROM soak, not external-input TDC performance validation.",
+    "Last programmed variant is established by serialized cohort history, not runtime version alone."
+  ],
+  "EEPROM_start_sha256": {
+    "192.168.10.16": "341c5c207c91e51c634ba3e3090fea4689e4e5ae07725e4996a3e568b504c887",
+    "192.168.10.17": "0657876d036a1b9c1ba34903bbf577d490741c851af11916d91efed7f1a1521e"
+  },
+  "EEPROM_end_sha256": {
+    "192.168.10.16": "341c5c207c91e51c634ba3e3090fea4689e4e5ae07725e4996a3e568b504c887",
+    "192.168.10.17": "0657876d036a1b9c1ba34903bbf577d490741c851af11916d91efed7f1a1521e"
+  },
+  "finished": "2026-10-19T08:11:47.607438",
+  "elapsed_seconds": 900.704
+}

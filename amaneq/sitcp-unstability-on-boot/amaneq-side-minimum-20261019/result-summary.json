@@ -1,0 +1,64 @@
+{
+  "created": "2026-10-19T10:33:37.750188",
+  "phase": "final_results_reviewed_after_restoration",
+  "selected_candidate": "f402",
+  "functional_file": "hdl/toplevel.vhd",
+  "git_added_lines": 6,
+  "git_deleted_lines": 1,
+  "functional_new_lines": 3,
+  "existing_lines_replaced": 1,
+  "counts": {
+    "192.168.10.16": {
+      "successes": 7,
+      "trials": 7,
+      "OFF_seconds_tested": [
+        5,
+        30,
+        120,
+        600
+      ]
+    },
+    "192.168.10.17": {
+      "successes": 6,
+      "trials": 6,
+      "OFF_seconds_tested": [
+        5,
+        120
+      ]
+    }
+  },
+  "goal_started_JST": "2026-10-19T05:05:02",
+  "finished_records_JST": "2026-10-19T10:33:37.750188",
+  "physical_initiating_cause": "unresolved; prior evidence localizes RX recovered-clock/PMA-CDR startup state",
+  "source_sha256": {
+    "WORKSPACE/write_outerreset_final_report.py": "73f211adef8c2b9a92e2f94b38874f6a50894d264fed54caac565e9a8933ea6d",
+    "outerreset-cohort-summary-final.json": "c7f2a3f77afc344ab3f8ed80f66f8ecf0164b55951ef10cc1171e3b591c5ff04",
+    "outerreset-f402-independent-review.json": "3d69eac3584a13afd09d20d41ad4911b87693b522233a82481a79b2e9427afb3",
+    "outerreset-functional-f402.patch": "f7fa9cabcfd20a60f23482028e77b90412855ef2de94fdcc31a9c61a2c999f06",
+    "outerreset-restoration.json": "022001850be046768fef59d9f998cc80d41e6cc5e0e644778bf8f3344a5debad",
+    "outerreset-resource-cleanup.json": "cd4767023f60e4fb6e5dab1ca545769f1656d84fde8575d313a3edfa23475283",
+    "outerreset-packets-final.json": "bd7bd0bb1600ab6270e0d1ffa60897c6d8776e584f591f1eb24b285d4ce5f924"
+  },
+  "limits": [
+    "Minimum among evaluated qualified source candidates, not a mathematical global minimum.",
+    "Diagnostic hold/early LUT controls retain timer logic and do not count as independent shorter production source builds.",
+    "Current two boards and connected-switch topology; no automated cable-late physical trial.",
+    "External-input TDC accuracy/calibration not tested.",
+    "Restored16F202/17factory; candidate not left as operational firmware."
+  ],
+  "rejected_shorter_source_candidate": {
+    "candidate": "f403",
+    "existing_lines_replaced": 1,
+    "reason": "Cold-start failure observed on healthy comparison board; not adopted.",
+    "totals": {
+      "192.168.10.16": {
+        "successes": 3,
+        "trials": 3
+      },
+      "192.168.10.17": {
+        "successes": 1,
+        "trials": 3
+      }
+    }
+  }
+}

@@ -1,0 +1,1653 @@
+{
+  "created": "2026-10-19T09:53:18.881070",
+  "phase": "live_capture_metadata_provisional",
+  "tshark_actual_exit_code": 0,
+  "capture_bytes_at_read": 5367148,
+  "capture_sha256": null,
+  "cases": [
+    {
+      "cold_log": "outerreset-outerf40116a-cold.json",
+      "host": "192.168.10.16",
+      "trial": 1,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T06:47:17.223429",
+      "end": "2026-10-19T06:47:34.280183",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.013884
+      ],
+      "reply_elapsed_seconds": [
+        12.013971
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116a-cold.json",
+      "host": "192.168.10.16",
+      "trial": 2,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T06:47:42.946735",
+      "end": "2026-10-19T06:47:59.973873",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.008902
+      ],
+      "reply_elapsed_seconds": [
+        12.009019
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116a-cold.json",
+      "host": "192.168.10.16",
+      "trial": 3,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T06:48:08.681625",
+      "end": "2026-10-19T06:48:25.720385",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.002587
+      ],
+      "reply_elapsed_seconds": [
+        12.002702
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116back-cold.json",
+      "host": "192.168.10.16",
+      "trial": 1,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:25:17.775816",
+      "end": "2026-10-19T07:25:34.816813",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.009008
+      ],
+      "reply_elapsed_seconds": [
+        12.009125
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116back-cold.json",
+      "host": "192.168.10.16",
+      "trial": 2,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:25:43.501571",
+      "end": "2026-10-19T07:26:00.567253",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.014676
+      ],
+      "reply_elapsed_seconds": [
+        12.014795
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116back-cold.json",
+      "host": "192.168.10.16",
+      "trial": 3,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:26:09.254205",
+      "end": "2026-10-19T07:26:26.299963",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.002526
+      ],
+      "reply_elapsed_seconds": [
+        12.002643
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116by-cold.json",
+      "host": "192.168.10.16",
+      "trial": 1,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:03:04.238837",
+      "end": "2026-10-19T07:04:41.097348",
+      "request_frames": 12,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        2.236839,
+        3.238801,
+        4.237482,
+        12.012191,
+        12.739301,
+        13.742045,
+        74.744721,
+        75.742006,
+        76.744222,
+        80.4885,
+        81.245656,
+        82.244435
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerf40116by-cold.json",
+      "host": "192.168.10.16",
+      "trial": 2,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:04:49.790101",
+      "end": "2026-10-19T07:06:20.048776",
+      "request_frames": 4,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        37.6805,
+        38.681371,
+        39.694496,
+        40.695264
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerf40116by-cold.json",
+      "host": "192.168.10.16",
+      "trial": 3,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:06:28.761318",
+      "end": "2026-10-19T07:08:05.584525",
+      "request_frames": 12,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        2.711314,
+        3.710999,
+        4.723436,
+        12.015472,
+        12.719957,
+        13.71996,
+        74.720699,
+        75.720467,
+        76.720921,
+        80.48891,
+        81.223204,
+        82.223984
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerf40116hold-cold.json",
+      "host": "192.168.10.16",
+      "trial": 1,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:14:07.377684",
+      "end": "2026-10-19T07:15:44.287468",
+      "request_frames": 9,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        12.011281,
+        12.596183,
+        13.599459,
+        74.607532,
+        75.592825,
+        76.591899,
+        80.558093,
+        81.099979,
+        82.100414
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerf40116hold-cold.json",
+      "host": "192.168.10.16",
+      "trial": 2,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:15:52.988469",
+      "end": "2026-10-19T07:17:23.154097",
+      "request_frames": 4,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        37.494036,
+        38.492507,
+        39.491506,
+        40.490632
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerf40116hold-cold.json",
+      "host": "192.168.10.16",
+      "trial": 3,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:17:31.827349",
+      "end": "2026-10-19T07:19:08.738550",
+      "request_frames": 12,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        2.651882,
+        3.650973,
+        4.651444,
+        12.016909,
+        12.648017,
+        13.647586,
+        74.650662,
+        75.649864,
+        76.64967,
+        80.536513,
+        81.142919,
+        82.142308
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerf40116long-cold.json",
+      "host": "192.168.10.16",
+      "trial": 1,
+      "success": true,
+      "off_seconds": 30,
+      "power_on_ack": "2026-10-19T07:27:42.966787",
+      "end": "2026-10-19T07:28:00.010487",
+      "request_frames": 4,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        2.011211,
+        3.007901,
+        4.007648,
+        12.012324
+      ],
+      "reply_elapsed_seconds": [
+        12.012436
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116long-cold.json",
+      "host": "192.168.10.16",
+      "trial": 2,
+      "success": true,
+      "off_seconds": 120,
+      "power_on_ack": "2026-10-19T07:30:03.718151",
+      "end": "2026-10-19T07:30:20.763999",
+      "request_frames": 4,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        2.251562,
+        3.266634,
+        4.266894,
+        12.006471
+      ],
+      "reply_elapsed_seconds": [
+        12.006588
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116long-cold.json",
+      "host": "192.168.10.16",
+      "trial": 3,
+      "success": true,
+      "off_seconds": 600,
+      "power_on_ack": "2026-10-19T07:40:24.446310",
+      "end": "2026-10-19T07:40:41.476034",
+      "request_frames": 4,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        2.029439,
+        3.027221,
+        4.032178,
+        12.012142
+      ],
+      "reply_elapsed_seconds": [
+        12.012251
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 1,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:42:01.022706",
+      "end": "2026-10-19T07:42:18.074007",
+      "request_frames": 4,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        1.947819,
+        2.951205,
+        3.951165,
+        12.009347
+      ],
+      "reply_elapsed_seconds": [
+        12.009471
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 2,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:42:26.770005",
+      "end": "2026-10-19T07:42:43.813704",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.002513
+      ],
+      "reply_elapsed_seconds": [
+        12.00264
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 3,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:42:52.503193",
+      "end": "2026-10-19T07:43:09.532703",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.010269
+      ],
+      "reply_elapsed_seconds": [
+        12.010388
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 4,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:43:18.235506",
+      "end": "2026-10-19T07:43:35.265716",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.007079
+      ],
+      "reply_elapsed_seconds": [
+        12.007201
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 5,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:43:43.953760",
+      "end": "2026-10-19T07:44:01.011941",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.004134
+      ],
+      "reply_elapsed_seconds": [
+        12.004248
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 6,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:44:09.708830",
+      "end": "2026-10-19T07:44:26.743204",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.00322
+      ],
+      "reply_elapsed_seconds": [
+        12.00331
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 7,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:44:35.441784",
+      "end": "2026-10-19T07:44:52.489182",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.007123
+      ],
+      "reply_elapsed_seconds": [
+        12.007217
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 8,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:45:01.187838",
+      "end": "2026-10-19T07:45:18.218732",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.00287
+      ],
+      "reply_elapsed_seconds": [
+        12.002943
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 9,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:45:26.905669",
+      "end": "2026-10-19T07:45:43.958763",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.010859
+      ],
+      "reply_elapsed_seconds": [
+        12.01097
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 10,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:45:52.653386",
+      "end": "2026-10-19T07:46:09.712060",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.007291
+      ],
+      "reply_elapsed_seconds": [
+        12.007414
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 11,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:46:18.425520",
+      "end": "2026-10-19T07:46:35.462394",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.006992
+      ],
+      "reply_elapsed_seconds": [
+        12.007076
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 12,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:46:44.151893",
+      "end": "2026-10-19T07:47:01.192217",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.007537
+      ],
+      "reply_elapsed_seconds": [
+        12.007658
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 13,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:47:09.899278",
+      "end": "2026-10-19T07:47:26.942803",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.006703
+      ],
+      "reply_elapsed_seconds": [
+        12.006818
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 14,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:47:35.649898",
+      "end": "2026-10-19T07:47:52.687745",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.0129
+      ],
+      "reply_elapsed_seconds": [
+        12.013031
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 15,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:48:01.388556",
+      "end": "2026-10-19T07:48:18.439443",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.017824
+      ],
+      "reply_elapsed_seconds": [
+        12.0179
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 16,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:48:27.172188",
+      "end": "2026-10-19T07:48:44.194628",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.007702
+      ],
+      "reply_elapsed_seconds": [
+        12.007821
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 17,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:48:52.914738",
+      "end": "2026-10-19T07:49:09.968068",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.013234
+      ],
+      "reply_elapsed_seconds": [
+        12.01335
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40116more-cold.json",
+      "host": "192.168.10.16",
+      "trial": 18,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:49:18.659359",
+      "end": "2026-10-19T07:49:35.690495",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.006799
+      ],
+      "reply_elapsed_seconds": [
+        12.006882
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40117a-cold.json",
+      "host": "192.168.10.17",
+      "trial": 1,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T06:54:39.757264",
+      "end": "2026-10-19T06:54:56.793482",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.003296
+      ],
+      "reply_elapsed_seconds": [
+        12.003419
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40117a-cold.json",
+      "host": "192.168.10.17",
+      "trial": 2,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T06:55:15.777173",
+      "end": "2026-10-19T06:55:32.824993",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.002244
+      ],
+      "reply_elapsed_seconds": [
+        12.002351
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40117a-cold.json",
+      "host": "192.168.10.17",
+      "trial": 3,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T06:55:51.784543",
+      "end": "2026-10-19T06:56:08.821123",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.003592
+      ],
+      "reply_elapsed_seconds": [
+        12.003715
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40117more-cold.json",
+      "host": "192.168.10.17",
+      "trial": 1,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:51:03.943944",
+      "end": "2026-10-19T07:51:20.983881",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.005847
+      ],
+      "reply_elapsed_seconds": [
+        12.005939
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40117more-cold.json",
+      "host": "192.168.10.17",
+      "trial": 2,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:51:39.888333",
+      "end": "2026-10-19T07:51:56.921623",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.003147
+      ],
+      "reply_elapsed_seconds": [
+        12.003276
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40117more-cold.json",
+      "host": "192.168.10.17",
+      "trial": 3,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:52:15.877522",
+      "end": "2026-10-19T07:52:32.924391",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.00534
+      ],
+      "reply_elapsed_seconds": [
+        12.005464
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40117more-cold.json",
+      "host": "192.168.10.17",
+      "trial": 4,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:52:51.905112",
+      "end": "2026-10-19T07:53:08.946271",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.006103
+      ],
+      "reply_elapsed_seconds": [
+        12.00623
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40117more-cold.json",
+      "host": "192.168.10.17",
+      "trial": 5,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:53:27.971602",
+      "end": "2026-10-19T07:53:45.002528",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.005264
+      ],
+      "reply_elapsed_seconds": [
+        12.005358
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40117more-cold.json",
+      "host": "192.168.10.17",
+      "trial": 6,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:54:04.586688",
+      "end": "2026-10-19T07:54:21.633478",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.005921
+      ],
+      "reply_elapsed_seconds": [
+        12.006036
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40117more-cold.json",
+      "host": "192.168.10.17",
+      "trial": 7,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:54:40.566936",
+      "end": "2026-10-19T07:54:57.611026",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.01565
+      ],
+      "reply_elapsed_seconds": [
+        12.015772
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40117more-cold.json",
+      "host": "192.168.10.17",
+      "trial": 8,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:55:16.583382",
+      "end": "2026-10-19T07:55:33.607316",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.006914
+      ],
+      "reply_elapsed_seconds": [
+        12.007031
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40117more-cold.json",
+      "host": "192.168.10.17",
+      "trial": 9,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T07:55:52.621912",
+      "end": "2026-10-19T07:56:09.649004",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.007129
+      ],
+      "reply_elapsed_seconds": [
+        12.007272
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40216a-cold.json",
+      "host": "192.168.10.16",
+      "trial": 1,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T08:31:11.455455",
+      "end": "2026-10-19T08:31:28.483284",
+      "request_frames": 4,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        2.014233,
+        3.027269,
+        4.029186,
+        12.011295
+      ],
+      "reply_elapsed_seconds": [
+        12.01138
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40216a-cold.json",
+      "host": "192.168.10.16",
+      "trial": 2,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T08:31:37.154659",
+      "end": "2026-10-19T08:31:54.214530",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.016193
+      ],
+      "reply_elapsed_seconds": [
+        12.016276
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40216a-cold.json",
+      "host": "192.168.10.16",
+      "trial": 3,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T08:32:02.922920",
+      "end": "2026-10-19T08:32:19.967977",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.002934
+      ],
+      "reply_elapsed_seconds": [
+        12.003056
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40216backlong-cold.json",
+      "host": "192.168.10.16",
+      "trial": 1,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T08:57:15.990749",
+      "end": "2026-10-19T08:57:33.052310",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.015321
+      ],
+      "reply_elapsed_seconds": [
+        12.015404
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40216backlong-cold.json",
+      "host": "192.168.10.16",
+      "trial": 2,
+      "success": true,
+      "off_seconds": 30,
+      "power_on_ack": "2026-10-19T08:58:06.856058",
+      "end": "2026-10-19T08:58:23.897584",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.01582
+      ],
+      "reply_elapsed_seconds": [
+        12.015941
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40216backlong-cold.json",
+      "host": "192.168.10.16",
+      "trial": 3,
+      "success": true,
+      "off_seconds": 120,
+      "power_on_ack": "2026-10-19T09:00:27.582190",
+      "end": "2026-10-19T09:00:44.620038",
+      "request_frames": 4,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        2.394497,
+        3.394071,
+        4.392557,
+        12.003168
+      ],
+      "reply_elapsed_seconds": [
+        12.003247
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40216backlong-cold.json",
+      "host": "192.168.10.16",
+      "trial": 4,
+      "success": true,
+      "off_seconds": 600,
+      "power_on_ack": "2026-10-19T09:10:48.294214",
+      "end": "2026-10-19T09:11:05.338844",
+      "request_frames": 4,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        2.188853,
+        3.187755,
+        4.187954,
+        12.013485
+      ],
+      "reply_elapsed_seconds": [
+        12.013595
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40216by-cold.json",
+      "host": "192.168.10.16",
+      "trial": 1,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T08:45:33.876988",
+      "end": "2026-10-19T08:47:10.717047",
+      "request_frames": 12,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        2.095091,
+        3.097163,
+        4.094375,
+        12.009681,
+        12.594288,
+        13.592762,
+        74.594742,
+        75.594421,
+        76.594582,
+        80.498501,
+        81.098226,
+        82.098119
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerf40216by-cold.json",
+      "host": "192.168.10.16",
+      "trial": 2,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T08:47:19.551187",
+      "end": "2026-10-19T08:48:49.714820",
+      "request_frames": 4,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        37.426569,
+        38.426049,
+        39.42432,
+        40.424134
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerf40216by-cold.json",
+      "host": "192.168.10.16",
+      "trial": 3,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T08:48:58.393215",
+      "end": "2026-10-19T08:50:35.265866",
+      "request_frames": 12,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        2.587276,
+        3.587136,
+        4.585083,
+        12.013868,
+        12.579406,
+        13.577189,
+        74.581702,
+        75.581836,
+        76.579602,
+        80.501856,
+        81.07668,
+        82.076319
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerf40216raw-cold.json",
+      "host": "192.168.10.16",
+      "trial": 1,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T08:22:43.018012",
+      "end": "2026-10-19T08:23:00.052968",
+      "request_frames": 4,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        1.962079,
+        2.956638,
+        3.958832,
+        12.00245
+      ],
+      "reply_elapsed_seconds": [
+        12.002584
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40216raw-cold.json",
+      "host": "192.168.10.16",
+      "trial": 2,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T08:23:08.726948",
+      "end": "2026-10-19T08:23:25.775147",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.010051
+      ],
+      "reply_elapsed_seconds": [
+        12.010172
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40216raw-cold.json",
+      "host": "192.168.10.16",
+      "trial": 3,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T08:23:34.489236",
+      "end": "2026-10-19T08:23:51.541095",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.012628
+      ],
+      "reply_elapsed_seconds": [
+        12.012776
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40217a-cold.json",
+      "host": "192.168.10.17",
+      "trial": 1,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T08:38:33.432316",
+      "end": "2026-10-19T08:38:50.473893",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.012342
+      ],
+      "reply_elapsed_seconds": [
+        12.012411
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40217a-cold.json",
+      "host": "192.168.10.17",
+      "trial": 2,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T08:39:09.426152",
+      "end": "2026-10-19T08:39:26.471103",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.013068
+      ],
+      "reply_elapsed_seconds": [
+        12.013185
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40217a-cold.json",
+      "host": "192.168.10.17",
+      "trial": 3,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T08:39:45.397079",
+      "end": "2026-10-19T08:40:02.406319",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.002751
+      ],
+      "reply_elapsed_seconds": [
+        12.002834
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40316a-cold.json",
+      "host": "192.168.10.16",
+      "trial": 1,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T09:39:04.809504",
+      "end": "2026-10-19T09:39:21.862624",
+      "request_frames": 4,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        2.175419,
+        3.17367,
+        4.173475,
+        12.012919
+      ],
+      "reply_elapsed_seconds": [
+        12.013054
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40316a-cold.json",
+      "host": "192.168.10.16",
+      "trial": 2,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T09:39:30.553165",
+      "end": "2026-10-19T09:39:47.578002",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.007587
+      ],
+      "reply_elapsed_seconds": [
+        12.007669
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40316a-cold.json",
+      "host": "192.168.10.16",
+      "trial": 3,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T09:39:56.293184",
+      "end": "2026-10-19T09:40:13.332054",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.01049
+      ],
+      "reply_elapsed_seconds": [
+        12.010605
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerf40317a-cold.json",
+      "host": "192.168.10.17",
+      "trial": 1,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T09:46:14.078259",
+      "end": "2026-10-19T09:47:50.947379",
+      "request_frames": 9,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        12.005162,
+        12.907142,
+        13.906013,
+        74.893684,
+        75.8919,
+        76.892902,
+        80.504869,
+        81.401177,
+        82.400838
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerf40317a-cold.json",
+      "host": "192.168.10.17",
+      "trial": 2,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T09:48:09.910044",
+      "end": "2026-10-19T09:49:40.188085",
+      "request_frames": 5,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        27.571837,
+        28.572665,
+        29.571913,
+        30.569331,
+        31.569893
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerf40317a-cold.json",
+      "host": "192.168.10.17",
+      "trial": 3,
+      "success": true,
+      "off_seconds": 120,
+      "power_on_ack": "2026-10-19T09:51:54.145434",
+      "end": "2026-10-19T09:52:11.198217",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.00748
+      ],
+      "reply_elapsed_seconds": [
+        12.007612
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerfact16long-cold.json",
+      "host": "192.168.10.16",
+      "trial": 1,
+      "success": false,
+      "off_seconds": 30,
+      "power_on_ack": "2026-10-19T05:31:41.213981",
+      "end": "2026-10-19T05:33:18.135634",
+      "request_frames": 9,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        12.012263,
+        12.768647,
+        13.767645,
+        74.762503,
+        75.761384,
+        76.761026,
+        80.531636,
+        81.261105,
+        82.259881
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerfact16long-cold.json",
+      "host": "192.168.10.16",
+      "trial": 2,
+      "success": false,
+      "off_seconds": 120,
+      "power_on_ack": "2026-10-19T05:35:21.834270",
+      "end": "2026-10-19T05:36:58.764862",
+      "request_frames": 9,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        12.010708,
+        12.636192,
+        13.636206,
+        74.63779,
+        75.636992,
+        76.636858,
+        80.542307,
+        81.150579,
+        82.13644
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerfact16long-cold.json",
+      "host": "192.168.10.16",
+      "trial": 3,
+      "success": false,
+      "off_seconds": 600,
+      "power_on_ack": "2026-10-19T05:47:02.557008",
+      "end": "2026-10-19T05:48:39.400727",
+      "request_frames": 9,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        12.014783,
+        12.912898,
+        13.913469,
+        74.92045,
+        75.918191,
+        76.919449,
+        80.525208,
+        81.422705,
+        82.422529
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerfact16q-cold.json",
+      "host": "192.168.10.16",
+      "trial": 1,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T05:23:48.358367",
+      "end": "2026-10-19T05:25:25.182390",
+      "request_frames": 12,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        2.120656,
+        3.115184,
+        4.116482,
+        12.003319,
+        12.626355,
+        13.625609,
+        74.61236,
+        75.611158,
+        76.626685,
+        80.483783,
+        81.125306,
+        82.111579
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerfact16q-cold.json",
+      "host": "192.168.10.16",
+      "trial": 2,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T05:25:33.851799",
+      "end": "2026-10-19T05:27:04.078545",
+      "request_frames": 4,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        37.617803,
+        38.619197,
+        39.63144,
+        40.633082
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerfact16q-cold.json",
+      "host": "192.168.10.16",
+      "trial": 3,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T05:27:12.792769",
+      "end": "2026-10-19T05:28:49.635159",
+      "request_frames": 12,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        2.690327,
+        3.690733,
+        4.691682,
+        12.003571,
+        12.687222,
+        13.687302,
+        74.691552,
+        75.689744,
+        76.677019,
+        80.484238,
+        81.184029,
+        82.183735
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "outerreset-outerfact17long-cold.json",
+      "host": "192.168.10.17",
+      "trial": 1,
+      "success": true,
+      "off_seconds": 30,
+      "power_on_ack": "2026-10-19T05:49:45.493959",
+      "end": "2026-10-19T05:50:02.531030",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.005031
+      ],
+      "reply_elapsed_seconds": [
+        12.005157
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerfact17long-cold.json",
+      "host": "192.168.10.17",
+      "trial": 2,
+      "success": true,
+      "off_seconds": 120,
+      "power_on_ack": "2026-10-19T05:52:16.540725",
+      "end": "2026-10-19T05:52:33.589054",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.0027
+      ],
+      "reply_elapsed_seconds": [
+        12.002821
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerfact17long-cold.json",
+      "host": "192.168.10.17",
+      "trial": 3,
+      "success": true,
+      "off_seconds": 600,
+      "power_on_ack": "2026-10-19T06:02:47.562017",
+      "end": "2026-10-19T06:03:04.591490",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.004346
+      ],
+      "reply_elapsed_seconds": [
+        12.004473
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerfact17q-cold.json",
+      "host": "192.168.10.17",
+      "trial": 1,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T05:29:29.387745",
+      "end": "2026-10-19T05:29:46.417921",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.005091
+      ],
+      "reply_elapsed_seconds": [
+        12.005175
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerfact17q-cold.json",
+      "host": "192.168.10.17",
+      "trial": 2,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T05:30:05.379337",
+      "end": "2026-10-19T05:30:22.413636",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.002863
+      ],
+      "reply_elapsed_seconds": [
+        12.002953
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "outerreset-outerfact17q-cold.json",
+      "host": "192.168.10.17",
+      "trial": 3,
+      "success": true,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T05:30:41.369504",
+      "end": "2026-10-19T05:30:58.407473",
+      "request_frames": 1,
+      "reply_frames": 1,
+      "request_elapsed_seconds": [
+        12.005119
+      ],
+      "reply_elapsed_seconds": [
+        12.005198
+      ],
+      "negative_has_actual_request": null
+    },
+    {
+      "cold_log": "deepreset-native-outerfact16a-cold3.json",
+      "host": "192.168.10.16",
+      "trial": 1,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T05:18:21.406237",
+      "end": "2026-10-19T05:19:54.942483",
+      "request_frames": 9,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        0.00258,
+        0.578095,
+        1.577388,
+        62.578502,
+        63.578283,
+        64.578128,
+        68.481921,
+        69.067513,
+        70.067614
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "deepreset-native-outerfact16a-cold3.json",
+      "host": "192.168.10.16",
+      "trial": 2,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T05:20:03.645337",
+      "end": "2026-10-19T05:21:38.207883",
+      "request_frames": 6,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        28.834898,
+        29.827468,
+        30.833595,
+        34.754196,
+        35.327724,
+        36.326354
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    },
+    {
+      "cold_log": "deepreset-native-outerfact16a-cold3.json",
+      "host": "192.168.10.16",
+      "trial": 3,
+      "success": false,
+      "off_seconds": 5,
+      "power_on_ack": "2026-10-19T05:21:46.905674",
+      "end": "2026-10-19T05:23:21.385447",
+      "request_frames": 6,
+      "reply_frames": 0,
+      "request_elapsed_seconds": [
+        57.077769,
+        58.07708,
+        59.076919,
+        60.748815,
+        61.569552,
+        62.566304
+      ],
+      "reply_elapsed_seconds": [],
+      "negative_has_actual_request": true
+    }
+  ],
+  "skipped_incomplete": [],
+  "source_sha256": {
+    "WORKSPACE/analyze_outerreset_packets.py": "271ad02c00fb9c5031830afe18b1ce0347fb18c611ab6430c7d1ac22221be815",
+    "outerreset-outerf40116a-cold.json": "ac1769a4320596e87440accaeb2d1acf45c2d0514741f09f3239c16f1372eef7",
+    "outerreset-outerf40116back-cold.json": "0701bd5ea5e39db021219d46062ae86eaad35767ce39ec3c8769041c00b62f77",
+    "outerreset-outerf40116by-cold.json": "9ddffe820f02e404b40d0637e9130625fc0e6e82deb0dc5dd5f4dd76d673c2e5",
+    "outerreset-outerf40116hold-cold.json": "0262544f8d49668913aea368d730c335d32daea74ee17e1bf2f65ea161c44b5c",
+    "outerreset-outerf40116long-cold.json": "b336a49badc032f45f14f945b35541268b62160c5391ecdac7e163ae2a54570d",
+    "outerreset-outerf40116more-cold.json": "1efa29948af3e30207ee3e0cf8b1e0ae301c39cfd068ff6f2e3ca0ffe0d1b580",
+    "outerreset-outerf40117a-cold.json": "85a213fd0f1c7f9b2ed7cddc374680e18909c737600c3b60b8ff01fb9d7470ce",
+    "outerreset-outerf40117more-cold.json": "ad2c1a0772f4756d5460c4b271e2262f7c3daed8fc80134d3fabd099d94d94d3",
+    "outerreset-outerf40216a-cold.json": "e680bbb106cb87e86b4372858f430871a40bbec7dd9888ba0e5f863ad7118dba",
+    "outerreset-outerf40216backlong-cold.json": "205f973206f0c906902387f646277c89db179650b8ca82773c6f3ef974fda15c",
+    "outerreset-outerf40216by-cold.json": "fd3e087dd7d14aa42f876be2924e4b566f37edd8b69bcbf07cafaad8662827d5",
+    "outerreset-outerf40216raw-cold.json": "6d2055d56275c36b1f48be22a29a0a4032bc1f4bdb3f49c03a7d4ee3d73ac0c1",
+    "outerreset-outerf40217a-cold.json": "e0eaa054abbdafa4f2af90b87919b279a04110d676756ee8ce835aacdaea56e5",
+    "outerreset-outerf40316a-cold.json": "ba1e06f49f447712dde69d0c609e24ed58eb81ef29eda1c251f6869d9771f2a1",
+    "outerreset-outerf40317a-cold.json": "f2a6186c64681aa4dffde2294e1352f9be239624bd2a873ddca8ba3c8518a018",
+    "outerreset-outerfact16long-cold.json": "057bb639f2ed5e3978521e232ea5880cdd7b1dc5625a5304b2845a60d3bd85de",
+    "outerreset-outerfact16q-cold.json": "e48bd15899af81268aadf447181245226450355a252d51eb32c5055cda6db45e",
+    "outerreset-outerfact17long-cold.json": "052756403b1d3ba00b650af84e468706b0c20b70c2fa47b9abd948ec01c68d5c",
+    "outerreset-outerfact17q-cold.json": "9d1ce1d2ba56da6ae015f27ddcf3bc499d2fea0be2c9dae9094329154813600d",
+    "deepreset-native-outerfact16a-cold3.json": "484f3729501dc08cf246af143ad79b8493096dfd66d5e2a98b9b7498dd2f199c"
+  },
+  "limits": [
+    "ARP API invocation is not evidence of wire transmission; actual host requests and board replies counted here.",
+    "No reply to a transmitted request supports endpoint unreachability but does not uniquely identify analog CDR failure.",
+    "Power timestamps are control acknowledgements, not measured rail edges.",
+    "No packet payload or raw capture exported."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "started": "2026-10-19T07:57:15.668491",
+  "phase": "fresh_netlist_inspected_manual_configuration_required",
+  "hardware_operations": false,
+  "source_sha256": {
+    "WORKSPACE/run_outerreset_inspection.py": "f6791b7daf5905873044d329a35e1973df87fed23979349dd72dbf1bbfb1eaa3",
+    "outerreset-f402-base-review.json": "faaf8b21761d2a3b38c6fa63eea1a3a69dddf9571b28d97fc1d2489e6c9095ed",
+    "inspect-outerreset-f402.tcl": "dc9e3faf86a4321dc9e6988d18314a7a2bc5c3f4602be4c6284bf207cd5e8b7d",
+    "lrtdc-outerreset-f402/build/outerreset-f402/lrtdc-outerreset-f402.dcp": "8531add1080417921b8254edb676420aa5b9280f30fd048b8fda2094ee2c1124"
+  },
+  "actual_exit_code": 0,
+  "inspection_text": "outerreset-f402-netlist-inspection.txt",
+  "inspection_text_sha256": "05a171f1bc1743ea12f4213caae6de0b75333c4db52582da6dec63fef13244b3",
+  "finished": "2026-10-19T07:59:09.104682"
+}

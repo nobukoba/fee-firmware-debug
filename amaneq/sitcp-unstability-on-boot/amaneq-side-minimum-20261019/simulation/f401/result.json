@@ -1,0 +1,50 @@
+{
+  "created": "2026-10-19T05:10:52.821782",
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xvhdl.bat",
+        "--2008",
+        "timer.vhd",
+        "tb.vhd"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xelab.bat",
+        "outerreset_tb",
+        "-s",
+        "outerreset_sim"
+      ],
+      "actual_exit_code": 0
+    },
+    {
+      "command": [
+        "C:/Xilinx/Vivado/2023.2/bin/xsim.bat",
+        "outerreset_sim",
+        "-runall"
+      ],
+      "actual_exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "WORKSPACE/simulate_outerreset_f401.py": "674beb35ffb0f4185866d368a6e4d094b07a906ed0b831f999bc8902cadedefe",
+    "lrtdc-outerreset-f401/hdl/common/main/RstDelayTimer.vhd": "2811ffd9f2d48f3ed5f05d1beea53e498aee3aa354606075d0d6b8fef155ddde",
+    "experiments/outerreset-f401-sim/timer.vhd": "2811ffd9f2d48f3ed5f05d1beea53e498aee3aa354606075d0d6b8fef155ddde",
+    "experiments/outerreset-f401-sim/tb.vhd": "f70c00eece0a83cc09c7822287820dc47cb1f2750e0f702e5a623e2d581c4f0b"
+  },
+  "real_design_math": {
+    "clock_MHz": 125,
+    "first_preset": 125000000,
+    "second_preset": 137500000,
+    "reset_free_SYS_edges_before_pulse": 125000001,
+    "pulse_width_SYS_cycles": 12500000,
+    "pulse_seconds": 0.1
+  },
+  "limits": [
+    "Scaled-period simulation checks logic,asynchronousPOR,reset-freegap,pulsewidth,rearming,andnoautonomousrepeat. Realpresets checkedarithmetically.",
+    "No analogGTX,PCS orhardware efficacy model."
+  ]
+}

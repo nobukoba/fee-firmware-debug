@@ -1,0 +1,34 @@
+{
+  "created": "2026-10-19T09:56:39.636276",
+  "phase": "existing_global_timer_outputs_are_exact_complements",
+  "facts": [
+    "Global module_ready is not pwr_on_reset; both come from the same registered signal.",
+    "These two outputs provide no separate counter threshold or delayed endpoint.",
+    "During ideal monotonic startup, raw/globalPOR pass through only the three listed logical states. With initial reset asserted and final reset released, a combinational function of only these signals chooses either early release or original delayed release, not two finite reset cycles.",
+    "F402 adds one existing timer instance for the intermediate1s threshold and reuses global POR for the final endpoint."
+  ],
+  "ideal_startup_states": [
+    {
+      "raw": 1,
+      "global_POR": 1
+    },
+    {
+      "raw": 0,
+      "global_POR": 1
+    },
+    {
+      "raw": 0,
+      "global_POR": 0
+    }
+  ],
+  "limits": [
+    "Does not exclude other designs using additional existing state or different interfaces. Not a mathematical global line-count minimum.",
+    "Propagation glitches are not treated as a reliable additional reset phase.",
+    "Hardware efficacy must come from separate complete cold/soak evidence."
+  ],
+  "source_sha256": {
+    "WORKSPACE/analyze_outerreset_timer_outputs.py": "87f1bfddba740b006e47178cf564eb699f6f874450f9bf6d0ccbef839a7f2f24",
+    "lrtdc-outerreset-f402/hdl/common/main/RstDelayTimer.vhd": "2811ffd9f2d48f3ed5f05d1beea53e498aee3aa354606075d0d6b8fef155ddde",
+    "lrtdc-outerreset-f402/hdl/toplevel.vhd": "ffc0a42f8cc9ed5d180edf832a05ef00048204d2662bb933fa11e134d2cc646d"
+  }
+}

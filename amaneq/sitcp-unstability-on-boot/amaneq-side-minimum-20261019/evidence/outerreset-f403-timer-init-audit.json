@@ -1,0 +1,28 @@
+{
+  "created": "2026-10-19T09:33:01.252212",
+  "phase": "physical_timer_counter_and_reset_output_initial_values_verified",
+  "candidate": "f403",
+  "cases": [
+    {
+      "instance": "u_KeepPwrOnRst",
+      "counter_width": 32,
+      "configured_counter_INIT_decimal": 268435455,
+      "configured_counter_INIT_hex": "0xfffffff",
+      "reset_output_INIT": 1,
+      "all_counter_FF_INITs_match_asynchronous_preset_or_clear_type": true
+    }
+  ],
+  "source_sha256": {
+    "WORKSPACE/audit_outerreset_timer_init_v3.py": "b6bf684ace8868e75bec21e108bbc6660e049d1c30493b441d54b32c44de9293",
+    "lrtdc-outerreset-f403/build/outerreset-f403/init-FDPE-NAME.tcllist": "1d2b52b59aa2909f759503751dce22b67a1a9ec35a36305d4200474591a806e2",
+    "lrtdc-outerreset-f403/build/outerreset-f403/init-FDPE-INIT.tcllist": "7d3650a9fbffa599bc8d9e27f4066d100e4e8dad9d7b035c6ac66360575d4f26",
+    "lrtdc-outerreset-f403/build/outerreset-f403/init-FDCE-NAME.tcllist": "97b7fc22fd5896f70dc15401f23806955561a6bda79990a1becbc6ade6517af4",
+    "lrtdc-outerreset-f403/build/outerreset-f403/init-FDCE-INIT.tcllist": "42987e5bfd0fbceef158765582999f010b32c0576f72b3b25f52fba33d37c59d",
+    "outerreset-f403-inspection.json": "8c5634e502971b7cef401affa1c7bba7559aacb3ff0b6aa42a8455fa430e199f"
+  },
+  "limits": [
+    "Physical configuration INIT values, not an oscilloscope reset waveform measurement.",
+    "Rules out a zero-initialized global/new counter in these exact compiled images. It does not prove a unique physical initiating cause.",
+    "Clock periods/dependencies and live cold outcomes are checked separately."
+  ]
+}

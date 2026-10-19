@@ -1,0 +1,23 @@
+{
+  "created": "2026-10-19T08:31:57.272392",
+  "stage": "before_F403_source_hardware",
+  "observations": {
+    "F402_early_diagnostic_16": "3/3",
+    "F401_enabled_16": "27/27",
+    "F401_enabled_17": "12/12",
+    "F401_bypass_16": "0/3",
+    "F401_hold_16": "0/3"
+  },
+  "prediction": "If routing public PCS reset to raw SYS reset, independently of the delayed global POR, is sufficient, source-built F403 without added timers will repeatedly start both boards including long OFF. Otherwise unused diagnostic timer or implementation differences may matter.",
+  "mechanism_hypotheses": [
+    "Native Ethernet startup order relative to global SiTCP POR/CPLL/TX user-clock initialization affects RX startup state.",
+    "Board-specific analog power/reference/recovered-clock startup behavior may trigger the timing sensitivity."
+  ],
+  "not_established": [
+    "Physical component-level initiating cause",
+    "A universal manufacturer reset defect",
+    "External TDC accuracy or field reliability",
+    "Late-fault automatic recovery"
+  ],
+  "limits": "F402 raw diagnostic retains extra timer. Independent one-line source STA/DRC, physical reset check and both-board cold/soak are still required."
+}

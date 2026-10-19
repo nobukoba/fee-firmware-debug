@@ -1,0 +1,30 @@
+--- a/hdl/toplevel.vhd
++++ b/hdl/toplevel.vhd
+@@ -444,6 +444,7 @@
+   -- SFP transceiver -----------------------------------------------------------------------
+   constant kPcsPmaLinkStatus  : integer:= 0;
+   signal pcs_pma_status       : std_logic_vector(15 downto 0);
++  signal pcs_wait : std_logic;
+ 
+   constant kWidthPhyAddr  : integer:= 5;
+   constant kMiiPhyad      : std_logic_vector(kWidthPhyAddr-1 downto 0):= "00000";
+@@ -1326,6 +1327,10 @@
+         );
+   end generate;
+ 
++  -- Reuse the global POR timer: release PCS, then reset again from 1s until POR ends.
++  u_PcsWait : entity mylib.RstDelayTimer
++    port map(raw_pwr_on_reset, std_logic_vector(to_unsigned(125000000, 32)), clk_sys, open, pcs_wait);
++
+   -- SFP transceiver -------------------------------------------------------------------
+   u_MiiRstTimer_Inst : entity mylib.MiiRstTimer
+     port map(
+@@ -1438,7 +1443,7 @@
+         -- General IO's
+         ---------------
+         status_vector        => pcs_pma_status,
+-        reset                => pwr_on_reset
++        reset                => raw_pwr_on_reset or ((not pcs_wait) and pwr_on_reset)
+         );
+   end generate;
+ 

@@ -1,0 +1,192 @@
+{
+  "created": "2026-10-19T06:41:14.834071",
+  "phase": "independent_review_passed_ready_for_hardware",
+  "runtime": "0x60C4F401",
+  "variants": {
+    "enabled": {
+      "mcs": "outerreset-f401-matched/enabled/lrtdc-f401.mcs",
+      "mcs_sha256": "e1e819d116a5b9d8f7af728dc2d49701ca1889283a56d4ce958826a1e02235d8",
+      "expected_full_flash_sha256": "cac20b9aafe03702f793f39e43fdafbe4f453ba315650dbd8503705344c1ad57",
+      "gate_INIT": 186,
+      "wns_ns": 0.068,
+      "whs_ns": 0.015,
+      "drc": [
+        [
+          "CHECK-3",
+          "Warning",
+          "1"
+        ],
+        [
+          "DPIP-1",
+          "Warning",
+          "384"
+        ],
+        [
+          "REQP-1839",
+          "Warning",
+          "12"
+        ],
+        [
+          "REQP-1840",
+          "Warning",
+          "20"
+        ],
+        [
+          "RTSTAT-10",
+          "Warning",
+          "1"
+        ]
+      ]
+    },
+    "bypass": {
+      "mcs": "outerreset-f401-matched/bypass/lrtdc-f401.mcs",
+      "mcs_sha256": "68f6fac22d64106f4964670b57c0abdd69bca9d72f9633ec3142939b79c3538a",
+      "expected_full_flash_sha256": "8e845f28908323569d01a8ec102fd24bf3a57e7b4364f3ddd6ffb10514ae77ba",
+      "gate_INIT": 170,
+      "wns_ns": 0.068,
+      "whs_ns": 0.015,
+      "drc": [
+        [
+          "CHECK-3",
+          "Warning",
+          "1"
+        ],
+        [
+          "DPIP-1",
+          "Warning",
+          "384"
+        ],
+        [
+          "PDCN-1569",
+          "Warning",
+          "2"
+        ],
+        [
+          "REQP-1839",
+          "Warning",
+          "12"
+        ],
+        [
+          "REQP-1840",
+          "Warning",
+          "20"
+        ],
+        [
+          "RTSTAT-10",
+          "Warning",
+          "1"
+        ]
+      ]
+    },
+    "hold": {
+      "mcs": "outerreset-f401-matched/hold/lrtdc-f401.mcs",
+      "mcs_sha256": "b7f94646bdbb713d90366c8a19b29f3988cc2e1a0b4f1fa69161e51940224ae4",
+      "expected_full_flash_sha256": "2c3b30d09e6167e413c879ce9b4ceed8b0dea1145ab3a948f18062a32987dafd",
+      "gate_INIT": 240,
+      "wns_ns": 0.068,
+      "whs_ns": 0.015,
+      "drc": [
+        [
+          "CHECK-3",
+          "Warning",
+          "1"
+        ],
+        [
+          "DPIP-1",
+          "Warning",
+          "384"
+        ],
+        [
+          "PDCN-1569",
+          "Warning",
+          "2"
+        ],
+        [
+          "REQP-1839",
+          "Warning",
+          "12"
+        ],
+        [
+          "REQP-1840",
+          "Warning",
+          "20"
+        ],
+        [
+          "RTSTAT-10",
+          "Warning",
+          "1"
+        ]
+      ]
+    }
+  },
+  "functional_patch": "outerreset-functional-f401.patch",
+  "functional_added_lines": 9,
+  "functional_deleted_lines": 1,
+  "matched_physical_archive_members": {
+    "PHYSDB_ROUTE": {
+      "member": "toplevel.rdb",
+      "sha256": "9762c1bb1fcb5fadfe7150e30809cdca9c0b704f5465fe671c4e180af9ec95a3"
+    },
+    "PHYSDB_DEVICE_NAME_STORE": {
+      "member": "toplevel.devns",
+      "sha256": "043becdb4d6adeb280d86dfd3a0b33f5790f3c467599f5bcdb9c1f608a15ac2b"
+    },
+    "PHYSDB_NEW_NETLIST_NAME_STORE": {
+      "member": "toplevel.nnlns",
+      "sha256": "fabbb09d107bc1d93162f11632173ba21307532608240fabfb180e5282a2b377"
+    },
+    "PHYSDB_CLOCK_DATA": {
+      "member": "toplevel.clkdb",
+      "sha256": "3b1620f93ea162167b76cc97b73d67c16213762976dc5d56cdefc63ed9ff3754"
+    },
+    "SHAPE": {
+      "member": "toplevel.shape",
+      "sha256": "d5ab823622f2fc316cf7c6a2e8bf440c63639d18127e03c3a47cb9b06d70580d"
+    }
+  },
+  "core_VHDL_sha256": {
+    "gig_ethernet_pcs_pma.vhd": "c214570c4dbe72b99eb8ceaa587bb3912109bab1546e10cfb03e813e901efa1e",
+    "gig_ethernet_pcs_pma_block.vhd": "ad00061e2e8af6dbdedede8fd2c473f3237268f5a3b54a7ec10c65937991ea2c",
+    "gig_ethernet_pcs_pma_reset_sync.vhd": "64116e0755096373a875f358534f2adbffed73f420292e83d1dd7cf08c727d97",
+    "gig_ethernet_pcs_pma_sync_block.vhd": "60004b7e1d4d60f3900ed806a41406d4c35c55345bbbe4d746b4d73ae8b8000c",
+    "transceiver/gig_ethernet_pcs_pma_cpll_railing.vhd": "60f4277b01260797fff0ab0db04025dd36e3817b360c3c74c3ff591b595d009e",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard.vhd": "c6e3fe294528bd3bc370e053718f0e1c54368668212b74793c7ab1d50869fe88",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_gt.vhd": "eb56e5773b9ff9af58e31979a7f25aa15ffc34b1f7183e220cbb23c96e32198d",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_init.vhd": "9be7c5109252b766219d820fc7ab7c06f3c15540de594c3d36cced7be7bc311b",
+    "transceiver/gig_ethernet_pcs_pma_gtwizard_multi_gt.vhd": "d9094ceb95dcb439176a1308c911f6ea3fef6a6519db97a64a913cb313cd4e0d",
+    "transceiver/gig_ethernet_pcs_pma_reset_wtd_timer.vhd": "e7a40bafce9ba113785d7e1ad202c9e85d1baf156732878c049d6fe273b3abfd",
+    "transceiver/gig_ethernet_pcs_pma_rx_startup_fsm.vhd": "6447739e0665c6ddbca23718e11dfa34ebed5fe26344d3aec4073660ca919f9d",
+    "transceiver/gig_ethernet_pcs_pma_transceiver.vhd": "03932bb1240f6849fb8dac486ffc991463899651ef38804ce9654f25e67fe132",
+    "transceiver/gig_ethernet_pcs_pma_tx_startup_fsm.vhd": "b746354b507ba31ca0c2c4aa293edce21938567752a7c83bdff839ff0dc4a91a"
+  },
+  "fresh_gate_input_roles": {
+    "I0": "por",
+    "I1": "wait",
+    "I2": "end"
+  },
+  "fresh_gate_input_inversions": {
+    "I0": false,
+    "I1": false,
+    "I2": false
+  },
+  "source_sha256": {
+    "WORKSPACE/review_outerreset_matched_v2.py": "f1d69d85ed670444c8a56bef964a336a045fe6a1e5bab84a62cb2f9d965b9ae8",
+    "outerreset-f401-export.json": "19918ed556afe84f0cdf53a68d41db3c611115c0e9870715b156520a5201da17",
+    "outerreset-f401-base-review.json": "d361f4da712d38f6653579b732549f2a7421e277527f26194990e709375b3a02",
+    "outerreset-f401-netlist-config.json": "15fc86613c1fadfc52502e7ae4e785d2c051bc387be005f811d3496a077975ba",
+    "outerreset-f401-matched/fresh-clock-reset-audit.txt": "2a02220166bcb76863649763d1806d477249b0cbed0a4989a76cea48543c7352",
+    "outerreset-source-clock-audit-v2.json": "d7111bfb3e5fc86bfd08b267eedeae071411186ef8e5e8eea294af3e3ecdfb46",
+    "outerreset-source-input-audit.json": "90a2f5ffca2731cc4b3f36ce2fa6cd2b07e0e4f8710ede5b946ee8b14940f3f5",
+    "outerreset-f401-board-clock-audit.json": "1a4c8938e5a52eab89f86f64e00e959c6d0824b33d535b0ebf5c5832ec3766d1"
+  },
+  "limits": [
+    "Public core reset restarts the existing native PCS/TX/RX startup sequencing; it is not a direct independently timed GTX RXPMARESET pulse.",
+    "Native generated-IP functional HDL unchanged; common board clock fixes retained.",
+    "Enabled/bypass/optional hold or early controls share all primitive locations, BELs and INITs except one LUT, and all five physical DCP archive members byte-for-byte.",
+    "PDCN-1569 is forbidden in enabled; exactly two warnings are accepted in each diagnostic only when both name this reset gate and its two truth-table-unused pins.",
+    "Only enabled corresponds to the listed production source patch. Hold/early are diagnostic controls with retained timer logic; they are not independently built shorter production source candidates.",
+    "No physical pulse waveform observer in this production-minimum image. Timing follows qualified RTL/scaled simulation/netlist, not an oscilloscope observation.",
+    "12s endpoint probe delay does not guarantee wire silence; Windows background ARP can still transmit.",
+    "Cold trials and packet correlation required; this review is not a hardware success result."
+  ]
+}

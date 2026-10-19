@@ -1,0 +1,49 @@
+{
+  "created": "2026-10-19T08:01:18.327317",
+  "phase": "fresh_netlist_configuration_reviewed",
+  "candidate": "f402",
+  "dcp": "lrtdc-outerreset-f402/build/outerreset-f402/lrtdc-outerreset-f402.dcp",
+  "root": "outerreset-f402-matched",
+  "gate": "u_PcsWait/reset_sync1_i_1",
+  "reference": "LUT3",
+  "enabled_init": "8'h4F",
+  "input_roles": {
+    "I0": "wait",
+    "I1": "por",
+    "I2": "raw"
+  },
+  "input_inversions": {
+    "I0": false,
+    "I1": false,
+    "I2": true
+  },
+  "variant_inits_decimal": {
+    "enabled": 79,
+    "bypass": 204,
+    "early": 15
+  },
+  "timer_clocks": {
+    "u_KeepPwrOnRst/reg_reset_reg/C": {
+      "period_ns": 8.0,
+      "clock": "clk_sys",
+      "driver": "u_ClkMan_Inst/inst/clkout1_buf/O"
+    },
+    "u_PcsWait/reg_reset_reg/C": {
+      "period_ns": 8.0,
+      "clock": "clk_sys",
+      "driver": "u_ClkMan_Inst/inst/clkout1_buf/O"
+    }
+  },
+  "source_sha256": {
+    "WORKSPACE/configure_outerreset_f402.py": "15b2466c80d02bb65c6c549bbbb9ad54b55d526d1c2b9106937eab275bbb92ed",
+    "outerreset-f402-inspection.json": "ed77e71335d2a1a0e9b59e7749cf97da71ffac98b5ad94a77b666389ba781a6f",
+    "outerreset-f402-netlist-inspection.txt": "05a171f1bc1743ea12f4213caae6de0b75333c4db52582da6dec63fef13244b3",
+    "outerreset-f402-netlist-config.tcl": "c569946d643a10b2a61ea8f83079f34be9d94e9cb83d1d4aedc494f17b92437d"
+  },
+  "limits": [
+    "The raw reset inverter is folded into the output LUT. I2 is positive SYS MMCM LOCKED; raw=not I2.",
+    "Enabled reinitializes during the original global POR window; bypass forwards original POR; early forwards raw reset only.",
+    "Only enabled corresponds to the six-added/one-deleted production source build. Early retains unused timer logic and is a diagnostic, not yet an independently compiled one-line source.",
+    "Output reset sinks and all truth tables/physical archive comparisons remain independently checked in export/review."
+  ]
+}

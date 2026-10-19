@@ -1,0 +1,14 @@
+"""Bind fresh F402 placed gate, including folded raw-reset inversion, to controls."""
+import datetime,hashlib,json
+from pathlib import Path
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+ip=Path('outerreset-f402-inspection.json');r=json.loads(ip.read_text());assert r['phase']=='fresh_netlist_inspected_manual_configuration_required' and r['actual_exit_code']==0
+text=Path(r['inspection_text']);assert sha(text)==r['inspection_text_sha256'];s=text.read_text()
+for phrase in ['CELL u_PcsWait/reset_sync1_i_1 REF LUT3','INIT 8\'h4F','PIN I0 DRIVERS u_PcsWait/reg_reset_reg/Q','PIN I1 DRIVERS u_KeepPwrOnRst/reg_reset_reg/Q','PIN I2 DRIVERS u_ClkMan_Inst/inst/mmcm_adv_inst/LOCKED','CLOCKS clk_sys']:assert phrase in s,phrase
+gate='u_PcsWait/reset_sync1_i_1';clockdriver='u_ClkMan_Inst/inst/clkout1_buf/O';timers=['u_KeepPwrOnRst/reg_reset_reg/C','u_PcsWait/reg_reset_reg/C']
+out=Path('outerreset-f402-netlist-config.json');tcl=Path('outerreset-f402-netlist-config.tcl');assert not out.exists() and not tcl.exists()
+data="""set cfg [dict create candidate f402 dcp {lrtdc-outerreset-f402/build/outerreset-f402/lrtdc-outerreset-f402.dcp} root {outerreset-f402-matched} gate {u_PcsWait/reset_sync1_i_1} reference LUT3 enabled_init {8'h4F} variants {enabled 8'h4F bypass 8'hCC early 8'h0F} drivers {I0 {u_PcsWait/reg_reset_reg/Q} I1 {u_KeepPwrOnRst/reg_reset_reg/Q} I2 {u_ClkMan_Inst/inst/mmcm_adv_inst/LOCKED}} timer_clocks {u_KeepPwrOnRst/reg_reset_reg/C 8.000 u_PcsWait/reg_reset_reg/C 8.000} timer_drivers {u_KeepPwrOnRst/reg_reset_reg/C {u_ClkMan_Inst/inst/clkout1_buf/O} u_PcsWait/reg_reset_reg/C {u_ClkMan_Inst/inst/clkout1_buf/O}}]
+"""
+tcl.write_text(data)
+cfg={'created':datetime.datetime.now().isoformat(),'phase':'fresh_netlist_configuration_reviewed','candidate':'f402','dcp':'lrtdc-outerreset-f402/build/outerreset-f402/lrtdc-outerreset-f402.dcp','root':'outerreset-f402-matched','gate':gate,'reference':'LUT3','enabled_init':"8'h4F",'input_roles':{'I0':'wait','I1':'por','I2':'raw'},'input_inversions':{'I0':False,'I1':False,'I2':True},'variant_inits_decimal':{'enabled':79,'bypass':204,'early':15},'timer_clocks':{pin:{'period_ns':8.,'clock':'clk_sys','driver':clockdriver} for pin in timers},'source_sha256':{str(p):sha(p) for p in [Path(__file__),ip,text,tcl]},'limits':['The raw reset inverter is folded into the output LUT. I2 is positive SYS MMCM LOCKED; raw=not I2.','Enabled reinitializes during the original global POR window; bypass forwards original POR; early forwards raw reset only.','Only enabled corresponds to the six-added/one-deleted production source build. Early retains unused timer logic and is a diagnostic, not yet an independently compiled one-line source.','Output reset sinks and all truth tables/physical archive comparisons remain independently checked in export/review.']}
+out.write_text(json.dumps(cfg,indent=2));print(json.dumps({'phase':cfg['phase'],'gate':gate,'variants':cfg['variant_inits_decimal']}))

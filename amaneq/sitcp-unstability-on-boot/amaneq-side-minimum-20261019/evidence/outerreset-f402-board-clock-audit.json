@@ -1,0 +1,22 @@
+{
+  "created": "2026-10-19T07:56:57.152393",
+  "phase": "generated_board_clock_settings_match_common_baseline",
+  "candidate": "f402",
+  "GT_reference_MHz": 156.25,
+  "reference_period_ns": 6.4,
+  "GT_CPLL_FBDIV": 4,
+  "GT_CPLL_FBDIV_45": 4,
+  "source_sha256": {
+    "WORKSPACE/audit_outerreset_generated_clocks.py": "0d97febe4826906a5cf6eba83b7062aef5b85f028550dee6594b4567003cee18",
+    "lrtdc-outerreset-f402/ip/gig_ethernet_pcs_pma/synth/gig_ethernet_pcs_pma.xdc": "426fbd0cb0c57a84b0ee4ddc0f2d4a18f24efb2312a21a451d6e8267e90acd74",
+    "lrtdc-startdelay-f305/ip/gig_ethernet_pcs_pma/synth/gig_ethernet_pcs_pma.xdc": "426fbd0cb0c57a84b0ee4ddc0f2d4a18f24efb2312a21a451d6e8267e90acd74",
+    "lrtdc-outerreset-f402/ip/gig_ethernet_pcs_pma/synth/gig_ethernet_pcs_pma_ooc.xdc": "ac56c03552f49b35ffd9b126f56b40e93699e166a201374a7336018fc10000e7",
+    "lrtdc-startdelay-f305/ip/gig_ethernet_pcs_pma/synth/gig_ethernet_pcs_pma_ooc.xdc": "ac56c03552f49b35ffd9b126f56b40e93699e166a201374a7336018fc10000e7",
+    "lrtdc-outerreset-f402/ip/gig_ethernet_pcs_pma/synth/transceiver/gig_ethernet_pcs_pma_gtwizard_gt.vhd": "eb56e5773b9ff9af58e31979a7f25aa15ffc34b1f7183e220cbb23c96e32198d"
+  },
+  "limits": [
+    "Existing common board settings, excluded from the new functional startup-reset line count.",
+    "Unmodified XCI nominal reference settings alone are insufficient; generated GT HDL/XDC corrections are part of the established build flow.",
+    "Physical timer clock drivers and periods are checked separately from a fresh DCP."
+  ]
+}

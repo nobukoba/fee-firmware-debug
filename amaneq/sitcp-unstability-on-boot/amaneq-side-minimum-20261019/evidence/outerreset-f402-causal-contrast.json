@@ -1,0 +1,57 @@
+{
+  "created": "2026-10-19T08:52:09.695464",
+  "phase": "completed_same_route_early_enabled_bypass_comparison",
+  "cases": [
+    {
+      "variant": "early",
+      "successes": 3,
+      "trials": 3,
+      "report": "outerreset-cohort-outerf40216raw.json",
+      "full_flash_sha256": "59e5e04b48d1abc2765dcfbdd928ba2d0efacc9a177ea267f0a3036eec94eda8"
+    },
+    {
+      "variant": "enabled",
+      "successes": 3,
+      "trials": 3,
+      "report": "outerreset-cohort-outerf40216a.json",
+      "full_flash_sha256": "9fdbf99d92cbc037fd6f5b0eec09b1012cb713835b28d87962f78e5797326fe5"
+    },
+    {
+      "variant": "bypass",
+      "successes": 0,
+      "trials": 3,
+      "report": "outerreset-cohort-outerf40216by.json",
+      "full_flash_sha256": "26cbf0921c488de7a711885085d9bccff85dbfa10d06f988047b4dea7d5b2237"
+    }
+  ],
+  "observed_order": [
+    "early3/3",
+    "enabled3/3",
+    "bypass0/3"
+  ],
+  "interpretation": [
+    "For this F402 placed/routed netlist, raw early release alone passed whereas original delayed POR did not.",
+    "A second reset is not necessary in the F402 early diagnostic, although F401 second reset also recovers.",
+    "Qualifies a reset-order/timing dependence and motivates one-line independent source F403."
+  ],
+  "limits": [
+    "Early diagnostic retains unused timer/counter. Does not establish standalone one-line source efficacy.",
+    "No unique physical initiating cause or manufacturer-wide defect proved.",
+    "Long OFF, final reversal and independent F403 outcomes are separate later records."
+  ],
+  "source_sha256": {
+    "WORKSPACE/analyze_outerreset_f402_contrast.py": "7c87bf9569c124cc8449fe7c943b9b050dc7bb8551d0de770760b9a8aff89d79",
+    "outerreset-f402-independent-review.json": "3d69eac3584a13afd09d20d41ad4911b87693b522233a82481a79b2e9427afb3",
+    "outerreset-f402-netlist-config.json": "703af74e19c50978de0831e69a739f613c3980c191ac453a070c830da4e90782",
+    "outerreset-packets-f402bypass-interim.json": "88266569d114e07e4399119bbad020c55129201e7b5af352c651a88322b98e6b",
+    "outerreset-cohort-outerf40216raw.json": "024234a028b0429f833d1b8cf0b0fd56db4c8c9f3cc7992fb47eb93a30abf9dc",
+    "outerreset-outerf40216raw-cold.json": "6d2055d56275c36b1f48be22a29a0a4032bc1f4bdb3f49c03a7d4ee3d73ac0c1",
+    "flash-outerf40216raw-20261019-081726-result.json": "33b9315698d4f02d30d2501014705bdd1e63e0b1224282df89f04b162e761d82",
+    "outerreset-cohort-outerf40216a.json": "dc26c395d2432a9196a6d110b6ad0abf576ee7cb2be60d4c8bc9c32a0e7b781e",
+    "outerreset-outerf40216a-cold.json": "e680bbb106cb87e86b4372858f430871a40bbec7dd9888ba0e5f863ad7118dba",
+    "flash-outerf40216a-20261019-082551-result.json": "daaa127e4f3d5c2867a1bd6955d13f60b56945cc086f55359cd91a670c610814",
+    "outerreset-cohort-outerf40216by.json": "b3293929b2925963bd34ed7e8dde7a317eb1ff6184dd5859079040ed1ed5d872",
+    "outerreset-outerf40216by-cold.json": "fd3e087dd7d14aa42f876be2924e4b566f37edd8b69bcbf07cafaad8662827d5",
+    "flash-outerf40216by-20261019-084018-result.json": "38e3238d154f7817714c8225ef69c0d9d9504e631d0ac89b6f57a1888b0dcfc8"
+  }
+}

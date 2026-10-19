@@ -1,0 +1,11 @@
+{
+  "created": "2026-10-19T06:41:05.283513",
+  "phase": "review_v1_rejected_intentionally_unused_diagnostic_gate_pins",
+  "review_script": "review_outerreset_matched.py",
+  "review_script_sha256": "a8b067952fc4f81896c95623dd41c719dd46981441b38d801a7c54dc05f717c8",
+  "observed_actual_exit_code": 1,
+  "reason": "Old diagnostic LUT2 rule allowed one unused pin. Current single-input LUT3 bypass/hold necessarily ignores two wired pins.",
+  "production_enabled_PDCN_warnings": 0,
+  "diagnostic_bypass_PDCN_warnings": 2,
+  "resolution": "V2 requires zero in enabled, exactly two in diagnostic variants, and individually proves both warning blocks name only this reset gate and its truth-table-unused pins. No HDL, route, timing, bitstream, DRC severity or global waiver was changed."
+}

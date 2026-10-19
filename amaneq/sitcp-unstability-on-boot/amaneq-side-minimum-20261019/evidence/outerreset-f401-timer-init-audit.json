@@ -1,0 +1,44 @@
+{
+  "created": "2026-10-19T07:56:16.587956",
+  "phase": "physical_timer_counter_and_reset_output_initial_values_verified",
+  "candidate": "f401",
+  "cases": [
+    {
+      "instance": "u_KeepPwrOnRst",
+      "counter_width": 32,
+      "configured_counter_INIT_decimal": 268435455,
+      "configured_counter_INIT_hex": "0xfffffff",
+      "reset_output_INIT": 1,
+      "all_counter_FF_INITs_match_asynchronous_preset_or_clear_type": true
+    },
+    {
+      "instance": "u_PcsWait",
+      "counter_width": 32,
+      "configured_counter_INIT_decimal": 125000000,
+      "configured_counter_INIT_hex": "0x7735940",
+      "reset_output_INIT": 1,
+      "all_counter_FF_INITs_match_asynchronous_preset_or_clear_type": true
+    },
+    {
+      "instance": "u_PcsWaitEnd",
+      "counter_width": 32,
+      "configured_counter_INIT_decimal": 137500000,
+      "configured_counter_INIT_hex": "0x8321560",
+      "reset_output_INIT": 1,
+      "all_counter_FF_INITs_match_asynchronous_preset_or_clear_type": true
+    }
+  ],
+  "source_sha256": {
+    "WORKSPACE/audit_outerreset_timer_init.py": "64582896493bf1f39491499fafa63935e8d1041312224b00cff5b8683eab4101",
+    "outerreset-f401-matched/enabled/init-FDPE-NAME.tcllist": "45f8657156315ed833675218ec8e02ad3f420c949927c9668ae13e645afe7dcf",
+    "outerreset-f401-matched/enabled/init-FDPE-INIT.tcllist": "5a8956bcdcae1a685213280c5159eb5dd79f21f137080741b10a766ff9de5b68",
+    "outerreset-f401-matched/enabled/init-FDCE-NAME.tcllist": "665322774973bac3fc32ab9fc177a60c7d6f7bf01a1686e228dedaf2c04d088b",
+    "outerreset-f401-matched/enabled/init-FDCE-INIT.tcllist": "8f35da795d728654f1d1b6fbde563fb23994b38a95b61eca5ed21c9c578b5658",
+    "outerreset-f401-export.json": "19918ed556afe84f0cdf53a68d41db3c611115c0e9870715b156520a5201da17"
+  },
+  "limits": [
+    "Physical configuration INIT values, not an oscilloscope reset waveform measurement.",
+    "Rules out a zero-initialized global/new counter in these exact compiled images. It does not prove a unique physical initiating cause.",
+    "Clock periods/dependencies and live cold outcomes are checked separately."
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "created": "2026-10-19T07:28:27.225332",
+  "phase": "same_route_reversal_and_equal_final_release_control_observed",
+  "cases": [
+    {
+      "report": "outerreset-cohort-outerf40116a.json",
+      "host": "192.168.10.16",
+      "variant": "enabled",
+      "successes": 3,
+      "trials": 3,
+      "full_readback_sha256": "cac20b9aafe03702f793f39e43fdafbe4f453ba315650dbd8503705344c1ad57",
+      "observed_parent_actual_exit_code": 0
+    },
+    {
+      "report": "outerreset-cohort-outerf40116by.json",
+      "host": "192.168.10.16",
+      "variant": "bypass",
+      "successes": 0,
+      "trials": 3,
+      "full_readback_sha256": "8e845f28908323569d01a8ec102fd24bf3a57e7b4364f3ddd6ffb10514ae77ba",
+      "observed_parent_actual_exit_code": 0
+    },
+    {
+      "report": "outerreset-cohort-outerf40116hold.json",
+      "host": "192.168.10.16",
+      "variant": "hold",
+      "successes": 0,
+      "trials": 3,
+      "full_readback_sha256": "2c3b30d09e6167e413c879ce9b4ceed8b0dea1145ab3a948f18062a32987dafd",
+      "observed_parent_actual_exit_code": 0
+    },
+    {
+      "report": "outerreset-cohort-outerf40116back.json",
+      "host": "192.168.10.16",
+      "variant": "enabled",
+      "successes": 3,
+      "trials": 3,
+      "full_readback_sha256": "cac20b9aafe03702f793f39e43fdafbe4f453ba315650dbd8503705344c1ad57",
+      "observed_parent_actual_exit_code": 0
+    },
+    {
+      "report": "outerreset-cohort-outerf40117a.json",
+      "host": "192.168.10.17",
+      "variant": "enabled",
+      "successes": 3,
+      "trials": 3,
+      "full_readback_sha256": "cac20b9aafe03702f793f39e43fdafbe4f453ba315650dbd8503705344c1ad57",
+      "observed_parent_actual_exit_code": 0
+    }
+  ],
+  "matched_physics": "Same203285 primitive LOC/BEL/INIT values except one reset LUT INIT; five physical DCP archive members byte-identical. Independently qualified before all flashes.",
+  "equal_final_release_control": "Enabled and hold both finally release public reset after the same second timer edge (nominal1.1s after original global POR). Enabled alone permits a1s reset-free first attempt and then100ms public reset.",
+  "negative_boots_with_actual_ARP_requests_no_reply": 6,
+  "interpretation": "Supports benefit of another native Ethernet initialization after an initial startup attempt on this board. Merely extending the initial public reset to the same final digital release edge did not reproduce the benefit.",
+  "source_sha256": {
+    "outerreset-cohort-outerf40116a.json": "2af756e6adb014686e59d4e994ee55d1c7edc53739fb9257b5ba045a403f03e6",
+    "outerreset-cohort-outerf40116by.json": "5018ae931879cf9364d8f063f5a9f16a8b464dc8676d4fb9f612c9b5ab644209",
+    "outerreset-cohort-outerf40116hold.json": "842e90b86b6132448dc188d2f0b186fbb91402b721c75537f904493e216df90b",
+    "outerreset-cohort-outerf40116back.json": "776a83b7d603a4fd1f130f95ba231851c6a2f9adbaa1d9eb12e3a8d01b8d1674",
+    "outerreset-cohort-outerf40117a.json": "7cfc8076f010d7f93b6052ac91631dfa54a5338569624f041d73a04bf2c26a49",
+    "outerreset-packets-f401-reversal-interim.json": "a1e80125f5781ff3f12edd05a087e63582ce3403443fab78978b1c3b56503311",
+    "outerreset-f401-independent-review.json": "d67b59c38820d2624256294528b74ba8715732479e34c98b89e04a9389e5237b",
+    "outerreset-causal-hypotheses-before-hold-raw.json": "d5191cb4506b95148426d005c1afc44f88124b7660985ca75d3ce85f93fdd8a8"
+  },
+  "limits": [
+    "Initial3+3 positive16 repetitions and3 healthy17 repetitions; broader cold/longOFF/soak tests still ongoing.",
+    "Public reset restarts PCS/TX/RX sequencing; this comparison alone does not isolate a direct RXPMARESET pulse or identify the physical trigger.",
+    "Different power cycles do not control analog reference phase or rail waveforms.",
+    "Live capture correlation is provisional until final closure/hash/parser checks."
+  ]
+}

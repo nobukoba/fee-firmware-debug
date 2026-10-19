@@ -1,0 +1,12 @@
+{
+  "created": "2026-10-19T08:03:35.484227",
+  "phase": "local_vivado_command_help_only",
+  "hardware_operations": false,
+  "project_opened": false,
+  "actual_exit_code": 0,
+  "console": "outerreset-project-portability-help.txt",
+  "source_sha256": {
+    "outerreset-project-portability-help.tcl": "7113e59dc3ed50b787d6de88807bfa1ac071a9384422d7b0d5ae97ca717d46ef",
+    "outerreset-project-portability-help.txt": "94b0e21beb896709b696f30f1ba3528eca4aaa525e167c03e42214e147022a3f"
+  }
+}
