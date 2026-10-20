@@ -1,0 +1,115 @@
+{
+  "started_at": "2026-10-20T20:03:02.9223270+09:00",
+  "condition": "switch_already_on",
+  "cables": "Left connected",
+  "firmware": "Existing running images; not reprogrammed",
+  "off_seconds": 15,
+  "observation_seconds": 120,
+  "success_criterion": "3 consecutive valid SiTCP-XG identifier reads at >=1 second intervals",
+  "initial_power": [
+    {
+      "name": "Outlet 1",
+      "status": true
+    },
+    {
+      "name": "Outlet 2",
+      "status": true
+    }
+  ],
+  "trials": [
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 1,
+      "started_at": "2026-10-20T20:03:02.9419369+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.859,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.68,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.508,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.352,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.162,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.171,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.179,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.182,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:03:05.7959251+09:00",
+      "on_confirmed_at": "2026-10-20T20:03:23.9925282+09:00",
+      "first_response_seconds": 9.171,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:03:35.3406948+09:00"
+    },
+    {
+      "outlet": 2,
+      "address": "192.168.10.11",
+      "trial": 1,
+      "started_at": "2026-10-20T20:03:35.3443853+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.811,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.638,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.442,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.277,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.082,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.093,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.123,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.139,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:03:38.2553508+09:00",
+      "on_confirmed_at": "2026-10-20T20:03:56.5041067+09:00",
+      "first_response_seconds": 9.093,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:04:07.8120700+09:00"
+    }
+  ],
+  "completed": true,
+  "finished_at": "2026-10-20T20:04:08.0318219+09:00"
+}
