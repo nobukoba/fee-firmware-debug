@@ -1,0 +1,44 @@
+{
+  "measured_at": "2026-10-20T19:29:16.8102879+09:00",
+  "source_repository": "https://github.com/AMANEQ-official/StrHrTdcBase",
+  "source_commit": "33e3f35dfc43b04672d0bf6b352be2ff33b5579d",
+  "tool": "Vivado 2023.2",
+  "upstream_tool": "2023.1.1",
+  "hdl_modified": false,
+  "modified_tracked_paths": [
+    "ip/LinkBuffer/LinkBuffer.xci",
+    "ip/RbcpCdc_LinkToSys/RbcpCdc_LinkToSys.xci",
+    "ip/RbcpCdc_SysToLink/RbcpCdc_SysToLink.xci",
+    "ip/clk_wiz_0/clk_wiz_0.xci",
+    "ip/ddr_buffer/ddr_buffer.xci",
+    "ip/ddr_data_buffer/ddr_data_buffer.xci",
+    "ip/fmp_rd_fifo/fmp_rd_fifo.xci",
+    "ip/fmp_wd_fifo/fmp_wd_fifo.xci",
+    "ip/mergerBackFifo/mergerBackFifo.xci",
+    "ip/scr_fifo/scr_fifo.xci",
+    "ip/sem_controller/sem_controller.xci",
+    "ip/ten_gig_eth_pcs_pma/ten_gig_eth_pcs_pma.xci",
+    "ip/xadc_sys/xadc_sys.xci"
+  ],
+  "synthesis": "Complete",
+  "place_and_route": "Complete",
+  "write_bitstream": "Complete",
+  "bitstream_path": "local/StrHrTdcBase/build/StrHrTdcBase.runs/impl_1/toplevel.bit",
+  "bitstream_bytes": 6692677,
+  "bitstream_sha256": "6997b755b858a153af7dc06045902712325b08e2ad3142a055d97ddbb623c060",
+  "timing": {
+    "ths_ns": 0,
+    "wns_ns": 0.119,
+    "no_output_delay_count": 35,
+    "whs_ns": 0.041,
+    "no_input_delay_count": 37,
+    "user_specified_constraints_met": true,
+    "tns_ns": 0
+  },
+  "critical_warnings": [
+    "Six synthesis clock-group object warnings (Vivado 12-4739)",
+    "Vivado 12-1790: Evaluation cores cease functioning after a period of time; generated bitstream must not be used for production"
+  ],
+  "programmed_to_hardware": false,
+  "limitations": "2023.2 regenerated IP differs from official 2023.1.1 build; generated bitstream has evaluation cores; hardware startup measurements used existing images"
+}

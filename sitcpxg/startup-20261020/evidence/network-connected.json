@@ -1,0 +1,224 @@
+{
+  "measured_at": "2026-10-20T19:01:32.8459721+09:00",
+  "mode": "Read-only ICMP and local configuration; no power or firmware changes",
+  "ipv4": [
+    {
+      "InterfaceAlias": "vEthernet (WSL (Hyper-V firewall))",
+      "IPAddress": "172.21.192.1",
+      "PrefixLength": 20
+    },
+    {
+      "InterfaceAlias": "Local Area Connection* 2",
+      "IPAddress": "169.254.51.226",
+      "PrefixLength": 16
+    },
+    {
+      "InterfaceAlias": "Local Area Connection* 1",
+      "IPAddress": "169.254.106.132",
+      "PrefixLength": 16
+    },
+    {
+      "InterfaceAlias": "Ethernet",
+      "IPAddress": "192.168.10.70",
+      "PrefixLength": 24
+    },
+    {
+      "InterfaceAlias": "Wi-Fi",
+      "IPAddress": "172.16.207.92",
+      "PrefixLength": 19
+    },
+    {
+      "InterfaceAlias": "Loopback Pseudo-Interface 1",
+      "IPAddress": "127.0.0.1",
+      "PrefixLength": 8
+    }
+  ],
+  "routes": [
+    {
+      "DestinationPrefix": "255.255.255.255/32",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "vEthernet (WSL (Hyper-V firewall))",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "255.255.255.255/32",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Local Area Connection* 2",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "255.255.255.255/32",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Local Area Connection* 1",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "255.255.255.255/32",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Wi-Fi",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "255.255.255.255/32",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Ethernet",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "255.255.255.255/32",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Loopback Pseudo-Interface 1",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "224.0.0.0/4",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "vEthernet (WSL (Hyper-V firewall))",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "224.0.0.0/4",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Local Area Connection* 2",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "224.0.0.0/4",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Local Area Connection* 1",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "224.0.0.0/4",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Wi-Fi",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "224.0.0.0/4",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Ethernet",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "224.0.0.0/4",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Loopback Pseudo-Interface 1",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "192.168.10.255/32",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Ethernet",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "192.168.10.70/32",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Ethernet",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "192.168.10.0/24",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Ethernet",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "172.21.207.255/32",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "vEthernet (WSL (Hyper-V firewall))",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "172.21.192.1/32",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "vEthernet (WSL (Hyper-V firewall))",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "172.21.192.0/20",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "vEthernet (WSL (Hyper-V firewall))",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "172.16.223.255/32",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Wi-Fi",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "172.16.207.92/32",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Wi-Fi",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "172.16.192.0/19",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Wi-Fi",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "127.255.255.255/32",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Loopback Pseudo-Interface 1",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "127.0.0.1/32",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Loopback Pseudo-Interface 1",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "127.0.0.0/8",
+      "NextHop": "0.0.0.0",
+      "InterfaceAlias": "Loopback Pseudo-Interface 1",
+      "RouteMetric": 256
+    },
+    {
+      "DestinationPrefix": "0.0.0.0/0",
+      "NextHop": "172.16.192.8",
+      "InterfaceAlias": "Wi-Fi",
+      "RouteMetric": 0
+    }
+  ],
+  "ping": [
+    {
+      "address": "192.168.10.10",
+      "status": "TimedOut",
+      "roundtrip_ms": 0
+    },
+    {
+      "address": "192.168.10.11",
+      "status": "Success",
+      "roundtrip_ms": 0
+    },
+    {
+      "address": "172.16.207.110",
+      "status": "Success",
+      "roundtrip_ms": 1
+    },
+    {
+      "address": "172.16.207.91",
+      "status": "Success",
+      "roundtrip_ms": 1
+    }
+  ],
+  "neighbors": [
+    {
+      "IPAddress": "192.168.10.11",
+      "LinkLayerAddress": "7C-F0-98-01-21-F0",
+      "State": 2,
+      "InterfaceAlias": "Ethernet"
+    },
+    {
+      "IPAddress": "192.168.10.10",
+      "LinkLayerAddress": "00-00-00-00-00-00",
+      "State": 0,
+      "InterfaceAlias": "Ethernet"
+    }
+  ]
+}

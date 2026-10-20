@@ -1,0 +1,18 @@
+{
+  "measured_at": "2026-10-20T19:14:12.1671391+09:00",
+  "register": "0xFFFFFF08",
+  "operation": "RBCP read only",
+  "results": [
+    {
+      "address": "192.168.10.10",
+      "status": "ReadFailed",
+      "error": "Exception calling \"Receive\" with \"1\" argument(s): \"A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\""
+    },
+    {
+      "address": "192.168.10.11",
+      "status": "ReadAcknowledged",
+      "identifier": "58544350",
+      "sitcpxg": true
+    }
+  ]
+}

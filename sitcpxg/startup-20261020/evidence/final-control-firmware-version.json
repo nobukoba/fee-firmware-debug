@@ -1,0 +1,8 @@
+{
+  "measured_at": "2026-10-20T19:30:33.2325888+09:00",
+  "address": "192.168.10.11",
+  "operation": "Read-only after all power trials",
+  "register": "0xFFFFFF00",
+  "version": "C480020A",
+  "matches_StrHrTdcBase_v2A": true
+}

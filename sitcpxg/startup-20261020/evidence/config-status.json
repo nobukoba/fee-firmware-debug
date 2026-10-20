@@ -1,0 +1,16 @@
+{
+  "measured_at": "2026-10-20T19:26:15.9090515+09:00",
+  "operation": "Read-only JTAG configuration registers after power trials",
+  "ip_mapping": "unverified",
+  "observations": [
+    "INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.",
+    "STUDY_CONFIG target=1 REGISTER.BOOT_STATUS=00000000000000000000000000000001",
+    "STUDY_CONFIG target=1 REGISTER.CONFIG_STATUS=01010000000100000111100111111100",
+    "STUDY_CONFIG target=1 REGISTER.USR_ACCESS=00000000",
+    "INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.",
+    "STUDY_CONFIG target=2 REGISTER.BOOT_STATUS=00000000000000000000000000000001",
+    "STUDY_CONFIG target=2 REGISTER.CONFIG_STATUS=01010000000100000111100111111100",
+    "STUDY_CONFIG target=2 REGISTER.USR_ACCESS=00000000"
+  ],
+  "interpretation": "Both JTAG devices were reported programmed with designs lacking supported debug cores. Configuration registers do not establish network initialization success or identify firmware."
+}

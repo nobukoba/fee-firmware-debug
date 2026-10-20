@@ -1,0 +1,31 @@
+{
+  "started_at": "2026-10-20T19:11:19.2540218+09:00",
+  "condition": "switch_after_board",
+  "cables": "Left connected",
+  "firmware": "Existing running images; not reprogrammed",
+  "off_seconds": 15,
+  "observation_seconds": 120,
+  "success_criterion": "3 consecutive valid SiTCP-XG identifier reads at >=1 second intervals",
+  "initial_power": [
+    {
+      "name": "Outlet 1",
+      "status": true
+    },
+    {
+      "name": "Outlet 2",
+      "status": true
+    }
+  ],
+  "trials": [
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 1,
+      "started_at": "2026-10-20T19:11:19.2951409+09:00",
+      "samples": [],
+      "result": "aborted_before_valid_measurement"
+    }
+  ],
+  "completed": false,
+  "abort_reason": "Switch power request timed out; no observation window completed. Both board outlets and switch outlet subsequently confirmed ON."
+}

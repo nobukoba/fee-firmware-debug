@@ -1,0 +1,770 @@
+{
+  "started_at": "2026-10-20T19:03:36.3512065+09:00",
+  "condition": "Network switch left powered on and cables connected",
+  "firmware": "Existing running images; not reprogrammed",
+  "off_seconds": 15,
+  "observation_seconds": 60,
+  "success_criterion": "3 consecutive valid SiTCP-XG identifier reads at >=1 second intervals",
+  "initial_power": [
+    {
+      "name": "Outlet 1",
+      "status": true
+    },
+    {
+      "name": "Outlet 2",
+      "status": true
+    }
+  ],
+  "trials": [
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 1,
+      "started_at": "2026-10-20T19:03:36.3776436+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.858,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.685,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.5,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.317,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.164,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.985,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 11.792,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 13.61,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 15.424,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 17.252,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 19.068,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 20.891,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 22.708,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 24.531,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 26.347,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 28.163,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 29.986,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 31.797,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 33.613,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 35.44,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 37.251,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 39.082,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 40.907,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 42.734,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 44.548,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 46.375,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 48.204,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 50.009,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 51.86,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 53.671,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 55.474,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 57.298,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 59.11,
+          "valid_identifier": false
+        }
+      ],
+      "result": "no_stable_response_within_60_seconds",
+      "off_confirmed_at": "2026-10-20T19:03:39.4333129+09:00",
+      "on_confirmed_at": "2026-10-20T19:03:57.5900439+09:00",
+      "final_power_on": true,
+      "finished_at": "2026-10-20T19:04:57.9130331+09:00"
+    },
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 2,
+      "started_at": "2026-10-20T19:04:57.9174336+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.812,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.627,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.457,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.297,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.11,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.935,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 11.75,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 13.593,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 15.408,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 17.234,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 19.041,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 20.844,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 22.654,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 24.464,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 26.277,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 28.11,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 29.938,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 31.765,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 33.578,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 35.383,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 37.219,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 39.043,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 40.86,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 42.687,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 44.506,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 46.33,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 48.15,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 49.969,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 51.796,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 53.615,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 55.438,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 57.257,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 59.079,
+          "valid_identifier": false
+        }
+      ],
+      "result": "no_stable_response_within_60_seconds",
+      "off_confirmed_at": "2026-10-20T19:05:00.8320878+09:00",
+      "on_confirmed_at": "2026-10-20T19:05:20.2497082+09:00",
+      "final_power_on": true,
+      "finished_at": "2026-10-20T19:06:20.4932156+09:00"
+    },
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 3,
+      "started_at": "2026-10-20T19:06:20.4970844+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.81,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.637,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.465,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.278,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.084,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.888,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 11.696,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 13.498,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 15.326,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 17.138,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 18.95,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 20.764,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 22.592,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 24.426,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 26.247,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 28.054,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 29.887,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 31.7,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 33.517,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 35.358,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 37.192,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 39.013,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 40.84,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 42.655,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 44.481,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 46.299,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 48.123,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 49.952,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 51.778,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 53.622,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 55.436,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 57.247,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 59.06,
+          "valid_identifier": false
+        }
+      ],
+      "result": "no_stable_response_within_60_seconds",
+      "off_confirmed_at": "2026-10-20T19:06:25.1632539+09:00",
+      "on_confirmed_at": "2026-10-20T19:06:43.3462636+09:00",
+      "final_power_on": true,
+      "finished_at": "2026-10-20T19:07:43.5741446+09:00"
+    },
+    {
+      "outlet": 2,
+      "address": "192.168.10.11",
+      "trial": 1,
+      "started_at": "2026-10-20T19:07:43.5785597+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.819,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.648,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.476,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.287,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.111,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.913,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 11.725,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 13.557,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 15.382,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 17.186,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 19.007,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 20.819,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 22.632,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 24.445,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 26.258,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 28.07,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 29.882,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 31.71,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 33.523,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 35.351,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 37.179,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 39.005,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 40.834,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 42.647,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 44.476,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 46.304,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 48.128,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 49.944,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 51.773,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 53.601,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 55.444,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 57.251,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 59.086,
+          "valid_identifier": false
+        }
+      ],
+      "result": "no_stable_response_within_60_seconds",
+      "off_confirmed_at": "2026-10-20T19:07:46.4019661+09:00",
+      "on_confirmed_at": "2026-10-20T19:08:07.2429621+09:00",
+      "final_power_on": true,
+      "finished_at": "2026-10-20T19:09:07.4957632+09:00"
+    },
+    {
+      "outlet": 2,
+      "address": "192.168.10.11",
+      "trial": 2,
+      "started_at": "2026-10-20T19:09:07.5000874+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.808,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.631,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.457,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.27,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.083,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.898,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 11.738,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 13.554,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 15.391,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 17.196,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 19.02,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 20.832,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 22.644,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 24.473,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 26.302,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 28.13,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 29.941,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 31.75,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 33.567,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 35.395,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 37.21,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 39.053,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 40.873,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 42.691,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 43.717,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 44.728,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 45.74,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T19:09:12.7639320+09:00",
+      "on_confirmed_at": "2026-10-20T19:09:31.6516988+09:00",
+      "first_response_seconds": 43.717,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T19:10:18.1114257+09:00"
+    },
+    {
+      "outlet": 2,
+      "address": "192.168.10.11",
+      "trial": 3,
+      "started_at": "2026-10-20T19:10:18.1204838+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.798,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.622,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.436,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.251,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.076,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.092,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.107,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.123,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T19:10:23.2396938+09:00",
+      "on_confirmed_at": "2026-10-20T19:10:41.6756281+09:00",
+      "first_response_seconds": 9.092,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T19:10:52.9482736+09:00"
+    }
+  ],
+  "completed": true,
+  "finished_at": "2026-10-20T19:10:53.6979650+09:00"
+}

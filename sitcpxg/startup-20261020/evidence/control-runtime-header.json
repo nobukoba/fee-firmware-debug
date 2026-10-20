@@ -1,0 +1,7 @@
+{
+  "measured_at": "2026-10-20T19:04:00.6621059+09:00",
+  "address": "192.168.10.11",
+  "register": "0xFFFFFF00",
+  "operation": "Read only",
+  "response_hex": "FFC80110FFFFFF00C480020A000000005854435001000105"
+}

@@ -9,3 +9,5 @@
 *.log
 .Xil/
 __pycache__/
+# Local upstream firmware checkouts and generated build products
+/local/

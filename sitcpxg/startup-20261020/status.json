@@ -1,0 +1,61 @@
+{
+  "updated_at": "2026-10-20T19:30:06.8474059+09:00",
+  "subject": "StrHrTdcBase SiTCP-XG startup while connected to a network",
+  "repository": "https://github.com/AMANEQ-official/StrHrTdcBase",
+  "commit": "33e3f35dfc43b04672d0bf6b352be2ff33b5579d",
+  "latest_public_image_version": "v2.A",
+  "source_version": "C480020A",
+  "submodules": [
+    " 33916a82262dabfe5321a7a05802643147b3cef4 hdl/bbt-sitcp-core (v4.0)",
+    " be7935e04017a7593d44aba8239c9d9b94bb0172 hdl/common (be7935e)",
+    " 0aa6944a0cc8dd5a6682696c820c4a0339dc8ced hdl/laccp (remotes/origin/devel-17-g0aa6944)",
+    " df944618cc65f5172cd8be54e1dcc734f11d45a2 hdl/mikumari (v2.1-2-gdf94461)",
+    " 1c49704a5799cdf17df03b63dafefde319232d72 hdl/strtdc (1c49704)",
+    " f3e7f6cd05d7114184780aa08c7a63779764ad41 hdl/utility (f3e7f6c)"
+  ],
+  "build": {
+    "upstream_tool": "2023.1.1",
+    "compile": "bitstream generated with evaluation-core runtime limit",
+    "tool": "Vivado 2023.2",
+    "synthesis": "succeeded",
+    "programmed": false,
+    "project_generation": "succeeded",
+    "ip_upgrade": true,
+    "hdl_modified": false,
+    "evidence": "evidence/baseline-build-summary.json",
+    "place_and_route": "succeeded"
+  },
+  "cold_boot_trials": {
+    "switch_after_board": {
+      "window_seconds": 120,
+      "control_successes": 3,
+      "trials_per_board": 3,
+      "problematic_successes": 0
+    },
+    "switch_already_on": {
+      "window_seconds": 60,
+      "control_successes": 2,
+      "trials_per_board": 3,
+      "problematic_successes": 0
+    },
+    "audit": "all 12 measurements passed timestamp and acknowledgement checks",
+    "completed": 12,
+    "excluded_aborted_attempts": 1
+  },
+  "running_firmware_version": {
+    "problematic": "unverified",
+    "control": "C480020A read via RBCP"
+  },
+  "jtag": {
+    "ip_mapping": "unverified",
+    "parts": [
+      "xc7k160t",
+      "xc7k160t"
+    ],
+    "device_count": 2
+  },
+  "power_or_configuration_changes": true,
+  "firmware_programming_performed": false,
+  "conclusion": "Stable startup not demonstrated; .10 unresponsive in all six measured trials; .11 exceeded one of six observation windows; root cause remains unverified",
+  "final_power": "Both boards and network switch confirmed ON, Ethernet Up; .11 RBCP reachable, .10 not reachable"
+}

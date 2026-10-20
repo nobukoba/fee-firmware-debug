@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-20T19:25:56.2558115+09:00",
+  "checks": "12 completed measurements; OFF >=15 seconds; successes have 3 final valid reads >=1 second apart (0.01 second rounding tolerance); switch-after-board ordering >=15 seconds",
+  "trials": [
+    {
+      "cohort": "connected-cohort.json",
+      "outlet": 1,
+      "trial": 1,
+      "off_confirmed_seconds": 18.157,
+      "checks": "passed"
+    },
+    {
+      "cohort": "connected-cohort.json",
+      "outlet": 1,
+      "trial": 2,
+      "off_confirmed_seconds": 19.418,
+      "checks": "passed"
+    },
+    {
+      "cohort": "connected-cohort.json",
+      "outlet": 1,
+      "trial": 3,
+      "off_confirmed_seconds": 18.183,
+      "checks": "passed"
+    },
+    {
+      "cohort": "connected-cohort.json",
+      "outlet": 2,
+      "trial": 1,
+      "off_confirmed_seconds": 20.841,
+      "checks": "passed"
+    },
+    {
+      "cohort": "connected-cohort.json",
+      "outlet": 2,
+      "trial": 2,
+      "off_confirmed_seconds": 18.888,
+      "checks": "passed"
+    },
+    {
+      "cohort": "connected-cohort.json",
+      "outlet": 2,
+      "trial": 3,
+      "off_confirmed_seconds": 18.436,
+      "checks": "passed"
+    },
+    {
+      "cohort": "switch-after-board-cohort.json",
+      "outlet": 1,
+      "trial": 1,
+      "off_confirmed_seconds": 24.262,
+      "checks": "passed"
+    },
+    {
+      "cohort": "switch-after-board-cohort.json",
+      "outlet": 1,
+      "trial": 2,
+      "off_confirmed_seconds": 25.166,
+      "checks": "passed"
+    },
+    {
+      "cohort": "switch-after-board-cohort.json",
+      "outlet": 1,
+      "trial": 3,
+      "off_confirmed_seconds": 24.51,
+      "checks": "passed"
+    },
+    {
+      "cohort": "switch-after-board-cohort.json",
+      "outlet": 2,
+      "trial": 1,
+      "off_confirmed_seconds": 25.506,
+      "checks": "passed"
+    },
+    {
+      "cohort": "switch-after-board-cohort.json",
+      "outlet": 2,
+      "trial": 2,
+      "off_confirmed_seconds": 24.545,
+      "checks": "passed"
+    },
+    {
+      "cohort": "switch-after-board-cohort.json",
+      "outlet": 2,
+      "trial": 3,
+      "off_confirmed_seconds": 24.658,
+      "checks": "passed"
+    }
+  ]
+}

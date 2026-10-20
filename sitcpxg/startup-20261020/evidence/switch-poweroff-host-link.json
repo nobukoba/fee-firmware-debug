@@ -1,0 +1,20 @@
+{
+  "measured_at": "2026-10-20T19:13:34.7244155+09:00",
+  "adapters": [
+    {
+      "Name": "Wi-Fi",
+      "Status": "Up",
+      "LinkSpeed": "173.3 Mbps"
+    },
+    {
+      "Name": "vEthernet (WSL (Hyper-V firewall))",
+      "Status": "Up",
+      "LinkSpeed": "10 Gbps"
+    },
+    {
+      "Name": "Ethernet",
+      "Status": "Disconnected",
+      "LinkSpeed": "0 bps"
+    }
+  ]
+}

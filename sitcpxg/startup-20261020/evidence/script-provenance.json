@@ -1,0 +1,14 @@
+{
+  "measured_at": "2026-10-20T19:16:24.3448902+09:00",
+  "scope": "Scripts as used for restarted switch-after-board cohort and baseline build. Initial connected cohort used earlier revision without switch power support.",
+  "files": [
+    {
+      "file": "sitcpxg/startup-20261020/scripts/run-connected-cohort.ps1",
+      "sha256": "7135b064af946a4326e85040c95f36048ab46b4ef38cf9e39cfac62f818dac7d"
+    },
+    {
+      "file": "sitcpxg/startup-20261020/scripts/build-baseline.tcl",
+      "sha256": "3ba02174b789fc011d41f9632003a37093dce3b062510a36dc19cf60a10d8746"
+    }
+  ]
+}
