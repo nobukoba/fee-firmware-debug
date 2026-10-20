@@ -8,6 +8,8 @@ Initial observations on 2026-10-20: .10 did not answer ICMP or RBCP; .11 answere
 
 ## Measurements
 
+**The 12 trials below preceded verification of the jitter-cleaner configuration. They do not establish a StrHrTdc firmware fault with correct clock settings.** Later, Skeleton v2.2 was loaded temporarily through BIT into the problematic board. CDCE62002 readback at 192.168.10.16 differed from the intended preset. At 19:54 JST, input 125 MHz / outputs 500 and 125 MHz were configured, verified and followed by an acknowledged EEPROM-copy command. Readback still matched and ping succeeded 22 seconds later. Power-cycle persistence and StrHrTdc startup after this correction remain untested. [Configuration evidence](evidence/jitter-cleaner-configured.json)
+
 Existing firmware was tested with at least 15 seconds board power off. Success requires three consecutive valid SiTCP-XG identifier reads at least one second apart.
 
 | Condition | Observation window | .10 successes/trials | .11 successes/trials | .11 first responses in successful trials |

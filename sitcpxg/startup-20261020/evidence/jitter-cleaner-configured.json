@@ -1,0 +1,33 @@
+{
+  "time": "2026-10-20T19:54:22.708483+09:00",
+  "target": "192.168.10.16",
+  "preset": "in_125_out_500_125",
+  "method": "Single UDP socket, one write sequence, no automatic retry",
+  "eeprom_copy_sent": true,
+  "before": [
+    "72A000E0",
+    "8389A061"
+  ],
+  "write_duration_ms": 1.6849999665282667,
+  "immediate_after": [
+    "52080150",
+    "8F81C081"
+  ],
+  "final_readback": [
+    "52080150",
+    "8F81C081"
+  ],
+  "status": "success",
+  "transaction_count": 73,
+  "max_rtt_ms": 0.39309996645897627,
+  "followup": {
+    "time": "2026-10-20T19:54:44.628207+09:00",
+    "target": "192.168.10.16",
+    "registers": [
+      "52080150",
+      "8F81C081"
+    ],
+    "power_cycle_verified": false
+  },
+  "board_context": "Problematic board, MSNSwitch2 outlet 1, temporarily running Skeleton v2.2 at .16; control board unchanged"
+}
