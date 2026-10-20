@@ -1,7 +1,9 @@
 # FEE firmware debugging studies
 
-フロントエンド電子回路のファームウェア調査記録。
+[日本語](README.ja.md)
+
+Investigation records for front-end electronics firmware.
 
 - [AMANEQ: SiTCP cold-boot instability](amaneq/sitcp-unstability-on-boot/README.md)
 
-各スタディでは、実測結果・解釈・未検証事項を区別する。
+Each study distinguishes measured results, interpretations, and unverified points.
