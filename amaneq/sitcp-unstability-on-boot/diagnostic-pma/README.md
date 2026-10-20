@@ -1,17 +1,11 @@
-# F307 自動PMAリセットの診断用ソース
+# F307 automatic PMA reset: diagnostic sources
 
-このディレクトリはユーザー作成の制御RTL・テストベンチと論理シミュレーション結果のみを含む。
-元のRX FSMの500 ns、INIT0、SOFT0を保持し、準備完了・既存リセット静止が1秒続いた後、
-RXクロック16周期のPMAリセットを一度要求する。通常のGTRESETSEL=0を維持する。
-RX側クロックは実装上の共有TX/RXユーザークロックであり、受信回復クロックの測定とは別。
+**Language: English | [日本語](README.ja.md)**
 
-元のRX FSMの2か所だけを変更するF304とは別の診断候補で、最小の本番修正とは扱わない。
-この制御器の接続には、生成GTラッパーへの信号・インスタンス追加と、RXPMARESETへのOR接続が必要。
-生成されたベンダーIP全体は同梱しない。比較試験用の物理ゲート・ILAは別途追加する。
+This directory contains only custom control RTL, testbenches, and logic simulation results. It preserves the original RX FSM's 500 ns delay, INIT0, and SOFT0. After readiness and inactivity of existing resets have persisted for one second, it requests one PMA reset lasting 16 RX clock cycles. Normal GTRESETSEL=0 operation is retained. The RX-side clock is the implementation's shared TX/RX user clock; this is separate from measuring the recovered receive clock.
 
-正常モデルでは準備待ち、16周期パルス、RXRESETDONE低下復帰、単発実行、SOFT_RESET後の再実行を確認。
-異常モデルでは準備の中断、最初からRXクロックがない場合、RXRESETDONEが高のままの場合を確認。
-途中でRXクロックが止まる場合やアナログ動作、物理ケーブル後挿しを検証したものではない。
+This is a diagnostic candidate distinct from F304, which changes only two locations in the original RX FSM. It is not presented as the smallest production fix. Integration requires adding signals and an instance to the generated GT wrapper, and ORing the request into RXPMARESET. The full generated vendor IP is not included. A physical gate and ILA are added separately for comparison tests.
 
-RTLの初回エクスポート時点では実機未検証だった。その後、物理ゲート有効／無効を比較し、実機試験を完了した。配置・配線、ILA、全12試行と限界は上位の調査READMEを参照。
-ソース対応・行数・変換前後のハッシュは[source-index.json](source-index.json)に保存する。
+The normal model checks readiness waiting, the 16-cycle pulse, RXRESETDONE deassertion and recovery, one-shot operation, and rearming after SOFT_RESET. Fault models cover interrupted readiness, absence of the RX clock from the start, and RXRESETDONE remaining high. These simulations do not validate a clock stopping during operation, analog behavior, or physically connecting the cable after startup.
+
+Hardware testing had not been performed when the RTL was first exported. Subsequent tests compared the physical gate enabled and disabled, completing hardware evaluation. See the parent study README for placement/routing, ILA observations, all 12 trials, and limitations. Source correspondence, line counts, and hashes before and after export transformations are recorded in [source-index.json](source-index.json).

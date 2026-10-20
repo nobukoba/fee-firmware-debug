@@ -1,314 +1,185 @@
 # AMANEQ: SiTCP instability on cold boot
 
-調査日: 2026-10-17–18 JST。追加比較試験と最終復元を完了。物理的な根本原因は未確定。
+**Language: English | [日本語](README.ja.md)**
 
-本ページは10月18日午前までの調査結果。午後の[最小リセット変更の追試](minimum-reset-20261018/)は別記する。
+Investigation dates: 2026-10-17–18 JST. Additional comparison tests and final restoration are complete. The physical root cause remains unresolved.
 
-**最新（10月19日）：** [約10時間の追加調査・短い修正候補の比較](deep-reset-20261018/)を完了。75回の起動確認がある3か所の修正、1行案の陰性結果、送受信クロックの分離測定、ARP再送の交絡、両基板の最終復元を記録した。
+This page covers results through the morning of October 18. The afternoon [minimum-reset follow-up](minimum-reset-20261018/) is recorded separately.
 
-## 結論
+**Update (October 19):** the [approximately ten-hour follow-up and short-fix comparison](deep-reset-20261018/) is complete. It records a three-location fix verified over 75 boots, negative one-line results, separate TX/RX clock measurements, host ARP retry confounding, and final restoration of both boards.
 
-問題を **GTX受信部の回復クロック獲得／初期化状態（RX/PMA/CDR周辺）** まで絞った。
-不良状態では回復クロックの平均周波数比が正常時と異なり、PMAだけのリセットで
-周波数比・有効な受信・SiTCP通信が回復した。初期RXリセットの保持を変えると、
-同じ配置配線の対照実験で不良を予防でき、元に戻すと不良が再現した。
+## Conclusions
 
-**なぜ問題基板だけがその状態に入りやすいかという物理的な原因は未確定。**
-特定部品の故障、基準クロックのジッタ、電源レールの立ち上がりのどれかを
-確定したものではない。今回の記録で「CDRロック不良を直接測定した」とは扱わない。
+The issue was narrowed to **GTX recovered-receive-clock acquisition / initialization state around RX/PMA/CDR**. In the bad state, the mean recovered-clock frequency ratio differed from normal; a PMA-only reset restored the ratio, valid reception, and SiTCP communication. Changing initial RX-reset hold prevented failure in same-placement/routing controls; reverting reproduced it.
 
-## 対象・条件
+**The physical reason that the problem board enters this state more readily remains unresolved.** These results do not identify a failed component, reference-clock jitter, or supply-rail startup as the cause. They are not presented as direct measurements of failed CDR lock.
 
-| 対象 | IP | 役割 |
+## Boards and conditions
+
+| Board | IP | Role |
 |---|---|---|
-| board16 | 192.168.10.16 | 冷間起動不良が出やすい基板 |
-| board17 | 192.168.10.17 | 正常対照基板 |
+| board16 | 192.168.10.16 | Frequently fails on cold boot |
+| board17 | 192.168.10.17 | Healthy control |
 
-ネットワークスイッチはONのまま。各基板の電源を個別にOFF/ONした。
-スイッチの遠隔ポート制御は利用できず、物理ケーブル後挿しの試験は未実施。
-両基板では電源・ケーブル・EEPROM設定等の経路が異なるため、基板固有の
-シリコン不良と断定するには足りない。両基板のFPGA IDCODEは同一だった。
-ユーザーからは、既に複数の電源・ケーブルで試したとの報告を受けている。
-この報告も踏まえ、基板上の電源・クロックと初期化の関係を優先して検討する。
-部品故障と、正常範囲の個体差に対する初期化手順の余裕不足は、まだ区別できていない。
+The switch remained ON while board power was cycled individually. Remote switch-port control was unavailable; physical cable insertion after startup was not tested. Power, cable, EEPROM settings, and other paths differ between boards, so these results alone cannot establish board-specific silicon failure. FPGA IDCODEs matched. The user reported already testing multiple power supplies and cables. This motivates prioritizing on-board power/clock interactions with initialization, but component failure remains indistinguishable from insufficient initialization margin for otherwise normal unit variation.
 
-## 決め手になった実験
+## Decisive experiments
 
-### 1. 同じ診断イメージで回復クロックを比較
+### 1. Recovered-clock comparison using the same diagnostic image
 
-GTXの `RXOUTCLKSEL=010` の出力を観測した。これはUG476の
-`RXOUTCLKPMA`（回復クロック）に相当する。従来のRX記録用クロックは
-TX由来の共有RXUSRCLK2だったため、両者を区別した。
+GTX output with `RXOUTCLKSEL=010` was observed, corresponding to `RXOUTCLKPMA` (recovered clock) in UG476. Earlier RX-recording clocks used shared TX-derived RXUSRCLK2; the two were distinguished.
 
-カウンターを各クロック領域で動かし、Gray符号化・2段同期・原子的な
-スナップショットを用いてSYS/GT基準/RXの比を測定した。
-診断回路の追加による配置等の影響は完全には除けないが、同一診断イメージ内で
-不良状態とPMAによる回復を対照した。診断回路は最小修正候補には含めていない。
+Counters in each clock domain, Gray encoding, two-stage synchronization, and atomic snapshots measured SYS/GT-reference/RX ratios. Added diagnostics may affect placement, but bad state and PMA recovery were compared within the same diagnostic image. Diagnostics are excluded from the minimal-fix candidate.
 
-| 条件 | 試行 | RX / GT基準クロックの比 |
+| Condition | Trials | RX / GT-reference ratio |
 |---|---:|---:|
-| board16 不良、モード切替のみ | 3 | 約0.399729 |
-| 同じ不良状態にPMAリセット1回 | 3 | 約0.4000126 |
-| board17 通常起動 | 3 | 約0.4000137 |
+| board16 bad state, mode change only | 3 | ~0.399729 |
+| One PMA reset in the same bad state | 3 | ~0.4000126 |
+| board17 normal startup | 3 | ~0.4000137 |
 
-board16ではPMA前後で比が約709 ppm変化した。SYSを公称200 MHzとした
-RX平均周波数は不良時約62.456 MHz、回復後約62.500 MHz。
-board17は約62.502 MHzだったが、独立したクロック源の公称値誤差を含むため、
-基板間比較にはRX/GT基準の比を使う。絶対周波数を校正した測定ではない。
+board16's ratio changed by about 709 ppm across PMA. Assuming nominal 200 MHz SYS, mean RX was about 62.456 MHz when bad and 62.500 MHz after recovery. board17 was about 62.502 MHz, but nominal errors of independent sources affect absolute comparisons; RX/GT-reference ratios are used between boards. This is not calibrated absolute-frequency measurement.
 
-board16の新規受信エラー数（通常不良 → モードのみ → PMA → モード復帰）:
+Fresh receive errors on board16 (normal bad state → mode only → PMA → mode restored):
 
-| 試行 | 通常不良 | モードのみ | PMA後 | モード復帰後 |
+| Trial | Bad state | Mode only | After PMA | After restoring mode |
 |---|---:|---:|---:|---:|
 | 1 | 103 | 104 | 0 | 0 |
 | 2 | 112 | 109 | 0 | 0 |
 | 3 | 71 | 126 | 0 | 0 |
 
-PMAは16 RXクロック分の単発パルス。受け付けられたことをRESETDONEの
-低下とその後の復帰で確認した。他のGT全体・TX・CPLL・PCSリセットは
-その間動作せず、CPLLLOCKとTXdoneも安定していた。通信回復を繰り返し確認。
-モードだけの切替では回復しなかった。
+PMA was a single 16-RX-clock pulse. RESETDONE deassertion and recovery confirmed acceptance. Other whole-GT, TX, CPLL, and PCS resets remained inactive, while CPLLLOCK and TXdone stayed stable. Communication recovery was reproduced; mode changes alone did not recover it.
 
-PMAリセットが内部でCDR等へ影響する可能性は残る。
-予約扱いのCDRリセット信号やDRP変更は使っていない。
-RESETDONEの低下時間は、物理的なCDRロック時間の測定ではない。
+PMA reset may internally affect CDR and other circuitry. Reserved CDR-reset signals and DRP changes were not used. RESETDONE-low duration is not a measurement of physical CDR lock time.
 
-### 2. 初期RXリセット保持の介入と逆戻し
+### 2. Intervention and reversal of initial RX-reset hold
 
-同じ配置配線を使い、ゲートLUTのINITだけを変えた比較:
+With the same placement/routing and only the gate LUT INIT changed:
 
-| 条件 | 正常起動 |
+| Condition | Successful boots |
 |---|---:|
-| 初期保持なし | 0/3 |
-| 初期3 ms保持 | 3/3 |
-| 連続保持 | 3/3 |
-| 元の条件へ完全に戻す | 0/3 |
+| No initial hold | 0/3 |
+| Initial 3 ms hold | 3/3 |
+| Continuous hold | 3/3 |
+| Fully restore original condition | 0/3 |
 
-別の要因分離実験でも、GT側の初期保持は3/3改善し、待ちタイマーのみの
-変更は0/3だった。試した遅延やCPLL初期化順序だけの変更では改善しなかった。
-後から単純に長い全RXリセットを出す試験も、初期保持と同じ結果にはならなかった。
-詳細な条件別結果は [experiment-matrix.csv](experiment-matrix.csv) を参照。
+Another factor-separation experiment improved 3/3 with initial GT-side hold, while changing only a wait timer passed 0/3. Tested delay-only and CPLL initialization-order changes did not help. A simple long full-RX reset later in startup did not give the same result as initial hold. See [experiment-matrix.csv](experiment-matrix.csv).
 
-トップの全体リセットは公称125 MHzの約2.147秒タイマーを含む。
-元のRX FSMはそのSOFT_RESET中に `gtrxreset_i='0'` としていた。
-この経路は正常・不良の両基板で共通であり、これだけで個体差は説明できない。
-初期3 ms保持でも改善したため、全体リセットの約2.147秒すべてで保持することが
-必要だとは証明していない。構成完了直後の500 ns条件も、実波形では未測定。
+Top-level global reset includes an approximately 2.147-second timer at nominal 125 MHz. The original RX FSM sets `gtrxreset_i='0'` during SOFT_RESET. This path is common to healthy and bad boards and alone does not explain unit variation. Initial 3 ms hold also worked, so holding for the entire 2.147 seconds has not been shown necessary. The 500 ns condition immediately after configuration has not been measured as an actual waveform.
 
-### 3. パケットによる裏付け
+### 3. Packet corroboration
 
-別の単発PMA対照3件では、不良状態の窓でホストのARP要求は見えたが
-基板の応答フレームは見えず、PMA後にARP・RBCP・TCP応答を確認した。
-MAC/SiTCP側をリセット保持したままでもPMA後に新規受信エラーが0になり、
-保持解除後に通信が回復する対照も得た。
+In three separate single-PMA controls, host ARP requests appeared during the bad-state windows with no board response frames; ARP/RBCP/TCP responses followed PMA. Another control kept MAC/SiTCP reset asserted: fresh receive errors became zero after PMA and communication recovered after releasing that hold.
 
-ホストNICでのキャプチャーであり、スイッチのミラーや物理信号の測定ではない。
-応答までの時間にはホストのARP再試行待ちが含まれ、物理的な回復時間ではない。
-キャプチャー終了時のドロップ統計はまだ未確定。生PCAPはこのリポジトリに含めない。
+These are host-NIC captures, not switch mirroring or physical-signal measurements. Response latency includes host ARP retry waits and is not physical recovery time. Final capture-drop statistics were not yet established in these records. Raw PCAP is not included.
 
-## 最小修正候補 F304
+## Minimal candidate F304
 
-機能上の変更はRX起動FSMの2代入:
+The functional change consists of two assignments in the RX startup FSM:
 
 ```vhdl
--- 宣言の初期値
-signal gtrxreset_i : std_logic := '1'; -- 元は '0'
+-- Declaration initializer
+signal gtrxreset_i : std_logic := '1'; -- Previously '0'
 
--- SOFT_RESET分岐
-gtrxreset_i <= '1';                  -- 元は '0'
+-- SOFT_RESET branch
+gtrxreset_i <= '1';                  -- Previously '0'
 ```
 
-既存の状態遷移・タイマーを利用する。追加の監視・再試行回路はない。
-版番号およびビルド用スクリプトも変更するため、リポジトリ全体の差分が
-2行という意味ではない。実際の生成HDL差分は [minimal-f304.patch](minimal-f304.patch)。
+Existing transitions/timers are reused; no monitoring/retry circuit is added. Version and build scripts also change, so the entire repository diff is not two lines. See the [generated HDL patch](minimal-f304.patch).
 
-比較ビルドはVivado 2023.2を使い、IP再生成後のGT属性
-（`CPLL_FBDIV_45=4`等）とクロック制約を既存Ethernetコアに合わせる共通手順を使用した。
-再現時にはこの設定・制約の整合も維持する必要がある。
-ここでの行数は、共通手順適用後の機能HDL差分を示す。
+Comparison builds used Vivado 2023.2 and a shared post-regeneration procedure aligning GT attributes, including `CPLL_FBDIV_45=4`, and clock constraints with the existing Ethernet core. Reproduction must retain this consistency. Line counts refer to functional HDL after that shared procedure.
 
-### なぜ元の値が0なのか／採用判断で残る点
+### Why was the original value 0, and what remains unresolved?
 
-元のベンダー生成FSMでは、SOFT_RESETはFSMをINITへ戻す入力であり、
-GTXのGTRXRESETそのものとは別の信号。INITでは約500 nsの待ちを置き、
-ASSERT_ALL_RESETSで初めてGTRXRESETを1にし、その後PLLロックを確認して
-VERIFY_RECCLK_STABLEで0へ戻す構造になっている。
-したがって元の0は単なる書き間違いとは断定できない。
-作者がその値を選んだ理由を直接説明した資料は確認できていないが、
-待機期間と実際のリセット開始を分ける設計であることはコードで確認できる。
+In the original vendor-generated FSM, SOFT_RESET returns the FSM to INIT; it is distinct from GTX GTRXRESET. INIT waits about 500 ns, ASSERT_ALL_RESETS first raises GTRXRESET, PLL lock is checked, and VERIFY_RECCLK_STABLE returns it to 0. The original 0 cannot therefore simply be called a typo. No source directly explaining the author's choice was found, but code confirms separation between waiting and actual reset assertion.
 
-UG476の構成完了後のRXリセット手順には、GTRXRESET等の投入まで少なくとも
-500 ns待つ条件、および関連PLLがロックするまでGTRXRESETを解除しない条件がある。
-候補のINIT=1は前者の待機より早い段階でHighになり得るため、実際のDONEと
-GT入力リセットの時系列について、その条件への適合は未確認。
-実機の起動成功や論理シミュレーションだけで仕様適合まで証明したとは扱わない。
-本候補はAMANEQの試験条件で有効だった候補であり、ベンダー承認済みの
-一般的修正や、全条件で副作用がない修正とは位置付けていない。
-論理シミュレーションでは反復SOFT_RESET後も処理完了を確認したが、
-物理的な構成完了タイミング、後挿し、TDC精度等は別の検証が必要。
+UG476's post-configuration RX sequence requires waiting at least 500 ns before asserting GTRXRESET and related signals, and not releasing GTRXRESET before the associated PLL locks. INIT=1 can assert earlier than that wait, so compliance of actual DONE/GT-reset timing remains unverified. Hardware boot success and logic simulation alone do not prove specification compliance. This is an effective candidate under the tested AMANEQ conditions, not a vendor-approved general fix or a guarantee of no side effects in every condition. Logic simulation completed after repeated SOFT_RESET; actual configuration timing, late cable insertion, and TDC precision require separate validation.
 
-| 項目 | 値 |
+| Item | Value |
 |---|---|
-| 元リポジトリ | AMANEQ-official/StrLrTdc |
-| 元コミット | `5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039` |
-| ローカル候補コミット | `3302acf26b9679c44ef5eea5651736377a8a2aea` |
-| 実行時バージョン | `0x60C4F304` |
+| Original repository | AMANEQ-official/StrLrTdc |
+| Base commit | `5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039` |
+| Local candidate commit | `3302acf26b9679c44ef5eea5651736377a8a2aea` |
+| Runtime version | `0x60C4F304` |
 | MCS SHA-256 | `15a95d87c6c6d301cac830d5f3d22fc6ed4229f9f609ee1b475ab95efe1fe912` |
-| 全フラッシュ読戻し SHA-256（両基板一致） | `99e79ca5f3397e060013f73209a2b4cecfe52e6407e5f64430eb1e5e248361b2` |
+| Full Flash readback SHA-256 (both boards match) | `99e79ca5f3397e060013f73209a2b4cecfe52e6407e5f64430eb1e5e248361b2` |
 
-この記録は候補コミットが上流へ公開されたことを意味しない。
-ビットストリーム・生成IP・ツールのチェックポイントは同梱しない。
+This does not imply the candidate commit was published upstream. Bitstreams, generated IP, and tool checkpoints are not included.
 
-### 検証状況
+### Validation
 
-board16 / board17 **ともに電源再投入15/15成功**。
-内訳は初回3回、再書込み後3回、追加の5秒OFF試験7回、60秒OFF1回、600秒OFF1回。
-各成功はRBCP・TCP・バージョン/IPを、時間をあけて再確認した。
-フラッシュ全領域の読戻し、およびEEPROM読み出しの前後一致も確認した。
-OFF時間は指示値と応答確認に基づき、電源レールの実波形測定ではない。
+Both board16 and board17 passed **15/15 power cycles**: three initial trials, three after reprogramming, seven additional 5-second OFF trials, one 60-second OFF trial, and one 600-second OFF trial. Each success was rechecked later for RBCP/TCP/version/IP. Full Flash readback and matching pre/post EEPROM reads were verified. OFF durations derive from commands and response confirmation, not supply-rail waveforms.
 
-両基板同時の連続監視は **2026-10-18 02:24:39–04:36:59 JST**。
-追加実験のユーザー依頼に合わせて正常に停止した。予定していた10:30までは実施していない。
-実際の最初から最後のプローブの間隔はboard16が7919.969秒、board17が7918.953秒
-（約2時間12分）。両基板ともRBCP **265/265**、TCP **27/27**、失敗0件。
-監視子プロセスは正常終了した。親処理は予定時間完了を要求していたため、
-早期停止を検出して終了コード1となった。通信失敗とは区別する。
-停止時の記録は [status.json](status.json)。
-先行するboard17単独F304監視は実際のプローブ間隔で2時間48分37秒、
-RBCP 338/338、TCP 34/34成功。現在の両基板同時監視とは別の測定期間。
+Simultaneous monitoring ran **2026-10-18 02:24:39–04:36:59 JST** and stopped normally for the user's next experiment request, before the planned 10:30 endpoint. Actual first-to-last probe spans were 7919.969 seconds on board16 and 7918.953 seconds on board17 (about 2 hours 12 minutes). Each passed RBCP **265/265** and TCP **27/27**, zero failures. Monitoring child processes exited normally. The parent required the planned duration and returned exit code 1 for early stopping; this is separate from communication failure. See [status.json](status.json).
 
-TDC精度、物理ケーブル後挿し、連続した全パケットのBERは未検証。
+Earlier board17-only F304 monitoring spanned 2 hours 48 minutes 37 seconds between probes, RBCP 338/338 and TCP 34/34, a separate interval. TDC precision, physical late cable insertion, and continuous full-packet BER remain unverified.
 
-### 2026-10-18 追加依頼に基づく比較
+### Additional comparisons requested on 2026-10-18
 
-- F305: RX FSMの`STARTUP_DELAY`だけを500 nsから5 µsへ変更。
-- F306: 同じ定数だけを50 µsへ変更。
-- F307: 元の500 ns・INIT0・SOFT0を保ち、PLL/RX/TX準備とリセットの静止を
-  1秒確認後、16 RXクロックのPMAリセットを自動で一度だけ追加。
+- F305 changes only RX FSM `STARTUP_DELAY`, 500 ns → 5 µs.
+- F306 changes the same constant to 50 µs.
+- F307 retains original 500 ns/INIT0/SOFT0, waits for one second of PLL/RX/TX readiness and reset inactivity, then adds one automatic 16-RX-clock PMA pulse.
 
-F307は通常のシーケンシャルモードを維持する。後段の内部リセットも伴い得るため、
-先の単独モードPMA切り分けとは区別する。論理シミュレーションでは準備待ち、
-16クロック幅、単発実行、SOFT_RESET後の再実行を確認した。
-論理シミュレーションと、以下の実装審査・実機電源再投入比較は区別して記録する。
+F307 retains normal sequential mode; subsequent internal resets may also occur, so distinguish it from earlier PMA isolation in single mode. Logic simulation checks readiness waiting, 16-clock width, one-shot operation, and rearming after SOFT_RESET. Simulation is recorded separately from implementation review and hardware power-cycle comparisons.
 
-[PMA診断用RTLとテストベンチ](diagnostic-pma/)には、正常系と異常系の論理
-シミュレーション結果を保存した。異常系は準備の中断、最初からRXクロックがない場合、
-RXRESETDONEが高のままの場合を対象とする。この論理シミュレーションは、
-途中でのクロック停止・物理ケーブル後挿しを検証した結果ではない。
+[PMA diagnostic RTL/testbenches](diagnostic-pma/) include normal/fault simulations. Fault models cover interrupted readiness, no RX clock from the start, and RXRESETDONE stuck high. They do not validate mid-operation clock loss or physical late cable insertion.
 
-### 追加比較の結果（2026-10-18）
+### Additional comparison results (2026-10-18)
 
-F305（待ち時間5 µs）はboard16で **起動成功0/3**。INIT0・SOFT0を維持し、
-待ち時間の定数だけを変更した。全フラッシュ読戻しは期待値と一致し、失敗状態でも
-FPGAのDONE・EOSは1、構成CRC・IDエラーおよびフォールバックは0だった。
-したがって、この条件では待ち時間を10倍にするだけでは改善しなかった。
-構成レジスタのPLL_LOCKはGTXのCPLLLOCKやCDRロックとは別の信号である。
+F305 (5 µs wait) passed **0/3 on board16**, retaining INIT0/SOFT0 and changing only the wait constant. Full Flash readback matched. Even in failure, FPGA DONE/EOS were 1 and configuration CRC/ID errors and fallback were 0. Increasing this wait tenfold did not help under these conditions. Configuration-register PLL_LOCK differs from GTX CPLLLOCK/CDR lock.
 
-同じ試験系列の元factoryは起動成功1/3。ただしfactoryと新規ビルドの配置・
-ツール条件は同一ではないため、厳密な同一配置での因果比較とは扱わない。
-F305には受信回復クロックの測定器を入れておらず、以前の診断版で観測した
-周波数のずれをF305で直接確認したとは主張しない。
-詳細は [F305の確定記録](evidence/day2-f305-reviewed-outcome.json)。
-F306（50 µs）もboard16で **起動成功0/3**。全フラッシュ読戻しは期待値と一致し、
-3回目の失敗後にDONE・EOS=1、構成CRC・IDエラー・フォールバック=0を確認した。
-試験中の正常側board17の通信監視に失敗はなかった。
-詳細は [F306の確定記録](evidence/day2-f306-reviewed-outcome.json)。
-さらに、3回目の試験終了から約71分後にも、リセット・電源操作を行わずに2回確認し、
-RBCP応答は得られなかった。[遅延後の通信確認](evidence/day2-f306-late-readonly-status.json)と
-[電源状態の読取り](evidence/day2-f306-late-power-status.json)を保存した。
-電源装置は出力ON・設定30 V/1 Aだったが、これは基板上のGT電源レールの波形測定ではない。
+Factory in the same series passed 1/3. Factory and fresh builds differ in placement/tool conditions, so this is not strict same-placement causality. F305 lacked recovered-clock instrumentation; the frequency offset seen in previous diagnostics was not directly confirmed on F305. See [reviewed F305 outcome](evidence/day2-f305-reviewed-outcome.json).
 
-| 条件 | board16起動成功 | 備考 |
+F306 (50 µs) also passed **0/3 on board16**. Full readback matched; after the third failure, DONE/EOS=1 and CRC/ID/fallback errors=0. Healthy board17 monitoring had no communication failures. See [reviewed F306 outcome](evidence/day2-f306-reviewed-outcome.json). About 71 minutes after the third trial, two read-only checks without reset/power intervention still received no RBCP reply. See [later communication checks](evidence/day2-f306-late-readonly-status.json) and [power readback](evidence/day2-f306-late-power-status.json). The supply reported output ON, 30 V/1 A settings; this is not a waveform measurement of on-board GT rails.
+
+| Condition | board16 successful boots | Note |
 |---|---:|---|
-| 元factory、500 ns | 1/3 | 新規ビルドとはツール・配置が異なる |
-| F305、5 µs、INIT0・SOFT0 | 0/3 | 待ち時間定数のみ変更 |
-| F306、50 µs、INIT0・SOFT0 | 0/3 | 待ち時間定数のみ変更 |
+| Original factory, 500 ns | 1/3 | Tool/placement differ from fresh builds |
+| F305, 5 µs, INIT0/SOFT0 | 0/3 | Only wait constant changed |
+| F306, 50 µs, INIT0/SOFT0 | 0/3 | Only wait constant changed |
 
-試した5 µs・50 µsでは改善しなかった。すべての待ち時間設定を否定する結果ではない。
-F307（自動PMA）は、物理PMAの観測回路を追加した有効／無効イメージの実装・審査が完了した。
-以下に実機比較を記録する。無効版への逆戻しと正常側.17の回帰確認も完了した。
+The tested 5/50 µs waits did not improve startup; this does not reject every wait value. F307 automatic-PMA enabled/disabled images with physical-PMA observation passed implementation/review. Hardware comparisons below include reversal to disabled and healthy .17 regression testing.
 
-生成された機能HDLの差分は、F305・F306がそれぞれ1行置換、F307が104行追加・1行削除。
-F307には87行の制御器とラッパーへの接続・デバッグ信号が含まれる。これらの行数には
-バージョン、ビルド手順、比較用の物理ゲート・ILAを含めていない。
-PMAリセットの最小実装がこの行数だと示すものではない。
-[差分と行数の確定記録](evidence/day2-functional-hdl-diffs.json)、
-[F305差分](day2-f305-functional-hdl.patch)、[F306差分](day2-f306-functional-hdl.patch)、
-[F307差分](diagnostic-pma/day2-f307-functional-hdl.patch)を保存。
+Functional generated-HDL diffs are one replacement each for F305/F306, and +104/−1 for F307. F307 includes an 87-line controller, wrapper connections, and debug signals. Counts exclude version, build procedures, comparison physical gate, and ILA. They do not establish a minimal PMA implementation. See [diff/count record](evidence/day2-functional-hdl-diffs.json), [F305 patch](day2-f305-functional-hdl.patch), [F306 patch](day2-f306-functional-hdl.patch), and [F307 patch](diagnostic-pma/day2-f307-functional-hdl.patch).
 
-### F307のPMA有効／無効比較
+### F307 PMA enabled/disabled comparison
 
-元の500 ns・INIT0・SOFT0を維持した同一配置・配線で、GT入力直前のゲートLUTの
-INITだけを切り替えた。元の配置済みプリミティブの名前・種類・LOC・BELも一致した。
-両版とも最終WNS +0.068 ns、WHS +0.015 ns。全フラッシュ読戻しが各期待値と一致。
+Original 500 ns/INIT0/SOFT0 and placement/routing were retained; only the gate LUT INIT immediately before the GT input changed. Original placed primitive names/types/LOC/BEL matched. Both variants had final WNS +0.068 ns and WHS +0.015 ns, and full Flash readback matched expected images.
 
-| board16の条件 | 起動成功 | パルス発行 | GT入力への到達 | RXRESETDONE低下・復帰 |
+| Condition | Successful boots | Request issued | Reached GT input | RXRESETDONE drop/recovery |
 |---|---:|---|---|---|
-| PMA無効 | 0/3 | 全3回で確認 | 全3回なし | 全3回なし |
-| PMA有効 | 3/3 | 全3回で確認 | 全3回で確認 | 全3回で確認 |
-| PMA無効へ逆戻し（.16） | 0/3 | 全3回で確認 | 全3回なし | 全3回なし |
-| PMA有効（正常側.17） | 3/3 | 全3回で確認 | 全3回で確認 | 全3回で確認 |
+| board16 PMA disabled | 0/3 | All three | None | None |
+| board16 PMA enabled | 3/3 | All three | All three | All three |
+| board16 reversed to disabled | 0/3 | All three | None | None |
+| Healthy board17 enabled | 3/3 | All three | All three | All three |
 
-発行側とGT入力側のパルスを、それぞれ2段同期とラッチで記録した。
-さらに制御器のRXRESETDONE低下・復帰・タイムアウトフラグを読む5点のILAを使用。
-これはパルスの存在を確認する計測で、アナログ波形・パルス幅・回数の直接測定ではない。
-16ユーザークロック幅・SOFT_RESETごとに1回という動作はRTLと論理シミュレーションで確認。
-今回の通常シーケンシャルモードのPMAリセットは、後段の内部リセットも伴い得る。
+Two-stage synchronization and latches recorded pulses at the issuer and GT input. Five ILA probes also read controller RXRESETDONE drop/recovery/timeout flags. This confirms pulse presence, not direct analog waveform, pulse-width, or pulse-count measurement. RTL and logic simulation establish 16 user-clock width and once per SOFT_RESET. PMA reset in normal sequential mode can trigger subsequent internal resets.
 
-根拠: [独立実装審査](evidence/day2-autopma-observed-independent-review.json)、
-[無効版1回目](evidence/day2-pma-first-trial-v2.json)・
-[1回目のILA解読](evidence/day2-pma-first-bypass-decoded.json)・
-[無効版の残り2回](evidence/day2-pma-cohort-d2pma-b16tail.json)、
-[有効版3回](evidence/day2-pma-cohort-d2pma-en16.json)。
-最初の無効版1回を重複して数えていない。無効版への逆戻しは0/3、正常側.17の有効版は3/3だった。
-[逆戻し3回](evidence/day2-pma-cohort-d2pma-rev16.json)、
-[正常側.17の3回](evidence/day2-pma-cohort-d2pma-en17.json)、
-[全12試行の証拠照合](evidence/day2-autopma-reviewed-outcome.json)を保存した。
-正常側.17のF304監視も約4時間21分、RBCP 523/523・TCP 53/53・失敗0回で終了した。
-[監視の正常終了と照合](evidence/day2-control17-stop-verified.json)。
+Evidence: [independent implementation review](evidence/day2-autopma-observed-independent-review.json), [first disabled trial](evidence/day2-pma-first-trial-v2.json), [first ILA decoding](evidence/day2-pma-first-bypass-decoded.json), [remaining two disabled trials](evidence/day2-pma-cohort-d2pma-b16tail.json), and [three enabled trials](evidence/day2-pma-cohort-d2pma-en16.json). The first disabled trial is not double-counted. Reversal passed 0/3 and healthy .17 enabled passed 3/3: [reversal](evidence/day2-pma-cohort-d2pma-rev16.json), [healthy .17](evidence/day2-pma-cohort-d2pma-en17.json), [all 12 trials crosschecked](evidence/day2-autopma-reviewed-outcome.json). Healthy .17 F304 monitoring ended after about 4 hours 21 minutes, RBCP 523/523 and TCP 53/53, zero failures: [completion](evidence/day2-control17-stop-verified.json).
 
-この比較は起動後PMAリセットによる予防策を支持するが、PMA内部のどの状態が原因か、
-基板上のどの電源・クロック条件が引き金かまでは確定していない。3回成功は全条件での保証ではない。
+This supports post-startup PMA reset as a preventive measure but does not identify the responsible internal PMA state or triggering board power/clock condition. Three successes do not guarantee all conditions.
 
-## 残る物理原因を確定するには
+## Establishing the remaining physical cause
 
-1. 既に行われた電源・ケーブル交換の条件と結果を記録し、基板に追随することを整理。
-2. 正常／不良起動でGT基準クロック・GT電源レール・リセットの波形を同時測定。
-3. 管理可能なポート等で入力信号が到着する時刻を制御して起動を比較。
+1. Record conditions/results of prior supply/cable swaps and establish whether failure follows the board.
+2. Simultaneously measure GT reference clock, GT power rails, and reset waveforms in successful/failed boots.
+3. Control incoming-signal timing with a managed port or equivalent and compare startup.
 
-平均周波数の観測はアナログジッタの測定ではないため、jitter cleaner追加で
-解決すると判断する根拠はまだない。
+Mean-frequency observation is not analog jitter measurement; there is insufficient evidence that adding a jitter cleaner will resolve this.
 
-## 証拠・終了処理
+## Evidence and cleanup
 
-[evidence/](evidence/) に診断・起動試験の集計と、その元資料のSHA-256を保存。
-元資料の一部はローカル保管のみで、このリポジトリに全原記録を同梱しているわけではない。
-保存時のハッシュ照合41件は一致。認証情報・EEPROM生データは含めない。
+[evidence/](evidence/) stores diagnostic/boot aggregates and source SHA-256 hashes. Some originals are local only; this repository does not contain every raw record. All 41 export-time hash comparisons matched. Credentials and raw EEPROM data are excluded.
 
-環境中断前のパケットキャプチャは38,846パケットを含み、ファイルの正常読取りを確認。
-最初のパケットは2026-10-17 11:51:16、最後は2026-10-18 04:53:16 JST。
-中断時の終了コード・最終ドロップ数は取得できていない。最後のパケット時刻は
-キャプチャプロセスの終了時刻とは限らない。再開後のキャプチャとは別期間として扱い、
-全試験時間を連続して取得したとは主張しない。
-[中断前キャプチャの監査](evidence/day2-capture-interruption-audit.json) にハッシュと検査結果を保存。
+The pre-interruption capture contains 38,846 packets and passed file-read validation. First/last packets were 2026-10-17 11:51:16 and 2026-10-18 04:53:16 JST. Process exit code and final drop count were unavailable at interruption. The last packet is not necessarily capture-process exit time. This is separate from post-resumption capture; continuous coverage of all testing is not claimed. See [interruption audit](evidence/day2-capture-interruption-audit.json) for hashes/checks.
 
-試験終了後、board16を既存F202（0x60C4F202）、board17を元factory（0x60C4020A）へ復元した。
-各16 MiBの全領域読戻しが期待ハッシュと一致し、各3回の電源再投入、繰返しRBCP/TCP、
-IP・バージョン、EEPROMの開始時ハッシュ一致、両電源ONを確認した。
-[復元記録](evidence/investigation24h-restoration.json)、
-[最終通信・EEPROM・電源確認](evidence/investigation24h-final-status.json)。
-診断用F307は最終運用状態には残していない。
+After testing, board16 was restored to existing F202 (0x60C4F202) and board17 to original factory (0x60C4020A). Each full 16 MiB readback matched expected hashes; three power cycles each, repeated RBCP/TCP, IP/version, original EEPROM hashes, and both power outputs ON were verified. See [restoration](evidence/investigation24h-restoration.json) and [final communication/EEPROM/power checks](evidence/investigation24h-final-status.json). Diagnostic F307 was not left as the operational image.
 
-再開後のキャプチャは13,210パケット、最初のパケットは10月18日05:04:27、最後は10:41:33 JST。
-復元確認後にCtrl-Cで停止し、終了コード1、ファイルの独立読取り検査は成功した。
-最終ドロップ数は取得できず、ゼロとは扱わない。スリープ抑止は解除済み。
-[終了監査](evidence/investigation24h-completion-audit.json)に127件の元資料照合と終了処理を記録した。
+The resumed capture contains 13,210 packets, first/last 2026-10-18 05:04:27 and 10:41:33 JST. It was stopped with Ctrl-C after restoration checks, exit code 1; independent file-reading validation succeeded. Final drops were unavailable and are not assumed zero. Sleep inhibition was released. The [completion audit](evidence/investigation24h-completion-audit.json) records 127 original-source checks and cleanup.
 
-## 参照
+## References
 
 - [AMD UG476: 7 Series FPGAs GTX/GTH Transceivers](https://docs.amd.com/v/u/en-US/ug476_7Series_Transceivers)
 - [AMANEQ hardware overview](https://spadi-alliance.rcnp.osaka-u.ac.jp/ug-amaneq/hardware/overview/overview/)
 - [StrLrTdc upstream](https://github.com/AMANEQ-official/StrLrTdc)
 
-
-最新の追加記録：[AMANEQ側だけの最小修正と実機比較（2026-10-19）](amaneq-side-minimum-20261019/)。差分・全起動結果・比較対照・最終復元は同記録を参照。
+Latest additional record: [minimum AMANEQ-side fix and hardware comparisons (2026-10-19)](amaneq-side-minimum-20261019/). See that record for patches, all boot results, controls, and final restoration.

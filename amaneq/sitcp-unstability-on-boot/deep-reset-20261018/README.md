@@ -1,164 +1,146 @@
-# AMANEQ SiTCP 起動不良：追加切り分け（2026-10-18開始）
+# AMANEQ SiTCP startup failure: further isolation (started 2026-10-18)
 
-**約10時間の追加調査を終了。** 下のチェックポイントは実施時点の途中記録として保持する。最終結果は本節と[result-summary.json](result-summary.json)を参照。
+**Language: English | [日本語](README.ja.md)**
 
-## 最終結果
+**The approximately ten-hour follow-up investigation is complete.** Checkpoints below are retained as interim records from their respective times. See this section and [result-summary.json](result-summary.json) for final results.
 
-今回試して反復確認できた候補の中で最短なのは、次の4行案。 あらゆる修正の数学的な最小行数を証明したものではない。
+## Final results
 
-十分な反復確認がある短い変更は **追加4行／削除3行、3か所**。問題基板 .16 は39/39、正常基板 .17 は36/36で起動し、30／120／600秒OFFや連続通信も確認した。[実際の差分](patches/deepreset-functional-f30b.patch)、[75回の集計](evidence/deepreset-f30b-75-summary.json)。
+The shortest repeatedly verified candidate in this study is the following four-line proposal. This does not prove a mathematical minimum over every possible fix.
 
-この変更は、既存カウンターを10 µsへ延ばし、DATA_VALIDが落ちたら数え直し、10 µs続けて正常になるまでDONEへ移らないようにする。短い正常判定のたびに既存100 µsの異常監視が解除されるのを防ぎ、既存のリセット経路を働かせる。独立したPMAリセット発生器は追加しない。500 nsの初期待ちやINIT/SOFT状態のリセット値は変更しない。
+The short change with substantial repeated verification has **4 added / 3 deleted lines at three locations**. Problem .16 passed 39/39 and healthy .17 passed 36/36, including 30/120/600-second OFF periods and continuous communication. See [actual diff](patches/deepreset-functional-f30b.patch) and [75-boot summary](evidence/deepreset-f30b-75-summary.json).
 
-| 追加比較 | 起動結果 |
+The change extends an existing counter to 10 µs, reloads it when DATA_VALID drops, and prevents transition to DONE until validity persists continuously for 10 µs. This prevents short valid indications from repeatedly clearing the existing 100 µs error monitor and allows the existing reset path to operate. No independent PMA-reset generator is added. The initial 500 ns delay and reset values in INIT/SOFT are unchanged.
+
+| Additional comparison | Boot results |
 |---|---|
-| 元のファームウェア .16、ARP実送信を照合 | 0/3 |
-| 同一配置フィルター有効 .16、直後から検査 | 3/3 |
-| 同一配置フィルター無効 .16、直後から検査し直した逆転比較 | 0/3 |
-| 1行のクロック安定待ち変更 F30C | .16:0/3、.17:3/3 |
-| RXUSERRDYまでCDR保持する診断版 | .16:0/3 |
-| [既存WAIT_TIME_MAXだけ1 msへ変更する1行案 F310](patches/deepreset-functional-f310.patch) | .16: 1/3、.17: 3/3 |
+| Original firmware .16, actual ARP transmission verified | 0/3 |
+| Same-placement filter enabled .16, immediate probing | 3/3 |
+| Same-placement filter disabled .16, reversal retested with immediate probing | 0/3 |
+| One-line clock-stability wait F30C | .16: 0/3; .17: 3/3 |
+| Diagnostic CDR hold until RXUSERRDY | .16: 0/3 |
+| [One-line F310: existing WAIT_TIME_MAX changed to 1 ms](patches/deepreset-functional-f310.patch) | .16: 1/3; .17: 3/3 |
 
-F310は[正式なタイミング・イメージ検査](evidence/deepreset-f310-independent-review.json)を通過し、[生成後の回路を読み直した18 bitカウンター確認](evidence/deepreset-f310-counter-audit.json)も実施した。[最後の両基板比較のパケット照合](evidence/deepreset-packet-final-cohorts.json)では、問題基板の失敗2回にも電源ONから遅い時点のARP要求が存在し、応答がなかった。1 msの待ちを追加するだけで安定化できたとはいえない。
+F310 passed [formal timing/image qualification](evidence/deepreset-f310-independent-review.json), including [inspection of the implemented 18-bit counter](evidence/deepreset-f310-counter-audit.json). [Packet verification of final paired cohorts](evidence/deepreset-packet-final-cohorts.json) found actual late ARP requests with no replies in both failed .16 boots. Adding a 1 ms wait alone did not reliably stabilize startup.
 
-**原因は受信PMA/CDR側の起動状態へ絞れたが、引き金となる物理要因は未確定。** 失敗した2起動では共通CPLL由来TXPCSの平均値が正常なまま、回復RXクロックだけが約−678 ppmずれ、同じ起動でPMA操作後に約+31 ppmへ戻った。正常な起動も約+32 ppmだった。平均周波数だけでは欠落エッジ、ジッター、MGT電源変動などを区別できない。CPLLLOCK／RXRESETDONEだけで受信データの正しさを保証できないことと、製造元の手順自体がこの基板で必ず誤っているという主張は別である。
+**The fault has been narrowed to receive PMA/CDR startup state; the triggering physical factor remains unresolved.** In two failed boots, the mean common-CPLL-derived TXPCS clock remained normal while only recovered RX was offset by about −678 ppm. PMA intervention in each same boot returned it to about +31 ppm; successful startup was about +32 ppm. Mean frequency alone cannot distinguish missing edges, jitter, MGT supply fluctuations, or other explanations. CPLLLOCK/RXRESETDONE not guaranteeing correct receive data is separate from claiming the manufacturer's sequence is necessarily wrong for this board.
 
-基板ごとの違いと内部ループバックの結果は基板内の受信経路・初期化への依存を支持するが、部品故障の確定ではない。これ以上の部品単位の確定には、同じ失敗起動でMGT専用電源・基準クロックのジッター／波形を測るか、部品・経路を交換して異常が追従するかを確認する必要がある。
+Board differences and internal-loopback results support dependence on the on-board receive path/initialization, but do not establish component failure. Further component-level confirmation requires measuring dedicated MGT supplies and reference-clock jitter/waveforms during the same failed boot, or swapping components/paths and checking whether the fault follows.
 
-ホスト側のARP再試行が約60秒空く場合も確認した。Windowsの負キャッシュ／再送制御と整合するが、カーネル内部状態までは計測していない。後半はキャプチャーの実送信／応答時刻を照合し、通信タイムアウトだけで受信故障の継続を断定しない。この交絡はILAで直接得たRXクロック異常を説明するものではない。
+Host ARP retries sometimes had gaps of about 60 seconds, consistent with Windows negative caching/retry control; kernel-internal state was not measured. Later comparisons verified actual capture transmission/reply times rather than inferring continued receive failure solely from communication timeouts. This confound does not explain the RX-clock anomaly measured directly by ILA.
 
-RXCDR_CFG=03000023FF10100020はUG476 Table4-19の8b/10b・RXOUT_DIV=4・±200 ppmの推奨値と一致した。名目1.25 Gbit/s、20 bit出力62.5 MHzの分周関係にも矛盾は見つからない。失敗時の回復RXクロックのずれをそのまま送信元の周波数ずれとみなし、CDR許容範囲を広げる根拠にはしない。[設定値の照合](evidence/deepreset-cdr-settings-crosscheck.json)。
+RXCDR_CFG=03000023FF10100020 matches UG476 Table 4-19 for 8b/10b, RXOUT_DIV=4, and ±200 ppm. No inconsistency was found in the nominal 1.25 Gbit/s, 20-bit, 62.5 MHz division relationship. A failed recovered RX-clock offset is not treated as the transmitter's frequency offset or as justification to widen CDR tolerance. See [settings crosscheck](evidence/deepreset-cdr-settings-crosscheck.json).
 
-終了時は **.16をF202、.17を元のfactoryへ復元**。全16 MiB読戻し、各3回の電源再投入、RBCP／TCP、EEPROM不変、両電源ONを確認した。[復元記録](evidence/deepreset-restoration.json)、[最終確認](evidence/deepreset-final-status.json)、[キャプチャー終了と一時スリープ抑止解除](evidence/deepreset-resource-cleanup.json)。ネットワークスイッチは全試験を通じてON。通常運用へ新候補を自動採用してはいない。
+At completion, **.16 was restored to F202 and .17 to original factory**. Full 16 MiB readback, three power cycles per board, RBCP/TCP, unchanged EEPROM, and both power outputs ON were verified. See [restoration](evidence/deepreset-restoration.json), [final checks](evidence/deepreset-final-status.json), and [capture/sleep-inhibition cleanup](evidence/deepreset-resource-cleanup.json). The switch stayed ON throughout. The candidate was not automatically adopted for normal operation.
 
-参考：[AMD UG476](https://docs.amd.com/v/u/en-US/ug476_7Series_Transceivers)、[AMD AR66699（CDRロックの判断）](https://adaptivesupport.amd.com/s/article/66699?language=en_US)、[Windows ResolveIpNetEntry2](https://learn.microsoft.com/en-us/windows/win32/api/netioapi/nf-netioapi-resolveipnetentry2)。
+References: [AMD UG476](https://docs.amd.com/v/u/en-US/ug476_7Series_Transceivers), [AMD AR66699: assessing CDR lock](https://adaptivesupport.amd.com/s/article/66699?language=en_US), [Windows ResolveIpNetEntry2](https://learn.microsoft.com/en-us/windows/win32/api/netioapi/nf-netioapi-resolveipnetentry2).
 
+## Checkpoint 7: negative CDR-hold results and host ARP confounding
 
-## 第7チェックポイント：CDR保持の陰性結果とホストARPの交絡
+Startup FSM traces showed one transition to DONE in the healthy case, but 90/91 MONITOR–DONE round trips in two failures. DONE residence was 400–1760 ns. Brief valid indications can repeatedly clear the existing 100 µs error monitor: [trace comparison](evidence/deepreset-txpcs-startup-trace-comparison.json). Recording covers only the first 256 events, not reset counts over the entire boot.
 
-起動直後のFSMを記録すると、正常時は一度でDONEへ進むが、失敗2回はMONITORとDONEを90回／91回往復した。DONEの滞在は400～1760 nsだった。この短い正常判定で既存100 µsエラー監視が繰り返し解除される、という論理上の抜け道がある。[波形比較](evidence/deepreset-txpcs-startup-trace-comparison.json)。記録は最初の256イベントに限られ、全起動期間のリセット回数を測ったものではない。
+The same-placement diagnostic holding RXCDRHOLD until actual RXUSERRDY rose passed **0/3 on .16**. In another failed boot, 5.12 µs and 40.96 µs HOLD pulses reached the GT input while five other reset requests remained inactive, but the abnormal recovered RX clock did not recover. The ordinary-source three-line HOLD addition is rejected. See [manual tests](evidence/deepreset-hold-cohort-deephold16m.json), [startup hold](evidence/deepreset-hold-cohort-deephold16r.json), and [independent review](evidence/deepreset-cdrhold-postload-review-v15.json). This does not exclude every CDR problem or every hold duration.
 
-RXCDRHOLDを、実際のRXUSERRDYが上がるまで保持する同一配置の診断版は **.16で0/3** だった。別の失敗起動で5.12 µs／40.96 µsのHOLDを与え、GT入力まで届くことと他の5種類のリセット要求が静止していることを確認したが、異常な回復RXクロックは直らなかった。単純なHOLDを追加する3行の通常ソース案は採用しない。[手動操作](evidence/deepreset-hold-cohort-deephold16m.json)、[起動時保持](evidence/deepreset-hold-cohort-deephold16r.json)、[独立検査](evidence/deepreset-cdrhold-postload-review-v15.json)。これは全てのCDR問題・全ての保持時間を否定する結果ではない。
+PMA intervention in the same boot normalized RX frequency and 256 fresh receive words, yet an immediate communication test displayed failure. Capture showed that the host sent neither ARP nor UDP in that interval, so this cannot be interpreted as MAC failure after PMA. Communication later succeeded in the same boot. See [post-PMA receive check](evidence/deepreset-hold-manual-RX-summary.json), [actual transmission](evidence/deepreset-packet-hold-interim.json), and [later communication](evidence/deepreset-neighbor-ready16post.json).
 
-同じ起動でPMA操作後にRXクロックと新しい受信256ワードは正常化したが、直後の通信検査だけは失敗表示になった。パケットを照合すると、その時間帯にはホストからARPもUDPも送られていなかった。従って、この表示を「PMA後もMACが故障」と解釈できない。その後、同じ起動のまま通信が成功した。[PMA後の受信確認](evidence/deepreset-hold-manual-RX-summary.json)、[送信有無](evidence/deepreset-packet-hold-interim.json)、[後続通信](evidence/deepreset-neighbor-ready16post.json)。
+A check using ResolveIpNetEntry2 only for the target Windows IP was added. Actual ARP retries could still be about 60 seconds apart; API calls are not equivalent to packet transmissions. Fresh capture comparisons found real late ARP requests without replies in failures of original .16 **0/3** and filter-disabled **1/3**. Filter-enabled **3/3** immediately replied to requests arriving around 63 seconds after power-on. See [transmission/reply timing](evidence/deepreset-packet-fresh-neighbor.json). Disabled testing with a 12-second wait differed from immediate enabled probing, so an additional immediate-probe disabled comparison was in progress.
 
-Windowsの対象IPだけにResolveIpNetEntry2を実行する確認を追加した。ただしAPIを呼んでも、実際のARP再試行は約60秒空く場合が残った。API呼び出し回数をパケット送信回数と同一視しない。新しいキャプチャー照合では、元ファームウェア .16 **0/3** とフィルター無効 **1/3** の失敗試験でも、電源ONから遅い時点に実際のARP要求が送られ、応答がなかった。一方、フィルター有効 **3/3** は約63秒後の要求へ即座に応答した。[送受信時刻の照合](evidence/deepreset-packet-fresh-neighbor.json)。12秒待ってから検査した無効版と、直後から検査した有効版には試験方法の差があるため、直後からの無効版も追加比較中。
+This host delay affects communication failure/recovery timing, not the directly measured abnormal RX mean clock alongside normal TXPCS. Earlier internal PMA loopback passed .16 0/3 and .17 3/3: [recheck](evidence/deepreset-prior-loopback-recheck.json). XADC-readable supply/temperature values showed no large failure-correlated change, but dedicated MGT supply transients and jitter were not measured: [readings](evidence/deepreset-txpcs-sysmon-summary.json).
 
-このホスト側の遅延は通信失敗・復帰時刻の解釈に影響するが、ILAで直接測った異常なRX平均クロックと正常なTXPCS平均クロックの差を説明するものではない。過去の内部PMAループバックも .16 0/3、.17 3/3だった。[過去試験の再照合](evidence/deepreset-prior-loopback-recheck.json)。XADCで読める電源・温度には失敗と対応する大きな変化を見なかったが、MGT専用電源の過渡変動やジッターを測ってはいない。[読出し値](evidence/deepreset-txpcs-sysmon-summary.json)。
+The shortest verified change remained **+4/−3 at three locations**. The shorter one-line existing-constant 1 ms candidate was still building and had not yet undergone hardware evaluation at this checkpoint.
 
-確認済み最短は引き続き **追加4行／削除3行、3か所**。さらに短い既存定数1行の1 ms案はビルド中で、まだ実機評価前。
+## Checkpoint 6: abnormal mean frequency isolated to recovered RX
 
-## 第6チェックポイント：異常な平均周波数は受信側の回復クロックへ絞れた
+**Investigation was ongoing. New measurements localized the effect to reception, without identifying a failed physical component.** A measurement image connected common-CPLL-derived TXOUTCLKPCS to the existing counter, preserving original GT inputs/settings and all existing cell placements/BELs: [independent review](evidence/deepreset-txpcs-unified-review.json). Split displays of existing VIO probes were normalized after checking bit ranges on all 13 ports. The existing observation image's 422 warnings were compared separately from added-circuit warnings: [stopped/repaired review](evidence/deepreset-txpcs-fresh-review-failure.json).
 
-**調査継続中。物理的な部品故障の特定には至っていないが、受信側に絞る新しい実測を得た。**
-共通CPLL由来のTXOUTCLKPCSを既存カウンターへ接続した観測用イメージを作り、元のGT入力・設定と全既存セルの配置/BELを保った。[独立確認](evidence/deepreset-txpcs-unified-review.json)。元からあるVIOプローブの分割表示は全13ポートのビット範囲を確認して正規化した。既存観測版に元からある422件の警告と、追加回路の警告を混同しないよう比較した。[検査の停止・修正記録](evidence/deepreset-txpcs-fresh-review-failure.json)。
+Healthy .17 passed 1/1, with TXPCS about 62.49992 MHz, RX about 62.50206 MHz, and RX/TXPCS about +34 ppm. With the same image, .16 passed 1/3 and failed 2/3. Both failed boots were compared before/after PMA without cycling power. See [paired summary](evidence/deepreset-txpcs-paired-summary.json) and [interpretation/limits](evidence/deepreset-txpcs-interpretation.json).
 
-正常基板 .17 は1/1起動成功し、TXPCS約62.49992 MHz、RX約62.50206 MHz（RX/TXPCS約+34 ppm）だった。問題基板 .16 は同じイメージで1/3起動成功、2/3失敗した。失敗した2回を、それぞれ同じ起動のままPMAリセット前後で比較した。
-[集計](evidence/deepreset-txpcs-paired-summary.json)、[解釈と限界](evidence/deepreset-txpcs-interpretation.json)。
-
-| 問題基板 .16 | 共通CPLL由来のTXPCS | 回復RXクロック | RX/TXPCS | RBCP/TCP |
+| Problem .16 | Common-CPLL TXPCS | Recovered RX | RX/TXPCS | RBCP/TCP |
 |---|---:|---:|---:|---|
-| 正常だった起動 | 約62.49837 MHz | 約62.50036 MHz | 約+32 ppm | 成功 |
-| 失敗起動2回 | 約62.49838 MHz | 約62.45603 MHz | 約−678 ppm | 不成立 |
-| 各起動でPMAリセット後 | 約62.49838 MHz | 約62.50035 MHz | 約+31 ppm | 回復 |
+| Successful boot | ~62.49837 MHz | ~62.50036 MHz | ~+32 ppm | Success |
+| Two failed boots | ~62.49838 MHz | ~62.45603 MHz | ~−678 ppm | Failure |
+| After PMA in each boot | ~62.49838 MHz | ~62.50035 MHz | ~+31 ppm | Recovered |
 
-PMAリセット前後のTXPCS変化は約0.046 ppm／0.025 ppmだった。RXOUTCLKSEL=010が回復RXOUTCLKPMAを選び、TX/RXSYSCLKSEL=00が同じCPLLを選ぶことも物理入力から確認した。クロック経路の根拠は[UG476 Figure3-28 p150、およびp212](https://docs.amd.com/v/u/en-US/ug476_7Series_Transceivers)。
+TXPCS changed only about 0.046/0.025 ppm across PMA. Physical inputs also confirmed RXOUTCLKSEL=010 selects recovered RXOUTCLKPMA and TX/RXSYSCLKSEL=00 selects the same CPLL. Clock-path reference: [UG476 Figure 3-28 p150 and p212](https://docs.amd.com/v/u/en-US/ug476_7Series_Transceivers).
 
-この結果は、**共通PLL全体の平均周波数がずれているという説明より、受信PMA/CDR側の回復クロック経路が不適切な状態へ入るという説明を支持する**。平均値だけではPLLのジッター・電源変動・信号品質・クロック欠落は除外できず、固有の部品や物理的な引き金までは確定しない。PMA操作中の全リセット波形をこの集計では独立に復号しておらず、「純粋にPMAだけの効果」とも断言しない。
+This supports **an inappropriate state in the receive PMA/CDR recovered-clock path rather than an offset in the whole common PLL's mean frequency**. Mean values cannot exclude PLL jitter, supply changes, signal quality, or missing clocks, and do not identify a component or physical trigger. This summary did not independently decode all reset waveforms during PMA, so it also does not claim a purely PMA-only effect.
 
-次は、他のリセット信号も観測しながらCDRを基準クロックへ保持する実験で、さらに範囲を絞る。確認済みの短い通常ファームウェア修正は引き続き4行追加・3行削除で、3行のCDR保持案はまだ構文確認・準備のみ。
+The next experiment would hold CDR to the reference while observing other reset signals. The short ordinary-firmware fix remained +4/−3; a three-line CDR-hold proposal had only syntax checking/preparation at this stage.
 
-## 第5チェックポイント：1行のクロック待ち案は問題基板で改善せず
+## Checkpoint 5: one-line clock wait did not improve the problem board
 
-**調査継続中。確認済みの短い修正は引き続きF30Bの4行追加・3行削除。**
-既存のMMCMロック判定までGTRXRESET解除を待つ[1行置換F30C](patches/deepreset-functional-f30c.patch)は、フルビルドと[独立確認](evidence/deepreset-f30c-independent-review.json)に通った（WNS +0.068 ns、WHS +0.015 ns）。しかし実機では問題基板 .16 が **0/3成功**、正常基板 .17 が **3/3成功**だった。
-[問題側](evidence/deepreset-cohort-deepf30c16a.json)、[正常側](evidence/deepreset-cohort-deepf30c17a.json)。この単純な待ち方だけでは解消しない。別配置のビルドであり、クロック時序が物理的原因ではないと一般に証明するものではない。
+**Investigation was ongoing; the verified short fix remained F30B (+4/−3).** [One-line F30C](patches/deepreset-functional-f30c.patch), delaying GTRXRESET release until the existing MMCM-lock check, passed a full build and [independent review](evidence/deepreset-f30c-independent-review.json), WNS +0.068 ns / WHS +0.015 ns. Hardware results were **.16 0/3**, **.17 3/3**: [problem board](evidence/deepreset-cohort-deepf30c16a.json), [healthy board](evidence/deepreset-cohort-deepf30c17a.json). This wait alone does not resolve the issue. It is a separately placed build, not general proof against physical clock-sequencing causes.
 
-同一配置のF30Dフィルター有効版は、両基板とも30分の読み出し監視でRBCP 60/60、TCP 6/6、失敗0だった。[監視記録の集計](evidence/deepreset-f30d-soak-summary-v2.json)。監視終了の端末イベントとプロセス不在を確認したが、ツール出力に数値の終了コードがなかったため、その欄はnullとしている。
+Both boards with same-placement F30D filter enabled passed 30-minute read-only monitoring: RBCP 60/60, TCP 6/6, zero failures. See [soak summary](evidence/deepreset-f30d-soak-summary-v2.json). Terminal completion and process absence were checked; the numerical exit code was absent from tool output, so its field remains null.
 
-[対照試験のパケット解析](evidence/deepreset-packet-matched-interim.json)でも、フィルター素通しの失敗3回はARP応答・IPv4応答がなく、有効へ戻した3回は応答した。起動後に最初のARP要求が遅れた事例はPC側ARP負キャッシュの影響を含むため、FPGAの起動所要時間とは扱わない。キャプチャーは調査中で、最終ファイルのハッシュは終了時に別途記録する。
+[Control packet analysis](evidence/deepreset-packet-matched-interim.json) found no ARP/IPv4 replies in three bypass failures and replies in three trials after re-enabling. Late first ARP requests include PC negative-cache effects and are not FPGA startup times. Capture was ongoing; final file hashes would be recorded at completion.
 
-共通PLL由来のTXOUTCLKPCSを測る観測用イメージと、CDRを基準へ合わせる実験を準備中。いずれも、このチェックポイント時点では実機で検証した結果として扱わない。
+The common-PLL TXOUTCLKPCS observation image and CDR-reference experiment were in preparation, not hardware-verified results at this checkpoint.
 
-## 第4チェックポイント：正常判定の修正が効くことを対照試験で確認
+## Checkpoint 4: validity qualification worked in controlled comparisons
 
-**調査継続中。実機検証済みの短い候補はF30Bの機能HDL 4行追加・3行削除。**
-問題側 .16 は39/39、正常側 .17 は36/36で、両方とも30秒・120秒・600秒のOFF保持後に各1回成功した。[75回の集計](evidence/deepreset-f30b-75-summary.json)。
+**Investigation was ongoing; F30B (+4/−3) was the verified short candidate.** .16 passed 39/39 and .17 36/36, each including one trial after 30, 120, and 600 seconds OFF. See [75-boot summary](evidence/deepreset-f30b-75-summary.json).
 
-配置・配線を同一にし、正常判定を通すLUTのINITだけを変えたF30Dでは、以下の結果を得た。
-[対照試験の集計と限界](evidence/deepreset-matched-filter-summary.json)、[独立確認](evidence/deepreset-f30d-independent-review.json)。Vivadoチェックポイント内のPHYSDB_ROUTE、名前対応表、クロックDB、SHAPEがバイト単位で一致し、全プリミティブの配置・INITも判定ゲート以外は一致した。
+F30D retained identical placement/routing while changing only the qualification LUT INIT. See [summary/limits](evidence/deepreset-matched-filter-summary.json) and [independent review](evidence/deepreset-f30d-independent-review.json). DCP PHYSDB_ROUTE, name mapping, clock DB, and SHAPE matched byte-for-byte; all primitive placement/INIT matched except the qualification gate.
 
-| 基板 | 条件 | 電源再投入 |
+| Board | Condition | Successful power cycles |
 |---|---|---:|
-| .16 | 正常判定フィルター有効 | 3/3成功 |
-| .16 | フィルター素通し | 0/3成功 |
-| .16 | 有効へ戻す | 3/3成功 |
-| .17 | 有効・正常基板の確認 | 3/3成功 |
+| .16 | Validity filter enabled | 3/3 |
+| .16 | Filter bypass | 0/3 |
+| .16 | Re-enabled | 3/3 |
+| .17 | Enabled, healthy control | 3/3 |
 
-素通し版にも10 µsの待ち時間とカウンター再ロード回路は残る。この条件で、待ち時間延長だけでは改善せず、連続した正常判定を要求するゲートが改善の条件になった。実機のGTリセット波形・再試行回数はこの版では観測していないため、改善を媒介する内部経路を測定済みとはしない。
+The bypass variant still contains the 10 µs wait and counter reload logic. In this comparison, extending the wait alone did not help; requiring continuous validity did. Actual GT-reset waveforms/retry counts were not observed in this variant, so the internal mechanism mediating improvement was not directly measured.
 
-元のFSMは短い正常判定でもFSM_DONEへ戻り、エラー監視タイマーを消してしまう。失敗起動の状態記録ではFSM_DONE滞在時間は405〜1780 nsだった。代表的な560 ns異常／575 ns正常の波形をメーカーFSMへ与えると、元の500 ns判定を残した**3行追加・2行削除版は監視をすり抜け、10 µs判定を使う4行版は再初期化へ進む**。
-[行数削減の反証](evidence/deepreset-filter-threshold-study.json)、[不十分だった3行差分](patches/deepreset-insufficient-three-line-filter.patch)。これは特定の1行削除案を退けた結果で、あらゆる3行以下の修正が不可能という証明ではない。
+The original FSM returns to FSM_DONE even after brief validity, clearing the error timer. Failed-boot traces showed FSM_DONE residence of 405–1780 ns. Feeding representative 560 ns invalid / 575 ns valid intervals to the manufacturer FSM showed that **a +3/−2 variant retaining the original 500 ns qualification evades monitoring, whereas the four-line 10 µs variant reinitializes**. See [threshold study](evidence/deepreset-filter-threshold-study.json) and [insufficient three-line patch](patches/deepreset-insufficient-three-line-filter.patch). This rejects one specific line-removal proposal, not every possible fix of three lines or fewer.
 
-**500 nsを混同しないこと：** FPGA設定後のSTARTUP_DELAY=500 nsは変更していない。今回10 µsへ変えたWAIT_TIME_MAXは別のカウンターで、元の100サイクルは200 MHz動作では500 nsだった。固定CDR待ち約50 µsも維持する。
+**Do not conflate the 500 ns delays:** post-configuration STARTUP_DELAY=500 ns is unchanged. WAIT_TIME_MAX, changed here to 10 µs, is another counter; its original 100 cycles equal 500 ns at 200 MHz. The fixed approximately 50 µs CDR wait is also retained.
 
-正しく1.25 Gbps・20 bit・LPMを設定したGT Wizardで125 MHz／156.25 MHzの対を生成すると、差はCPLL倍率とRX/TX CLK25分周値のみで、受信CDR設定とLPM設定は既存実装と一致した。
-[メーカー生成設定との比較](evidence/deepreset-gtwizard-reference-comparison.json)。CLK25分周値の5/7変更は以前の対照試験でも改善しなかった。物理的な受信異常の引き金はまだ確定していない。
+A GT Wizard pair properly configured for 1.25 Gbps, 20 bits, and LPM at 125/156.25 MHz differed only in CPLL multiplication and RX/TX CLK25 division. CDR and LPM settings matched the existing design. See [manufacturer-generated settings comparison](evidence/deepreset-gtwizard-reference-comparison.json). Earlier controlled CLK25 divisor 5/7 tests also did not improve the problem. The physical receive-fault trigger remained unresolved.
 
-別の**1行置換F30Cはフルビルド中・実機未検証**。既存の共通ユーザークロック安定判定までGTRXRESET解除を待つ案で、クロック途中喪失を追加した[全FSMシミュレーション](evidence/deepreset-clockhold-sim-v3-result.json)にも通った。
-さらに、CDRをRXUSERRDYまで基準クロックへ合わせる[3行追加・1行削除案](patches/deepreset-readyhold-proposal.patch)も準備したが、こちらは[構文確認のみ](evidence/deepreset-readyhold-hypothesis.json)である。PMAリセットとは別の操作で、現時点で採用を勧めるものではない。
+Another **one-line F30C was still building and untested on hardware**. It holds GTRXRESET until the existing common-user-clock stability condition; [full-FSM simulation including mid-operation clock loss](evidence/deepreset-clockhold-sim-v3-result.json) passed. A [CDR reference hold until RXUSERRDY (+3/−1)](patches/deepreset-readyhold-proposal.patch) was also prepared, but had [syntax checking only](evidence/deepreset-readyhold-hypothesis.json). It differs from PMA reset and was not recommended for adoption at that point.
 
-以下は過去の時点の途中記録。
+The following sections retain earlier interim records.
 
-## 21:40 JST時点の途中結果
+## Interim results at 21:40 JST
 
-**調査継続中。現時点の実機成功候補は4行追加・3行削除のF30Bで、問題側 .16 は39/39、正常側 .17 は33/33。**
-[集計と限界](evidence/deepreset-f30b-72-summary.json)。.16 は30秒・120秒・600秒のOFF保持でも各1回成功した。追加の通信監視は .16 が15分でRBCP30/30・TCP3/3、.17 が20分でRBCP40/40・TCP4/4、失敗0。長期のTDCデータ品質を保証する検証ではない。
+**Investigation was ongoing. Hardware-successful F30B (+4/−3) stood at .16 39/39 and .17 33/33.** See [summary/limits](evidence/deepreset-f30b-72-summary.json). .16 passed once each after 30/120/600 seconds OFF. Additional monitoring passed .16 15 minutes, RBCP 30/30 and TCP 3/3; .17 20 minutes, RBCP 40/40 and TCP 4/4, with zero failures. This does not guarantee long-term TDC data quality.
 
-.16 を元のfactoryへ戻すと0/3失敗し、F30Bへ戻すと3/3成功した。
-[元に戻した対照](evidence/deepreset-native-deepfactory16r1.json)、[候補へ戻した結果](evidence/deepreset-cohort-deepf30b16r1.json)。
-[パケットの途中集計](evidence/deepreset-packet-interim.json)でもfactoryの失敗3回にはARP応答・基板由来IPv4応答がなく、F30Bへ戻した後は同じ基板MACからRBCP/TCP応答を確認した。ホスト側キャプチャーだけではPHY・PLL・CDR内部やアナログ電源の原因は決められない。
+Restoring original factory on .16 produced 0/3 successful boots; returning to F30B produced 3/3. See [factory reversal](evidence/deepreset-native-deepfactory16r1.json) and [candidate restoration](evidence/deepreset-cohort-deepf30b16r1.json). [Interim packet analysis](evidence/deepreset-packet-interim.json) found no board ARP/IPv4 replies in the three factory failures and RBCP/TCP replies from the same MAC after returning to F30B. Host capture alone cannot identify internal PHY/PLL/CDR or analog-supply causes.
 
-比較用F30Dは初回の配線後STAでTDC側2か所のホールド違反（最悪-0.107 ns）が見つかったため、実機には使わず物理的な修正を行う。資格を満たした配置・配線から判定有効／素通しの2版を作り、10 µsの待ち時間延長だけで効くかを調べる予定。
+The initial routed F30D comparison build had two TDC-side hold violations, worst −0.107 ns. It was not used on hardware; physical repairs were planned. Qualified placement/routing would produce enabled/bypass variants to test whether the 10 µs extension alone worked.
 
-別の**1行置換候補F30Cは、現時点ではシミュレーションのみ・実機未検証**。
-[差分](deepreset-functional-f30c.patch)、[仮説と適用条件](evidence/deepreset-clockhold-hypothesis.json)、[全FSMシミュレーション](evidence/deepreset-clockhold-sim-v2-result.json)。最初のGTRXRESET解除が共通ユーザークロックのロックより36.060 µs先行していたため、既存の安定判定まで受信リセットを維持する案である。これをメーカー手順違反や物理的な根本原因の証明とは扱わない。
+**One-line F30C had simulation only, with no hardware testing yet:** [patch](deepreset-functional-f30c.patch), [hypothesis/applicability](evidence/deepreset-clockhold-hypothesis.json), [full-FSM simulation](evidence/deepreset-clockhold-sim-v2-result.json). Initial GTRXRESET release preceded common-user-clock lock by 36.060 µs, motivating the existing-stability-check hold. This is not proof of a manufacturer sequence violation or physical root cause.
 
-以下はそれぞれの時点の途中記録。
+## Interim results at 19:55 JST
 
-## 19:55 JST時点の途中結果
+**F30B passed 3/3 power cycles on problem .16; adoption and long-term verification were not complete.** It retained +4/−3, passed full 16 MiB Flash readback, and met RBCP IP/version, TCP, and five-second recheck criteria. See [hardware cohort](evidence/deepreset-cohort-deepf30b16a.json) and [independent build review](evidence/deepreset-f30b-independent-review.json). Final WNS was +0.073 ns and WHS +0.009 ns. Tests on .17 and matched-wait qualification-gate controls were to follow.
 
-**F30Bは問題の .16 で電源再投入3/3成功。まだ採用確定・長期検証完了ではない。** 4行追加・3行削除を保持し、16 MiB全Flash読戻しが一致した。RBCPでIP・版を読み、TCP接続と5秒後の再確認を含めて成功判定した。
-[実機コホート](evidence/deepreset-cohort-deepf30b16a.json)、[ビルド独立確認](evidence/deepreset-f30b-independent-review.json)。最終STAはWNS+0.073 ns、WHS+0.009 ns。正常 .17 の同じ版での試験と、待ち時間を共通にした判定ゲートの対照試験を続ける。
+Healthy .17 factory monitoring ended after about 100 minutes, RBCP 201/201, TCP 21/21, zero failures: [control monitoring](evidence/deepreset-control17-stop-verified.json).
 
-正常 .17 のfactory監視は約100分、RBCP201/201・TCP21/21、失敗0で終了した。[対照監視](evidence/deepreset-control17-stop-verified.json)。
+The same native failed boot retained receive-frequency offset after 32 minutes. A further five-minute measurement using the existing RAM timestamp counter and on-board SYS time around readout delays found RXOUTCLK about 583–729 ppm slower than the reference-derived user clock: [interpretation](evidence/deepreset-tx-meter-interpretation.json). **The measured TX user clock was not CPLL output itself.** TXOUTCLKSEL=100 selects reference/2, so these measurements do not establish a healthy CPLL internally. CDRHOLD variants were being generated offline and were untested on hardware. The physical trigger remained unresolved.
 
-同じnative失敗起動では32分後も受信周波数のずれが残った。さらに既存RAM時刻カウンターを5分間測定し、基板内SYS時刻で読み出し遅延を挟んだ結果、受信RXOUTCLKは基準由来ユーザークロックより約583〜729 ppm遅かった。[周波数の解釈](evidence/deepreset-tx-meter-interpretation.json)。
-**測った送信ユーザークロックはCPLL出力そのものではない。** TXOUTCLKSEL=100は基準クロック/2を選ぶため、この結果でCPLL内部を正常と断定しない。CDRHOLD比較はオフライン生成中で実機未検証。物理的な起動異常の引き金はまだ確定していない。
+The following build/unverified statements describe the initial checkpoint; current F30B results are above.
 
-以下の「ビルド中」「未確認」は初回チェックポイント時点の記録であり、F30Bの現在の実績は上記を参照。
+## Initial observations in this study
 
-## 今回確認したこと
+Existing qualified F104 frequency-observation firmware was programmed onto .16 and verified by full Flash readback. Power cycling with the switch ON reproduced startup failure. Without further reset or power intervention, the same failed state was measured around 0, 5, and 10 minutes later. All three observations lacked communication; mean RX was about 62.456 MHz and RX/reference about 0.399729. It had not spontaneously returned to the normal ratio near 0.4.
 
-問題の .16 へ既存の検証済み F104 周波数観測イメージを書込み、全Flash読戻しを確認した。ネットワークスイッチONで電源を再投入すると起動失敗を再現した。
-その同じ失敗状態に対して、追加のリセット・電源操作を行わず、約0・5・10分後に周波数を測定した。3回とも通信不能で、受信クロック平均は約62.456 MHz、受信/基準比は約0.399729だった。正常相当の比0.4付近へ自然復帰していない。
-これは**1回の失敗起動を3回観測した結果**であり、独立した電源再投入3回ではない。平均周波数だけでジッターや基板のどの部品が原因かは判定できない。
+These are **three observations of one failed boot**, not three independent power cycles. Mean frequency cannot identify jitter or a particular failed component. See [observations](evidence/deepreset-native-persistence-analysis.json). Healthy .17 remained on factory under separate monitoring.
 
-[観測結果](evidence/deepreset-native-persistence-analysis.json)。通常動作する .17 はfactoryのまま別途通信監視中。
+## Initial short proposals and unverified points
 
-## 短い修正案と未検証事項
+- **F30B: +4/−3 at three locations.** Reuse the wait counter and require 10 µs of synchronization before accepting recovery. Investigate whether brief synchronization repeatedly clears the existing 100 µs error monitor. Retain initial 500 ns and reset initial value 0; add no PMA pulse timer.
+- Digital simulation covered normal startup, short errors, intermittent synchronization, long errors, DONT_RESET_ON_DATA_ERROR, and SOFT_RESET. PLL/CDR were idealized; **hardware effects were unverified and the build was ongoing**.
+- Changing WAIT_TIME_MAX also extends initial reset hold and user-clock waiting. Even if effective, a controlled comparison is needed to isolate validity qualification.
+- **CDRHOLD: one-line connection hypothesis.** Prepare documented GTX RXCDRHOLD linked to GTRXRESET and a short post-startup diagnostic intervention. Compare against same-placement/routing disabled controls and inspect other physical reset inputs. **Not yet hardware-tested at this checkpoint.**
 
-- **F30B：4行追加・3行削除、3か所変更。** 既存の待ちカウンターを再利用し、同期が10 µs続くまで復帰扱いにしない。短い同期回復で既存100 µs異常監視が解除され続ける可能性を調べる。500 nsの初期待ちとリセット初期値0は保持し、新しいPMAパルスタイマーを追加しない。
-- デジタルシミュレーションでは、正常起動、短い異常、断続的な同期、長い異常、DONT_RESET_ON_DATA_ERROR、SOFT_RESETを確認した。PLL/CDRは理想化しており、**実機効果は未確認、ビルド中**。
-- WAIT_TIME_MAXの変更は初期のリセット保持とユーザークロック待ちも延ばす。効いても同期資格判定だけの効果とは断定できず、対照試験が必要。
-- **CDRHOLD：1行接続案の仮説。** GTXの文書化されたRXCDRHOLDをGTRXRESETに連動させる案と、起動後に短く操作する診断案を準備中。配置・配線を同じにした無効対照と比較し、他の物理リセット入力が動いていないかも確認する。**まだ実機未検証**。
+See [F30B patch](patches/deepreset-functional-f30b.patch), [simulation](evidence/f30b-simulation.json), and [CDRHOLD hypothesis](evidence/deepreset-cdrhold-hypothesis.json).
 
-[F30Bの具体的差分](patches/deepreset-functional-f30b.patch)、[F30Bシミュレーション](evidence/f30b-simulation.json)、[CDRHOLD仮説](evidence/deepreset-cdrhold-hypothesis.json)。
+Reserved RXCDRRESET/RXCDRFREQRESET pins are not forced. GTX behavior follows [AMD UG476](https://docs.amd.com/v/u/en-US/ug476_7Series_Transceivers).
 
-RXCDRRESET/RXCDRFREQRESETなど予約端子の強制操作は行わない。[AMD UG476](https://docs.amd.com/v/u/en-US/ug476_7Series_Transceivers)のGTX仕様を使用する。
+## Study conditions
 
-## 調査条件
+The switch stays ON. Only Kikusui's output is switched for .16, retaining 30 V/1 A. ezOutlet controls .17. No EEPROM writes occur. Completion requires restoring .16=F202 and .17=factory, verifying readback, three boots each, communication, EEPROM, and both power outputs ON.
 
-ネットワークスイッチは常時ON。.16は菊水電源の出力のみ操作し30 V/1 A設定を維持。.17はezOutletで電源操作する。EEPROM書込みは行わない。終了時は .16=F202、.17=factoryへ復元し、読戻し・各3回起動・通信・EEPROM・両電源ONを確認する。
-
-既存の[前回調査](../minimum-reset-20261018/README.md)のF308（32行追加・1行削除、両基板3/3成功）を比較基準とする。今回の途中結果で前回の結論を置き換えない。
+F308 from the [previous study](../minimum-reset-20261018/README.md), +32/−1 with both boards passing 3/3, is the comparison baseline. Interim results here do not replace that study's conclusions.
