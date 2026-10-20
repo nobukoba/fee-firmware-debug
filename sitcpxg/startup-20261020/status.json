@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T19:30:06.8474059+09:00",
+  "updated_at": "2026-10-20T20:22:23.7805057+09:00",
   "subject": "StrHrTdcBase SiTCP-XG startup while connected to a network",
   "repository": "https://github.com/AMANEQ-official/StrHrTdcBase",
   "commit": "33e3f35dfc43b04672d0bf6b352be2ff33b5579d",
@@ -26,28 +26,42 @@
     "place_and_route": "succeeded"
   },
   "cold_boot_trials": {
-    "switch_after_board": {
+    "post_clock_repeat10": {
+      "evidence": "evidence/repeat10-summary.json",
+      "completed": 20,
       "window_seconds": 120,
-      "control_successes": 3,
-      "trials_per_board": 3,
-      "problematic_successes": 0
+      "successes": 20
     },
-    "switch_already_on": {
-      "window_seconds": 60,
-      "control_successes": 2,
-      "trials_per_board": 3,
-      "problematic_successes": 0
+    "initial_before_clock_verification": {
+      "switch_after_board": {
+        "window_seconds": 120,
+        "control_successes": 3,
+        "trials_per_board": 3,
+        "problematic_successes": 0
+      },
+      "switch_already_on": {
+        "window_seconds": 60,
+        "control_successes": 2,
+        "trials_per_board": 3,
+        "problematic_successes": 0
+      },
+      "audit": "all 12 measurements passed timestamp and acknowledgement checks",
+      "completed": 12,
+      "excluded_aborted_attempts": 1
     },
-    "audit": "all 12 measurements passed timestamp and acknowledgement checks",
-    "completed": 12,
-    "excluded_aborted_attempts": 1
+    "total_completed": 34,
+    "post_clock_first_check": {
+      "evidence": "evidence/post-jitter-powercycle-20261020-200302.json",
+      "completed": 2,
+      "successes": 2
+    }
   },
   "running_firmware_version": {
-    "problematic": "unverified",
-    "control": "C480020A read via RBCP"
+    "problematic": "C480020A read via RBCP after 10 power cycles",
+    "control": "C480020A read via RBCP after 10 power cycles"
   },
   "jtag": {
-    "ip_mapping": "unverified",
+    "ip_mapping": "Outlet 1 mapped by JTAG disappearance during Skeleton BIT programming",
     "parts": [
       "xc7k160t",
       "xc7k160t"
@@ -55,7 +69,9 @@
     "device_count": 2
   },
   "power_or_configuration_changes": true,
-  "firmware_programming_performed": false,
-  "conclusion": "Stable startup not demonstrated; .10 unresponsive in all six measured trials; .11 exceeded one of six observation windows; root cause remains unverified",
-  "final_power": "Both boards and network switch confirmed ON, Ethernet Up; .11 RBCP reachable, .10 not reachable"
+  "firmware_programming_performed": true,
+  "conclusion": "After verified jitter-cleaner configuration, both boards passed 10/10 repeated startup trials (20/20 total), in addition to the earlier successful one-cycle-per-board check. No startup failure reproduced in these conditions; not a controlled SiTCP versus SiTCP-XG comparison.",
+  "final_power": "Both boards ON, network switch left ON; both .10 and .11 respond to RBCP and ping",
+  "clock_settings_after_10_power_cycles": "Both boards retain 52080150 / 8F81C081 (125 MHz input, 500/125 MHz output preset)",
+  "programming_note": "Official Skeleton v2.2 temporarily loaded into outlet 1 FPGA SRAM to configure CDCE62002; no firmware flash programming. Generated evaluation baseline BIT was never applied."
 }

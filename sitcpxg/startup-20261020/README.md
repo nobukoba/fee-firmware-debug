@@ -6,7 +6,20 @@ Compare the problematic board at 192.168.10.10 with the control board intended f
 
 Initial observations on 2026-10-20: .10 did not answer ICMP or RBCP; .11 answered both and returned SiTCP-XG identifier `58544350` at `0xFFFFFF08`, and firmware value `C480020A` at `0xFFFFFF00`, matching StrHrTdcBase v2.A. The running firmware on .10 is unverified. Both JTAG chains contain an XC7K160T; their IP mapping is unverified.
 
-## Measurements
+## Repeated startup with verified clock settings (latest)
+
+From 20:09 to 20:21 JST, each board was powered OFF for at least 15 seconds and ON ten times, with switch power ON and cables connected. Each observation window was 120 seconds. Success required three consecutive valid SiTCP-XG identifier reads at least one second apart.
+
+| Board | Successes/trials | First-response range after confirmed ON |
+| --- | --- | --- |
+| .10 | 10/10 | 9.072–9.184 seconds |
+| .11 | 10/10 | 9.076–9.128 seconds |
+
+All 20 records passed timestamp, OFF-duration and acknowledgement checks. Both boards answered ping afterward and retained firmware identifier C480020A and CDCE62002 values 52080150 / 8F81C081. **No SiTCP-XG startup failure was reproduced under these conditions.** This is not a controlled comparison against SiTCP or a general guarantee for SiTCP-XG.
+
+[Raw trials](evidence/post-jitter-repeat10-20261020-200940.json), [summary and audit](evidence/repeat10-summary.json), [final registers](evidence/repeat10-final-registers.json).
+
+## Measurements before clock verification
 
 **The 12 trials below preceded verification of the jitter-cleaner configuration. They do not establish a StrHrTdc firmware fault with correct clock settings.** Later, Skeleton v2.2 was loaded temporarily through BIT into the problematic board. CDCE62002 readback at 192.168.10.16 differed from the intended preset. At 19:54 JST, input 125 MHz / outputs 500 and 125 MHz were configured, verified and followed by an acknowledged EEPROM-copy command. Readback still matched and ping succeeded 22 seconds later. At 20:04 JST, each board was powered OFF for at least 15 seconds and ON with the switch already running (one trial each). SiTCP-XG returned after 9.171 seconds on .10 and 9.093 seconds on .11, and both answered ping. Board .10 reported firmware C480020A and retained CDCE62002 values 52080150 / 8F81C081 after power cycling. See [restart evidence](evidence/post-jitter-powercycle-20261020-200302.json) and [retention evidence](evidence/post-jitter-retention.json). Long-term startup reliability remains unverified. [Configuration evidence](evidence/jitter-cleaner-configured.json)
 

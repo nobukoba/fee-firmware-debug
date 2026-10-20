@@ -1,0 +1,22 @@
+{
+  "time": "2026-10-20T20:21:32.659606+09:00",
+  "after_10_power_cycles_per_board": true,
+  "results": [
+    {
+      "address": "192.168.10.10",
+      "firmware_version": "C480020A",
+      "clock_registers": [
+        "52080150",
+        "8F81C081"
+      ]
+    },
+    {
+      "address": "192.168.10.11",
+      "firmware_version": "C480020A",
+      "clock_registers": [
+        "52080150",
+        "8F81C081"
+      ]
+    }
+  ]
+}

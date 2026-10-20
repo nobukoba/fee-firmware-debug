@@ -1,0 +1,943 @@
+{
+  "started_at": "2026-10-20T20:09:41.3529173+09:00",
+  "condition": "switch_already_on",
+  "cables": "Left connected",
+  "firmware": "Existing running images; not reprogrammed",
+  "off_seconds": 15,
+  "observation_seconds": 120,
+  "success_criterion": "3 consecutive valid SiTCP-XG identifier reads at >=1 second intervals",
+  "initial_power": [
+    {
+      "name": "Outlet 1",
+      "status": true
+    },
+    {
+      "name": "Outlet 2",
+      "status": true
+    }
+  ],
+  "trials": [
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 1,
+      "started_at": "2026-10-20T20:09:41.3803402+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.858,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.691,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.503,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.339,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.173,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.184,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.174,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.175,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:09:44.9509403+09:00",
+      "on_confirmed_at": "2026-10-20T20:10:03.1521424+09:00",
+      "first_response_seconds": 9.184,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:10:14.5708030+09:00"
+    },
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 2,
+      "started_at": "2026-10-20T20:10:14.5770493+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.802,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.604,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.429,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.255,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.083,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.085,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.101,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.115,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:10:17.6582303+09:00",
+      "on_confirmed_at": "2026-10-20T20:10:35.9178390+09:00",
+      "first_response_seconds": 9.085,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:10:47.1833245+09:00"
+    },
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 3,
+      "started_at": "2026-10-20T20:10:47.1866447+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.803,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.632,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.443,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.256,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.076,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.085,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.1,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.123,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:10:50.1435564+09:00",
+      "on_confirmed_at": "2026-10-20T20:11:08.4023941+09:00",
+      "first_response_seconds": 9.085,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:11:19.8301228+09:00"
+    },
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 4,
+      "started_at": "2026-10-20T20:11:19.8337774+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.807,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.612,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.431,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.234,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.057,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.072,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.073,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.087,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:11:22.8549292+09:00",
+      "on_confirmed_at": "2026-10-20T20:11:40.8048851+09:00",
+      "first_response_seconds": 9.072,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:11:52.1050206+09:00"
+    },
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 5,
+      "started_at": "2026-10-20T20:11:52.1078025+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.794,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.622,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.434,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.241,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.06,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.075,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.076,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.091,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:11:55.0799313+09:00",
+      "on_confirmed_at": "2026-10-20T20:12:13.2401566+09:00",
+      "first_response_seconds": 9.075,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:12:24.4843947+09:00"
+    },
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 6,
+      "started_at": "2026-10-20T20:12:24.4881365+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.803,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.631,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.436,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.258,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.086,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.101,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.131,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.132,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:12:27.4876094+09:00",
+      "on_confirmed_at": "2026-10-20T20:12:45.6361969+09:00",
+      "first_response_seconds": 9.101,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:12:57.2068480+09:00"
+    },
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 7,
+      "started_at": "2026-10-20T20:12:57.2091164+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.807,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.633,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.463,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.274,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.102,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.103,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.104,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.12,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:13:00.5956694+09:00",
+      "on_confirmed_at": "2026-10-20T20:13:18.8206753+09:00",
+      "first_response_seconds": 9.103,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:13:30.2774477+09:00"
+    },
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 8,
+      "started_at": "2026-10-20T20:13:30.2802787+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.806,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.618,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.432,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.259,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.071,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.072,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.073,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.073,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:13:33.4839871+09:00",
+      "on_confirmed_at": "2026-10-20T20:13:52.2421025+09:00",
+      "first_response_seconds": 9.072,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:14:03.5349357+09:00"
+    },
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 9,
+      "started_at": "2026-10-20T20:14:03.5377989+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.805,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.629,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.444,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.258,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.071,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.072,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.086,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.1,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:14:06.4606267+09:00",
+      "on_confirmed_at": "2026-10-20T20:14:25.8229197+09:00",
+      "first_response_seconds": 9.072,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:14:37.1242675+09:00"
+    },
+    {
+      "outlet": 1,
+      "address": "192.168.10.10",
+      "trial": 10,
+      "started_at": "2026-10-20T20:14:37.1269618+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.812,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.63,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.452,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.263,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.077,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.092,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.093,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.108,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:14:40.0562526+09:00",
+      "on_confirmed_at": "2026-10-20T20:14:59.4718065+09:00",
+      "first_response_seconds": 9.092,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:15:10.7015147+09:00"
+    },
+    {
+      "outlet": 2,
+      "address": "192.168.10.11",
+      "trial": 1,
+      "started_at": "2026-10-20T20:15:10.7042209+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.807,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.632,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.449,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.276,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.089,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.09,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.104,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.105,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:15:13.5108030+09:00",
+      "on_confirmed_at": "2026-10-20T20:15:32.8668517+09:00",
+      "first_response_seconds": 9.09,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:15:44.1379960+09:00"
+    },
+    {
+      "outlet": 2,
+      "address": "192.168.10.11",
+      "trial": 2,
+      "started_at": "2026-10-20T20:15:44.1413978+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.808,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.622,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.44,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.262,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.075,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.076,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.091,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.092,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:15:47.0321066+09:00",
+      "on_confirmed_at": "2026-10-20T20:16:06.6456025+09:00",
+      "first_response_seconds": 9.076,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:16:17.9169914+09:00"
+    },
+    {
+      "outlet": 2,
+      "address": "192.168.10.11",
+      "trial": 3,
+      "started_at": "2026-10-20T20:16:17.9203580+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.802,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.622,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.449,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.276,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.091,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.092,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.102,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.106,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:16:20.9958647+09:00",
+      "on_confirmed_at": "2026-10-20T20:16:40.6295953+09:00",
+      "first_response_seconds": 9.092,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:16:51.9159381+09:00"
+    },
+    {
+      "outlet": 2,
+      "address": "192.168.10.11",
+      "trial": 4,
+      "started_at": "2026-10-20T20:16:51.9188574+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.805,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.633,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.461,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.272,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.114,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.116,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.117,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.117,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:16:54.9993229+09:00",
+      "on_confirmed_at": "2026-10-20T20:17:14.9167664+09:00",
+      "first_response_seconds": 9.116,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:17:26.2024406+09:00"
+    },
+    {
+      "outlet": 2,
+      "address": "192.168.10.11",
+      "trial": 5,
+      "started_at": "2026-10-20T20:17:26.2050958+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.826,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.639,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.462,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.28,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.107,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.108,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.109,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.124,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:17:29.5221745+09:00",
+      "on_confirmed_at": "2026-10-20T20:17:49.1745665+09:00",
+      "first_response_seconds": 9.108,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:18:00.6770048+09:00"
+    },
+    {
+      "outlet": 2,
+      "address": "192.168.10.11",
+      "trial": 6,
+      "started_at": "2026-10-20T20:18:00.6798347+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.8,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.629,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.457,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.284,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.098,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.128,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.13,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.145,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:18:04.8371912+09:00",
+      "on_confirmed_at": "2026-10-20T20:18:23.6392647+09:00",
+      "first_response_seconds": 9.128,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:18:35.1081498+09:00"
+    },
+    {
+      "outlet": 2,
+      "address": "192.168.10.11",
+      "trial": 7,
+      "started_at": "2026-10-20T20:18:35.1113946+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.805,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.619,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.431,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.275,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.102,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.103,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.104,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.119,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:18:38.7558576+09:00",
+      "on_confirmed_at": "2026-10-20T20:18:57.0715447+09:00",
+      "first_response_seconds": 9.103,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:19:08.5022910+09:00"
+    },
+    {
+      "outlet": 2,
+      "address": "192.168.10.11",
+      "trial": 8,
+      "started_at": "2026-10-20T20:19:08.5046684+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.811,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.613,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.437,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.249,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.063,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.078,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.078,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.078,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:19:11.5548059+09:00",
+      "on_confirmed_at": "2026-10-20T20:19:30.1745930+09:00",
+      "first_response_seconds": 9.078,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:19:41.5733045+09:00"
+    },
+    {
+      "outlet": 2,
+      "address": "192.168.10.11",
+      "trial": 9,
+      "started_at": "2026-10-20T20:19:41.5760838+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.809,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.611,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.433,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.261,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.089,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.09,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.105,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.121,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:19:45.4204666+09:00",
+      "on_confirmed_at": "2026-10-20T20:20:03.9254788+09:00",
+      "first_response_seconds": 9.09,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:20:15.2213502+09:00"
+    },
+    {
+      "outlet": 2,
+      "address": "192.168.10.11",
+      "trial": 10,
+      "started_at": "2026-10-20T20:20:15.2239049+09:00",
+      "samples": [
+        {
+          "elapsed_seconds": 0.819,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 2.636,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 4.461,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 6.275,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 8.102,
+          "valid_identifier": false
+        },
+        {
+          "elapsed_seconds": 9.103,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 10.104,
+          "valid_identifier": true
+        },
+        {
+          "elapsed_seconds": 11.134,
+          "valid_identifier": true
+        }
+      ],
+      "result": "success",
+      "off_confirmed_at": "2026-10-20T20:20:18.1419671+09:00",
+      "on_confirmed_at": "2026-10-20T20:20:37.1966901+09:00",
+      "first_response_seconds": 9.103,
+      "final_power_on": true,
+      "finished_at": "2026-10-20T20:20:48.5362580+09:00"
+    }
+  ],
+  "completed": true,
+  "finished_at": "2026-10-20T20:20:48.6328659+09:00"
+}

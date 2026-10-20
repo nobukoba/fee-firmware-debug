@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-20T20:21:15.8940647+09:00",
+  "condition": "Switch powered ON and network cables connected; board OFF for >=15 seconds; observe for 120 seconds",
+  "source": "post-jitter-repeat10-20261020-200940.json",
+  "completed_trials": 20,
+  "audit": "All timestamps, power states, trial counts and three-read success criteria verified",
+  "results": [
+    {
+      "address": "192.168.10.10",
+      "trials": 10,
+      "successes": 10,
+      "failures": 0,
+      "first_response_min_seconds": 9.072,
+      "first_response_max_seconds": 9.184,
+      "first_response_mean_seconds": 9.094
+    },
+    {
+      "address": "192.168.10.11",
+      "trials": 10,
+      "successes": 10,
+      "failures": 0,
+      "first_response_min_seconds": 9.076,
+      "first_response_max_seconds": 9.128,
+      "first_response_mean_seconds": 9.098
+    }
+  ],
+  "scope": "No failure observed in these trials; not a general guarantee or controlled SiTCP versus SiTCP-XG comparison"
+}
