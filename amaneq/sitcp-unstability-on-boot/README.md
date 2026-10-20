@@ -2,6 +2,8 @@
 
 **Language: English | [日本語](README.ja.md)**
 
+**Update (October 21):** the [HR reset policy comparison in LR-TDC](hr-reset-comparison-20261021/) records the CPLL-only wait, early-PHY policy, one-line comparison, and switch power-cycle tests on `.16`. Control `.11` stayed OFF and the jitter cleaner was disabled. The physical root cause remains unresolved.
+
 Investigation dates: 2026-10-17–18 JST. Additional comparison tests and final restoration are complete. The physical root cause remains unresolved.
 
 This page covers results through the morning of October 18. The afternoon [minimum-reset follow-up](minimum-reset-20261018/) is recorded separately.

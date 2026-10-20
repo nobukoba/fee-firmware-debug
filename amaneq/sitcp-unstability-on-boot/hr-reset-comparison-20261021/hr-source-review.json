@@ -1,0 +1,19 @@
+{
+  "reviewed_local": "2026-10-21T01:50:00+09:00",
+  "HR_source_commit": "33e3f35dfc43b04672d0bf6b352be2ff33b5579d",
+  "HR_top": "hrtdc-source-comparison/hdl/toplevel.vhd",
+  "confirmed_from_local_source": [
+    "HR master reset is asyncReset OR missing MMCM/CDCE lock, without LR's fixed2.147s initial hold.",
+    "HR SystemReset qualifies upper reset with QPLL lock and IDELAY readiness, then a preset delay and32 release stages.",
+    "HR uses10G PCS/PMA and QPLL; LR uses1G1000BASE-X and CPLL. Direct core transplantation is not the proposed test.",
+    "Local10G internal RTL is protected; no attempt was made to bypass protection or infer unobserved internal reset waveforms.",
+    "LR RX startup500ns counter is already rearmed by SOFT_RESET (lines255-270 in generated RX startup FSM). Absence of a soft-reset500ns wait is NOT a demonstrated HR/LR difference."
+  ],
+  "official_reference": {
+    "title": "AMD PG068 v6.0,2021-02-04",
+    "url": "https://docs.amd.com/v/u/en-US/pg068-ten-gig-eth-pcs-pma",
+    "pdf": "https://docs.amd.com/api/khub/documents/q2_fJ4oUei6_UYBzRV8gmQ/content",
+    "observations": "Table2-7 documents synchronized reset outputs and a500ns-completion output following configuration or master reset. Page83 says core register resets synchronize to their relevant clocks. These facts do not establish an exact GTRXRESET waveform or prove why HR works on this board."
+  },
+  "scope_of_F511_F512": "Adapt the inspectable upper reset policy; omit CDCE lock because user explicitly keeps jitter cleaner disabled; use SYS lock for PHY release and CPLL lock for upper qualification. No generated LR IP changes."
+}

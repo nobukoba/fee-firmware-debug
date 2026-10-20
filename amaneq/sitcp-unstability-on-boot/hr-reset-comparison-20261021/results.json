@@ -1,0 +1,6048 @@
+{
+  "recorded": "2026-10-21T06:11:36.667924",
+  "base_LR_commit": "5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039",
+  "HR_reference_commit": "33e3f35dfc43b04672d0bf6b352be2ff33b5579d",
+  "builds": {
+    "f500": {
+      "mcs_sha256": "1015aea007c72104d85bca5f379a198b7478ab54ec083f19716ba11385eeea0b",
+      "payload_sha256": "4278707d193ee0d3eb598b0bbb4f288f69afd57979bd4623c110de8bbf26e89e",
+      "expected_full_flash_sha256": "b0802a282334094a98fe7ce650aed6ce2b7ac84c7a5ec7fa6231a9ee54ed1589",
+      "WNS_ns": 0.068,
+      "WHS_ns": 0.015,
+      "sources_unchanged": true,
+      "jitter_cleaner_enabled": false
+    },
+    "f511": {
+      "mcs_sha256": "e515665f0c3adbf4e010ce53859363ff4eba59983709ac4dedd8db496bd28c63",
+      "payload_sha256": "fb53723286db8d1182270a44f55ec9ad7e2b5b8e861f90a08da1c32a03ea7b7e",
+      "expected_full_flash_sha256": "461c2a1fb10bacfaaed843d29e1f6199e6585c4de9f6e464c6f6936249f6e332",
+      "WNS_ns": 0.068,
+      "WHS_ns": 0.015,
+      "sources_unchanged": true,
+      "jitter_cleaner_enabled": false
+    },
+    "f512": {
+      "mcs_sha256": "e8211be5e854bab38270ca87f0d4e163bd276997a24e431fb053efe5437b4bc1",
+      "payload_sha256": "6516b34e279b49de95183113e83fcc396333d7bdb902e1e6895c86a6e20ea0d7",
+      "expected_full_flash_sha256": "ee3dc0877be6da43b03d979f5630a30b63edd6a468fba6ecacdeec1bcf7f256b",
+      "WNS_ns": 0.068,
+      "WHS_ns": 0.015,
+      "sources_unchanged": true,
+      "jitter_cleaner_enabled": false
+    },
+    "f503": {
+      "mcs_sha256": "3f5180ecadf341ee6afdac4d92419877c40e0b9c28c446d732a9504acbc0a062",
+      "payload_sha256": "345ff44e961ccc380ecfcaf7d0a3c74a591bc4d7578ef560ef3f922e6cb57625",
+      "expected_full_flash_sha256": "94b16c5191be50f5df626a4bd8b1333aa2ad33ce3a10456d8389fc0cc3aea0de",
+      "WNS_ns": 0.068,
+      "WHS_ns": 0.015,
+      "sources_unchanged": true,
+      "jitter_cleaner_enabled": false
+    }
+  },
+  "summary": [
+    {
+      "version": "0x60C4F402",
+      "mode": "board",
+      "success": 24,
+      "total": 24,
+      "reports": [
+        "hardware-f402-active.json",
+        "hardware-f402-final.json",
+        "hardware-f402-r1.json",
+        "hardware-f402-reversal-more.json",
+        "hardware-f402-reversal.json"
+      ]
+    },
+    {
+      "version": "0x60C4F402",
+      "mode": "network-from-healthy",
+      "success": 15,
+      "total": 15,
+      "reports": [
+        "hardware-f402-active.json",
+        "hardware-f402-final.json",
+        "hardware-f402-r1.json",
+        "hardware-f402-reversal.json",
+        "hardware-f402-switchcheck.json"
+      ]
+    },
+    {
+      "version": "0x60C4F402",
+      "mode": "switch-off-boot",
+      "success": 12,
+      "total": 12,
+      "reports": [
+        "hardware-f402-active.json",
+        "hardware-f402-final.json",
+        "hardware-f402-r1.json",
+        "hardware-f402-reversal.json"
+      ]
+    },
+    {
+      "version": "0x60C4F500",
+      "mode": "board",
+      "success": 3,
+      "total": 21,
+      "reports": [
+        "hardware-f500-linkrecovery.json",
+        "hardware-f500-more.json",
+        "hardware-f500-r1.json",
+        "hardware-f500-reversal.json"
+      ]
+    },
+    {
+      "version": "0x60C4F500",
+      "mode": "network-from-healthy",
+      "success": 5,
+      "total": 5,
+      "reports": [
+        "hardware-f500-linkrecovery.json",
+        "hardware-f500-r1.json"
+      ]
+    },
+    {
+      "version": "0x60C4F500",
+      "mode": "network-from-unresponsive",
+      "success": 1,
+      "total": 1,
+      "reports": [
+        "hardware-f500-linkrecovery.json"
+      ]
+    },
+    {
+      "version": "0x60C4F500",
+      "mode": "switch-off-boot",
+      "success": 3,
+      "total": 3,
+      "reports": [
+        "hardware-f500-r1.json"
+      ]
+    },
+    {
+      "version": "0x60C4F503",
+      "mode": "board",
+      "success": 18,
+      "total": 18,
+      "reports": [
+        "hardware-f503-more.json",
+        "hardware-f503-r1.json"
+      ]
+    },
+    {
+      "version": "0x60C4F503",
+      "mode": "network-from-healthy",
+      "success": 15,
+      "total": 15,
+      "reports": [
+        "hardware-f503-network-more.json",
+        "hardware-f503-r1.json"
+      ]
+    },
+    {
+      "version": "0x60C4F503",
+      "mode": "switch-off-boot",
+      "success": 3,
+      "total": 3,
+      "reports": [
+        "hardware-f503-r1.json"
+      ]
+    },
+    {
+      "version": "0x60C4F511",
+      "mode": "board",
+      "success": 0,
+      "total": 3,
+      "reports": [
+        "hardware-f511-r1.json"
+      ]
+    },
+    {
+      "version": "0x60C4F511",
+      "mode": "network-from-healthy",
+      "success": 3,
+      "total": 3,
+      "reports": [
+        "hardware-f511-r1.json"
+      ]
+    },
+    {
+      "version": "0x60C4F511",
+      "mode": "switch-off-boot",
+      "success": 3,
+      "total": 3,
+      "reports": [
+        "hardware-f511-r1.json"
+      ]
+    },
+    {
+      "version": "0x60C4F512",
+      "mode": "board",
+      "success": 18,
+      "total": 18,
+      "reports": [
+        "hardware-f512-more.json",
+        "hardware-f512-r1.json"
+      ]
+    },
+    {
+      "version": "0x60C4F512",
+      "mode": "network-from-healthy",
+      "success": 15,
+      "total": 15,
+      "reports": [
+        "hardware-f512-network-more.json",
+        "hardware-f512-r1.json"
+      ]
+    },
+    {
+      "version": "0x60C4F512",
+      "mode": "switch-off-boot",
+      "success": 3,
+      "total": 3,
+      "reports": [
+        "hardware-f512-r1.json"
+      ]
+    }
+  ],
+  "warmboot": [
+    {
+      "report": "warmboot-f500-afterfail.json",
+      "index": 1,
+      "starting_success": false,
+      "success": true
+    },
+    {
+      "report": "warmboot-f500.json",
+      "index": 1,
+      "starting_success": true,
+      "success": true
+    },
+    {
+      "report": "warmboot-f500.json",
+      "index": 2,
+      "starting_success": true,
+      "success": true
+    },
+    {
+      "report": "warmboot-f500.json",
+      "index": 3,
+      "starting_success": true,
+      "success": true
+    }
+  ],
+  "trials": [
+    {
+      "cohort": "hardware-f402-active.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 1,
+      "started": "2026-10-20T23:39:50.184402",
+      "finished": "2026-10-20T23:40:34.246530",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-active.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 2,
+      "started": "2026-10-20T23:40:34.250562",
+      "finished": "2026-10-20T23:41:17.389029",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-active.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 3,
+      "started": "2026-10-20T23:41:17.391811",
+      "finished": "2026-10-20T23:42:01.467957",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-active.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 1,
+      "started": "2026-10-20T23:42:01.467957",
+      "finished": "2026-10-20T23:42:46.242454",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-active.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 2,
+      "started": "2026-10-20T23:42:46.246481",
+      "finished": "2026-10-20T23:43:30.820232",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-active.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 3,
+      "started": "2026-10-20T23:43:30.826992",
+      "finished": "2026-10-20T23:44:15.293081",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-active.json",
+      "version": "0x60c4f402",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "started": "2026-10-20T23:44:15.297108",
+      "finished": "2026-10-20T23:45:29.723274",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-active.json",
+      "version": "0x60c4f402",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "started": "2026-10-20T23:45:29.723274",
+      "finished": "2026-10-20T23:46:40.434606",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-active.json",
+      "version": "0x60c4f402",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "started": "2026-10-20T23:46:40.442408",
+      "finished": "2026-10-20T23:47:51.998249",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-final.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 1,
+      "started": "2026-10-21T05:29:39.220640",
+      "finished": "2026-10-21T05:30:24.912761",
+      "success": true,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f402-final.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 2,
+      "started": "2026-10-21T05:30:24.912761",
+      "finished": "2026-10-21T05:31:11.150787",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-final.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 3,
+      "started": "2026-10-21T05:31:11.150787",
+      "finished": "2026-10-21T05:31:55.178782",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-final.json",
+      "version": "0x60c4f402",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "started": "2026-10-21T05:31:55.180789",
+      "finished": "2026-10-21T05:33:06.831217",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-final.json",
+      "version": "0x60c4f402",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "started": "2026-10-21T05:33:06.831217",
+      "finished": "2026-10-21T05:34:19.075853",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-final.json",
+      "version": "0x60c4f402",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "started": "2026-10-21T05:34:19.079880",
+      "finished": "2026-10-21T05:35:29.034364",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-final.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 1,
+      "started": "2026-10-21T05:35:29.034364",
+      "finished": "2026-10-21T05:36:15.106301",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-final.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 2,
+      "started": "2026-10-21T05:36:15.110324",
+      "finished": "2026-10-21T05:37:00.632859",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-final.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 3,
+      "started": "2026-10-21T05:37:00.632859",
+      "finished": "2026-10-21T05:37:46.075870",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-r1.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 1,
+      "started": "2026-10-20T23:28:16.737733",
+      "finished": "2026-10-20T23:29:48.448201",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-r1.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 2,
+      "started": "2026-10-20T23:29:48.452224",
+      "finished": "2026-10-20T23:31:21.868394",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-r1.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 3,
+      "started": "2026-10-20T23:31:21.872420",
+      "finished": "2026-10-20T23:32:56.672829",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-r1.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 1,
+      "started": "2026-10-20T23:32:56.678869",
+      "finished": "2026-10-20T23:33:40.581293",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-r1.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 2,
+      "started": "2026-10-20T23:33:40.581293",
+      "finished": "2026-10-20T23:34:24.675375",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-r1.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 3,
+      "started": "2026-10-20T23:34:24.681420",
+      "finished": "2026-10-20T23:35:08.953764",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-r1.json",
+      "version": "0x60c4f402",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "started": "2026-10-20T23:35:08.963606",
+      "finished": "2026-10-20T23:36:18.366932",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-r1.json",
+      "version": "0x60c4f402",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "started": "2026-10-20T23:36:18.384802",
+      "finished": "2026-10-20T23:37:29.936933",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-r1.json",
+      "version": "0x60c4f402",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "started": "2026-10-20T23:37:29.936933",
+      "finished": "2026-10-20T23:38:43.222661",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal-more.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 1,
+      "started": "2026-10-21T03:07:43.780116",
+      "finished": "2026-10-21T03:08:28.332192",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal-more.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 2,
+      "started": "2026-10-21T03:08:28.332192",
+      "finished": "2026-10-21T03:09:12.122494",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal-more.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 3,
+      "started": "2026-10-21T03:09:12.126523",
+      "finished": "2026-10-21T03:09:55.982544",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal-more.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 4,
+      "started": "2026-10-21T03:09:55.986318",
+      "finished": "2026-10-21T03:10:38.825920",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal-more.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 5,
+      "started": "2026-10-21T03:10:38.831219",
+      "finished": "2026-10-21T03:11:24.099934",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal-more.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 6,
+      "started": "2026-10-21T03:11:24.106143",
+      "finished": "2026-10-21T03:12:08.555289",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal-more.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 7,
+      "started": "2026-10-21T03:12:08.563463",
+      "finished": "2026-10-21T03:12:51.894570",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal-more.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 8,
+      "started": "2026-10-21T03:12:51.900610",
+      "finished": "2026-10-21T03:13:35.912262",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal-more.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 9,
+      "started": "2026-10-21T03:13:35.916290",
+      "finished": "2026-10-21T03:14:22.416658",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal-more.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 10,
+      "started": "2026-10-21T03:14:22.422657",
+      "finished": "2026-10-21T03:15:05.294888",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal-more.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 11,
+      "started": "2026-10-21T03:15:05.294888",
+      "finished": "2026-10-21T03:15:47.930312",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal-more.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 12,
+      "started": "2026-10-21T03:15:47.939499",
+      "finished": "2026-10-21T03:16:33.850523",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 1,
+      "started": "2026-10-21T02:56:52.890910",
+      "finished": "2026-10-21T02:57:38.545865",
+      "success": true,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f402-reversal.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 2,
+      "started": "2026-10-21T02:57:38.545865",
+      "finished": "2026-10-21T02:58:21.811439",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal.json",
+      "version": "0x60c4f402",
+      "mode": "board",
+      "index": 3,
+      "started": "2026-10-21T02:58:21.811439",
+      "finished": "2026-10-21T02:59:04.440995",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal.json",
+      "version": "0x60c4f402",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "started": "2026-10-21T02:59:04.440995",
+      "finished": "2026-10-21T03:00:14.520412",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal.json",
+      "version": "0x60c4f402",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "started": "2026-10-21T03:00:14.524438",
+      "finished": "2026-10-21T03:01:25.158515",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal.json",
+      "version": "0x60c4f402",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "started": "2026-10-21T03:01:25.165949",
+      "finished": "2026-10-21T03:02:37.570087",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 1,
+      "started": "2026-10-21T03:02:37.576126",
+      "finished": "2026-10-21T03:03:23.263513",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 2,
+      "started": "2026-10-21T03:03:23.267537",
+      "finished": "2026-10-21T03:04:08.982355",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-reversal.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 3,
+      "started": "2026-10-21T03:04:08.982355",
+      "finished": "2026-10-21T03:04:54.501694",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-switchcheck.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 1,
+      "started": "2026-10-20T23:59:02.657094",
+      "finished": "2026-10-20T23:59:48.041340",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-switchcheck.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 2,
+      "started": "2026-10-20T23:59:48.041340",
+      "finished": "2026-10-21T00:00:34.860020",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f402-switchcheck.json",
+      "version": "0x60c4f402",
+      "mode": "network",
+      "index": 3,
+      "started": "2026-10-21T00:00:34.860020",
+      "finished": "2026-10-21T00:01:20.664194",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f500-linkrecovery.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 1,
+      "started": "2026-10-21T01:30:05.506598",
+      "finished": "2026-10-21T01:32:49.176656",
+      "success": false,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f500-linkrecovery.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 2,
+      "started": "2026-10-21T01:33:25.866934",
+      "finished": "2026-10-21T01:36:06.952785",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-linkrecovery.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 3,
+      "started": "2026-10-21T01:36:06.956805",
+      "finished": "2026-10-21T01:38:48.784513",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-linkrecovery.json",
+      "version": "0x60c4f500",
+      "mode": "network",
+      "index": 1,
+      "started": "2026-10-21T01:38:48.784513",
+      "finished": "2026-10-21T01:39:34.496231",
+      "success": true,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-linkrecovery.json",
+      "version": "0x60c4f500",
+      "mode": "network",
+      "index": 2,
+      "started": "2026-10-21T01:39:34.505839",
+      "finished": "2026-10-21T01:40:20.671259",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f500-linkrecovery.json",
+      "version": "0x60c4f500",
+      "mode": "network",
+      "index": 3,
+      "started": "2026-10-21T01:40:20.671259",
+      "finished": "2026-10-21T01:41:06.834676",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f500-more.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 1,
+      "started": "2026-10-21T00:48:49.947702",
+      "finished": "2026-10-21T00:51:31.211060",
+      "success": false,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f500-more.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 2,
+      "started": "2026-10-21T00:52:00.718959",
+      "finished": "2026-10-21T00:54:43.230122",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-more.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 3,
+      "started": "2026-10-21T00:54:43.230122",
+      "finished": "2026-10-21T00:57:24.422664",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-more.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 4,
+      "started": "2026-10-21T00:57:24.422664",
+      "finished": "2026-10-21T01:00:07.024007",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-more.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 5,
+      "started": "2026-10-21T01:00:07.024007",
+      "finished": "2026-10-21T01:02:48.946147",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-more.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 6,
+      "started": "2026-10-21T01:02:48.946147",
+      "finished": "2026-10-21T01:03:31.585486",
+      "success": true,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-more.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 7,
+      "started": "2026-10-21T01:03:31.585486",
+      "finished": "2026-10-21T01:06:13.168266",
+      "success": false,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f500-more.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 8,
+      "started": "2026-10-21T01:06:13.170056",
+      "finished": "2026-10-21T01:08:54.623371",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-more.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 9,
+      "started": "2026-10-21T01:08:54.632905",
+      "finished": "2026-10-21T01:11:37.833063",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-more.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 10,
+      "started": "2026-10-21T01:11:37.845507",
+      "finished": "2026-10-21T01:14:19.231837",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-more.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 11,
+      "started": "2026-10-21T01:14:19.236829",
+      "finished": "2026-10-21T01:17:00.882908",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-more.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 12,
+      "started": "2026-10-21T01:17:00.896701",
+      "finished": "2026-10-21T01:19:41.981981",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-r1.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 1,
+      "started": "2026-10-21T00:32:57.649103",
+      "finished": "2026-10-21T00:33:43.756708",
+      "success": true,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-r1.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 2,
+      "started": "2026-10-21T00:33:43.758721",
+      "finished": "2026-10-21T00:34:27.589349",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f500-r1.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 3,
+      "started": "2026-10-21T00:34:27.589349",
+      "finished": "2026-10-21T00:37:08.548521",
+      "success": false,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f500-r1.json",
+      "version": "0x60c4f500",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "started": "2026-10-21T00:37:45.943817",
+      "finished": "2026-10-21T00:38:57.477960",
+      "success": true,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-r1.json",
+      "version": "0x60c4f500",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "started": "2026-10-21T00:38:57.484001",
+      "finished": "2026-10-21T00:40:08.752262",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f500-r1.json",
+      "version": "0x60c4f500",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "started": "2026-10-21T00:40:08.762923",
+      "finished": "2026-10-21T00:41:22.448510",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f500-r1.json",
+      "version": "0x60c4f500",
+      "mode": "network",
+      "index": 1,
+      "started": "2026-10-21T00:41:22.448510",
+      "finished": "2026-10-21T00:42:08.239120",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f500-r1.json",
+      "version": "0x60c4f500",
+      "mode": "network",
+      "index": 2,
+      "started": "2026-10-21T00:42:08.239120",
+      "finished": "2026-10-21T00:42:55.359652",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f500-r1.json",
+      "version": "0x60c4f500",
+      "mode": "network",
+      "index": 3,
+      "started": "2026-10-21T00:42:55.359652",
+      "finished": "2026-10-21T00:43:41.025088",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f500-reversal.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 1,
+      "started": "2026-10-21T05:14:40.347699",
+      "finished": "2026-10-21T05:17:23.389455",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-reversal.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 2,
+      "started": "2026-10-21T05:17:46.417406",
+      "finished": "2026-10-21T05:20:30.354734",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f500-reversal.json",
+      "version": "0x60c4f500",
+      "mode": "board",
+      "index": 3,
+      "started": "2026-10-21T05:20:30.356743",
+      "finished": "2026-10-21T05:23:13.685371",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 1,
+      "started": "2026-10-21T04:48:11.578179",
+      "finished": "2026-10-21T04:48:54.208455",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 2,
+      "started": "2026-10-21T04:48:54.208455",
+      "finished": "2026-10-21T04:49:39.584239",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 3,
+      "started": "2026-10-21T04:49:39.586257",
+      "finished": "2026-10-21T04:50:24.047124",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 4,
+      "started": "2026-10-21T04:50:24.047124",
+      "finished": "2026-10-21T04:51:06.662417",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 5,
+      "started": "2026-10-21T04:51:06.665411",
+      "finished": "2026-10-21T04:51:51.058445",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 6,
+      "started": "2026-10-21T04:51:51.060458",
+      "finished": "2026-10-21T04:52:36.892339",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 7,
+      "started": "2026-10-21T04:52:36.896365",
+      "finished": "2026-10-21T04:53:20.192232",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 8,
+      "started": "2026-10-21T04:53:20.192232",
+      "finished": "2026-10-21T04:54:04.371137",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 9,
+      "started": "2026-10-21T04:54:04.375156",
+      "finished": "2026-10-21T04:54:48.513824",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 10,
+      "started": "2026-10-21T04:54:48.517847",
+      "finished": "2026-10-21T04:55:31.821272",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 11,
+      "started": "2026-10-21T04:55:31.821272",
+      "finished": "2026-10-21T04:56:14.952079",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 12,
+      "started": "2026-10-21T04:56:14.952079",
+      "finished": "2026-10-21T04:56:58.375549",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 13,
+      "started": "2026-10-21T04:56:58.380586",
+      "finished": "2026-10-21T04:57:43.663872",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 14,
+      "started": "2026-10-21T04:57:43.667853",
+      "finished": "2026-10-21T04:58:26.323030",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-more.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 15,
+      "started": "2026-10-21T04:58:26.328040",
+      "finished": "2026-10-21T04:59:09.318457",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-network-more.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 1,
+      "started": "2026-10-21T04:59:43.488457",
+      "finished": "2026-10-21T05:00:28.925934",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-network-more.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 2,
+      "started": "2026-10-21T05:00:28.927943",
+      "finished": "2026-10-21T05:01:14.331234",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-network-more.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 3,
+      "started": "2026-10-21T05:01:14.331234",
+      "finished": "2026-10-21T05:02:00.248604",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-network-more.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 4,
+      "started": "2026-10-21T05:02:00.250613",
+      "finished": "2026-10-21T05:02:45.724332",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-network-more.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 5,
+      "started": "2026-10-21T05:02:45.726347",
+      "finished": "2026-10-21T05:03:31.210132",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-network-more.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 6,
+      "started": "2026-10-21T05:03:31.214157",
+      "finished": "2026-10-21T05:04:16.935917",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-network-more.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 7,
+      "started": "2026-10-21T05:04:16.939560",
+      "finished": "2026-10-21T05:05:02.549479",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-network-more.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 8,
+      "started": "2026-10-21T05:05:02.551489",
+      "finished": "2026-10-21T05:05:49.141921",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-network-more.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 9,
+      "started": "2026-10-21T05:05:49.145938",
+      "finished": "2026-10-21T05:06:34.670823",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-network-more.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 10,
+      "started": "2026-10-21T05:06:34.681065",
+      "finished": "2026-10-21T05:07:20.090205",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-network-more.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 11,
+      "started": "2026-10-21T05:07:20.090205",
+      "finished": "2026-10-21T05:08:05.429945",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-network-more.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 12,
+      "started": "2026-10-21T05:08:05.435977",
+      "finished": "2026-10-21T05:08:50.993534",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-r1.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 1,
+      "started": "2026-10-21T04:39:06.339319",
+      "finished": "2026-10-21T04:39:49.289302",
+      "success": true,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f503-r1.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 2,
+      "started": "2026-10-21T04:39:49.291056",
+      "finished": "2026-10-21T04:40:34.206285",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-r1.json",
+      "version": "0x60c4f503",
+      "mode": "board",
+      "index": 3,
+      "started": "2026-10-21T04:40:34.206285",
+      "finished": "2026-10-21T04:41:19.206473",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-r1.json",
+      "version": "0x60c4f503",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "started": "2026-10-21T04:41:19.206473",
+      "finished": "2026-10-21T04:42:29.149352",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-r1.json",
+      "version": "0x60c4f503",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "started": "2026-10-21T04:42:29.149352",
+      "finished": "2026-10-21T04:43:39.463794",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-r1.json",
+      "version": "0x60c4f503",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "started": "2026-10-21T04:43:39.465803",
+      "finished": "2026-10-21T04:44:52.551704",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-r1.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 1,
+      "started": "2026-10-21T04:44:52.557263",
+      "finished": "2026-10-21T04:45:38.122564",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-r1.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 2,
+      "started": "2026-10-21T04:45:38.122564",
+      "finished": "2026-10-21T04:46:23.518753",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f503-r1.json",
+      "version": "0x60c4f503",
+      "mode": "network",
+      "index": 3,
+      "started": "2026-10-21T04:46:23.522771",
+      "finished": "2026-10-21T04:47:10.741647",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f511-r1.json",
+      "version": "0x60c4f511",
+      "mode": "board",
+      "index": 1,
+      "started": "2026-10-21T02:35:38.306983",
+      "finished": "2026-10-21T02:38:19.512994",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f511-r1.json",
+      "version": "0x60c4f511",
+      "mode": "board",
+      "index": 2,
+      "started": "2026-10-21T02:38:53.023660",
+      "finished": "2026-10-21T02:41:34.054731",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f511-r1.json",
+      "version": "0x60c4f511",
+      "mode": "board",
+      "index": 3,
+      "started": "2026-10-21T02:41:34.054731",
+      "finished": "2026-10-21T02:44:15.519774",
+      "success": false,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f511-r1.json",
+      "version": "0x60c4f511",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "started": "2026-10-21T02:44:15.519774",
+      "finished": "2026-10-21T02:45:26.308358",
+      "success": true,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f511-r1.json",
+      "version": "0x60c4f511",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "started": "2026-10-21T02:45:26.318061",
+      "finished": "2026-10-21T02:46:39.131897",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f511-r1.json",
+      "version": "0x60c4f511",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "started": "2026-10-21T02:46:39.138420",
+      "finished": "2026-10-21T02:47:49.252518",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f511-r1.json",
+      "version": "0x60c4f511",
+      "mode": "network",
+      "index": 1,
+      "started": "2026-10-21T02:47:49.256545",
+      "finished": "2026-10-21T02:48:35.007233",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f511-r1.json",
+      "version": "0x60c4f511",
+      "mode": "network",
+      "index": 2,
+      "started": "2026-10-21T02:48:35.013260",
+      "finished": "2026-10-21T02:49:20.670708",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f511-r1.json",
+      "version": "0x60c4f511",
+      "mode": "network",
+      "index": 3,
+      "started": "2026-10-21T02:49:20.676740",
+      "finished": "2026-10-21T02:50:06.660049",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 1,
+      "started": "2026-10-21T03:44:37.549989",
+      "finished": "2026-10-21T03:45:20.750023",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 2,
+      "started": "2026-10-21T03:45:20.750023",
+      "finished": "2026-10-21T03:46:05.190540",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 3,
+      "started": "2026-10-21T03:46:05.190540",
+      "finished": "2026-10-21T03:46:49.583066",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 4,
+      "started": "2026-10-21T03:46:49.590234",
+      "finished": "2026-10-21T03:47:34.206112",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 5,
+      "started": "2026-10-21T03:47:34.206112",
+      "finished": "2026-10-21T03:48:16.843838",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 6,
+      "started": "2026-10-21T03:48:16.843838",
+      "finished": "2026-10-21T03:48:59.284049",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 7,
+      "started": "2026-10-21T03:48:59.284049",
+      "finished": "2026-10-21T03:49:45.165432",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 8,
+      "started": "2026-10-21T03:49:45.169457",
+      "finished": "2026-10-21T03:50:28.171200",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 9,
+      "started": "2026-10-21T03:50:28.171200",
+      "finished": "2026-10-21T03:51:10.963278",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 10,
+      "started": "2026-10-21T03:51:10.975929",
+      "finished": "2026-10-21T03:51:56.873972",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 11,
+      "started": "2026-10-21T03:51:56.873972",
+      "finished": "2026-10-21T03:52:40.944354",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 12,
+      "started": "2026-10-21T03:52:40.944354",
+      "finished": "2026-10-21T03:53:25.274247",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 13,
+      "started": "2026-10-21T03:53:25.274247",
+      "finished": "2026-10-21T03:54:08.138798",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 14,
+      "started": "2026-10-21T03:54:08.142566",
+      "finished": "2026-10-21T03:54:53.821145",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-more.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 15,
+      "started": "2026-10-21T03:54:53.827176",
+      "finished": "2026-10-21T03:55:40.053471",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-network-more.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 1,
+      "started": "2026-10-21T03:56:43.195687",
+      "finished": "2026-10-21T03:57:28.822881",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-network-more.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 2,
+      "started": "2026-10-21T03:57:28.822881",
+      "finished": "2026-10-21T03:58:15.407843",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-network-more.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 3,
+      "started": "2026-10-21T03:58:15.407843",
+      "finished": "2026-10-21T03:59:00.999106",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-network-more.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 4,
+      "started": "2026-10-21T03:59:00.999106",
+      "finished": "2026-10-21T03:59:46.706442",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-network-more.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 5,
+      "started": "2026-10-21T03:59:46.711564",
+      "finished": "2026-10-21T04:00:33.580885",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-network-more.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 6,
+      "started": "2026-10-21T04:00:33.580885",
+      "finished": "2026-10-21T04:01:19.996762",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-network-more.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 7,
+      "started": "2026-10-21T04:01:19.998779",
+      "finished": "2026-10-21T04:02:05.613164",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-network-more.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 8,
+      "started": "2026-10-21T04:02:05.619209",
+      "finished": "2026-10-21T04:02:51.183923",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-network-more.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 9,
+      "started": "2026-10-21T04:02:51.183923",
+      "finished": "2026-10-21T04:03:37.026851",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-network-more.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 10,
+      "started": "2026-10-21T04:03:37.030871",
+      "finished": "2026-10-21T04:04:23.043919",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-network-more.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 11,
+      "started": "2026-10-21T04:04:23.051588",
+      "finished": "2026-10-21T04:05:08.620563",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-network-more.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 12,
+      "started": "2026-10-21T04:05:08.628674",
+      "finished": "2026-10-21T04:05:54.286581",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-r1.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 1,
+      "started": "2026-10-21T03:35:32.034474",
+      "finished": "2026-10-21T03:36:17.898741",
+      "success": true,
+      "starting_success": false
+    },
+    {
+      "cohort": "hardware-f512-r1.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 2,
+      "started": "2026-10-21T03:36:17.902200",
+      "finished": "2026-10-21T03:37:03.591369",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-r1.json",
+      "version": "0x60c4f512",
+      "mode": "board",
+      "index": 3,
+      "started": "2026-10-21T03:37:03.595403",
+      "finished": "2026-10-21T03:37:46.394302",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-r1.json",
+      "version": "0x60c4f512",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "started": "2026-10-21T03:37:46.394302",
+      "finished": "2026-10-21T03:38:56.667096",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-r1.json",
+      "version": "0x60c4f512",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "started": "2026-10-21T03:38:56.671125",
+      "finished": "2026-10-21T03:40:08.403590",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-r1.json",
+      "version": "0x60c4f512",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "started": "2026-10-21T03:40:08.403590",
+      "finished": "2026-10-21T03:41:19.993788",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-r1.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 1,
+      "started": "2026-10-21T03:41:19.997819",
+      "finished": "2026-10-21T03:42:05.612211",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-r1.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 2,
+      "started": "2026-10-21T03:42:05.619383",
+      "finished": "2026-10-21T03:42:51.090345",
+      "success": true,
+      "starting_success": true
+    },
+    {
+      "cohort": "hardware-f512-r1.json",
+      "version": "0x60c4f512",
+      "mode": "network",
+      "index": 3,
+      "started": "2026-10-21T03:42:51.090345",
+      "finished": "2026-10-21T03:43:36.943111",
+      "success": true,
+      "starting_success": true
+    }
+  ],
+  "aborted_before_trials": [
+    {
+      "cohort": "hardware-f402-initial.json",
+      "completed_trials": 0,
+      "error_type": "TypeError",
+      "reason": "Recorder duplicate time keyword; stopped before any trial. Fixed before f402-r1."
+    }
+  ],
+  "soaks": [
+    {
+      "cohort": "soak-f402-final.json",
+      "version": "0x60c4f402",
+      "seconds": 1800,
+      "samples": 359,
+      "failures": 0
+    },
+    {
+      "cohort": "soak-f402-precompare.json",
+      "version": "0x60c4f402",
+      "seconds": 300,
+      "samples": 60,
+      "failures": 0
+    },
+    {
+      "cohort": "soak-f500-running.json",
+      "version": "0x60c4f500",
+      "seconds": 1800,
+      "samples": 359,
+      "failures": 0
+    },
+    {
+      "cohort": "soak-f512-running.json",
+      "version": "0x60c4f512",
+      "seconds": 900,
+      "samples": 180,
+      "failures": 0
+    }
+  ],
+  "packet_count": 24367,
+  "packet_windows": [
+    {
+      "report": "hardware-f402-active.json",
+      "mode": "board",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-20T23:40:14.074449",
+      "window_end": "2026-10-20T23:40:34.246530",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.012941,
+        "arp_reply": 15.013093,
+        "rbcp_request": 15.126481,
+        "rbcp_reply": 15.126572,
+        "tcp_syn": 15.13596,
+        "tcp_syn_ack": 15.13604
+      }
+    },
+    {
+      "report": "hardware-f402-active.json",
+      "mode": "board",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-20T23:40:57.246141",
+      "window_end": "2026-10-20T23:41:17.389029",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005749,
+        "arp_reply": 15.005884,
+        "rbcp_request": 15.119566,
+        "rbcp_reply": 15.119661,
+        "tcp_syn": 15.128701,
+        "tcp_syn_ack": 15.128767
+      }
+    },
+    {
+      "report": "hardware-f402-active.json",
+      "mode": "board",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-20T23:41:41.304218",
+      "window_end": "2026-10-20T23:42:01.467957",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.015644,
+        "arp_reply": 15.015793,
+        "rbcp_request": 15.138567,
+        "rbcp_reply": 15.138657,
+        "tcp_syn": 15.148342,
+        "tcp_syn_ack": 15.148454
+      }
+    },
+    {
+      "report": "hardware-f402-active.json",
+      "mode": "network",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-20T23:42:26.075892",
+      "window_end": "2026-10-20T23:42:46.242454",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.003196,
+        "arp_reply": 15.003304,
+        "rbcp_request": 15.122716,
+        "rbcp_reply": 15.122814,
+        "tcp_syn": 15.131464,
+        "tcp_syn_ack": 15.131533
+      }
+    },
+    {
+      "report": "hardware-f402-active.json",
+      "mode": "network",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-20T23:43:10.671916",
+      "window_end": "2026-10-20T23:43:30.820232",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004354,
+        "arp_reply": 15.004472,
+        "rbcp_request": 15.122953,
+        "rbcp_reply": 15.123052,
+        "tcp_syn": 15.13203,
+        "tcp_syn_ack": 15.132109
+      }
+    },
+    {
+      "report": "hardware-f402-active.json",
+      "mode": "network",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-20T23:43:55.126090",
+      "window_end": "2026-10-20T23:44:15.293081",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.011782,
+        "arp_reply": 15.011891,
+        "rbcp_request": 15.127627,
+        "rbcp_reply": 15.127717,
+        "tcp_syn": 15.136625,
+        "tcp_syn_ack": 15.136703
+      }
+    },
+    {
+      "report": "hardware-f402-active.json",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-20T23:45:09.548026",
+      "window_end": "2026-10-20T23:45:29.723274",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005337,
+        "arp_reply": 15.005461,
+        "rbcp_request": 15.126798,
+        "rbcp_reply": 15.126891,
+        "tcp_syn": 15.136016,
+        "tcp_syn_ack": 15.136115
+      }
+    },
+    {
+      "report": "hardware-f402-active.json",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-20T23:46:20.262397",
+      "window_end": "2026-10-20T23:46:40.434606",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.006482,
+        "arp_reply": 15.006618,
+        "rbcp_request": 15.141524,
+        "rbcp_reply": 15.141621,
+        "tcp_syn": 15.151098,
+        "tcp_syn_ack": 15.151186
+      }
+    },
+    {
+      "report": "hardware-f402-active.json",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-20T23:47:31.829631",
+      "window_end": "2026-10-20T23:47:51.998249",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.009556,
+        "arp_reply": 15.009681,
+        "rbcp_request": 15.138405,
+        "rbcp_reply": 15.138491,
+        "tcp_syn": 15.147746,
+        "tcp_syn_ack": 15.147837
+      }
+    },
+    {
+      "report": "hardware-f402-final.json",
+      "mode": "board",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T05:30:04.757422",
+      "window_end": "2026-10-21T05:30:24.912761",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.013655,
+        "arp_reply": 15.013803,
+        "rbcp_request": 15.123786,
+        "rbcp_reply": 15.123904,
+        "tcp_syn": 15.132153,
+        "tcp_syn_ack": 15.132291
+      }
+    },
+    {
+      "report": "hardware-f402-final.json",
+      "mode": "board",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T05:30:50.997652",
+      "window_end": "2026-10-21T05:31:11.150787",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.003899,
+        "arp_reply": 15.004041,
+        "rbcp_request": 15.121448,
+        "rbcp_reply": 15.121599,
+        "tcp_syn": 15.129706,
+        "tcp_syn_ack": 15.12982
+      }
+    },
+    {
+      "report": "hardware-f402-final.json",
+      "mode": "board",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T05:31:35.017451",
+      "window_end": "2026-10-21T05:31:55.178782",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.003186,
+        "arp_reply": 15.003351,
+        "rbcp_request": 15.121317,
+        "rbcp_reply": 15.121445,
+        "tcp_syn": 15.129653,
+        "tcp_syn_ack": 15.129753
+      }
+    },
+    {
+      "report": "hardware-f402-final.json",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T05:32:46.666795",
+      "window_end": "2026-10-21T05:33:06.831217",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.003973,
+        "arp_reply": 15.004107,
+        "rbcp_request": 15.122102,
+        "rbcp_reply": 15.122198,
+        "tcp_syn": 15.131251,
+        "tcp_syn_ack": 15.131333
+      }
+    },
+    {
+      "report": "hardware-f402-final.json",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T05:33:58.892950",
+      "window_end": "2026-10-21T05:34:19.075853",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.011505,
+        "arp_reply": 15.011629,
+        "rbcp_request": 15.144909,
+        "rbcp_reply": 15.145007,
+        "tcp_syn": 15.153546,
+        "tcp_syn_ack": 15.153624
+      }
+    },
+    {
+      "report": "hardware-f402-final.json",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T05:35:08.858100",
+      "window_end": "2026-10-21T05:35:29.034364",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.012549,
+        "arp_reply": 15.012721,
+        "rbcp_request": 15.136759,
+        "rbcp_reply": 15.136852,
+        "tcp_syn": 15.145354,
+        "tcp_syn_ack": 15.145425
+      }
+    },
+    {
+      "report": "hardware-f402-final.json",
+      "mode": "network",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T05:35:54.953414",
+      "window_end": "2026-10-21T05:36:15.106301",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.006216,
+        "arp_reply": 15.006388,
+        "rbcp_request": 15.123368,
+        "rbcp_reply": 15.123468,
+        "tcp_syn": 15.132062,
+        "tcp_syn_ack": 15.13213
+      }
+    },
+    {
+      "report": "hardware-f402-final.json",
+      "mode": "network",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T05:36:40.484807",
+      "window_end": "2026-10-21T05:37:00.632859",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.00625,
+        "arp_reply": 15.006376,
+        "rbcp_request": 15.122007,
+        "rbcp_reply": 15.122092,
+        "tcp_syn": 15.13032,
+        "tcp_syn_ack": 15.130426
+      }
+    },
+    {
+      "report": "hardware-f402-final.json",
+      "mode": "network",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T05:37:25.897281",
+      "window_end": "2026-10-21T05:37:46.075870",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.011657,
+        "arp_reply": 15.01177,
+        "rbcp_request": 15.138472,
+        "rbcp_reply": 15.138597,
+        "tcp_syn": 15.14691,
+        "tcp_syn_ack": 15.147018
+      }
+    },
+    {
+      "report": "hardware-f402-r1.json",
+      "mode": "board",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-20T23:28:38.964947",
+      "window_end": "2026-10-20T23:29:48.448201",
+      "counts": {
+        "arp_request": 5,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 0.003662,
+        "arp_reply": 62.855729,
+        "rbcp_request": 64.459194,
+        "rbcp_reply": 64.459284,
+        "tcp_syn": 64.468154,
+        "tcp_syn_ack": 64.468227
+      }
+    },
+    {
+      "report": "hardware-f402-r1.json",
+      "mode": "board",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-20T23:30:12.225267",
+      "window_end": "2026-10-20T23:31:21.868394",
+      "counts": {
+        "arp_request": 5,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 0.014789,
+        "arp_reply": 62.595903,
+        "rbcp_request": 64.600095,
+        "rbcp_reply": 64.60018,
+        "tcp_syn": 64.609177,
+        "tcp_syn_ack": 64.609266
+      }
+    },
+    {
+      "report": "hardware-f402-r1.json",
+      "mode": "board",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-20T23:31:47.013074",
+      "window_end": "2026-10-20T23:32:56.672829",
+      "counts": {
+        "arp_request": 5,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 0.01242,
+        "arp_reply": 62.811625,
+        "rbcp_request": 64.618174,
+        "rbcp_reply": 64.618299,
+        "tcp_syn": 64.62729,
+        "tcp_syn_ack": 64.627374
+      }
+    },
+    {
+      "report": "hardware-f402-r1.json",
+      "mode": "network",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-20T23:33:21.142836",
+      "window_end": "2026-10-20T23:33:40.581293",
+      "counts": {
+        "arp_request": 1,
+        "arp_reply": 1,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 14.36985,
+        "arp_reply": 14.369934,
+        "rbcp_request": 14.384537,
+        "rbcp_reply": 14.384628,
+        "tcp_syn": 14.394174,
+        "tcp_syn_ack": 14.394276
+      }
+    },
+    {
+      "report": "hardware-f402-r1.json",
+      "mode": "network",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-20T23:34:05.252385",
+      "window_end": "2026-10-20T23:34:24.675375",
+      "counts": {
+        "arp_request": 1,
+        "arp_reply": 1,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 14.3549,
+        "arp_reply": 14.354989,
+        "rbcp_request": 14.368304,
+        "rbcp_reply": 14.368387,
+        "tcp_syn": 14.378247,
+        "tcp_syn_ack": 14.378328
+      }
+    },
+    {
+      "report": "hardware-f402-r1.json",
+      "mode": "network",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-20T23:34:49.420872",
+      "window_end": "2026-10-20T23:35:08.953764",
+      "counts": {
+        "arp_request": 1,
+        "arp_reply": 1,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 14.388973,
+        "arp_reply": 14.389067,
+        "rbcp_request": 14.46893,
+        "rbcp_reply": 14.469027,
+        "tcp_syn": 14.478534,
+        "tcp_syn_ack": 14.478639
+      }
+    },
+    {
+      "report": "hardware-f402-r1.json",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-20T23:35:58.755423",
+      "window_end": "2026-10-20T23:36:18.366932",
+      "counts": {
+        "arp_request": 1,
+        "arp_reply": 1,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 14.569326,
+        "arp_reply": 14.569411,
+        "rbcp_request": 14.569444,
+        "rbcp_reply": 14.569518,
+        "tcp_syn": 14.578895,
+        "tcp_syn_ack": 14.578976
+      }
+    },
+    {
+      "report": "hardware-f402-r1.json",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-20T23:37:10.382549",
+      "window_end": "2026-10-20T23:37:29.936933",
+      "counts": {
+        "arp_request": 1,
+        "arp_reply": 1,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 14.474592,
+        "arp_reply": 14.474686,
+        "rbcp_request": 14.474722,
+        "rbcp_reply": 14.474796,
+        "tcp_syn": 14.484374,
+        "tcp_syn_ack": 14.484481
+      }
+    },
+    {
+      "report": "hardware-f402-r1.json",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-20T23:38:23.683084",
+      "window_end": "2026-10-20T23:38:43.222661",
+      "counts": {
+        "arp_request": 1,
+        "arp_reply": 1,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 14.42479,
+        "arp_reply": 14.424881,
+        "rbcp_request": 14.477922,
+        "rbcp_reply": 14.478012,
+        "tcp_syn": 14.487496,
+        "tcp_syn_ack": 14.487577
+      }
+    },
+    {
+      "report": "hardware-f402-reversal-more.json",
+      "mode": "board",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T03:08:08.171400",
+      "window_end": "2026-10-21T03:08:28.332192",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.00572,
+        "arp_reply": 15.005868,
+        "rbcp_request": 15.120028,
+        "rbcp_reply": 15.120141,
+        "tcp_syn": 15.128851,
+        "tcp_syn_ack": 15.128926
+      }
+    },
+    {
+      "report": "hardware-f402-reversal-more.json",
+      "mode": "board",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T03:08:51.956827",
+      "window_end": "2026-10-21T03:09:12.122494",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.007382,
+        "arp_reply": 15.007471,
+        "rbcp_request": 15.123328,
+        "rbcp_reply": 15.123414,
+        "tcp_syn": 15.132326,
+        "tcp_syn_ack": 15.132423
+      }
+    },
+    {
+      "report": "hardware-f402-reversal-more.json",
+      "mode": "board",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T03:09:35.842106",
+      "window_end": "2026-10-21T03:09:55.982544",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.003767,
+        "arp_reply": 15.003869,
+        "rbcp_request": 15.114191,
+        "rbcp_reply": 15.114305,
+        "tcp_syn": 15.123198,
+        "tcp_syn_ack": 15.123306
+      }
+    },
+    {
+      "report": "hardware-f402-reversal-more.json",
+      "mode": "board",
+      "index": 4,
+      "success": true,
+      "window_begin": "2026-10-21T03:10:18.661574",
+      "window_end": "2026-10-21T03:10:38.825920",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.006317,
+        "arp_reply": 15.006464,
+        "rbcp_request": 15.124975,
+        "rbcp_reply": 15.125072,
+        "tcp_syn": 15.134005,
+        "tcp_syn_ack": 15.134113
+      }
+    },
+    {
+      "report": "hardware-f402-reversal-more.json",
+      "mode": "board",
+      "index": 5,
+      "success": true,
+      "window_begin": "2026-10-21T03:11:03.934166",
+      "window_end": "2026-10-21T03:11:24.099934",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.007219,
+        "arp_reply": 15.007326,
+        "rbcp_request": 15.128527,
+        "rbcp_reply": 15.128617,
+        "tcp_syn": 15.138258,
+        "tcp_syn_ack": 15.138342
+      }
+    },
+    {
+      "report": "hardware-f402-reversal-more.json",
+      "mode": "board",
+      "index": 6,
+      "success": true,
+      "window_begin": "2026-10-21T03:11:48.391411",
+      "window_end": "2026-10-21T03:12:08.555289",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 1,
+        "tcp_syn_ack": 1
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005131,
+        "arp_reply": 15.00528,
+        "rbcp_request": 15.123743,
+        "rbcp_reply": 15.123835,
+        "tcp_syn": 15.132554,
+        "tcp_syn_ack": 15.13266
+      }
+    },
+    {
+      "report": "hardware-f402-reversal-more.json",
+      "mode": "board",
+      "index": 7,
+      "success": true,
+      "window_begin": "2026-10-21T03:12:31.745112",
+      "window_end": "2026-10-21T03:12:51.894570",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005338,
+        "arp_reply": 15.005479,
+        "rbcp_request": 15.119323,
+        "rbcp_reply": 15.119407,
+        "tcp_syn": 15.12813,
+        "tcp_syn_ack": 15.128204
+      }
+    },
+    {
+      "report": "hardware-f402-reversal-more.json",
+      "mode": "board",
+      "index": 8,
+      "success": true,
+      "window_begin": "2026-10-21T03:13:15.744966",
+      "window_end": "2026-10-21T03:13:35.912262",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.008564,
+        "arp_reply": 15.008737,
+        "rbcp_request": 15.125983,
+        "rbcp_reply": 15.126064,
+        "tcp_syn": 15.135089,
+        "tcp_syn_ack": 15.135173
+      }
+    },
+    {
+      "report": "hardware-f402-reversal-more.json",
+      "mode": "board",
+      "index": 9,
+      "success": true,
+      "window_begin": "2026-10-21T03:14:02.246417",
+      "window_end": "2026-10-21T03:14:22.416658",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.012186,
+        "arp_reply": 15.012342,
+        "rbcp_request": 15.126889,
+        "rbcp_reply": 15.126999,
+        "tcp_syn": 15.136297,
+        "tcp_syn_ack": 15.136384
+      }
+    },
+    {
+      "report": "hardware-f402-reversal-more.json",
+      "mode": "board",
+      "index": 10,
+      "success": true,
+      "window_begin": "2026-10-21T03:14:45.116157",
+      "window_end": "2026-10-21T03:15:05.294888",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.019491,
+        "arp_reply": 15.019625,
+        "rbcp_request": 15.139012,
+        "rbcp_reply": 15.139104,
+        "tcp_syn": 15.147949,
+        "tcp_syn_ack": 15.148019
+      }
+    },
+    {
+      "report": "hardware-f402-reversal-more.json",
+      "mode": "board",
+      "index": 11,
+      "success": true,
+      "window_begin": "2026-10-21T03:15:27.749148",
+      "window_end": "2026-10-21T03:15:47.930312",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.007499,
+        "arp_reply": 15.007658,
+        "rbcp_request": 15.135052,
+        "rbcp_reply": 15.135132,
+        "tcp_syn": 15.143872,
+        "tcp_syn_ack": 15.143947
+      }
+    },
+    {
+      "report": "hardware-f402-reversal-more.json",
+      "mode": "board",
+      "index": 12,
+      "success": true,
+      "window_begin": "2026-10-21T03:16:13.674418",
+      "window_end": "2026-10-21T03:16:33.850523",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.009683,
+        "arp_reply": 15.009825,
+        "rbcp_request": 15.132026,
+        "rbcp_reply": 15.132115,
+        "tcp_syn": 15.141503,
+        "tcp_syn_ack": 15.141602
+      }
+    },
+    {
+      "report": "hardware-f402-reversal.json",
+      "mode": "board",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T02:57:18.379588",
+      "window_end": "2026-10-21T02:57:38.545865",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.00711,
+        "arp_reply": 15.007259,
+        "rbcp_request": 15.121943,
+        "rbcp_reply": 15.122059,
+        "tcp_syn": 15.130705,
+        "tcp_syn_ack": 15.130813
+      }
+    },
+    {
+      "report": "hardware-f402-reversal.json",
+      "mode": "board",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T02:58:01.647559",
+      "window_end": "2026-10-21T02:58:21.811439",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.017225,
+        "arp_reply": 15.017356,
+        "rbcp_request": 15.137175,
+        "rbcp_reply": 15.13727,
+        "tcp_syn": 15.146136,
+        "tcp_syn_ack": 15.146204
+      }
+    },
+    {
+      "report": "hardware-f402-reversal.json",
+      "mode": "board",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T02:58:44.281615",
+      "window_end": "2026-10-21T02:59:04.440995",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.007388,
+        "arp_reply": 15.007729,
+        "rbcp_request": 15.118734,
+        "rbcp_reply": 15.11882,
+        "tcp_syn": 15.128145,
+        "tcp_syn_ack": 15.128219
+      }
+    },
+    {
+      "report": "hardware-f402-reversal.json",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T02:59:54.337701",
+      "window_end": "2026-10-21T03:00:14.520412",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005184,
+        "arp_reply": 15.005295,
+        "rbcp_request": 15.123075,
+        "rbcp_reply": 15.123161,
+        "tcp_syn": 15.13182,
+        "tcp_syn_ack": 15.13189
+      }
+    },
+    {
+      "report": "hardware-f402-reversal.json",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T03:01:05.008289",
+      "window_end": "2026-10-21T03:01:25.158515",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.003792,
+        "arp_reply": 15.003885,
+        "rbcp_request": 15.122863,
+        "rbcp_reply": 15.122969,
+        "tcp_syn": 15.131226,
+        "tcp_syn_ack": 15.131291
+      }
+    },
+    {
+      "report": "hardware-f402-reversal.json",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T03:02:17.370564",
+      "window_end": "2026-10-21T03:02:37.570087",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004444,
+        "arp_reply": 15.004548,
+        "rbcp_request": 15.139455,
+        "rbcp_reply": 15.139666,
+        "tcp_syn": 15.149966,
+        "tcp_syn_ack": 15.150058
+      }
+    },
+    {
+      "report": "hardware-f402-reversal.json",
+      "mode": "network",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T03:03:03.094989",
+      "window_end": "2026-10-21T03:03:23.263513",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004468,
+        "arp_reply": 15.004567,
+        "rbcp_request": 15.123285,
+        "rbcp_reply": 15.123376,
+        "tcp_syn": 15.13232,
+        "tcp_syn_ack": 15.132394
+      }
+    },
+    {
+      "report": "hardware-f402-reversal.json",
+      "mode": "network",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T03:03:48.815912",
+      "window_end": "2026-10-21T03:04:08.982355",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004471,
+        "arp_reply": 15.00456,
+        "rbcp_request": 15.125581,
+        "rbcp_reply": 15.125679,
+        "tcp_syn": 15.134438,
+        "tcp_syn_ack": 15.134526
+      }
+    },
+    {
+      "report": "hardware-f402-reversal.json",
+      "mode": "network",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T03:04:34.335286",
+      "window_end": "2026-10-21T03:04:54.501694",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005456,
+        "arp_reply": 15.005608,
+        "rbcp_request": 15.125509,
+        "rbcp_reply": 15.125678,
+        "tcp_syn": 15.134552,
+        "tcp_syn_ack": 15.134628
+      }
+    },
+    {
+      "report": "hardware-f402-switchcheck.json",
+      "mode": "network",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-20T23:59:27.877896",
+      "window_end": "2026-10-20T23:59:48.041340",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004252,
+        "arp_reply": 15.004373,
+        "rbcp_request": 15.122905,
+        "rbcp_reply": 15.123016,
+        "tcp_syn": 15.131918,
+        "tcp_syn_ack": 15.13199
+      }
+    },
+    {
+      "report": "hardware-f402-switchcheck.json",
+      "mode": "network",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T00:00:14.713540",
+      "window_end": "2026-10-21T00:00:34.860020",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.002871,
+        "arp_reply": 15.002982,
+        "rbcp_request": 15.120116,
+        "rbcp_reply": 15.120214,
+        "tcp_syn": 15.129045,
+        "tcp_syn_ack": 15.129116
+      }
+    },
+    {
+      "report": "hardware-f402-switchcheck.json",
+      "mode": "network",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T00:01:00.483083",
+      "window_end": "2026-10-21T00:01:20.664194",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.0046,
+        "arp_reply": 15.004707,
+        "rbcp_request": 15.123529,
+        "rbcp_reply": 15.123622,
+        "tcp_syn": 15.132825,
+        "tcp_syn_ack": 15.132906
+      }
+    },
+    {
+      "report": "hardware-f500-linkrecovery.json",
+      "mode": "board",
+      "index": 1,
+      "success": false,
+      "window_begin": "2026-10-21T01:30:30.704073",
+      "window_end": "2026-10-21T01:32:49.176656",
+      "counts": {
+        "arp_request": 24
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004519
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-linkrecovery.json",
+      "mode": "board",
+      "index": 2,
+      "success": false,
+      "window_begin": "2026-10-21T01:33:48.349418",
+      "window_end": "2026-10-21T01:36:06.952785",
+      "counts": {
+        "arp_request": 25
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 9.469438
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-linkrecovery.json",
+      "mode": "board",
+      "index": 3,
+      "success": false,
+      "window_begin": "2026-10-21T01:36:30.153441",
+      "window_end": "2026-10-21T01:38:48.784513",
+      "counts": {
+        "arp_request": 27
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.006402
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-linkrecovery.json",
+      "mode": "network",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T01:39:14.302162",
+      "window_end": "2026-10-21T01:39:34.496231",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005962,
+        "arp_reply": 15.006087,
+        "rbcp_request": 15.144196,
+        "rbcp_reply": 15.144285,
+        "tcp_syn": 15.153327,
+        "tcp_syn_ack": 15.153406
+      }
+    },
+    {
+      "report": "hardware-f500-linkrecovery.json",
+      "mode": "network",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T01:40:00.485977",
+      "window_end": "2026-10-21T01:40:20.671259",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.008026,
+        "arp_reply": 15.008165,
+        "rbcp_request": 15.125554,
+        "rbcp_reply": 15.125633,
+        "tcp_syn": 15.134119,
+        "tcp_syn_ack": 15.134185
+      }
+    },
+    {
+      "report": "hardware-f500-linkrecovery.json",
+      "mode": "network",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T01:40:46.636835",
+      "window_end": "2026-10-21T01:41:06.834676",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.007016,
+        "arp_reply": 15.00712,
+        "rbcp_request": 15.142075,
+        "rbcp_reply": 15.142173,
+        "tcp_syn": 15.151296,
+        "tcp_syn_ack": 15.151379
+      }
+    },
+    {
+      "report": "hardware-f500-more.json",
+      "mode": "board",
+      "index": 1,
+      "success": false,
+      "window_begin": "2026-10-21T00:49:12.809315",
+      "window_end": "2026-10-21T00:51:31.211060",
+      "counts": {
+        "arp_request": 24
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.016189
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-more.json",
+      "mode": "board",
+      "index": 2,
+      "success": false,
+      "window_begin": "2026-10-21T00:52:23.754866",
+      "window_end": "2026-10-21T00:54:43.230122",
+      "counts": {
+        "arp_request": 24
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004926
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-more.json",
+      "mode": "board",
+      "index": 3,
+      "success": false,
+      "window_begin": "2026-10-21T00:55:05.845865",
+      "window_end": "2026-10-21T00:57:24.422664",
+      "counts": {
+        "arp_request": 27
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.011544
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-more.json",
+      "mode": "board",
+      "index": 4,
+      "success": false,
+      "window_begin": "2026-10-21T00:57:48.379655",
+      "window_end": "2026-10-21T01:00:07.024007",
+      "counts": {
+        "arp_request": 24
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005966
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-more.json",
+      "mode": "board",
+      "index": 5,
+      "success": false,
+      "window_begin": "2026-10-21T01:00:30.320665",
+      "window_end": "2026-10-21T01:02:48.946147",
+      "counts": {
+        "arp_request": 27
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.010023
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-more.json",
+      "mode": "board",
+      "index": 6,
+      "success": true,
+      "window_begin": "2026-10-21T01:03:11.413433",
+      "window_end": "2026-10-21T01:03:31.585486",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.007633,
+        "arp_reply": 15.007788,
+        "rbcp_request": 15.131447,
+        "rbcp_reply": 15.131536,
+        "tcp_syn": 15.140248,
+        "tcp_syn_ack": 15.140348
+      }
+    },
+    {
+      "report": "hardware-f500-more.json",
+      "mode": "board",
+      "index": 7,
+      "success": false,
+      "window_begin": "2026-10-21T01:03:54.491824",
+      "window_end": "2026-10-21T01:06:13.168266",
+      "counts": {
+        "arp_request": 24
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.007747
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-more.json",
+      "mode": "board",
+      "index": 8,
+      "success": false,
+      "window_begin": "2026-10-21T01:06:35.858283",
+      "window_end": "2026-10-21T01:08:54.623371",
+      "counts": {
+        "arp_request": 27
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.01325
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-more.json",
+      "mode": "board",
+      "index": 9,
+      "success": false,
+      "window_begin": "2026-10-21T01:09:18.914662",
+      "window_end": "2026-10-21T01:11:37.833063",
+      "counts": {
+        "arp_request": 25
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 14.396946
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-more.json",
+      "mode": "board",
+      "index": 10,
+      "success": false,
+      "window_begin": "2026-10-21T01:12:00.399203",
+      "window_end": "2026-10-21T01:14:19.231837",
+      "counts": {
+        "arp_request": 27
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.018967
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-more.json",
+      "mode": "board",
+      "index": 11,
+      "success": false,
+      "window_begin": "2026-10-21T01:14:42.017840",
+      "window_end": "2026-10-21T01:17:00.882908",
+      "counts": {
+        "arp_request": 27
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.016903
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-more.json",
+      "mode": "board",
+      "index": 12,
+      "success": false,
+      "window_begin": "2026-10-21T01:17:24.006245",
+      "window_end": "2026-10-21T01:19:41.981981",
+      "counts": {
+        "arp_request": 27
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.012966
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-r1.json",
+      "mode": "board",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T00:33:23.601005",
+      "window_end": "2026-10-21T00:33:43.756708",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004005,
+        "arp_reply": 15.004143,
+        "rbcp_request": 15.121723,
+        "rbcp_reply": 15.121817,
+        "tcp_syn": 15.131078,
+        "tcp_syn_ack": 15.131156
+      }
+    },
+    {
+      "report": "hardware-f500-r1.json",
+      "mode": "board",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T00:34:07.436891",
+      "window_end": "2026-10-21T00:34:27.589349",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005771,
+        "arp_reply": 15.005919,
+        "rbcp_request": 15.12333,
+        "rbcp_reply": 15.123416,
+        "tcp_syn": 15.132319,
+        "tcp_syn_ack": 15.132395
+      }
+    },
+    {
+      "report": "hardware-f500-r1.json",
+      "mode": "board",
+      "index": 3,
+      "success": false,
+      "window_begin": "2026-10-21T00:34:50.081004",
+      "window_end": "2026-10-21T00:37:08.548521",
+      "counts": {
+        "arp_request": 24
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.009739
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-r1.json",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T00:38:37.320359",
+      "window_end": "2026-10-21T00:38:57.477960",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005563,
+        "arp_reply": 15.0057,
+        "rbcp_request": 15.127083,
+        "rbcp_reply": 15.127172,
+        "tcp_syn": 15.135962,
+        "tcp_syn_ack": 15.136047
+      }
+    },
+    {
+      "report": "hardware-f500-r1.json",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T00:39:48.587003",
+      "window_end": "2026-10-21T00:40:08.752262",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.00717,
+        "arp_reply": 15.007277,
+        "rbcp_request": 15.124776,
+        "rbcp_reply": 15.124864,
+        "tcp_syn": 15.133777,
+        "tcp_syn_ack": 15.133851
+      }
+    },
+    {
+      "report": "hardware-f500-r1.json",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T00:41:02.302022",
+      "window_end": "2026-10-21T00:41:22.448510",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.00441,
+        "arp_reply": 15.004559,
+        "rbcp_request": 15.120932,
+        "rbcp_reply": 15.121032,
+        "tcp_syn": 15.129684,
+        "tcp_syn_ack": 15.129766
+      }
+    },
+    {
+      "report": "hardware-f500-r1.json",
+      "mode": "network",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T00:41:48.058563",
+      "window_end": "2026-10-21T00:42:08.239120",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.006577,
+        "arp_reply": 15.006696,
+        "rbcp_request": 15.128413,
+        "rbcp_reply": 15.128501,
+        "tcp_syn": 15.13777,
+        "tcp_syn_ack": 15.137842
+      }
+    },
+    {
+      "report": "hardware-f500-r1.json",
+      "mode": "network",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T00:42:35.178919",
+      "window_end": "2026-10-21T00:42:55.359652",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.006124,
+        "arp_reply": 15.006259,
+        "rbcp_request": 15.133975,
+        "rbcp_reply": 15.134198,
+        "tcp_syn": 15.143427,
+        "tcp_syn_ack": 15.143498
+      }
+    },
+    {
+      "report": "hardware-f500-r1.json",
+      "mode": "network",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T00:43:20.855763",
+      "window_end": "2026-10-21T00:43:41.025088",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.006515,
+        "arp_reply": 15.006626,
+        "rbcp_request": 15.134888,
+        "rbcp_reply": 15.134983,
+        "tcp_syn": 15.144556,
+        "tcp_syn_ack": 15.14465
+      }
+    },
+    {
+      "report": "hardware-f500-reversal.json",
+      "mode": "board",
+      "index": 1,
+      "success": false,
+      "window_begin": "2026-10-21T05:15:04.945035",
+      "window_end": "2026-10-21T05:17:23.389455",
+      "counts": {
+        "arp_request": 24
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.01641
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-reversal.json",
+      "mode": "board",
+      "index": 2,
+      "success": false,
+      "window_begin": "2026-10-21T05:18:11.945978",
+      "window_end": "2026-10-21T05:20:30.354734",
+      "counts": {
+        "arp_request": 27
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.013411
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f500-reversal.json",
+      "mode": "board",
+      "index": 3,
+      "success": false,
+      "window_begin": "2026-10-21T05:20:55.194732",
+      "window_end": "2026-10-21T05:23:13.685371",
+      "counts": {
+        "arp_request": 27
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005533
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T04:48:34.034931",
+      "window_end": "2026-10-21T04:48:54.208455",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 11,
+        "tcp_syn": 1,
+        "tcp_syn_ack": 1
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.017492,
+        "arp_reply": 15.017637,
+        "rbcp_request": 15.137175,
+        "rbcp_reply": 15.137303,
+        "tcp_syn": 15.145783,
+        "tcp_syn_ack": 15.145882
+      }
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T04:49:19.435346",
+      "window_end": "2026-10-21T04:49:39.584239",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.013845,
+        "arp_reply": 15.014001,
+        "rbcp_request": 15.125078,
+        "rbcp_reply": 15.12516,
+        "tcp_syn": 15.133604,
+        "tcp_syn_ack": 15.133704
+      }
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T04:50:03.870900",
+      "window_end": "2026-10-21T04:50:24.047124",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.015455,
+        "arp_reply": 15.015663,
+        "rbcp_request": 15.133648,
+        "rbcp_reply": 15.133774,
+        "tcp_syn": 15.142215,
+        "tcp_syn_ack": 15.142313
+      }
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 4,
+      "success": true,
+      "window_begin": "2026-10-21T04:50:46.469021",
+      "window_end": "2026-10-21T04:51:06.662417",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.011568,
+        "arp_reply": 15.011716,
+        "rbcp_request": 15.134052,
+        "rbcp_reply": 15.134132,
+        "tcp_syn": 15.142255,
+        "tcp_syn_ack": 15.142322
+      }
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 5,
+      "success": true,
+      "window_begin": "2026-10-21T04:51:30.903397",
+      "window_end": "2026-10-21T04:51:51.058445",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.011341,
+        "arp_reply": 15.011489,
+        "rbcp_request": 15.12643,
+        "rbcp_reply": 15.126533,
+        "tcp_syn": 15.135082,
+        "tcp_syn_ack": 15.135184
+      }
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 6,
+      "success": true,
+      "window_begin": "2026-10-21T04:52:16.748411",
+      "window_end": "2026-10-21T04:52:36.892339",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.003754,
+        "arp_reply": 15.003942,
+        "rbcp_request": 15.113836,
+        "rbcp_reply": 15.113935,
+        "tcp_syn": 15.122168,
+        "tcp_syn_ack": 15.122234
+      }
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 7,
+      "success": true,
+      "window_begin": "2026-10-21T04:53:00.049459",
+      "window_end": "2026-10-21T04:53:20.192232",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004438,
+        "arp_reply": 15.004612,
+        "rbcp_request": 15.115422,
+        "rbcp_reply": 15.115518,
+        "tcp_syn": 15.123964,
+        "tcp_syn_ack": 15.124062
+      }
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 8,
+      "success": true,
+      "window_begin": "2026-10-21T04:53:44.208207",
+      "window_end": "2026-10-21T04:54:04.371137",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.00472,
+        "arp_reply": 15.004867,
+        "rbcp_request": 15.119251,
+        "rbcp_reply": 15.119338,
+        "tcp_syn": 15.127556,
+        "tcp_syn_ack": 15.127664
+      }
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 9,
+      "success": true,
+      "window_begin": "2026-10-21T04:54:28.337717",
+      "window_end": "2026-10-21T04:54:48.513824",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.01448,
+        "arp_reply": 15.014637,
+        "rbcp_request": 15.136602,
+        "rbcp_reply": 15.136684,
+        "tcp_syn": 15.145054,
+        "tcp_syn_ack": 15.145166
+      }
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 10,
+      "success": true,
+      "window_begin": "2026-10-21T04:55:11.662179",
+      "window_end": "2026-10-21T04:55:31.821272",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.008676,
+        "arp_reply": 15.008844,
+        "rbcp_request": 15.134274,
+        "rbcp_reply": 15.134414,
+        "tcp_syn": 15.14283,
+        "tcp_syn_ack": 15.142928
+      }
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 11,
+      "success": true,
+      "window_begin": "2026-10-21T04:55:54.789174",
+      "window_end": "2026-10-21T04:56:14.952079",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.010393,
+        "arp_reply": 15.01055,
+        "rbcp_request": 15.123102,
+        "rbcp_reply": 15.123217,
+        "tcp_syn": 15.131611,
+        "tcp_syn_ack": 15.131712
+      }
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 12,
+      "success": true,
+      "window_begin": "2026-10-21T04:56:38.214244",
+      "window_end": "2026-10-21T04:56:58.375549",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005043,
+        "arp_reply": 15.005134,
+        "rbcp_request": 15.131309,
+        "rbcp_reply": 15.131447,
+        "tcp_syn": 15.139647,
+        "tcp_syn_ack": 15.139767
+      }
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 13,
+      "success": true,
+      "window_begin": "2026-10-21T04:57:23.498420",
+      "window_end": "2026-10-21T04:57:43.663872",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.007564,
+        "arp_reply": 15.007696,
+        "rbcp_request": 15.118786,
+        "rbcp_reply": 15.118871,
+        "tcp_syn": 15.127381,
+        "tcp_syn_ack": 15.127483
+      }
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 14,
+      "success": true,
+      "window_begin": "2026-10-21T04:58:06.143246",
+      "window_end": "2026-10-21T04:58:26.323030",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.009128,
+        "arp_reply": 15.009331,
+        "rbcp_request": 15.135656,
+        "rbcp_reply": 15.135777,
+        "tcp_syn": 15.144103,
+        "tcp_syn_ack": 15.1442
+      }
+    },
+    {
+      "report": "hardware-f503-more.json",
+      "mode": "board",
+      "index": 15,
+      "success": true,
+      "window_begin": "2026-10-21T04:58:49.149448",
+      "window_end": "2026-10-21T04:59:09.318457",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.011777,
+        "arp_reply": 15.011963,
+        "rbcp_request": 15.13018,
+        "rbcp_reply": 15.13027,
+        "tcp_syn": 15.138538,
+        "tcp_syn_ack": 15.138637
+      }
+    },
+    {
+      "report": "hardware-f503-network-more.json",
+      "mode": "network",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T05:00:08.766521",
+      "window_end": "2026-10-21T05:00:28.925934",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004478,
+        "arp_reply": 15.004627,
+        "rbcp_request": 15.115742,
+        "rbcp_reply": 15.115867,
+        "tcp_syn": 15.124197,
+        "tcp_syn_ack": 15.124305
+      }
+    },
+    {
+      "report": "hardware-f503-network-more.json",
+      "mode": "network",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T05:00:54.188447",
+      "window_end": "2026-10-21T05:01:14.331234",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 11,
+        "tcp_syn": 1,
+        "tcp_syn_ack": 1
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.002896,
+        "arp_reply": 15.003046,
+        "rbcp_request": 15.124905,
+        "rbcp_reply": 15.124986,
+        "tcp_syn": 15.133299,
+        "tcp_syn_ack": 15.133404
+      }
+    },
+    {
+      "report": "hardware-f503-network-more.json",
+      "mode": "network",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T05:01:40.099366",
+      "window_end": "2026-10-21T05:02:00.248604",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005396,
+        "arp_reply": 15.005508,
+        "rbcp_request": 15.121533,
+        "rbcp_reply": 15.121621,
+        "tcp_syn": 15.129725,
+        "tcp_syn_ack": 15.129796
+      }
+    },
+    {
+      "report": "hardware-f503-network-more.json",
+      "mode": "network",
+      "index": 4,
+      "success": true,
+      "window_begin": "2026-10-21T05:02:25.564250",
+      "window_end": "2026-10-21T05:02:45.724332",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004228,
+        "arp_reply": 15.004333,
+        "rbcp_request": 15.115756,
+        "rbcp_reply": 15.115852,
+        "tcp_syn": 15.124733,
+        "tcp_syn_ack": 15.124807
+      }
+    },
+    {
+      "report": "hardware-f503-network-more.json",
+      "mode": "network",
+      "index": 5,
+      "success": true,
+      "window_begin": "2026-10-21T05:03:11.046598",
+      "window_end": "2026-10-21T05:03:31.210132",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005762,
+        "arp_reply": 15.005873,
+        "rbcp_request": 15.120511,
+        "rbcp_reply": 15.120594,
+        "tcp_syn": 15.129318,
+        "tcp_syn_ack": 15.129391
+      }
+    },
+    {
+      "report": "hardware-f503-network-more.json",
+      "mode": "network",
+      "index": 6,
+      "success": true,
+      "window_begin": "2026-10-21T05:03:56.770447",
+      "window_end": "2026-10-21T05:04:16.935917",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005507,
+        "arp_reply": 15.005676,
+        "rbcp_request": 15.122043,
+        "rbcp_reply": 15.122118,
+        "tcp_syn": 15.130564,
+        "tcp_syn_ack": 15.130645
+      }
+    },
+    {
+      "report": "hardware-f503-network-more.json",
+      "mode": "network",
+      "index": 7,
+      "success": true,
+      "window_begin": "2026-10-21T05:04:42.368299",
+      "window_end": "2026-10-21T05:05:02.549479",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.011937,
+        "arp_reply": 15.012082,
+        "rbcp_request": 15.135768,
+        "rbcp_reply": 15.13585,
+        "tcp_syn": 15.144168,
+        "tcp_syn_ack": 15.144273
+      }
+    },
+    {
+      "report": "hardware-f503-network-more.json",
+      "mode": "network",
+      "index": 8,
+      "success": true,
+      "window_begin": "2026-10-21T05:05:28.961655",
+      "window_end": "2026-10-21T05:05:49.141921",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.00578,
+        "arp_reply": 15.005916,
+        "rbcp_request": 15.127203,
+        "rbcp_reply": 15.127347,
+        "tcp_syn": 15.136667,
+        "tcp_syn_ack": 15.136764
+      }
+    },
+    {
+      "report": "hardware-f503-network-more.json",
+      "mode": "network",
+      "index": 9,
+      "success": true,
+      "window_begin": "2026-10-21T05:06:14.514501",
+      "window_end": "2026-10-21T05:06:34.670823",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.014328,
+        "arp_reply": 15.014433,
+        "rbcp_request": 15.129069,
+        "rbcp_reply": 15.129168,
+        "tcp_syn": 15.137396,
+        "tcp_syn_ack": 15.137461
+      }
+    },
+    {
+      "report": "hardware-f503-network-more.json",
+      "mode": "network",
+      "index": 10,
+      "success": true,
+      "window_begin": "2026-10-21T05:06:59.943957",
+      "window_end": "2026-10-21T05:07:20.090205",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 11,
+        "tcp_syn": 1,
+        "tcp_syn_ack": 1
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.012306,
+        "arp_reply": 15.012437,
+        "rbcp_request": 15.122649,
+        "rbcp_reply": 15.122787,
+        "tcp_syn": 15.131305,
+        "tcp_syn_ack": 15.131414
+      }
+    },
+    {
+      "report": "hardware-f503-network-more.json",
+      "mode": "network",
+      "index": 11,
+      "success": true,
+      "window_begin": "2026-10-21T05:07:45.239912",
+      "window_end": "2026-10-21T05:08:05.429945",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.006331,
+        "arp_reply": 15.006462,
+        "rbcp_request": 15.135002,
+        "rbcp_reply": 15.135144,
+        "tcp_syn": 15.143932,
+        "tcp_syn_ack": 15.144046
+      }
+    },
+    {
+      "report": "hardware-f503-network-more.json",
+      "mode": "network",
+      "index": 12,
+      "success": true,
+      "window_begin": "2026-10-21T05:08:30.796809",
+      "window_end": "2026-10-21T05:08:50.993534",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.014663,
+        "arp_reply": 15.014768,
+        "rbcp_request": 15.138091,
+        "rbcp_reply": 15.138186,
+        "tcp_syn": 15.146872,
+        "tcp_syn_ack": 15.146978
+      }
+    },
+    {
+      "report": "hardware-f503-r1.json",
+      "mode": "board",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T04:39:29.127244",
+      "window_end": "2026-10-21T04:39:49.289302",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.003527,
+        "arp_reply": 15.003696,
+        "rbcp_request": 15.125091,
+        "rbcp_reply": 15.125178,
+        "tcp_syn": 15.133508,
+        "tcp_syn_ack": 15.133618
+      }
+    },
+    {
+      "report": "hardware-f503-r1.json",
+      "mode": "board",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T04:40:14.059376",
+      "window_end": "2026-10-21T04:40:34.206285",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004257,
+        "arp_reply": 15.004421,
+        "rbcp_request": 15.122362,
+        "rbcp_reply": 15.122487,
+        "tcp_syn": 15.130924,
+        "tcp_syn_ack": 15.131021
+      }
+    },
+    {
+      "report": "hardware-f503-r1.json",
+      "mode": "board",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T04:40:59.046827",
+      "window_end": "2026-10-21T04:41:19.206473",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 11,
+        "tcp_syn": 1,
+        "tcp_syn_ack": 1
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.01302,
+        "arp_reply": 15.013225,
+        "rbcp_request": 15.126036,
+        "rbcp_reply": 15.126133,
+        "tcp_syn": 15.134202,
+        "tcp_syn_ack": 15.134268
+      }
+    },
+    {
+      "report": "hardware-f503-r1.json",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T04:42:08.994433",
+      "window_end": "2026-10-21T04:42:29.149352",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.013437,
+        "arp_reply": 15.013551,
+        "rbcp_request": 15.127874,
+        "rbcp_reply": 15.127967,
+        "tcp_syn": 15.136379,
+        "tcp_syn_ack": 15.136459
+      }
+    },
+    {
+      "report": "hardware-f503-r1.json",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T04:43:19.280162",
+      "window_end": "2026-10-21T04:43:39.463794",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.011236,
+        "arp_reply": 15.011355,
+        "rbcp_request": 15.138445,
+        "rbcp_reply": 15.138532,
+        "tcp_syn": 15.146917,
+        "tcp_syn_ack": 15.146981
+      }
+    },
+    {
+      "report": "hardware-f503-r1.json",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T04:44:32.354869",
+      "window_end": "2026-10-21T04:44:52.551704",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.012133,
+        "arp_reply": 15.012255,
+        "rbcp_request": 15.141082,
+        "rbcp_reply": 15.141186,
+        "tcp_syn": 15.14983,
+        "tcp_syn_ack": 15.149902
+      }
+    },
+    {
+      "report": "hardware-f503-r1.json",
+      "mode": "network",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T04:45:17.953306",
+      "window_end": "2026-10-21T04:45:38.122564",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.010003,
+        "arp_reply": 15.010133,
+        "rbcp_request": 15.1378,
+        "rbcp_reply": 15.137909,
+        "tcp_syn": 15.148247,
+        "tcp_syn_ack": 15.148338
+      }
+    },
+    {
+      "report": "hardware-f503-r1.json",
+      "mode": "network",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T04:46:03.334353",
+      "window_end": "2026-10-21T04:46:23.518753",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.013539,
+        "arp_reply": 15.013685,
+        "rbcp_request": 15.13852,
+        "rbcp_reply": 15.138611,
+        "tcp_syn": 15.146997,
+        "tcp_syn_ack": 15.147061
+      }
+    },
+    {
+      "report": "hardware-f503-r1.json",
+      "mode": "network",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T04:46:50.580643",
+      "window_end": "2026-10-21T04:47:10.741647",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.003708,
+        "arp_reply": 15.00384,
+        "rbcp_request": 15.120361,
+        "rbcp_reply": 15.120456,
+        "tcp_syn": 15.129312,
+        "tcp_syn_ack": 15.129421
+      }
+    },
+    {
+      "report": "hardware-f511-r1.json",
+      "mode": "board",
+      "index": 1,
+      "success": false,
+      "window_begin": "2026-10-21T02:36:01.083136",
+      "window_end": "2026-10-21T02:38:19.512994",
+      "counts": {
+        "arp_request": 24
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.012498
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f511-r1.json",
+      "mode": "board",
+      "index": 2,
+      "success": false,
+      "window_begin": "2026-10-21T02:39:15.449472",
+      "window_end": "2026-10-21T02:41:34.054731",
+      "counts": {
+        "arp_request": 25
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 12.374498
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f511-r1.json",
+      "mode": "board",
+      "index": 3,
+      "success": false,
+      "window_begin": "2026-10-21T02:41:57.848632",
+      "window_end": "2026-10-21T02:44:15.519774",
+      "counts": {
+        "arp_request": 27
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004892
+      },
+      "actual_ARP_requests_verified": true,
+      "no_ARP_reply_seen": true
+    },
+    {
+      "report": "hardware-f511-r1.json",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T02:45:06.150473",
+      "window_end": "2026-10-21T02:45:26.308358",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005949,
+        "arp_reply": 15.006051,
+        "rbcp_request": 15.125783,
+        "rbcp_reply": 15.12587,
+        "tcp_syn": 15.134755,
+        "tcp_syn_ack": 15.134845
+      }
+    },
+    {
+      "report": "hardware-f511-r1.json",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T02:46:18.958487",
+      "window_end": "2026-10-21T02:46:39.131897",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.007401,
+        "arp_reply": 15.007548,
+        "rbcp_request": 15.128635,
+        "rbcp_reply": 15.128752,
+        "tcp_syn": 15.137706,
+        "tcp_syn_ack": 15.137825
+      }
+    },
+    {
+      "report": "hardware-f511-r1.json",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T02:47:29.065731",
+      "window_end": "2026-10-21T02:47:49.252518",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.006714,
+        "arp_reply": 15.006851,
+        "rbcp_request": 15.129482,
+        "rbcp_reply": 15.129587,
+        "tcp_syn": 15.13878,
+        "tcp_syn_ack": 15.138873
+      }
+    },
+    {
+      "report": "hardware-f511-r1.json",
+      "mode": "network",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T02:48:14.806995",
+      "window_end": "2026-10-21T02:48:35.007233",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005951,
+        "arp_reply": 15.00605,
+        "rbcp_request": 15.130489,
+        "rbcp_reply": 15.13058,
+        "tcp_syn": 15.139882,
+        "tcp_syn_ack": 15.140008
+      }
+    },
+    {
+      "report": "hardware-f511-r1.json",
+      "mode": "network",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T02:49:00.481023",
+      "window_end": "2026-10-21T02:49:20.670708",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.007175,
+        "arp_reply": 15.007326,
+        "rbcp_request": 15.143203,
+        "rbcp_reply": 15.143288,
+        "tcp_syn": 15.152089,
+        "tcp_syn_ack": 15.1522
+      }
+    },
+    {
+      "report": "hardware-f511-r1.json",
+      "mode": "network",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T02:49:46.490064",
+      "window_end": "2026-10-21T02:50:06.660049",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.008755,
+        "arp_reply": 15.008905,
+        "rbcp_request": 15.129664,
+        "rbcp_reply": 15.129764,
+        "tcp_syn": 15.138415,
+        "tcp_syn_ack": 15.13852
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T03:45:00.584646",
+      "window_end": "2026-10-21T03:45:20.750023",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.003376,
+        "arp_reply": 15.003537,
+        "rbcp_request": 15.122858,
+        "rbcp_reply": 15.122985,
+        "tcp_syn": 15.131675,
+        "tcp_syn_ack": 15.131745
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T03:45:45.020396",
+      "window_end": "2026-10-21T03:46:05.190540",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.018698,
+        "arp_reply": 15.018822,
+        "rbcp_request": 15.142704,
+        "rbcp_reply": 15.142799,
+        "tcp_syn": 15.152351,
+        "tcp_syn_ack": 15.152445
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T03:46:29.428937",
+      "window_end": "2026-10-21T03:46:49.583066",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.00586,
+        "arp_reply": 15.006018,
+        "rbcp_request": 15.114617,
+        "rbcp_reply": 15.11471,
+        "tcp_syn": 15.123568,
+        "tcp_syn_ack": 15.123675
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 4,
+      "success": true,
+      "window_begin": "2026-10-21T03:47:14.058068",
+      "window_end": "2026-10-21T03:47:34.206112",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.008496,
+        "arp_reply": 15.008641,
+        "rbcp_request": 15.122835,
+        "rbcp_reply": 15.122928,
+        "tcp_syn": 15.131537,
+        "tcp_syn_ack": 15.131605
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 5,
+      "success": true,
+      "window_begin": "2026-10-21T03:47:56.682762",
+      "window_end": "2026-10-21T03:48:16.843838",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004657,
+        "arp_reply": 15.004806,
+        "rbcp_request": 15.119957,
+        "rbcp_reply": 15.12005,
+        "tcp_syn": 15.129087,
+        "tcp_syn_ack": 15.129158
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 6,
+      "success": true,
+      "window_begin": "2026-10-21T03:48:39.131854",
+      "window_end": "2026-10-21T03:48:59.284049",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.006931,
+        "arp_reply": 15.007047,
+        "rbcp_request": 15.121237,
+        "rbcp_reply": 15.121336,
+        "tcp_syn": 15.130531,
+        "tcp_syn_ack": 15.130611
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 7,
+      "success": true,
+      "window_begin": "2026-10-21T03:49:24.998784",
+      "window_end": "2026-10-21T03:49:45.165432",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005063,
+        "arp_reply": 15.005158,
+        "rbcp_request": 15.118602,
+        "rbcp_reply": 15.118712,
+        "tcp_syn": 15.127119,
+        "tcp_syn_ack": 15.127172
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 8,
+      "success": true,
+      "window_begin": "2026-10-21T03:50:07.989068",
+      "window_end": "2026-10-21T03:50:28.171200",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.013462,
+        "arp_reply": 15.013608,
+        "rbcp_request": 15.126302,
+        "rbcp_reply": 15.126402,
+        "tcp_syn": 15.13541,
+        "tcp_syn_ack": 15.135485
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 9,
+      "success": true,
+      "window_begin": "2026-10-21T03:50:50.796365",
+      "window_end": "2026-10-21T03:51:10.963278",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 1,
+        "tcp_syn_ack": 1
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.008777,
+        "arp_reply": 15.008932,
+        "rbcp_request": 15.13366,
+        "rbcp_reply": 15.133789,
+        "tcp_syn": 15.142933,
+        "tcp_syn_ack": 15.143002
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 10,
+      "success": true,
+      "window_begin": "2026-10-21T03:51:36.691806",
+      "window_end": "2026-10-21T03:51:56.873972",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.014108,
+        "arp_reply": 15.014255,
+        "rbcp_request": 15.126934,
+        "rbcp_reply": 15.127022,
+        "tcp_syn": 15.136434,
+        "tcp_syn_ack": 15.136513
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 11,
+      "success": true,
+      "window_begin": "2026-10-21T03:52:20.786965",
+      "window_end": "2026-10-21T03:52:40.944354",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 11,
+        "tcp_syn": 1,
+        "tcp_syn_ack": 1
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.00777,
+        "arp_reply": 15.007918,
+        "rbcp_request": 15.1354,
+        "rbcp_reply": 15.135487,
+        "tcp_syn": 15.144057,
+        "tcp_syn_ack": 15.144134
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 12,
+      "success": true,
+      "window_begin": "2026-10-21T03:53:05.111604",
+      "window_end": "2026-10-21T03:53:25.274247",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.009642,
+        "arp_reply": 15.009751,
+        "rbcp_request": 15.123622,
+        "rbcp_reply": 15.123725,
+        "tcp_syn": 15.132433,
+        "tcp_syn_ack": 15.132506
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 13,
+      "success": true,
+      "window_begin": "2026-10-21T03:53:47.943898",
+      "window_end": "2026-10-21T03:54:08.138798",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.011597,
+        "arp_reply": 15.011737,
+        "rbcp_request": 15.142493,
+        "rbcp_reply": 15.142589,
+        "tcp_syn": 15.152044,
+        "tcp_syn_ack": 15.152133
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 14,
+      "success": true,
+      "window_begin": "2026-10-21T03:54:33.637154",
+      "window_end": "2026-10-21T03:54:53.821145",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.008555,
+        "arp_reply": 15.008712,
+        "rbcp_request": 15.127214,
+        "rbcp_reply": 15.127302,
+        "tcp_syn": 15.136257,
+        "tcp_syn_ack": 15.136343
+      }
+    },
+    {
+      "report": "hardware-f512-more.json",
+      "mode": "board",
+      "index": 15,
+      "success": true,
+      "window_begin": "2026-10-21T03:55:19.854406",
+      "window_end": "2026-10-21T03:55:40.053471",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.021297,
+        "arp_reply": 15.02144,
+        "rbcp_request": 15.14398,
+        "rbcp_reply": 15.144094,
+        "tcp_syn": 15.152375,
+        "tcp_syn_ack": 15.152485
+      }
+    },
+    {
+      "report": "hardware-f512-network-more.json",
+      "mode": "network",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T03:57:08.659239",
+      "window_end": "2026-10-21T03:57:28.822881",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.00448,
+        "arp_reply": 15.004619,
+        "rbcp_request": 15.121451,
+        "rbcp_reply": 15.121541,
+        "tcp_syn": 15.129992,
+        "tcp_syn_ack": 15.130063
+      }
+    },
+    {
+      "report": "hardware-f512-network-more.json",
+      "mode": "network",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T03:57:55.238679",
+      "window_end": "2026-10-21T03:58:15.407843",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004824,
+        "arp_reply": 15.00495,
+        "rbcp_request": 15.120119,
+        "rbcp_reply": 15.120213,
+        "tcp_syn": 15.12866,
+        "tcp_syn_ack": 15.128734
+      }
+    },
+    {
+      "report": "hardware-f512-network-more.json",
+      "mode": "network",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T03:58:40.837926",
+      "window_end": "2026-10-21T03:59:00.999106",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004738,
+        "arp_reply": 15.004862,
+        "rbcp_request": 15.11942,
+        "rbcp_reply": 15.119505,
+        "tcp_syn": 15.128504,
+        "tcp_syn_ack": 15.128578
+      }
+    },
+    {
+      "report": "hardware-f512-network-more.json",
+      "mode": "network",
+      "index": 4,
+      "success": true,
+      "window_begin": "2026-10-21T03:59:26.539979",
+      "window_end": "2026-10-21T03:59:46.706442",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004759,
+        "arp_reply": 15.004863,
+        "rbcp_request": 15.123887,
+        "rbcp_reply": 15.123973,
+        "tcp_syn": 15.132685,
+        "tcp_syn_ack": 15.132754
+      }
+    },
+    {
+      "report": "hardware-f512-network-more.json",
+      "mode": "network",
+      "index": 5,
+      "success": true,
+      "window_begin": "2026-10-21T04:00:13.415688",
+      "window_end": "2026-10-21T04:00:33.580885",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.013656,
+        "arp_reply": 15.013791,
+        "rbcp_request": 15.135428,
+        "rbcp_reply": 15.135528,
+        "tcp_syn": 15.145149,
+        "tcp_syn_ack": 15.14523
+      }
+    },
+    {
+      "report": "hardware-f512-network-more.json",
+      "mode": "network",
+      "index": 6,
+      "success": true,
+      "window_begin": "2026-10-21T04:00:59.831067",
+      "window_end": "2026-10-21T04:01:19.996762",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004212,
+        "arp_reply": 15.004358,
+        "rbcp_request": 15.120432,
+        "rbcp_reply": 15.120527,
+        "tcp_syn": 15.12979,
+        "tcp_syn_ack": 15.129882
+      }
+    },
+    {
+      "report": "hardware-f512-network-more.json",
+      "mode": "network",
+      "index": 7,
+      "success": true,
+      "window_begin": "2026-10-21T04:01:45.441478",
+      "window_end": "2026-10-21T04:02:05.613164",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005672,
+        "arp_reply": 15.005793,
+        "rbcp_request": 15.125337,
+        "rbcp_reply": 15.125431,
+        "tcp_syn": 15.134592,
+        "tcp_syn_ack": 15.134668
+      }
+    },
+    {
+      "report": "hardware-f512-network-more.json",
+      "mode": "network",
+      "index": 8,
+      "success": true,
+      "window_begin": "2026-10-21T04:02:31.023075",
+      "window_end": "2026-10-21T04:02:51.183923",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.006301,
+        "arp_reply": 15.006405,
+        "rbcp_request": 15.130864,
+        "rbcp_reply": 15.130948,
+        "tcp_syn": 15.139752,
+        "tcp_syn_ack": 15.139829
+      }
+    },
+    {
+      "report": "hardware-f512-network-more.json",
+      "mode": "network",
+      "index": 9,
+      "success": true,
+      "window_begin": "2026-10-21T04:03:16.860722",
+      "window_end": "2026-10-21T04:03:37.026851",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005041,
+        "arp_reply": 15.005185,
+        "rbcp_request": 15.124599,
+        "rbcp_reply": 15.1247,
+        "tcp_syn": 15.133207,
+        "tcp_syn_ack": 15.13332
+      }
+    },
+    {
+      "report": "hardware-f512-network-more.json",
+      "mode": "network",
+      "index": 10,
+      "success": true,
+      "window_begin": "2026-10-21T04:04:02.859639",
+      "window_end": "2026-10-21T04:04:23.043919",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.006197,
+        "arp_reply": 15.006298,
+        "rbcp_request": 15.122475,
+        "rbcp_reply": 15.122571,
+        "tcp_syn": 15.131744,
+        "tcp_syn_ack": 15.13183
+      }
+    },
+    {
+      "report": "hardware-f512-network-more.json",
+      "mode": "network",
+      "index": 11,
+      "success": true,
+      "window_begin": "2026-10-21T04:04:48.438370",
+      "window_end": "2026-10-21T04:05:08.620563",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.007186,
+        "arp_reply": 15.007294,
+        "rbcp_request": 15.128047,
+        "rbcp_reply": 15.128149,
+        "tcp_syn": 15.137956,
+        "tcp_syn_ack": 15.138046
+      }
+    },
+    {
+      "report": "hardware-f512-network-more.json",
+      "mode": "network",
+      "index": 12,
+      "success": true,
+      "window_begin": "2026-10-21T04:05:34.113783",
+      "window_end": "2026-10-21T04:05:54.286581",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.009759,
+        "arp_reply": 15.009887,
+        "rbcp_request": 15.127752,
+        "rbcp_reply": 15.127857,
+        "tcp_syn": 15.137045,
+        "tcp_syn_ack": 15.137138
+      }
+    },
+    {
+      "report": "hardware-f512-r1.json",
+      "mode": "board",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T03:35:57.751619",
+      "window_end": "2026-10-21T03:36:17.898741",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.006391,
+        "arp_reply": 15.006521,
+        "rbcp_request": 15.122381,
+        "rbcp_reply": 15.122476,
+        "tcp_syn": 15.13168,
+        "tcp_syn_ack": 15.131798
+      }
+    },
+    {
+      "report": "hardware-f512-r1.json",
+      "mode": "board",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T03:36:43.440933",
+      "window_end": "2026-10-21T03:37:03.591369",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.00464,
+        "arp_reply": 15.004759,
+        "rbcp_request": 15.12428,
+        "rbcp_reply": 15.124381,
+        "tcp_syn": 15.133817,
+        "tcp_syn_ack": 15.133891
+      }
+    },
+    {
+      "report": "hardware-f512-r1.json",
+      "mode": "board",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T03:37:26.216893",
+      "window_end": "2026-10-21T03:37:46.394302",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.010033,
+        "arp_reply": 15.010213,
+        "rbcp_request": 15.121133,
+        "rbcp_reply": 15.121227,
+        "tcp_syn": 15.131695,
+        "tcp_syn_ack": 15.131783
+      }
+    },
+    {
+      "report": "hardware-f512-r1.json",
+      "mode": "switch-off-boot",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T03:38:36.480009",
+      "window_end": "2026-10-21T03:38:56.667096",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004762,
+        "arp_reply": 15.004904,
+        "rbcp_request": 15.127833,
+        "rbcp_reply": 15.127926,
+        "tcp_syn": 15.137002,
+        "tcp_syn_ack": 15.137079
+      }
+    },
+    {
+      "report": "hardware-f512-r1.json",
+      "mode": "switch-off-boot",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T03:39:48.230847",
+      "window_end": "2026-10-21T03:40:08.403590",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.004909,
+        "arp_reply": 15.005032,
+        "rbcp_request": 15.122155,
+        "rbcp_reply": 15.122249,
+        "tcp_syn": 15.130938,
+        "tcp_syn_ack": 15.13101
+      }
+    },
+    {
+      "report": "hardware-f512-r1.json",
+      "mode": "switch-off-boot",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T03:40:59.808128",
+      "window_end": "2026-10-21T03:41:19.993788",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005507,
+        "arp_reply": 15.005651,
+        "rbcp_request": 15.14142,
+        "rbcp_reply": 15.141506,
+        "tcp_syn": 15.150688,
+        "tcp_syn_ack": 15.150774
+      }
+    },
+    {
+      "report": "hardware-f512-r1.json",
+      "mode": "network",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T03:41:45.452892",
+      "window_end": "2026-10-21T03:42:05.612211",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.005647,
+        "arp_reply": 15.005777,
+        "rbcp_request": 15.127837,
+        "rbcp_reply": 15.127932,
+        "tcp_syn": 15.137058,
+        "tcp_syn_ack": 15.137149
+      }
+    },
+    {
+      "report": "hardware-f512-r1.json",
+      "mode": "network",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T03:42:30.926528",
+      "window_end": "2026-10-21T03:42:51.090345",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 11,
+        "tcp_syn": 1,
+        "tcp_syn_ack": 1
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.006133,
+        "arp_reply": 15.006255,
+        "rbcp_request": 15.122973,
+        "rbcp_reply": 15.12308,
+        "tcp_syn": 15.132022,
+        "tcp_syn_ack": 15.132108
+      }
+    },
+    {
+      "report": "hardware-f512-r1.json",
+      "mode": "network",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T03:43:16.777494",
+      "window_end": "2026-10-21T03:43:36.943111",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.007064,
+        "arp_reply": 15.007172,
+        "rbcp_request": 15.138301,
+        "rbcp_reply": 15.138426,
+        "tcp_syn": 15.147478,
+        "tcp_syn_ack": 15.147564
+      }
+    },
+    {
+      "report": "warmboot-f500-afterfail.json",
+      "mode": "fpga-reboot",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T01:21:27.628866",
+      "window_end": "2026-10-21T01:21:47.794181",
+      "counts": {
+        "arp_request": 3,
+        "arp_reply": 3,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 1,
+        "tcp_syn_ack": 1
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 4.683201,
+        "arp_reply": 4.6833,
+        "rbcp_request": 15.124023,
+        "rbcp_reply": 15.124124,
+        "tcp_syn": 15.133143,
+        "tcp_syn_ack": 15.133221
+      }
+    },
+    {
+      "report": "warmboot-f500.json",
+      "mode": "fpga-reboot",
+      "index": 1,
+      "success": true,
+      "window_begin": "2026-10-21T00:45:19.646694",
+      "window_end": "2026-10-21T00:45:39.820440",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.001602,
+        "arp_reply": 15.001765,
+        "rbcp_request": 15.112327,
+        "rbcp_reply": 15.112417,
+        "tcp_syn": 15.121471,
+        "tcp_syn_ack": 15.121548
+      }
+    },
+    {
+      "report": "warmboot-f500.json",
+      "mode": "fpga-reboot",
+      "index": 2,
+      "success": true,
+      "window_begin": "2026-10-21T00:46:23.102865",
+      "window_end": "2026-10-21T00:46:43.265763",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.000989,
+        "arp_reply": 15.001134,
+        "rbcp_request": 15.119588,
+        "rbcp_reply": 15.119674,
+        "tcp_syn": 15.128314,
+        "tcp_syn_ack": 15.128389
+      }
+    },
+    {
+      "report": "warmboot-f500.json",
+      "mode": "fpga-reboot",
+      "index": 3,
+      "success": true,
+      "window_begin": "2026-10-21T00:47:24.581667",
+      "window_end": "2026-10-21T00:47:44.742970",
+      "counts": {
+        "arp_request": 2,
+        "arp_reply": 2,
+        "rbcp_request": 12,
+        "rbcp_reply": 12,
+        "tcp_syn": 2,
+        "tcp_syn_ack": 2
+      },
+      "first_seconds_after_confirmed_on": {
+        "arp_request": 15.007098,
+        "arp_reply": 15.007203,
+        "rbcp_request": 15.118405,
+        "rbcp_reply": 15.118625,
+        "tcp_syn": 15.127337,
+        "tcp_syn_ack": 15.127448
+      }
+    }
+  ],
+  "final_state": {
+    "version": "0x60C4F402",
+    "target_on": true,
+    "network_on": true,
+    "control_off": true,
+    "flash_verified": true,
+    "full_flash_sha256": "9fdbf99d92cbc037fd6f5b0eec09b1012cb713835b28d87962f78e5797326fe5"
+  },
+  "limits": [
+    "Single target .16; .11 kept OFF.",
+    "Fresh builds can differ in routing.",
+    "No analog CDR/rail measurement in these new packet tests.",
+    "FPGA configuration status is not GT CPLL telemetry."
+  ],
+  "capture_summary": {
+    "phase": "closed_merged_verified",
+    "time": "2026-10-21T06:11:28.165678",
+    "parts": [
+      {
+        "file": "boot-comparison.pcapng",
+        "packets": 10263,
+        "dropped": 0
+      },
+      {
+        "file": "boot-comparison-part2.pcapng",
+        "packets": 14104,
+        "dropped": 0
+      }
+    ],
+    "merged_packets": 24367,
+    "merged_sha256": "627b177048d400b3fe3b5da45f77d7631cd09b53df76269cef67c14d88222e55",
+    "hardware_trials": 162,
+    "warm_reloads": 4,
+    "correlated_trials": 166,
+    "aborted_before_trials": [
+      {
+        "cohort": "hardware-f402-initial.json",
+        "phase": "FAILED",
+        "completed_trials": 0,
+        "error_type": "TypeError"
+      }
+    ],
+    "failed_windows": 21,
+    "failed_windows_without_ARP_reply": 21,
+    "successful_windows": 145,
+    "successful_windows_with_RBCP_and_TCP_reply": 145,
+    "all_failed_have_actual_requests": true,
+    "all_failed_have_actual_requests_and_no_ARP_reply": true
+  },
+  "common_src_commit": "784244da3c0a60535bde74ac01daeadd8d4fe80a",
+  "patch_application": {
+    "time": "2026-10-21T05:35:21.649320",
+    "base_commit": "5ac5ce75944aaec1ab2d4e81588aa9ab19eb7039",
+    "common_src_commit": "784244da3c0a60535bde74ac01daeadd8d4fe80a",
+    "distribution_line_endings": "LF",
+    "temporary_index_flattens_only_required_common_file": true,
+    "working_baseline": "Unmodified CRLF native top plus the unchanged pinned common-src wrapper; native F500 uses shared project files, so its small candidate directory alone is not a complete baseline tree.",
+    "compiled_source_changed": false,
+    "checks": [
+      {
+        "variant": "f511",
+        "patch_sha256": "40e092a513a836a6cd7c2dccadefa27f9c36fff1cf34d5622c590d77a9ad6775",
+        "source_normalized_sha256": {
+          "hdl/toplevel.vhd": "b3ec6ab337fd98e991b5d17b1abcf6c6647ba7030d1859fbfe0f7bc349dcfdf9",
+          "hdl/common/gig_ethernet_pcs_pma/GbEPcsPma.vhd": "ff5bf6e09ef8443f18993e2cd468a6ec4f21c08a7e03837f566a7e3e7ff37174"
+        },
+        "cached_forward": true,
+        "cached_reverse": true,
+        "patched_source_equals_built_source": true,
+        "working_forward_exit": 0,
+        "working_reverse_exit": 0,
+        "working_output": ""
+      },
+      {
+        "variant": "f512",
+        "patch_sha256": "e21d78bca978f8b3ded465d5181d0d75fd22c92ab485a1463948ad59f59f9208",
+        "source_normalized_sha256": {
+          "hdl/toplevel.vhd": "d095d0df2d10d64c514beebb6b9ee2655d6795b74eb7012492bbe4f2c9932244",
+          "hdl/common/gig_ethernet_pcs_pma/GbEPcsPma.vhd": "ff5bf6e09ef8443f18993e2cd468a6ec4f21c08a7e03837f566a7e3e7ff37174"
+        },
+        "cached_forward": true,
+        "cached_reverse": true,
+        "patched_source_equals_built_source": true,
+        "working_forward_exit": 0,
+        "working_reverse_exit": 0,
+        "working_output": ""
+      },
+      {
+        "variant": "f503",
+        "patch_sha256": "54812c54e04bdcfd7c3ea9c38dd960ca4d2a2fe7fcce140a6f73a7a421dcaa0b",
+        "source_normalized_sha256": {
+          "hdl/toplevel.vhd": "6f6955ab5df21b003b8bbdc1f8e78113edbed6287a1ace85e311a4775103ce72"
+        },
+        "cached_forward": true,
+        "cached_reverse": true,
+        "patched_source_equals_built_source": true,
+        "working_forward_exit": 0,
+        "working_reverse_exit": 0,
+        "working_output": ""
+      }
+    ],
+    "passed": true
+  },
+  "final_source_integrity": {
+    "time": "2026-10-21T05:39:01.297880",
+    "variants": {
+      "f500": {
+        "source_files_checked": 20,
+        "unchanged": true
+      },
+      "f511": {
+        "source_files_checked": 22,
+        "unchanged": true
+      },
+      "f512": {
+        "source_files_checked": 22,
+        "unchanged": true
+      },
+      "f503": {
+        "source_files_checked": 20,
+        "unchanged": true
+      }
+    },
+    "hardware_operations": false
+  },
+  "programming_checks": [
+    {
+      "variant": "f500",
+      "started": "2026-10-21T00:27:09.342531",
+      "finished": "2026-10-21T00:32:23.724601",
+      "mcs_sha256": "1015aea007c72104d85bca5f379a198b7478ab54ec083f19716ba11385eeea0b",
+      "backup_sha256": "9fdbf99d92cbc037fd6f5b0eec09b1012cb713835b28d87962f78e5797326fe5",
+      "full_readback_sha256": "b0802a282334094a98fe7ce650aed6ce2b7ac84c7a5ec7fa6231a9ee54ed1589",
+      "bytes": 16777216,
+      "verified": true
+    },
+    {
+      "variant": "f511",
+      "started": "2026-10-21T02:29:41.626469",
+      "finished": "2026-10-21T02:34:58.254892",
+      "mcs_sha256": "e515665f0c3adbf4e010ce53859363ff4eba59983709ac4dedd8db496bd28c63",
+      "backup_sha256": "b0802a282334094a98fe7ce650aed6ce2b7ac84c7a5ec7fa6231a9ee54ed1589",
+      "full_readback_sha256": "461c2a1fb10bacfaaed843d29e1f6199e6585c4de9f6e464c6f6936249f6e332",
+      "bytes": 16777216,
+      "verified": true
+    },
+    {
+      "variant": "f402",
+      "started": "2026-10-21T02:51:10.574922",
+      "finished": "2026-10-21T02:56:20.316965",
+      "mcs_sha256": "baa16954f594b444949d0288c09696001f0018cedd39cc2e920cc761043a7cf2",
+      "backup_sha256": "461c2a1fb10bacfaaed843d29e1f6199e6585c4de9f6e464c6f6936249f6e332",
+      "full_readback_sha256": "9fdbf99d92cbc037fd6f5b0eec09b1012cb713835b28d87962f78e5797326fe5",
+      "bytes": 16777216,
+      "verified": true
+    },
+    {
+      "variant": "f512",
+      "started": "2026-10-21T03:29:22.530256",
+      "finished": "2026-10-21T03:34:39.944653",
+      "mcs_sha256": "e8211be5e854bab38270ca87f0d4e163bd276997a24e431fb053efe5437b4bc1",
+      "backup_sha256": "9fdbf99d92cbc037fd6f5b0eec09b1012cb713835b28d87962f78e5797326fe5",
+      "full_readback_sha256": "ee3dc0877be6da43b03d979f5630a30b63edd6a468fba6ecacdeec1bcf7f256b",
+      "bytes": 16777216,
+      "verified": true
+    },
+    {
+      "variant": "f503",
+      "started": "2026-10-21T04:33:13.319182",
+      "finished": "2026-10-21T04:38:18.398906",
+      "mcs_sha256": "3f5180ecadf341ee6afdac4d92419877c40e0b9c28c446d732a9504acbc0a062",
+      "backup_sha256": "ee3dc0877be6da43b03d979f5630a30b63edd6a468fba6ecacdeec1bcf7f256b",
+      "full_readback_sha256": "94b16c5191be50f5df626a4bd8b1333aa2ad33ce3a10456d8389fc0cc3aea0de",
+      "bytes": 16777216,
+      "verified": true
+    },
+    {
+      "variant": "f500",
+      "started": "2026-10-21T05:09:24.090480",
+      "finished": "2026-10-21T05:14:31.990657",
+      "mcs_sha256": "1015aea007c72104d85bca5f379a198b7478ab54ec083f19716ba11385eeea0b",
+      "backup_sha256": "94b16c5191be50f5df626a4bd8b1333aa2ad33ce3a10456d8389fc0cc3aea0de",
+      "full_readback_sha256": "b0802a282334094a98fe7ce650aed6ce2b7ac84c7a5ec7fa6231a9ee54ed1589",
+      "bytes": 16777216,
+      "verified": true
+    },
+    {
+      "variant": "f402",
+      "started": "2026-10-21T05:23:55.998324",
+      "finished": "2026-10-21T05:29:01.514799",
+      "mcs_sha256": "baa16954f594b444949d0288c09696001f0018cedd39cc2e920cc761043a7cf2",
+      "backup_sha256": "b0802a282334094a98fe7ce650aed6ce2b7ac84c7a5ec7fa6231a9ee54ed1589",
+      "full_readback_sha256": "9fdbf99d92cbc037fd6f5b0eec09b1012cb713835b28d87962f78e5797326fe5",
+      "bytes": 16777216,
+      "verified": true
+    }
+  ],
+  "configuration_snapshots": [
+    {
+      "cohort": "config-f402-final.json",
+      "time": "2026-10-21T05:38:29.018017",
+      "registers": {
+        "REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS": "1",
+        "REGISTER.CONFIG_STATUS.BIT13_DONE_INTERNAL_SIGNAL_STATUS": "1",
+        "REGISTER.CONFIG_STATUS.BIT14_DONE_PIN": "1",
+        "REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR": "0",
+        "REGISTER.BOOT_STATUS.BIT01_0_FALLBACK": "0",
+        "REGISTER.BOOT_STATUS.BIT05_0_CRC_ERROR": "0"
+      }
+    },
+    {
+      "cohort": "config-f402-precompare.json",
+      "time": "2026-10-20T23:54:28.563359",
+      "registers": {
+        "REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS": "1",
+        "REGISTER.CONFIG_STATUS.BIT13_DONE_INTERNAL_SIGNAL_STATUS": "1",
+        "REGISTER.CONFIG_STATUS.BIT14_DONE_PIN": "1",
+        "REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR": "0",
+        "REGISTER.BOOT_STATUS.BIT01_0_FALLBACK": "0",
+        "REGISTER.BOOT_STATUS.BIT05_0_CRC_ERROR": "0"
+      }
+    },
+    {
+      "cohort": "config-f500-linkrecovery-board-1.json",
+      "time": "2026-10-21T01:33:24.851409",
+      "registers": {
+        "REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS": "1",
+        "REGISTER.CONFIG_STATUS.BIT13_DONE_INTERNAL_SIGNAL_STATUS": "1",
+        "REGISTER.CONFIG_STATUS.BIT14_DONE_PIN": "1",
+        "REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR": "0",
+        "REGISTER.BOOT_STATUS.BIT01_0_FALLBACK": "0",
+        "REGISTER.BOOT_STATUS.BIT05_0_CRC_ERROR": "0"
+      }
+    },
+    {
+      "cohort": "config-f500-more-board-1.json",
+      "time": "2026-10-21T00:51:59.713267",
+      "registers": {
+        "REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS": "1",
+        "REGISTER.CONFIG_STATUS.BIT13_DONE_INTERNAL_SIGNAL_STATUS": "1",
+        "REGISTER.CONFIG_STATUS.BIT14_DONE_PIN": "1",
+        "REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR": "0",
+        "REGISTER.BOOT_STATUS.BIT01_0_FALLBACK": "0",
+        "REGISTER.BOOT_STATUS.BIT05_0_CRC_ERROR": "0"
+      }
+    },
+    {
+      "cohort": "config-f500-r1-board-3.json",
+      "time": "2026-10-21T00:37:44.927149",
+      "registers": {
+        "REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS": "1",
+        "REGISTER.CONFIG_STATUS.BIT13_DONE_INTERNAL_SIGNAL_STATUS": "1",
+        "REGISTER.CONFIG_STATUS.BIT14_DONE_PIN": "1",
+        "REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR": "0",
+        "REGISTER.BOOT_STATUS.BIT01_0_FALLBACK": "0",
+        "REGISTER.BOOT_STATUS.BIT05_0_CRC_ERROR": "0"
+      }
+    },
+    {
+      "cohort": "config-f500-reversal-board-1.json",
+      "time": "2026-10-21T05:17:45.417065",
+      "registers": {
+        "REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS": "1",
+        "REGISTER.CONFIG_STATUS.BIT13_DONE_INTERNAL_SIGNAL_STATUS": "1",
+        "REGISTER.CONFIG_STATUS.BIT14_DONE_PIN": "1",
+        "REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR": "0",
+        "REGISTER.BOOT_STATUS.BIT01_0_FALLBACK": "0",
+        "REGISTER.BOOT_STATUS.BIT05_0_CRC_ERROR": "0"
+      }
+    },
+    {
+      "cohort": "config-f511-r1-board-1.json",
+      "time": "2026-10-21T02:38:52.017614",
+      "registers": {
+        "REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS": "1",
+        "REGISTER.CONFIG_STATUS.BIT13_DONE_INTERNAL_SIGNAL_STATUS": "1",
+        "REGISTER.CONFIG_STATUS.BIT14_DONE_PIN": "1",
+        "REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR": "0",
+        "REGISTER.BOOT_STATUS.BIT01_0_FALLBACK": "0",
+        "REGISTER.BOOT_STATUS.BIT05_0_CRC_ERROR": "0"
+      }
+    }
+  ],
+  "core_comparison": {
+    "recorded": "2026-10-21T04:32:16.471372",
+    "scope": "Named gen_pcspma subset: primitive type/LOC/BEL and net ROUTE/pin hashes. Excludes explicitly named shared constants and shared/global ROUTE strings over100000characters, external reset nets, clocks outside this hierarchy, and analog behavior. Signature SHA256 covers canonical compared CELL/NET records only; not complete image equivalence.",
+    "signature_sha256": {
+      "f500": "0549a6c2d4778fa55f93b07621ec039f00e4368b40312698cc0b4ba5b5518aba",
+      "f503": "5a95362bdabf0b0e675346a3dc6cf4783467f76f37cac1a857d1e7a13007cc1a"
+    },
+    "skipped_global_or_constant_nets": {
+      "f500": 125,
+      "f503": 125
+    },
+    "manual_review": "All five changed common net names are PCS/PMA reset aliases; the five names unique to each build are reset-output aliases in the core reset and TX elastic-buffer reset modules. This bounded subset does not establish full image equivalence.",
+    "changed_net_names": [
+      "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset",
+      "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/gpcs_pma_inst/reset",
+      "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/gig_ethernet_pcs_pma_core/reset",
+      "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/U0/reset",
+      "gen_pcspma[0].u_pcspma_Inst/pcs_pma_i/reset"
+    ],
+    "native_only_net_names": [
+      "gen_pcspma[0].u_pcspma_Inst/core_resets_i/delayRstOut",
+      "gen_pcspma[0].u_pcspma_Inst/delayRstOut",
+      "gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/delayRstOut",
+      "gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/delayRstOut",
+      "gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/delayRstOut"
+    ],
+    "early_only_net_names": [
+      "gen_pcspma[0].u_pcspma_Inst/AS[0]",
+      "gen_pcspma[0].u_pcspma_Inst/core_resets_i/AS[0]",
+      "gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/AS[0]",
+      "gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_rd_reset/AS[0]",
+      "gen_pcspma[0].u_pcspma_Inst/tx_elastic_buffer_inst/gen_wr_reset/AS[0]"
+    ],
+    "CELL": {
+      "native": 1596,
+      "early": 1596,
+      "common": 1596,
+      "identical": 1596,
+      "changed": 0,
+      "only_native": 0,
+      "only_early": 0
+    },
+    "NET": {
+      "native": 2706,
+      "early": 2706,
+      "common": 2701,
+      "identical": 2696,
+      "changed": 5,
+      "only_native": 5,
+      "only_early": 5
+    }
+  }
+}

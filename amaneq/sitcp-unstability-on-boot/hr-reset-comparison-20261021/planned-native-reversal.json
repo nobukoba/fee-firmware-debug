@@ -1,0 +1,11 @@
+{
+  "recorded": "2026-10-21T04:34:41.516670",
+  "stage": "F503 being programmed; no F503 power-boot outcomes observed yet",
+  "reason": "Check bench-history or temperature drift as an alternative to reset-policy improvement.",
+  "plan": "After F503 candidate tests, reprogram the already-qualified native F500 and repeat3connected board power boots, then restore F402 and run final validation/soak.",
+  "predictions": [
+    "If reset policy matters under current conditions, native failures should remain reproducible after the successful early-PHY candidate.",
+    "If current native boots all succeed, current bench-history effects remain stronger and may justify additional native trials before interpreting candidate superiority."
+  ],
+  "limits": "Sequential single-board comparison, not controlled-temperature or full matched-route proof. .11 remains OFF; jitter cleaner disabled."
+}

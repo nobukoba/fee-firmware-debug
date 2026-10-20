@@ -1,0 +1,11 @@
+--- a/hdl/toplevel.vhd
++++ b/hdl/toplevel.vhd
+@@ -1438,7 +1438,7 @@
+         -- General IO's
+         ---------------
+         status_vector        => pcs_pma_status,
+-        reset                => pwr_on_reset
++        reset                => raw_pwr_on_reset
+         );
+   end generate;
+ 

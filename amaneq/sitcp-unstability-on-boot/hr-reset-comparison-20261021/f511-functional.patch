@@ -1,0 +1,93 @@
+--- a/hdl/toplevel.vhd
++++ b/hdl/toplevel.vhd
+@@ -116,6 +116,13 @@
+   signal sitcp_reset  : std_logic;
+   signal raw_pwr_on_reset : std_logic;
+   signal pwr_on_reset : std_logic;
++  signal ethernet_user_reset : std_logic;
++  signal ethernet_cpll_sync : std_logic_vector(2 downto 0);
++  attribute ASYNC_REG : string;
++  attribute ASYNC_REG of ethernet_cpll_sync : signal is "TRUE";
++  attribute SHREG_EXTRACT : string;
++  attribute SHREG_EXTRACT of ethernet_cpll_sync : signal is "NO";
++  signal ethernet_cpll_raw : std_logic_vector(kNumGtx-1 downto 0);
+   signal system_reset : std_logic;
+   signal user_reset   : std_logic;
+   signal hbu_reset    : std_logic;
+@@ -1127,7 +1134,7 @@
+   gen_tsd: for i in 0 to kNumGtx-1 generate
+     u_TSD_Inst : entity mylib.TCP_sender
+       port map(
+-        RST                     => pwr_on_reset,
++        RST                     => ethernet_user_reset,
+         CLK                     => clk_sys,
+ 
+         -- data from EVB --
+@@ -1217,9 +1224,21 @@
+       rdRBCP                    => rbcp_rd(0)
+       );
+ 
++  -- Keep PHY startup independent; qualify only the Ethernet upper-layer reset.
++  u_EthCpllSync : process(clk_sys)
++  begin
++    if rising_edge(clk_sys) then ethernet_cpll_sync <= ethernet_cpll_sync(1 downto 0) & and_reduce(ethernet_cpll_raw); end if;
++  end process;
++  u_EthUpperReset : entity mylib.SystemReset
++    generic map(kWidthResetSync => 32)
++    port map(asyncReset => pwr_on_reset, mmcmLocked => clk_sys_locked,
++             masterReset => open, qpllLocked => ethernet_cpll_sync(2),
++             clkXgmii => clk_sys, clkSys => clk_sys,
++             syncXgmiiReset => open, syncSysReset => ethernet_user_reset);
++
+   -- SiTCP Inst ------------------------------------------------------------------------
+   u_SiTCPRst : entity mylib.ResetGen
+-    port map(pwr_on_reset or (not pcs_pma_status(kPcsPmaLinkStatus)) or rst_from_miku, clk_sys, sitcp_reset);
++    port map(ethernet_user_reset or (not pcs_pma_status(kPcsPmaLinkStatus)) or rst_from_miku, clk_sys, sitcp_reset);
+ 
+   gen_SiTCP : for i in 0 to kNumGtx-1 generate
+ 
+@@ -1305,7 +1324,7 @@
+     rbcpRd      => rbcp_rd(i),
+ 
+     -- GMII clock domain --
+-    rstXgmii    => pwr_on_reset,
++    rstXgmii    => ethernet_user_reset,
+     clkXgmii    => clk_sys,
+     rbcpXgAddr  => rbcp_gmii_addr(i),
+     rbcpXgWd    => rbcp_gmii_wd(i),
+@@ -1317,7 +1336,7 @@
+ 
+     u_gTCP_inst : entity mylib.global_sitcp_manager
+       port map(
+-        RST           => pwr_on_reset,
++        RST           => ethernet_user_reset,
+         CLK           => clk_sys,
+         ACTIVE        => tcp_isActive(i),
+         REQ           => close_req(i),
+@@ -1437,6 +1456,7 @@
+ 
+         -- General IO's
+         ---------------
++        cplllock_out         => ethernet_cpll_raw(i),
+         status_vector        => pcs_pma_status,
+         reset                => pwr_on_reset
+         );
+--- a/hdl/common/gig_ethernet_pcs_pma/GbEPcsPma.vhd
++++ b/hdl/common/gig_ethernet_pcs_pma/GbEPcsPma.vhd
+@@ -162,6 +162,7 @@
+ 
+     -- General IO's
+     ---------------
++    cplllock_out         : out std_logic;
+     status_vector        : out std_logic_vector(15 downto 0); -- Core status.
+     reset                : in std_logic                       -- Asynchronous reset for entire core.
+ --    signal_detect        : in std_logic                      -- Input from PMD to indicate presence of optical input.
+@@ -314,7 +315,7 @@
+       txoutclk             => txoutclk,
+       rxoutclk             => rxoutclk,
+       resetdone            => open,
+-      cplllock             => open,
++      cplllock             => cplllock_out,
+       mmcm_reset           => mmcm_reset,
+       mmcm_locked          => mmcm_locked,
+       userclk              => userclk,

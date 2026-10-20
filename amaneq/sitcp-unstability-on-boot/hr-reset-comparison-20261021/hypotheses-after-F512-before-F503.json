@@ -1,0 +1,29 @@
+{
+  "recorded_local": "2026-10-21T03:59:19.464392",
+  "observations": [
+    "F511 upper-lock wait only: connected power boots0/3, OFF-switch boots3/3, switch cycles3/3. Actual CPLL/upper-reset timing during failures was not dynamically instrumented.",
+    "F512 early active PHY release plus upper-lock wait: connected boots18/18, OFF-switch boots3/3, initial switch cycles3/3; additional12switch cycles currently running.",
+    "F402 positive control currently21/21connected boots,9/9OFF-switch boots,12/12switch cycles. Native F500connected3/18."
+  ],
+  "prospective_predictions_for_F503": [
+    {
+      "hypothesis": "Early PHY initialization while upper logic retains its original wait is sufficient on .16.",
+      "prediction": "F503 one-line early release will improve connected power boots without the additional post-CPLL upper timer."
+    },
+    {
+      "hypothesis": "The additional CPLL-qualified upper reset is necessary for current .16 improvement.",
+      "prediction": "F503 will fail materially more often than F512 despite sharing early active PHY release."
+    },
+    {
+      "hypothesis": "Placement/routing or bench history contributes materially.",
+      "prediction": "Source-equivalent independent builds may differ; these fresh builds do not isolate timing policy with matched routing."
+    }
+  ],
+  "important_counterevidence": "Prior equivalent one-line F403 passed .16 3/3 but healthy .17 only1/3; two5secOFF trials failed, one120secOFF trial passed. Current .11 remains OFF. Even a new F503 .16 pass is not proof of universal safety.",
+  "limits": [
+    "No new dynamic GT lock or recovered-clock measurement.",
+    "F511 vs F512 changes both active PHY reset seed and upper-reset seed; F503 is needed to separate the requirement for extra upper qualification.",
+    "Power-OFF wait nominal10sec plus control latency; no controlled thermal soak.",
+    "Switch power OFF proves Ethernet link disruption, not necessarily absence of local SFP serial output."
+  ]
+}
