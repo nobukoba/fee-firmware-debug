@@ -1,6 +1,6 @@
 # FEEファームウェア調査記録
 
-[English](README.md)
+**Language: [English](README.md) | 日本語**
 
 フロントエンド電子回路のファームウェア調査記録。
 

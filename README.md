@@ -1,6 +1,6 @@
 # FEE firmware debugging studies
 
-[日本語](README.ja.md)
+**Language: English | [日本語](README.ja.md)**
 
 Investigation records for front-end electronics firmware.
 
